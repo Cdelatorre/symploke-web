@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo Open Peeps · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;font-family:'DM Sans',sans-serif;background:#fff;color:#10241C;padding:24px}
+h2{margin:28px 0 12px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.g div{border:1px solid #DCEBE4;border-radius:12px;padding:8px;text-align:center;font-size:12px}
+.g svg{width:100%;height:180px;display:block}
+</style>
+</head>
+<body>
+<h1>Piezas de Open Peeps en nuestros verdes</h1>
+<div id="c"></div>
+<script src="peeps-data.js"></script>
+<script>
+/* catálogo de revisión: cada postura con una cabeza estándar; luego peinados y caras */
+var DK='#0E4A36', LF='#E4F6EC';
+function col(s,f){return s.replace(/@@S@@/g,DK).replace(/@@B@@/g,f||LF);}
+function head(h,f){return '<g transform="translate(225 0)"><g>'+(PEEPS.hair[h]||'')+'</g><g transform="translate(159 186)">'+(PEEPS.face[f]||'')+'</g></g>';}
+function cell(label,inner,vb){return '<div><svg viewBox="'+vb+'">'+col(inner)+'</svg>'+label+'</div>';}
+var h='<h2>Posturas</h2><div class="g">';
+Object.keys(PEEPS.pose).forEach(function(p){h+=cell(p,PEEPS.pose[p]+head('Short','Smile'),p.indexOf('bust/')===0?'0 0 1100 1200':'-300 -50 1700 2900');});
+h+='</div><h2>Peinados</h2><div class="g">';
+Object.keys(PEEPS.hair).forEach(function(k){h+=cell(k,head(k,'Smile'),'150 -80 800 800');});
+h+='</div><h2>Caras</h2><div class="g">';
+Object.keys(PEEPS.face).forEach(function(k){h+=cell(k,head('Short',k),'150 -80 800 800');});
+h+='</div>';
+document.getElementById('c').innerHTML=h;
+</script>
+</body>
+</html>

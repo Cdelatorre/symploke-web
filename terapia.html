@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terapia · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.links a.on{color:var(--brandink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--brand);color:var(--btntext)}
+.btn.small{font-size:15px;padding:12px 22px}
+main{max-width:1240px;margin:0 auto;padding:24px clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.intro h1{font-size:clamp(44px,5vw,72px);line-height:1.04;letter-spacing:-.5px;margin:20px 0 14px}
+.lead{font-size:clamp(16px,1.3vw,19px);line-height:1.55;color:var(--ink2);margin:0;max-width:640px}
+h2{font-size:clamp(28px,3vw,42px);margin:72px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:26px}
+#formatos{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:1100px){ #formatos{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:700px){ #formatos{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:460px){ #formatos{grid-template-columns:1fr} }
+.card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,60,40,.10)}
+.card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.card .img svg{display:block;width:100%;height:100%}
+.card .txt{display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card h3{font-size:21px}
+.card p{margin:0;font-size:15px;line-height:1.5;color:var(--ink2)}
+.card .go{margin-top:4px;color:var(--brandink);font-weight:600;font-size:14px}
+.band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);margin-top:80px;background:var(--soft);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+.band .pic{background:#fff;min-height:260px;position:relative}
+.band .pic svg{position:absolute;inset:0;width:100%;height:100%}
+.band .t{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:14px}
+.band h2{margin:0}
+.band p{margin:0;color:var(--ink2);line-height:1.55}
+.band .btn{align-self:flex-start}
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .band{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a class="on" href="terapia.html" aria-current="page">Terapia</a><a href="test1.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="test1.html#contacto">Pedir primera cita</a>
+</header>
+
+<main>
+  <section class="intro">
+    <h1>Terapia</h1>
+    <p class="lead">Presencial en Koiné, en Madrid centro, u online. También grupos, talleres y charlas. Si no sabes por dónde empezar, pide cita y lo pensamos juntos. <span style="font-size:13px;opacity:.7">[provisional]</span></p>
+  </section>
+
+  <h2>¿Cómo quieres hacerlo?</h2>
+  <p class="lead">Elige el formato.</p>
+  <div class="grid" id="formatos"></div>
+
+  <h2>¿Qué te pasa?</h2>
+  <p class="lead">Elige lo que más se parezca a lo que vives.</p>
+  <div class="grid" id="motivos"></div>
+
+  <section class="band">
+    <div class="pic" id="bandpic"></div>
+    <div class="t">
+      <h2>Podemos ayudarte</h2>
+      <p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una valoración inicial: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>
+      <a class="btn primary" href="test1.html#contacto">Pide cita y lo vemos juntos <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</main>
+<footer>© [Año] Symploké · [Tu nombre]. Prototipo de diseño. Ilustraciones: Open Peeps (Pablo Stanley, CC0), en los verdes de la marca.</footer>
+
+<script src="maqueta/motivos-data.js"></script>
+<script src="maqueta/peeps-data.js"></script>
+<script src="maqueta/ilustraciones.js"></script>
+<script>
+/* formatos y motivos con sus ilustraciones; los motivos enlazan a su página en la maqueta */
+(function(){
+  'use strict';
+  function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+'</span>':'')+'</span></a>';}
+  var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]'],['talleres','Talleres','[Qué talleres ofreces]'],['charlas','Charlas','[Para quién y sobre qué]']];
+  document.getElementById('formatos').innerHTML=F.map(function(x){return card('test1.html#contacto',x[0],x[1],x[2],'Pedir cita →');}).join('');
+  document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card('maqueta/motivo.html?m='+m.slug,m.slug,m.name,'«'+m.sym+'»','Ver más →');}).join('');
+  document.getElementById('bandpic').innerHTML=ILUS.portada('band');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Motivo de consulta · Psicólogo en Madrid centro y online · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Patrick+Hand&amp;display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+/* cabecera luminosa: el problema ya resuelto */
+.mhero{max-width:1180px;margin:0 auto;padding:16px clamp(20px,4.5vw,64px) 48px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,4vw,56px);align-items:center}
+.mhero h1{font-size:clamp(38px,4.4vw,62px);line-height:1.04;letter-spacing:-.5px;margin:0 0 16px}
+.mhero .intro{font-size:clamp(17px,1.3vw,19px);line-height:1.6;color:var(--ink2);margin:0}
+.mhero .help{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(22px,2vw,27px);line-height:1.25;color:var(--brandink);margin:22px 0 0}
+.mhero .cta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;margin-top:22px}
+.mhero .cta .where{font-size:14px;color:var(--muted)}
+.mhero figure{margin:0}
+.mhero .shot{aspect-ratio:16/11;border-radius:28px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(0,60,40,.12)}
+.mhero .shot img,.mhero .shot svg{width:100%;height:100%;object-fit:cover;display:block}
+.mhero figcaption{font-size:12px;color:var(--muted);margin-top:10px}
+.mhero figcaption a{color:inherit}
+
+/* lo que se siente: franja gris, más apagada que la foto */
+.grey{background:var(--grey);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.grey .inner{max-width:1180px;margin:0 auto;padding:clamp(40px,5vw,64px) clamp(20px,4.5vw,64px);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,56px);align-items:start}
+.grey .layer{margin:0 0 10px}
+.grey h2{font-size:clamp(28px,2.8vw,38px);margin:0 0 12px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.grey .note{font-size:13px;color:var(--muted);line-height:1.5;margin:0}
+.grey ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.grey li{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(22px,2vw,28px);line-height:1.3;color:#5B6762;padding:10px 0;border-bottom:1px solid var(--line)}
+.grey .freq{margin:18px 0 0;font-weight:600;color:var(--ink2)}
+.grey .reco{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:22px;padding:18px 22px;background:var(--bg);border:1px solid var(--line);border-radius:18px}
+.grey .reco p{margin:0;font-weight:600;color:var(--ink)}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .grey li{color:#9DB0A7} }
+:root[data-theme="dark"] .grey li{color:#9DB0A7}
+
+.page{max-width:920px;padding-top:8px}
+.body{font-size:18px;line-height:1.7;color:var(--ink2)}
+.body p{margin:0 0 18px}
+.body h2{font-size:clamp(26px,2.6vw,34px);margin:56px 0 16px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.body h3{font-size:22px;margin:0 0 8px}
+.layer{font:600 12px/1 'DM Sans',sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--brandink)}
+.body .layer{margin:64px 0 0!important}
+.body .layer+h2{margin-top:10px!important}
+.refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
+.beyond{border-left:3px solid var(--brand);padding-left:20px}
+.inline{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:28px 0 0;padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:17px}
+.inline b{color:var(--ink)}
+.inline a{font-weight:600;text-decoration:none}
+.inline a:hover{text-decoration:underline;text-underline-offset:4px}
+.psy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:8px}
+.psy article{border:1px solid var(--line);border-radius:20px;padding:22px}
+.psy h3{font-size:19px!important}
+.psy p{margin:0 0 8px;font-size:15px;line-height:1.55}
+.psy .ev{font-size:13px;color:var(--muted);margin:0}
+.psy .ev b{color:var(--ink2)}
+.small{font-size:15px;color:var(--muted);font-style:italic}
+.care{border:1px solid var(--line);border-radius:20px;padding:22px 26px;margin-top:28px;font-size:16px}
+.care h3{font-size:19px!important;margin-bottom:10px!important}
+.care p{margin:0 0 8px}
+.alert{border-left:3px solid var(--brand);padding:6px 0 6px 14px;font-size:16px;margin-top:18px!important}
+.subs{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 0;padding:0;list-style:none}
+.subs a{display:inline-block;font-size:15px;padding:9px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink2)}
+.subs a:hover{border-color:var(--brand);color:var(--brandink)}
+#cita{margin-top:64px}
+#cita .urg{margin-top:4px}
+.sign{margin-top:36px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--muted);line-height:1.6}
+.pn{display:flex;justify-content:space-between;gap:16px;margin-top:28px;font-size:15px}
+.pn a{text-decoration:none;color:var(--ink2)}
+.pn a:hover{color:var(--brandink)}
+.pn b{display:block;color:var(--ink);font-weight:600}
+@media (max-width:860px){
+  .mhero,.grey .inner{grid-template-columns:1fr}
+  .mhero figure{order:-1}
+  .mhero .shot{aspect-ratio:4/3}
+  .psy{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-cita="#cita">
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="index.html#formatos">Terapia</a><a href="index.html#formatos">Grupos, talleres y charlas</a><a class="on" href="motivos.html">Motivos de consulta</a><a href="index.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="index.html#contacto">Pedir cita</a>
+</header>
+
+<div id="main"></div>
+
+<footer class="site">
+  <div><h4>Symploké</h4><p><span class="gap">[Tu nombre completo]</span><br>Psicólogo sanitario · Nº de colegiado <span class="gap">[ ]</span><br><span class="gap">[Titulación]</span></p></div>
+  <div><h4>Consulta</h4><p>Koiné · C/ Martín de Vargas 5, 28005 Madrid<br>Registro sanitario <span class="gap">[ ]</span><br>Metro <span class="gap">[estaciones cercanas]</span> · Horario <span class="gap">[ ]</span></p></div>
+  <div><h4>Contacto</h4><p>Teléfono <span class="gap">[ ]</span><br>WhatsApp <span class="gap">[ ]</span><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p></div>
+  <div><h4>Menú</h4><p><a href="index.html#formatos">Terapia</a><br><a href="index.html#formatos">Grupos, talleres y charlas</a><br><a href="motivos.html">Motivos de consulta</a><br><a href="index.html#blog">Blog</a></p></div>
+  <div class="legal"><span>© 2026 Symploké</span><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><span>Maqueta: los datos entre [ ] están pendientes.</span></div>
+</footer>
+
+<script src="motivos-data.js"></script>
+<script src="peeps-data.js"></script>
+<script src="ilustraciones.js"></script>
+<script>
+/* página de un motivo: foto luminosa arriba, lo que se siente en gris, ciencia, más allá de la etiqueta,
+   psicologías y llamadas a la acción a lo largo de toda la página */
+(function(){
+'use strict';
+var p=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(p?p[1]:'ansiedad')||MOTIVOS[0], idx=MOTIVOS.indexOf(m);
+var D='<span class="draft">borrador</span>', CITA='index.html#contacto';
+var prev=MOTIVOS[(idx+MOTIVOS.length-1)%MOTIVOS.length], next=MOTIVOS[(idx+1)%MOTIVOS.length];
+document.title=m.name+' · Psicólogo en Madrid centro y online · Symploké';
+var h='';
+
+h+='<section class="mhero"><div>';
+h+='<nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Inicio</a><span aria-hidden="true">›</span><a href="motivos.html">Motivos de consulta</a><span aria-hidden="true">›</span><span>'+m.name+'</span></nav>';
+h+='<h1>'+m.name+'</h1>';
+h+='<p class="intro">'+m.intro+' '+D+'</p>';
+h+='<p class="help">'+m.cta+' '+D+'</p>';
+h+='<div class="cta"><a class="btn primary" href="'+CITA+'">Pedir cita <span aria-hidden="true">→</span></a><span class="where">Presencial en Madrid centro u online</span></div>';
+h+='</div><figure><div class="shot">'+motivoArt(m.slug,'h',true)+'</div><figcaption>'+creditLine(m.slug)+'</figcaption></figure></section>';
+
+h+='<section class="grey" aria-labelledby="suene"><div class="inner"><div>';
+h+='<p class="layer">Lo que se siente</p><h2 id="suene">Quizá te suene '+D+'</h2>';
+h+='<p class="note">Frases tal como las escribe la gente en Google (autocompletado de Google España, 28/10/2026). <span class="verify">[VERIFICAR con Google Trends]</span></p>';
+h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
+h+='<p class="freq">Es frecuente sentirse así.</p>';
+h+='<div class="reco"><p>¿Te reconoces? Podemos ayudarte.</p><a class="btn primary small" href="'+CITA+'">Pedir cita</a></div>';
+if(m.alert)h+='<p class="alert">'+m.alert+'</p>';
+h+='</div></div></section>';
+
+h+='<main class="page"><div class="body">';
+h+='<p class="layer">Qué dice la ciencia</p><h2>Qué sabemos</h2>';
+h+='<p class="gap">[Aquí va el texto científico que ya hay en la web, corregido y puesto al día.]</p>';
+h+='<p>'+m.science+'</p><p class="refs">'+m.refs+'</p>';
+
+h+='<p class="layer">Más allá de la etiqueta</p><h2>No eres un diagnóstico '+D+'</h2>';
+h+='<p class="beyond">'+m.beyond+'</p>';
+h+='<p class="inline"><b>Pensemos juntos qué te pasa.</b> <a href="'+CITA+'">Pedir cita →</a></p>';
+
+h+='<h2>Hay varias psicologías</h2>';
+h+='<p>No hay una sola psicología, y no todas tienen la misma evidencia para cada problema. <span class="small">(Es un esbozo: cada enfoque es más amplio.)</span></p>';
+h+='<div class="psy">'+m.approaches.map(function(a){return '<article><h3>'+a[0]+'</h3><p>'+a[1]+'</p><p class="ev"><b>Evidencia:</b> '+a[2]+'. <span class="verify">[VERIFICAR]</span></p></article>';}).join('')+'</div>';
+
+if(m.delicate||m.coord||m.consent){
+  h+='<div class="care"><h3>'+(m.consent?'Menores y familia':'Con cuidado')+'</h3>';
+  if(m.delicate)h+='<p>Formación en este ámbito: <span class="gap">[ ]</span></p>';
+  if(m.coord)h+='<p>'+m.coord+'</p>';
+  if(m.consent)h+='<p>'+m.consent+'</p>';
+  h+='<p style="margin:0">No prometemos resultados: cada proceso es distinto.</p></div>';
+}
+if(m.subs)h+='<h2 style="font-size:22px;margin-top:44px">Dentro de '+m.name.toLowerCase()+'</h2><ul class="subs">'+m.subs.map(function(s){return '<li><a href="#">'+s+'</a></li>';}).join('')+'</ul>';
+
+h+='<section class="ctaband" id="cita"><div class="pic">'+motivoArt('portada','p')+'</div><div class="txt2">';
+h+='<h2>Podemos ayudarte</h2>';
+h+='<p>'+m.cta+' Trabajamos para aliviar el sufrimiento, paso a paso: empezamos con una valoración inicial, lo pensamos juntos y buscamos cómo resolverlo. '+D+'</p>';
+h+='<p style="font-size:15px">Presencial en Koiné, C/ Martín de Vargas 5, 28005 Madrid · u online por videollamada.</p>';
+h+='<a class="btn primary" href="'+CITA+'">Pide cita y lo vemos juntos <span aria-hidden="true">→</span></a>';
+h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
+h+='</div></section>';
+
+h+='<p class="sign">Escrito por <span class="gap">[Tu nombre completo]</span>, psicólogo sanitario, nº de colegiado <span class="gap">[ ]</span>. Última revisión: <span class="gap">[fecha]</span>.</p>';
+h+='<nav class="pn" aria-label="Otros motivos"><a href="motivo.html?m='+prev.slug+'">← Anterior<b>'+prev.name+'</b></a><a href="motivo.html?m='+next.slug+'" style="text-align:right">Siguiente →<b>'+next.name+'</b></a></nav>';
+h+='</div></main>';
+document.getElementById('main').innerHTML=h;
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

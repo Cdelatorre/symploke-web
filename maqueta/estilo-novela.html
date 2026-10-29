@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estilo novela gráfica · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Patrick+Hand&amp;display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+.page{max-width:1240px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:36px}
+.opt{border:1px solid var(--line);border-radius:26px;overflow:hidden;background:#fff}
+.opt svg{display:block;width:100%;height:auto}
+.opt .t{padding:20px 24px 24px;border-top:1px solid var(--line);background:var(--bg)}
+.opt h2{font-size:24px;margin:0 0 6px}
+.opt p{margin:0;color:var(--ink2);line-height:1.55;font-size:15px}
+.keys{margin-top:44px;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
+.keys div{border:1px solid var(--line);border-radius:18px;padding:16px 18px;font-size:15px;line-height:1.5;color:var(--ink2)}
+.keys b{display:block;color:var(--ink);margin-bottom:2px}
+@media (max-width:860px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="index.html#formatos">Terapia</a><a href="index.html#formatos">Grupos, talleres y charlas</a><a href="motivos.html">Motivos de consulta</a><a href="index.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="index.html#contacto">Pedir cita</a>
+</header>
+
+<main class="page">
+  <nav class="crumbs"><a href="estilos-ilustracion.html">Estilos de ilustración</a><span aria-hidden="true">›</span><span>Novela gráfica, línea Moreno Yanguas</span></nav>
+  <h1>Novela gráfica con un solo color</h1>
+  <p class="intro">Inspirado en el lenguaje de Laura Moreno Yanguas: entintado expresivo, grises, grano de puntos y un único color de acento. Aquí el acento es nuestro verde, y tiene un sentido: <strong>el gris es el problema; el verde, el «ya estoy mejor»</strong>.</p>
+
+  <div class="grid">
+    <article class="opt"><svg id="s1" viewBox="0 0 400 250" role="img" aria-label="Dos viñetas: antes en gris, después en verde"></svg>
+      <div class="t"><h2>1 · Viñeta antes / después</h2><p>Dos viñetas con bocadillo: en gris, «le doy vueltas a todo»; en verde, la calma. Para la cabecera de cada motivo.</p></div></article>
+    <article class="opt"><svg id="s2" viewBox="0 0 400 250" role="img" aria-label="Retrato en círculo con borde verde"></svg>
+      <div class="t"><h2>2 · Retrato en círculo</h2><p>Busto con grano de fondo y aro verde. Funciona muy bien pequeño: ideal para los recuadros de la portada.</p></div></article>
+    <article class="opt"><svg id="s3" viewBox="0 0 400 250" role="img" aria-label="Personaje de cuerpo entero con el logo en la camiseta"></svg>
+      <div class="t"><h2>3 · Personaje de cuerpo entero</h2><p>Figura completa, con el entretejido del logo en la camiseta. Para bandas de llamada a la acción.</p></div></article>
+    <article class="opt"><svg id="s4" viewBox="0 0 400 250" role="img" aria-label="Grupo de tres personas conversando"></svg>
+      <div class="t"><h2>4 · Grupo con bocadillo</h2><p>Varias personas en conversación, con la llamada a la acción en el bocadillo. Para pareja, familia, grupos y talleres.</p></div></article>
+  </div>
+
+  <div class="keys">
+    <div><b>Línea</b>Entintado oscuro de grosor variable, trazo suelto.</div>
+    <div><b>Color</b>Blanco, tres grises y un solo acento: verde claro del logo (y verde marca para detalles).</div>
+    <div><b>Textura</b>Grano de puntos en fondos y sombras, en vez de degradados.</div>
+    <div><b>Personajes</b>Cabeza grande, ojos de párpado pesado, pecas; gente corriente, diversa.</div>
+  </div>
+  <p class="intro" style="font-size:15px;margin-top:28px">Nota: son bocetos de estilo, no copias de su obra. Si este es el camino, una opción muy buena es encargarle las ilustraciones a ella o a una ilustradora con este lenguaje.</p>
+</main>
+
+<script>
+/* Bocetos «novela gráfica a un color»: cabezas, cuerpos, bocadillos y grano de puntos generados en SVG */
+(function(){
+'use strict';
+var INK='#16201B', W='#FFFFFF', G1='#EEF1EF', G2='#D3D9D6', G3='#9AA59F', A='#5FE3A8', A2='#009966', AP='#D6F7E9';
+var seed=7; function rnd(){seed=(seed*16807)%2147483647; return seed/2147483647;}
+function grain(id,color,op){ // patrón de puntitos irregulares
+  var d=''; for(var i=0;i<90;i++){d+='<circle cx="'+(rnd()*60).toFixed(1)+'" cy="'+(rnd()*60).toFixed(1)+'" r="'+(0.5+rnd()*0.9).toFixed(2)+'"/>';}
+  return '<pattern id="'+id+'" width="60" height="60" patternUnits="userSpaceOnUse"><g fill="'+color+'" opacity="'+op+'">'+d+'</g></pattern>';
+}
+function st(w){return ' stroke="'+INK+'" stroke-width="'+w+'" stroke-linecap="round" stroke-linejoin="round"';}
+var FACE='M-33 -8 C-33 -42 33 -42 33 -8 C33 22 18 40 0 40 C-18 40 -33 22 -33 -8Z';
+function eyes(m){
+  var o='';
+  [-1,1].forEach(function(s){
+    var x=14*s;
+    if(m==='happy'){o+='<path d="M'+(x-9)+' 3 Q'+x+' -8 '+(x+9)+' 3" fill="none"'+st(3.4)+'/>';return;}
+    o+='<ellipse cx="'+x+'" cy="0" rx="9" ry="9.5" fill="'+W+'"'+st(2.2)+'/>';
+    o+='<circle cx="'+(x+(m==='worried'?0:-1))+'" cy="'+(m==='worried'?1:3)+'" r="'+(m==='worried'?3.4:4.8)+'" fill="'+INK+'"/>';
+    if(m==='calm'){ // párpado pesado
+      o+='<path d="M'+(x-10.5)+' 1 Q'+x+' -15 '+(x+10.5)+' 1 Z" fill="'+W+'"/>';
+      o+='<path d="M'+(x-11)+' 1 Q'+x+' -4 '+(x+11)+' 1" fill="none"'+st(3.6)+'/>';
+      o+='<path d="M'+(x+11*s)+' 0 l'+(4*s)+' -3" fill="none"'+st(2.2)+'/>';
+    }
+    if(m==='worried')o+='<path d="M'+(x+9*s)+' -13 L'+(x-9*s)+' -20" fill="none"'+st(3)+'/>';   // ceja: el extremo interior más alto
+  });
+  return o;
+}
+function mouth(m){
+  if(m==='happy')return '<path d="M-10 18 Q0 32 10 18 Z" fill="'+INK+'"'+st(2)+'/><path d="M-5 25 Q0 29 5 25" fill="none" stroke="#E98A8A" stroke-width="3" stroke-linecap="round"/>';
+  if(m==='worried')return '<path d="M-7 24 Q-3 20 0 24 Q3 28 7 24" fill="none"'+st(2.4)+'/>';
+  return '<path d="M-6 21 Q0 26 6 21" fill="none"'+st(2.6)+'/>';
+}
+var HAIR={
+  long:{back:'M-40 -6 C-46 -56 46 -58 40 -6 L44 50 Q34 57 26 46 L30 8 L-30 8 L-26 46 Q-36 57 -44 50 Z',front:'M-36 -4 C-38 -46 38 -50 37 -6 Q24 -30 2 -31 Q-8 -14 -36 -4Z',lines:'M-33 16 L-34 42 M33 16 L35 42 M8 -26 Q18 -20 26 -10'},
+  bun:{back:'M-14 -48 a14 14 0 1 0 28 0 a14 14 0 1 0 -28 0Z',front:'M-35 -6 C-36 -46 36 -48 35 -6 Q20 -32 -2 -30 Q-20 -26 -35 -6Z',lines:'M-11 -40 Q0 -35 11 -40 M-6 -56 Q2 -58 6 -50'},
+  short:{back:'',front:'M-35 -8 C-37 -48 37 -50 35 -10 Q30 -22 22 -24 Q4 -32 -14 -26 Q-26 -22 -35 -8Z',lines:'M-10 -30 Q-2 -24 8 -30'},
+  beanie:{back:'M-40 -6 C-46 -50 46 -52 40 -6 L42 48 Q32 54 26 44 L30 8 L-30 8 L-26 44 Q-36 54 -42 48 Z',front:'M-38 -10 C-40 -56 40 -58 38 -10 Z',lines:'M-40 -16 L40 -16'}
+};
+function head(x,y,k,o){
+  var h=HAIR[o.hair], out='<g transform="translate('+x+' '+y+') scale('+k+')">';
+  if(h.back)out+='<path d="'+h.back+'" fill="'+o.hc+'"'+st(3)+'/>';
+  out+='<path d="'+FACE+'" fill="'+W+'"'+st(3)+'/>';
+  if(o.beard)out+='<path d="M-31 6 C-30 34 -16 44 0 44 C16 44 30 34 31 6 Q20 26 0 25 Q-20 26 -31 6Z" fill="'+o.hc+'"'+st(2.6)+'/>';
+  out+='<path d="'+h.front+'" fill="'+(o.hair==='beanie'?INK:o.hc)+'"'+st(3)+'/>';
+  out+='<path d="'+h.lines+'" fill="none"'+st(o.hair==='beanie'?2:1.8)+(o.hair==='beanie'?' stroke="'+G3+'"':'')+'/>';
+  out+=eyes(o.m)+'<path d="M-1 6 Q-5 12 1 13" fill="none"'+st(2.2)+'/>'+mouth(o.beard?'calm':o.m);
+  if(!o.beard)out+='<g fill="'+INK+'"><circle cx="-21" cy="12" r="1.1"/><circle cx="-17" cy="15" r="1.1"/><circle cx="-24" cy="16" r="1"/><circle cx="21" cy="12" r="1.1"/><circle cx="17" cy="15" r="1.1"/><circle cx="24" cy="16" r="1"/></g>';
+  if(o.blush)out+='<ellipse cx="-20" cy="15" rx="7" ry="4" fill="'+o.blush+'" opacity=".55"/><ellipse cx="20" cy="15" rx="7" ry="4" fill="'+o.blush+'" opacity=".55"/>';
+  if(o.glasses)out+='<g fill="none"'+st(3)+'><rect x="-26" y="-11" width="23" height="19" rx="7"/><rect x="3" y="-11" width="23" height="19" rx="7"/><path d="M-3 -3 Q0 -6 3 -3"/></g>';
+  return out+'</g>';
+}
+function bust(x,y,k,shirt,extra){
+  return '<g transform="translate('+x+' '+y+') scale('+k+')"><path d="M-8 34 H8 V54 H-8Z" fill="'+W+'"'+st(2.6)+'/><path d="M-50 112 C-50 72 -32 54 0 54 C32 54 50 72 50 112 Z" fill="'+shirt+'"'+st(3)+'/>'+(extra||'')+'</g>';
+}
+function bubble(x,y,w,h,tx,ty,text,size){ // bocadillo con rabito hacia (tx,ty)
+  var cx=x+w/2, cy=y+h/2;
+  return '<path d="M'+(cx-12)+' '+(y+h-2)+' L'+tx+' '+ty+' L'+(cx+10)+' '+(y+h-2)+'" fill="'+W+'"'+st(2.6)+'/>'+
+    '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="'+(h/2)+'" fill="'+W+'"'+st(2.6)+'/>'+
+    '<path d="M'+(cx-11)+' '+(y+h-3)+' L'+(cx+9)+' '+(y+h-3)+'" stroke="'+W+'" stroke-width="5"/>'+
+    '<text x="'+cx+'" y="'+(cy+size*0.36)+'" text-anchor="middle" font-family="Patrick Hand, cursive" font-size="'+size+'" fill="'+INK+'">'+text+'</text>';
+}
+function weave(x,y,k){ // el logo, para la camiseta
+  return '<g transform="translate('+x+' '+y+') scale('+k+') rotate(45)"><g'+st(0)+'><rect x="-18" y="-24" width="9" height="48" rx="2" fill="'+A2+'"/><rect x="-4.5" y="-24" width="9" height="48" rx="2" fill="'+A2+'"/><rect x="9" y="-24" width="9" height="48" rx="2" fill="'+A2+'"/><rect x="-24" y="-18" width="48" height="9" rx="2" fill="'+A+'"/><rect x="-24" y="-4.5" width="48" height="9" rx="2" fill="'+A+'"/><rect x="-24" y="9" width="48" height="9" rx="2" fill="'+A+'"/><rect x="-18" y="-18" width="9" height="9" fill="'+A2+'"/><rect x="9" y="-18" width="9" height="9" fill="'+A2+'"/><rect x="-4.5" y="-4.5" width="9" height="9" fill="'+A2+'"/><rect x="-18" y="9" width="9" height="9" fill="'+A2+'"/><rect x="9" y="9" width="9" height="9" fill="'+A2+'"/></g></g>';
+}
+function tube(d,w,fill){return '<path d="'+d+'" fill="none" stroke="'+INK+'" stroke-width="'+(w+5)+'" stroke-linecap="round"/><path d="'+d+'" fill="none" stroke="'+fill+'" stroke-width="'+w+'" stroke-linecap="round"/>';}
+
+/* 1 · viñeta antes / después */
+var s1='<defs>'+grain('ga',INK,.5)+grain('gb',A2,.55)+'<clipPath id="p1"><rect x="10" y="10" width="184" height="230"/></clipPath><clipPath id="p2"><rect x="206" y="10" width="184" height="230"/></clipPath></defs>';
+s1+='<rect width="400" height="250" fill="'+W+'"/>';
+s1+='<g clip-path="url(#p1)"><rect x="10" y="10" width="184" height="230" fill="'+G1+'"/><rect x="10" y="10" width="184" height="230" fill="url(#ga)" opacity=".5"/>'+
+  bust(102,150,1,G3)+head(102,150,1,{hair:'long',hc:G3,m:'worried'})+
+  '<path d="M70 92 c-8 -16 12 -24 20 -12 c8 12 -12 22 -16 8 c-4 -14 18 -20 26 -6 c8 14 -10 20 -12 8" fill="none"'+st(2.4)+'/>'+
+  '<path d="M140 98 l10 -6 M146 112 l12 -2 M60 112 l-12 -2" fill="none"'+st(2.4)+'/></g>';
+s1+=bubble(20,20,164,38,92,74,'¡LE DOY VUELTAS A TODO!',14);
+s1+='<g clip-path="url(#p2)"><rect x="206" y="10" width="184" height="230" fill="'+AP+'"/><rect x="206" y="10" width="184" height="230" fill="url(#gb)" opacity=".45"/>'+
+  '<circle cx="362" cy="104" r="16" fill="'+W+'"'+st(2.6)+'/><path d="M362 80 v-6 M386 104 h6 M379 87 l4 -4 M345 87 l-4 -4" fill="none"'+st(2.4)+'/>'+bust(298,150,1,A2)+head(298,150,1,{hair:'long',hc:A,m:'happy',blush:'#F3A6A0'})+'</g>';
+s1+=bubble(220,20,156,38,286,76,'UN PASO CADA VEZ',15);
+s1+='<rect x="10" y="10" width="184" height="230" fill="none"'+st(4)+'/><rect x="206" y="10" width="184" height="230" fill="none"'+st(4)+'/>';
+document.getElementById('s1').innerHTML=s1;
+
+/* 2 · retrato en círculo */
+var s2='<defs>'+grain('gc',INK,.55)+'<clipPath id="c2"><circle cx="200" cy="125" r="104"/></clipPath></defs><rect width="400" height="250" fill="'+W+'"/>';
+s2+='<circle cx="200" cy="125" r="104" fill="'+G1+'"/><g clip-path="url(#c2)"><rect width="400" height="250" fill="url(#gc)" opacity=".6"/>'+
+  bust(200,128,1.25,INK,'<path d="M-14 54 L0 80 L14 54" fill="'+W+'"'+st(2.4)+'/>')+head(200,128,1.25,{hair:'bun',hc:A,m:'calm',glasses:true})+'</g>';
+s2+='<circle cx="200" cy="125" r="104" fill="none" stroke="'+A2+'" stroke-width="12"/><circle cx="200" cy="125" r="111" fill="none"'+st(2.4)+'/><circle cx="200" cy="125" r="97" fill="none"'+st(2.4)+'/>';
+document.getElementById('s2').innerHTML=s2;
+
+/* 3 · cuerpo entero con el logo en la camiseta */
+var s3='<defs>'+grain('gd',INK,.5)+'</defs><rect width="400" height="250" fill="'+W+'"/>';
+s3+='<ellipse cx="200" cy="232" rx="70" ry="9" fill="url(#gd)"/><ellipse cx="200" cy="232" rx="70" ry="9" fill="'+G2+'" opacity=".5"/>';
+s3+=tube('M188 168 L184 224',16,INK)+tube('M212 168 L218 224',16,INK);
+s3+='<path d="M170 230 q-2 -10 12 -10 h10 q4 0 4 10 Z" fill="'+W+'"'+st(2.6)+'/><path d="M206 230 q0 -10 12 -10 h8 q10 0 10 10 Z" fill="'+W+'"'+st(2.6)+'/>';
+s3+=tube('M170 104 Q150 134 160 164',12,G2)+tube('M230 104 Q252 128 262 106',12,G2);
+s3+='<circle cx="160" cy="166" r="7" fill="'+W+'"'+st(2.4)+'/><circle cx="264" cy="102" r="7" fill="'+W+'"'+st(2.4)+'/>';
+s3+='<path d="M166 102 Q200 90 234 102 L238 176 Q200 184 162 176 Z" fill="'+G2+'"'+st(3)+'/>'+weave(200,136,0.55);
+s3+=head(200,62,0.95,{hair:'beanie',hc:A,m:'happy'});
+s3+='<path d="M276 84 l10 -8 M280 98 l12 0 M276 112 l10 6" fill="none"'+st(2.4)+'/>';
+document.getElementById('s3').innerHTML=s3;
+
+/* 4 · grupo con bocadillo */
+var s4='<defs>'+grain('ge',A2,.5)+'</defs><rect width="400" height="250" fill="'+W+'"/><rect x="0" y="196" width="400" height="54" fill="'+AP+'"/><rect x="0" y="196" width="400" height="54" fill="url(#ge)" opacity=".5"/><path d="M0 196 H400"'+st(3)+'/>';
+s4+=bust(92,150,0.95,G2)+head(92,150,0.95,{hair:'short',hc:G3,m:'calm',beard:true});
+s4+=bust(308,150,0.95,G1)+head(308,150,0.95,{hair:'short',hc:INK,m:'calm',glasses:true});
+s4+=bust(200,140,1.05,A2)+head(200,140,1.05,{hair:'bun',hc:A,m:'happy',blush:'#F3A6A0'});
+s4+=bubble(222,18,166,38,222,84,'¿LO PENSAMOS JUNTOS?',15);
+document.getElementById('s4').innerHTML=s4;
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

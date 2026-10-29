@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Motivos de consulta · Psicólogo en Madrid centro y online · Symploké</title>
+<meta name="description" content="Ansiedad, depresión, insomnio, pareja, TDAH y más: elige lo que más se parezca a lo que te pasa. Psicólogo en Madrid centro y terapia online.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Patrick+Hand&amp;display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+.page{max-width:1180px}
+.search{position:relative;max-width:640px;margin:32px 0 8px}
+.search input{width:100%;font:400 18px 'DM Sans',sans-serif;padding:18px 20px 18px 52px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--ink)}
+.search input:focus{outline:2px solid var(--brand);outline-offset:1px}
+.search svg{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:var(--muted)}
+.count{font-size:13px;color:var(--muted);min-height:20px;margin:0 0 32px}
+h2.sec{font-size:clamp(24px,2.4vw,30px);margin:0 0 18px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+#top12{margin-bottom:56px}
+.az{columns:4 220px;column-gap:40px;list-style:none;margin:0 0 56px;padding:0}
+.az li{break-inside:avoid;padding:0 0 16px}
+.az b{display:block;font-weight:600}
+.az span,.az a{font-size:14px}
+.az span{color:var(--muted)}
+.none{border:1px dashed var(--line);border-radius:18px;padding:22px 24px;margin:0 0 56px;color:var(--ink2);line-height:1.55}
+.none[hidden],section[hidden]{display:none}
+.unsure{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;background:var(--grey);border-radius:24px;padding:28px 32px}
+.unsure h2{font-size:26px;margin-bottom:6px}
+.unsure p{margin:0;color:var(--ink2)}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="index.html#formatos">Terapia</a><a href="index.html#formatos">Grupos, talleres y charlas</a><a class="on" href="motivos.html" aria-current="page">Motivos de consulta</a><a href="index.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="index.html#contacto">Pedir cita</a>
+</header>
+
+<main class="page">
+  <nav class="crumbs" aria-label="Migas de pan"><a href="index.html">Inicio</a><span aria-hidden="true">›</span><span>Motivos de consulta</span></nav>
+  <h1>Motivos de consulta</h1>
+  <p class="intro">Elige lo que más se parezca a lo que te pasa. Si no lo encuentras, búscalo.</p>
+
+  <div class="search" role="search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+    <input id="q" type="search" placeholder="Busca: ansiedad, no duermo, mi pareja, mi hijo…" aria-label="Buscar un motivo de consulta" autocomplete="off">
+  </div>
+  <p class="count" id="count" aria-live="polite"></p>
+
+  <section id="top12">
+    <h2 class="sec">Los más consultados <span class="draft">frases: borrador</span></h2>
+    <div class="mgrid" id="grid"></div>
+  </section>
+
+  <section id="az">
+    <h2 class="sec">Otros motivos, de la A a la Z</h2>
+    <ul class="az" id="azl"></ul>
+  </section>
+
+  <div class="none" id="none" hidden>No encuentro «<span id="qq"></span>» en la lista. Puede que no tenga un nombre claro, y no pasa nada: pide cita y lo pensamos juntos en la valoración inicial.</div>
+
+  <div class="unsure">
+    <div><h2>¿No sabes cuál es el tuyo?</h2><p>No hace falta ponerle nombre para pedir cita.</p></div>
+    <a class="btn primary" href="index.html#contacto">Pedir cita <span aria-hidden="true">→</span></a>
+  </div>
+</main>
+
+<footer class="site">
+  <div><h4>Symploké</h4><p><span class="gap">[Tu nombre completo]</span><br>Psicólogo sanitario · Nº de colegiado <span class="gap">[ ]</span><br><span class="gap">[Titulación]</span></p></div>
+  <div><h4>Consulta</h4><p>Koiné · C/ Martín de Vargas 5, 28005 Madrid<br>Registro sanitario <span class="gap">[ ]</span><br>Metro <span class="gap">[estaciones cercanas]</span> · Horario <span class="gap">[ ]</span></p></div>
+  <div><h4>Contacto</h4><p>Teléfono <span class="gap">[ ]</span><br>WhatsApp <span class="gap">[ ]</span><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p></div>
+  <div><h4>Menú</h4><p><a href="index.html#formatos">Terapia</a><br><a href="index.html#formatos">Grupos, talleres y charlas</a><br><a href="motivos.html">Motivos de consulta</a><br><a href="index.html#blog">Blog</a></p></div>
+  <div class="legal"><span>© 2026 Symploké</span><a href="#">Aviso legal</a><a href="#">Privacidad</a><a href="#">Cookies</a><span>Maqueta: los datos entre [ ] están pendientes.</span></div>
+</footer>
+
+<script src="motivos-data.js"></script>
+<script src="peeps-data.js"></script>
+<script src="ilustraciones.js"></script>
+<script>
+/* recuadros, lista A–Z y buscador sobre toda la lista (nombre, frase del síntoma y palabras con las que se busca) */
+(function(){
+'use strict';
+document.getElementById('grid').innerHTML=MOTIVOS.map(motivoCard).join('');
+document.getElementById('azl').innerHTML=OTROS.map(function(o){
+  var m=o[1]&&motivoBySlug(o[1]);
+  return '<li data-k="'+o[2]+'"><b>'+o[0]+'</b>'+(m?'<span>Lo trato dentro de </span><a href="motivo.html?m='+m.slug+'">'+m.name+'</a>':'<span>Página más cercana: </span><span class="verify">[por decidir]</span>')+'</li>';
+}).join('');
+var q=document.getElementById('q'), count=document.getElementById('count'), none=document.getElementById('none'), qq=document.getElementById('qq');
+var items=[].slice.call(document.querySelectorAll('.mcard, .az li'));
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[«»"']/g,'');}
+items.forEach(function(el){el._t=norm(el.textContent+' '+(el.getAttribute('data-k')||''));});
+function run(){
+  var words=norm(q.value).split(/\s+/).filter(Boolean), shown=0;
+  items.forEach(function(el){var ok=words.every(function(w){return el._t.indexOf(w)>-1;}); el.hidden=!ok; if(ok)shown++;});
+  document.getElementById('top12').hidden=!document.querySelector('.mcard:not([hidden])');
+  document.getElementById('az').hidden=!document.querySelector('.az li:not([hidden])');
+  count.textContent=words.length&&shown?shown+(shown===1?' motivo encontrado':' motivos encontrados'):'';
+  none.hidden=!(words.length&&!shown); qq.textContent=q.value.trim();
+}
+q.addEventListener('input',run);
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

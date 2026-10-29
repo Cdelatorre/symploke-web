@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estilos de ilustración · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+.page{max-width:1240px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:36px}
+.opt{border:1px solid var(--line);border-radius:26px;overflow:hidden;background:var(--bg)}
+.opt svg{display:block;width:100%;height:auto;background:#fff}
+.opt .t{padding:20px 24px 24px;border-top:1px solid var(--line)}
+.opt h2{font-size:26px;margin:0 0 6px;display:flex;align-items:baseline;gap:10px}
+.opt h2 span{font:600 13px 'DM Sans',sans-serif;color:var(--brandink)}
+.opt p{margin:0 0 8px;color:var(--ink2);line-height:1.55;font-size:15px}
+.opt .pc{font-size:14px;color:var(--muted);margin:0}
+.repos{margin-top:56px}
+.repos h2{font-size:30px;margin:0 0 8px}
+.repos ul{list-style:none;padding:0;margin:18px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.repos li{border:1px solid var(--line);border-radius:18px;padding:18px 20px;font-size:15px;line-height:1.5;color:var(--ink2)}
+.repos b{display:block;color:var(--ink);font-size:17px;margin-bottom:4px}
+.repos .lic{font-size:13px;color:var(--brandink);font-weight:600}
+@media (max-width:860px){ .grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="index.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="index.html#formatos">Terapia</a><a href="index.html#formatos">Grupos, talleres y charlas</a><a href="motivos.html">Motivos de consulta</a><a href="index.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="index.html#contacto">Pedir cita</a>
+</header>
+
+<main class="page">
+  <nav class="crumbs"><a href="index.html">Maqueta</a><span aria-hidden="true">›</span><span>Estilos de ilustración</span></nav>
+  <h1>Cuatro líneas de dibujo</h1>
+  <p class="intro">La misma escena —alguien que ya está bien: un café al sol, en un banco— dibujada en cuatro estilos con los verdes de la marca. Elige la línea y con ella hacemos las 13 ilustraciones (portada y 12 motivos).</p>
+
+  <div class="grid">
+    <article class="opt"><svg data-style="flat" viewBox="0 0 400 300" role="img" aria-label="Estilo 1, flat"></svg>
+      <div class="t"><h2>1 · Flat <span>formas planas, sin contorno</span></h2>
+      <p>Colores lisos, sin líneas. Limpio, moderno y muy legible en pequeño (recuadros de la portada).</p>
+      <p class="pc">A favor: encaja con una web «blanca y plana». En contra: es el estilo más visto en webs de salud.</p></div></article>
+
+    <article class="opt"><svg data-style="novela" viewBox="0 0 400 300" role="img" aria-label="Estilo 2, novela gráfica"></svg>
+      <div class="t"><h2>2 · Novela gráfica <span>entintado + tramas</span></h2>
+      <p>Contorno oscuro de grosor marcado, sombras planas y tramas de líneas, como un cómic adulto.</p>
+      <p class="pc">A favor: personalidad propia, más «autor». En contra: más carga visual; hay que cuidar que no quede infantil.</p></div></article>
+
+    <article class="opt"><svg data-style="linea" viewBox="0 0 400 300" role="img" aria-label="Estilo 3, línea continua"></svg>
+      <div class="t"><h2>3 · Línea fina <span>trazo verde + manchas de color</span></h2>
+      <p>Dibujo a línea, sin rellenos, con manchas suaves de verde claro detrás. Ligero y editorial.</p>
+      <p class="pc">A favor: muy elegante y sereno. En contra: menos impacto; en pequeño se pierde detalle.</p></div></article>
+
+    <article class="opt"><svg data-style="tejido" viewBox="0 0 400 300" role="img" aria-label="Estilo 4, flat con entretejido"></svg>
+      <div class="t"><h2>4 · Flat entretejido <span>papel recortado + trama del logo</span></h2>
+      <p>Formas planas como papel recortado, con sombra suave, y la ropa rellena con el entretejido del logo.</p>
+      <p class="pc">A favor: el más propio de Symploké; une la marca con las imágenes. En contra: la trama hay que dosificarla.</p></div></article>
+  </div>
+
+  <section class="repos">
+    <h2>Repositorios gratuitos en esta línea</h2>
+    <p class="intro" style="font-size:17px">Por si prefieres partir de ilustraciones hechas y adaptarlas a nuestros verdes. Revisa siempre la licencia antes de publicar.</p>
+    <ul>
+      <li><b>unDraw</b>Flat, con selector de color: se pone nuestro verde directamente. undraw.co<br><span class="lic">Uso libre, sin atribución</span></li>
+      <li><b>Open Peeps</b>Personas dibujadas a mano, línea de cómic, combinables. openpeeps.com<br><span class="lic">CC0</span></li>
+      <li><b>Humaaans</b>Personas flat combinables (ropa, poses, peinados). humaaans.com<br><span class="lic">CC0</span></li>
+      <li><b>Open Doodles</b>Línea suelta tipo boceto, muy ligera. opendoodles.com<br><span class="lic">CC0</span></li>
+      <li><b>Blush</b>Colecciones de varios ilustradores, recoloreables. blush.design<br><span class="lic">Gratis con atribución; de pago sin ella</span></li>
+      <li><b>Storyset</b>Escenas flat animables, de Freepik. storyset.com<br><span class="lic">Gratis con atribución</span></li>
+    </ul>
+  </section>
+</main>
+
+<script>
+/* La misma escena en cuatro estilos: se reutilizan las formas y cambia cómo se pintan */
+(function(){
+'use strict';
+var C={bg:'#EEF8F3',pale:'#C4F4E0',soft:'#8EE0BF',mid:'#52CFA0',brand:'#009966',dark:'#0E8A63',deep:'#10241C',skin:'#F1D3BE',white:'#FFFFFF'};
+var S=[ // [rol, tipo, datos, color base]
+  ['bg','rect',[0,0,400,300,0],C.bg],
+  ['sun','circle',[318,72,36],C.pale],
+  ['hill','path','M0 200 Q90 150 190 188 T400 176 V300 H0Z',C.pale],
+  ['ground','path','M0 236 Q200 218 400 238 V300 H0Z',C.soft],
+  ['leaf','path','M80 192 C60 164 50 142 62 118 C80 138 86 162 80 192Z',C.mid],
+  ['leaf','path','M80 192 C96 160 108 144 126 140 C122 166 104 182 80 192Z',C.brand],
+  ['leaf','path','M80 192 C76 160 82 130 98 106 C106 136 98 166 80 192Z',C.mid],
+  ['pot','path','M56 190 H104 L97 234 H63 Z',C.dark],
+  ['bench','path','M150 146 H326 V158 H150 Z',C.dark],
+  ['bench','path','M150 196 H326 V208 H150 Z',C.dark],
+  ['bench','path','M160 208 H170 V240 H160 Z M306 208 H316 V240 H306 Z M168 158 H176 V196 H168 Z M300 158 H308 V196 H300 Z',C.deep],
+  ['pants','path','M252 176 L198 178 Q186 180 188 192 L190 236 L207 236 L208 198 L252 198 Z',C.deep],
+  ['shoe','path','M184 236 H210 Q217 236 217 243 H182 Q182 236 184 236 Z',C.brand],
+  ['top','path','M236 118 Q258 111 267 128 L271 184 Q252 190 231 184 L228 134 Q228 122 236 118 Z',C.brand],
+  ['neck','path','M242 102 H254 V120 H242 Z',C.skin],
+  ['hairback','path','M232 92 Q230 70 250 70 Q272 70 271 96 Q271 116 262 124 L258 98 Z',C.deep],
+  ['head','circle',[248,92,17],C.skin],
+  ['hair','path','M231 90 Q232 72 250 71 Q268 72 268 90 Q258 80 246 82 Q238 83 231 90 Z',C.deep],
+  ['arm','path','M244 126 Q226 134 216 150 Q214 157 221 159 Q233 149 250 141 Z',C.mid],
+  ['hand','circle',[217,153,6],C.skin],
+  ['cup','path','M203 140 H221 V155 Q221 162 214 162 H210 Q203 162 203 155 Z',C.white],
+  ['face','line','M238 91 Q241 93 244 91 M237 100 Q241 103 245 100',C.deep],
+  ['steam','line','M208 132 Q204 126 208 120 M215 132 Q211 126 215 120',C.dark]
+];
+function shape(s,attrs){
+  var a=''; for(var k in attrs)if(attrs[k]!=null)a+=' '+k+'="'+attrs[k]+'"';
+  if(s[1]==='rect')return '<rect x="'+s[2][0]+'" y="'+s[2][1]+'" width="'+s[2][2]+'" height="'+s[2][3]+'" rx="'+s[2][4]+'"'+a+'/>';
+  if(s[1]==='circle')return '<circle cx="'+s[2][0]+'" cy="'+s[2][1]+'" r="'+s[2][2]+'"'+a+'/>';
+  return '<path d="'+s[2]+'"'+a+'/>';
+}
+var STY={
+  flat:function(){
+    return S.map(function(s){
+      if(s[1]==='line')return shape(s,{fill:'none',stroke:s[3],'stroke-width':2,'stroke-linecap':'round'});
+      return shape(s,{fill:s[3]});
+    }).join('');
+  },
+  novela:function(id){
+    var defs='<defs><pattern id="h'+id+'" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="'+C.deep+'" stroke-width="1.4"/></pattern></defs>';
+    var o=S.map(function(s){
+      var r=s[0];
+      if(r==='bg')return shape(s,{fill:'#F7FCF9'});
+      if(s[1]==='line')return shape(s,{fill:'none',stroke:C.deep,'stroke-width':2.4,'stroke-linecap':'round'});
+      var fill=s[3]; if(r==='hill')fill=C.bg; if(r==='ground')fill=C.pale; if(r==='sun')fill='#E9FBF2';
+      var out=shape(s,{fill:fill,stroke:C.deep,'stroke-width':(r==='hill'||r==='ground'||r==='sun')?2:2.8,'stroke-linejoin':'round'});
+      if(r==='top'||r==='pants'||r==='pot'||r==='hairback')out+=shape(s,{fill:'url(#h'+id+')',opacity:r==='top'?.35:.22});
+      return out;
+    }).join('');
+    /* sombra plana del lado derecho + rayos de sol entintados */
+    var rays=''; for(var i=0;i<10;i++){var a=i*Math.PI/5; rays+='<path d="M'+(318+Math.cos(a)*44).toFixed(1)+' '+(72+Math.sin(a)*44).toFixed(1)+' L'+(318+Math.cos(a)*56).toFixed(1)+' '+(72+Math.sin(a)*56).toFixed(1)+'" stroke="'+C.deep+'" stroke-width="2.4" stroke-linecap="round"/>';}
+    return defs+o+rays+'<ellipse cx="236" cy="246" rx="96" ry="6" fill="'+C.deep+'" opacity=".18"/>';
+  },
+  linea:function(){
+    var blobs='<circle cx="250" cy="130" r="70" fill="'+C.pale+'" opacity=".75"/><circle cx="86" cy="170" r="42" fill="'+C.pale+'" opacity=".6"/><circle cx="318" cy="72" r="26" fill="'+C.soft+'" opacity=".55"/>';
+    var solid={pants:1,shoe:1,top:1,neck:1,hairback:1,head:1,hair:1,arm:1,hand:1,cup:1,pot:1,bench:1};
+    var o=S.map(function(s){
+      var r=s[0];
+      if(r==='bg')return shape(s,{fill:'#FFFFFF'})+blobs;   // manchas de color detrás del dibujo
+      if(r==='hill')return '';
+      return shape(s,{fill:solid[r]?'#FFFFFF':'none',stroke:C.dark,'stroke-width':r==='ground'?1.6:2.2,'stroke-linejoin':'round','stroke-linecap':'round'});
+    }).join('');
+    return o;
+  },
+  tejido:function(id){
+    var p='<pattern id="w'+id+'" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'+
+      '<rect width="16" height="16" fill="'+C.brand+'"/><rect x="0" y="2" width="16" height="5" fill="'+C.mid+'"/><rect x="2" y="0" width="5" height="16" fill="'+C.dark+'"/><rect x="2" y="2" width="5" height="5" fill="'+C.mid+'"/>'+
+      '<rect x="0" y="10" width="16" height="5" fill="'+C.mid+'"/><rect x="10" y="0" width="5" height="16" fill="'+C.dark+'"/><rect x="0" y="10" width="7" height="5" fill="'+C.mid+'"/></pattern>'+
+      '<filter id="s'+id+'" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="2" dy="3" stdDeviation="1.6" flood-color="#0B3A28" flood-opacity=".22"/></filter>';
+    var o=S.map(function(s){
+      var r=s[0];
+      if(s[1]==='line')return shape(s,{fill:'none',stroke:s[3],'stroke-width':2,'stroke-linecap':'round'});
+      var fill=s[3]; if(r==='top'||r==='pot')fill='url(#w'+id+')';
+      return shape(s,{fill:fill,filter:(r==='bg')?null:'url(#s'+id+')'});
+    }).join('');
+    return '<defs>'+p+'</defs>'+o;
+  }
+};
+[].forEach.call(document.querySelectorAll('svg[data-style]'),function(svg,i){svg.innerHTML=STY[svg.getAttribute('data-style')](i);});
+})();
+</script>
+<script src="site.js"></script>
+</body>
+</html>

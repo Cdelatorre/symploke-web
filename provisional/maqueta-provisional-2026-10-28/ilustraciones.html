@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ilustraciones · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Patrick+Hand&amp;display=swap">
+<link rel="stylesheet" href="base.css">
+<style>
+.page{max-width:1300px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:22px;margin-top:32px}
+.gal figure{margin:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff}
+.gal svg{display:block;width:100%;height:auto}
+.gal figcaption{padding:14px 18px;border-top:1px solid var(--line);font-size:15px;color:var(--ink2);background:var(--bg)}
+.gal figcaption b{color:var(--ink)}
+</style>
+</head>
+<body>
+<main class="page">
+  <nav class="crumbs"><a href="index.html">Maqueta</a><span aria-hidden="true">›</span><a href="estilo-novela.html">Estilo novela gráfica</a><span aria-hidden="true">›</span><span>Ilustraciones</span></nav>
+  <h1>Las 13 ilustraciones</h1>
+  <p class="intro">Personajes de Open Peeps (Pablo Stanley, licencia CC0) recoloreados con nuestros verdes: oscuro para el trazo, claros para los rellenos. Cada escena se basa en la foto que tenía el motivo.</p>
+  <div class="gal" id="gal"></div>
+</main>
+<script src="motivos-data.js"></script>
+<script src="peeps-data.js"></script>
+<script src="ilustraciones.js"></script>
+<script>
+var items=[['portada','Portada · «Podemos ayudarte»']].concat(MOTIVOS.map(function(m){return [m.slug,m.name];}));
+var only=/[?&]solo=([a-z,]+)/.exec(location.search);   // ?solo=insomnio,pareja muestra solo esas, en grande (para revisar)
+if(only){var keep=only[1].split(','); items=items.filter(function(it){return keep.indexOf(it[0])>-1;}); document.getElementById('gal').style.gridTemplateColumns='repeat(2,1fr)';}
+document.getElementById('gal').innerHTML=items.map(function(it,i){return '<figure>'+ILUS[it[0]]('g'+i)+'<figcaption><b>'+it[1]+'</b></figcaption></figure>';}).join('');
+</script>
+</body>
+</html>
