@@ -46,14 +46,16 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:72px 0 10px}
 @media (max-width:700px){ #formatos{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width:460px){ #formatos{grid-template-columns:1fr} }
 .card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
-.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,60,40,.10)}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}   /* borde más grueso sin mover el contenido */
 .card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
 .card .img svg{display:block;width:100%;height:100%}
-.card .txt{display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
 .card h3{font-size:21px;line-height:1.1}
 .card p{margin:0;font-size:15px;line-height:1.38;color:var(--ink2)}
-.card .go{margin-top:4px;color:var(--brandink);font-weight:600;font-size:14px}
+.card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
 .band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);margin-top:80px;background:var(--soft);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+.band{transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.band:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 14px 34px rgba(0,60,40,.12)}
 .band .pic{background:#fff;min-height:260px;position:relative}
 .band .pic svg{position:absolute;inset:0;width:100%;height:100%}
 .band .t{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:14px}
@@ -100,7 +102,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     <div class="t">
       <h2>Podemos ayudarte</h2>
       <p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una valoración inicial: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>
-      <a class="btn primary" href="contacto.html">Pide cita y lo vemos juntos <span aria-hidden="true">→</span></a>
+      <a class="btn primary" href="contacto.html">Pide cita y lo vemos juntos <span class="arr" aria-hidden="true">→</span></a>
     </div>
   </section>
 </main>
@@ -114,10 +116,10 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
 /* formatos y motivos con sus ilustraciones; los motivos enlazan a su página en la maqueta */
 (function(){
   'use strict';
-  function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+'</span>':'')+'</span></a>';}
+  function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+' <span class="arr" aria-hidden="true">→</span></span>':'')+'</span></a>';}
   var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]'],['talleres','Talleres','[Qué talleres ofreces]'],['charlas','Charlas','[Para quién y sobre qué]']];
-  document.getElementById('formatos').innerHTML=F.map(function(x){return card('contacto.html',x[0],x[1],x[2],'Pedir cita →');}).join('');
-  document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card('maqueta/motivo.html?m='+m.slug,m.slug,m.name,'«'+m.sym+'»','Ver más →');}).join('');
+  document.getElementById('formatos').innerHTML=F.map(function(x){return card('contacto.html',x[0],x[1],x[2],'Pedir cita');}).join('');
+  document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card('motivo.html?m='+m.slug,m.slug,m.name,'«'+m.sym+'»','Ver más');}).join('');
   document.getElementById('bandpic').innerHTML=ILUS.portada('band');
 })();
 </script>

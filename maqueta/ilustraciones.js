@@ -3,7 +3,7 @@
    Necesita peeps-data.js. ILUS[slug](uid) devuelve un <svg> de 400×250. */
 (function(){
 'use strict';
-var DK='#0E4A36', W='#FFFFFF', F1='#E6F6EE', F2='#CDEEDD', F3='#A9E1C6', BLOB='#E3F5EC', MID='#5FBF95';
+var DK='#0E4A36', W='#FFFFFF', F1='#E6F6EE', F2='#CDEEDD', F3='#A9E1C6', BLOB='#BFEBD7', MID='#5FBF95'; /* mancha de fondo en verde apagado; al pasar el ratón se enciende al acento del logo */
 
 /* ---------- personajes ---------- */
 function head(o){
@@ -26,7 +26,7 @@ function measure(pose){ // caja de la postura con una cabeza estándar (se mide 
 /* coloca un personaje: x = centro, y = suelo (pies), h = altura en px; flip = 1 mira a su izquierda (original), -1 al revés */
 function peep(o){
   var b=measure(o.pose), sc=o.h/b.h, fl=o.flip||1;
-  return '<g class="pp" transform="translate('+o.x+' '+o.y+') scale('+(fl*sc).toFixed(4)+' '+sc.toFixed(4)+') translate('+(-(b.x+b.w/2)).toFixed(1)+' '+(-(b.y+b.h)).toFixed(1)+')">'+colour(PEEPS.pose[o.pose]+head(o),o.fill)+'</g>';
+  return '<g class="pp" transform="translate('+o.x+' '+o.y+') scale('+(fl*sc).toFixed(4)+' '+sc.toFixed(4)+') translate('+(-(b.x+b.w/2)).toFixed(1)+' '+(-(b.y+b.h)).toFixed(1)+')">'+colour(PEEPS.pose[o.pose]+head(o),W)+'</g>';
 }
 
 /* ---------- objetos, en el mismo trazo ---------- */
