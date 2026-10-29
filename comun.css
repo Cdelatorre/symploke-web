@@ -1,0 +1,38 @@
+/* Symploké · piezas comunes a todas las páginas: scroll suave (Lenis), aparición al hacer scroll,
+   color de acento en los dibujos al pasar por las tarjetas y pie verde */
+
+/* ---------- Lenis ---------- */
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto !important}
+.lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+.lenis.lenis-stopped{overflow:hidden}
+
+/* ---------- aparición al hacer scroll ---------- */
+@keyframes rvIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+.rv:not(.in){opacity:0}
+.rv.in{animation:rvIn 1s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:var(--d,0s)}
+@media (prefers-reduced-motion: reduce){
+  .rv:not(.in){opacity:1}
+  .rv.in{animation:none}
+}
+
+/* ---------- acento verde del logo en el dibujo de la tarjeta que se señala ----------
+   data-hover en <html>: ropa (personajes), entorno (plantas, muebles y objetos),
+   mancha (la mancha de fondo) o fondo (todo el fondo del dibujo) */
+:root{--acc:#5FE3A8}
+:is(.card,.qwin) svg *{transition:fill .35s ease}
+[data-hover="ropa"] :is(.card,.qwin):hover .pp :is([fill="#E6F6EE"],[fill="#CDEEDD"],[fill="#FFFFFF"]),
+[data-hover="entorno"] :is(.card,.qwin):hover :is([fill="#CDEEDD"],[fill="#A9E1C6"],[fill="#5FBF95"]):not(.pp *),
+[data-hover="mancha"] :is(.card,.qwin):hover .bg,
+[data-hover="fondo"] :is(.card,.qwin):hover svg > rect[width="400"]{fill:var(--acc)}
+[data-hover="fondo"] :is(.card,.qwin):hover .bg{fill:#E6F6EE}
+
+/* selector para probar las variantes del acento (página de terapia) */
+.hvpick{position:fixed;right:16px;bottom:16px;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:6px;max-width:calc(100vw - 32px);padding:8px 10px;border-radius:18px;background:var(--bg);border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,40,25,.14);font:500 13px/1 'DM Sans',sans-serif;color:var(--ink2)}
+.hvpick span{padding:0 4px}
+.hvpick button{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:999px;padding:8px 12px;cursor:pointer}
+.hvpick button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--btntext)}
+
+/* ---------- pie ---------- */
+footer{background:#007A50 !important;color:#FFFFFF !important;border-top:0 !important}
+footer a{color:inherit}

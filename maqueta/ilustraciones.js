@@ -26,13 +26,13 @@ function measure(pose){ // caja de la postura con una cabeza estándar (se mide 
 /* coloca un personaje: x = centro, y = suelo (pies), h = altura en px; flip = 1 mira a su izquierda (original), -1 al revés */
 function peep(o){
   var b=measure(o.pose), sc=o.h/b.h, fl=o.flip||1;
-  return '<g transform="translate('+o.x+' '+o.y+') scale('+(fl*sc).toFixed(4)+' '+sc.toFixed(4)+') translate('+(-(b.x+b.w/2)).toFixed(1)+' '+(-(b.y+b.h)).toFixed(1)+')">'+colour(PEEPS.pose[o.pose]+head(o),o.fill)+'</g>';
+  return '<g class="pp" transform="translate('+o.x+' '+o.y+') scale('+(fl*sc).toFixed(4)+' '+sc.toFixed(4)+') translate('+(-(b.x+b.w/2)).toFixed(1)+' '+(-(b.y+b.h)).toFixed(1)+')">'+colour(PEEPS.pose[o.pose]+head(o),o.fill)+'</g>';
 }
 
 /* ---------- objetos, en el mismo trazo ---------- */
 function st(w){return ' stroke="'+DK+'" stroke-width="'+(w||2.4)+'" stroke-linecap="round" stroke-linejoin="round"';}
 function p(d,fill,w){return '<path d="'+d+'" fill="'+(fill||'none')+'"'+st(w)+'/>';}
-function blob(cx,cy,rx,ry){return '<path d="M'+(cx-rx)+' '+cy+' C'+(cx-rx)+' '+(cy-ry*1.05)+' '+(cx-rx*0.2)+' '+(cy-ry)+' '+(cx+rx*0.15)+' '+(cy-ry*0.95)+' C'+(cx+rx*0.85)+' '+(cy-ry*0.9)+' '+(cx+rx*1.02)+' '+(cy-ry*0.2)+' '+(cx+rx)+' '+(cy+ry*0.15)+' C'+(cx+rx*0.96)+' '+(cy+ry*0.9)+' '+(cx+rx*0.2)+' '+(cy+ry)+' '+(cx-rx*0.25)+' '+(cy+ry*0.95)+' C'+(cx-rx*0.9)+' '+(cy+ry*0.9)+' '+(cx-rx)+' '+(cy+ry*0.5)+' '+(cx-rx)+' '+cy+'Z" fill="'+BLOB+'"/>';}
+function blob(cx,cy,rx,ry){return '<path d="M'+(cx-rx)+' '+cy+' C'+(cx-rx)+' '+(cy-ry*1.05)+' '+(cx-rx*0.2)+' '+(cy-ry)+' '+(cx+rx*0.15)+' '+(cy-ry*0.95)+' C'+(cx+rx*0.85)+' '+(cy-ry*0.9)+' '+(cx+rx*1.02)+' '+(cy-ry*0.2)+' '+(cx+rx)+' '+(cy+ry*0.15)+' C'+(cx+rx*0.96)+' '+(cy+ry*0.9)+' '+(cx+rx*0.2)+' '+(cy+ry)+' '+(cx-rx*0.25)+' '+(cy+ry*0.95)+' C'+(cx-rx*0.9)+' '+(cy+ry*0.9)+' '+(cx-rx)+' '+(cy+ry*0.5)+' '+(cx-rx)+' '+cy+'Z" class="bg" fill="'+BLOB+'"/>';}
 function ground(x1,x2,y){return p('M'+x1+' '+y+' H'+x2,null,2.4);}
 function sun(x,y,r){var s='<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+F2+'"'+st(2.2)+'/>';for(var i=0;i<8;i++){var a=i*Math.PI/4;s+=p('M'+(x+Math.cos(a)*(r+6)).toFixed(1)+' '+(y+Math.sin(a)*(r+6)).toFixed(1)+' L'+(x+Math.cos(a)*(r+12)).toFixed(1)+' '+(y+Math.sin(a)*(r+12)).toFixed(1),null,2.2);}return s;}
 function tree(x,y,h,r){return p('M'+x+' '+y+' V'+(y-h),null,3.2)+p('M'+x+' '+(y-h*0.55)+' l12 -12',null,2.4)+'<circle cx="'+x+'" cy="'+(y-h-r*0.55)+'" r="'+r+'" fill="'+F3+'"'+st(2.4)+'/>'+p('M'+(x-r*0.4)+' '+(y-h-r*0.7)+' q6 -6 12 0',null,1.8);}
@@ -181,6 +181,30 @@ ILUS.charlas=function(){
   return svg(blob(220,124,170,92)+p('M40 30 H210 V120 H40 Z',W,2.4)+p('M58 52 H150 M58 72 H190 M58 92 H130',null,2.2)+
     p('M352 228 V150 M344 150 h16',null,2.6)+peep({pose:'standing/EasingWB',hair:'Bun',face:'SmileBig',x:300,y:228,h:176,fill:F1,flip:-1})+ground(260,380,228)+aud,
     'Charla: una ponente habla ante el público');
+};
+
+/* ---------- página de contacto: retrato grande con flechas a mano que señalan cómo trabajamos ---------- */
+function arrowHead(x,y,deg,cls){
+  var a=deg*Math.PI/180, l=16, s='';
+  [-0.5,0.5].forEach(function(o){s+='M'+x+' '+y+' L'+(x-Math.cos(a+o)*l).toFixed(1)+' '+(y-Math.sin(a+o)*l).toFixed(1)+' ';});
+  return '<path d="'+s+'" class="'+cls+'" fill="none" stroke-width="4" stroke-linecap="round"/>';
+}
+function arrow(d,x,y,deg,cls){return '<path d="'+d+'" class="'+cls+'" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>'+arrowHead(x,y,deg,cls);}
+function label(x,y,anchor,t,s){return '<text x="'+x+'" y="'+y+'" text-anchor="'+anchor+'" fill="'+DK+'"><tspan font-family="DM Serif Display, Georgia, serif" font-size="30">'+t+'</tspan><tspan x="'+x+'" dy="24" font-family="DM Sans, sans-serif" font-size="15">'+s+'</tspan></text>';}
+ILUS.contacto=function(){
+  return '<svg viewBox="0 0 600 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Psicólogo sonriente rodeado de flechas dibujadas a mano: escucha, sin juicios, confidencial, a tu ritmo">'+
+    '<style>.ar{stroke:'+DK+'}.ac{stroke:#5FE3A8}</style>'+
+    blob(300,420,230,200)+
+    peep({pose:'bust/Sweater',hair:'ShortCurly',face:'Smile',beard:'Full',glasses:'GlassRound',x:300,y:660,h:520,fill:F1})+
+    label(16,92,'start','Escucha','sin prisas, con atención')+
+    arrow('M30 150 C80 130 128 140 132 168 C136 192 104 196 100 176 C96 152 140 140 196 196',196,196,45,'ar')+
+    label(16,300,'start','Sin juicios','lo que te pasa, tal cual')+
+    arrow('M28 372 C100 376 160 354 196 310',196,310,-51,'ar')+
+    label(584,92,'end','Confidencial','lo que hablamos, se queda aquí')+
+    arrow('M570 146 C530 150 470 182 420 228',420,228,138,'ar')+
+    label(584,300,'end','A tu ritmo','presencial u online')+
+    arrow('M576 384 C540 396 504 384 512 360 C520 336 552 350 538 368 C522 388 470 374 420 350',420,350,205,'ac')+
+    '</svg>';
 };
 
 window.ILUS=ILUS;

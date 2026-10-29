@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Terapia · Symploké</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<link rel="stylesheet" href="comun.css">
 <style>
 :root{
   color-scheme:light dark;
@@ -36,9 +37,9 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;c
 .btn.primary{background:var(--brand);color:var(--btntext)}
 .btn.small{font-size:15px;padding:12px 22px}
 main{max-width:1240px;margin:0 auto;padding:24px clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
-.intro h1{font-size:clamp(44px,5vw,72px);line-height:1.04;letter-spacing:-.5px;margin:20px 0 14px}
-.lead{font-size:clamp(16px,1.3vw,19px);line-height:1.55;color:var(--ink2);margin:0;max-width:640px}
-h2{font-size:clamp(28px,3vw,42px);margin:72px 0 10px}
+.intro h1{font-size:clamp(44px,5vw,72px);line-height:.98;letter-spacing:-.5px;margin:20px 0 14px}
+.lead{font-size:clamp(16px,1.3vw,19px);line-height:1.42;color:var(--ink2);margin:0;max-width:640px}
+h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:72px 0 10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:26px}
 #formatos{grid-template-columns:repeat(5,minmax(0,1fr))}
 @media (max-width:1100px){ #formatos{grid-template-columns:repeat(3,minmax(0,1fr))} }
@@ -49,15 +50,15 @@ h2{font-size:clamp(28px,3vw,42px);margin:72px 0 10px}
 .card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
 .card .img svg{display:block;width:100%;height:100%}
 .card .txt{display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
-.card h3{font-size:21px}
-.card p{margin:0;font-size:15px;line-height:1.5;color:var(--ink2)}
+.card h3{font-size:21px;line-height:1.1}
+.card p{margin:0;font-size:15px;line-height:1.38;color:var(--ink2)}
 .card .go{margin-top:4px;color:var(--brandink);font-weight:600;font-size:14px}
 .band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);margin-top:80px;background:var(--soft);border:1px solid var(--line);border-radius:28px;overflow:hidden}
 .band .pic{background:#fff;min-height:260px;position:relative}
 .band .pic svg{position:absolute;inset:0;width:100%;height:100%}
 .band .t{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;justify-content:center;gap:14px}
 .band h2{margin:0}
-.band p{margin:0;color:var(--ink2);line-height:1.55}
+.band p{margin:0;color:var(--ink2);line-height:1.42}
 .band .btn{align-self:flex-start}
 footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px;border-top:1px solid var(--line)}
 @media (max-width:860px){
@@ -77,7 +78,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     Symploké
   </a>
   <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a class="on" href="terapia.html" aria-current="page">Terapia</a><a href="test1.html#blog">Blog</a></nav>
-  <a class="btn primary small" href="test1.html#contacto">Pedir primera cita</a>
+  <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
 </header>
 
 <main>
@@ -99,10 +100,11 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     <div class="t">
       <h2>Podemos ayudarte</h2>
       <p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una valoración inicial: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>
-      <a class="btn primary" href="test1.html#contacto">Pide cita y lo vemos juntos <span aria-hidden="true">→</span></a>
+      <a class="btn primary" href="contacto.html">Pide cita y lo vemos juntos <span aria-hidden="true">→</span></a>
     </div>
   </section>
 </main>
+<div data-hvpick></div>
 <footer>© [Año] Symploké · [Tu nombre]. Prototipo de diseño. Ilustraciones: Open Peeps (Pablo Stanley, CC0), en los verdes de la marca.</footer>
 
 <script src="maqueta/motivos-data.js"></script>
@@ -114,10 +116,12 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
   'use strict';
   function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+'</span>':'')+'</span></a>';}
   var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]'],['talleres','Talleres','[Qué talleres ofreces]'],['charlas','Charlas','[Para quién y sobre qué]']];
-  document.getElementById('formatos').innerHTML=F.map(function(x){return card('test1.html#contacto',x[0],x[1],x[2],'Pedir cita →');}).join('');
+  document.getElementById('formatos').innerHTML=F.map(function(x){return card('contacto.html',x[0],x[1],x[2],'Pedir cita →');}).join('');
   document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card('maqueta/motivo.html?m='+m.slug,m.slug,m.name,'«'+m.sym+'»','Ver más →');}).join('');
   document.getElementById('bandpic').innerHTML=ILUS.portada('band');
 })();
 </script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="comun.js"></script>
 </body>
 </html>
