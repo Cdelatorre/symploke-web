@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipografía del logo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Fraunces:wght@400;600&amp;family=Young+Serif&amp;family=Newsreader:wght@400;600&amp;family=Cormorant+Garamond:wght@500;700&amp;family=GFS+Didot&amp;family=Marcellus&amp;family=Libre+Caslon+Display&amp;family=Instrument+Serif&amp;family=Gloock&amp;family=Nunito:wght@500;700&amp;family=Quicksand:wght@500;700&amp;family=Outfit:wght@400;600&amp;family=Figtree:wght@500;700&amp;family=Plus+Jakarta+Sans:wght@500;700&amp;family=Manrope:wght@500;700&amp;display=swap">
+<style>
+/* Symploké · banco de pruebas para la tipografía del nombre junto al símbolo tejido */
+:root{
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+
+/* ---------- cabecera de muestra (igual que la de test1.html) ---------- */
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:24px;height:96px;padding:0 clamp(16px,4.5vw,64px);background:var(--bg);box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;gap:14px;font-size:38px;line-height:1;color:var(--word);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.btn{display:inline-flex;align-items:center;font:600 15px/1 'DM Sans',sans-serif;padding:12px 22px;border-radius:999px;background:var(--brand);color:var(--btntext);white-space:nowrap}
+.nav .who{position:absolute;left:clamp(16px,4.5vw,64px);bottom:6px;font-size:11px;letter-spacing:.4px;color:var(--ink2);opacity:.7}
+@media (max-width:860px){
+  .nav{height:72px;gap:12px}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:44px;height:44px}
+  .links{display:none}
+  .btn{margin-left:auto;padding:10px 14px;font-size:14px}
+}
+
+/* ---------- controles ---------- */
+.wrap{max-width:1240px;margin:0 auto;padding:28px clamp(16px,4.5vw,64px) 64px}
+h1{font:400 clamp(28px,3vw,40px)/1.1 'DM Serif Display',Georgia,serif;margin:0 0 8px}
+.intro{color:var(--ink2);max-width:680px;line-height:1.5;margin:0 0 22px}
+.controls{display:flex;flex-wrap:wrap;gap:14px 26px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--soft);margin-bottom:28px}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ctl > span{font-size:13px;font-weight:600;color:var(--ink2);margin-right:4px}
+.ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 12px;font-size:14px;cursor:pointer}
+.ctl button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--btntext)}
+.ctl input[type=range]{width:130px;accent-color:var(--brand)}
+.ctl output{font-size:13px;color:var(--ink2);min-width:58px}
+
+/* ---------- tarjetas ---------- */
+h2{font:600 13px/1 'DM Sans',sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:var(--brandink);margin:34px 0 6px}
+.gnote{color:var(--ink2);font-size:15px;margin:0 0 14px;max-width:720px;line-height:1.45}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;background:var(--bg)}
+.card.sel{border-color:var(--brand);box-shadow:0 0 0 2px var(--brand)}
+.stage{display:flex;align-items:center;justify-content:center;min-height:190px;padding:26px 18px;background:var(--soft)}
+.lock{display:flex;align-items:center;gap:.32em;font-size:clamp(40px,5vw,60px);line-height:1;color:var(--word)}
+.lock svg{width:1.55em;height:1.55em;flex:none}
+[data-layout="apilada"] .lock{flex-direction:column;gap:.18em}
+[data-layout="apilada"] .lock svg{width:1.9em;height:1.9em}
+[data-layout="solo"] .lock svg{display:none}
+.word{white-space:nowrap}
+.meta{padding:14px 18px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.name{font-weight:600;font-size:17px}
+.tag{font-size:12px;font-weight:600;padding:4px 9px;border-radius:999px;background:var(--brand);color:var(--btntext)}
+.tag.now{background:transparent;border:1px solid var(--line);color:var(--ink2)}
+.why{margin:0;color:var(--ink2);font-size:15px;line-height:1.45}
+.small{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-top:6px;color:var(--word)}
+.small .s{display:flex;align-items:center;gap:6px;line-height:1}
+.small svg{flex:none}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:8px}
+.foot .w{font-size:12px;color:var(--ink2);opacity:.8}
+.try{border:1px solid var(--brand);background:transparent;color:var(--brandink);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.card.sel .try{background:var(--brand);color:var(--btntext)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" id="navbrand" href="#" aria-label="Symploké"></a>
+  <nav class="links" aria-label="Principal"><a>Cómo trabajamos</a><a>Terapias</a><a>Blog</a></nav>
+  <span class="btn">Pedir primera cita</span>
+  <span class="who" id="navwho"></span>
+</header>
+
+<div class="wrap">
+  <h1>La tipografía de «Symploké»</h1>
+  <p class="intro">Cada tarjeta enseña tu símbolo tejido junto al nombre en una letra distinta, en grande y en los tamaños de la cabecera (38 px en ordenador y 26 px y 22 px en móvil). Pulsa «Probar en la cabecera» para verla arriba, en la cabecera real. Los controles cambian todas las tarjetas a la vez.</p>
+
+  <div class="controls" id="controls">
+    <div class="ctl" data-k="text"><span>Escritura</span>
+      <button data-v="Symploké">Symploké</button><button data-v="symploké">symploké</button><button data-v="SYMPLOKÉ">SYMPLOKÉ</button></div>
+    <div class="ctl" data-k="weight"><span>Grosor</span>
+      <button data-v="0">Normal</button><button data-v="1">Más grueso</button></div>
+    <div class="ctl" data-k="color"><span>Color del nombre</span>
+      <button data-v="var(--brandink)">Verde (actual)</button><button data-v="var(--ink)">Casi negro</button><button data-v="var(--brand)">Verde del símbolo</button></div>
+    <div class="ctl" data-k="layout"><span>Composición</span>
+      <button data-v="horizontal">Horizontal</button><button data-v="apilada">Apilada</button><button data-v="solo">Solo el nombre</button></div>
+    <div class="ctl"><span>Espaciado</span>
+      <input type="range" id="track" min="-4" max="16" step="1" aria-label="Espaciado entre letras"><output id="trackout"></output></div>
+    <div class="ctl" data-k="theme"><span>Fondo</span>
+      <button data-v="light">Claro</button><button data-v="dark">Oscuro</button></div>
+  </div>
+
+  <div id="groups"></div>
+</div>
+
+<script>
+/* el símbolo de la cabecera de test1.html, tal cual (los huecos toman el color del fondo) */
+var MARK='<svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="41.5" y="44" width="33" height="28" style="fill:var(--gap)"/><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"/><rect x="41.5" y="128" width="33" height="28" style="fill:var(--gap)"/><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"/><rect x="83.5" y="86" width="33" height="28" style="fill:var(--gap)"/><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"/><rect x="125.5" y="44" width="33" height="28" style="fill:var(--gap)"/><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"/><rect x="125.5" y="128" width="33" height="28" style="fill:var(--gap)"/><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"/></g></svg>';
+
+/* w: grosores disponibles (normal, más grueso); s: corrección de tamaño para que todas se vean de un cuerpo parecido */
+var GROUPS=[
+  {t:'Serif cálidas',n:'Con remate, pero suaves y redondeadas: sostienen el tono cercano sin perder seriedad.',f:[
+    {id:'dmserif',name:'DM Serif Display',ff:"'DM Serif Display'",w:[400],s:1,now:1,why:'La que tienes ahora. Contrastada y con carácter; en el móvil la «k» y la «é» quedan algo apretadas.'},
+    {id:'fraunces',name:'Fraunces',ff:"'Fraunces'",w:[400,600],s:1,rec:1,why:'Serif «blanda», con curvas gordas y un punto artesanal. Muy en la línea de «pensemos juntos»; cálida sin ser infantil.'},
+    {id:'young',name:'Young Serif',ff:"'Young Serif'",w:[400],s:.96,why:'Robusta y amable, con aire de libro antiguo. Se lee muy bien pequeña.'},
+    {id:'newsreader',name:'Newsreader',ff:"'Newsreader'",w:[400,600],s:1.06,why:'Serif de lectura, sobria y templada. Encaja si el blog va a tener peso.'}]},
+  {t:'Serif clásicas',n:'Un guiño discreto al origen griego de la palabra, sin hablar de teoría.',f:[
+    {id:'cormorant',name:'Cormorant Garamond',ff:"'Cormorant Garamond'",w:[500,700],s:1.16,why:'Garamond fina y elegante. Muy bonita en grande; en la cabecera del móvil necesita el grosor fuerte.'},
+    {id:'didot',name:'GFS Didot',ff:"'GFS Didot'",w:[400],s:1.06,why:'Didot de la Greek Font Society, hecha pensando en el griego. Clásica y culta; algo fría.'},
+    {id:'marcellus',name:'Marcellus',ff:"'Marcellus'",w:[400],s:1,rec:1,why:'Letra de inscripción romana con minúsculas. Calma y ligera solemnidad; combina bien con la geometría del símbolo.'},
+    {id:'caslon',name:'Libre Caslon Display',ff:"'Libre Caslon Display'",w:[400],s:1.08,why:'Caslon de titular, muy contrastada. Editorial y tradicional.'}]},
+  {t:'Serif editoriales',n:'Más de revista que de consulta: modernas y con personalidad.',f:[
+    {id:'instrument',name:'Instrument Serif',ff:"'Instrument Serif'",w:[400],s:1.12,why:'Estrecha y actual, muy usada en marcas recientes. Elegante, pero algo de moda.'},
+    {id:'gloock',name:'Gloock',ff:"'Gloock'",w:[400],s:.98,why:'Contraste alto y remates marcados. Mucho carácter; quizá demasiado para un tono discreto.'}]},
+  {t:'Sans redondeadas y geométricas',n:'Sin remate. Las de terminaciones redondas dialogan con las cintas de esquinas redondeadas del símbolo.',f:[
+    {id:'nunito',name:'Nunito',ff:"'Nunito'",w:[500,700],s:1,why:'Terminaciones redondas, muy amable. Riesgo: puede parecer de app o de guardería si se usa en grueso.'},
+    {id:'quicksand',name:'Quicksand',ff:"'Quicksand'",w:[500,700],s:1,why:'Geométrica y redonda, ligera. Suave, pero pierde fuerza en tamaños pequeños.'},
+    {id:'outfit',name:'Outfit',ff:"'Outfit'",w:[400,600],s:1,rec:1,why:'Geométrica limpia y cálida. Moderna sin ser fría; queda muy bien con el rombo tejido.'},
+    {id:'figtree',name:'Figtree',ff:"'Figtree'",w:[500,700],s:1,why:'Sans clara y cercana, con buena lectura en el móvil.'},
+    {id:'jakarta',name:'Plus Jakarta Sans',ff:"'Plus Jakarta Sans'",w:[500,700],s:.97,why:'Geométrica con un punto de personalidad en la «k» y la «y».'},
+    {id:'manrope',name:'Manrope',ff:"'Manrope'",w:[500,700],s:.98,why:'Semicondensada y técnica. Ordenada y fiable, menos cálida.'}]}
+];
+var ALL={};GROUPS.forEach(function(g){g.f.forEach(function(f){ALL[f.id]=f;});});
+
+var S={text:'Symploké',weight:'0',color:'var(--brandink)',layout:'horizontal',track:0,theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light',sel:'dmserif'};
+try{var saved=JSON.parse(localStorage.getItem('symploke-tipo')||'{}');for(var k in saved)if(k in S)S[k]=saved[k];}catch(e){}
+function save(){try{localStorage.setItem('symploke-tipo',JSON.stringify(S));}catch(e){}}
+
+function wordStyle(f,base){
+  var w=f.w[Math.min(+S.weight,f.w.length-1)];
+  return 'font-family:'+f.ff+',Georgia,serif;font-weight:'+w+';font-size:'+(base*f.s).toFixed(1)+(base>3?'px':'em')+';letter-spacing:'+(S.track/100)+'em';
+}
+function mark(px){return MARK.replace('<svg','<svg width="'+px+'" height="'+px+'"');}
+
+function render(){
+  var root=document.documentElement;
+  root.setAttribute('data-theme',S.theme);
+  root.setAttribute('data-layout',S.layout);
+  root.style.setProperty('--word',S.color);
+  root.style.setProperty('--gap','var(--soft)');
+
+  var h='';
+  GROUPS.forEach(function(g){
+    h+='<h2>'+g.t+'</h2><p class="gnote">'+g.n+'</p><div class="grid">';
+    g.f.forEach(function(f){
+      var single=f.w.length<2&&S.weight==='1';
+      h+='<article class="card'+(S.sel===f.id?' sel':'')+'">'+
+        '<div class="stage"><div class="lock">'+MARK+'<span class="word" style="'+wordStyle(f,1)+'">'+S.text+'</span></div></div>'+
+        '<div class="meta"><div class="top"><span class="name">'+f.name+'</span>'+
+          (f.now?'<span class="tag now">Actual</span>':'')+(f.rec?'<span class="tag">Recomendada</span>':'')+'</div>'+
+          '<p class="why">'+f.why+'</p>'+
+          '<div class="small">'+
+            '<span class="s" style="font-size:0">'+mark(48)+'<span class="word" style="'+wordStyle(f,38)+'">'+S.text+'</span></span>'+
+            '<span class="s" style="font-size:0">'+mark(34)+'<span class="word" style="'+wordStyle(f,26)+'">'+S.text+'</span></span>'+
+            '<span class="s" style="font-size:0">'+mark(28)+'<span class="word" style="'+wordStyle(f,22)+'">'+S.text+'</span></span>'+
+          '</div>'+
+          '<div class="foot"><span class="w">'+(single?'Solo tiene un grosor':'Grosor '+f.w[Math.min(+S.weight,f.w.length-1)])+'</span>'+
+          '<button class="try" data-id="'+f.id+'">'+(S.sel===f.id?'En la cabecera':'Probar en la cabecera')+'</button></div>'+
+        '</div></article>';
+    });
+    h+='</div>';
+  });
+  document.getElementById('groups').innerHTML=h;
+  /* en las tarjetas los huecos del tejido van sobre el fondo verde claro; en los tamaños pequeños, sobre blanco */
+  document.querySelectorAll('.small svg, #navbrand svg').forEach(function(s){s.style.setProperty('--gap','var(--bg)');});
+
+  var f=ALL[S.sel]||ALL.dmserif;
+  var nb=document.getElementById('navbrand');
+  nb.innerHTML=(S.layout==='solo'?'':mark(64))+'<span class="word" style="'+wordStyle(f,1)+'">'+S.text+'</span>';
+  nb.querySelectorAll('svg').forEach(function(s){s.style.setProperty('--gap','var(--bg)');});
+  document.getElementById('navwho').textContent='Cabecera con '+f.name;
+
+  document.querySelectorAll('.ctl[data-k]').forEach(function(c){
+    c.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(S[c.dataset.k]===b.dataset.v));});
+  });
+  document.getElementById('track').value=S.track;
+  document.getElementById('trackout').textContent=(S.track>0?'+':'')+(S.track/100).toFixed(2)+' em';
+}
+
+document.getElementById('controls').addEventListener('click',function(e){
+  var b=e.target.closest('button'),c=b&&b.closest('.ctl[data-k]');if(!c)return;
+  S[c.dataset.k]=b.dataset.v;save();render();
+});
+document.getElementById('track').addEventListener('input',function(e){S.track=+e.target.value;save();render();});
+document.getElementById('groups').addEventListener('click',function(e){
+  var b=e.target.closest('.try');if(!b)return;
+  S.sel=b.dataset.id;save();render();window.scrollTo({top:0,behavior:'smooth'});
+});
+render();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
+</script>
+</body>
+</html>

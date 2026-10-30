@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Terapia · Symploké</title>
+<title>Terapias · Symploké</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
 <link rel="stylesheet" href="comun.css">
 <style>
@@ -41,10 +41,16 @@ main{max-width:1240px;margin:0 auto;padding:24px clamp(20px,4.5vw,64px) clamp(64
 .lead{font-size:clamp(16px,1.3vw,19px);line-height:1.42;color:var(--ink2);margin:0;max-width:640px}
 h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:72px 0 10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-top:26px}
-#formatos{grid-template-columns:repeat(5,minmax(0,1fr))}
-@media (max-width:1100px){ #formatos{grid-template-columns:repeat(3,minmax(0,1fr))} }
-@media (max-width:700px){ #formatos{grid-template-columns:repeat(2,minmax(0,1fr))} }
-@media (max-width:460px){ #formatos{grid-template-columns:1fr} }
+#formatos{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+@media (max-width:700px){ #formatos{grid-template-columns:1fr} }
+/* formatos en pequeño (dibujo a la izquierda, texto al lado) para que «¿Qué trabajamos?» asome ya en la primera pantalla */
+#formatos .card{flex-direction:row;align-items:stretch;border-radius:18px}
+#formatos .card .img{flex:0 0 44%;aspect-ratio:16/10;border-bottom:0;border-right:1px solid var(--line)}
+#formatos .card .txt{gap:4px;padding:12px 14px 12px}
+#formatos .card h3{font-size:18px}
+#formatos .card p{font-size:13.5px;line-height:1.32}
+#formatos .card .go{padding-top:6px;font-size:13px}
+.fmt-h2{margin-top:44px}
 .card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
 .card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}   /* borde más grueso sin mover el contenido */
 .card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
@@ -79,21 +85,21 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
     Symploké
   </a>
-  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a class="on" href="terapia.html" aria-current="page">Terapia</a><a href="test1.html#blog">Blog</a></nav>
+  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a class="on" href="terapia.html" aria-current="page">Terapias</a><a href="test1.html#blog">Blog</a></nav>
   <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
 </header>
 
 <main>
   <section class="intro">
-    <h1>Terapia</h1>
+    <h1>Terapias</h1>
     <p class="lead">Presencial en Koiné, en Madrid centro, u online. También grupos, talleres y charlas. Si no sabes por dónde empezar, pide cita y lo pensamos juntos. <span style="font-size:13px;opacity:.7">[provisional]</span></p>
   </section>
 
-  <h2>¿Cómo quieres hacerlo?</h2>
+  <h2 class="fmt-h2">¿Cómo quieres hacerlo?</h2>
   <p class="lead">Elige el formato.</p>
   <div class="grid" id="formatos"></div>
 
-  <h2>¿Qué te pasa?</h2>
+  <h2>¿Qué trabajamos?</h2>
   <p class="lead">Elige lo que más se parezca a lo que vives.</p>
   <div class="grid" id="motivos"></div>
 
@@ -117,7 +123,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
 (function(){
   'use strict';
   function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+' <span class="arr" aria-hidden="true">→</span></span>':'')+'</span></a>';}
-  var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]'],['talleres','Talleres','[Qué talleres ofreces]'],['charlas','Charlas','[Para quién y sobre qué]']];
+  var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]']];
   document.getElementById('formatos').innerHTML=F.map(function(x){return card('contacto.html',x[0],x[1],x[2],'Pedir cita');}).join('');
   document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card('motivo.html?m='+m.slug,m.slug,m.name,'«'+m.sym+'»','Ver más');}).join('');
   document.getElementById('bandpic').innerHTML=ILUS.portada('band');

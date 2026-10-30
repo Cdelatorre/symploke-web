@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcellus y parecidas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;family=Marcellus&amp;family=Marcellus+SC&amp;family=Forum&amp;family=Della+Respira&amp;family=Gideon+Roman&amp;family=Bellefair&amp;family=Cinzel:wght@400..900&amp;family=Tenor+Sans&amp;family=Belleza&amp;family=Proza+Libre:wght@400;600;800&amp;family=Cormorant:wght@400..700&amp;family=Spectral:wght@300;400;600;800&amp;family=Rufina:wght@400;700&amp;display=swap">
+<style>
+/* Symploké · Marcellus y letras de su misma familia de estilo, en varios grosores y tamaños */
+:root{
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+
+/* ---------- cabecera de muestra (igual que la de test1.html) ---------- */
+.nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:24px;height:96px;padding:0 clamp(16px,4.5vw,64px);background:var(--bg);box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;gap:14px;font-size:38px;line-height:1;color:var(--word);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.btn{display:inline-flex;align-items:center;font:600 15px/1 'DM Sans',sans-serif;padding:12px 22px;border-radius:999px;background:var(--brand);color:var(--btntext);white-space:nowrap}
+.nav .who{position:absolute;left:clamp(16px,4.5vw,64px);bottom:6px;font-size:11px;letter-spacing:.4px;color:var(--ink2);opacity:.7}
+@media (max-width:860px){
+  .nav{height:72px;gap:12px}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:44px;height:44px}
+  .links{display:none}
+  .btn{margin-left:auto;padding:10px 14px;font-size:14px}
+}
+
+/* ---------- controles ---------- */
+.wrap{max-width:1240px;margin:0 auto;padding:28px clamp(16px,4.5vw,64px) 64px}
+h1{font:400 clamp(28px,3vw,40px)/1.1 'Marcellus',Georgia,serif;margin:0 0 8px}
+.intro{color:var(--ink2);max-width:720px;line-height:1.5;margin:0 0 22px}
+.controls{display:flex;flex-wrap:wrap;gap:14px 26px;padding:16px 18px;border:1px solid var(--line);border-radius:18px;background:var(--soft);margin-bottom:28px}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ctl > span{font-size:13px;font-weight:600;color:var(--ink2);margin-right:4px}
+.ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 12px;font-size:14px;cursor:pointer}
+.ctl button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--btntext)}
+.ctl input[type=range]{width:130px;accent-color:var(--brand)}
+.ctl output{font-size:13px;color:var(--ink2);min-width:58px}
+
+/* ---------- tarjetas ---------- */
+h2{font:600 13px/1 'DM Sans',sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:var(--brandink);margin:38px 0 6px}
+.gnote{color:var(--ink2);font-size:15px;margin:0 0 14px;max-width:760px;line-height:1.45}
+.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--bg);margin-bottom:16px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr)}
+@media (max-width:960px){.card{grid-template-columns:1fr}}
+.card.sel{border-color:var(--brand);box-shadow:0 0 0 2px var(--brand)}
+.stage{display:flex;align-items:center;justify-content:center;min-height:220px;padding:26px 18px;background:var(--soft)}
+.lock{display:flex;align-items:center;gap:.32em;font-size:clamp(40px,4.6vw,62px);line-height:1;color:var(--word)}
+.lock svg{width:1.55em;height:1.55em;flex:none}
+[data-layout="apilada"] .lock{flex-direction:column;gap:.18em}
+[data-layout="apilada"] .lock svg{width:1.9em;height:1.9em}
+[data-layout="solo"] :is(.lock,.sizes,.brand) svg{display:none}
+.word{white-space:nowrap}
+.meta{padding:16px 20px 18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.name{font-weight:600;font-size:17px}
+.tag{font-size:12px;font-weight:600;padding:4px 9px;border-radius:999px;background:var(--brand);color:var(--btntext)}
+.tag.alt{background:transparent;border:1px solid var(--line);color:var(--ink2)}
+.why{margin:0;color:var(--ink2);font-size:15px;line-height:1.45}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--ink2);opacity:.8}
+.weights{display:flex;flex-wrap:wrap;gap:8px}
+.wt{display:flex;flex-direction:column;align-items:flex-start;gap:6px;border:1px solid var(--line);background:var(--bg);border-radius:14px;padding:10px 12px 8px;cursor:pointer;color:var(--word);text-align:left}
+.wt .word{font-size:26px;line-height:1}
+.wt small{font:500 11px/1 'DM Sans',sans-serif;color:var(--ink2)}
+.wt[aria-pressed="true"]{border-color:var(--brand);box-shadow:inset 0 0 0 1px var(--brand)}
+.sizes{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;color:var(--word)}
+.sizes .s{display:flex;align-items:center;gap:.3em;line-height:1}
+.sizes .s svg{width:1.3em;height:1.3em;flex:none}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+.foot .w{font-size:12px;color:var(--ink2);opacity:.8}
+.try{border:1px solid var(--brand);background:transparent;color:var(--brandink);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.card.sel .try{background:var(--brand);color:var(--btntext)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" id="navbrand" href="#" aria-label="Symploké"></a>
+  <nav class="links" aria-label="Principal"><a>Cómo trabajamos</a><a>Terapias</a><a>Blog</a></nav>
+  <span class="btn">Pedir primera cita</span>
+  <span class="who" id="navwho"></span>
+</header>
+
+<div class="wrap">
+  <h1>Marcellus y letras de su misma línea</h1>
+  <p class="intro">Marcellus es una romana de inscripción, la letra grabada en piedra, con minúsculas y remates que se abren suavemente. Aquí está ella y otras de la misma línea. Cada una aparece con todos sus grosores (pulsa uno para elegirlo) y en varios tamaños, desde la portada hasta el móvil. Las que solo tienen un grosor llevan además tres grosores <em>simulados</em>, engordando el trazo: en el logo definitivo eso se haría bien, en vectores, así que sirven para hacerse una idea.</p>
+
+  <div class="controls" id="controls">
+    <div class="ctl" data-k="text"><span>Escritura</span>
+      <button data-v="Symploké">Symploké</button><button data-v="symploké">symploké</button><button data-v="SYMPLOKÉ">SYMPLOKÉ</button></div>
+    <div class="ctl" data-k="color"><span>Color del nombre</span>
+      <button data-v="var(--brandink)">Verde (actual)</button><button data-v="var(--ink)">Casi negro</button><button data-v="var(--brand)">Verde del símbolo</button></div>
+    <div class="ctl" data-k="layout"><span>Composición</span>
+      <button data-v="horizontal">Horizontal</button><button data-v="apilada">Apilada</button><button data-v="solo">Solo el nombre</button></div>
+    <div class="ctl"><span>Espaciado</span>
+      <input type="range" id="track" min="-4" max="16" step="1" aria-label="Espaciado entre letras"><output id="trackout"></output></div>
+    <div class="ctl" data-k="theme"><span>Fondo</span>
+      <button data-v="light">Claro</button><button data-v="dark">Oscuro</button></div>
+  </div>
+
+  <div id="groups"></div>
+</div>
+
+<script>
+/* el símbolo de la cabecera de test1.html, tal cual (los huecos toman el color de --gap) */
+var MARK='<svg viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"/><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--gap)" rx="8.5"/><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"/><rect x="41.5" y="44" width="33" height="28" style="fill:var(--gap)"/><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"/><rect x="41.5" y="128" width="33" height="28" style="fill:var(--gap)"/><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"/><rect x="83.5" y="86" width="33" height="28" style="fill:var(--gap)"/><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"/><rect x="125.5" y="44" width="33" height="28" style="fill:var(--gap)"/><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"/><rect x="125.5" y="128" width="33" height="28" style="fill:var(--gap)"/><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"/></g></svg>';
+
+/* w: grosores reales; si solo hay uno se añaden tres simulados con trazo (sim: grosor del trazo en em).
+   s: corrección de tamaño para que todas se vean de un cuerpo parecido */
+var SIM=[{l:'Normal',w:400,sim:0},{l:'+1 simulado',w:400,sim:.012},{l:'+2 simulado',w:400,sim:.024},{l:'+3 simulado',w:400,sim:.036}];
+function real(ws,names){return ws.map(function(w,i){return {l:(names&&names[i])||String(w),w:w,sim:0};});}
+var GROUPS=[
+  {t:'Marcellus',n:'La que has elegido, y su versión en versalitas, que convierte las minúsculas en mayúsculas pequeñas.',f:[
+    {id:'marcellus',name:'Marcellus',ff:"'Marcellus'",w:SIM,def:0,s:1,tag:'Elegida',why:'Romana de inscripción con minúsculas, tranquila y con un punto solemne. Solo tiene un grosor, así que van tres simulados para ver cómo ganaría presencia en la cabecera.'},
+    {id:'marcellussc',name:'Marcellus SC',ff:"'Marcellus SC'",w:SIM,def:0,s:1,why:'La misma letra en versalitas: «S» grande y «YMPLOKÉ» en mayúsculas pequeñas. Más de logotipo, más institucional.'}]},
+  {t:'Romanas de inscripción',n:'Del mismo espíritu que Marcellus: letras que vienen de la piedra grabada, clásicas sin ser recargadas.',f:[
+    {id:'forum',name:'Forum',ff:"'Forum'",w:SIM,def:1,s:1.12,why:'La más cercana a Marcellus. Algo más estrecha y antigua, con remates más finos; necesita grosor para la cabecera.'},
+    {id:'della',name:'Della Respira',ff:"'Della Respira'",w:SIM,def:0,s:.98,why:'Romana renacentista, más cálida y redonda que Marcellus. Se lee muy bien.'},
+    {id:'gideon',name:'Gideon Roman',ff:"'Gideon Roman'",w:SIM,def:0,s:1,why:'Inscripción con trazo modulado y curvas amplias. Muy elegante en grande; más delicada en pequeño.'},
+    {id:'bellefair',name:'Bellefair',ff:"'Bellefair'",w:SIM,def:1,s:1.06,why:'Fina y luminosa, con un aire hebreo-romano. Muy distinguida, pero frágil en el móvil sin engordarla.'},
+    {id:'cinzel',name:'Cinzel',ff:"'Cinzel'",w:real([400,500,600,700,900]),def:1,s:.9,tag:'Varios grosores',why:'La inscripción romana pura y con grosores reales. Solo tiene mayúsculas: las minúsculas salen como versalitas. Muy solemne; conviene no pasarse de grosor.'}]},
+  {t:'Sans con remate abocinado',n:'Sin remates, pero el trazo se abre al final, como en Marcellus. Es la familia de Optima: entre clásica y moderna.',f:[
+    {id:'tenor',name:'Tenor Sans',ff:"'Tenor Sans'",w:SIM,def:0,s:1,why:'Abierta y amable, con el contraste de una romana. Es lo que sería Marcellus sin remates.'},
+    {id:'belleza',name:'Belleza',ff:"'Belleza'",w:SIM,def:0,s:1,why:'Inspirada en Optima, con un aire de los años sesenta. Clara y suave.'},
+    {id:'proza',name:'Proza Libre',ff:"'Proza Libre'",w:real([400,600,800]),def:0,s:.95,tag:'Varios grosores',why:'Humanista con un ligero abocinado y grosores reales. La más sólida para textos pequeños.'}]},
+  {t:'Clásicas con varios grosores',n:'Si te gusta el tono de Marcellus pero quieres poder engordar el nombre con grosores de verdad.',f:[
+    {id:'cormorant',name:'Cormorant',ff:"'Cormorant'",w:real([400,500,600,700]),def:2,s:1.14,tag:'Varios grosores',why:'Garamond de titular con remates afilados, de muy fina a bastante gruesa. Muy bonita en seminegra.'},
+    {id:'spectral',name:'Spectral',ff:"'Spectral'",w:real([300,400,600,800]),def:1,s:.98,tag:'Varios grosores',why:'Serif sobria, pensada para pantalla. Con grosor 600 aguanta muy bien en el móvil.'},
+    {id:'rufina',name:'Rufina',ff:"'Rufina'",w:real([400,700]),def:0,s:1,tag:'Varios grosores',why:'Serif contrastada con remates en cuña, de aire antiguo. Con carácter y buena lectura.'}]}
+];
+var ALL={};GROUPS.forEach(function(g){g.f.forEach(function(f){ALL[f.id]=f;});});
+
+var S={text:'Symploké',color:'var(--brandink)',layout:'horizontal',track:0,theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light',sel:'marcellus',cw:{}};
+try{var saved=JSON.parse(localStorage.getItem('symploke-marcellus')||'{}');for(var k in saved)if(k in S)S[k]=saved[k];}catch(e){}
+function save(){try{localStorage.setItem('symploke-marcellus',JSON.stringify(S));}catch(e){}}
+
+function wIdx(f){var i=S.cw[f.id];return (i==null||i>=f.w.length)?f.def:i;}
+function wordStyle(f,i,size){
+  var w=f.w[i];
+  return 'font-family:'+f.ff+',Georgia,serif;font-weight:'+w.w+';font-size:'+size+';letter-spacing:'+(S.track/100)+'em'+
+    (w.sim?';-webkit-text-stroke:'+w.sim+'em currentColor;paint-order:stroke fill':'');
+}
+function word(f,i,px){return '<span class="word" style="'+wordStyle(f,i,px?(px*f.s).toFixed(1)+'px':f.s+'em')+'">'+S.text+'</span>';}
+function mark(px){return px?MARK.replace('<svg','<svg width="'+px+'" height="'+px+'"'):MARK;}
+
+function render(){
+  var root=document.documentElement;
+  root.setAttribute('data-theme',S.theme);
+  root.setAttribute('data-layout',S.layout);
+  root.style.setProperty('--word',S.color);
+  root.style.setProperty('--gap','var(--bg)');
+
+  var h='';
+  GROUPS.forEach(function(g){
+    h+='<h2>'+g.t+'</h2><p class="gnote">'+g.n+'</p>';
+    g.f.forEach(function(f){
+      var i=wIdx(f),wts='',sz='';
+      f.w.forEach(function(w,j){
+        wts+='<button class="wt" data-id="'+f.id+'" data-i="'+j+'" aria-pressed="'+(i===j)+'">'+word(f,j)+'<small>'+w.l+'</small></button>';
+      });
+      [38,26,22,16].forEach(function(px){
+        sz+='<span class="s" style="font-size:'+px+'px">'+mark()+word(f,i,px)+'</span>';
+      });
+      h+='<article class="card'+(S.sel===f.id?' sel':'')+'">'+
+        '<div class="stage" style="--gap:var(--soft)"><div class="lock">'+mark()+word(f,i)+'</div></div>'+
+        '<div class="meta"><div class="top"><span class="name">'+f.name+'</span>'+
+          (f.tag?'<span class="tag'+(f.tag==='Elegida'?'':' alt')+'">'+f.tag+'</span>':'')+'</div>'+
+          '<p class="why">'+f.why+'</p>'+
+          '<div class="lbl">Grosores</div><div class="weights">'+wts+'</div>'+
+          '<div class="lbl">Tamaños: cabecera 38 px · móvil 26 y 22 px · pie 16 px</div><div class="sizes">'+sz+'</div>'+
+          '<div class="foot"><span class="w">'+f.w[i].l+'</span>'+
+          '<button class="try" data-id="'+f.id+'">'+(S.sel===f.id?'En la cabecera':'Probar en la cabecera')+'</button></div>'+
+        '</div></article>';
+    });
+  });
+  document.getElementById('groups').innerHTML=h;
+
+  var f=ALL[S.sel]||ALL.marcellus;
+  document.getElementById('navbrand').innerHTML=mark(64)+word(f,wIdx(f));
+  document.getElementById('navwho').textContent='Cabecera con '+f.name+' · '+f.w[wIdx(f)].l;
+
+  document.querySelectorAll('.ctl[data-k]').forEach(function(c){
+    c.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(S[c.dataset.k]===b.dataset.v));});
+  });
+  document.getElementById('track').value=S.track;
+  document.getElementById('trackout').textContent=(S.track>0?'+':'')+(S.track/100).toFixed(2)+' em';
+}
+
+document.getElementById('controls').addEventListener('click',function(e){
+  var b=e.target.closest('button'),c=b&&b.closest('.ctl[data-k]');if(!c)return;
+  S[c.dataset.k]=b.dataset.v;save();render();
+});
+document.getElementById('track').addEventListener('input',function(e){S.track=+e.target.value;save();render();});
+document.getElementById('groups').addEventListener('click',function(e){
+  var wt=e.target.closest('.wt');
+  if(wt){S.cw[wt.dataset.id]=+wt.dataset.i;save();render();return;}
+  var b=e.target.closest('.try');if(!b)return;
+  S.sel=b.dataset.id;save();render();window.scrollTo({top:0,behavior:'smooth'});
+});
+render();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(render);
+</script>
+</body>
+</html>
