@@ -37,9 +37,10 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;c
 .btn.small{font-size:15px;padding:12px 22px}
 /* como un «sign up»: formulario a la izquierda y, a la derecha, un panel verde redondeado con la ilustración */
 main{max-width:1240px;margin:0 auto;padding:16px clamp(20px,4.5vw,64px) clamp(64px,8vw,100px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,72px);align-items:stretch;max-width:1180px}
-.ct-art{position:relative;min-height:520px;border-radius:32px;overflow:hidden;background:#5FE3A8;display:flex;align-items:center;justify-content:center;padding:32px}
+.ct-art{position:relative;min-height:520px;border-radius:32px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;padding:32px}   /* blanco con la elipse verde, igual que en Terapias */
+.ct-art{transition:border-color .15s ease,box-shadow .2s ease}
+.ct-art:hover{border-color:var(--brand);box-shadow:0 0 0 1.5px var(--brand),0 14px 34px rgba(0,60,40,.12)}
 .ct-art svg{display:block;width:100%;max-width:580px;height:auto}
-.ct-art svg .bg{fill:#A4EFCF}
 .ct-form{display:flex;flex-direction:column;justify-content:center;gap:12px;max-width:440px}
 .ct-fields{display:flex;flex-direction:column;gap:12px}
 h1{font-size:clamp(38px,3.6vw,52px);line-height:.95;letter-spacing:-.5px}

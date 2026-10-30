@@ -101,15 +101,8 @@ ILUS.grupos=function(){return svg(blob(200,132,168,96)+own('grupos-taller.png',2
 ILUS.talleres=function(){return scene([{n:'whoa',h:208}],'Taller: una persona explica señalando');};
 ILUS.charlas=function(){return scene([{n:'entertainment',h:212,flip:-1}],'Charla: una ponente habla con soltura');};
 
-/* ---------- página de contacto: el equipo de psicólogos, para el panel verde ---------- */
-ILUS.contacto=function(){
-  return '<svg viewBox="-38 120 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El equipo de psicólogos de Symploké, de pie y tranquilos">'+   // encuadre ajustado al grupo, para que quede centrado
-    blob(262,430,270,230)+
-    th({n:'plants',x:130,y:684,h:510})+
-    th({n:'pantalones',x:470,y:684,h:510})+
-    th({n:'entertainment',x:300,y:692,h:530})+
-    '</svg>';
-};
+/* ---------- página de contacto: el mismo dibujo de la lectora que en Terapias ---------- */
+ILUS.contacto=function(){return ILUS.portada();};
 
 window.ILUS=ILUS;
 })();
