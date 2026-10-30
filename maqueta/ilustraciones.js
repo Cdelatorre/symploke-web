@@ -83,16 +83,16 @@ var ILUS={};
 ILUS.portada=function(){return svg(blob(200,132,168,96)+own('lectora-sillon.png',46,10,308,230),'Mujer leyendo tranquila el periódico en su sillón, junto a una planta');};
 ILUS.ansiedad=function(){return svg(blob(200,132,168,96)+own('ansiedad-mochila.png',144,24,113,212),'Chica caminando con una mochila muy cargada de libros');};
 ILUS.depresion=function(){return svg(blob(200,132,168,96)+own('depresion-perrito.png',120,26,160,210),'Persona sentada en el suelo abrazando a un cachorro, con los ojos cerrados');};
-ILUS.insomnio=function(){return scene([{n:'puppy',h:184}],'Mujer descansando con los ojos cerrados, abrazada a su perro');};
-ILUS.alimentacion=function(){return scene([{n:'entertainment',h:212}],'Mujer paseando contenta con una bebida');};
-ILUS.pareja=function(){return scene([{n:'entertainment',x:168,h:200,flip:-1},{n:'pantalones',x:248,h:204}],'Pareja paseando juntas');};
+ILUS.insomnio=function(){return svg(blob(200,132,168,96)+own('insomnio-ventana.png',81,28,238,200),'Hombre asomado a la ventana de noche, sin poder dormir');};
+ILUS.alimentacion=function(){return svg(blob(200,132,168,96)+own('alimentacion-paseo.png',135,24,131,212),'Chica caminando con auriculares y mochila');};
+ILUS.pareja=function(){return svg(blob(200,132,168,96)+own('pareja-cachorros.png',50,36,300,200),'Pareja sentada en el suelo, cada uno con un cachorro en brazos');};
 ILUS.tdah=function(){return svg(blob(200,132,168,96)+own('tdah-lectora.png',104,36,193,200),'Chica sentada en el suelo leyendo un libro, con una pila de libros al lado');};
-ILUS.adicciones=function(){return scene([{n:'late',h:208}],'Chica caminando decidida');};
+ILUS.adicciones=function(){return svg(blob(200,132,168,96)+own('adicciones-gato.png',172,24,56,212),'Chica de pie, tranquila, con las manos en los bolsillos');};
 ILUS.autoestima=function(){return svg(blob(200,132,168,96)+own('autoestima-abrigo.png',134,24,131,212),'Mujer con abrigo blanco caminando segura mientras escucha música');};
 ILUS.duelo=function(){return scene([{n:'reflecting',h:186}],'Mujer sentada, pensativa');};
-ILUS.infancia=function(){return scene([{n:'experiments',h:172}],'Dos niños jugando juntos sentados en el suelo');};
+ILUS.infancia=function(){return svg(blob(200,132,168,96)+own('infancia-juego.png',70,36,259,200),'Dos niños jugando juntos sentados en el suelo, con piezas de construcción y un ábaco');};
 ILUS.personalidad=function(){return svg(blob(200,132,168,96)+own('personalidad-senala.png',142,24,116,212),'Chica que se tapa la boca mientras señala hacia otro lado');};
-ILUS.sexual=function(){return scene([{n:'polkapup',x:140,h:150},{n:'puppy',x:262,h:156,flip:-1}],'Dos personas sentadas juntas y tranquilas, cada una con su perro');};
+ILUS.sexual=function(){return svg(blob(200,132,168,96)+own('sexual-cama.png',35,30,330,206),'Dos mujeres sentadas en la cama, riendo juntas');};
 
 /* ---------- formatos de terapia ---------- */
 ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.png',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
