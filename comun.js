@@ -3,7 +3,17 @@
 (function(){
 'use strict';
 var REDUCED=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-var NAV=96;   // alto de la cabecera fija, para que los enlaces internos no queden tapados
+var NAV=72;   // alto de la cabecera ya compactada (más un margen), para que los enlaces internos no queden tapados
+
+/* ---------- cabecera: se compacta en cuanto se empieza a bajar ---------- */
+var root=document.documentElement, compact=false;
+function navSize(){
+  var y=window.pageYOffset||root.scrollTop||0;
+  if(!compact&&y>24){compact=true;root.classList.add('scrolled');}
+  else if(compact&&y<8){compact=false;root.classList.remove('scrolled');}   // dos umbrales para que no parpadee
+}
+window.addEventListener('scroll',navSize,{passive:true});
+navSize();
 
 /* ---------- scroll suave ---------- */
 var lenis=null;

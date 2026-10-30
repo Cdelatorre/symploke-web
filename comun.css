@@ -41,3 +41,21 @@ footer a{color:inherit}
 .arr{display:inline-block;transition:transform .3s cubic-bezier(.3,.7,.2,1.4)}
 :is(a,button,.card,.qwin):hover .arr{transform:translateX(5px)}
 @media (prefers-reduced-motion: reduce){ .arr{transition:none} }
+
+/* ---------- cabecera: se compacta al empezar a bajar (clase .scrolled en <html>, la pone comun.js) ---------- */
+.nav{transition:height .35s ease,margin-bottom .35s ease,box-shadow .35s ease}
+.nav .brand{transition:font-size .35s ease,gap .35s ease}
+.nav .brand svg{transition:width .35s ease,height .35s ease}
+.nav .btn.small{transition:padding .35s ease,font-size .35s ease,transform .15s ease}
+/* el margen inferior conserva el alto que ocupaba la cabecera, para que el contenido no salte al encogerla */
+html.scrolled .nav{height:64px;margin-bottom:32px;box-shadow:0 1px 0 var(--line),0 8px 24px rgba(0,40,25,.06)}
+html.scrolled .nav .brand{font-size:28px;gap:10px}
+html.scrolled .nav .brand svg{width:40px;height:40px}
+html.scrolled .nav .btn.small{padding:9px 18px;font-size:14px}
+@media (max-width:860px){
+  html.scrolled .nav{height:58px;margin-bottom:18px}   /* el margen guarda el hueco: el contenido no salta al encoger */
+  html.scrolled .nav .brand{font-size:22px;gap:8px}
+  html.scrolled .nav .brand svg{width:34px;height:34px}
+  html.scrolled .nav .btn.small{padding:8px 12px;font-size:13px}
+}
+@media (prefers-reduced-motion: reduce){ .nav,.nav .brand,.nav .brand svg,.nav .btn.small{transition:none} }

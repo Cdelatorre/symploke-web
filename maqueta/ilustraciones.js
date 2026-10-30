@@ -1,6 +1,6 @@
-/* Symploké · ilustraciones de la maqueta con personajes de Open Peeps (Pablo Stanley, CC0),
-   recoloreados con los verdes de la marca: verde oscuro para el trazo y verdes claros para los rellenos.
-   Necesita peeps-data.js. ILUS[slug](uid) devuelve un <svg> de 400×250. */
+/* Symploké · ilustraciones de la web: personajes de Transhumans (Pablo Stanley, CC0) sobre una mancha verde.
+   Necesita th-data.js (y peeps-data.js solo para las piezas antiguas de Open Peeps).
+   ILUS[slug](uid) devuelve un <svg> de 400×250 (ILUS.contacto, uno vertical). */
 (function(){
 'use strict';
 var DK='#0E4A36', W='#FFFFFF', F1='#E6F6EE', F2='#CDEEDD', F3='#A9E1C6', BLOB='#BFEBD7', MID='#5FBF95'; /* mancha de fondo en verde apagado; al pasar el ratón se enciende al acento del logo */
@@ -51,159 +51,63 @@ function windowFrame(x,y,w,h){return p('M'+x+' '+y+' H'+(x+w)+' V'+(y+h)+' H'+x+
 function birds(x,y){return p('M'+x+' '+y+' q5 -5 10 0 q5 -5 10 0 M'+(x+30)+' '+(y+12)+' q4 -4 8 0 q4 -4 8 0',null,1.8);}
 function svg(body,label){return '<svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="'+label+'"><rect width="400" height="250" fill="'+W+'"/>'+body+'</svg>';}
 
-/* ---------- escenas (una por motivo, a partir de la foto que tenía) ---------- */
+/* ---------- personajes de Transhumans (th-data.js): trazo a pincel en tinta casi negra y rellenos blancos ---------- */
+var INK='#13231C', TB={};
+function thBox(n){ // caja del dibujo dentro de su lienzo de 1080 (se mide una vez en el navegador)
+  if(TB[n])return TB[n];
+  var NS='http://www.w3.org/2000/svg', s=document.createElementNS(NS,'svg');
+  s.setAttribute('width','10');s.setAttribute('height','10');s.style.cssText='position:absolute;left:-9999px;top:0;visibility:hidden';
+  s.innerHTML='<g>'+TH[n]+'</g>';
+  document.body.appendChild(s); var b=s.firstChild.getBBox(); document.body.removeChild(s);
+  return (TB[n]={x:b.x,y:b.y,w:b.width,h:b.height});
+}
+/* coloca un personaje: n = nombre en TH, x = centro, y = suelo, h = altura en px; flip = -1 lo da la vuelta */
+function th(o){
+  if(!window.TH||!TH[o.n])return '';
+  var b=thBox(o.n), sc=o.h/b.h, fl=o.flip||1;
+  return '<g class="pp" transform="translate('+o.x+' '+o.y+') scale('+(fl*sc).toFixed(4)+' '+sc.toFixed(4)+') translate('+(-(b.x+b.w/2)).toFixed(1)+' '+(-(b.y+b.h)).toFixed(1)+')">'+TH[o.n].replace(/@@S@@/g,INK).replace(/@@B@@/g,W)+'</g>';
+}
+/* escena estándar: la mancha de fondo y uno o varios personajes con los pies en y = 236 */
+function scene(figs,label){
+  return svg(blob(200,132,168,96)+figs.map(function(f){if(f.y===undefined)f.y=236;if(f.x===undefined)f.x=200;return th(f);}).join(''),label);
+}
+
+/* ---------- ilustraciones propias (PNG en maqueta/img/ con el fondo exterior ya transparente) ----------
+   la ruta se calcula desde este script, así funciona en cualquier página y abriendo el HTML como archivo;
+   el blanco de dentro del dibujo (cara, ropa, sillón) se queda blanco, como en el resto de ilustraciones */
+var HERE=(document.currentScript&&document.currentScript.src)||location.href;
+function own(file,x,y,w,h){return '<image href="'+new URL('img/'+file,HERE).href+'" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" preserveAspectRatio="xMidYMid meet"/>';}
+
+/* ---------- escenas (una por motivo) ---------- */
 var ILUS={};
-ILUS.portada=function(){
-  return svg(blob(205,130,150,96)+ground(40,360,228)+plant(70,226,1.05)+
-    p('M300 166 H356 M306 166 L302 228 M350 166 L354 228',null,3)+p('M316 166 L322 134 H340 L346 166 Z',F2,2.4)+p('M331 134 V112 M322 112 H340',null,2.4)+
-    sofa(150,262,186,228)+peep({pose:'sitting/CrossedLegs',hair:'LongCurly',face:'Calm',x:206,y:228,h:150,fill:F1}),
-    'Mujer tranquila sentada en su sillón');
-};
-ILUS.ansiedad=function(){
-  return svg(blob(200,140,170,92)+sun(330,52,14)+tree(64,226,64,30)+tree(122,226,44,22)+tree(296,226,50,24)+ground(20,380,228)+
-    peep({pose:'standing/WalkingWB',hair:'Long',face:'Calm',x:205,y:228,h:196,fill:F1}),
-    'Mujer paseando tranquila por un parque');
-};
-ILUS.depresion=function(){
-  return svg(blob(200,138,170,96)+sun(60,48,14)+ground(40,360,228)+
-    peep({pose:'standing/PointingFingerWB',hair:'Bun',face:'SmileBig',x:156,y:228,h:192,fill:F1})+
-    peep({pose:'standing/RestingBW',hair:'Afro',face:'SmileLol',x:262,y:228,h:196,fill:F2,flip:-1}),
-    'Dos amigas riendo juntas');
-};
-ILUS.insomnio=function(){
-  return svg(blob(210,140,160,90)+sun(70,52,16)+ground(30,370,228)+plant(352,226,0.8)+
-    benchBack(130,300,188)+bench(130,300,188,228)+
-    peep({pose:'sitting/ClosedLegBW',hair:'GrayBun',face:'EyesClosed',x:212,y:226,h:142,fill:F1}),
-    'Mujer descansando al sol, con los ojos cerrados');
-};
-ILUS.alimentacion=function(){
-  return svg(blob(200,140,168,92)+windowFrame(166,30,68,62)+ground(30,370,228)+chair(112,188,228,-1)+chair(290,188,228,1)+
-    peep({pose:'sitting/ClosedLegWB',hair:'Medium',face:'EatingHappy',x:118,y:228,h:146,fill:F1})+
-    peep({pose:'sitting/ClosedLegBW',hair:'ShortCurly',face:'SmileBig',beard:'Goatee',x:284,y:228,h:146,fill:F2,flip:-1})+
-    table(150,250,164,228)+plate(180,160)+plate(222,160)+cup(202,160),
-    'Dos amigos comiendo juntos y riendo');
-};
-ILUS.pareja=function(){
-  return svg(blob(200,136,170,94)+tree(340,226,60,26)+ground(30,370,228)+benchBack(104,296,186)+bench(104,296,186,228)+
-    peep({pose:'sitting/ClosedLegWB',hair:'Long',face:'LoveGrin',x:166,y:226,h:142,fill:F1})+
-    peep({pose:'sitting/CrossedLegs',hair:'Short',face:'SmileTeeth',beard:'FullMedium',x:244,y:226,h:146,fill:F2,flip:-1}),
-    'Pareja sonriente sentada en un banco');
-};
-ILUS.tdah=function(){
-  return svg(blob(200,138,168,94)+windowFrame(270,30,84,72)+ground(30,370,228)+
-    chair(140,188,228,-1)+peep({pose:'sitting/ClosedLegWB',hair:'MediumBangs',face:'Driven',glasses:'GlassRound',x:150,y:228,h:146,fill:F1})+
-    table(176,330,160,228)+p('M232 160 L244 126 H286 L280 160 Z',F2,2.4)+'<circle cx="262" cy="142" r="5" fill="'+MID+'"/>'+p('M196 158 H222 L220 152 H198 Z',W,2)+cup(306,160),
-    'Mujer concentrada estudiando con su portátil');
-};
-ILUS.adicciones=function(){
-  return svg(blob(200,140,170,92)+p('M70 228 V44 M330 228 V44',null,3.4)+p('M58 30 H342 V62 H58 Z',MID,2.4)+'<text x="200" y="54" text-anchor="middle" font-family="DM Sans, sans-serif" font-weight="600" font-size="20" fill="'+W+'">META</text>'+ground(20,380,228)+
-    [[104,90,F3],[300,96,MID],[132,72,MID],[270,74,F3],[96,128,MID],[312,130,F3]].map(function(c,i){return '<rect x="'+c[0]+'" y="'+c[1]+'" width="6" height="11" rx="1.5" fill="'+c[2]+'" transform="rotate('+(i*40)+' '+c[0]+' '+c[1]+')"/>';}).join('')+
-    peep({pose:'standing/EasingWB',hair:'ShortWavy',face:'SmileTeeth',x:200,y:228,h:158,fill:F1}),
-    'Hombre feliz cruzando la meta');
-};
-ILUS.autoestima=function(){
-  return svg(blob(210,138,160,94)+windowFrame(60,34,92,120)+ground(30,370,228)+plant(330,226,0.95)+
-    peep({pose:'standing/PolkaDots',hair:'LongCurly',face:'Cute',x:226,y:228,h:196,fill:F1}),
-    'Mujer segura de sí misma, sonriendo');
-};
-ILUS.duelo=function(){
-  return svg(blob(200,140,172,92)+tree(74,226,58,30)+tree(330,226,46,24)+birds(250,46)+ground(20,380,228)+
-    peep({pose:'standing/EasingBW',hair:'GrayShort',face:'Calm',x:170,y:228,h:192,fill:F1})+
-    peep({pose:'standing/WalkingBW',hair:'Bun',face:'SmileBig',x:236,y:228,h:132,fill:F2,flip:-1}),
-    'Abuela y nieta paseando tranquilas por el parque');
-};
-ILUS.infancia=function(){
-  return svg(blob(200,140,172,92)+tree(358,226,52,22)+ground(20,380,228)+
-    peep({pose:'sitting/OneLegUpWB',hair:'Beanie',face:'SmileLol',x:118,y:228,h:128,fill:F1})+
-    peep({pose:'sitting/MediumWB',hair:'Twists',face:'SmileTeeth',x:200,y:228,h:126,fill:F2})+
-    peep({pose:'standing/CrossedArmsWB',hair:'MediumStraight',face:'Smile',x:310,y:228,h:194,fill:F1,flip:-1}),
-    'Dos adolescentes riendo con su madre');
-};
-ILUS.personalidad=function(){
-  return svg(blob(200,138,168,94)+p('M40 92 H140 M260 92 H360 M40 150 H140 M260 150 H360',null,3)+plant(70,92,0.5)+plant(110,92,0.42)+plant(300,92,0.45)+plant(338,150,0.5)+plant(76,150,0.46)+ground(20,380,228)+
-    peep({pose:'standing/ShirtPantsWB',hair:'Pomp',face:'Smile',beard:'Full',glasses:'GlassClubmaster',x:200,y:228,h:196,fill:F1}),
-    'Hombre sonriente y tranquilo entre plantas');
-};
-ILUS.sexual=function(){
-  return svg(blob(200,138,170,92)+p('M346 228 V70 M332 70 H360 L354 50 H338 Z',null,2.4)+'<path d="M332 70 H360 L354 50 H338 Z" fill="'+F3+'"/>'+ground(20,380,228)+sofa(110,296,180,228)+
-    peep({pose:'sitting/ClosedLegBW',hair:'MediumShort',face:'LoveGrin',x:166,y:226,h:140,fill:F1})+
-    peep({pose:'sitting/CrossedLegs',hair:'ShortMessy',face:'Cheeky',beard:'Chin',x:242,y:226,h:144,fill:F2,flip:-1}),
-    'Pareja relajada y cómplice en el sofá');
-};
+ILUS.portada=function(){return svg(blob(200,132,168,96)+own('lectora-sillon.png',46,10,308,230),'Mujer leyendo tranquila el periódico en su sillón, junto a una planta');};
+ILUS.ansiedad=function(){return svg(blob(200,132,168,96)+own('ansiedad-mochila.png',144,24,113,212),'Chica caminando con una mochila muy cargada de libros');};
+ILUS.depresion=function(){return svg(blob(200,132,168,96)+own('depresion-perrito.png',120,26,160,210),'Persona sentada en el suelo abrazando a un cachorro, con los ojos cerrados');};
+ILUS.insomnio=function(){return scene([{n:'puppy',h:184}],'Mujer descansando con los ojos cerrados, abrazada a su perro');};
+ILUS.alimentacion=function(){return scene([{n:'entertainment',h:212}],'Mujer paseando contenta con una bebida');};
+ILUS.pareja=function(){return scene([{n:'entertainment',x:168,h:200,flip:-1},{n:'pantalones',x:248,h:204}],'Pareja paseando juntas');};
+ILUS.tdah=function(){return svg(blob(200,132,168,96)+own('tdah-lectora.png',104,36,193,200),'Chica sentada en el suelo leyendo un libro, con una pila de libros al lado');};
+ILUS.adicciones=function(){return scene([{n:'late',h:208}],'Chica caminando decidida');};
+ILUS.autoestima=function(){return svg(blob(200,132,168,96)+own('autoestima-abrigo.png',134,24,131,212),'Mujer con abrigo blanco caminando segura mientras escucha música');};
+ILUS.duelo=function(){return scene([{n:'reflecting',h:186}],'Mujer sentada, pensativa');};
+ILUS.infancia=function(){return scene([{n:'experiments',h:172}],'Dos niños jugando juntos sentados en el suelo');};
+ILUS.personalidad=function(){return svg(blob(200,132,168,96)+own('personalidad-senala.png',142,24,116,212),'Chica que se tapa la boca mientras señala hacia otro lado');};
+ILUS.sexual=function(){return scene([{n:'polkapup',x:140,h:150},{n:'puppy',x:262,h:156,flip:-1}],'Dos personas sentadas juntas y tranquilas, cada una con su perro');};
 
 /* ---------- formatos de terapia ---------- */
-/* sillón visto de lado: respaldo detrás de la espalda (back = -1 a la izquierda, 1 a la derecha) */
-function armchair(x,seatY,yGround,back){
-  var bx=x+back*34;
-  return p('M'+(bx-9)+' '+(seatY+16)+' Q'+(bx-11)+' '+(seatY-64)+' '+bx+' '+(seatY-66)+' Q'+(bx+11)+' '+(seatY-64)+' '+(bx+9)+' '+(seatY+16)+' Z',F2,2.4)+
-    p('M'+(x-40)+' '+(seatY-2)+' Q'+(x-42)+' '+(seatY+20)+' '+(x-30)+' '+(seatY+22)+' H'+(x+30)+' Q'+(x+42)+' '+(seatY+20)+' '+(x+40)+' '+(seatY-2)+' Z',F2,2.4)+
-    p('M'+(x-28)+' '+(seatY+22)+' V'+yGround+' M'+(x+28)+' '+(seatY+22)+' V'+yGround,null,3);
-}
-ILUS.presencial=function(){
-  return svg(blob(200,138,174,94)+windowFrame(166,26,68,58)+plant(366,226,0.72)+ground(24,376,228)+
-    armchair(112,180,228,-1)+peep({pose:'sitting/ClosedLegWB',hair:'Medium',face:'Smile',x:118,y:228,h:146,fill:F1})+
-    armchair(288,180,228,1)+peep({pose:'sitting/CrossedLegs',hair:'GrayShort',face:'Calm',glasses:'GlassRound',x:282,y:228,h:148,fill:F2,flip:-1})+
-    p('M184 194 H216 M190 194 V228 M210 194 V228',null,3)+cup(200,192),
-    'Terapia presencial: dos personas conversando en dos sillones');
-};
-ILUS.online=function(u){
-  u=u||'on';
-  var sx=226, sy=70, sw=112, sh=78;   // pantalla del ordenador
-  var screen=p('M'+sx+' '+sy+' H'+(sx+sw)+' V'+(sy+sh)+' H'+sx+' Z',F1,2.6)+
-    '<clipPath id="scr'+u+'"><rect x="'+(sx+2)+'" y="'+(sy+2)+'" width="'+(sw-4)+'" height="'+(sh-4)+'"/></clipPath>'+
-    '<g clip-path="url(#scr'+u+')">'+blob(sx+sw/2,sy+sh/2+8,44,30)+peep({pose:'bust/Coffee',hair:'GrayShort',face:'Smile',glasses:'GlassRound',x:sx+sw/2,y:sy+sh+2,h:74,fill:W})+'</g>'+
-    p('M'+(sx+sw/2)+' '+(sy+sh)+' V'+(sy+sh+12)+' M'+(sx+sw/2-16)+' '+(sy+sh+12)+' H'+(sx+sw/2+16),null,3)+
-    '<circle cx="'+(sx+sw-10)+'" cy="'+(sy+10)+'" r="3" fill="'+MID+'"/>';
-  return svg(blob(200,138,174,94)+windowFrame(40,26,70,58)+ground(24,376,228)+
-    chair(130,188,228,-1)+peep({pose:'sitting/ClosedLegWB',hair:'Bun',face:'SmileBig',x:140,y:228,h:146,fill:F1})+
-    table(170,356,160,228)+screen+p('M246 158 H316',null,4)+cup(340,160),
-    'Terapia online: una persona en sesión por videollamada; en la pantalla, su psicólogo');
-};
-ILUS.grupos=function(){
-  var g=blob(200,138,180,94)+ground(14,386,228);
-  /* corro visto de frente: dos personas a cada lado mirando al centro y una silla libre en medio */
-  [[56,'Afro','SmileBig',F1,1,null],[130,'Long','Smile',F2,1,null],[200,null],[270,'GrayBun','Calm',F1,-1,null],[344,'ShortWavy','LoveGrin',F2,-1,'Goatee']].forEach(function(c){
-    if(!c[1]){g+=chair(c[0],198,228,-1)+p('M'+(c[0]-19)+' 198 V150 M'+(c[0]+19)+' 198 V150 M'+(c[0]-19)+' 160 H'+(c[0]+19),null,3);return;}
-    g+=chair(c[0],198,228,c[4]>0?-1:1)+peep({pose:c[4]>0?'sitting/ClosedLegWB':'sitting/ClosedLegBW',hair:c[1],face:c[2],beard:c[5],x:c[0]+c[4]*7,y:228,h:116,fill:c[3],flip:c[4]});
-  });
-  return svg(g,'Grupo o taller: personas sentadas en corro, con una silla libre');
-};
-ILUS.talleres=function(){
-  return svg(blob(200,138,170,94)+ground(30,370,228)+
-    p('M300 228 L318 64 L336 228 M318 64 V40',null,2.6)+p('M262 56 H374 V146 H262 Z',W,2.4)+p('M276 78 H340 M276 96 H358 M276 114 H326',null,2.2)+'<circle cx="352" cy="120" r="9" fill="'+F3+'"'+st(1.8)+'/>'+
-    chair(92,198,228,-1)+peep({pose:'sitting/ClosedLegWB',hair:'ShortCurly',face:'Smile',x:102,y:228,h:118,fill:F2})+
-    peep({pose:'standing/PointingFingerWB',hair:'MediumStraight',face:'Explaining',x:210,y:228,h:182,fill:F1}),
-    'Taller: una persona explica junto a una pizarra');
-};
-ILUS.charlas=function(){
-  var aud='';
-  [[60,206],[118,212],[176,206],[234,214]].forEach(function(a){aud+=p('M'+(a[0]-26)+' 250 C'+(a[0]-26)+' '+(a[1]+8)+' '+(a[0]+26)+' '+(a[1]+8)+' '+(a[0]+26)+' 250 Z',F2,2.4)+'<circle cx="'+a[0]+'" cy="'+(a[1]-6)+'" r="15" fill="'+F3+'"'+st(2.4)+'/>';});
-  return svg(blob(220,124,170,92)+p('M40 30 H210 V120 H40 Z',W,2.4)+p('M58 52 H150 M58 72 H190 M58 92 H130',null,2.2)+
-    p('M352 228 V150 M344 150 h16',null,2.6)+peep({pose:'standing/EasingWB',hair:'Bun',face:'SmileBig',x:300,y:228,h:176,fill:F1,flip:-1})+ground(260,380,228)+aud,
-    'Charla: una ponente habla ante el público');
-};
+ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.png',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
+ILUS.online=function(){return svg(blob(200,132,168,96)+own('consulta-online.png',80,24,240,212),'Terapia online: una persona en su mesa en videollamada con su psicóloga');};
+ILUS.grupos=function(){return svg(blob(200,132,168,96)+own('grupos-taller.png',20,40,360,196),'Grupo: una psicóloga explica en un rotafolio a tres personas sentadas');};
+ILUS.talleres=function(){return scene([{n:'whoa',h:208}],'Taller: una persona explica señalando');};
+ILUS.charlas=function(){return scene([{n:'entertainment',h:212,flip:-1}],'Charla: una ponente habla con soltura');};
 
-/* ---------- página de contacto: retrato grande con flechas a mano que señalan cómo trabajamos ---------- */
-function arrowHead(x,y,deg,cls){
-  var a=deg*Math.PI/180, l=16, s='';
-  [-0.5,0.5].forEach(function(o){s+='M'+x+' '+y+' L'+(x-Math.cos(a+o)*l).toFixed(1)+' '+(y-Math.sin(a+o)*l).toFixed(1)+' ';});
-  return '<path d="'+s+'" class="'+cls+'" fill="none" stroke-width="4" stroke-linecap="round"/>';
-}
-function arrow(d,x,y,deg,cls){return '<path d="'+d+'" class="'+cls+'" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>'+arrowHead(x,y,deg,cls);}
-function label(x,y,anchor,t,s){return '<text x="'+x+'" y="'+y+'" text-anchor="'+anchor+'" fill="'+DK+'"><tspan font-family="DM Serif Display, Georgia, serif" font-size="30">'+t+'</tspan><tspan x="'+x+'" dy="24" font-family="DM Sans, sans-serif" font-size="15">'+s+'</tspan></text>';}
+/* ---------- página de contacto: el equipo de psicólogos, para el panel verde ---------- */
 ILUS.contacto=function(){
-  return '<svg viewBox="0 0 600 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Psicólogo sonriente rodeado de flechas dibujadas a mano: escucha, sin juicios, confidencial, a tu ritmo">'+
-    '<style>.ar{stroke:'+DK+'}.ac{stroke:#5FE3A8}</style>'+
-    blob(300,420,230,200)+
-    peep({pose:'bust/Sweater',hair:'ShortCurly',face:'Smile',beard:'Full',glasses:'GlassRound',x:300,y:660,h:520,fill:F1})+
-    label(16,92,'start','Escucha','sin prisas, con atención')+
-    arrow('M30 150 C80 130 128 140 132 168 C136 192 104 196 100 176 C96 152 140 140 196 196',196,196,45,'ar')+
-    label(16,300,'start','Sin juicios','lo que te pasa, tal cual')+
-    arrow('M28 372 C100 376 160 354 196 310',196,310,-51,'ar')+
-    label(584,92,'end','Confidencial','lo que hablamos, se queda aquí')+
-    arrow('M570 146 C530 150 470 182 420 228',420,228,138,'ar')+
-    label(584,300,'end','A tu ritmo','presencial u online')+
-    arrow('M576 384 C540 396 504 384 512 360 C520 336 552 350 538 368 C522 388 470 374 420 350',420,350,205,'ac')+
+  return '<svg viewBox="-38 120 600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="El equipo de psicólogos de Symploké, de pie y tranquilos">'+   // encuadre ajustado al grupo, para que quede centrado
+    blob(262,430,270,230)+
+    th({n:'plants',x:130,y:684,h:510})+
+    th({n:'pantalones',x:470,y:684,h:510})+
+    th({n:'entertainment',x:300,y:692,h:530})+
     '</svg>';
 };
 

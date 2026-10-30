@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Blog · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<link rel="stylesheet" href="comun.css">
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF; --hero:#5FE3A8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.links a.on{color:var(--brandink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--brand);color:var(--btntext)}
+.btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
+.btn.small{font-size:15px;padding:12px 22px}
+.verify,.draft{font:600 11px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:var(--brandink);border:1px dashed var(--brand);border-radius:6px;padding:3px 6px;vertical-align:middle;white-space:nowrap}
+.verify{color:#8A5A00;border-color:#D9A640;background:#FFF6E0}
+.draft{background:var(--bg)}
+
+/* cabecera del artículo: franja verde con título centrado; la ilustración la cruza y su mitad baja ya cae en el blanco */
+:root{--artw:min(600px,92vw)}
+.ahero{display:flow-root;background:var(--hero);padding:clamp(40px,6vw,72px) clamp(20px,4.5vw,64px) 0;text-align:center}
+.ahero .tag{display:inline-block;font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:#0E4A36;border:2px solid #0E4A36;border-radius:999px;padding:8px 14px;text-decoration:none}
+.ahero h1{max-width:860px;margin:22px auto 18px;font-size:clamp(40px,5vw,68px);line-height:1;letter-spacing:-.5px;color:#10241C}
+.ahero .desc{max-width:620px;margin:0 auto;font-size:clamp(16px,1.3vw,19px);line-height:1.45;color:#16362A}
+.ahero .meta{margin:16px 0 0;font-size:14px;color:#16362A}
+.ahero .art{width:var(--artw);margin:clamp(20px,3vw,36px) auto calc(var(--artw) * -0.3125);position:relative}
+.ahero .art svg{display:block;width:100%;height:auto}
+.ahero .art svg > rect[width="400"]{fill:transparent}
+.ahero .art svg .bg{display:none}
+
+/* texto corrido */
+.post{max-width:720px;margin:0 auto;padding:calc(var(--artw) * 0.3125 + clamp(28px,4vw,48px)) clamp(20px,4.5vw,32px) 0}
+.post p{font-size:19px;line-height:1.65;color:var(--ink2);margin:0 0 20px}
+.post p.first::first-letter{float:left;font:400 64px/.8 'DM Serif Display',Georgia,serif;color:var(--brand);margin:8px 10px 0 0}
+.post h2{font-size:clamp(28px,2.8vw,38px);line-height:1.08;margin:48px 0 14px}
+.post .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
+.post .beyond{border-left:3px solid var(--brand);padding-left:20px}
+.feel{list-style:none;margin:24px 0;padding:0}
+.feel li{font:400 clamp(24px,2.4vw,30px)/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);padding:14px 0 14px 22px;border-left:4px solid var(--hero);margin-bottom:10px}
+.psy{margin:0;padding:0;list-style:none}
+.psy li{padding:16px 0;border-bottom:1px solid var(--line)}
+.psy b{display:block;font:400 22px/1.15 'DM Serif Display',Georgia,serif;color:var(--ink);margin-bottom:6px}
+.psy span{font-size:17px;line-height:1.55;color:var(--ink2)}
+.alert{border-left:3px solid var(--brand);padding:6px 0 6px 14px;font-size:16px!important}
+.sign{margin-top:36px!important;padding-top:20px;border-top:1px solid var(--line);font-size:15px!important}
+
+/* llamada a pedir cita */
+.ask{max-width:900px;margin:clamp(56px,7vw,88px) auto 0;padding:clamp(28px,4vw,48px);background:var(--soft);border:1px solid var(--line);border-radius:28px;text-align:center}
+.ask h2{font-size:clamp(28px,3vw,40px);margin-bottom:10px}
+.ask p{margin:0 auto;max-width:560px;color:var(--ink2);line-height:1.45}
+.ask .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px}
+.ask .more{display:inline-block;margin-top:16px;font-weight:600;color:var(--brandink);text-decoration:none}
+
+/* sigue leyendo */
+.related{max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.related h2{font-size:clamp(28px,3vw,40px);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
+.card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.card .img svg{display:block;width:100%;height:100%}
+.card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card .t2{font-size:12px;font-weight:600;letter-spacing:.3px;color:var(--brandink);text-transform:uppercase}
+.card h3{font-size:22px;line-height:1.12}
+.card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .grid{grid-template-columns:1fr}
+  .post p{font-size:17px}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a href="terapia.html">Terapia</a><a class="on" href="test1.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
+</header>
+
+<div id="page"></div>
+<footer>© [Año] Symploké · [Tu nombre]. Prototipo de diseño. Ilustraciones: Transhumans (Pablo Stanley, CC0).</footer>
+
+<script src="maqueta/motivos-data.js"></script>
+<script src="maqueta/th-data.js"></script>
+<script src="maqueta/ilustraciones.js"></script>
+<script src="maqueta/dibujar.js"></script>
+<script>
+/* entrada del blog: articulo.html?m=slug. Mientras no haya artículos escritos, se monta con los textos del motivo
+   (maqueta/motivos-data.js): título con la frase de la gente, entradilla, y debajo el texto corrido */
+(function(){
+'use strict';
+var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(q?q[1]:'ansiedad')||MOTIVOS[0], idx=MOTIVOS.indexOf(m);
+var D=' <span class="draft">borrador</span>', ARR=' <span class="arr" aria-hidden="true">→</span>';
+document.title='«'+m.feel[0]+'» · Blog de psicología · Symploké';
+var h='';
+
+h+='<header class="ahero">';
+h+='<a class="tag" href="test1.html#blog">'+m.name+'</a>';
+h+='<h1>«'+m.feel[0]+'»</h1>';
+h+='<p class="desc">'+m.cta+'</p>';
+h+='<p class="meta">[Fecha] · 6 min de lectura · Por [Tu nombre]</p>';
+h+='<div class="art">'+ILUS[m.slug]('a'+m.slug)+'</div>';
+h+='</header>';
+
+h+='<article class="post">';
+h+='<p class="first">'+m.intro+D+'</p>';
+h+='<h2>Lo que se siente</h2>';
+h+='<p>Así lo cuenta la gente cuando busca ayuda. Es frecuente sentirse así:</p>';
+h+='<ul class="feel">'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
+if(m.alert)h+='<p class="alert">'+m.alert+'</p>';
+h+='<h2>Qué dice la ciencia</h2><p>'+m.science+'</p><p class="refs">'+m.refs+'</p>';
+h+='<h2>Más allá de la etiqueta</h2><p class="beyond">'+m.beyond+'</p>';
+h+='<h2>Cómo se trabaja en terapia</h2>';
+h+='<p>No hay una sola psicología, y no todas tienen la misma evidencia para cada problema. Estos son algunos enfoques:</p>';
+h+='<ul class="psy">'+m.approaches.map(function(a){return '<li><b>'+a[0]+'</b><span>'+a[1]+' <span class="verify">[VERIFICAR]</span></span></li>';}).join('')+'</ul>';
+h+='<p class="sign">Escrito por [Tu nombre], psicólogo sanitario. Última revisión: [fecha].</p>';
+h+='</article>';
+
+h+='<section class="ask"><h2>¿Te reconoces?</h2><p>'+m.cta+' Empezamos con una valoración inicial, sin compromiso.</p>';
+h+='<div class="cta"><a class="btn primary" href="contacto.html">Pedir primera cita'+ARR+'</a></div>';
+h+='<a class="more" href="motivo.html?m='+m.slug+'">Ver la terapia de '+m.name.toLowerCase()+ARR+'</a></section>';
+
+var rel=[1,2,3].map(function(k){return MOTIVOS[(idx+k)%MOTIVOS.length];});
+h+='<section class="related"><h2>Sigue leyendo</h2><div class="grid">'+rel.map(function(r){
+  return '<a class="card" href="articulo.html?m='+r.slug+'"><span class="img">'+ILUS[r.slug]('r'+r.slug)+'</span><span class="txt"><span class="t2">'+r.name+'</span><h3>«'+r.feel[0]+'»</h3><span class="go">Leer'+ARR+'</span></span></a>';
+}).join('')+'</div></section>';
+
+document.getElementById('page').innerHTML=h;
+drawIn(document.querySelector('.ahero .art svg'));
+})();
+</script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="comun.js"></script>
+</body>
+</html>
