@@ -15,6 +15,16 @@ function navSize(){
 window.addEventListener('scroll',navSize,{passive:true});
 navSize();
 
+/* ---------- menú: en la portada, el enlace de la sección que estás viendo queda marcado (.on);
+   data-spy marca con otra sección un enlace que lleva a otra página («Terapias» con «¿Qué hacemos?») ---------- */
+var spy=[].slice.call(document.querySelectorAll('.nav .links a[href^="#"],.nav .links a[data-spy]')).map(function(a){return {a:a,el:document.getElementById(a.getAttribute('data-spy')||a.getAttribute('href').slice(1))};}).filter(function(s){return s.el;});
+function navSpy(){
+  var line=NAV+80, cur=null;
+  spy.forEach(function(s){var r=s.el.getBoundingClientRect(); if(r.top<=line&&r.bottom>line)cur=s;});
+  spy.forEach(function(s){s.a.classList.toggle('on',s===cur);});
+}
+if(spy.length){window.addEventListener('scroll',navSpy,{passive:true});window.addEventListener('load',navSpy);navSpy();}
+
 /* ---------- scroll suave ---------- */
 var lenis=null;
 if(!REDUCED&&window.Lenis){

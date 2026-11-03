@@ -10,28 +10,45 @@ function v(t){return '<span class="verify">[VERIFICAR '+t+']</span>';}
 
 window.MOTIVOS=[
 {
-  slug:'ansiedad', name:'Ansiedad y estrés', sym:'Le doy vueltas a todo',
-  k:'ansiedad estres nervios angustia le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout',
-  feel:['Le doy vueltas a todo','Pienso demasiado las cosas','Me falta el aire y se me acelera el corazón','Me da miedo que me vuelva a dar un ataque de ansiedad'],
+  slug:'ansiedad', name:'Ansiedad y estrés', sym:'Tengo ansiedad y no sé por qué',
+  k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout',
+  feel:['Tengo ansiedad y no sé por qué','No puedo parar de pensar','Estoy todo el día pensando','Me obsesiono con las ideas'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  bases:[
+    ['bio','Lo que dice la biología','La ansiedad es un sistema de alarma que compartimos con otros animales. Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. '+V],
+    ['neuro','Lo que dice la neurología','Hay circuitos del cerebro que detectan amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. Por eso a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. '+V],
+    ['psico','Lo que dice la psicología','Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. Alivia un momento y alimenta el círculo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. '+V],
+    ['socio','Lo que dice la sociología','La ansiedad no nace solo dentro de cada uno. La precariedad, la prisa, la presión por rendir o por estar siempre conectado pesan, y es uno de los motivos de consulta más frecuentes en atención primaria. '+V]
+  ],
+  together:'Cada una de estas miradas explica una parte, y ninguna lo explica todo. Lo que nos interesa es cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero— y también sus razones, aunque al principio no se vean. A partir de ahí buscamos el enfoque que mejor encaja contigo, y lo pensamos juntos.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
   intro:'La ansiedad es una respuesta de alarma ante algo que anticipamos como amenaza. Es útil cuando se ajusta a lo que pasa; se convierte en un problema cuando aparece sin motivo claro, dura demasiado o empieza a decidir por ti.',
+  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: entender qué mantiene la ansiedad, dejar de evitar lo que asusta y volver a hacer lo que te importa.',
   science:'Se suele distinguir el miedo, ante un peligro presente, de la ansiedad, ante uno anticipado. Cuando se mantiene y limita la vida diaria, los manuales clínicos describen varios cuadros: ansiedad generalizada, pánico, ansiedad social o fobias, entre otros. Es uno de los motivos de consulta más frecuentes. '+V,
   refs:'GuíaSalud (SNS): guía de práctica clínica sobre el manejo de los trastornos de ansiedad en atención primaria. '+v('edición vigente y enlace'),
   beyond:'Decir «tengo ansiedad» la convierte en una pieza averiada que llevamos dentro. Suele ser más útil verla como algo que hacemos —anticipar— y preguntarse hacia dónde: casi siempre tiene dirección postal (el trabajo, la familia, la pareja, el dinero). A veces la anticipación se vuelve sobre sí misma: vigilar cada latido, pensar en cómo estoy pensando. Y las ideas que parecen «irracionales» también tienen sus razones.',
   approaches:[
-    ['Cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
-    ['Contextuales y ACT','Dejar de pelear con la ansiedad para volver a hacer lo que importa, aunque esté presente.','creciente'],
-    ['Psicodinámica breve','Entender los conflictos y patrones de relación que alimentan la angustia.','parcial']
+    ['Terapia cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
+    ['Terapias contextualistas y ACT','Dejar de pelear con la ansiedad para volver a hacer lo que importa, aunque esté presente.','creciente'],
   ],
   subs:['Ataque de ansiedad y pánico','Ansiedad social','Obsesiones','Miedos y fobias','Estrés laboral y burnout','Psicosomático'],
   alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde'
 },
 {
-  slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de nada',
-  k:'depresion estado de animo tristeza no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio',
-  feel:['No tengo ganas de nada','No tengo ganas de hacer nada, solo quiero dormir','Me siento vacío por dentro','Me siento solo y triste'],
+  slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de levantarme de la cama',
+  k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio',
+  feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No tengo ganas de vivir'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  bases:[
+    ['bio','Lo que dice la biología','El ánimo bajo no está solo en la cabeza: se nota en el sueño, en el apetito, en el cansancio, en el cuerpo entero. El estrés mantenido, la falta de luz y de movimiento o algunas enfermedades influyen; por eso a veces conviene también una revisión médica. '+V],
+    ['neuro','Lo que dice la neurología','La idea de que la depresión es «falta de serotonina» es una simplificación que la investigación no sostiene tal cual. Sí se sabe que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello: por eso cuesta tanto levantarse, aunque se quiera. '+V],
+    ['psico','Lo que dice la psicología','Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos den algo, y el ánimo baja más. Esperar a tener ganas para moverse suele alargar el círculo. Las terapias que mejor funcionan empiezan por romperlo con pasos pequeños. '+V],
+    ['socio','Lo que dice la sociología','Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión. No es debilidad de nadie: el malestar también habla de cómo vivimos. '+V]
+  ],
+  together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. Cuando no se ve futuro, ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y qué enfoque te sirve mejor.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
   intro:'Hablamos de depresión cuando la tristeza, el desánimo o la falta de interés se mantienen durante semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de uno mismo.',
+  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: recuperar poco a poco actividades con sentido, revisar los pensamientos que hunden y moverte hacia lo que importa sin esperar a tener ganas.',
   science:'Los manuales clínicos la describen por un conjunto de síntomas mantenidos en el tiempo: ánimo bajo, pérdida de interés, cambios en el sueño o el apetito, cansancio, culpa. Las guías recomiendan la psicoterapia, sola o junto con medicación según la intensidad. '+V,
   refs:'GuíaSalud (SNS): guía de práctica clínica sobre el manejo de la depresión en el adulto. '+v('edición vigente y enlace'),
   beyond:'El ánimo no es una sustancia que se agota dentro de la cabeza: va ligado a la vida concreta —pérdidas, trabajo, soledad, rutinas que se han ido estrechando—. La explicación de «me falta serotonina» es una simplificación que la investigación no sostiene tal cual '+V+'. Mirar la vida concreta no quita importancia al malestar: le da por dónde empezar.',
@@ -44,11 +61,20 @@ window.MOTIVOS=[
   alt:'Grupo de amigas compartiendo una mesa al aire libre'
 },
 {
-  slug:'insomnio', name:'Insomnio y sueño', sym:'No puedo dormir',
-  k:'insomnio sueno no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio',
-  feel:['No puedo dormir por las noches','Me despierto muchas veces por la noche','Me despierto a las 5 y ya no puedo dormir','No puedo dormir: mi cabeza no deja de pensar'],
+  slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
+  k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio',
+  feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Me paso el día agotado'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  bases:[
+    ['bio','Lo que dice la biología','El sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. '+V],
+    ['neuro','Lo que dice la neurología','Para dormirse, el cerebro tiene que bajar la guardia. En el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V],
+    ['psico','Lo que dice la psicología','El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. La terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección en las guías clínicas. '+V],
+    ['socio','Lo que dice la sociología','Los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. Dormir mal también tiene que ver con cómo está organizado el día. '+V]
+  ],
+  together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que dicen el cuerpo y la psicología para encontrar lo que te funcione a ti.',
   cta:'Trabajamos contigo para que la noche deje de ser una pelea.',
   intro:'El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.',
+  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.',
   science:'La terapia cognitivo-conductual para el insomnio es el tratamiento psicológico de primera elección en las guías clínicas. Incluye la higiene del sueño, pero no se reduce a ella. '+V,
   refs:'GuíaSalud (SNS): guía de práctica clínica para el manejo de pacientes con insomnio en atención primaria. '+v('edición vigente y enlace'),
   beyond:'Dormir no se puede forzar: cuanto más se intenta, más se aleja. El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche.',
@@ -61,11 +87,20 @@ window.MOTIVOS=[
   alt:'Mujer descansando al sol de la mañana con una taza de café'
 },
 {
-  slug:'alimentacion', name:'Problemas de alimentación', sym:'No puedo parar de comer', delicate:true,
-  k:'alimentacion comida comer no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen',
-  feel:['No puedo parar de comer','Como por ansiedad','Pienso en la comida y en mi cuerpo casi todo el día','Me salto comidas y luego me doy un atracón'],
+  slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
+  k:'alimentacion comida comer como y despues me culpo me siento horrible conmigo como mucho y despues me castigo solo comiendo alivio la ansiedad no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen culpa',
+  feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  bases:[
+    ['bio','Lo que dice la biología','Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. Muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V],
+    ['neuro','Lo que dice la neurología','Comer activa los sistemas de recompensa del cerebro y calma durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V],
+    ['psico','Lo que dice la psicología','Es frecuente un círculo: comer para calmarse, sentir culpa, castigarse o restringir, y volver a comer. La culpa no frena el círculo: lo alimenta. Entender qué función cumple la comida en tu vida ayuda a salir de él. '+V],
+    ['socio','Lo que dice la sociología','Vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. Las redes sociales y los juicios sobre el peso pesan, sobre todo en adolescentes y mujeres jóvenes. '+V]
+  ],
+  together:'La comida rara vez es solo comida: se entreteje con el control, la imagen, las emociones, la familia o las redes. Preferimos no reducirlo a una sigla. Lo pensamos juntos, con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
   cta:'Trabajamos contigo, con calma y sin juicios, para que la comida vuelva a ocupar su sitio.',
   intro:'Hablamos de problemas de alimentación cuando la comida, el peso o la figura ocupan tanto espacio que condicionan el día a día: restricciones, atracones, compensaciones o una preocupación constante.',
+  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: regularizar la alimentación, entender qué función cumple la comida en tu vida y relacionarte de otra manera con tu cuerpo.',
   science:'Los manuales clínicos describen varios cuadros (anorexia, bulimia, trastorno por atracón, entre otros). Pueden tener consecuencias médicas, por eso el tratamiento suele requerir coordinación con medicina y nutrición. '+V,
   refs:'GuíaSalud (SNS): guía de práctica clínica sobre trastornos de la conducta alimentaria. '+v('edición vigente y enlace'),
   beyond:'La comida rara vez es solo comida: se entreteje con el control, la imagen, la familia o las redes. Preferimos no reducirlo a una sigla y entender qué función cumple ese comportamiento en tu vida.',
