@@ -76,6 +76,7 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
    y entre párrafos una frase destacada entre comillas para aligerar la lectura */
 .read p strong{font-weight:600;color:var(--ink)}
 .read .voz{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(20px,1.9vw,24px);line-height:1.25;color:var(--brandink);margin:28px 0 28px clamp(0px,4vw,48px)}
+.read .voz.grande{font-size:clamp(23px,2.3vw,29px)}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -166,8 +167,8 @@ if(m.bases){
   m.bases.forEach(function(b,i){
     h+='<p>'+b+'</p>';
     if(i<m.bases.length-1&&voz[i]){   // frase destacada entre párrafo y párrafo; [texto, autor] si es una cita
-      var vz=[].concat(voz[i]);
-      h+='<p class="voz">«'+vz[0]+'»'+(vz[1]?'<span class="quien">— '+vz[1]+'</span>':'')+'</p>';
+      var q=voz[i], vz=(q.texto?[q.texto,q.autor]:[].concat(q));   // {texto, autor, grande} para destacarla más
+      h+='<p class="voz'+(q.grande?' grande':'')+'">«'+vz[0]+'»'+(vz[1]?'<span class="quien">— '+vz[1]+'</span>':'')+'</p>';
     }
   });
   h+=(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';

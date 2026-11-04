@@ -180,6 +180,27 @@ window.MOTIVOS=[
   slug:'tdah', name:'TDAH y atención', sym:'No me puedo concentrar en nada',
   k:'tdah atencion no me puedo concentrar no consigo concentrarme me cuesta concentrarme se me olvidan las cosas estudiar como saber si tengo tdah adulto hiperactividad despiste impulsividad infancia colegio ayudar a mi hijo',
   feel:['No me puedo concentrar en nada','Me cuesta concentrarme y se me olvidan las cosas','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* citas literales de Marino Pérez Álvarez: (2014) entrevista en Infocop «Los intereses que hay detrás del diagnóstico del TDAH»;
+     (2017) «The Four Causes of ADHD: Aristotle in the Classroom», pág. 11 del PDF (en inglés: la traducción es nuestra) */
+  quotes:[
+    'Sin negar el problema, su solución no debiera ser a costa de “enfermar” a los niños',
+    {texto:'Cualquier problema relacionado con la «atención», la «actividad» y la «impulsividad» no queda fuera del aprendizaje, como aspectos del desarrollo del autocontrol. Algunos niños pueden necesitar un «entrenamiento» adicional (no un tratamiento)', grande:true},
+    'Resituar el problema en su contexto que no es otro que el del aprendizaje y educación de la atención y la actividad de los niños, seguramente una tarea más difícil de lo que se pensaba, sobre todo, en el mundo de hoy'
+  ],
+  basesIntro:[
+    'El TDAH es un problema, pero no una enfermedad. Podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades. Vemos a la persona entera: sus ritmos, su curiosidad, su alta actividad y sus dificultades.',
+    'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. Los problemas de atención y de inquietud existen y hay que atenderlos. Pero a veces, con la mejor intención, los adultos convierten estas formas de ser en algo problemático, y convertir al niño en enfermo no es la única salida ni la mejor. Tratamos de ayudar sin poner etiquetas.',
+    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> no han encontrado un marcador que permita diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Los estudios genéticos encuentran muchas variantes de efecto pequeño, que influyen pero no deciden por sí solas. '+V,
+    '<strong>Los estudios en neurología</strong> no permiten hablar de un cerebro «típico» y otro «atípico», sino de diversidad entre personas. Por eso no tiene sentido explicarlo como una avería neuroquímica ni como una disfunción ejecutiva: el cerebro participa, como en todo lo que hacemos, pero quien aprende a atender es la persona. '+V,
+    'Prestar atención es algo que se aprende, y hoy es más difícil que nunca. <strong>Los estudios en psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. Y que la solución pase por aprender significa que se puede cambiar. Puede que los padres necesiten asesoramiento e incluso entrenamiento; trabajamos con el niño, la familia y el colegio para que lo consiga. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan que vivimos a un ritmo acelerado, impulsivo y pendiente de muchas cosas a la vez, con pantallas que reclaman la atención a cada momento y niños acostumbrados a tenerlo todo al instante. Esa forma de vida choca con lo que piden la escuela o el trabajo. '+V
+  ],
+  together:'Muchos adultos también tienen TDAH, y resulta muy difícil diagnosticarlo. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. No se trata de cambiar quién eres, sino de trabajar para que esos ritmos encajen mejor con tu vida. Con los niños, trabajamos con ellos, con la familia y con el colegio; con los adultos, contigo y con lo que te pide tu día a día. Lo pensamos juntos.',
+  refs:'Pérez Álvarez (2014), «Los intereses que hay detrás del diagnóstico del TDAH» (entrevista, Infocop); (2017), «The Four Causes of ADHD: Aristotle in the Classroom»; (2018), «El TDAH es un problema, pero no una enfermedad»; Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
   cta:'Podemos ayudarte a organizarte con lo que tienes, sin quedarte en la etiqueta.',
   intro:'El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.',
   science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño. '+V,
@@ -195,10 +216,31 @@ window.MOTIVOS=[
   slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
   k:'adicciones alcohol beber juego apuestas casino tragaperras pantallas movil enganchado videojuegos redes no puedo dejar de beber no puedo dejar de jugar no puedo dejar el movil consumo drogas',
   feel:['No puedo dejar de beber','No puedo dejar de jugar','No puedo dejar el móvil','Me prometo que es la última vez'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* frases propias de la consulta (no son citas de autor). Citas dentro del texto: Ovidio, citado por Pérez Jara en la charla «¿Existe la libertad?» (2026, ~23:00);
+     «controlar las condiciones que nos controlan»: Marino Pérez Álvarez resumiendo a Skinner en el coloquio de esa charla (~1:13:00);
+     el móvil como «última voluntad»: Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno», pág. 27 del PDF */
+  quotes:[
+    'Una adicción te quita libertad. El objetivo de la terapia es que vuelvas a tener opciones',
+    'No se trata solo de dejar la adicción, sino de llenar ese hueco con otros proyectos',
+    'Las palabras, los apoyos y los proyectos son los que dan fuerza. Nosotros te ayudamos a trabajarlos'
+  ],
+  basesIntro:[
+    'Una adicción te quita <strong>libertad</strong>: cada vez eliges menos. Por eso dejarla no es solo cuestión de fuerza de voluntad, y el objetivo de la terapia es que vuelvas a tener opciones.',
+    'Para poder hacer lo que quieres, antes tienes que soltar lo que te ata. Liberarte de una adicción es lo que te deja libre para todo lo demás: tu familia, tu trabajo, tus proyectos.',
+    'Como casi todo lo que nos pasa, una adicción es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que algunas sustancias, como el alcohol, crean dependencia física: el cuerpo se acostumbra y, al dejarlas, protesta. Por eso a veces hace falta acompañamiento médico. '+V,
+    '<strong>Los estudios en neurología</strong> muestran que el consumo, el juego o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene. '+V,
+    'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <strong>ansiedad</strong>: muchas veces caemos en ellas para cortar un momento de ansiedad, y funciona a corto plazo, pero alimenta el círculo. <strong>Los estudios en psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y te enseñamos a hacerlo. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, pero no son la única causa: hay que mirar también la vida que se lleva. Consultar el móvil se ha convertido en «la última voluntad antes de emprender el vuelo y lo primero que se hace una vez a salvo». Si el móvil se ha convertido en lo primero y lo último de tu día, no estás solo. Te ayudamos a que vuelva a ser una herramienta y no el centro de tu vida. '+V
+  ],
+  together:'El autocontrol no nace de dentro: lo construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que merece la pena esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es el primer paso. El segundo, y el más importante, es llenar ese hueco con una vida que merezca la pena.',
   cta:'Podemos ayudarte a dar el paso, a tu ritmo y sin sermones.',
   intro:'Hablamos de adicción cuando algo —alcohol, juego, pantallas u otras sustancias— se repite aunque te esté haciendo daño y cuesta dejarlo aunque quieras.',
   science:'Las guías combinan intervenciones psicológicas (entrevista motivacional, terapia cognitivo-conductual, manejo de contingencias) y, en las sustancias, tratamiento médico. '+V,
-  refs:'Estudios y guías por añadir. '+v('referencias'),
+  refs:'Pérez Jara y Camprubí (2026), «¿Existe la libertad? Psicología y filosofía de nuestras decisiones» (charla, con coloquio de Marino Pérez Álvarez); Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno»; (2025), «La salud mental de los adolescentes: un síntoma de la sociedad». '+v('referencias completas'),
   beyond:'Explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene. Mirarlo así no quita responsabilidad: da más sitios por donde intervenir.',
   approaches:[
     ['Entrevista motivacional','Trabajar la ambivalencia entre seguir y dejarlo.','buena'],
