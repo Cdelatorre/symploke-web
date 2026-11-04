@@ -163,10 +163,27 @@ window.MOTIVOS=[
   slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
   k:'pareja terapia de pareja mi pareja y yo no paramos de discutir siempre discutimos no nos entendemos nos queremos pero no funciona superar una ruptura apego narcisismo narcisista dependencia emocional relacion celos infidelidad separacion divorcio',
   feel:['Mi pareja y yo no paramos de discutir','Siempre discutimos, no nos entendemos','Nos queremos, pero no funciona','No consigo superar una ruptura'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* ideas del Gottman Institute (gottman.com: «The Four Horsemen», sus antídotos y «The magic relationship ratio»), en traducción nuestra */
+  quotes:[
+    'Criticar a tu pareja no es lo mismo que expresar una queja',
+    'El antídoto del desprecio es construir una cultura de aprecio y respeto en la relación'
+  ],
+  basesIntro:[
+    'Los conflictos aparecen en todas las relaciones: discutir no es el problema. Lo importante es cómo se discute y si sabemos <strong>reparar</strong> después.',
+    'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas.',
+    'Como casi todo lo que nos pasa, los problemas de pareja son <strong>multicausales</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta: el corazón se acelera y cuesta escuchar y pensar con claridad. Por eso, a veces, lo mejor es parar, calmarse y retomar la conversación después. '+V,
+    '<strong>Los estudios en psicología</strong>, sobre todo los del equipo de John Gottman, muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong> que ataca a la persona, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es el mayor predictor de ruptura. Criticar a la pareja no es lo mismo que expresar una queja: una crítica constructiva habla de algo concreto que nos molesta; la que no lo es ataca a la persona. Y en las parejas que funcionan hay unos <strong>cinco momentos buenos por cada uno malo</strong>. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen en la vida en pareja: muchos conflictos tienen que ver con esas circunstancias, y no solo con los dos. '+V
+  ],
+  together:'Por eso trabajamos la <strong>comunicación</strong>: aprender a detectar esas formas de discutir, a quejarse sin atacar y a reparar los conflictos cuando aparecen. Para ello necesitamos construir una base de <strong>aprecio y respeto mutuo</strong>, que es el mejor antídoto contra el desprecio. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla. Lo pensamos juntos, decidáis lo que decidáis.',
   cta:'Os ayudamos a pensar juntos qué os pasa, decidáis lo que decidáis.',
   intro:'La terapia de pareja es un espacio para entender qué os está pasando y probar otras maneras de relacionaros, tanto si queréis seguir como si estáis pensando en separaros. También atendemos a una sola persona que quiere trabajar su relación.',
   science:'Hay enfoques de terapia de pareja con estudios controlados, como la terapia conductual integrativa o la centrada en las emociones. '+V,
-  refs:'Estudios concretos por añadir. '+v('referencias'),
+  refs:'The Gottman Institute, «The Four Horsemen: criticism, contempt, defensiveness and stonewalling», «The Four Horsemen: the antidotes» y «The magic relationship ratio, according to science» (gottman.com). '+v('referencias completas'),
   beyond:'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla.',
   approaches:[
     ['Conductual integrativa','Cambiar lo que se puede cambiar y aceptar lo que forma parte del otro.','buena'],
@@ -365,10 +382,30 @@ window.MOTIVOS=[
   slug:'sexual', name:'Problemas sexuales', sym:'No tengo deseo sexual',
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
   feel:['No tengo deseo sexual','No tengo deseo sexual por mi pareja','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* ideas y datos del Gottman Institute (gottman.com, «Relationship intimacy» y «Weekend homework assignment: have great sex»),
+     en traducción nuestra; el 9 % lo atribuye el instituto a John Gottman sin citar el estudio */
+  quotes:[
+    'La intimidad real empieza con conversaciones reales sobre sexo',
+    'Solo el 9 % de las parejas que no pueden hablar de sexo con comodidad está satisfecha con su vida sexual',
+    'Las parejas que hablan abiertamente de sus necesidades y deseos tienen vínculos más fuertes y una vida sexual más satisfactoria'
+  ],
+  basesIntro:[
+    'La sexualidad no es una función mecánica que falla: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
+    'La intimidad real empieza con <strong>conversaciones reales</strong> sobre sexo: poder decir qué nos pasa, qué necesitamos y qué deseamos.',
+    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas, el cansancio, algunas enfermedades o algunos medicamentos influyen. Por eso a veces conviene descartar antes una causa médica. '+V,
+    '<strong>Los estudios en neurología</strong> muestran que el estrés y la ansiedad frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. Por eso la presión por «rendir» suele empeorar las cosas. '+V,
+    '<strong>Los estudios en psicología</strong>, entre ellos los del equipo de John Gottman, muestran que poder hablar de sexo es clave: solo el 9 % de las parejas que no pueden hablar de sexo con comodidad dice estar satisfecha con su vida sexual. En cambio, las parejas que hablan abiertamente de sus necesidades y deseos sexuales tienen vínculos emocionales más fuertes y vidas sexuales más satisfactorias. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo. '+V
+  ],
+  together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Te ayudamos a hablar de ello con calma, sin vergüenza y sin prisas, a solas o en pareja, y lo pensamos juntos.',
   cta:'Podemos hablar de ello con calma, sin vergüenza y sin prisas.',
   intro:'Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
   science:'Muchas dificultades sexuales tienen a la vez componentes físicos y psicológicos; por eso a veces conviene descartar antes una causa médica. '+V,
-  refs:'Estudios concretos por añadir. '+v('referencias'),
+  refs:'The Gottman Institute, «Relationship intimacy» y «Weekend homework assignment: have great sex» (gottman.com). '+v('estudio original del dato del 9 %'),
   beyond:'La sexualidad no es una función mecánica que falla: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas.',
   approaches:[
     ['Terapia sexual cognitivo-conductual','Ejercicios graduales y revisión de la ansiedad de ejecución.','moderada'],
