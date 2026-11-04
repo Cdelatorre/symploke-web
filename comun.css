@@ -65,3 +65,20 @@ html.scrolled .nav .btn.small{padding:9px 18px;font-size:14px}
   html.scrolled .nav .btn.small{padding:8px 12px;font-size:13px}
 }
 @media (prefers-reduced-motion: reduce){ .nav,.nav .brand,.nav .brand svg,.nav .btn.small{transition:none} }
+
+/* ---------- interruptor de modo noche (lo pone comun.js en la esquina superior derecha de la cabecera) ----------
+   data-theme en <html> manda sobre el tema del sistema; sin elección guardada se sigue al sistema */
+.theme-sw{flex:0 0 auto;position:relative;width:60px;height:32px;margin:0 0 0 10px;padding:0;border:1px solid var(--line);border-radius:999px;background:var(--soft);cursor:pointer;transition:background-color .3s ease,border-color .3s ease}
+.theme-sw:hover{border-color:var(--brand)}
+.theme-sw:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.theme-sw .ico{position:absolute;top:50%;width:16px;height:16px;margin-top:-8px;color:var(--ink2)}
+.theme-sw .sun{left:8px}
+.theme-sw .moon{right:8px}
+.theme-sw .knob{position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:var(--brand);box-shadow:0 2px 6px rgba(0,40,25,.25);transition:transform .3s cubic-bezier(.3,.7,.2,1.2)}
+.theme-sw[aria-checked="true"] .knob{transform:translateX(28px)}
+html.scrolled .theme-sw{width:52px;height:28px}
+html.scrolled .theme-sw .knob{width:20px;height:20px}
+html.scrolled .theme-sw[aria-checked="true"] .knob{transform:translateX(24px)}
+html.scrolled .theme-sw .ico{width:14px;height:14px;margin-top:-7px}
+@media (max-width:860px){ .theme-sw{margin-left:0} }
+@media (prefers-reduced-motion: reduce){ .theme-sw,.theme-sw .knob{transition:none} }

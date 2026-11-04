@@ -15,6 +15,28 @@ function navSize(){
 window.addEventListener('scroll',navSize,{passive:true});
 navSize();
 
+/* ---------- modo noche: interruptor en la cabecera. Sin elección guardada sigue al tema del sistema;
+   al pulsarlo se guarda en localStorage y una línea en el <head> de cada página la aplica antes de pintar ---------- */
+var DARK=window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)');
+function isDark(){var t=root.getAttribute('data-theme'); return t?t==='dark':!!(DARK&&DARK.matches);}
+var nav=document.querySelector('.nav');
+if(nav){
+  var sw=document.createElement('button');
+  sw.type='button'; sw.className='theme-sw'; sw.setAttribute('role','switch'); sw.setAttribute('aria-label','Modo noche');
+  sw.innerHTML='<svg class="ico sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+    +'<svg class="ico moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>'
+    +'<span class="knob" aria-hidden="true"></span>';
+  var syncSw=function(){sw.setAttribute('aria-checked',String(isDark()));};
+  sw.addEventListener('click',function(){
+    var t=isDark()?'light':'dark';
+    root.setAttribute('data-theme',t); syncSw();
+    try{localStorage.setItem('symploke-tema',t);}catch(e){}
+  });
+  if(DARK&&DARK.addEventListener)DARK.addEventListener('change',syncSw);   // cambia el tema del sistema y no hay elección guardada
+  nav.appendChild(sw);   // en la esquina superior derecha, después de «Pedir primera cita»
+  syncSw();
+}
+
 /* ---------- menú: en la portada, el enlace de la sección que estás viendo queda marcado (.on);
    data-spy marca con otra sección un enlace que lleva a otra página («Terapias» con «¿Qué hacemos?») ---------- */
 var spy=[].slice.call(document.querySelectorAll('.nav .links a[href^="#"],.nav .links a[data-spy]')).map(function(a){return {a:a,el:document.getElementById(a.getAttribute('data-spy')||a.getAttribute('href').slice(1))};}).filter(function(s){return s.el;});
