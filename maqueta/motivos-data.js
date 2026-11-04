@@ -293,10 +293,29 @@ window.MOTIVOS=[
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   k:'infancia adolescencia mi hijo adolescente no quiere estudiar ni hacer nada no me habla no me respeta no tiene amigos no quiere ir al colegio hija menores ninos adolescentes escolar familia conducta',
   feel:['Mi hijo adolescente no quiere estudiar ni hacer nada','Mi hijo adolescente no me habla','Mi hijo no tiene amigos','Mi hijo no quiere ir al colegio'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* frases propias de la consulta (no son citas de autor); las citas de Marino descartadas están en citas-para-la-web.md */
+  quotes:[
+    'El sufrimiento de los niños y de los adolescentes es real y merece ayuda',
+    'Muchas veces los protegemos tanto que cualquier contratiempo los hunde',
+    'Mucha exigencia y poca tolerancia a la frustración'
+  ],
+  basesIntro:[
+    'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a demostrárselo.',
+    'No todo malestar es un trastorno. Muchas veces hay que hablar de la familia, del colegio, de los amigos o de las preguntas propias de la edad. El sufrimiento de los niños y de los adolescentes es real y merece ayuda; la mejor ayuda lo entiende dentro de su vida —su casa, su clase, sus amigos, las pantallas— y busca qué se puede cambiar de sus circunstancias.',
+    'Como casi todo lo que nos pasa, el malestar en la infancia y la adolescencia es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta. Conviene tenerlo en cuenta sin convertirlo en la explicación de todo. '+V,
+    '<strong>Los estudios en neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de la experiencia: de lo que se practica y se aprende. Por eso un menor no es un adulto pequeño ni un diagnóstico. '+V,
+    '<strong>Los estudios en psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas: tarde o temprano se encuentran con el mundo real, y conviene que lleguen preparados. Hoy les pedimos que sean brillantes en todo y, a la vez, los protegemos tanto que cualquier contratiempo los hunde: mucha exigencia y poca tolerancia a la frustración. Les ayudamos a encontrar un equilibrio entre esforzarse y aguantar los tropiezos. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. El mundo real sigue ahí cuando nuestros hijos salen de casa: les ayudamos a llegar a él y a relacionarse con él con recursos propios. '+V
+  ],
+  together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar con calma, sin precipitarse, y ayudar según lo que necesite. Trabajamos con él o con ella, y también con vosotros: proponemos a padres y profesores estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso lo pensamos juntos.',
   cta:'Podemos ayudaros, a vuestro hijo o hija y a vosotros, a entender qué está pasando.',
   intro:'Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.',
   science:'En la infancia, las intervenciones con más apoyo suelen incluir a la familia; en la adolescencia, la terapia cognitivo-conductual adaptada a la edad. '+V,
-  refs:'Estudios y guías por añadir. '+v('referencias'),
+  refs:'Pérez Álvarez (2025), «La salud mental de los adolescentes: un síntoma de una sociedad vulnerable» (The Conversation) y «La salud mental de los adolescentes: un síntoma de la sociedad» (Telos); Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
   beyond:'Un menor no es un adulto pequeño ni un diagnóstico: está creciendo dentro de una familia, una escuela y un grupo de amigos. Antes de ponerle una etiqueta, conviene mirar ese entramado.',
   approaches:[
     ['Entrenamiento a familias','Pautas concretas para casa y coordinación con el colegio.','buena'],
