@@ -16,7 +16,7 @@ function v(t){return '<span class="verify">[VERIFICAR '+t+']</span>';}
 window.MOTIVOS=[
 {
   slug:'ansiedad', name:'Ansiedad y estrés', sym:'Tengo ansiedad y no sé por qué',
-  k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout',
+  k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout estres laboral estres postraumatico trauma',
   feel:['Tengo ansiedad y no sé por qué','No puedo parar de pensar','Estoy todo el día pensando','Me obsesiono con las ideas'],
   /* citas literales de Marino Pérez Álvarez: (2012) «La psicología positiva: magia simpática», pág. 10 del PDF;
      (2019) «Diagnóstico más allá de los síntomas», págs. 32-33 del PDF (ver citas-para-la-web.md) */
@@ -28,6 +28,7 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
     'La ansiedad no es mala en sí misma. La necesitamos para reaccionar ante lo que nos rodea: nos pone alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
+    'Dentro de la ansiedad y el estrés incluimos también el <strong>estrés laboral o burnout</strong>, el desgaste de un trabajo que nos supera durante demasiado tiempo, y el <strong>estrés postraumático</strong>, cuando después de una experiencia muy dura el cuerpo y la mente siguen en alerta como si el peligro no hubiera pasado.',
     'Para entenderla hace falta un enfoque <strong>multidimensional</strong>, porque la ansiedad no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos.',
     'La ansiedad es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y tratamos de quedarnos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola. Y pluralismo no es relativismo: no todo vale lo mismo, unas explicaciones tienen más apoyo que otras.'
   ],
@@ -48,7 +49,7 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
     ['Terapias contextualistas y ACT','Dejar de pelear con la ansiedad para volver a hacer lo que importa, aunque esté presente.','creciente'],
   ],
-  subs:['Ataque de ansiedad y pánico','Ansiedad social','Obsesiones','Miedos y fobias','Estrés laboral y burnout','Psicosomático'],
+  subs:['Ataque de ansiedad y pánico','Ansiedad social','Obsesiones','Miedos y fobias','Estrés laboral y burnout','Estrés postraumático','Psicosomático'],
   alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde'
 },
 {
@@ -172,6 +173,7 @@ window.MOTIVOS=[
   basesIntro:[
     'Los conflictos aparecen en todas las relaciones: discutir no es el problema. Lo importante es cómo se discute y si sabemos <strong>reparar</strong> después.',
     'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas.',
+    'También trabajamos la <strong>dependencia emocional</strong>, cuando la relación ocupa tanto espacio que uno se pierde en ella, y los momentos de <strong>ruptura, separación o divorcio</strong>, para atravesarlos de la mejor manera posible, también cuando hay hijos.',
     'Como casi todo lo que nos pasa, los problemas de pareja son <strong>multicausales</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
@@ -190,7 +192,7 @@ window.MOTIVOS=[
     ['Centrada en las emociones','Entender los ciclos de reproche y distancia que se repiten.','buena'],
     ['Sistémica','Mirar la pareja dentro de su familia y su contexto.','variable']
   ],
-  subs:['Apego','Narcisismo (pareja o progenitor)','Dependencia emocional','Rupturas e infidelidad'],
+  subs:['Apego','Narcisismo (pareja o progenitor)','Dependencia emocional','Rupturas, separaciones y divorcios','Infidelidad'],
   alt:'Pareja riendo junta sentada junto a un coche'
 },
 {
@@ -294,10 +296,28 @@ window.MOTIVOS=[
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
   feel:['No consigo superar la muerte de mi madre','Echo de menos a mi padre cada día','No consigo superar la muerte de mi perro','Siento que todo el mundo ha seguido menos yo'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* frases propias de la consulta, a partir de ideas de Bueno (la muerte llega cuando la persona está implicada en planes que no la contemplan,
+     Diccionario de García Sierra, entrada 502), Pérez Jara («Meditatio mortis», 2016: «ya nunca más…») y Pérez Álvarez (2007: las pérdidas como inicio de la depresión) */
+  quotes:[
+    'Perder a alguien es enfrentarse a todos los «nunca más»',
+    'Atender a tiempo una pérdida ayuda a que el bajón no se alargue'
+  ],
+  basesIntro:[
+    'El duelo es la respuesta a una pérdida, y hay distintos tipos de duelo: por la muerte de alguien querido, también de un animal, pero también por una separación, por un despido o por un cambio de vida.',
+    'La muerte llega en mitad de algo: de planes, de conversaciones, de proyectos en común. Por eso desordena tanto la vida de los que quedan.',
+    'Cada duelo es distinto y se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, cambios en el sueño y en el apetito, una tristeza que pesa físicamente. Es normal, y suele ir cediendo con el tiempo. '+V,
+    '<strong>Los estudios en psicología</strong> muestran que la mayoría de los duelos siguen su curso, pero que las pérdidas —una muerte, una ruptura, un despido— pueden ser el inicio de un bajón que se alarga. Atenderlas a tiempo ayuda. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos espacio: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella. '+V
+  ],
+  together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Perder a alguien es enfrentarse a todos los «nunca más»: lo que ya no se podrá hacer, decir ni compartir. En terapia hay sitio para nombrarlos y para aprender a convivir con ellos, a tu ritmo y sin prisas. Lo pensamos juntos.',
   cta:'Podemos acompañarte a hacer sitio a la pérdida, sin prisas.',
   intro:'El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.',
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
-  refs:'Estudios concretos por añadir. '+v('referencias'),
+  refs:'Bueno (1996), «El sentido de la vida», en el Diccionario filosófico de García Sierra, entrada 502; Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión». '+v('referencias completas'),
   beyond:'Mucha gente busca cómo «superar» una muerte. No se trata de superar a nadie ni de pasar por unas fases en orden: se trata de ir encontrando un sitio para la pérdida en una vida que sigue.',
   approaches:[
     ['Terapia específica para el duelo prolongado','Basada en la terapia cognitivo-conductual, para cuando el duelo se atasca.','buena'],
@@ -419,12 +439,12 @@ window.MOTIVOS=[
 window.OTROS=[
   ['Burnout','ansiedad','burnout quemado agotamiento trabajo laboral'],
   ['Dependencia emocional','pareja','dependencia emocional pareja apego'],
-  ['Estrés postraumático',null,'estres postraumatico trauma'],
+  ['Estrés postraumático','ansiedad','estres postraumatico trauma'],
   ['Fobias','ansiedad','fobias miedos fobia'],
   ['Ira y autocontrol','ansiedad','ira autocontrol enfado rabia impulsividad no controlo mis emociones'],
   ['Obsesiones','ansiedad','obsesiones obsesivo pensamientos intrusivos manias'],
   ['Problemas laborales','ansiedad','problemas laborales trabajo jefe no tengo ganas de ir a trabajar'],
-  ['Rupturas y divorcio','pareja','rupturas divorcio separacion superar a mi ex']
+  ['Rupturas, separaciones y divorcios','pareja','rupturas divorcio separacion separarse superar a mi ex']
 ];
 
 /* fotos provisionales (Wikimedia Commons): autor, licencia y página de origen */
