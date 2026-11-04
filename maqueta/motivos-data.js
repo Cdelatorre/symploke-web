@@ -407,7 +407,7 @@ window.MOTIVOS=[
      en traducción nuestra; el 9 % lo atribuye el instituto a John Gottman sin citar el estudio */
   quotes:[
     'La intimidad real empieza con conversaciones reales sobre sexo',
-    'Solo el 9 % de las parejas que no pueden hablar de sexo con comodidad está satisfecha con su vida sexual',
+    'Menos del 10 % de las parejas que no pueden hablar de sexo con comodidad está satisfecha con su vida sexual',
     'Las parejas que hablan abiertamente de sus necesidades y deseos tienen vínculos más fuertes y una vida sexual más satisfactoria'
   ],
   basesIntro:[
@@ -418,7 +418,7 @@ window.MOTIVOS=[
   bases:[
     '<strong>Los estudios en biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas, el cansancio, algunas enfermedades o algunos medicamentos influyen. Por eso a veces conviene descartar antes una causa médica. '+V,
     '<strong>Los estudios en neurología</strong> muestran que el estrés y la ansiedad frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. Por eso la presión por «rendir» suele empeorar las cosas. '+V,
-    '<strong>Los estudios en psicología</strong>, entre ellos los del equipo de John Gottman, muestran que poder hablar de sexo es clave: solo el 9 % de las parejas que no pueden hablar de sexo con comodidad dice estar satisfecha con su vida sexual. En cambio, las parejas que hablan abiertamente de sus necesidades y deseos sexuales tienen vínculos emocionales más fuertes y vidas sexuales más satisfactorias. '+V,
+    '<strong>Los estudios en psicología</strong>, entre ellos los del equipo de John Gottman, muestran que poder hablar de sexo es clave: menos del 10 % de las parejas que no pueden hablar de sexo con comodidad dice estar satisfecha con su vida sexual. En cambio, las parejas que hablan abiertamente de sus necesidades y deseos sexuales tienen vínculos emocionales más fuertes y vidas sexuales más satisfactorias. '+V,
     '<strong>Muchos estudios en sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo. '+V
   ],
   together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Te ayudamos a hablar de ello con calma, sin vergüenza y sin prisas, a solas o en pareja, y lo pensamos juntos.',
