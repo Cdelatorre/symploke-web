@@ -329,10 +329,29 @@ window.MOTIVOS=[
   slug:'personalidad', name:'Trastornos de la personalidad', sym:'No me entiendo ni yo', delicate:true,
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
   feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Me siento vacío emocionalmente','Me cuesta relacionarme con la gente'],
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  /* frases propias de la consulta, a partir de ideas de Marino Pérez Álvarez (ver referencias y citas-para-la-web.md) */
+  quotes:[
+    'Nadie nace siendo ya la persona que es',
+    'Lo aprendido se puede revisar y cambiar',
+    'Saber quién eres y qué quieres sostener en tu vida'
+  ],
+  basesIntro:[
+    'Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser, y solo se entiende desde esa persona.',
+    'La forma de ser no viene dada de nacimiento. Nadie nace siendo ya la persona que es: nos vamos haciendo con los demás y con lo que vivimos. Por eso también se puede trabajar.',
+    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida. '+V,
+    '<strong>Los estudios en neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre. '+V,
+    '<strong>Los estudios en psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, no defectos de fábrica. Las relaciones que se repiten y nos hacen daño suelen ser formas aprendidas de protegernos. Y lo aprendido se puede revisar y cambiar. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos una sensación de vacío. Si te sientes lleno de cosas y a la vez vacío, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida. '+V
+  ],
+  together:'No hay un yo de verdad escondido dentro y distinto de lo que hacemos: somos también lo que hacemos y cómo tratamos a los demás. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Podemos ayudarte a hacerlo, y lo pensamos juntos.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
   intro:'Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.',
   science:'Los manuales describen varios tipos, pero la clasificación por categorías está en revisión y las propuestas recientes van hacia dimensiones. '+V,
-  refs:'Estudios y guías por añadir. '+v('referencias'),
+  refs:'García Montes y Pérez Álvarez (2003), «Reivindicación de la persona en la esquizofrenia»; Pérez Álvarez (2001), «Psicoterapia de la postmodernidad»; (2003), «The Schizoid Personality of Our Time»; (2015), «Reflexividad, escritura y génesis del sujeto moderno». '+v('referencias completas'),
   beyond:'La personalidad no es una esencia fija: es un patrón aprendido en una historia concreta, y los patrones pueden cambiar. No usamos siglas como etiqueta de nadie.',
   approaches:[
     ['Dialéctico-conductual','Regular emociones intensas y reducir conductas de riesgo.','buena en desregulación emocional'],
