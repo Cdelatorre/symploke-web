@@ -2,7 +2,12 @@
    Todo es BORRADOR. Las frases del síntoma están escritas como las teclea la gente en Google
    (autocompletado de Google España, consultado el 28/10/2026); falta contrastarlas con Google Trends.
    Lo científico va marcado [VERIFICAR]. Fotos provisionales de Wikimedia Commons (créditos en FOTOS).
-   Cada motivo tiene tres capas: lo que se siente, qué dice la ciencia y más allá de la etiqueta. */
+   Cada motivo tiene tres capas: lo que se siente, qué dice la ciencia y más allá de la etiqueta.
+   bases: párrafos de «Qué dice la ciencia»; cada ciencia se nombra de pasada, en negrita, dentro del texto.
+   basesIntro (opcional): entrada propia de esa sección; si falta, motivo.html pone una genérica.
+   quotes: frases destacadas que se intercalan entre los párrafos de «Qué dice la ciencia» (de momento,
+   del mismo autocompletado de Google; se añadirán otras frases luminosas). Una cita con autor va como
+   ['texto literal','autor'] y motivo.html pone la firma debajo; '' deja ese hueco sin frase. */
 (function(){
 'use strict';
 var V='<span class="verify">[VERIFICAR]</span>';
@@ -13,14 +18,16 @@ window.MOTIVOS=[
   slug:'ansiedad', name:'Ansiedad y estrés', sym:'Tengo ansiedad y no sé por qué',
   k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout',
   feel:['Tengo ansiedad y no sé por qué','No puedo parar de pensar','Estoy todo el día pensando','Me obsesiono con las ideas'],
+  quotes:['Le doy vueltas a todo','Pienso demasiado','Me falta el aire'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  basesIntro:'La ansiedad es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y tratamos de quedarnos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola. Y pluralismo no es relativismo: no todo vale lo mismo, unas explicaciones tienen más apoyo que otras.',
   bases:[
-    ['bio','Lo que dice la biología','La ansiedad es un sistema de alarma que compartimos con otros animales. Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. '+V],
-    ['neuro','Lo que dice la neurología','Hay circuitos del cerebro que detectan amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. Por eso a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. '+V],
-    ['psico','Lo que dice la psicología','Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. Alivia un momento y alimenta el círculo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. '+V],
-    ['socio','Lo que dice la sociología','La ansiedad no nace solo dentro de cada uno. La precariedad, la prisa, la presión por rendir o por estar siempre conectado pesan, y es uno de los motivos de consulta más frecuentes en atención primaria. '+V]
+    'La ansiedad es un sistema de alarma. <strong>Por lo que dice la biología</strong>, ante una amenaza el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. '+V,
+    'En el cerebro hay circuitos que detectan las amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. <strong>Los estudios de neurología</strong> nos lo muestran, y ayudan a entender por qué a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. Pero sería <strong>reduccionista</strong> quedarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera, con su cuerpo, su historia y lo que está viviendo. '+V,
+    'Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. <strong>Los estudios psicológicos</strong> muestran que eso alivia un momento y alimenta el círculo, y en terapia lo vemos a menudo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. '+V,
+    'Y la ansiedad no nace solo dentro de cada uno. <strong>Muchos estudios en sociología</strong> señalan el peso de la precariedad, la prisa o la presión por rendir y por estar siempre conectado; no es casual que sea uno de los motivos de consulta más frecuentes en atención primaria. '+V
   ],
-  together:'Cada una de estas miradas explica una parte, y ninguna lo explica todo. Lo que nos interesa es cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero— y también sus razones, aunque al principio no se vean. A partir de ahí buscamos el enfoque que mejor encaja contigo, y lo pensamos juntos.',
+  together:'Cada una de estas miradas explica una parte, y ninguna lo explica todo. Lo que nos interesa es cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. Buscamos qué te está haciendo de <strong>mordaza</strong> y qué puede servirte de <strong>habilitador</strong> en cada uno de esos planos. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero— y también sus razones, aunque al principio no se vean. A partir de ahí tomamos de cada enfoque lo que mejor encaja contigo, y lo pensamos juntos.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
   intro:'La ansiedad es una respuesta de alarma ante algo que anticipamos como amenaza. Es útil cuando se ajusta a lo que pasa; se convierte en un problema cuando aparece sin motivo claro, dura demasiado o empieza a decidir por ti.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: entender qué mantiene la ansiedad, dejar de evitar lo que asusta y volver a hacer lo que te importa.',
@@ -38,12 +45,13 @@ window.MOTIVOS=[
   slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de levantarme de la cama',
   k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio',
   feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No tengo ganas de vivir'],
+  quotes:['No tengo ganas de nada','Solo quiero dormir','Me siento vacío'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   bases:[
-    ['bio','Lo que dice la biología','El ánimo bajo no está solo en la cabeza: se nota en el sueño, en el apetito, en el cansancio, en el cuerpo entero. El estrés mantenido, la falta de luz y de movimiento o algunas enfermedades influyen; por eso a veces conviene también una revisión médica. '+V],
-    ['neuro','Lo que dice la neurología','La idea de que la depresión es «falta de serotonina» es una simplificación que la investigación no sostiene tal cual. Sí se sabe que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello: por eso cuesta tanto levantarse, aunque se quiera. '+V],
-    ['psico','Lo que dice la psicología','Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos den algo, y el ánimo baja más. Esperar a tener ganas para moverse suele alargar el círculo. Las terapias que mejor funcionan empiezan por romperlo con pasos pequeños. '+V],
-    ['socio','Lo que dice la sociología','Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión. No es debilidad de nadie: el malestar también habla de cómo vivimos. '+V]
+    'El ánimo bajo no está solo en la cabeza. <strong>Por lo que dice la biología</strong>, se nota en el sueño, en el apetito, en el cansancio, en el cuerpo entero; el estrés mantenido, la falta de luz y de movimiento o algunas enfermedades influyen, y por eso a veces conviene también una revisión médica. '+V,
+    'La idea de que la depresión es «falta de serotonina» es una simplificación que <strong>la investigación en neurología</strong> no sostiene tal cual. Lo que sí nos muestra es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello: por eso cuesta tanto levantarse, aunque se quiera. '+V,
+    'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos den algo, y el ánimo baja más. <strong>Desde la psicología</strong> sabemos que esperar a tener ganas para moverse suele alargar el círculo, y que las terapias que mejor funcionan empiezan por romperlo con pasos pequeños. '+V,
+    'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión; <strong>la sociología</strong> lo ha estudiado mucho. No es debilidad de nadie: el malestar también habla de cómo vivimos. '+V
   ],
   together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. Cuando no se ve futuro, ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y qué enfoque te sirve mejor.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
@@ -64,12 +72,13 @@ window.MOTIVOS=[
   slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
   k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio',
   feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Me paso el día agotado'],
+  quotes:['Mi cabeza no deja de pensar','Me despierto por la noche','No puedo dormir'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   bases:[
-    ['bio','Lo que dice la biología','El sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. '+V],
-    ['neuro','Lo que dice la neurología','Para dormirse, el cerebro tiene que bajar la guardia. En el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V],
-    ['psico','Lo que dice la psicología','El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. La terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección en las guías clínicas. '+V],
-    ['socio','Lo que dice la sociología','Los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. Dormir mal también tiene que ver con cómo está organizado el día. '+V]
+    'El sueño depende de dos relojes. <strong>Por lo que dice la biología</strong>, uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. '+V,
+    'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> nos muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V,
+    'El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. <strong>En psicología</strong>, la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección en las guías clínicas. '+V,
+    'Dormir mal también tiene que ver con cómo está organizado el día. Como señala <strong>la sociología</strong>, los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. '+V
   ],
   together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que dicen el cuerpo y la psicología para encontrar lo que te funcione a ti.',
   cta:'Trabajamos contigo para que la noche deje de ser una pelea.',
@@ -90,12 +99,13 @@ window.MOTIVOS=[
   slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
   k:'alimentacion comida comer como y despues me culpo me siento horrible conmigo como mucho y despues me castigo solo comiendo alivio la ansiedad no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen culpa',
   feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
+  quotes:['No puedo parar de comer','Como por ansiedad'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   bases:[
-    ['bio','Lo que dice la biología','Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. Muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V],
-    ['neuro','Lo que dice la neurología','Comer activa los sistemas de recompensa del cerebro y calma durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V],
-    ['psico','Lo que dice la psicología','Es frecuente un círculo: comer para calmarse, sentir culpa, castigarse o restringir, y volver a comer. La culpa no frena el círculo: lo alimenta. Entender qué función cumple la comida en tu vida ayuda a salir de él. '+V],
-    ['socio','Lo que dice la sociología','Vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. Las redes sociales y los juicios sobre el peso pesan, sobre todo en adolescentes y mujeres jóvenes. '+V]
+    'Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. <strong>Por lo que dice la biología</strong>, muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V,
+    'Comer activa los sistemas de recompensa del cerebro y calma durante un rato; <strong>los estudios de neurología</strong> lo describen bien. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V,
+    'Es frecuente un círculo: comer para calmarse, sentir culpa, castigarse o restringir, y volver a comer. <strong>En psicología</strong> vemos que la culpa no frena el círculo: lo alimenta. Entender qué función cumple la comida en tu vida ayuda a salir de él. '+V,
+    'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. <strong>La sociología</strong> recuerda cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en adolescentes y mujeres jóvenes. '+V
   ],
   together:'La comida rara vez es solo comida: se entreteje con el control, la imagen, las emociones, la familia o las redes. Preferimos no reducirlo a una sigla. Lo pensamos juntos, con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
   cta:'Trabajamos contigo, con calma y sin juicios, para que la comida vuelva a ocupar su sitio.',
@@ -166,10 +176,17 @@ window.MOTIVOS=[
   slug:'autoestima', name:'Autoestima', sym:'No soy suficiente',
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
   feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo mismo'],
+  basesIntro:'La palabra «autoestima» pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: algo que se hace, con otros y entre otros. Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación, y ninguna disciplina lo explica todo por sí sola.',
+  bases:[
+    'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> la remonta a William James, a finales del siglo XIX, y su gran difusión llega en la segunda mitad del XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas es más una creencia de época que un hallazgo. '+V,
+    '<strong>Los estudios psicológicos</strong> encuentran que la relación entre la estima y el bienestar es real, pero más modesta de lo que suele decirse, y que repetirse frases positivas sirve de poco. Lo que más la mueve es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. En terapia lo vemos a menudo: la estima llega después de la <strong>praxis</strong>, no antes. '+V,
+    '<strong>Muchos estudios en sociología</strong> señalan cómo pesan la comparación constante, las redes sociales o una cultura que pide valerse por uno mismo y rendir sin descanso. Nadie se estima en el vacío: la estima depende también de dónde y con quién vivimos. '+V
+  ],
+  together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa estima que te llega de los demás: elegir con quién estás, decir que no, pedir lo que necesitas, cuidar los vínculos que te sostienen. Eso se practica, y lo pensamos juntos.',
   cta:'Podemos ayudarte a tratarte de otra manera.',
   intro:'Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.',
   science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse. '+V,
-  refs:'Estudios concretos por añadir. '+v('referencias'),
+  refs:'Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas. '+v('referencias completas'),
   beyond:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran (heteroestima). Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa.',
   approaches:[
     ['Cognitivo-conductual','Revisar la autocrítica y las reglas de exigencia.','moderada'],

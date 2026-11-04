@@ -72,13 +72,11 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 .read p{font-size:18px;line-height:1.6;color:var(--ink2);margin:0 0 16px}
 .read .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
 .read .beyond{border-left:3px solid var(--brand);padding-left:20px}
-/* enfoque multidimensional: un solo bloque con un aspecto por fila y un dibujito al lado para aligerar el texto */
-.bases{margin:22px 0 18px;padding:6px clamp(20px,3vw,32px);background:var(--soft);border:1px solid var(--line);border-radius:28px}
-.bases article{display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;align-items:start;padding:20px 0;border-bottom:1px solid var(--line)}
-.bases article:last-child{border-bottom:0}
-.bases .ico{width:56px;height:56px}
-.bases h3{font-size:20px;line-height:1.1;margin:4px 0 6px}
-.read .bases p{font-size:16px;line-height:1.55;margin:0}
+/* enfoque multidimensional: texto corrido, cada ciencia nombrada de pasada en negrita dentro de la frase,
+   y entre párrafos una frase destacada entre comillas para aligerar la lectura */
+.read p strong{font-weight:600;color:var(--ink)}
+.read .voz{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(26px,2.6vw,34px);line-height:1.2;color:var(--brandink);margin:36px 0 36px clamp(0px,4vw,48px)}
+.read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
 .mhero .how{margin-top:14px}
@@ -140,14 +138,6 @@ var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(q?q[1]:'ansiedad')|
 var D=' <span class="draft">borrador</span>', CITA='contacto.html', ARR=' <span class="arr" aria-hidden="true">→</span>';
 var WA='<a class="btn ghost" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Consultar por WhatsApp</a>';
 document.title=m.name+' · Psicólogo en Madrid centro y online · Symploké';
-/* dibujitos de cada mirada: trazo de tinta y relleno blanco sobre la mancha verde, como las ilustraciones */
-function ico(body){return '<svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="33" cy="34" rx="29" ry="24" fill="#BFEBD7"/><g fill="#FFFFFF" stroke="#13231C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">'+body+'</g></svg>';}
-var ICO={
-  bio:ico('<path d="M32 52 C15 41 9 31 9 23 C9 15 15 10 22 10 C27 10 30 13 32 17 C34 13 37 10 42 10 C49 10 55 15 55 23 C55 31 49 41 32 52Z"/><path fill="none" d="M13 31 H22 L26 23 L31 39 L35 27 L38 31 H51"/>'),
-  neuro:ico('<path d="M19 45 C11 45 7 38 10 33 C6 29 8 21 14 20 C14 13 22 10 27 13 C30 8 38 8 41 12 C47 10 54 15 52 21 C58 24 58 33 53 36 C55 42 50 47 44 46 C42 51 35 53 31 49 C27 53 20 51 19 45Z"/><path fill="none" d="M27 13 C27 19 32 21 32 27 M41 12 C38 17 40 21 44 23 M14 20 C18 23 22 23 24 28 M53 36 C48 35 45 31 46 28 M31 49 C31 43 34 39 38 38 M19 45 C21 40 25 38 28 39"/>'),
-  psico:ico('<path d="M17 40 C9 40 7 31 13 28 C11 20 20 15 26 19 C29 12 40 12 42 19 C49 16 57 22 54 29 C60 33 56 42 49 41 C46 46 38 46 35 42 C30 46 21 46 17 40Z"/><circle cx="15" cy="49" r="3.5"/><circle cx="9" cy="56" r="2"/><circle cx="25" cy="30" r="1.2" fill="#13231C"/><circle cx="33" cy="30" r="1.2" fill="#13231C"/><circle cx="41" cy="30" r="1.2" fill="#13231C"/>'),
-  socio:ico('<circle cx="15" cy="28" r="5.5"/><path d="M4 52 C4 42 9 37 15 37 C21 37 26 42 26 52Z"/><circle cx="49" cy="28" r="5.5"/><path d="M38 52 C38 42 43 37 49 37 C55 37 60 42 60 52Z"/><circle cx="32" cy="23" r="7"/><path d="M18 54 C18 42 24 35 32 35 C40 35 46 42 46 54Z"/>')
-};
 var h='';
 
 h+='<section class="mhero"><div>';
@@ -171,8 +161,15 @@ h+='</div></section>';
 h+='<div class="read">';
 if(m.bases){
   h+='<section><p class="layer">Qué dice la ciencia</p><h2>Un enfoque multidimensional</h2>';
-  h+='<p>Ninguna ciencia lo explica todo por sí sola: cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.</p>';
-  h+='<div class="bases">'+m.bases.map(function(b){return '<article>'+ICO[b[0]]+'<div><h3>'+b[1]+'</h3><p>'+b[2]+'</p></div></article>';}).join('')+'</div>';
+  h+='<p>'+(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.')+'</p>';
+  var voz=m.quotes||[];
+  m.bases.forEach(function(b,i){
+    h+='<p>'+b+'</p>';
+    if(i<m.bases.length-1&&voz[i]){   // frase destacada entre párrafo y párrafo; [texto, autor] si es una cita
+      var vz=[].concat(voz[i]);
+      h+='<p class="voz">«'+vz[0]+'»'+(vz[1]?'<span class="quien">— '+vz[1]+'</span>':'')+'</p>';
+    }
+  });
   h+='<p class="refs">'+m.refs+'</p></section>';
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>Pensarlo juntos</h2><p class="beyond">'+m.together+'</p></section>';
 }else{

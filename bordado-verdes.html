@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bordado en dos verdes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Spectral:wght@400;600;800&amp;display=swap">
+<style>
+/* Symploké · cuatro diseños del logotipo bordado jugando con sus dos verdes: raso en reposo, pespunte al pasar el cursor */
+:root{
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:32px clamp(16px,4.5vw,64px) 64px}
+h1{font:600 clamp(28px,3vw,40px)/1.1 'Spectral',Georgia,serif;margin:0 0 8px;color:var(--brandink)}
+.intro{color:var(--ink2);max-width:760px;line-height:1.5;margin:0 0 22px}
+
+.controls{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:12px 24px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:var(--soft);margin-bottom:24px}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ctl > span{font-size:13px;font-weight:600;color:var(--ink2);margin-right:4px}
+.ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 12px;font-size:14px;cursor:pointer}
+.ctl button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--btntext)}
+
+/* raso en reposo, pespunte al pasar el cursor (o al tocar en pantallas táctiles) */
+.lg .v-raso,.lg .v-pesp{transition:opacity .5s ease}
+.lg .v-pesp{opacity:0}
+.lg:hover .v-raso,.lg.on .v-raso{opacity:0}
+.lg:hover .v-pesp,.lg.on .v-pesp{opacity:1}
+@media (prefers-reduced-motion: reduce){.lg .v-raso,.lg .v-pesp{transition:none}}
+.lg{display:block;cursor:pointer}
+
+.card{border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:18px;background:var(--bg)}
+.stage{background:#FFFFFF;padding:10px 20px}
+.stage .lg{width:100%;height:auto}
+.meta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:center;padding:14px 20px 16px;border-top:1px solid var(--line)}
+@media (max-width:760px){.meta{grid-template-columns:1fr}}
+.num{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--brandink)}
+.name{font-weight:600;font-size:18px;margin:2px 0 4px}
+.why{margin:0;color:var(--ink2);font-size:15px;line-height:1.45}
+.minis{display:flex;align-items:flex-end;gap:10px;flex-wrap:wrap}
+.mini{display:flex;flex-direction:column;align-items:flex-start;gap:4px;font-size:11px;color:var(--ink2)}
+.mini > div{background:#FFFFFF;border:1px solid var(--line);border-radius:10px;padding:6px 10px;line-height:0}
+.mini .round{border-radius:50%;padding:0;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Symploké bordado en dos verdes</h1>
+  <p class="intro">Cuatro maneras de bordar el logotipo con sus dos verdes, el oscuro del símbolo (#009966) y el claro (#5FE3A8), sobre tela blanca. En reposo está en punto de raso; al pasar el cursor, se queda en pespunte. Al lado de cada uno aparece a tamaño de cabecera, de móvil y como foto de perfil redonda.</p>
+
+  <div class="controls" id="controls">
+    <div class="ctl" data-k="weight"><span>Grosor de Spectral</span>
+      <button data-v="400">400</button><button data-v="600">600</button><button data-v="800">800</button></div>
+    <div class="ctl" data-k="stitch"><span>Puntada</span>
+      <button data-v="fina">Fina</button><button data-v="media">Media</button><button data-v="gruesa">Gruesa</button></div>
+    <div class="ctl" data-k="theme"><span>Página</span>
+      <button data-v="light">Clara</button><button data-v="dark">Oscura</button></div>
+  </div>
+
+  <svg id="defs" width="0" height="0" style="position:absolute" aria-hidden="true"></svg>
+  <div id="cards"></div>
+</div>
+
+<script>
+var D='#009966', L='#5FE3A8';
+var STEP={fina:3.4,media:4.8,gruesa:7};
+var FS=140, H=260, MX=22, MY=30, TX=246, TY=178;
+
+var S={weight:'600',stitch:'media',theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'};
+try{
+  var b=JSON.parse(localStorage.getItem('symploke-bordado')||'{}');['weight','stitch','theme'].forEach(function(k){if(b[k])S[k]=b[k];});
+  var r=JSON.parse(localStorage.getItem('symploke-verdes')||'{}');for(var k in r)if(k in S)S[k]=r[k];
+}catch(e){}
+function save(){try{localStorage.setItem('symploke-verdes',JSON.stringify(S));}catch(e){}}
+
+function mix(a,b,t){
+  var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16),r=[16,8,0].map(function(s){return Math.round(((x>>s)&255)*(1-t)+((y>>s)&255)*t);});
+  return '#'+r.map(function(v){return ('0'+v.toString(16)).slice(-2);}).join('');
+}
+
+/* ---------- patrones de raso en los dos verdes, degradados para el matizado, máscaras y filtro ---------- */
+function satin(id,c,angle,p){
+  var sh=mix(c,'#00281A',.38), hi=mix(c,'#FFFFFF',.5);
+  return '<pattern id="'+id+'" width="'+(p*9)+'" height="'+p+'" patternUnits="userSpaceOnUse" patternTransform="rotate('+angle+')">'+
+    '<rect width="'+(p*9)+'" height="'+p+'" fill="'+c+'"/>'+
+    '<rect width="'+(p*9)+'" height="'+(p*.2).toFixed(2)+'" fill="'+sh+'"/>'+
+    '<rect y="'+(p*.32).toFixed(2)+'" width="'+(p*9)+'" height="'+(p*.16).toFixed(2)+'" fill="'+hi+'" opacity=".5"/>'+
+    '<rect x="'+(p*4.2).toFixed(2)+'" width="'+(p*.35).toFixed(2)+'" height="'+p+'" fill="'+sh+'" opacity=".35"/>'+
+    '</pattern>';
+}
+function defs(){
+  var p=STEP[S.stitch], h='';
+  [['D',D],['L',L]].forEach(function(c){
+    h+=satin('sT'+c[0],c[1],-38,p)+satin('sV'+c[0],c[1],0,p)+satin('sH'+c[0],c[1],90,p);
+  });
+  /* matizado: el hilo claro se funde sobre el oscuro siguiendo un degradado (en el cuadro de cada pieza) */
+  h+='<linearGradient id="fadeY" x1="0" y1="0" x2="0" y2="1"><stop offset=".1" stop-color="#fff"/><stop offset=".9" stop-color="#000"/></linearGradient>'+
+     '<linearGradient id="fadeX" x1="0" y1="0" x2="1" y2="0"><stop offset=".1" stop-color="#fff"/><stop offset=".9" stop-color="#000"/></linearGradient>'+
+     '<mask id="mFY" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#fadeY)"/></mask>'+
+     '<mask id="mFX" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#fadeX)"/></mask>'+
+     '<linearGradient id="gY" x1="0" y1="0" x2="0" y2="1"><stop offset=".1" stop-color="'+L+'"/><stop offset=".9" stop-color="'+D+'"/></linearGradient>'+
+     '<linearGradient id="gX" x1="0" y1="0" x2="1" y2="0"><stop offset=".1" stop-color="'+D+'"/><stop offset=".9" stop-color="'+L+'"/></linearGradient>';
+  var hal='',pat='',pha='';
+  [41.5,83.5,125.5].forEach(function(y){hal+='<rect x="29.5" y="'+y+'" width="141" height="33" rx="8.5" fill="#000"/>';});
+  [[43.4,40.7],[43.4,124.7],[85.4,82.7],[127.4,40.7],[127.4,124.7]].forEach(function(q){
+    pat+='<rect x="'+q[0]+'" y="'+q[1]+'" width="29.2" height="34.6" fill="#fff"/>';
+    pha+='<rect x="'+(q[0]-1.9)+'" y="'+(q[1]+3.3)+'" width="33" height="28" fill="#000"/>';
+  });
+  h+='<mask id="mV" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+hal+pat+'</mask>';
+  h+='<mask id="mH" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+pha+'</mask>';
+  h+='<filter id="hilo" x="-5%" y="-10%" width="110%" height="125%" color-interpolation-filters="sRGB">'+
+    '<feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="4" result="n"/>'+
+    '<feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="d"/>'+
+    '<feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="b"/><feOffset in="b" dy="1.8" result="o"/>'+
+    '<feFlood flood-color="#00261A" flood-opacity=".3"/><feComposite in2="o" operator="in" result="sh"/>'+
+    '<feMerge><feMergeNode in="sh"/><feMergeNode in="d"/></feMerge></filter>';
+  document.getElementById('defs').innerHTML=h;
+}
+
+/* ---------- piezas ---------- */
+function dash(k){var p=STEP[S.stitch];k=k||1;return ' stroke-dasharray="'+(p*1.5*k).toFixed(1)+' '+(p*.8*k).toFixed(1)+'" stroke-linecap="round"';}
+function pesp(col,fill,fo,w){return 'fill="'+(fill||col)+'" fill-opacity="'+(fo==null?.1:fo)+'" stroke="'+col+'" stroke-width="'+(w||3.4)+'"'+dash();}
+/* a: {v,h,t} atributos de las cintas que bajan, las que cruzan y el nombre; vo/ho/to: una segunda capa encima (el matizado) */
+function ribbons(a){
+  var v='',h='';
+  [44,86,128].forEach(function(k){
+    v+='<rect x="'+k+'" y="32" width="28" height="136" rx="6" '+a.v+'/>'+(a.vo?'<rect x="'+k+'" y="32" width="28" height="136" rx="6" '+a.vo+'/>':'');
+    h+='<rect x="32" y="'+k+'" width="136" height="28" rx="6" '+a.h+'/>'+(a.ho?'<rect x="32" y="'+k+'" width="136" height="28" rx="6" '+a.ho+'/>':'');
+  });
+  return '<g transform="translate('+MX+' '+MY+')"><g transform="rotate(45 100 100)"><g mask="url(#mV)">'+v+'</g><g mask="url(#mH)">'+h+'</g></g></g>';
+}
+function name(attr){return '<text x="'+TX+'" y="'+TY+'" font-family="Spectral" font-weight="'+S.weight+'" font-size="'+FS+'" '+attr+'>Symploké</text>';}
+var cv=document.createElement('canvas'), cx=cv.getContext('2d');
+function tw(){cx.font=S.weight+' '+FS+'px Spectral';return cx.measureText('Symploké').width;}
+
+/* el hilo claro que sale de la punta derecha del símbolo y pasa por debajo del nombre, entre sus letras */
+function thread(raso,W){
+  var p=STEP[S.stitch], y=TY+22, d='M170 178 C 200 196, 222 '+y+', '+TX+' '+y+' L '+(W-30)+' '+y;
+  if(!raso)return '<path d="'+d+'" fill="none" stroke="'+L+'" stroke-width="5"'+dash(1.1)+'/>';
+  return '<path d="'+d+'" fill="none" stroke="'+L+'" stroke-width="8" stroke-linecap="round"/>'+
+         '<path d="'+d+'" fill="none" stroke="'+mix(L,'#00281A',.35)+'" stroke-width="8" stroke-dasharray="1.6 '+(p*1.1).toFixed(1)+'" opacity=".6"/>';   // el torcido del cordón
+}
+
+var DESIGNS=[
+  {name:'Clásico',why:'Como el símbolo de la web: las cintas que bajan en verde oscuro y las que cruzan en verde claro. El nombre va en raso oscuro, para que se lea bien. El claro queda solo en el símbolo, así que no se mezclan.',
+   raso:{v:'fill="url(#sVD)"',h:'fill="url(#sHL)"',t:'fill="url(#sTD)"'},
+   pesp:{v:pesp(D),h:pesp(L,L,.14),t:pesp(D,D,.1,3)}},
+  {name:'Matizado',why:'Los dos verdes se funden dentro de cada puntada, como en el bordado de sombreado: el claro arriba y el oscuro abajo, en el nombre y a lo largo de las cintas. Da relieve y luz sin partir el logotipo en dos colores.',
+   raso:{v:'fill="url(#sVD)"',vo:'fill="url(#sVL)" mask="url(#mFY)"',h:'fill="url(#sHL)"',ho:'fill="url(#sHD)" mask="url(#mFX)"',t:'fill="url(#sTD)"',to:'fill="url(#sTL)" mask="url(#mFY)"'},
+   pesp:{v:pesp('url(#gY)',D,.08),h:pesp('url(#gX)',L,.1),t:pesp('url(#gY)',D,.08,3)}},
+  {name:'Invertido con contorno',why:'Se cambian los papeles: el verde claro pasa a las cintas que bajan y al nombre, y el oscuro a las que cruzan y a un pespunte que rodea cada letra. Más luminoso y más fresco; el contorno oscuro sostiene la lectura sobre blanco.',
+   raso:{v:'fill="url(#sVL)" stroke="'+D+'" stroke-width="2.4"'+dash(.8),h:'fill="url(#sHD)"',t:'fill="url(#sTL)" stroke="'+D+'" stroke-width="2.6"'+dash(.8)},
+   pesp:{v:pesp(L,L,.22),h:pesp(D),t:pesp(D,L,.35,3)}},
+  {name:'El hilo que subraya',why:'El clásico, con un detalle: un hilo verde claro sale de la punta del símbolo y pasa por debajo del nombre, entre la «y» y la «p». El símbolo y el nombre quedan literalmente cosidos con el mismo hilo.',
+   raso:{v:'fill="url(#sVD)"',h:'fill="url(#sHL)"',t:'fill="url(#sTD)"'},
+   pesp:{v:pesp(D),h:pesp(L,L,.14),t:pesp(D,D,.1,3)},thread:1}
+];
+
+function group(d,v,W){
+  var a=d[v];
+  return '<g class="v-'+v+'" filter="url(#hilo)">'+ribbons(a)+(d.thread?thread(v==='raso',W):'')+name(a.t)+(a.to?name(a.to):'')+'</g>';
+}
+function logo(d,W,hgt){
+  return '<svg class="lg" viewBox="0 0 '+W+' '+H+'"'+(hgt?' height="'+hgt+'"':'')+' role="img" aria-label="Symploké, '+d.name+'">'+group(d,'raso',W)+group(d,'pesp',W)+'</svg>';
+}
+function avatar(d,px){   // solo el símbolo, como foto de perfil redonda
+  var g=function(v){var a=d[v];return '<g class="v-'+v+'" filter="url(#hilo)">'+ribbons(a)+'</g>';};
+  return '<svg class="lg" viewBox="'+(MX-12)+' '+(MY-12)+' 224 224" width="'+px+'" height="'+px+'" role="img" aria-label="Símbolo de Symploké">'+g('raso')+g('pesp')+'</svg>';
+}
+
+function render(){
+  document.documentElement.setAttribute('data-theme',S.theme);
+  defs();
+  var W=Math.ceil(TX+tw()+28), h='';
+  DESIGNS.forEach(function(d,i){
+    h+='<article class="card"><div class="stage">'+logo(d,W)+'</div><div class="meta"><div><span class="num">Diseño '+(i+1)+'</span><p class="name">'+d.name+'</p><p class="why">'+d.why+'</p></div>'+
+      '<div class="minis"><div class="mini"><div>'+logo(d,W,64)+'</div>Cabecera</div><div class="mini"><div>'+logo(d,W,40)+'</div>Móvil</div>'+
+      '<div class="mini"><div class="round">'+avatar(d,96)+'</div>Perfil</div></div></div></article>';
+  });
+  document.getElementById('cards').innerHTML=h;
+  document.querySelectorAll('.ctl[data-k]').forEach(function(ct){
+    ct.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(S[ct.dataset.k]===b.dataset.v));});
+  });
+}
+
+document.getElementById('controls').addEventListener('click',function(e){
+  var b=e.target.closest('button'),c=b&&b.closest('.ctl[data-k]');if(!c)return;
+  S[c.dataset.k]=b.dataset.v;save();render();
+});
+document.addEventListener('click',function(e){
+  var lg=e.target.closest('.lg');if(lg&&matchMedia('(hover: none)').matches)lg.classList.toggle('on');
+});
+Promise.all(['400','600','800'].map(function(w){return document.fonts.load(w+' '+FS+'px Spectral','Symploké');})).then(render,render);
+</script>
+</body>
+</html>

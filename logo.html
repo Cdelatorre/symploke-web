@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logotipo Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Spectral:wght@400;600;800&amp;display=swap">
+<style>
+/* Symploké · logotipo elegido: «invertido con contorno» de bordado-verdes.html, con el nombre en verde oscuro
+   que pasa a verde claro al pasar el cursor */
+:root{--bg:#FFFFFF; --ink2:#33433C; --line:#DCEBE4}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0A1712; --ink2:#B6CCC2; --line:#1D372C}
+}
+:root[data-theme="dark"]{--bg:#0A1712; --ink2:#B6CCC2; --line:#1D372C}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;padding:40px 16px;background:var(--bg);font-family:'DM Sans',system-ui,sans-serif;color:var(--ink2)}
+
+/* al pasar el cursor (o al tocar en pantallas táctiles) el nombre se funde de verde oscuro a verde claro
+   y el símbolo invierte sus verdes: lo claro pasa a oscuro y lo oscuro a claro */
+.lg .hov{opacity:0;transition:opacity .5s ease}
+.lg:hover .hov,.lg.on .hov{opacity:1}
+@media (prefers-reduced-motion: reduce){.lg .hov{transition:none}}
+.lg{display:block;cursor:pointer}
+
+.main{width:min(980px,100%);background:#FFFFFF;border-radius:24px;padding:24px 28px}
+.main .lg{width:100%;height:auto}
+.sizes{display:flex;align-items:flex-end;justify-content:center;gap:16px;flex-wrap:wrap;font-size:12px}
+.sizes figure{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.sizes figure > div{background:#FFFFFF;border:1px solid var(--line);border-radius:12px;padding:8px 12px;line-height:0}
+.sizes .round{border-radius:50%;padding:0;overflow:hidden}
+</style>
+</head>
+<body>
+<div class="main" id="main"></div>
+<div class="sizes" id="sizes"></div>
+<svg id="defs" width="0" height="0" style="position:absolute" aria-hidden="true"></svg>
+
+<script>
+var D='#009966', L='#5FE3A8';
+var STEP={fina:3.4,media:4.8,gruesa:7};
+var FS=140, H=260, MX=22, MY=30, TX=246, TY=178;
+
+/* grosor de Spectral y puntada: los últimos elegidos en bordado-verdes.html (o en bordado.html) */
+var S={weight:'600',stitch:'media'};
+try{
+  ['symploke-bordado','symploke-verdes'].forEach(function(key){
+    var o=JSON.parse(localStorage.getItem(key)||'{}');if(o.weight)S.weight=o.weight;if(o.stitch)S.stitch=o.stitch;
+  });
+}catch(e){}
+
+function mix(a,b,t){
+  var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16),r=[16,8,0].map(function(s){return Math.round(((x>>s)&255)*(1-t)+((y>>s)&255)*t);});
+  return '#'+r.map(function(v){return ('0'+v.toString(16)).slice(-2);}).join('');
+}
+function satin(id,c,angle,p){
+  var sh=mix(c,'#00281A',.38), hi=mix(c,'#FFFFFF',.5);
+  return '<pattern id="'+id+'" width="'+(p*9)+'" height="'+p+'" patternUnits="userSpaceOnUse" patternTransform="rotate('+angle+')">'+
+    '<rect width="'+(p*9)+'" height="'+p+'" fill="'+c+'"/>'+
+    '<rect width="'+(p*9)+'" height="'+(p*.2).toFixed(2)+'" fill="'+sh+'"/>'+
+    '<rect y="'+(p*.32).toFixed(2)+'" width="'+(p*9)+'" height="'+(p*.16).toFixed(2)+'" fill="'+hi+'" opacity=".5"/>'+
+    '<rect x="'+(p*4.2).toFixed(2)+'" width="'+(p*.35).toFixed(2)+'" height="'+p+'" fill="'+sh+'" opacity=".35"/>'+
+    '</pattern>';
+}
+function defs(){
+  var p=STEP[S.stitch], h=satin('sVL',L,0,p)+satin('sHD',D,90,p)+satin('sVD',D,0,p)+satin('sHL',L,90,p)+satin('sTD',D,-38,p)+satin('sTL',L,-38,p);
+  var hal='',pat='',pha='';
+  [41.5,83.5,125.5].forEach(function(y){hal+='<rect x="29.5" y="'+y+'" width="141" height="33" rx="8.5" fill="#000"/>';});
+  [[43.4,40.7],[43.4,124.7],[85.4,82.7],[127.4,40.7],[127.4,124.7]].forEach(function(q){
+    pat+='<rect x="'+q[0]+'" y="'+q[1]+'" width="29.2" height="34.6" fill="#fff"/>';
+    pha+='<rect x="'+(q[0]-1.9)+'" y="'+(q[1]+3.3)+'" width="33" height="28" fill="#000"/>';
+  });
+  h+='<mask id="mV" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+hal+pat+'</mask>';
+  h+='<mask id="mH" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+pha+'</mask>';
+  h+='<filter id="hilo" x="-5%" y="-10%" width="110%" height="125%" color-interpolation-filters="sRGB">'+
+    '<feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="4" result="n"/>'+
+    '<feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="d"/>'+
+    '<feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="b"/><feOffset in="b" dy="1.8" result="o"/>'+
+    '<feFlood flood-color="#00261A" flood-opacity=".3"/><feComposite in2="o" operator="in" result="sh"/>'+
+    '<feMerge><feMergeNode in="sh"/><feMergeNode in="d"/></feMerge></filter>';
+  document.getElementById('defs').innerHTML=h;
+}
+function dash(){var p=STEP[S.stitch];return ' stroke-dasharray="'+(p*1.2).toFixed(1)+' '+(p*.64).toFixed(1)+'" stroke-linecap="round"';}
+
+/* símbolo igual que en «invertido con contorno»: cintas que bajan en raso claro con pespunte oscuro, las que cruzan en raso oscuro.
+   inv: los verdes cambiados (cintas que bajan en raso oscuro con pespunte claro, las que cruzan en raso claro) */
+function symbol(inv,cls){
+  var v='',h='';
+  [44,86,128].forEach(function(k){
+    v+='<rect x="'+k+'" y="32" width="28" height="136" rx="6" fill="url(#'+(inv?'sVD':'sVL')+')" stroke="'+(inv?L:D)+'" stroke-width="2.4"'+dash()+'/>';
+    h+='<rect x="32" y="'+k+'" width="136" height="28" rx="6" fill="url(#'+(inv?'sHL':'sHD')+')"/>';
+  });
+  return '<g'+(cls?' class="'+cls+'"':'')+' transform="translate('+MX+' '+MY+')"><g transform="rotate(45 100 100)"><g mask="url(#mV)">'+v+'</g><g mask="url(#mH)">'+h+'</g></g></g>';
+}
+/* el nombre, con el mismo raso y contorno, en verde oscuro; encima, la versión en verde claro que aparece al pasar el cursor */
+function name(fill,cls){
+  return '<text class="'+cls+'" x="'+TX+'" y="'+TY+'" font-family="Spectral" font-weight="'+S.weight+'" font-size="'+FS+'" fill="url(#'+fill+')" stroke="'+D+'" stroke-width="2.6"'+dash()+'>Symploké</text>';
+}
+var cv=document.createElement('canvas'), cx=cv.getContext('2d');
+function logo(W,hgt){
+  return '<svg class="lg" viewBox="0 0 '+W+' '+H+'"'+(hgt?' height="'+hgt+'"':'')+' role="img" aria-label="Symploké">'+
+    '<g filter="url(#hilo)">'+symbol()+symbol(1,'hov')+name('sTD','')+name('sTL','hov')+'</g></svg>';
+}
+function avatar(px){
+  return '<svg class="lg" viewBox="'+(MX-12)+' '+(MY-12)+' 224 224" width="'+px+'" height="'+px+'" role="img" aria-label="Símbolo de Symploké"><g filter="url(#hilo)">'+symbol()+symbol(1,'hov')+'</g></svg>';
+}
+
+function render(){
+  defs();
+  cx.font=S.weight+' '+FS+'px Spectral';
+  var W=Math.ceil(TX+cx.measureText('Symploké').width+28);
+  document.getElementById('main').innerHTML=logo(W);
+  document.getElementById('sizes').innerHTML=
+    '<figure><div>'+logo(W,64)+'</div><figcaption>Cabecera</figcaption></figure>'+
+    '<figure><div>'+logo(W,40)+'</div><figcaption>Móvil</figcaption></figure>'+
+    '<figure><div class="round">'+avatar(96)+'</div><figcaption>Perfil</figcaption></figure>';
+}
+document.addEventListener('click',function(e){
+  var lg=e.target.closest('.lg');if(lg&&matchMedia('(hover: none)').matches)lg.classList.toggle('on');
+});
+Promise.all(['400','600','800'].map(function(w){return document.fonts.load(w+' '+FS+'px Spectral','Symploké');})).then(render,render);
+</script>
+</body>
+</html>

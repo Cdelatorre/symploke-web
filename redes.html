@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Symploké en redes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Spectral:wght@400;600;800&amp;display=swap">
+<style>
+/* Symploké · el logotipo bordado (raso, y pespunte al pasar el cursor) en las cabeceras de YouTube, Facebook, Instagram y TikTok */
+:root{
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF;
+  --ui:#FFFFFF; --uiink:#0F0F0F; --uimute:#606060; --uichip:#F2F2F2; --uiline:#E5E5E5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+    --ui:#0F0F0F; --uiink:#F1F1F1; --uimute:#AAAAAA; --uichip:#272727; --uiline:#303030;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  --ui:#0F0F0F; --uiink:#F1F1F1; --uimute:#AAAAAA; --uichip:#272727; --uiline:#303030;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:32px clamp(16px,4.5vw,64px) 72px}
+h1{font:600 clamp(28px,3vw,40px)/1.1 'Spectral',Georgia,serif;margin:0 0 8px;color:var(--brandink)}
+h2{font:600 clamp(24px,2.4vw,32px)/1.1 'Spectral',Georgia,serif;margin:56px 0 6px;color:var(--brandink)}
+.intro,.sub{color:var(--ink2);max-width:760px;line-height:1.5;margin:0 0 20px}
+
+/* ---------- logotipo: raso en reposo, pespunte al pasar el cursor (o al tocar en el móvil) ---------- */
+.lg .v-raso,.lg .v-pesp{transition:opacity .5s ease}
+.lg .v-pesp{opacity:0}
+.lg:hover .v-raso,.lg.on .v-raso{opacity:0}
+.lg:hover .v-pesp,.lg.on .v-pesp{opacity:1}
+@media (prefers-reduced-motion: reduce){.lg .v-raso,.lg .v-pesp{transition:none}}
+.lg{display:block;width:100%;height:auto;cursor:pointer}
+.hero{border:1px solid var(--line);border-radius:22px;overflow:hidden;margin-bottom:10px}
+.hint{font-size:13px;color:var(--ink2);margin:0 0 22px}
+
+/* ---------- controles ---------- */
+.controls{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;gap:12px 22px;padding:14px 18px;border:1px solid var(--line);border-radius:18px;background:var(--soft);margin-bottom:8px}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.ctl > span{font-size:13px;font-weight:600;color:var(--ink2);margin-right:4px}
+.ctl button{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 12px;font-size:14px;cursor:pointer}
+.ctl button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--btntext)}
+.ctl input[type=text]{border:1px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 12px;font-size:14px;width:min(300px,70vw)}
+
+/* ---------- maquetas de las plataformas (esquemas genéricos, no capturas) ---------- */
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start;margin-top:18px}
+.row.wide{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+@media (max-width:900px){.row,.row.wide{grid-template-columns:1fr}}
+.lbl{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;color:var(--ink2);margin:0 0 8px}
+.ui{background:var(--ui);color:var(--uiink);border:1px solid var(--uiline);border-radius:16px;padding:16px;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+.phone{max-width:360px;border-radius:30px;padding:14px 14px 18px;margin:0 auto}
+.crop{overflow:hidden;border-radius:12px;line-height:0}
+.crop svg{display:block;width:100%;height:auto}
+.av{flex:none;border-radius:50%;overflow:hidden;line-height:0;border:1px solid var(--uiline)}
+.av svg{width:100%;height:100%}
+.who{display:flex;gap:16px;align-items:center;margin-top:14px}
+.nm{font-weight:700;font-size:22px;margin:0 0 4px}
+.mt{color:var(--uimute);font-size:13px;line-height:1.45;margin:0}
+.pill{display:inline-block;margin-top:10px;padding:8px 16px;border-radius:999px;background:var(--uiink);color:var(--ui);font-size:13px;font-weight:600}
+.pill.soft{background:var(--uichip);color:var(--uiink)}
+.tabs{display:flex;gap:20px;border-bottom:1px solid var(--uiline);margin-top:16px;padding-bottom:8px;font-size:14px;font-weight:600;color:var(--uimute)}
+.tabs b{color:var(--uiink);border-bottom:2px solid var(--uiink);padding-bottom:6px;margin-bottom:-9px}
+.ph{background:var(--uichip);border-radius:6px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:14px}
+.grid3 > div{aspect-ratio:3/4;overflow:hidden;line-height:0;background:var(--uichip)}
+.grid3 svg{width:100%;height:100%}
+.hl{display:flex;gap:12px;margin-top:14px;overflow:hidden}
+.hl > div{display:flex;flex-direction:column;align-items:center;gap:5px;font-size:11px;color:var(--uiink)}
+.hl .av{width:58px;height:58px;padding:2px;border:1px solid var(--uiline)}
+.hl .av svg{border-radius:50%}
+.stats{display:flex;justify-content:center;gap:22px;margin:10px 0;font-size:13px;color:var(--uimute);text-align:center}
+.stats b{display:block;color:var(--uiink);font-size:15px}
+.fbcover{border-radius:0 0 10px 10px}
+
+/* ---------- notas e integración ---------- */
+.notes{border:1px solid var(--line);border-radius:18px;padding:16px 20px;background:var(--bg)}
+.notes h3{font:600 17px/1.2 'DM Sans',sans-serif;margin:0 0 8px}
+.notes ul{margin:0 0 12px;padding-left:18px;color:var(--ink2);line-height:1.5;font-size:15px}
+.notes li{margin-bottom:4px}
+.dl{display:flex;flex-wrap:wrap;gap:8px}
+.dl button{border:1px solid var(--brand);background:transparent;color:var(--brandink);border-radius:999px;padding:8px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.dl button:hover{background:var(--brand);color:var(--btntext)}
+.status{font-size:13px;color:var(--ink2);min-height:1.4em;margin-top:8px}
+.verdict{border-left:4px solid var(--brand);background:var(--soft);padding:14px 18px;border-radius:0 14px 14px 0;color:var(--ink);line-height:1.5;max-width:860px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Symploké en redes</h1>
+  <p class="intro">El logotipo bordado en punto de raso y, al pasar el cursor, en pespunte. Debajo está cómo quedaría en la cabecera de YouTube, Facebook, Instagram y TikTok, qué pieza necesita cada una y un botón para descargar cada imagen a su medida. Las maquetas son esquemas para hacerse una idea, no capturas de las plataformas.</p>
+
+  <div class="controls" id="controls">
+    <div class="ctl" data-k="greens"><span>Hilo</span>
+      <button data-v="1">Un verde</button><button data-v="2">Dos verdes</button></div>
+    <div class="ctl" data-k="fabric"><span>Tela</span>
+      <button data-v="blanco">Blanca</button><button data-v="lino">Lino</button><button data-v="menta">Verde claro</button><button data-v="oscuro">Verde oscuro</button></div>
+    <div class="ctl" data-k="weight"><span>Grosor</span>
+      <button data-v="400">400</button><button data-v="600">600</button><button data-v="800">800</button></div>
+    <div class="ctl" data-k="stitch"><span>Puntada</span>
+      <button data-v="fina">Fina</button><button data-v="media">Media</button><button data-v="gruesa">Gruesa</button></div>
+    <div class="ctl"><span>Frase</span><input type="text" id="tag" aria-label="Frase bajo el logotipo" placeholder="Sin frase"></div>
+    <div class="ctl" data-k="dl"><span>Descargar en</span>
+      <button data-v="raso">Raso</button><button data-v="pesp">Pespunte</button></div>
+    <div class="ctl" data-k="theme"><span>Página</span>
+      <button data-v="light">Clara</button><button data-v="dark">Oscura</button></div>
+  </div>
+  <p class="hint">Pasa el cursor por cualquier logotipo para ver el pespunte. En el móvil, tócalo.</p>
+
+  <div class="hero" id="hero"></div>
+
+  <!-- patrones de puntada, máscaras del entretejido y filtro de hilo, compartidos por todos los dibujos -->
+  <svg id="defs" width="0" height="0" style="position:absolute" aria-hidden="true"></svg>
+
+  <h2>Dónde encaja mejor</h2>
+  <div class="verdict" id="verdict">De las cuatro, <b>YouTube</b> es la única con una cabecera ancha de verdad: ahí luce el logotipo completo bordado. <b>Facebook</b> también tiene portada, más baja. <b>Instagram y TikTok</b> no tienen cabecera: su «cabecera» es la foto de perfil redonda, el nombre y la biografía. Ahí la pieza clave es <b>el símbolo bordado solo</b>, porque a 100 px el nombre no se leería. En ninguna red existe el «pasar el cursor», porque las imágenes son fijas. El cambio de raso a pespunte puede vivir como una animación corta al principio o al final de los vídeos.</div>
+
+  <h2>YouTube</h2>
+  <p class="sub">Imagen de cabecera de 2560 × 1440. Cada pantalla enseña un trozo distinto: la tele la ve entera, el ordenador una franja y el móvil solo la zona central, de 1546 × 423. El logotipo y la frase van en esa zona central.</p>
+  <p class="lbl">Ordenador</p>
+  <div class="ui" id="yt-desk"></div>
+  <div class="row wide">
+    <div><p class="lbl">Plantilla con las zonas visibles</p><div class="crop" id="yt-tpl"></div></div>
+    <div><p class="lbl">Móvil</p><div class="ui phone" id="yt-mob"></div></div>
+  </div>
+  <div class="row">
+    <div class="notes"><h3>Cómo integrarlo</h3><ul>
+      <li><b>Cabecera:</b> logotipo completo en raso, centrado, con dos líneas de pespunte como un dobladillo que enmarca la franja que se ve en el ordenador.</li>
+      <li><b>Foto de perfil</b> (800 × 800, se ve redonda y pequeña): solo el símbolo, dentro de un aro de pespunte que recuerda a un bastidor de bordar. El nombre ya aparece escrito al lado.</li>
+      <li><b>Marca de agua</b> (la esquina de los vídeos, 150 × 150): el símbolo en pespunte, que molesta poco.</li>
+      <li><b>Cortinilla de 2–3 s</b> al empezar o acabar los vídeos: el pespunte se va rellenando hasta quedar en raso. Es la versión en vídeo del efecto de pasar el cursor.</li>
+    </ul><div class="dl"><button data-dl="yt">Cabecera 2560 × 1440</button><button data-dl="avatar">Foto de perfil 800 × 800</button><button data-dl="mark">Marca de agua 150 × 150</button></div><div class="status"></div></div>
+  </div>
+
+  <h2>Facebook</h2>
+  <p class="sub">La portada se ve más baja en el ordenador (unos 820 × 312) que en el móvil (unos 640 × 360). Si se diseña a 1640 × 924, el ordenador corta arriba y abajo y deja la franja central de 1640 × 624. Ahí va todo lo importante.</p>
+  <div class="row wide">
+    <div><p class="lbl">Ordenador</p><div class="ui" id="fb-desk"></div></div>
+    <div><p class="lbl">Móvil</p><div class="ui phone" id="fb-mob"></div></div>
+  </div>
+  <div class="row">
+    <div class="notes"><h3>Cómo integrarlo</h3><ul>
+      <li><b>Portada:</b> la misma composición que en YouTube, más compacta. La foto de perfil se monta sobre la esquina inferior izquierda, así que el logotipo va centrado y no a la izquierda.</li>
+      <li><b>Foto de perfil:</b> la misma que en YouTube. Usar la misma imagen en todas las redes ayuda a que se reconozca la marca.</li>
+      <li><b>Publicaciones:</b> sirve la pieza vertical de Instagram (1080 × 1350).</li>
+    </ul><div class="dl"><button data-dl="fb">Portada 1640 × 924</button><button data-dl="avatar">Foto de perfil 800 × 800</button></div><div class="status"></div></div>
+  </div>
+
+  <h2>Instagram</h2>
+  <p class="sub">No tiene cabecera. Lo primero que se ve es la foto de perfil (redonda, de unos 110 px), el nombre, la biografía, las historias destacadas y la primera fila de publicaciones, que en el perfil se recortan a 3:4.</p>
+  <div class="row">
+    <div><p class="lbl">Perfil en el móvil</p><div class="ui phone" id="ig"></div></div>
+    <div class="notes"><h3>Cómo integrarlo</h3><ul>
+      <li><b>Foto de perfil:</b> el símbolo bordado con su aro de pespunte (subir a 800 × 800; Instagram lo reduce).</li>
+      <li><b>Destacadas:</b> las portadas, todas iguales, con el símbolo en pespunte sobre telas distintas. Hacen de «menú» del perfil: Quiénes somos, Motivos, Terapias y Cita.</li>
+      <li><b>Publicación fijada</b> (1080 × 1350): el logotipo apilado en raso. Actúa como cabecera: es lo primero que se ve de la cuadrícula.</li>
+      <li><b>Portadas de Reels</b> (1080 × 1920): la pieza vertical. En la cuadrícula se ve el centro, recortado a 3:4.</li>
+    </ul><div class="dl"><button data-dl="avatar">Foto de perfil 800 × 800</button><button data-dl="hl">Portada de destacada 1080 × 1920</button><button data-dl="post">Publicación 1080 × 1350</button><button data-dl="vert">Vertical 1080 × 1920</button></div><div class="status"></div></div>
+  </div>
+
+  <h2>TikTok</h2>
+  <p class="sub">Como Instagram, sin cabecera: foto de perfil redonda, nombre, biografía y la cuadrícula de vídeos. Los vídeos son verticales (1080 × 1920) y abajo y a la derecha quedan tapados por los botones de la aplicación.</p>
+  <div class="row">
+    <div><p class="lbl">Perfil en el móvil</p><div class="ui phone" id="tt"></div></div>
+    <div class="notes"><h3>Cómo integrarlo</h3><ul>
+      <li><b>Foto de perfil:</b> la misma, el símbolo con su aro. En TikTok se ve aún más pequeña, así que el nombre sobra.</li>
+      <li><b>Portada de los vídeos:</b> la pieza vertical, con el logotipo en la mitad de arriba, lejos de los botones.</li>
+      <li><b>Cortinilla:</b> la misma animación del pespunte que se rellena de raso. En TikTok conviene que dure menos de 2 segundos.</li>
+    </ul><div class="dl"><button data-dl="avatar">Foto de perfil 800 × 800</button><button data-dl="vert">Vertical 1080 × 1920</button></div><div class="status"></div></div>
+  </div>
+
+  <p class="sub" style="margin-top:40px;font-size:14px">Las medidas son las que las plataformas recomiendan hoy, pero las cambian a menudo. Revísalas en su ayuda antes de subir las imágenes. Las descargas son PNG a tamaño real, con la versión elegida en «Descargar en».</p>
+</div>
+
+<script>
+var D='#009966', DD='#006B46', L='#5FE3A8';
+var FABRIC={blanco:'#FFFFFF',lino:'#F2EEE4',menta:'#E6F5EC',oscuro:'#0E2A20'};
+var STEP={fina:3.4,media:4.8,gruesa:7};      // separación entre puntadas, en unidades del dibujo
+var FS=140;
+
+/* parte de lo elegido en bordado.html (salvo la tela: aquí va en blanco) y luego guarda lo de esta página */
+var S={greens:'1',fabric:'blanco',weight:'600',stitch:'media',tag:'Pensemos juntos tu problema',dl:'raso',theme:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'};
+try{
+  var b=JSON.parse(localStorage.getItem('symploke-bordado')||'{}');['greens','weight','stitch','theme'].forEach(function(k){if(b[k])S[k]=b[k];});
+  var r=JSON.parse(localStorage.getItem('symploke-redes-2')||'{}');for(var k in r)if(k in S)S[k]=r[k];
+}catch(e){}
+function save(){try{localStorage.setItem('symploke-redes-2',JSON.stringify(S));}catch(e){}}
+
+function mix(a,b,t){
+  var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16),r=[16,8,0].map(function(s){return Math.round(((x>>s)&255)*(1-t)+((y>>s)&255)*t);});
+  return '#'+r.map(function(v){return ('0'+v.toString(16)).slice(-2);}).join('');
+}
+function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function C(){
+  var two=S.greens==='2', dark=S.fabric==='oscuro';
+  return {a:D, b:two?L:D, edge:two?L:(dark?'#2FBF8A':DD), fab:FABRIC[S.fabric], tagc:dark?'#CFE9DC':'#33433C'};
+}
+
+/* ---------- patrones, máscaras y filtro (como en bordado.html) ---------- */
+function satin(id,c,angle,p){
+  var sh=mix(c,'#00281A',.38), hi=mix(c,'#FFFFFF',.5);
+  return '<pattern id="'+id+'" width="'+(p*9)+'" height="'+p+'" patternUnits="userSpaceOnUse" patternTransform="rotate('+angle+')">'+
+    '<rect width="'+(p*9)+'" height="'+p+'" fill="'+c+'"/>'+
+    '<rect width="'+(p*9)+'" height="'+(p*.2).toFixed(2)+'" fill="'+sh+'"/>'+
+    '<rect y="'+(p*.32).toFixed(2)+'" width="'+(p*9)+'" height="'+(p*.16).toFixed(2)+'" fill="'+hi+'" opacity=".5"/>'+
+    '<rect x="'+(p*4.2).toFixed(2)+'" width="'+(p*.35).toFixed(2)+'" height="'+p+'" fill="'+sh+'" opacity=".35"/>'+
+    '</pattern>';
+}
+function defs(){
+  var c=C(), p=STEP[S.stitch], dark=S.fabric==='oscuro';
+  var h=satin('sT-a',c.a,-38,p)+satin('sV-a',c.a,0,p)+satin('sH-b',c.b,90,p)+
+    '<pattern id="lino" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#5A4A2A" opacity=".07"/><rect width="1" height="4" fill="#5A4A2A" opacity=".06"/></pattern>';
+  var hal='',pat='',pha='';
+  [41.5,83.5,125.5].forEach(function(y){hal+='<rect x="29.5" y="'+y+'" width="141" height="33" rx="8.5" fill="#000"/>';});
+  [[43.4,40.7],[43.4,124.7],[85.4,82.7],[127.4,40.7],[127.4,124.7]].forEach(function(q){
+    pat+='<rect x="'+q[0]+'" y="'+q[1]+'" width="29.2" height="34.6" fill="#fff"/>';
+    pha+='<rect x="'+(q[0]-1.9)+'" y="'+(q[1]+3.3)+'" width="33" height="28" fill="#000"/>';
+  });
+  h+='<mask id="mV" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+hal+pat+'</mask>';
+  h+='<mask id="mH" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+pha+'</mask>';
+  h+='<filter id="hilo" x="-5%" y="-10%" width="110%" height="125%" color-interpolation-filters="sRGB">'+
+    '<feTurbulence type="fractalNoise" baseFrequency=".55" numOctaves="2" seed="4" result="n"/>'+
+    '<feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" xChannelSelector="R" yChannelSelector="G" result="d"/>'+
+    '<feGaussianBlur in="SourceAlpha" stdDeviation="1.4" result="b"/><feOffset in="b" dy="1.8" result="o"/>'+
+    '<feFlood flood-color="'+(dark?'#000':'#00261A')+'" flood-opacity="'+(dark?'.6':'.32')+'"/><feComposite in2="o" operator="in" result="sh"/>'+
+    '<feMerge><feMergeNode in="sh"/><feMergeNode in="d"/></feMerge></filter>';
+  return h;
+}
+
+/* ---------- el logotipo: horizontal (h), apilado (v) o solo el símbolo (m), con las dos puntadas superpuestas ---------- */
+var cv=document.createElement('canvas'), cx=cv.getContext('2d');
+function tw(){cx.font=S.weight+' '+FS+'px Spectral';return cx.measureText('Symploké').width;}
+function attrs(v){
+  var c=C(), p=STEP[S.stitch], dash=' stroke-dasharray="'+(p*1.5).toFixed(1)+' '+(p*.8).toFixed(1)+'" stroke-linecap="round"';
+  if(v==='raso')return {v:'fill="url(#sV-a)"',h:'fill="url(#sH-b)"',t:'fill="url(#sT-a)"'};
+  return {v:'fill="'+c.a+'" fill-opacity=".1" stroke="'+c.a+'" stroke-width="3.4"'+dash,
+          h:'fill="'+c.b+'" fill-opacity=".12" stroke="'+c.b+'" stroke-width="3.4"'+dash,
+          t:'fill="'+c.a+'" fill-opacity=".1" stroke="'+c.a+'" stroke-width="3"'+dash};
+}
+function ribbons(x,y,a){
+  var v='',h='';
+  [44,86,128].forEach(function(k){v+='<rect x="'+k+'" y="32" width="28" height="136" rx="6" '+a.v+'/>';h+='<rect x="32" y="'+k+'" width="136" height="28" rx="6" '+a.h+'/>';});
+  return '<g transform="translate('+x+' '+y+')"><g transform="rotate(45 100 100)"><g mask="url(#mV)">'+v+'</g><g mask="url(#mH)">'+h+'</g></g></g>';
+}
+function lockup(layout,only){
+  var w,h,mx,my,tx,ty,anchor='start',t=tw();
+  if(layout==='h'){w=Math.ceil(246+t+28);h=260;mx=22;my=30;tx=246;ty=178;}
+  else if(layout==='v'){w=Math.ceil(Math.max(280,t+60));h=420;mx=(w-200)/2;my=14;tx=w/2;ty=372;anchor='middle';}
+  else {w=240;h=240;mx=20;my=20;}
+  var body='';
+  (only?[only]:['raso','pesp']).forEach(function(v){
+    var a=attrs(v);
+    body+='<g class="v-'+v+'" filter="url(#hilo)">'+ribbons(mx,my,a)+
+      (layout==='m'?'':'<text x="'+tx+'" y="'+ty+'" text-anchor="'+anchor+'" font-family="Spectral" font-weight="'+S.weight+'" font-size="'+FS+'" '+a.t+'>Symploké</text>')+'</g>';
+  });
+  return {w:w,h:h,body:body};
+}
+/* coloca un logotipo dentro de un dibujo mayor: centrado en cx, con la parte de arriba en y y el alto dado */
+function place(lk,cxp,y,hh){
+  var ww=lk.w*hh/lk.h;
+  return {w:ww,s:'<svg x="'+(cxp-ww/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+ww.toFixed(1)+'" height="'+hh+'" viewBox="0 0 '+lk.w+' '+lk.h+'" overflow="visible">'+lk.body+'</svg>'};
+}
+function fabric(w,h){var c=C();return '<rect width="'+w+'" height="'+h+'" fill="'+c.fab+'"/>'+(S.fabric==='lino'?'<rect width="'+w+'" height="'+h+'" fill="url(#lino)"/>':'');}
+function hem(x1,x2,y,sw){var c=C();return '<line x1="'+x1+'" y1="'+y+'" x2="'+x2+'" y2="'+y+'" stroke="'+c.edge+'" stroke-width="'+sw+'" stroke-dasharray="'+(sw*4.4)+' '+(sw*2.4)+'" stroke-linecap="round"/>';}
+function seam(x,y,w,h,r,sw){var c=C();return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="'+r+'" fill="none" stroke="'+c.edge+'" stroke-width="'+sw+'" stroke-dasharray="'+(sw*4.4)+' '+(sw*2.4)+'" stroke-linecap="round"/>';}
+function tagline(x,y,size){
+  if(!S.tag.trim())return '';
+  return '<text x="'+x+'" y="'+y+'" text-anchor="middle" font-family="DM Sans" font-weight="500" font-size="'+size+'" letter-spacing="'+(size*.02).toFixed(1)+'" fill="'+C().tagc+'">'+esc(S.tag)+'</text>';
+}
+
+/* ---------- las piezas, a su tamaño real ---------- */
+var BUILD={
+  yt:function(o){        // 2560 × 1440; zona segura 1546 × 423 en el centro
+    var hasT=!!S.tag.trim(), lh=hasT?240:280, tot=lh+(hasT?82:0), y0=720-tot/2, l=place(lockup('h',o),1280,y0,lh);
+    return {w:2560,h:1440,body:fabric(2560,1440)+hem(0,2560,536,5)+hem(0,2560,904,5)+l.s+tagline(1280,y0+lh+64,46)};
+  },
+  fb:function(o){        // 1640 × 924; el ordenador ve la franja central 1640 × 624
+    var hasT=!!S.tag.trim(), lh=hasT?210:240, tot=lh+(hasT?72:0), y0=462-tot/2, l=place(lockup('h',o),820,y0,lh);
+    return {w:1640,h:924,body:fabric(1640,924)+hem(0,1640,182,4)+hem(0,1640,742,4)+l.s+tagline(820,y0+lh+56,40)};
+  },
+  avatar:function(o){    // 800 × 800, se ve redonda: símbolo dentro de un aro de pespunte
+    var l=place(lockup('m',o),400,170,460);
+    return {w:800,h:800,body:fabric(800,800)+'<circle cx="400" cy="400" r="352" fill="none" stroke="'+C().edge+'" stroke-width="7" stroke-dasharray="30 17" stroke-linecap="round"/>'+l.s};
+  },
+  mark:function(o){      // 150 × 150, marca de agua: solo el símbolo sobre transparente
+    var l=place(lockup('m',o||'pesp'),75,6,138);
+    return {w:150,h:150,body:l.s};
+  },
+  hl:function(o){        // 1080 × 1920, portada de destacada: lo que importa, en el círculo central
+    var l=place(lockup('m',o||'pesp'),540,660,600);
+    return {w:1080,h:1920,body:fabric(1080,1920)+'<circle cx="540" cy="960" r="400" fill="none" stroke="'+C().edge+'" stroke-width="8" stroke-dasharray="34 19" stroke-linecap="round"/>'+l.s};
+  },
+  post:function(o){      // 1080 × 1350, publicación fijada
+    var lk=lockup('v',o), lh=Math.min(560,840*lk.h/lk.w), hasT=!!S.tag.trim(), tot=lh+(hasT?90:0), y0=675-tot/2, l=place(lk,540,y0,lh);
+    return {w:1080,h:1350,body:fabric(1080,1350)+seam(56,56,968,1238,26,5)+l.s+tagline(540,y0+lh+76,44)};
+  },
+  vert:function(o){      // 1080 × 1920, portada de Reels y TikTok: arriba del centro, lejos de los botones
+    var lk=lockup('v',o), lh=Math.min(600,860*lk.h/lk.w), hasT=!!S.tag.trim(), y0=820-(lh+(hasT?90:0))/2, l=place(lk,540,y0,lh);
+    return {w:1080,h:1920,body:fabric(1080,1920)+seam(60,60,960,1800,30,5)+l.s+tagline(540,y0+lh+80,46)};
+  }
+};
+function art(kind,vb,extra){
+  var b=BUILD[kind]();
+  return '<svg class="lg" viewBox="'+(vb||'0 0 '+b.w+' '+b.h)+'" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Symploké">'+b.body+(extra||'')+'</svg>';
+}
+function av(px,kind){return '<div class="av" style="width:'+px+'px;height:'+px+'px">'+art(kind||'avatar')+'</div>';}
+
+/* ---------- maquetas ---------- */
+function render(){
+  var root=document.documentElement;
+  root.setAttribute('data-theme',S.theme);
+  document.getElementById('defs').innerHTML=defs();
+  var tg=esc(S.tag.trim()||'Psicología');
+
+  var heroLk=lockup('h');
+  document.getElementById('hero').innerHTML='<svg class="lg" viewBox="0 0 '+(heroLk.w+80)+' '+(heroLk.h+40)+'" role="img" aria-label="Symploké">'+fabric(heroLk.w+80,heroLk.h+40)+
+    '<svg x="40" y="20" width="'+heroLk.w+'" height="'+heroLk.h+'" viewBox="0 0 '+heroLk.w+' '+heroLk.h+'" overflow="visible">'+heroLk.body+'</svg></svg>';
+
+  /* YouTube */
+  var ytInfo='<div><p class="nm">Symploké</p><p class="mt">@symploke · 0 suscriptores · 0 vídeos</p><p class="mt">'+tg+'</p><span class="pill">Suscribirse</span></div>';
+  document.getElementById('yt-desk').innerHTML='<div class="crop" style="aspect-ratio:2560/423">'+art('yt','0 508.5 2560 423')+'</div>'+
+    '<div class="who">'+av(120)+ytInfo+'</div><div class="tabs"><b>Inicio</b><span>Vídeos</span><span>Shorts</span><span>Listas</span></div>';
+  document.getElementById('yt-mob').innerHTML='<div class="crop" style="aspect-ratio:1546/423">'+art('yt','507 508.5 1546 423')+'</div>'+
+    '<div class="who">'+av(64)+'<div><p class="nm" style="font-size:19px">Symploké</p><p class="mt">@symploke · 0 suscriptores</p></div></div><span class="pill" style="display:block;text-align:center">Suscribirse</span>'+
+    '<div class="tabs"><b>Inicio</b><span>Vídeos</span><span>Shorts</span></div>';
+  var guide=function(x,y,w,h,txt,col){return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" fill="none" stroke="'+col+'" stroke-width="8" stroke-dasharray="40 20"/><text x="'+(x+24)+'" y="'+(y+58)+'" font-family="DM Sans" font-weight="600" font-size="44" fill="'+col+'">'+txt+'</text>';};
+  document.getElementById('yt-tpl').innerHTML=art('yt',null,guide(4,4,2552,1432,'Tele: entera','#B5651D')+guide(4,508.5,2552,423,'Ordenador','#2E6BD8')+guide(507,508.5,1546,423,'Móvil (zona segura)','#C2185B'));
+
+  /* Facebook */
+  document.getElementById('fb-desk').innerHTML='<div class="crop fbcover" style="aspect-ratio:1640/624">'+art('fb','0 150 1640 624')+'</div>'+
+    '<div class="who" style="margin-top:-46px;padding-left:18px;align-items:flex-end">'+'<div style="border:4px solid var(--ui);border-radius:50%;line-height:0">'+av(132)+'</div>'+
+    '<div style="padding-bottom:6px"><p class="nm">Symploké</p><p class="mt">0 seguidores · Psicólogo</p></div></div>'+
+    '<div style="display:flex;gap:8px;margin-top:6px"><span class="pill">Seguir</span><span class="pill soft">Mensaje</span></div>'+
+    '<div class="tabs"><b>Publicaciones</b><span>Información</span><span>Fotos</span><span>Vídeos</span></div>';
+  document.getElementById('fb-mob').innerHTML='<div class="crop" style="aspect-ratio:1640/924">'+art('fb')+'</div>'+
+    '<div style="margin-top:-40px;padding-left:12px;line-height:0"><div style="display:inline-block;border:4px solid var(--ui);border-radius:50%">'+av(96)+'</div></div>'+
+    '<p class="nm" style="margin-top:8px">Symploké</p><p class="mt">0 seguidores · Psicólogo</p><div style="display:flex;gap:8px"><span class="pill">Seguir</span><span class="pill soft">Mensaje</span></div>';
+
+  /* Instagram */
+  var hls=['Quiénes','Motivos','Terapias','Cita'].map(function(n){return '<div>'+av(58,'hl')+n+'</div>';}).join('');
+  var tiles='<div>'+art('post','0 0 1080 1350')+'</div><div>'+art('vert','0 240 1080 1440')+'</div>'+'<div></div><div></div><div></div><div></div>';
+  document.getElementById('ig').innerHTML='<div class="who" style="margin-top:4px">'+av(86)+
+    '<div class="stats" style="flex:1;margin:0"><div><b>2</b>publicaciones</div><div><b>0</b>seguidores</div><div><b>0</b>seguidos</div></div></div>'+
+    '<p class="nm" style="font-size:15px;margin-top:12px">Symploké</p><p class="mt" style="color:var(--uiink)">Psicología · [TU NOMBRE]<br>'+tg+'</p>'+
+    '<div style="display:flex;gap:6px"><span class="pill" style="flex:1;text-align:center">Seguir</span><span class="pill soft" style="flex:1;text-align:center">Mensaje</span></div>'+
+    '<div class="hl">'+hls+'</div><div class="grid3">'+tiles+'</div>';
+
+  /* TikTok */
+  document.getElementById('tt').innerHTML='<div style="display:flex;flex-direction:column;align-items:center;text-align:center;margin-top:6px">'+av(96)+
+    '<p class="nm" style="font-size:17px;margin-top:10px">@symploke</p>'+
+    '<div class="stats"><div><b>0</b>Siguiendo</div><div><b>0</b>Seguidores</div><div><b>0</b>Me gusta</div></div>'+
+    '<span class="pill" style="margin-top:0;padding:10px 40px;background:#FE2C55;color:#fff">Seguir</span>'+
+    '<p class="mt" style="margin-top:10px;color:var(--uiink)">Psicología · '+tg+'</p></div>'+
+    '<div class="tabs" style="justify-content:center"><b>Vídeos</b><span>Me gusta</span></div>'+
+    '<div class="grid3"><div>'+art('vert','0 240 1080 1440')+'</div><div></div><div></div><div></div><div></div><div></div></div>';
+
+  document.querySelectorAll('.ctl[data-k]').forEach(function(ct){
+    ct.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',String(S[ct.dataset.k]===b.dataset.v));});
+  });
+}
+
+/* ---------- descargar en PNG: el SVG con las letras incrustadas, pintado en un canvas a tamaño real ---------- */
+var fontCache={};
+function toDataURL(blob){return new Promise(function(ok){var r=new FileReader();r.onload=function(){ok(r.result);};r.readAsDataURL(blob);});}
+function fontCSS(){
+  var chars=Array.from(new Set(('Symploké'+S.tag).split(''))).join('');
+  if(fontCache[chars])return Promise.resolve(fontCache[chars]);
+  var url='https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;800&family=DM+Sans:wght@500&text='+encodeURIComponent(chars);
+  return fetch(url).then(function(r){return r.text();}).then(function(css){
+    var urls=css.match(/url\([^)]+\)/g)||[];
+    return Promise.all(urls.map(function(u){return fetch(u.slice(4,-1).replace(/['"]/g,'')).then(function(r){return r.blob();}).then(toDataURL);}))
+      .then(function(data){urls.forEach(function(u,i){css=css.replace(u,'url('+data[i]+')');});return fontCache[chars]=css;});
+  });
+}
+function download(kind,status){
+  var b=BUILD[kind](kind==='mark'||kind==='hl'?'pesp':S.dl);
+  status.textContent='Preparando la imagen…';
+  fontCSS().catch(function(){status.textContent='No se pudo incrustar la letra (¿sin conexión?): la imagen saldrá con otra letra.';return '';}).then(function(css){
+    var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+b.w+'" height="'+b.h+'" viewBox="0 0 '+b.w+' '+b.h+'"><defs><style>'+css+'</style>'+defs()+'</defs>'+b.body+'</svg>';
+    var img=new Image();
+    img.onload=function(){
+      setTimeout(function(){   // un instante para que la letra incrustada termine de cargar dentro del SVG
+        var c=document.createElement('canvas');c.width=b.w;c.height=b.h;c.getContext('2d').drawImage(img,0,0,b.w,b.h);
+        c.toBlob(function(blob){
+          var a=document.createElement('a');a.href=URL.createObjectURL(blob);
+          a.download='symploke-'+kind+'-'+b.w+'x'+b.h+(kind==='mark'||kind==='hl'?'-pespunte':'-'+(S.dl==='raso'?'raso':'pespunte'))+'.png';
+          document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(a.href);},2000);
+          if(css)status.textContent='Descargada: '+a.download;
+        },'image/png');
+      },250);
+    };
+    img.onerror=function(){status.textContent='No se pudo generar la imagen en este navegador.';};
+    img.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+  });
+}
+
+/* ---------- eventos ---------- */
+document.getElementById('controls').addEventListener('click',function(e){
+  var b=e.target.closest('button'),c=b&&b.closest('.ctl[data-k]');if(!c)return;
+  S[c.dataset.k]=b.dataset.v;save();render();
+});
+var tagIn=document.getElementById('tag');tagIn.value=S.tag;
+tagIn.addEventListener('input',function(){S.tag=tagIn.value;save();render();});
+document.addEventListener('click',function(e){
+  var d=e.target.closest('[data-dl]');
+  if(d){download(d.dataset.dl,d.closest('.notes').querySelector('.status'));return;}
+  var lg=e.target.closest('.lg');if(lg&&matchMedia('(hover: none)').matches)lg.classList.toggle('on');   // en pantallas táctiles, tocar alterna raso y pespunte
+});
+Promise.all(['400','600','800'].map(function(w){return document.fonts.load(w+' '+FS+'px Spectral','Symploké');}).concat(document.fonts.load('500 40px "DM Sans"'))).then(render,render);
+</script>
+</body>
+</html>
