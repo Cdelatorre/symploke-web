@@ -75,7 +75,7 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 /* enfoque multidimensional: texto corrido, cada ciencia nombrada de pasada en negrita dentro de la frase,
    y entre párrafos una frase destacada entre comillas para aligerar la lectura */
 .read p strong{font-weight:600;color:var(--ink)}
-.read .voz{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(26px,2.6vw,34px);line-height:1.2;color:var(--brandink);margin:36px 0 36px clamp(0px,4vw,48px)}
+.read .voz{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(20px,1.9vw,24px);line-height:1.25;color:var(--brandink);margin:28px 0 28px clamp(0px,4vw,48px)}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -161,7 +161,7 @@ h+='</div></section>';
 h+='<div class="read">';
 if(m.bases){
   h+='<section><p class="layer">Qué dice la ciencia</p><h2>Un enfoque multidimensional</h2>';
-  h+='<p>'+(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.')+'</p>';
+  [].concat(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.').forEach(function(p){h+='<p>'+p+'</p>';});   // basesIntro: un párrafo o varios
   var voz=m.quotes||[];
   m.bases.forEach(function(b,i){
     h+='<p>'+b+'</p>';
@@ -170,10 +170,10 @@ if(m.bases){
       h+='<p class="voz">«'+vz[0]+'»'+(vz[1]?'<span class="quien">— '+vz[1]+'</span>':'')+'</p>';
     }
   });
-  h+='<p class="refs">'+m.refs+'</p></section>';
+  h+=(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>Pensarlo juntos</h2><p class="beyond">'+m.together+'</p></section>';
 }else{
-  h+='<section><p class="layer">Qué dice la ciencia</p><h2>Qué sabemos</h2><p>'+m.science+'</p><p class="refs">'+m.refs+'</p></section>';
+  h+='<section><p class="layer">Qué dice la ciencia</p><h2>Qué sabemos</h2><p>'+m.science+'</p>'+(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>No eres un diagnóstico</h2><p class="beyond">'+m.beyond+'</p></section>';
 }
 h+='</div>';

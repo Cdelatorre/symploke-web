@@ -4,7 +4,7 @@
    Lo científico va marcado [VERIFICAR]. Fotos provisionales de Wikimedia Commons (créditos en FOTOS).
    Cada motivo tiene tres capas: lo que se siente, qué dice la ciencia y más allá de la etiqueta.
    bases: párrafos de «Qué dice la ciencia»; cada ciencia se nombra de pasada, en negrita, dentro del texto.
-   basesIntro (opcional): entrada propia de esa sección; si falta, motivo.html pone una genérica.
+   basesIntro (opcional): entrada propia de esa sección (texto o lista de párrafos); si falta, motivo.html pone una genérica.
    quotes: frases destacadas que se intercalan entre los párrafos de «Qué dice la ciencia» (de momento,
    del mismo autocompletado de Google; se añadirán otras frases luminosas). Una cita con autor va como
    ['texto literal','autor'] y motivo.html pone la firma debajo; '' deja ese hueco sin frase. */
@@ -18,21 +18,31 @@ window.MOTIVOS=[
   slug:'ansiedad', name:'Ansiedad y estrés', sym:'Tengo ansiedad y no sé por qué',
   k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout',
   feel:['Tengo ansiedad y no sé por qué','No puedo parar de pensar','Estoy todo el día pensando','Me obsesiono con las ideas'],
-  quotes:['Le doy vueltas a todo','Pienso demasiado','Me falta el aire'],
-  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
-  basesIntro:'La ansiedad es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y tratamos de quedarnos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola. Y pluralismo no es relativismo: no todo vale lo mismo, unas explicaciones tienen más apoyo que otras.',
-  bases:[
-    'La ansiedad es un sistema de alarma. <strong>Por lo que dice la biología</strong>, ante una amenaza el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. '+V,
-    'En el cerebro hay circuitos que detectan las amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. <strong>Los estudios de neurología</strong> nos lo muestran, y ayudan a entender por qué a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. Pero sería <strong>reduccionista</strong> quedarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera, con su cuerpo, su historia y lo que está viviendo. '+V,
-    'Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. <strong>Los estudios psicológicos</strong> muestran que eso alivia un momento y alimenta el círculo, y en terapia lo vemos a menudo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. '+V,
-    'Y la ansiedad no nace solo dentro de cada uno. <strong>Muchos estudios en sociología</strong> señalan el peso de la precariedad, la prisa o la presión por rendir y por estar siempre conectado; no es casual que sea uno de los motivos de consulta más frecuentes en atención primaria. '+V
+  /* citas literales de Marino Pérez Álvarez: (2012) «La psicología positiva: magia simpática», pág. 10 del PDF;
+     (2019) «Diagnóstico más allá de los síntomas», págs. 32-33 del PDF (ver citas-para-la-web.md) */
+  quotes:[
+    'Emociones “negativas” como el enfado y la ira pueden ser positivas —adaptativas y motivadoras— para rectificar errores personales y sociales',
+    'La ansiedad puede ser antes que nada una señal de alarma de algo que anda mal en nuestra vida, sin saber qué',
+    'La ansiedad no estaría dentro de uno […] sino que sería uno el que está dentro de una situación'
   ],
-  together:'Cada una de estas miradas explica una parte, y ninguna lo explica todo. Lo que nos interesa es cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. Buscamos qué te está haciendo de <strong>mordaza</strong> y qué puede servirte de <strong>habilitador</strong> en cada uno de esos planos. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero— y también sus razones, aunque al principio no se vean. A partir de ahí tomamos de cada enfoque lo que mejor encaja contigo, y lo pensamos juntos.',
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  basesIntro:[
+    'La ansiedad no es mala en sí misma. La necesitamos para reaccionar ante lo que nos rodea: nos pone alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
+    'Para entenderla hace falta un enfoque <strong>multidimensional</strong>, porque la ansiedad no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos.',
+    'La ansiedad es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y tratamos de quedarnos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola. Y pluralismo no es relativismo: no todo vale lo mismo, unas explicaciones tienen más apoyo que otras.'
+  ],
+  bases:[
+    'La ansiedad es un sistema de alarma. <strong>Por lo que dice la biología</strong>, ante una amenaza el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. Con otras emociones que solemos llamar negativas pasa algo parecido: también cumplen una función. '+V,
+    'En el cerebro hay circuitos que detectan las amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. <strong>Los estudios de neurología</strong> nos lo muestran, y ayudan a entender por qué a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. Pero sería <strong>reduccionista</strong> quedarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera, con su cuerpo, su historia y lo que está viviendo. '+V,
+    'Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. <strong>Los estudios psicológicos</strong> muestran que eso alivia un momento y alimenta el círculo, y en terapia lo vemos a menudo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. Y muchas veces aparece la <strong>hiperreflexividad</strong>: estar todo el tiempo analizándonos a nosotros mismos, pendientes de cada latido, de cada pensamiento, de cada sensación. Cuanto más nos miramos por dentro, peor suele ir la ansiedad y menos espacio queda para vivir hacia fuera. '+V,
+    'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Muchos estudios en sociología</strong> señalan el peso de la precariedad, la prisa o la presión por rendir y por estar siempre conectado; no es casual que sea uno de los motivos de consulta más frecuentes en atención primaria. '+V
+  ],
+  together:'Cada una de estas miradas explica una parte, y ninguna lo explica todo. Lo que nos interesa es cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero—, aunque al principio no se vea. Por eso la ayuda no está en eliminarla, sino en aclarar a qué situación responde y de qué te está alarmando, para que puedas manejarla mejor. Se trata de dejar la lucha contra los síntomas y volver a orientarte hacia los distintos ámbitos de tu vida: el trabajo, la familia, los amigos, lo que te importa. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> más y cómo transformarlas en <strong>habilitadores</strong>: que encajen con tu situación y te permitan progresar.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
   intro:'La ansiedad es una respuesta de alarma ante algo que anticipamos como amenaza. Es útil cuando se ajusta a lo que pasa; se convierte en un problema cuando aparece sin motivo claro, dura demasiado o empieza a decidir por ti.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: entender qué mantiene la ansiedad, dejar de evitar lo que asusta y volver a hacer lo que te importa.',
   science:'Se suele distinguir el miedo, ante un peligro presente, de la ansiedad, ante uno anticipado. Cuando se mantiene y limita la vida diaria, los manuales clínicos describen varios cuadros: ansiedad generalizada, pánico, ansiedad social o fobias, entre otros. Es uno de los motivos de consulta más frecuentes. '+V,
-  refs:'GuíaSalud (SNS): guía de práctica clínica sobre el manejo de los trastornos de ansiedad en atención primaria. '+v('edición vigente y enlace'),
+  refs:'Pérez Álvarez (2006), «La terapia de conducta de tercera generación»; (2008), «Hyperreflexivity as a condition of mental disorder»; (2012), «La psicología positiva: magia simpática»; (2019), «Diagnóstico más allá de los síntomas». '+v('referencias completas'),
   beyond:'Decir «tengo ansiedad» la convierte en una pieza averiada que llevamos dentro. Suele ser más útil verla como algo que hacemos —anticipar— y preguntarse hacia dónde: casi siempre tiene dirección postal (el trabajo, la familia, la pareja, el dinero). A veces la anticipación se vuelve sobre sí misma: vigilar cada latido, pensar en cómo estoy pensando. Y las ideas que parecen «irracionales» también tienen sus razones.',
   approaches:[
     ['Terapia cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
@@ -58,7 +68,6 @@ window.MOTIVOS=[
   intro:'Hablamos de depresión cuando la tristeza, el desánimo o la falta de interés se mantienen durante semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de uno mismo.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: recuperar poco a poco actividades con sentido, revisar los pensamientos que hunden y moverte hacia lo que importa sin esperar a tener ganas.',
   science:'Los manuales clínicos la describen por un conjunto de síntomas mantenidos en el tiempo: ánimo bajo, pérdida de interés, cambios en el sueño o el apetito, cansancio, culpa. Las guías recomiendan la psicoterapia, sola o junto con medicación según la intensidad. '+V,
-  refs:'GuíaSalud (SNS): guía de práctica clínica sobre el manejo de la depresión en el adulto. '+v('edición vigente y enlace'),
   beyond:'El ánimo no es una sustancia que se agota dentro de la cabeza: va ligado a la vida concreta —pérdidas, trabajo, soledad, rutinas que se han ido estrechando—. La explicación de «me falta serotonina» es una simplificación que la investigación no sostiene tal cual '+V+'. Mirar la vida concreta no quita importancia al malestar: le da por dónde empezar.',
   approaches:[
     ['Cognitivo-conductual y activación conductual','Recuperar poco a poco actividades con sentido y revisar los pensamientos que hunden.','amplia'],
@@ -85,7 +94,6 @@ window.MOTIVOS=[
   intro:'El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.',
   science:'La terapia cognitivo-conductual para el insomnio es el tratamiento psicológico de primera elección en las guías clínicas. Incluye la higiene del sueño, pero no se reduce a ella. '+V,
-  refs:'GuíaSalud (SNS): guía de práctica clínica para el manejo de pacientes con insomnio en atención primaria. '+v('edición vigente y enlace'),
   beyond:'Dormir no se puede forzar: cuanto más se intenta, más se aleja. El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche.',
   approaches:[
     ['Cognitivo-conductual para el insomnio','Ajustar horarios, cama y pensamientos que mantienen el problema.','amplia'],
@@ -112,7 +120,6 @@ window.MOTIVOS=[
   intro:'Hablamos de problemas de alimentación cuando la comida, el peso o la figura ocupan tanto espacio que condicionan el día a día: restricciones, atracones, compensaciones o una preocupación constante.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: regularizar la alimentación, entender qué función cumple la comida en tu vida y relacionarte de otra manera con tu cuerpo.',
   science:'Los manuales clínicos describen varios cuadros (anorexia, bulimia, trastorno por atracón, entre otros). Pueden tener consecuencias médicas, por eso el tratamiento suele requerir coordinación con medicina y nutrición. '+V,
-  refs:'GuíaSalud (SNS): guía de práctica clínica sobre trastornos de la conducta alimentaria. '+v('edición vigente y enlace'),
   beyond:'La comida rara vez es solo comida: se entreteje con el control, la imagen, la familia o las redes. Preferimos no reducirlo a una sigla y entender qué función cumple ese comportamiento en tu vida.',
   approaches:[
     ['Cognitivo-conductual','Regularizar la alimentación y trabajar las ideas sobre peso y figura.','buena en bulimia y atracones'],
@@ -146,7 +153,6 @@ window.MOTIVOS=[
   cta:'Podemos ayudarte a organizarte con lo que tienes, sin quedarte en la etiqueta.',
   intro:'El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.',
   science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño. '+V,
-  refs:'GuíaSalud (SNS): guía de práctica clínica sobre el TDAH en niños y adolescentes. '+v('edición vigente y enlace'),
   beyond:'Cuidado con la explicación circular: «no atiende porque tiene TDAH, y tiene TDAH porque no atiende». La atención no es solo algo que está dentro de la cabeza: también es lo que piden la escuela o el trabajo. Ni solo naturaleza ni solo crianza. El diagnóstico puede aliviar —por fin un nombre— y a la vez convertirse en identidad; la idea es no quitar ese alivio sin ofrecer otro.',
   approaches:[
     ['Cognitivo-conductual (adultos)','Organización, planificación y manejo de la impulsividad en la vida real.','moderada'],
