@@ -134,11 +134,16 @@ window.MOTIVOS=[
   feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
   quotes:['No puedo parar de comer','Como por ansiedad'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  basesIntro:[
+    'Es un problema en el que aparecen el <strong>control</strong>, la <strong>culpa</strong> y la obsesión por controlar nuestro cuerpo, hasta convertirse en el foco alrededor del cual acaba girando nuestra vida.',
+    'Y ocurre algo paradójico: lo que hacemos para controlar la comida —dietas estrictas, saltarse comidas, compensar lo que se ha comido— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
+    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
   bases:[
     'Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. <strong>Los estudios en biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V,
-    'Comer activa los sistemas de recompensa del cerebro y calma durante un rato; <strong>los estudios de neurología</strong> lo describen bien. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V,
-    'Es frecuente un círculo: comer para calmarse, sentir culpa, castigarse o restringir, y volver a comer. <strong>En psicología</strong> vemos que la culpa no frena el círculo: lo alimenta. Entender qué función cumple la comida en tu vida ayuda a salir de él. '+V,
-    'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. <strong>La sociología</strong> recuerda cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en adolescentes y mujeres jóvenes. '+V
+    'Comer activa los sistemas de recompensa del cerebro y calma durante un rato; <strong>los estudios en neurología</strong> lo describen bien. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V,
+    'Es frecuente un círculo: comer para calmarse, sentir culpa y <strong>compensar</strong> —hacer ejercicio de más, saltarse comidas, dejar de comer o vomitar— y volver a comer. <strong>Los estudios en psicología</strong> muestran que la culpa no frena el círculo: lo alimenta. A veces el vómito empieza como una forma de compensar y, con la repetición, se convierte en una <strong>compulsión</strong> que acaba dando placer; por eso no se frena solo con fuerza de voluntad. Entender qué función cumple la comida en tu vida ayuda a salir del círculo. '+V,
+    'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. <strong>Muchos estudios en sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en adolescentes y mujeres jóvenes. '+V
   ],
   together:'La comida rara vez es solo comida: se entreteje con el control, la imagen, las emociones, la familia o las redes. Preferimos no reducirlo a una sigla. Lo pensamos juntos, con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
   cta:'Trabajamos contigo, con calma y sin juicios, para que la comida vuelva a ocupar su sitio.',
