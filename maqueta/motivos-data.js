@@ -32,7 +32,7 @@ window.MOTIVOS=[
     'La ansiedad es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y tratamos de quedarnos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola. Y pluralismo no es relativismo: no todo vale lo mismo, unas explicaciones tienen más apoyo que otras.'
   ],
   bases:[
-    'La ansiedad es un sistema de alarma. <strong>Por lo que dice la biología</strong>, ante una amenaza el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. Con otras emociones que solemos llamar negativas pasa algo parecido: también cumplen una función. '+V,
+    'La ansiedad es un sistema de alarma. <strong>Los estudios en biología</strong> muestran que, ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Es útil ante un peligro real; agota cuando se queda encendida sin pausa. Con otras emociones que solemos llamar negativas pasa algo parecido: también cumplen una función. '+V,
     'En el cerebro hay circuitos que detectan las amenazas muy deprisa, antes de que lo pensemos, y otros, más lentos, que pueden calmarlos. <strong>Los estudios de neurología</strong> nos lo muestran, y ayudan a entender por qué a veces la ansiedad llega «sin saber por qué»: el aviso va por delante de la explicación. Pero sería <strong>reduccionista</strong> quedarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera, con su cuerpo, su historia y lo que está viviendo. '+V,
     'Darle vueltas a algo suele ser un intento de controlar lo que no sabemos: si lo pienso todo, nada me pillará por sorpresa. <strong>Los estudios psicológicos</strong> muestran que eso alivia un momento y alimenta el círculo, y en terapia lo vemos a menudo. Con evitar lo que asusta pasa igual: a corto plazo tranquiliza; a la larga, agranda el miedo. Y muchas veces aparece la <strong>hiperreflexividad</strong>: estar todo el tiempo analizándonos a nosotros mismos, pendientes de cada latido, de cada pensamiento, de cada sensación. Cuanto más nos miramos por dentro, peor suele ir la ansiedad y menos espacio queda para vivir hacia fuera. '+V,
     'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Muchos estudios en sociología</strong> señalan el peso de la precariedad, la prisa o la presión por rendir y por estar siempre conectado; no es casual que sea uno de los motivos de consulta más frecuentes en atención primaria. '+V
@@ -55,19 +55,31 @@ window.MOTIVOS=[
   slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de levantarme de la cama',
   k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio',
   feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No tengo ganas de vivir'],
-  quotes:['No tengo ganas de nada','Solo quiero dormir','Me siento vacío'],
-  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
-  bases:[
-    'El ánimo bajo no está solo en la cabeza. <strong>Por lo que dice la biología</strong>, se nota en el sueño, en el apetito, en el cansancio, en el cuerpo entero; el estrés mantenido, la falta de luz y de movimiento o algunas enfermedades influyen, y por eso a veces conviene también una revisión médica. '+V,
-    'La idea de que la depresión es «falta de serotonina» es una simplificación que <strong>la investigación en neurología</strong> no sostiene tal cual. Lo que sí nos muestra es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello: por eso cuesta tanto levantarse, aunque se quiera. '+V,
-    'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos den algo, y el ánimo baja más. <strong>Desde la psicología</strong> sabemos que esperar a tener ganas para moverse suele alargar el círculo, y que las terapias que mejor funcionan empiezan por romperlo con pasos pequeños. '+V,
-    'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión; <strong>la sociología</strong> lo ha estudiado mucho. No es debilidad de nadie: el malestar también habla de cómo vivimos. '+V
+  /* citas literales de Marino Pérez Álvarez: (2019) «Diagnóstico más allá de los síntomas», pág. 34 del PDF;
+     (2007) «La activación conductual y la desmedicalización de la depresión», págs. 5 y 7 del PDF (ver citas-para-la-web.md) */
+  quotes:[
+    'La depresión no es algo que uno tiene, según a menudo se da a entender, como si uno tuviera dentro de sí una condición patógena […] sino una situación en la que uno está',
+    'La terapia trata de enseñar al cliente a ser activo, a pesar de sus estados emocionales',
+    'La situación depresiva misma puede suponer un respiro, tregua, descanso, “ahorro de energía” en esfuerzos inútiles'
   ],
-  together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. Cuando no se ve futuro, ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y qué enfoque te sirve mejor.',
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  basesIntro:[
+    'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. Y no es pereza ni debilidad: la depresión cambia cómo se vive el mundo y cómo lo concebimos. Nada nos atrae, el futuro se ve negro y el cuerpo pesa como una mochila llena de piedras; por eso cuesta tanto levantarse, aunque uno quiera.',
+    'La depresión no es algo que uno tiene dentro: es una situación en la que uno está. Tiene que ver con lo que te ha pasado y con lo que te pasa, y precisamente por eso podemos hacer algo con ella.',
+    'Como casi todo lo que nos pasa, la depresión es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    'El ánimo bajo no está solo en la cabeza. Hoy sabemos, <strong>por los estudios en biología</strong>, que la depresión afecta al sueño, al apetito, al cansancio y al cuerpo entero, y que el estrés mantenido, la falta de luz y de movimiento o algunas enfermedades influyen, y por eso a veces conviene también una revisión médica. '+V,
+    'Tampoco el supuesto desequilibrio neuroquímico es su causa: es un componente más que influye. La explicación de «me falta serotonina» es una simplificación que <strong>los estudios en neurología</strong> no sostienen tal cual; el ánimo va ligado a nuestra vida y es mucho más complejo. Lo que sí muestran es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello, y eso ayuda a entender la falta de ganas. '+V,
+    'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos den algo, y el ánimo baja más. <strong>Los estudios en psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. Por eso la terapia busca que puedas ser activo a pesar de cómo te sientas: actuar de acuerdo con tus objetivos vitales, con lo que te interesa, en vez de según cómo te encuentres ese día. No se trata de hacer por hacer ni de rellenar el tiempo por estar ocupado, sino de hacer algo con sentido práctico para ti, con pasos pequeños. '+V,
+    'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>muchos estudios en sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos. Y a veces la propia situación depresiva supone una tregua, un descanso «obligado» después de situaciones muy desgastantes: pérdidas, el trajín de la vida, el cansancio acumulado. '+V
+  ],
+  together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. No ver salida es lo que más paraliza: todo se ve oscuro y parece que no hay esperanza de cambio. Por eso ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar, dar pasos pequeños hacia lo que te importa y elegir el enfoque que mejor te sirve.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
   intro:'Hablamos de depresión cuando la tristeza, el desánimo o la falta de interés se mantienen durante semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de uno mismo.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: recuperar poco a poco actividades con sentido, revisar los pensamientos que hunden y moverte hacia lo que importa sin esperar a tener ganas.',
   science:'Los manuales clínicos la describen por un conjunto de síntomas mantenidos en el tiempo: ánimo bajo, pérdida de interés, cambios en el sueño o el apetito, cansancio, culpa. Las guías recomiendan la psicoterapia, sola o junto con medicación según la intensidad. '+V,
+  refs:'Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión»; (2019), «Diagnóstico más allá de los síntomas». '+v('referencias completas'),
   beyond:'El ánimo no es una sustancia que se agota dentro de la cabeza: va ligado a la vida concreta —pérdidas, trabajo, soledad, rutinas que se han ido estrechando—. La explicación de «me falta serotonina» es una simplificación que la investigación no sostiene tal cual '+V+'. Mirar la vida concreta no quita importancia al malestar: le da por dónde empezar.',
   approaches:[
     ['Cognitivo-conductual y activación conductual','Recuperar poco a poco actividades con sentido y revisar los pensamientos que hunden.','amplia'],
@@ -81,15 +93,28 @@ window.MOTIVOS=[
   slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
   k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio',
   feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Me paso el día agotado'],
-  quotes:['Mi cabeza no deja de pensar','Me despierto por la noche','No puedo dormir'],
-  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
-  bases:[
-    'El sueño depende de dos relojes. <strong>Por lo que dice la biología</strong>, uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. '+V,
-    'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> nos muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V,
-    'El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. <strong>En psicología</strong>, la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección en las guías clínicas. '+V,
-    'Dormir mal también tiene que ver con cómo está organizado el día. Como señala <strong>la sociología</strong>, los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. '+V
+  /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
+     Cervantes, citado en Pérez Álvarez (2005) «Psicología del Quijote», pág. 4 del PDF;
+     Pérez Álvarez y Fernández Hermida (1984) «Cómo llegar a ser un mejor terapeuta» (ver citas-para-la-web.md) */
+  quotes:[
+    'Dormir no es lo mismo que descansar. Necesitamos llegar a ese sueño profundo',
+    'Del poco dormir y del mucho leer, se le secó el celebro de manera que vino a perder el juicio',
+    'El circuito de preocupación por no dormir —no dormir— más preocupación por no dormir […] que caracteriza al insomne'
   ],
-  together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que dicen el cuerpo y la psicología para encontrar lo que te funcione a ti.',
+  feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
+  basesIntro:[
+    'Dormir bien no es un lujo. El sueño es descanso, y del descanso dependen la atención, la memoria, el humor y, en general, cómo nos desenvolvemos en la vida. Por eso el insomnio importa tanto: muchas veces está en el centro de otros problemas psicológicos, como la ansiedad o la depresión, y los agrava.',
+    'Una de sus características es el <strong>círculo de preocupación por no dormir</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño, y no dormir aumenta la preocupación.',
+    'Como casi todo lo que nos pasa, el insomnio es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+  ],
+  bases:[
+    '<strong>Los estudios en biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. Además, no basta con dormir: para descansar hay que llegar al sueño profundo, y durante la fase REM se producen muchos procesos que nos ayudan a reestructurar y organizar la información cognitiva y emocional. '+V,
+    'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios en neurología</strong> muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V,
+    'El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. <strong>Los estudios en psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección. Parte de ella es la <strong>higiene del sueño</strong>: horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde, la cama solo para dormir y levantarse si el sueño no llega. Son estrategias sencillas que ayudan a recuperar el descanso, aunque por sí solas a veces se quedan cortas. '+V,
+    'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Muchos estudios en sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. '+V
+  ],
+  together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que sabemos del cuerpo y de la psicología para romper el círculo y encontrar lo que te funcione a ti: qué hábitos ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
+  refs:'Pérez Álvarez y Fernández Hermida (1984), «Cómo llegar a ser un mejor terapeuta»; Pérez Álvarez (2005), «Psicología del Quijote»; Núria Roure, entrevista en Moncloa.com (2025). '+v('referencias completas'),
   cta:'Trabajamos contigo para que la noche deje de ser una pelea.',
   intro:'El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.',
   how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.',
@@ -110,7 +135,7 @@ window.MOTIVOS=[
   quotes:['No puedo parar de comer','Como por ansiedad'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   bases:[
-    'Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. <strong>Por lo que dice la biología</strong>, muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V,
+    'Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. <strong>Los estudios en biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V,
     'Comer activa los sistemas de recompensa del cerebro y calma durante un rato; <strong>los estudios de neurología</strong> lo describen bien. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V,
     'Es frecuente un círculo: comer para calmarse, sentir culpa, castigarse o restringir, y volver a comer. <strong>En psicología</strong> vemos que la culpa no frena el círculo: lo alimenta. Entender qué función cumple la comida en tu vida ayuda a salir de él. '+V,
     'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. <strong>La sociología</strong> recuerda cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en adolescentes y mujeres jóvenes. '+V
