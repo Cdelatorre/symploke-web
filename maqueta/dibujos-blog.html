@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dibujos del blog · Symploké</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Serif+Display&amp;display=swap">
+<style>
+:root{--ink:#151515;--ink2:#555;--line:#e3e3e3;--bg:#fafaf8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 'DM Sans',system-ui,sans-serif}
+main{max-width:1320px;margin:0 auto;padding:40px 24px 64px}
+h1{font:400 40px/1.1 'DM Serif Display',Georgia,serif;margin:0 0 8px}
+.intro{color:var(--ink2);max-width:780px;margin:0}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,400px);gap:24px;margin-top:32px;justify-content:center}
+figure{margin:0;width:400px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;position:relative}
+figure svg{display:block;width:400px;height:250px}
+.num{position:absolute;top:10px;left:10px;min-width:30px;height:30px;padding:0 8px;border-radius:15px;background:var(--ink);color:#fff;font:700 14px/30px 'DM Sans',sans-serif;text-align:center}
+figcaption{padding:12px 16px 14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink2)}
+figcaption b{color:var(--ink);display:block;font-size:15px}
+@media (max-width:440px){.gal{grid-template-columns:1fr}figure,figure svg{width:100%;height:auto}}
+</style>
+</head>
+<body>
+<main>
+  <h1>Dibujos para el blog</h1>
+  <p class="intro">60 escenas en línea negra, blanco y negro, sin la mancha verde, al mismo tamaño que las ilustraciones de la web (400 × 250). Las personas parten de Open Peeps (Pablo Stanley, CC0), cambiadas con otros peinados, caras, barbas, gafas, ropa y expresiones propias; los objetos y escenarios están dibujados para Symploké.</p>
+  <div class="gal" id="gal"></div>
+</main>
+<script src="peeps-data.js"></script>
+<script src="dibujos-blog.js"></script>
+<script>
+var list=DIB.list, q=/[?&]desde=(\d+)&hasta=(\d+)/.exec(location.search), a=q?+q[1]:1, b=q?+q[2]:list.length;
+document.getElementById('gal').innerHTML=list.map(function(it,i){
+  if(i+1<a||i+1>b)return '';
+  var art; try{art=DIB[it[0]]();}catch(err){art='<div style="height:250px;padding:20px;color:#c00">Error: '+err.message+'</div>';}
+  return '<figure><span class="num">'+(i+1)+'</span>'+art+'<figcaption><b>'+it[1]+'</b>'+it[2]+'</figcaption></figure>';
+}).join('');
+</script>
+</body>
+</html>
