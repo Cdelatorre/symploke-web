@@ -18,23 +18,26 @@ figure svg{display:block;width:400px;height:250px}
 .num{position:absolute;top:10px;left:10px;min-width:30px;height:30px;padding:0 8px;border-radius:15px;background:var(--ink);color:#fff;font:700 14px/30px 'DM Sans',sans-serif;text-align:center}
 figcaption{padding:12px 16px 14px;border-top:1px solid var(--line);font-size:14px;color:var(--ink2)}
 figcaption b{color:var(--ink);display:block;font-size:15px}
+.tanda{grid-column:1/-1;font:400 28px/1.2 'DM Serif Display',Georgia,serif;margin:24px 0 0;padding-top:20px;border-top:1px solid var(--line)}
+.tanda:first-child{border-top:0;padding-top:0;margin-top:0}
 @media (max-width:440px){.gal{grid-template-columns:1fr}figure,figure svg{width:100%;height:auto}}
 </style>
 </head>
 <body>
 <main>
   <h1>Dibujos para el blog</h1>
-  <p class="intro">60 escenas en línea negra, blanco y negro, sin la mancha verde, al mismo tamaño que las ilustraciones de la web (400 × 250). Las personas parten de Open Peeps (Pablo Stanley, CC0), cambiadas con otros peinados, caras, barbas, gafas, ropa y expresiones propias; los objetos y escenarios están dibujados para Symploké.</p>
+  <p class="intro">120 escenas en dos tandas. <b>1–60:</b> línea negra, blanco y negro, sin la mancha verde, al mismo tamaño que las ilustraciones de la web (400 × 250). Las personas parten de Open Peeps (Pablo Stanley, CC0), cambiadas con otros peinados, caras, barbas, gafas, ropa y expresiones propias; los objetos y escenarios están dibujados para Symploké. <b>61–120:</b> personas dibujadas a mano en código, sin bibliotecas, con línea fina, pelo y prendas en negro, estampados y pliegues, como las ilustraciones de la web; las escenas salen de temas frecuentes en blogs de psicología (Psicología y Mente, Psicoactiva, Mentes Abiertas, La Mente es Maravillosa, Infocop).</p>
   <div class="gal" id="gal"></div>
 </main>
 <script src="peeps-data.js"></script>
 <script src="dibujos-blog.js"></script>
+<script src="dibujos-blog-2.js"></script>
 <script>
 var list=DIB.list, q=/[?&]desde=(\d+)&hasta=(\d+)/.exec(location.search), a=q?+q[1]:1, b=q?+q[2]:list.length;
 document.getElementById('gal').innerHTML=list.map(function(it,i){
   if(i+1<a||i+1>b)return '';
   var art; try{art=DIB[it[0]]();}catch(err){art='<div style="height:250px;padding:20px;color:#c00">Error: '+err.message+'</div>';}
-  return '<figure><span class="num">'+(i+1)+'</span>'+art+'<figcaption><b>'+it[1]+'</b>'+it[2]+'</figcaption></figure>';
+  return (i===60?'<h2 class="tanda" id="tanda2">Segunda tanda · 61–120 · acabado como la web</h2>':i===0&&a===1?'<h2 class="tanda">Primera tanda · 1–60</h2>':'')+'<figure><span class="num">'+(i+1)+'</span>'+art+'<figcaption><b>'+it[1]+'</b>'+it[2]+'</figcaption></figure>';
 }).join('');
 </script>
 </body>
