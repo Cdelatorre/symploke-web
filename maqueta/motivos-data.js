@@ -491,13 +491,17 @@ window.MOTIVOS=[
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   h1:'Terapia para niños y adolescentes',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'Psicólogo infantil y de adolescentes en Madrid · Symploké',
+  seoDesc:'¿Tu hijo no habla, no quiere ir al colegio o tiene rabietas que no ceden? Psicólogo infantil y para adolescentes, con la familia. En Madrid u online.',
+  pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
+  enfoqueDe:'de la infancia y la adolescencia',
   subs:['Rabietas y problemas de conducta','Comunicación con adolescentes',['Ansiedad y miedos infantiles','ansiedad'],'Tristeza o aislamiento','Acoso escolar (bullying)','Bajo rendimiento escolar',['TDAH en niños','tdah'],['Uso excesivo de pantallas','adicciones'],['Problemas con la comida','alimentacion'],['Problemas de sueño','insomnio'],'Separación de los padres',['Duelo en niños','duelo'],'Orientación a familias'],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
     ['¿Cuándo llevar a mi hijo al psicólogo?','Cuando notáis cambios que duran semanas: tristeza, aislamiento, miedos, rabietas que no ceden o problemas en el colegio, con la comida o con el sueño. Si dudáis, una primera cita con la familia ayuda a valorarlo.'],
     ['¿Cómo es la primera cita?','La primera cita es con la madre, el padre o los tutores, sin el menor. Nos contáis qué pasa y decidimos juntos cómo seguir.'],
-    ['¿Hace falta el consentimiento de los dos progenitores?','En general se pide por escrito el consentimiento de quienes tienen la patria potestad. Si hay separación o desacuerdo, lo vemos en la primera cita. '+V+''],
-    ['¿Trabajáis también con los padres?','Sí. Lo que le pasa a un menor casi nunca le pasa solo a él: trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
+    ['¿Hace falta el consentimiento de los dos progenitores?','En general se pide por escrito el consentimiento de quienes tienen la patria potestad. Si hay separación o desacuerdo, lo vemos en la primera cita.'],
+    ['¿Trabajáis también con los padres?','Sí. Trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
     ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.']
   ],
   k:'infancia adolescencia mi hijo adolescente no quiere estudiar ni hacer nada no me habla no me respeta no tiene amigos no quiere ir al colegio hija menores ninos adolescentes escolar familia conducta',
@@ -507,25 +511,25 @@ window.MOTIVOS=[
   quotes:[
     'El sufrimiento de los niños y de los adolescentes es real y merece ayuda',
     'Muchas veces los protegemos tanto que cualquier contratiempo los hunde',
-    'Mucha exigencia y poca tolerancia a la frustración'
+    'Acompañar no es resolverlo todo por ellos, sino estar cerca mientras aprenden a hacerlo'   /* 2026-11-08; antes: «Mucha exigencia y poca tolerancia a la frustración» */
   ],
   basesIntro:[
-    'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a demostrárselo.',
-    'No todo malestar es un trastorno. Muchas veces hay que hablar de la familia, del colegio, de los amigos o de las preguntas propias de la edad. El sufrimiento de los niños y de los adolescentes es real y merece ayuda; la mejor ayuda lo entiende dentro de su vida —su casa, su clase, sus amigos, las pantallas— y busca qué se puede cambiar de sus circunstancias.',
-    'Como casi todo lo que nos pasa, el malestar en la infancia y la adolescencia es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
+    'No todo malestar es un trastorno. Muchas veces hay que hablar de la familia, del colegio —el rendimiento, el acoso escolar—, de los amigos, de una separación de los padres o de las preguntas propias de la edad. El sufrimiento de los niños y de los adolescentes es real y merece atención; la mejor respuesta lo entiende dentro de su vida —su casa, su clase, su grupo, las pantallas— y busca qué se puede cambiar de sus circunstancias.',
+    'Cada niño y cada adolescente es distinto: en cada uno se cruzan el cuerpo, su historia, la familia, el colegio y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta. Conviene tenerlo en cuenta sin convertirlo en la explicación de todo. '+V,
-    '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de la experiencia: de lo que se practica y se aprende. Por eso un menor no es un adulto pequeño ni un diagnóstico. '+V,
-    '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas: tarde o temprano se encuentran con el mundo real, y conviene que lleguen preparados. Hoy les pedimos que sean brillantes en todo y, a la vez, los protegemos tanto que cualquier contratiempo los hunde: mucha exigencia y poca tolerancia a la frustración. Les ayudamos a encontrar un equilibrio entre esforzarse y aguantar los tropiezos. '+V,
-    '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. El mundo real sigue ahí cuando nuestros hijos salen de casa: les ayudamos a llegar a él y a relacionarse con él con recursos propios. '+V
+    '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta. Conviene tenerlo en cuenta sin convertirlo en la explicación de todo.',
+    '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de la experiencia: de lo que se practica y se aprende. Por eso un menor no es un adulto pequeño ni un diagnóstico.',
+    '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas: tarde o temprano se encuentran con el mundo real, y conviene que lleguen preparados. Hoy les pedimos que sean brillantes en todo y, a la vez, los protegemos tanto que cualquier contratiempo los hunde: mucha exigencia y poca tolerancia a la frustración. Les ayudamos a encontrar un equilibrio entre esforzarse y aguantar los tropiezos.',
+    '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. La vida sigue ahí fuera cuando nuestros hijos salen de casa: los acompañamos a llegar a ella y a relacionarse con ella con recursos propios.'
   ],
-  together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar con calma, sin precipitarse, y ayudar según lo que necesite. Trabajamos con él o con ella, y también con vosotros: proponemos a padres y profesores estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso lo pensamos juntos.',
+  together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar con calma, sin precipitarse, y ayudar según lo que necesite. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores), y también con vosotros: proponemos a las familias y a los profesores estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso trabajamos en equipo con la familia y con los centros educativos.',
   cta:'Podemos ayudaros, a vuestro hijo o hija y a vosotros, a entender qué está pasando.',
   intro:'Para trabajar lo que les pasa a niños y adolescentes hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.» */
-  science:'En la infancia, las intervenciones con más apoyo suelen incluir a la familia; en la adolescencia, la terapia cognitivo-conductual adaptada a la edad. '+V,
-  refs:'Pérez Álvarez (2025), «La salud mental de los adolescentes: un síntoma de una sociedad vulnerable» (The Conversation) y «La salud mental de los adolescentes: un síntoma de la sociedad» (Telos); Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
+  science:'En la infancia, las intervenciones con más apoyo suelen incluir a la familia; en la adolescencia, la terapia cognitivo-conductual adaptada a la edad.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario (no hay citas textuales); eran: Pérez Álvarez (2025), «La salud mental de los adolescentes» (The Conversation y Telos); Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» */
   beyond:'Un menor no es un adulto pequeño ni un diagnóstico: está creciendo dentro de una familia, una escuela y un grupo de amigos. Antes de ponerle una etiqueta, conviene mirar ese entramado.',
   approaches:[
     ['Entrenamiento a familias','Pautas concretas para casa y coordinación con el colegio.','buena'],
@@ -567,7 +571,7 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, no defectos de fábrica. Las relaciones que se repiten y nos hacen daño suelen ser formas aprendidas de protegernos. Y lo aprendido se puede revisar y cambiar. '+V,
     '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos una sensación de vacío. Si te sientes lleno de cosas y a la vez vacío, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida. '+V
   ],
-  together:'No hay un yo de verdad escondido dentro y distinto de lo que hacemos: somos también lo que hacemos y cómo tratamos a los demás. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Podemos ayudarte a hacerlo, y lo pensamos juntos.',
+  together:'No hay un yo de verdad escondido dentro y distinto de lo que hacemos: somos también lo que hacemos y cómo tratamos a los demás. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
   intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.» */
@@ -615,7 +619,7 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong>, entre ellos los del equipo de John Gottman, muestran que poder hablar de sexo es clave: menos del 10 % de las parejas que no pueden hablar de sexo con comodidad dice estar satisfecha con su vida sexual. En cambio, las parejas que hablan abiertamente de sus necesidades y deseos sexuales tienen vínculos emocionales más fuertes y vidas sexuales más satisfactorias. '+V,
     '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo. '+V
   ],
-  together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Te ayudamos a hablar de ello con calma, sin vergüenza y sin prisas, a solas o en pareja, y lo pensamos juntos.',
+  together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Es un espacio para hablar de ello con calma y con privacidad, tanto si vienes solo como si venís en pareja.',
   cta:'Podemos hablar de ello con calma, sin vergüenza y sin prisas.',
   intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
