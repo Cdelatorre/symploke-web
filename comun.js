@@ -77,6 +77,11 @@ if(!REDUCED&&'IntersectionObserver' in window){
     });
   },{rootMargin:'0px 0px -8% 0px',threshold:0.08});
   els.forEach(function(el){el.classList.add('rv');io.observe(el);});
+  /* raya de «Pensarlo juntos»: se dibuja de arriba abajo, una vez, en cuanto asoma el párrafo */
+  var rio=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('dibujada');rio.unobserve(en.target);}});
+  },{threshold:0});
+  [].slice.call(document.querySelectorAll('.beyond')).forEach(function(el){el.classList.add('raya');rio.observe(el);});
 }
 
 /* ---------- acento en los dibujos de las tarjetas ---------- */

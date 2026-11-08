@@ -66,7 +66,11 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .read section > h2{margin-bottom:48px}   /* aire entre el título de la sección y su primer párrafo */
 .mhero .lead{line-height:1.6}            /* entradilla de la cabecera menos apretada */
 .read .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
-.read .beyond{border-left:3px solid var(--brand);padding-left:20px}
+.read .beyond{position:relative;padding-left:20px}
+/* raya verde a la izquierda de «Pensarlo juntos»: se dibuja de arriba abajo al asomar el párrafo (comun.js añade .raya y luego .dibujada) */
+.read .beyond::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--brand);transform-origin:top}
+.read .beyond.raya::before{transform:scaleY(0);transition:transform 1.4s cubic-bezier(.65,0,.35,1)}
+.read .beyond.raya.dibujada::before{transform:scaleY(1)}
 /* enfoque multidimensional: texto corrido, cada ciencia nombrada de pasada en negrita dentro de la frase,
    y entre párrafos una frase destacada entre comillas para aligerar la lectura */
 .read p strong{font-weight:600;color:var(--ink)}
