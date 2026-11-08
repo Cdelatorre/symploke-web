@@ -174,37 +174,69 @@ window.MOTIVOS=[
 },
 {
   slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
+  h1:'Terapia para los problemas de alimentación',   /* encabezado a todo el ancho, en una línea */
+  revisada:true,   /* sin la marca «borrador» */
+  seoTitle:'Psicólogo para TCA y atracones en Madrid y online · Symploké',
+  seoDesc:'¿Atracones, culpa después de comer u obsesión por el peso? Terapia para los problemas de alimentación, con calma y sin juicios. En Madrid u online.',
+  pagina:'alimentacion.html',   /* página fija; motivo.html?m=alimentacion lleva a ella */
+  enfoqueDe:'de los problemas de alimentación',
+  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  subs:['Atracones','Bulimia','Anorexia',['Comer por ansiedad','ansiedad'],'Hambre emocional','Obsesión por el peso o la figura','Insatisfacción con el cuerpo','Dietas restrictivas','Culpa después de comer','Ejercicio compulsivo','Ortorexia: obsesión por comer sano','Vigorexia','Trastornos de la conducta alimentaria (TCA)',['Problemas con la comida en adolescentes','infancia']],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo conviene ir al psicólogo por problemas con la comida?','Cuando la comida, el peso o la figura ocupan buena parte de tus pensamientos, hay atracones, restricciones o vómitos, o la culpa después de comer te condiciona el día. Cuanto antes se pida ayuda, mejor.'],
+    ['¿Qué es un atracón?','Comer en poco tiempo una cantidad grande de comida con la sensación de no poder parar, y sentir después culpa o vergüenza. Si se repite, no basta con intentar aguantar: suele cumplir una función, como aliviar el malestar, y eso se puede trabajar.'],
+    ['¿Se puede superar un trastorno de la conducta alimentaria?','Es posible, aunque suele llevar tiempo. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para que la comida deje de ocupar el centro de tu vida y puedas relacionarte con ella sin miedo ni culpa.'],
+    ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con ellos cuando hace falta.'],
+    ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.']
+  ],
   k:'alimentacion comida comer como y despues me culpo me siento horrible conmigo como mucho y despues me castigo solo comiendo alivio la ansiedad no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen culpa',
   feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
-  quotes:['No puedo parar de comer','Como por ansiedad'],
+  quotes:[
+    'Cuanto más se prohíbe un alimento, más nos obsesiona. Las restricciones suelen alimentar justo lo que intentamos frenar',
+    'La comida puede aliviar a corto plazo, pero no resuelve lo que nos preocupa. Cuando la comida se convierte en un refugio, deja de ser solo comida',
+    'Comer no debería ser un examen diario. Lo que se hace para controlar la comida acaba controlándonos'
+  ],
+  /* frases propias (2026-11-08); antes: «No puedo parar de comer» y «Como por ansiedad» */
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
-    'Es un problema en el que aparecen el <strong>control</strong>, la <strong>culpa</strong> y la obsesión por controlar nuestro cuerpo, hasta convertirse en el foco alrededor del cual acaba girando nuestra vida.',
-    'Y ocurre algo paradójico: lo que hacemos para controlar la comida —dietas estrictas, saltarse comidas, compensar lo que se ha comido— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
-    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Es un problema en el que aparecen la <strong>culpa</strong> y una <strong>vigilancia constante</strong> del cuerpo, que poco a poco se vuelven el centro de nuestra vida. A veces son <strong>atracones</strong>; otras, <strong>restricción</strong> (<strong>anorexia</strong>) o compensaciones tras comer (<strong>bulimia</strong>); otras, <strong>ejercicio compulsivo</strong> o la obsesión por comer «sano» (<strong>ortorexia</strong>) o por el músculo (<strong>vigorexia</strong>).',
+    'Y ocurre algo paradójico: lo que hacemos para intentar tener una relación sana con la alimentación —dietas estrictas, saltarse comidas, contar cada caloría, prohibirse alimentos, pesarse a diario— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
+    'Cada caso es distinto: en cada persona se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por esto nuestro enfoque es <strong>pluralista</strong>.'   /* alimentación (2026-11-08) */
   ],
   bases:[
-    'Saltarse comidas o hacer dietas muy estrictas aumenta el hambre y hace que la comida ocupe más espacio en la cabeza. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado. '+V,
-    'Comer activa los sistemas de recompensa del cerebro y calma durante un rato; <strong>los estudios de neurología</strong> lo describen bien. Por eso la comida puede convertirse en una forma rápida de aliviar la ansiedad o la tristeza: funciona en el momento y deja peor después. '+V,
-    'Es frecuente un círculo: comer para calmarse, sentir culpa y <strong>compensar</strong> —hacer ejercicio de más, saltarse comidas, dejar de comer o vomitar— y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no frena el círculo: lo alimenta. A veces el vómito empieza como una forma de compensar y, con la repetición, se convierte en una <strong>compulsión</strong> que acaba dando placer; por eso no se frena solo con fuerza de voluntad. Entender qué función cumple la comida en tu vida ayuda a salir del círculo. '+V,
-    'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y control. <strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en adolescentes y mujeres jóvenes. '+V
+    'Pasar muchas horas sin comer o seguir reglas muy rígidas con la comida aumenta el hambre. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado.',
+    '<strong>Los estudios de neurología</strong> muestran que comer activa los sistemas de recompensa del cerebro y tranquiliza durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
+    'Es frecuente una espiral: comer para calmarse, sentir culpa y <strong>compensar</strong> —con ejercicio, dejando de comer o vomitando— y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no frena la espiral: la alimenta. A veces el vómito empieza como un recurso puntual y, con la repetición, se convierte en una <strong>compulsión</strong> que apaga la angustia por un momento; por eso no se frena solo con proponérselo. Entender qué función cumple la comida en tu vida ayuda a romperla.',
+    'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y autocontrol. <strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en <a href="motivo.html?m=infancia">adolescentes</a> y mujeres jóvenes, y cada vez más en hombres jóvenes, con la presión por tener un cuerpo musculado.'
   ],
-  together:'La comida rara vez es solo comida: se entreteje con el control, la imagen, las emociones, la familia o las redes. Preferimos no reducirlo a una sigla. Lo pensamos juntos, con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
-  cta:'Trabajamos contigo, con calma y sin juicios, para que la comida vuelva a ocupar su sitio.',
-  intro:'Hablamos de problemas de alimentación cuando la comida, el peso o la figura ocupan tanto espacio que condicionan el día a día: restricciones, atracones, compensaciones o una preocupación constante.',
-  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: regularizar la alimentación, entender qué función cumple la comida en tu vida y relacionarte de otra manera con tu cuerpo.',
+  together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. La sigla TCA ayuda a ponerle nombre y a buscar ayuda, pero no explica a nadie: preferimos no reducirlo a ella. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
+  cta:'Podemos ayudarte a salir del círculo de comer, culparte y compensar.',
+  intro:'Para trabajar los problemas de alimentación hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Hablamos de problemas de alimentación cuando la comida, el peso o la figura ocupan tanto espacio que condicionan el día a día: restricciones, atracones, compensaciones o una preocupación constante.» */
+  /* «how» anterior (2026-11-08): «Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: regularizar la alimentación, entender qué función cumple la comida en tu vida y relacionarte de otra manera con tu cuerpo.» */
   science:'Los manuales clínicos describen varios cuadros (anorexia, bulimia, trastorno por atracón, entre otros). Pueden tener consecuencias médicas, por eso el tratamiento suele requerir coordinación con medicina y nutrición. '+V,
-  beyond:'La comida rara vez es solo comida: se entreteje con el control, la imagen, la familia o las redes. Preferimos no reducirlo a una sigla y entender qué función cumple ese comportamiento en tu vida.',
+  beyond:'La comida rara vez es solo comida: se entreteje con la exigencia, la imagen, la familia o las redes. Preferimos no reducirlo a una sigla y entender qué función cumple ese comportamiento en tu vida.',
   approaches:[
     ['Cognitivo-conductual','Regularizar la alimentación y trabajar las ideas sobre peso y figura.','buena en bulimia y atracones'],
     ['Terapia basada en la familia','La familia como parte activa del tratamiento, sobre todo en adolescentes.','buena en adolescentes'],
     ['Contextuales y ACT','Relacionarse de otra manera con el cuerpo y los pensamientos sobre él.','en estudio']
   ],
-  coord:'Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta valoración médica. Nos coordinamos con medicina y nutrición cuando hace falta.',
+  coord:'Si hay pérdida de peso importante, vómitos, mareos o desmayos, es necesaria una valoración médica. Nos coordinamos con medicina y nutrición cuando hace falta.',
   alt:'Amigos compartiendo un desayuno en una mesa, vista desde arriba'
 },
 {
   slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
+  h1:'Terapia de pareja',   /* encabezado a todo el ancho, en una línea */
+  subs:['Discusiones constantes','Problemas de comunicación','Crisis de pareja','Celos','Infidelidad','Dependencia emocional','Apego','Narcisismo (pareja o progenitor)',['Falta de deseo en la pareja','sexual'],'La pareja tras tener hijos','Rupturas, separaciones y divorcios'],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo conviene ir a terapia de pareja?','Cuando las discusiones se repiten sin salida, cuesta hablar sin haceros daño o sentís que os habéis distanciado. No hace falta esperar a estar al borde de la ruptura: cuanto antes, más margen hay.'],
+    ['¿Puedo ir a terapia de pareja sin mi pareja?','Sí. A veces solo una de las dos personas quiere empezar, y trabajar tu parte de la relación ya puede cambiar cosas.'],
+    ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudar a decidir con más claridad y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
+    ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si la sufres, puedes llamar al <strong>016</strong>, gratuito y confidencial, y en una urgencia, al <strong>112</strong>.'],
+    ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.']
+  ],
   k:'pareja terapia de pareja mi pareja y yo no paramos de discutir siempre discutimos no nos entendemos nos queremos pero no funciona superar una ruptura apego narcisismo narcisista dependencia emocional relacion celos infidelidad separacion divorcio',
   feel:['Mi pareja y yo no paramos de discutir','Siempre discutimos, no nos entendemos','Nos queremos, pero no funciona','No consigo superar una ruptura'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -226,7 +258,8 @@ window.MOTIVOS=[
   ],
   together:'Por eso trabajamos la <strong>comunicación</strong>: aprender a detectar esas formas de discutir, a quejarse sin atacar y a reparar los conflictos cuando aparecen. Para ello necesitamos construir una base de <strong>aprecio y respeto mutuo</strong>, que es el mejor antídoto contra el desprecio. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla. Lo pensamos juntos, decidáis lo que decidáis.',
   cta:'Os ayudamos a pensar juntos qué os pasa, decidáis lo que decidáis.',
-  intro:'La terapia de pareja es un espacio para entender qué os está pasando y probar otras maneras de relacionaros, tanto si queréis seguir como si estáis pensando en separaros. También atendemos a una sola persona que quiere trabajar su relación.',
+  intro:'Para trabajar los problemas de pareja hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «La terapia de pareja es un espacio para entender qué os está pasando y probar otras maneras de relacionaros, tanto si queréis seguir como si estáis pensando en separaros. También atendemos a una sola persona que quiere trabajar su relación.» */
   science:'Hay enfoques de terapia de pareja con estudios controlados, como la terapia conductual integrativa o la centrada en las emociones. '+V,
   refs:'The Gottman Institute, «The Four Horsemen: criticism, contempt, defensiveness and stonewalling», «The Four Horsemen: the antidotes» y «The magic relationship ratio, according to science» (gottman.com). '+v('referencias completas'),
   beyond:'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla.',
@@ -235,11 +268,20 @@ window.MOTIVOS=[
     ['Centrada en las emociones','Entender los ciclos de reproche y distancia que se repiten.','buena'],
     ['Sistémica','Mirar la pareja dentro de su familia y su contexto.','variable']
   ],
-  subs:['Apego','Narcisismo (pareja o progenitor)','Dependencia emocional','Rupturas, separaciones y divorcios','Infidelidad'],
   alt:'Pareja riendo junta sentada junto a un coche'
 },
 {
   slug:'tdah', name:'TDAH y atención', sym:'No me puedo concentrar en nada',
+  h1:'Terapia para el TDAH y los problemas de atención',   /* encabezado a todo el ancho, en una línea */
+  subs:['TDAH en adultos',['TDAH en niños y adolescentes','infancia'],'Falta de concentración','Procrastinación','Impulsividad','Inquietud','Hiperactividad','Desorganización','Olvidos y despistes','Dificultades en los estudios',['Uso excesivo del móvil y las pantallas','adicciones']],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cómo saber si tengo TDAH?','Despistarse o aplazar tareas de vez en cuando es normal. Se habla de TDAH cuando las dificultades de atención, inquietud o impulsividad vienen de la infancia, se mantienen y afectan a los estudios, al trabajo o a las relaciones. Un cuestionario en internet no basta: hace falta una valoración profesional.'],
+    ['¿Existe el TDAH en adultos?','Sí. Muchas personas llegan a consulta de adultas, a veces después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
+    ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento de la familia. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
+    ['¿Hace falta medicación para el TDAH?','En terapia psicológica no se recetan fármacos. En algunos casos la medicación ayuda, y esa valoración corresponde a psiquiatría o neurología. Si la tomas o se está valorando, nos coordinamos con quien la lleve.'],
+    ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.']
+  ],
   k:'tdah atencion no me puedo concentrar no consigo concentrarme me cuesta concentrarme se me olvidan las cosas estudiar como saber si tengo tdah adulto hiperactividad despiste impulsividad infancia colegio ayudar a mi hijo',
   feel:['No me puedo concentrar en nada','Me cuesta concentrarme y se me olvidan las cosas','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -264,7 +306,8 @@ window.MOTIVOS=[
   together:'Muchos adultos también tienen TDAH, y resulta muy difícil diagnosticarlo. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. No se trata de cambiar quién eres, sino de trabajar para que esos ritmos encajen mejor con tu vida. Con los niños, trabajamos con ellos, con la familia y con el colegio; con los adultos, contigo y con lo que te pide tu día a día. Lo pensamos juntos.',
   refs:'Pérez Álvarez (2014), «Los intereses que hay detrás del diagnóstico del TDAH» (entrevista, Infocop); (2017), «The Four Causes of ADHD: Aristotle in the Classroom»; (2018), «El TDAH es un problema, pero no una enfermedad»; Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
   cta:'Podemos ayudarte a organizarte con lo que tienes, sin quedarte en la etiqueta.',
-  intro:'El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.',
+  intro:'Para trabajar el TDAH hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.» */
   science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño. '+V,
   beyond:'Cuidado con la explicación circular: «no atiende porque tiene TDAH, y tiene TDAH porque no atiende». La atención no es solo algo que está dentro de la cabeza: también es lo que piden la escuela o el trabajo. Ni solo naturaleza ni solo crianza. El diagnóstico puede aliviar —por fin un nombre— y a la vez convertirse en identidad; la idea es no quitar ese alivio sin ofrecer otro.',
   approaches:[
@@ -276,6 +319,16 @@ window.MOTIVOS=[
 },
 {
   slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
+  h1:'Terapia para las adicciones',   /* encabezado a todo el ancho, en una línea */
+  subs:['Alcohol','Juego y apuestas online','Adicción al móvil','Redes sociales','Videojuegos','Cannabis','Cocaína','Pornografía','Compras compulsivas',['Dependencia de pastillas para dormir','insomnio'],['Dependencia emocional','pareja'],'Recaídas','Familiares de personas con adicción'],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo es una adicción y no solo un hábito?','Cuando lo haces aunque te esté haciendo daño, cada vez necesitas más, te cuesta parar aunque quieras o va ocupando el lugar de otras cosas importantes. No hace falta tocar fondo para pedir ayuda.'],
+    ['¿Tratáis la adicción al móvil, a las redes o al juego?','Sí. Además del alcohol y otras sustancias, trabajamos las adicciones sin sustancia: juego y apuestas online, móvil, redes sociales, videojuegos o pornografía.'],
+    ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo y las recaídas forman parte del proceso. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
+    ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Nos coordinamos con medicina y con los servicios especializados.'],
+    ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.']
+  ],
   k:'adicciones alcohol beber juego apuestas casino tragaperras pantallas movil enganchado videojuegos redes no puedo dejar de beber no puedo dejar de jugar no puedo dejar el movil consumo drogas',
   feel:['No puedo dejar de beber','No puedo dejar de jugar','No puedo dejar el móvil','Me prometo que es la última vez'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -300,7 +353,8 @@ window.MOTIVOS=[
   ],
   together:'El autocontrol no nace de dentro: lo construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que merece la pena esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es el primer paso. El segundo, y el más importante, es llenar ese hueco con una vida que merezca la pena.',
   cta:'Podemos ayudarte a dar el paso, a tu ritmo y sin sermones.',
-  intro:'Hablamos de adicción cuando algo —alcohol, juego, pantallas u otras sustancias— se repite aunque te esté haciendo daño y cuesta dejarlo aunque quieras.',
+  intro:'Para trabajar una adicción hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Hablamos de adicción cuando algo —alcohol, juego, pantallas u otras sustancias— se repite aunque te esté haciendo daño y cuesta dejarlo aunque quieras.» */
   science:'Las guías combinan intervenciones psicológicas (entrevista motivacional, terapia cognitivo-conductual, manejo de contingencias) y, en las sustancias, tratamiento médico. '+V,
   refs:'Pérez Jara y Camprubí (2026), «¿Existe la libertad? Psicología y filosofía de nuestras decisiones» (charla, con coloquio de Marino Pérez Álvarez); Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno»; (2025), «La salud mental de los adolescentes: un síntoma de la sociedad». '+v('referencias completas'),
   beyond:'Explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene. Mirarlo así no quita responsabilidad: da más sitios por donde intervenir.',
@@ -314,6 +368,16 @@ window.MOTIVOS=[
 },
 {
   slug:'autoestima', name:'Autoestima', sym:'No soy suficiente',
+  h1:'Terapia para mejorar la autoestima',   /* encabezado a todo el ancho, en una línea */
+  subs:['Baja autoestima','Inseguridad','Perfeccionismo','Autoexigencia','Síndrome del impostor','Miedo al rechazo','Necesidad de aprobación','Compararse con los demás','Autocrítica','Aprender a decir que no',['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cómo saber si tengo baja autoestima?','Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir.'],
+    ['¿Se puede mejorar la autoestima?','Sí, aunque no a base de repetirse frases positivas. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.'],
+    ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo se vive como un fracaso personal. Trabajar la autoexigencia suele aliviar también la autoestima.'],
+    ['¿Influyen las redes sociales en la autoestima?','Influyen: compararse a diario con vidas editadas pesa, sobre todo en la adolescencia. No es la única causa, pero forma parte del contexto que tenemos en cuenta.'],
+    ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.']
+  ],
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
   feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo mismo'],
   basesIntro:'La palabra «autoestima» pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: algo que se hace, con otros y entre otros. Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación, y ninguna disciplina lo explica todo por sí sola.',
@@ -324,7 +388,8 @@ window.MOTIVOS=[
   ],
   together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa estima que te llega de los demás: elegir con quién estás, decir que no, pedir lo que necesitas, cuidar los vínculos que te sostienen. Eso se practica, y lo pensamos juntos.',
   cta:'Podemos ayudarte a tratarte de otra manera.',
-  intro:'Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.',
+  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.» */
   science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse. '+V,
   refs:'Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas. '+v('referencias completas'),
   beyond:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran (heteroestima). Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa.',
@@ -337,6 +402,16 @@ window.MOTIVOS=[
 },
 {
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
+  h1:'Terapia de duelo',   /* encabezado a todo el ancho, en una línea */
+  subs:['Muerte de un ser querido','Muerte de un padre o una madre','Duelo perinatal','Duelo por suicidio','Duelo complicado o prolongado','Duelo anticipado por una enfermedad grave','Duelo por una mascota',['Duelo por una ruptura','pareja'],'Pérdida del trabajo',['Duelo en niños','infancia'],['Depresión tras una pérdida','depresion']],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, el dolor no te deja hacer tu vida, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno.'],
+    ['¿Cuánto dura un duelo?','No hay un plazo fijo, y las fases no siempre van en orden. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que impide hacer la vida.'],
+    ['¿Es normal pensar todo el tiempo en la persona que ha muerto?','Sí, sobre todo al principio. Pensar en quien se ha ido, soñar con esa persona o sentir su presencia forma parte del duelo. Preocupa más cuando la vida se detiene por completo durante mucho tiempo.'],
+    ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. También duele perder a un animal, una relación, un trabajo o una etapa de la vida, y ese dolor merece un espacio.'],
+    ['¿Ayudáis a niños en duelo?','Sí, con la familia. Los niños viven el duelo a su manera, y a menudo ayuda acompañar a los adultos para que sepan cómo hablarles.']
+  ],
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
   feel:['No consigo superar la muerte de mi madre','Echo de menos a mi padre cada día','No consigo superar la muerte de mi perro','Siento que todo el mundo ha seguido menos yo'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -358,7 +433,8 @@ window.MOTIVOS=[
   ],
   together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Perder a alguien es enfrentarse a todos los «nunca más»: lo que ya no se podrá hacer, decir ni compartir. En terapia hay sitio para nombrarlos y para aprender a convivir con ellos, a tu ritmo y sin prisas. Lo pensamos juntos.',
   cta:'Podemos acompañarte a hacer sitio a la pérdida, sin prisas.',
-  intro:'El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.',
+  intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.» */
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
   refs:'Bueno (1996), «El sentido de la vida», en el Diccionario filosófico de García Sierra, entrada 502; Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión». '+v('referencias completas'),
   beyond:'Mucha gente busca cómo «superar» una muerte. No se trata de superar a nadie ni de pasar por unas fases en orden: se trata de ir encontrando un sitio para la pérdida en una vida que sigue.',
@@ -371,6 +447,16 @@ window.MOTIVOS=[
 },
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
+  h1:'Terapia para niños y adolescentes',   /* encabezado a todo el ancho, en una línea */
+  subs:['Rabietas y problemas de conducta','Comunicación con adolescentes',['Ansiedad y miedos infantiles','ansiedad'],'Tristeza o aislamiento','Acoso escolar (bullying)','Bajo rendimiento escolar',['TDAH en niños','tdah'],['Uso excesivo de pantallas','adicciones'],['Problemas con la comida','alimentacion'],['Problemas de sueño','insomnio'],'Separación de los padres',['Duelo en niños','duelo'],'Orientación a familias'],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo llevar a mi hijo al psicólogo?','Cuando notáis cambios que duran semanas: tristeza, aislamiento, miedos, rabietas que no ceden o problemas en el colegio, con la comida o con el sueño. Si dudáis, una primera cita con la familia ayuda a valorarlo.'],
+    ['¿Cómo es la primera cita?','La primera cita es con la madre, el padre o los tutores, sin el menor. Nos contáis qué pasa y decidimos juntos cómo seguir.'],
+    ['¿Hace falta el consentimiento de los dos progenitores?','En general se pide por escrito el consentimiento de quienes tienen la patria potestad. Si hay separación o desacuerdo, lo vemos en la primera cita. '+V+''],
+    ['¿Trabajáis también con los padres?','Sí. Lo que le pasa a un menor casi nunca le pasa solo a él: trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
+    ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.']
+  ],
   k:'infancia adolescencia mi hijo adolescente no quiere estudiar ni hacer nada no me habla no me respeta no tiene amigos no quiere ir al colegio hija menores ninos adolescentes escolar familia conducta',
   feel:['Mi hijo adolescente no quiere estudiar ni hacer nada','Mi hijo adolescente no me habla','Mi hijo no tiene amigos','Mi hijo no quiere ir al colegio'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -393,7 +479,8 @@ window.MOTIVOS=[
   ],
   together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar con calma, sin precipitarse, y ayudar según lo que necesite. Trabajamos con él o con ella, y también con vosotros: proponemos a padres y profesores estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso lo pensamos juntos.',
   cta:'Podemos ayudaros, a vuestro hijo o hija y a vosotros, a entender qué está pasando.',
-  intro:'Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.',
+  intro:'Para trabajar lo que les pasa a niños y adolescentes hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.» */
   science:'En la infancia, las intervenciones con más apoyo suelen incluir a la familia; en la adolescencia, la terapia cognitivo-conductual adaptada a la edad. '+V,
   refs:'Pérez Álvarez (2025), «La salud mental de los adolescentes: un síntoma de una sociedad vulnerable» (The Conversation) y «La salud mental de los adolescentes: un síntoma de la sociedad» (Telos); Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
   beyond:'Un menor no es un adulto pequeño ni un diagnóstico: está creciendo dentro de una familia, una escuela y un grupo de amigos. Antes de ponerle una etiqueta, conviene mirar ese entramado.',
@@ -407,6 +494,16 @@ window.MOTIVOS=[
 },
 {
   slug:'personalidad', name:'Trastornos de la personalidad', sym:'No me entiendo ni yo', delicate:true,
+  h1:'Terapia para los trastornos de la personalidad',   /* encabezado a todo el ancho, en una línea */
+  subs:['Trastorno límite de la personalidad (TLP)','Inestabilidad emocional','Miedo al abandono','Relaciones intensas e inestables','Impulsividad','Ira y explosiones emocionales',['Sensación de vacío','depresion'],'Rasgos obsesivos o perfeccionistas','Personalidad evitativa','Personalidad dependiente','Rasgos narcisistas'],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Qué es un trastorno de la personalidad?','Es el nombre que se da a formas de sentir, pensar y relacionarse muy estables que hacen sufrir a la persona o a quienes la rodean, y que se repiten en distintos ámbitos. Desde 2022, la clasificación de la OMS (CIE-11) los describe por grados de gravedad más que por tipos cerrados.'],
+    ['¿Qué es el trastorno límite de la personalidad (TLP)?','Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan.'],
+    ['¿La personalidad se puede cambiar?','Los rasgos de fondo cambian despacio, pero la manera de manejar las emociones y de relacionarse sí puede cambiar mucho con terapia. No prometemos plazos: suele ser un proceso largo.'],
+    ['¿Qué hago si hay autolesiones o ideas de suicidio?','Pide ayuda: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia. En terapia nos coordinamos con psiquiatría cuando hace falta.'],
+    ['¿Puede participar mi familia?','Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.']
+  ],
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
   feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Me siento vacío emocionalmente','Me cuesta relacionarme con la gente'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -429,7 +526,8 @@ window.MOTIVOS=[
   ],
   together:'No hay un yo de verdad escondido dentro y distinto de lo que hacemos: somos también lo que hacemos y cómo tratamos a los demás. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Podemos ayudarte a hacerlo, y lo pensamos juntos.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
-  intro:'Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.',
+  intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.» */
   science:'Los manuales describen varios tipos, pero la clasificación por categorías está en revisión y las propuestas recientes van hacia dimensiones. '+V,
   refs:'García Montes y Pérez Álvarez (2003), «Reivindicación de la persona en la esquizofrenia»; Pérez Álvarez (2001), «Psicoterapia de la postmodernidad»; (2003), «The Schizoid Personality of Our Time»; (2015), «Reflexividad, escritura y génesis del sujeto moderno». '+v('referencias completas'),
   beyond:'La personalidad no es una esencia fija: es un patrón aprendido en una historia concreta, y los patrones pueden cambiar. No usamos siglas como etiqueta de nadie.',
@@ -443,6 +541,16 @@ window.MOTIVOS=[
 },
 {
   slug:'sexual', name:'Problemas sexuales', sym:'No tengo deseo sexual',
+  h1:'Terapia para los problemas sexuales',   /* encabezado a todo el ancho, en una línea */
+  subs:['Falta de deseo sexual','Disfunción eréctil','Eyaculación precoz','Anorgasmia','Dolor en las relaciones sexuales','Vaginismo',['Ansiedad ante el sexo','ansiedad'],['Diferencias de deseo en la pareja','pareja'],['Adicción al sexo o a la pornografía','adicciones'],'Sexualidad tras el parto','Sexualidad en la menopausia'],
+  /* preguntas frecuentes (2026-11-08) */
+  faq:[
+    ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.'],
+    ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.'],
+    ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
+    ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema os afecta a los dos.'],
+    ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.']
+  ],
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
   feel:['No tengo deseo sexual','No tengo deseo sexual por mi pareja','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
@@ -466,7 +574,8 @@ window.MOTIVOS=[
   ],
   together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Te ayudamos a hablar de ello con calma, sin vergüenza y sin prisas, a solas o en pareja, y lo pensamos juntos.',
   cta:'Podemos hablar de ello con calma, sin vergüenza y sin prisas.',
-  intro:'Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
+  intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
   science:'Muchas dificultades sexuales tienen a la vez componentes físicos y psicológicos; por eso a veces conviene descartar antes una causa médica. '+V,
   refs:'The Gottman Institute, «Relationship intimacy» y «Weekend homework assignment: have great sex» (gottman.com). '+v('estudio original del dato del 9 %'),
   beyond:'La sexualidad no es una función mecánica que falla: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas.',
