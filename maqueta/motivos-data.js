@@ -604,32 +604,32 @@ window.MOTIVOS=[
     ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. No hace falta esperar a que sea grave.'],
     ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.'],
     ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
-    ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema os afecta a los dos.'],
+    ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema es de los dos.'],
     ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.']
   ],
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
-  feel:['No tengo deseo sexual','No tengo deseo sexual por mi pareja','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
+  feel:['No tengo deseo sexual','Me agobia no estar a la altura','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
-  /* ideas y datos del Gottman Institute (gottman.com, «Relationship intimacy» y «Weekend homework assignment: have great sex»),
-     en traducción nuestra; el 9 % lo atribuye el instituto a John Gottman sin citar el estudio */
+  /* frases verdes (2026-11-08): la de la entrada parte de ideas del Gottman Institute (traducción nuestra);
+     el dato del 10 % se retiró por no tener estudio detrás */
   quotes:[
     'Sentir seguridad, compartir nuevos proyectos y tener una comunicación abierta también despiertan el deseo',   /* tras biología; se apoya en los estudios sobre apego, autoexpansión y comunicación sexual */
     '',   /* tras neurología: sin frase */
     'No hay un único modelo: cada persona y cada pareja encuentra su manera de vivir sus relaciones sexoafectivas'   /* tras psicología, antes de sociología */
   ],
   basesIntro:[
-    'La sexualidad no es una función mecánica que falla, aunque a veces se viva así, como en la eyaculación precoz o el vaginismo: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
+    'La sexualidad no es una función mecánica que falla, aunque a veces se viva así, como en la eyaculación precoz o el vaginismo: se entreteje con la pareja, el estrés, la historia de cada persona y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
     'La intimidad real empieza con <strong>conversaciones reales</strong> sobre sexo: poder decir qué nos pasa, qué necesitamos y qué deseamos.',
     {voz:'Las parejas que hablan abiertamente de sus necesidades y deseos tienen vínculos más fuertes y una vida sexual más satisfactoria'},   /* frase verde dentro de la entrada (antes iba tras psicología) */
     'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, la relación y el contexto. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas —tras el parto o en la menopausia—, el cansancio, algunas enfermedades o algunos medicamentos influyen. Por eso a veces conviene descartar antes una causa médica.',
+    '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas —tras el parto o en la menopausia—, el cansancio, ciertas enfermedades o algunos medicamentos influyen. A veces conviene descartar antes una causa médica.',
     '<strong>Los estudios de neurología</strong> muestran que el estrés y la ansiedad frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. De ahí que la presión por «rendir» suela empeorar las cosas.',
     '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
     '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
   ],
-  together:'Hablar de sexo, y las nuevas formas de encontrarse en la intimidad que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si venís en pareja.',
+  together:'Hablar de lo que nos pasa en la intimidad, y las nuevas formas de encontrarnos que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si venís en pareja.',
   cta:'Un espacio para hablar de sexualidad sin juicios.',
   intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
