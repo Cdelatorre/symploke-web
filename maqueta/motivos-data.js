@@ -337,12 +337,16 @@ window.MOTIVOS=[
 {
   slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
   h1:'Terapia para las adicciones',   /* encabezado a todo el ancho, en una línea */
+  revisada:true,   /* sin la marca «borrador» */
+  seoDesc:'¿Bebes más de lo que quieres o no puedes dejar de apostar o de mirar el móvil? Terapia para las adicciones, sin sermones y a tu ritmo. En Madrid u online.',
+  pagina:'adicciones.html',   /* página fija; motivo.html?m=adicciones lleva a ella */
+  enfoqueDe:'de las adicciones',
   subs:['Alcohol','Juego y apuestas online','Adicción al móvil','Redes sociales','Videojuegos','Cannabis','Cocaína','Pornografía','Compras compulsivas',['Dependencia de pastillas para dormir','insomnio'],['Dependencia emocional','pareja'],'Recaídas','Familiares de personas con adicción'],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
     ['¿Cuándo es una adicción y no solo un hábito?','Cuando lo haces aunque te esté haciendo daño, cada vez necesitas más, te cuesta parar aunque quieras o va ocupando el lugar de otras cosas importantes. No hace falta tocar fondo para pedir ayuda.'],
     ['¿Tratáis la adicción al móvil, a las redes o al juego?','Sí. Además del alcohol y otras sustancias, trabajamos las adicciones sin sustancia: juego y apuestas online, móvil, redes sociales, videojuegos o pornografía.'],
-    ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo y las recaídas forman parte del proceso. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
+    ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo. Si hay caídas —lo que mucha gente llama recaídas—, también se trabajan. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
     ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Nos coordinamos con medicina y con los servicios especializados.'],
     ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.']
   ],
@@ -353,34 +357,35 @@ window.MOTIVOS=[
      «controlar las condiciones que nos controlan»: Marino Pérez Álvarez resumiendo a Skinner en el coloquio de esa charla (~1:13:00);
      el móvil como «última voluntad»: Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno», pág. 27 del PDF */
   quotes:[
-    'Una adicción te quita libertad. El objetivo de la terapia es que vuelvas a tener opciones',
-    'No se trata solo de dejar la adicción, sino de llenar ese hueco con otros proyectos',
-    'Las palabras, los apoyos y los proyectos son los que dan fuerza. Nosotros te ayudamos a trabajarlos'
+    'Nadie se engancha a algo que no le aporta nada. Entender qué le aporta es el comienzo para poder dejarlo',
+    'Detrás de cada consumo hay algo que se busca: calma, compañía, olvido o un respiro. Encontrar otras maneras de conseguirlo es parte del camino',
+    'Una caída no es una recaída. Las caídas no borran el camino recorrido: forman parte del proceso, y también se aprende de ellas. Pedir ayuda no es rendirse, es la forma más realista de recuperar el control'
   ],
+  /* frases nuevas (2026-11-08); antes: «Una adicción te quita libertad. El objetivo de la terapia es que vuelvas a tener opciones»; «No se trata solo de dejar la adicción, sino de llenar ese hueco con otros proyectos»; «Las palabras, los apoyos y los proyectos son los que dan fuerza. Nosotros te ayudamos a trabajarlos» */
   basesIntro:[
     'Una adicción te quita <strong>libertad</strong>: cada vez eliges menos. Por eso dejarla no es solo cuestión de fuerza de voluntad, y el objetivo de la terapia es que vuelvas a tener opciones.',
-    'Para poder hacer lo que quieres, antes tienes que soltar lo que te ata. Liberarte de una adicción es lo que te deja libre para todo lo demás: tu familia, tu trabajo, tus proyectos.',
-    'Como casi todo lo que nos pasa, una adicción es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Para poder hacer lo que quieres, antes tienes que soltar lo que te ata. Salir de una adicción abre la puerta a todo lo demás: tu familia, tu trabajo, tus amigos, tus proyectos personales.',
+    'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol, crean dependencia física: el cuerpo se acostumbra y, al dejarlas, protesta. Por eso a veces hace falta acompañamiento médico. '+V,
-    '<strong>Los estudios de neurología</strong> muestran que el consumo, el juego o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene. '+V,
-    'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <strong>ansiedad</strong>: muchas veces caemos en ellas para cortar un momento de ansiedad, y funciona a corto plazo, pero alimenta el círculo. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y te enseñamos a hacerlo. '+V,
-    '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, pero no son la única causa: hay que mirar también la vida que se lleva. Consultar el móvil se ha convertido en «la última voluntad antes de emprender el vuelo y lo primero que se hace una vez a salvo». Si el móvil se ha convertido en lo primero y lo último de tu día, no estás solo. Te ayudamos a que vuelva a ser una herramienta y no el centro de tu vida. '+V
+    '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol o ciertas <a href="insomnio.html">pastillas para dormir</a>, crean dependencia física: el cuerpo se acostumbra y, cuando faltan, protesta. Es lo que se conoce como <strong>síndrome de abstinencia</strong>, así que a veces hace falta acompañamiento médico. Otras, como el cannabis o la cocaína, enganchan sobre todo por lo que alivian o prometen.',
+    '<strong>Los estudios de neurología</strong> muestran que el consumo, el juego, las compras compulsivas o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene.',
+    'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <a href="ansiedad.html"><strong>ansiedad</strong></a>: muchas veces caemos en ellas buscando justo eso, y funciona a corto plazo, pero a la larga lo empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y lo trabajamos contigo.',
+    '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, pero no son la única causa: hay que mirar también la vida que se lleva. Consultar el móvil se ha vuelto una respuesta casi automática. Podríamos decir que no lo decidimos del todo y que no somos del todo libres en la relación que tenemos con estas tecnologías. Si el móvil se ha convertido en lo primero y lo último de tu día, le pasa a mucha gente, y podemos acompañarte para que vuelva a ser una herramienta y no el centro de tu vida.'
   ],
-  together:'El autocontrol no nace de dentro: lo construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que merece la pena esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es el primer paso. El segundo, y el más importante, es llenar ese hueco con una vida que merezca la pena.',
-  cta:'Podemos ayudarte a dar el paso, a tu ritmo y sin sermones.',
+  together:'La capacidad de elegir no nace de dentro: la construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
+  cta:'Podemos ayudarte a dar el primer paso y acompañarte en cada parte del proceso.',
   intro:'Para trabajar una adicción hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de adicción cuando algo —alcohol, juego, pantallas u otras sustancias— se repite aunque te esté haciendo daño y cuesta dejarlo aunque quieras.» */
-  science:'Las guías combinan intervenciones psicológicas (entrevista motivacional, terapia cognitivo-conductual, manejo de contingencias) y, en las sustancias, tratamiento médico. '+V,
-  refs:'Pérez Jara y Camprubí (2026), «¿Existe la libertad? Psicología y filosofía de nuestras decisiones» (charla, con coloquio de Marino Pérez Álvarez); Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno»; (2025), «La salud mental de los adolescentes: un síntoma de la sociedad». '+v('referencias completas'),
+  science:'Las guías combinan intervenciones psicológicas (entrevista motivacional, terapia cognitivo-conductual, manejo de contingencias) y, en las sustancias, tratamiento médico.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Jara y Camprubí (2026), «¿Existe la libertad?» (charla); Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno»; (2025), «La salud mental de los adolescentes: un síntoma de la sociedad» */
   beyond:'Explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene. Mirarlo así no quita responsabilidad: da más sitios por donde intervenir.',
   approaches:[
     ['Entrevista motivacional','Trabajar la ambivalencia entre seguir y dejarlo.','buena'],
     ['Cognitivo-conductual y prevención de recaídas','Detectar situaciones de riesgo y ensayar alternativas.','buena'],
     ['Contextuales y ACT','Convivir con el deseo de consumir sin obedecerlo.','creciente']
   ],
-  coord:'Con alcohol u otras sustancias puede hacer falta un tratamiento médico: no conviene dejarlo de golpe sin valoración. Nos coordinamos con medicina y con los servicios especializados cuando hace falta.',
+  coord:'Con alcohol u otras sustancias puede hacer falta un tratamiento médico. Nos coordinamos con medicina y con los servicios especializados.',
   alt:'Corredor sonriente con su medalla al terminar una carrera'
 },
 {
