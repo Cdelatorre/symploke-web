@@ -50,6 +50,8 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 .crumbs a:hover{color:var(--brandink)}
 .mhero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
 .mhero h1{font-size:clamp(44px,5vw,72px);line-height:.98;letter-spacing:-.5px;margin:0 0 16px}
+h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;margin:0 0 clamp(18px,2.5vw,30px)}
+@media (min-width:861px){h1.wide{white-space:nowrap}}
 .mhero .help{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(22px,2vw,28px);line-height:1.2;color:var(--brandink);margin:20px 0 0}
 .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
 .art svg{display:block;width:100%;height:auto}
@@ -70,6 +72,8 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 .read section+section{margin-top:56px}
 .layer,.read p.layer{font:600 12px/1 'DM Sans',sans-serif;letter-spacing:1px;text-transform:uppercase;color:var(--brandink);margin:0 0 12px}
 .read p{font-size:18px;line-height:1.6;color:var(--ink2);margin:0 0 16px}
+.read section > h2{margin-bottom:48px}   /* aire entre el título de la sección y su primer párrafo */
+.mhero .lead{line-height:1.6}            /* entradilla de la cabecera menos apretada */
 .read .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
 .read .beyond{border-left:3px solid var(--brand);padding-left:20px}
 /* enfoque multidimensional: texto corrido, cada ciencia nombrada de pasada en negrita dentro de la frase,
@@ -77,6 +81,8 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 .read p strong{font-weight:600;color:var(--ink)}
 .read .voz{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(20px,1.9vw,24px);line-height:1.25;color:var(--brandink);margin:28px 0 28px clamp(0px,4vw,48px)}
 .read .voz.grande{font-size:clamp(23px,2.3vw,29px)}
+.read .faq h3{font-size:clamp(21px,1.8vw,24px);line-height:1.2;margin:26px 0 8px}
+.read .faq h2+h3{margin-top:18px}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -87,7 +93,8 @@ h2{font-size:clamp(28px,3vw,42px);line-height:1.05;margin:0 0 12px}
 .subs{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0;padding:0;list-style:none}
 .subs li{font-size:15px;padding:9px 16px;border:1px solid var(--line);border-radius:999px;color:var(--ink2)}
 /* tipos dentro del motivo, arriba del todo para que quien entra se reconozca enseguida */
-.subs-top{margin-top:30px}
+.subs-top{margin-top:56px}
+.subs-top p.layer{margin-bottom:44px}
 .subs-top .subs{margin-top:0}
 .subs-top .subs li{background:var(--soft);color:var(--brandink);font-weight:500}
 
@@ -138,12 +145,16 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(q?q[1]:'ansiedad')||MOTIVOS[0];
 var D=' <span class="draft">borrador</span>', CITA='contacto.html', ARR=' <span class="arr" aria-hidden="true">→</span>';
 var WA='<a class="btn ghost" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Consultar por WhatsApp</a>';
-document.title=m.name+' · Psicólogo en Madrid centro y online · Symploké';
+document.title=m.seoTitle||(m.name+' · Psicólogo en Madrid centro y online · Symploké');   // seoTitle y seoDesc: lo que sale en la pestaña y en Google
+if(m.seoDesc){var md=document.createElement('meta');md.name='description';md.content=m.seoDesc;document.head.appendChild(md);}
 var h='';
 
-h+='<section class="mhero"><div>';
-h+='<nav class="crumbs" aria-label="Migas de pan"><a href="test1.html">Inicio</a><span aria-hidden="true">›</span><a href="terapia.html">Terapias</a><span aria-hidden="true">›</span><span>'+m.name+'</span></nav>';
-h+='<h1>'+m.name+'</h1>';
+var CRUMBS='<nav class="crumbs" aria-label="Migas de pan"><a href="test1.html">Inicio</a><span aria-hidden="true">›</span><a href="terapia.html">Terapias</a><span aria-hidden="true">›</span><span>'+m.name+'</span></nav>';
+if(m.h1){   // encabezado largo: en una línea, a todo el ancho y por encima del texto y el dibujo
+  h+=CRUMBS+'<h1 class="wide">'+m.h1+'</h1><section class="mhero"><div>';
+}else{
+  h+='<section class="mhero"><div>'+CRUMBS+'<h1>'+m.name+'</h1>';
+}
 h+='<p class="lead">'+m.intro+D+'</p>';
 if(m.how)h+='<p class="lead how">'+m.how+'</p>';
 h+='<p class="help">'+m.cta+'</p>';
@@ -161,7 +172,7 @@ h+='</div></section>';
 
 h+='<div class="read">';
 if(m.bases){
-  h+='<section><p class="layer">Qué dice la ciencia</p><h2>Un enfoque multidimensional</h2>';
+  h+='<section><h2>Un enfoque multidimensional</h2>';
   [].concat(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.').forEach(function(p){h+='<p>'+p+'</p>';});   // basesIntro: un párrafo o varios
   var voz=m.quotes||[];
   m.bases.forEach(function(b,i){
@@ -172,10 +183,15 @@ if(m.bases){
     }
   });
   h+=(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';
-  h+='<section><p class="layer">Más allá de la etiqueta</p><h2>Pensarlo juntos</h2><p class="beyond">'+m.together+'</p></section>';
+  h+='<section><h2>Pensarlo juntos</h2><p class="beyond">'+m.together+'</p></section>';
 }else{
   h+='<section><p class="layer">Qué dice la ciencia</p><h2>Qué sabemos</h2><p>'+m.science+'</p>'+(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>No eres un diagnóstico</h2><p class="beyond">'+m.beyond+'</p></section>';
+}
+if(m.faq){   // preguntas frecuentes: [pregunta, respuesta]
+  h+='<section class="faq"><h2>Preguntas frecuentes</h2>';
+  m.faq.forEach(function(f){h+='<h3>'+f[0]+'</h3><p>'+f[1]+'</p>';});
+  h+='</section>';
 }
 h+='</div>';
 
