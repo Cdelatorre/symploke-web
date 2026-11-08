@@ -594,10 +594,14 @@ window.MOTIVOS=[
 {
   slug:'sexual', name:'Problemas sexuales', sym:'No tengo deseo sexual',
   h1:'Terapia para los problemas sexuales',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'Terapia sexual en Madrid y online · Symploké',
+  seoDesc:'Psicólogo para problemas sexuales: falta de deseo, disfunción eréctil, eyaculación precoz, anorgasmia o dolor. Solo o en pareja. En Madrid u online.',
+  pagina:'sexual.html',   /* página fija; motivo.html?m=sexual lleva a ella */
+  enfoqueDe:'de la sexualidad',
   subs:['Falta de deseo sexual','Disfunción eréctil','Eyaculación precoz','Anorgasmia','Dolor en las relaciones sexuales','Vaginismo',['Ansiedad ante el sexo','ansiedad'],['Diferencias de deseo en la pareja','pareja'],['Adicción al sexo o a la pornografía','adicciones'],'Sexualidad tras el parto','Sexualidad en la menopausia'],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
-    ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.'],
+    ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. No hace falta esperar a que sea grave.'],
     ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.'],
     ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
     ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema os afecta a los dos.'],
@@ -609,27 +613,28 @@ window.MOTIVOS=[
   /* ideas y datos del Gottman Institute (gottman.com, «Relationship intimacy» y «Weekend homework assignment: have great sex»),
      en traducción nuestra; el 9 % lo atribuye el instituto a John Gottman sin citar el estudio */
   quotes:[
-    'La intimidad real empieza con conversaciones reales sobre sexo',
-    'Menos del 10 % de las parejas que no pueden hablar de sexo con comodidad está satisfecha con su vida sexual',
-    'Las parejas que hablan abiertamente de sus necesidades y deseos tienen vínculos más fuertes y una vida sexual más satisfactoria'
+    'Sentir seguridad, compartir nuevos proyectos y tener una comunicación abierta también despiertan el deseo',   /* tras biología; se apoya en los estudios sobre apego, autoexpansión y comunicación sexual */
+    '',   /* tras neurología: sin frase */
+    'No hay un único modelo: cada persona y cada pareja encuentra su manera de vivir sus relaciones sexoafectivas'   /* tras psicología, antes de sociología */
   ],
   basesIntro:[
-    'La sexualidad no es una función mecánica que falla: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
+    'La sexualidad no es una función mecánica que falla, aunque a veces se viva así, como en la eyaculación precoz o el vaginismo: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
     'La intimidad real empieza con <strong>conversaciones reales</strong> sobre sexo: poder decir qué nos pasa, qué necesitamos y qué deseamos.',
-    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    {voz:'Las parejas que hablan abiertamente de sus necesidades y deseos tienen vínculos más fuertes y una vida sexual más satisfactoria'},   /* frase verde dentro de la entrada (antes iba tras psicología) */
+    'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, la relación y el contexto. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas, el cansancio, algunas enfermedades o algunos medicamentos influyen. Por eso a veces conviene descartar antes una causa médica. '+V,
-    '<strong>Los estudios de neurología</strong> muestran que el estrés y la ansiedad frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. Por eso la presión por «rendir» suele empeorar las cosas. '+V,
-    '<strong>Los estudios de psicología</strong>, entre ellos los del equipo de John Gottman, muestran que poder hablar de sexo es clave: menos del 10 % de las parejas que no pueden hablar de sexo con comodidad dice estar satisfecha con su vida sexual. En cambio, las parejas que hablan abiertamente de sus necesidades y deseos sexuales tienen vínculos emocionales más fuertes y vidas sexuales más satisfactorias. '+V,
-    '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo. '+V
+    '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas —tras el parto o en la menopausia—, el cansancio, algunas enfermedades o algunos medicamentos influyen. Por eso a veces conviene descartar antes una causa médica.',
+    '<strong>Los estudios de neurología</strong> muestran que el estrés y la ansiedad frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. De ahí que la presión por «rendir» suela empeorar las cosas.',
+    '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
+    '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en la pornografía, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
   ],
-  together:'Esas conversaciones, y las nuevas formas de encontrarse en la intimidad que surgen de ellas, ayudan a construir una base de amistad y de conexión emocional. Es un espacio para hablar de ello con calma y con privacidad, tanto si vienes solo como si venís en pareja.',
-  cta:'Podemos hablar de ello con calma, sin vergüenza y sin prisas.',
+  together:'Hablar de sexo, y las nuevas formas de encontrarse en la intimidad que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si venís en pareja.',
+  cta:'Un espacio para hablar de sexualidad sin juicios.',
   intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
-  science:'Muchas dificultades sexuales tienen a la vez componentes físicos y psicológicos; por eso a veces conviene descartar antes una causa médica. '+V,
-  refs:'The Gottman Institute, «Relationship intimacy» y «Weekend homework assignment: have great sex» (gottman.com). '+v('estudio original del dato del 9 %'),
+  science:'Muchas dificultades sexuales tienen a la vez componentes físicos y psicológicos; por eso a veces conviene descartar antes una causa médica.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: The Gottman Institute, «Relationship intimacy» y «Weekend homework assignment: have great sex» (gottman.com) */
   beyond:'La sexualidad no es una función mecánica que falla: se entreteje con la pareja, el estrés, la historia de cada uno y las expectativas.',
   approaches:[
     ['Terapia sexual cognitivo-conductual','Ejercicios graduales y revisión de la ansiedad de ejecución.','moderada'],
