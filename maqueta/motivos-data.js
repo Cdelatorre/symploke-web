@@ -437,40 +437,49 @@ window.MOTIVOS=[
 {
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
   h1:'Terapia de duelo',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'Terapia de duelo en Madrid y online · Symploké',
+  seoDesc:'Psicólogo para el duelo: muerte de un ser querido, de una mascota, duelo perinatal o por una ruptura. Te acompañamos en el proceso. En Madrid u online.',
+  pagina:'duelo.html',   /* página fija; motivo.html?m=duelo lleva a ella */
+  enfoqueDe:'del duelo',
   subs:['Muerte de un ser querido','Muerte de un padre o una madre','Duelo perinatal','Duelo por suicidio','Duelo complicado o prolongado','Duelo anticipado por una enfermedad grave','Duelo por una mascota',['Duelo por una ruptura','pareja'],'Pérdida del trabajo',['Duelo en niños','infancia'],['Depresión tras una pérdida','depresion']],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
-    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, el dolor no te deja hacer tu vida, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno.'],
-    ['¿Cuánto dura un duelo?','No hay un plazo fijo, y las fases no siempre van en orden. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que impide hacer la vida.'],
+    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, sigues sin poder retomar tu día a día, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno.'],
+    ['¿Cómo superar la muerte de un padre o una madre?','Más que superarla, se trata de aprender a vivir con su ausencia. No conseguir superar la muerte de tu madre o echar de menos a tu padre cada día es frecuente, sobre todo los primeros meses. Ayuda poder hablar de ello, mantener algún ritual que te una a esa persona y pedir acompañamiento si el dolor no te deja vivir.'],
+    ['¿Cuánto dura un duelo?','No hay un plazo fijo. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que lo ocupa todo.'],
+    ['¿Es normal sentir culpa tras una muerte?','Sí. Lo que no se dijo o no se hizo suele volver una y otra vez. Hablarlo ayuda a que la culpa no ocupe el lugar del recuerdo.'],
     ['¿Es normal pensar todo el tiempo en la persona que ha muerto?','Sí, sobre todo al principio. Pensar en quien se ha ido, soñar con esa persona o sentir su presencia forma parte del duelo. Preocupa más cuando la vida se detiene por completo durante mucho tiempo.'],
     ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. También duele perder a un animal, una relación, un trabajo o una etapa de la vida, y ese dolor merece un espacio.'],
     ['¿Ayudáis a niños en duelo?','Sí, con la familia. Los niños viven el duelo a su manera, y a menudo ayuda acompañar a los adultos para que sepan cómo hablarles.']
   ],
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
-  feel:['No consigo superar la muerte de mi madre','Echo de menos a mi padre cada día','No consigo superar la muerte de mi perro','Siento que todo el mundo ha seguido menos yo'],
+  feel:['Nunca me dejará de doler','Me arrepiento de aquello que hice o no hice','¿Cómo voy a vivir sin él o sin ella?','Nunca conoceré a nadie como él o como ella'],   /* 2026-11-08; antes: «No consigo superar la muerte de mi madre», «Echo de menos a mi padre cada día», «No consigo superar la muerte de mi perro», «Siento que todo el mundo ha seguido menos yo» */
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases propias de la consulta, a partir de ideas de Bueno (la muerte llega cuando la persona está implicada en planes que no la contemplan,
      Diccionario de García Sierra, entrada 502), Pérez Jara («Meditatio mortis», 2016: «ya nunca más…») y Pérez Álvarez (2007: las pérdidas como inicio de la depresión) */
   quotes:[
-    'Perder a alguien es enfrentarse a todos los «nunca más»',
-    'Atender a tiempo una pérdida ayuda a que el bajón no se alargue'
+    'Atender a tiempo una pérdida —hablarla, compartirla, pedir ayuda si hace falta— ayuda a que el duelo no se complique',   /* tras biología */
+    '',   /* tras neurología: sin frase */
+    'La culpa y los “ojalá hubiera…” forman parte del duelo, y también se pueden hablar'   /* tras psicología */
   ],
   basesIntro:[
-    'El duelo es la respuesta a una pérdida, y hay distintos tipos de duelo: por la muerte de alguien querido, también de un animal, pero también por una separación, por un despido o por un cambio de vida.',
-    'La muerte llega en mitad de algo: de planes, de conversaciones, de proyectos en común. Por eso desordena tanto la vida de los que quedan.',
-    'Cada duelo es distinto y se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas, sin que ninguna lo explique todo por sí sola.'
+    'El duelo es la respuesta a una pérdida, y hay distintos tipos de duelo: por la muerte de alguien querido o de un animal, por una separación, por un despido o por un cambio de vida. Algunos duelos son especialmente difíciles: el de un hijo, incluso antes de nacer, el que deja un suicidio o el que empieza antes de la muerte, cuando la enfermedad avanza.',
+    'La muerte llega en mitad de algo: de planes, de conversaciones, de proyectos en común. De ahí que desordene tanto la vida de los que quedan.',
+    {voz:'Perder a alguien es enfrentarse a todos los “nunca más”'},   /* frase verde dentro de la entrada */
+    'Cada duelo es distinto y se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
     '<strong>Los estudios de biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, cambios en el sueño y en el apetito, una tristeza que pesa físicamente. Es normal, y suele ir cediendo con el tiempo. '+V,
-    '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso, pero que las pérdidas —una muerte, una ruptura, un despido— pueden ser el inicio de un bajón que se alarga. Atenderlas a tiempo ayuda. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue. '+V,
-    '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos espacio: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella. '+V
+    '<strong>Los estudios de neurología</strong> muestran que al cerebro le cuesta asumir una ausencia: por eso, a veces, esperamos oír su voz o que entre por la puerta. Hacerse a la pérdida también es un aprendizaje.',
+    '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso, pero que las pérdidas —una muerte, una ruptura, un despido— pueden ser el inicio de un dolor difícil de soportar. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue. '+V,
+    '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos lugar: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella. '+V
   ],
-  together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Perder a alguien es enfrentarse a todos los «nunca más»: lo que ya no se podrá hacer, decir ni compartir. En terapia hay sitio para nombrarlos y para aprender a convivir con ellos, a tu ritmo y sin prisas. Lo pensamos juntos.',
-  cta:'Podemos acompañarte a hacer sitio a la pérdida, sin prisas.',
+  together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
+  cta:'Ante la pérdida, podemos acompañarte en el proceso, haciéndolo más llevadero.',
   intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.» */
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
-  refs:'Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión». ',   /* 2026-11-08: quitada la referencia a Bueno (1996), «El sentido de la vida» */
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Bueno (1996), «El sentido de la vida»; Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión» */
   beyond:'Mucha gente busca cómo «superar» una muerte. No se trata de superar a nadie ni de pasar por unas fases en orden: se trata de ir encontrando un sitio para la pérdida en una vida que sigue.',
   approaches:[
     ['Terapia específica para el duelo prolongado','Basada en la terapia cognitivo-conductual, para cuando el duelo se atasca.','buena'],

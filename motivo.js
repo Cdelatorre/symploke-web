@@ -35,7 +35,7 @@ h+='</div></section>';
 h+='<div class="read">';
 if(m.bases){
   h+='<section><h2>Un enfoque multidimensional'+(m.enfoqueDe?' '+m.enfoqueDe:'')+'</h2>';   // enfoqueDe: «de la ansiedad»…
-  [].concat(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.').forEach(function(p){h+='<p>'+p+'</p>';});   // basesIntro: un párrafo o varios
+  [].concat(m.basesIntro||'Lo que te pasa es <strong>multicausal</strong>: ninguna ciencia lo explica todo por sí sola. Cada una ilumina una dimensión del problema, y en cada persona se entretejen de una manera.').forEach(function(p){h+=(p&&p.voz?'<p class="voz">«'+p.voz+'»</p>':'<p>'+p+'</p>');});   // basesIntro: un párrafo o varios; {voz:'…'} pone ahí una frase verde
   var voz=m.quotes||[];
   m.bases.forEach(function(b,i){
     h+='<p>'+b+'</p>';
