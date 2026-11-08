@@ -228,12 +228,18 @@ window.MOTIVOS=[
 {
   slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
   h1:'Terapia de pareja',   /* encabezado a todo el ancho, en una línea */
-  subs:['Discusiones constantes','Problemas de comunicación','Crisis de pareja','Celos','Infidelidad','Dependencia emocional','Apego','Narcisismo (pareja o progenitor)',['Falta de deseo en la pareja','sexual'],'La pareja tras tener hijos','Rupturas, separaciones y divorcios'],
+  revisada:true,   /* sin la marca «borrador» */
+  seoTitle:'Terapia de pareja en Madrid y online · Symploké',
+  seoDesc:'Discusiones, celos, infidelidad o distancia: terapia de pareja para aprender a hablar sin haceros daño. También si vienes solo. En Madrid u online.',
+  pagina:'pareja.html',   /* página fija; motivo.html?m=pareja lleva a ella */
+  enfoqueDe:'de la pareja',
+  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  subs:['Discusiones constantes','Problemas de comunicación','Crisis de pareja','Celos','Infidelidad','Dependencia emocional','Apego','Narcisismo en la pareja',['Falta de deseo en la pareja','sexual'],'La pareja tras tener hijos','Rupturas, separaciones y divorcios'],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
-    ['¿Cuándo conviene ir a terapia de pareja?','Cuando las discusiones se repiten sin salida, cuesta hablar sin haceros daño o sentís que os habéis distanciado. No hace falta esperar a estar al borde de la ruptura: cuanto antes, más margen hay.'],
+    ['¿Cuándo conviene ir a terapia de pareja?','Cuando las discusiones se repiten sin salida, atravesáis una crisis, cuesta hablar sin haceros daño o sentís que os habéis distanciado. No hace falta esperar a estar al borde de la ruptura: cuanto antes, más margen hay.'],
     ['¿Puedo ir a terapia de pareja sin mi pareja?','Sí. A veces solo una de las dos personas quiere empezar, y trabajar tu parte de la relación ya puede cambiar cosas.'],
-    ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudar a decidir con más claridad y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
+    ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudaros a tomar la decisión con calma y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
     ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si la sufres, puedes llamar al <strong>016</strong>, gratuito y confidencial, y en una urgencia, al <strong>112</strong>.'],
     ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.']
   ],
@@ -242,26 +248,29 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* ideas del Gottman Institute (gottman.com: «The Four Horsemen», sus antídotos y «The magic relationship ratio»), en traducción nuestra */
   quotes:[
-    'Criticar a tu pareja no es lo mismo que expresar una queja',
-    'El antídoto del desprecio es construir una cultura de aprecio y respeto en la relación'
+    'La comunicación es el hilo principal que sostiene una relación. Cuando se rompe, hasta lo más pequeño se convierte en un problema',
+    'No solo importa lo que decimos, sino desde dónde lo decimos. Hablar desde el respeto y el cariño cambia por completo una conversación difícil',
+    'Cada uno llega a la relación con sus deseos, sus límites y sus circunstancias. Ponerlos en palabras ayuda a ver que muchos problemas no son de la pareja, sino de todo lo que la rodea'
   ],
+  /* frases propias (2026-11-08); antes: «Criticar a tu pareja no es lo mismo que expresar una queja» y «El antídoto del desprecio es construir una cultura de aprecio y respeto en la relación» */
   basesIntro:[
     'Los conflictos aparecen en todas las relaciones: discutir no es el problema. Lo importante es cómo se discute y si sabemos <strong>reparar</strong> después.',
-    'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas.',
-    'También trabajamos la <strong>dependencia emocional</strong>, cuando la relación ocupa tanto espacio que uno se pierde en ella, y los momentos de <strong>ruptura, separación o divorcio</strong>, para atravesarlos de la mejor manera posible, también cuando hay hijos.',
-    'Como casi todo lo que nos pasa, los problemas de pareja son <strong>multicausales</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Una relación no es la suma de dos personas: es un entramado de hábitos, rutinas, <a href="motivo.html?m=sexual">deseos</a> y expectativas.',
+    'También acompañamos la <strong>dependencia emocional</strong> y las <a href="motivo.html?m=duelo">rupturas, separaciones o divorcios</a>, con o sin hijos de por medio.',
+    'Cada pareja es distinta: en cada una se cruzan historias, familias, esferas vitales y contextos diferentes. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta: el corazón se acelera y cuesta escuchar y pensar con claridad. Por eso, a veces, lo mejor es parar, calmarse y retomar la conversación después. '+V,
-    '<strong>Los estudios de psicología</strong>, sobre todo los del equipo de John Gottman, muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong> que ataca a la persona, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es el mayor predictor de ruptura. Criticar a la pareja no es lo mismo que expresar una queja: una crítica constructiva habla de algo concreto que nos molesta; la que no lo es ataca a la persona. Y en las parejas que funcionan hay unos <strong>cinco momentos buenos por cada uno malo</strong>. '+V,
-    '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen en la vida en pareja: muchos conflictos tienen que ver con esas circunstancias, y no solo con los dos. '+V
+    '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en <a href="ansiedad.html">alerta</a>: el corazón se acelera y cuesta escuchar y pensar con claridad. Por eso, a veces, lo mejor es parar, calmarse y retomar la conversación después.',
+    '<strong>Los estudios de psicología</strong>, sobre todo los del equipo de John Gottman, muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es uno de los mejores predictores de ruptura.',
+    'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («eres un egoísta»).',
+    '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la <a href="motivo.html?m=infancia">crianza</a>, el dinero o las familias de origen en la vida en pareja: muchos conflictos —celos, infidelidades, reparto de tareas— tienen que ver con lo que pasa alrededor.'
   ],
-  together:'Por eso trabajamos la <strong>comunicación</strong>: aprender a detectar esas formas de discutir, a quejarse sin atacar y a reparar los conflictos cuando aparecen. Para ello necesitamos construir una base de <strong>aprecio y respeto mutuo</strong>, que es el mejor antídoto contra el desprecio. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla. Lo pensamos juntos, decidáis lo que decidáis.',
-  cta:'Os ayudamos a pensar juntos qué os pasa, decidáis lo que decidáis.',
+  together:'En terapia trabajamos la <strong>comunicación</strong>: aprender a reconocer esas formas de discutir, a quejarse sin atacar y a reparar después de una discusión. Para ello necesitamos construir una base de <strong>cariño y respeto mutuo</strong>, que es el mejor antídoto contra el desprecio. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, y las usamos como punto de partida, pero no como sentencia. Lo trabajamos con vosotros, acompañándoos en vuestras decisiones.',
+  cta:'Os ayudamos a entender lo que os pasa desde la comprensión y la compasión, construyendo una base de aprecio y confianza.',
   intro:'Para trabajar los problemas de pareja hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «La terapia de pareja es un espacio para entender qué os está pasando y probar otras maneras de relacionaros, tanto si queréis seguir como si estáis pensando en separaros. También atendemos a una sola persona que quiere trabajar su relación.» */
   science:'Hay enfoques de terapia de pareja con estudios controlados, como la terapia conductual integrativa o la centrada en las emociones. '+V,
-  refs:'The Gottman Institute, «The Four Horsemen: criticism, contempt, defensiveness and stonewalling», «The Four Horsemen: the antidotes» y «The magic relationship ratio, according to science» (gottman.com). '+v('referencias completas'),
+  refs:'',   /* retirada el 2026-11-08 a petición del usuario; era: The Gottman Institute, «The Four Horsemen: criticism, contempt, defensiveness and stonewalling» y «The Four Horsemen: the antidotes» (gottman.com) */
   beyond:'Una relación no es la suma de dos personas: es un entramado de hábitos, familias, trabajo y expectativas. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, pero también pueden cerrar la conversación antes de empezarla.',
   approaches:[
     ['Conductual integrativa','Cambiar lo que se puede cambiar y aceptar lo que forma parte del otro.','buena'],
