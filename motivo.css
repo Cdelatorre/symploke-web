@@ -119,5 +119,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 .subs-top .subs a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .subs-top .subs a:hover{text-decoration-thickness:2px}
 /* enlaces dentro del texto a otras terapias */
-.read p a{color:var(--brandink);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
-.read p a:hover{text-decoration-thickness:2px}
+/* enlaces dentro del texto (a otras terapias): letra verde de la marca, subrayado grueso verde clarito; al pasar el ratón, verde más oscuro */
+.read p a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px;transition:text-decoration-color .2s ease,color .2s ease}
+.read p a:hover{color:var(--brandink);text-decoration-color:var(--brand)}
