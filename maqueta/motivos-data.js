@@ -34,7 +34,7 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:'Sentir ansiedad es normal. La necesitamos para reaccionar ante lo que nos rodea: nos pone en alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
   bases:[
-    'Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Por eso la ansiedad puede notarse como presión en el pecho, sensación de ahogo, mareo o nudo en el estómago, y si se mantiene, insomnio o irritabilidad. <strong>Los estudios de biología y neurología</strong> muestran que ese aviso llega muy deprisa, antes de que lo pensemos; de ahí que a veces aparezca «sin saber por qué». Es lo que se vive en un ataque de ansiedad o de pánico. Pero sería <strong>reduccionista</strong> instalarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
+    'Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Por eso la ansiedad puede notarse como presión en el pecho, sensación de ahogo, mareo o nudo en el estómago, y si se mantiene, <a href="insomnio.html">insomnio</a> o irritabilidad. <strong>Los estudios de biología y neurología</strong> muestran que ese aviso llega muy deprisa, antes de que lo pensemos; de ahí que a veces aparezca «sin saber por qué». Es lo que se vive en un ataque de ansiedad o de pánico. Pero sería <strong>reduccionista</strong> instalarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
     'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera.',
     'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. Por eso incluimos aquí el <strong>estrés laboral o burnout</strong>. También puede ocurrir que, después de una experiencia muy dura, el cuerpo siga en alerta como si el peligro no hubiera pasado: es lo que se conoce como <strong>estrés postraumático</strong>.'
   ],
@@ -86,10 +86,10 @@ window.MOTIVOS=[
     'Como casi todo lo que nos pasa, la depresión es <strong>multicausal</strong>. Por lo tanto, nuestro enfoque es <strong>pluralista</strong>: nos quedamos con lo mejor de cada disciplina, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
-    'El ánimo bajo no está solo en la cabeza. Hoy sabemos, <strong>por los estudios de biología</strong>, que la depresión afecta al sueño, al apetito, al cansancio y al cuerpo entero. También influyen el estrés mantenido, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
+    'El ánimo bajo no está solo en la cabeza. Hoy sabemos, <strong>por los estudios de biología</strong>, que la depresión afecta al <a href="insomnio.html">sueño</a>, al apetito, al cansancio y al cuerpo entero. También influyen el estrés mantenido, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
     'No se ha demostrado que un desequilibrio químico sea su causa: como mucho, es un componente más. La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual; el ánimo va ligado a nuestra vida y es mucho más complejo. Lo que sí muestran es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello, y eso ayuda a entender la falta de ganas.',
     'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos llenen, y el ánimo baja más. <strong>Los estudios de psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. Así, la terapia busca que actúes de acuerdo con tus objetivos y con lo que te interesa, en vez de según cómo te encuentres ese día. No se trata de hacer por hacer ni de rellenar el tiempo por estar ocupado, sino de hacer cosas que tengan sentido para ti, con pequeños avances.',
-    'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos. Hay etapas especialmente desgastantes —un posparto, un duelo, los intensos ritmos de vida, el cansancio acumulado— tras las que el ánimo puede venirse abajo.'
+    'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos. Hay etapas especialmente desgastantes —un posparto, <a href="motivo.html?m=duelo">un duelo</a>, los intensos ritmos de vida, el cansancio acumulado— tras las que el ánimo puede venirse abajo.'
   ],
   /* preguntas frecuentes (2026-11-08). La de antidepresivos sigue las guías clínicas (p. ej., NICE NG222, 2022): psicoterapia como primera opción en la depresión menos grave; en la más grave, combinada con medicación */
   faq:[
@@ -117,41 +117,59 @@ window.MOTIVOS=[
 },
 {
   slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
-  k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio',
+  revisada:true,   /* sin la marca «borrador» */
+  seoTitle:'Psicólogo para el insomnio en Madrid y online · Symploké',
+  seoDesc:'¿No puedes dormir, te despiertas de madrugada o te agobia la noche? Te ayudamos con terapia psicológica para el insomnio. En Madrid u online.',
+  h1:'Terapia para el insomnio y los problemas de sueño',   /* encabezado a todo el ancho, en una línea, como en ansiedad y depresión */
+  pagina:'insomnio.html',   /* página fija; motivo.html?m=insomnio lleva a ella */
+  enfoqueDe:'del insomnio',
+  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio insomnio de conciliacion despertares nocturnos me despierto a las 4 sueno no reparador insomnio cronico pastillas para dormir somniferos dejar los somniferos menopausia turnos pesadillas insomnio por ansiedad estres',
+  subs:['Insomnio de conciliación','Despertares nocturnos','Despertarse de madrugada','Sueño no reparador','Insomnio crónico',['Insomnio por ansiedad o estrés','ansiedad'],['Insomnio y depresión','depresion'],'Pesadillas','Higiene del sueño','Dependencia de pastillas para dormir','Insomnio en la menopausia','Trabajo a turnos',['Sueño en niños y adolescentes','infancia']],
+  /* preguntas frecuentes (2026-11-08). Pastillas: las guías (p. ej., la europea de insomnio de 2023, Riemann y cols.) proponen la TCC-I como primera opción y los hipnóticos solo a corto plazo */
+  faq:[
+    ['¿Cuándo conviene ir al psicólogo por insomnio?','Cuando duermes mal varias noches por semana durante semanas y lo notas de día: cansancio, irritabilidad o problemas para concentrarte. No hace falta esperar a que se vuelva crónico.'],
+    ['¿Qué hago si no puedo dormir?','Si llevas un rato en la cama sin dormir y empiezas a agobiarte, suele ayudar levantarte, hacer algo tranquilo con poca luz y volver cuando tengas sueño. Mirar el reloj o el móvil alimenta la alerta. Si se repite a menudo, conviene consultarlo.'],
+    ['¿Se cura el insomnio?','En muchos casos mejora con terapia psicológica, que es lo que recomiendan las guías clínicas. Cada proceso es distinto; no prometemos plazos, pero sí trabajar contigo para que vuelvas a dormir sin pelearte con la noche.'],
+    ['¿Las pastillas para dormir solucionan el insomnio?','En terapia psicológica no se recetan fármacos. Los somníferos pueden ayudar de forma puntual, pero las guías clínicas no los recomiendan como solución a largo plazo. Si los tomas o quieres dejarlos, nos coordinamos con tu médico.'],
+    ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.']
+  ],
   feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Me paso el día agotado'],
   /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
      Cervantes, citado en Pérez Álvarez (2005) «Psicología del Quijote», pág. 4 del PDF;
      Pérez Álvarez y Fernández Hermida (1984) «Cómo llegar a ser un mejor terapeuta» (ver citas-para-la-web.md) */
   quotes:[
-    'Dormir no es lo mismo que descansar. Necesitamos llegar a ese sueño profundo',
-    'Del poco dormir y del mucho leer, se le secó el celebro de manera que vino a perder el juicio',
-    'El circuito de preocupación por no dormir —no dormir— más preocupación por no dormir […] que caracteriza al insomne'
+    'No se trata solo de cuántas horas dormimos, sino de que el sueño llegue a ser reparador. Pasar horas en la cama no es lo mismo que descansar',
+    'El sueño no se busca: llega cuando dejamos de perseguirlo. Dormir es, sobre todo, dejar de vigilar, sentirse a salvo',
+    'En muchas ocasiones el problema no es únicamente no poder conciliar el sueño: a esto se suman la preocupación y la obsesión por no dormir, que caracterizan el insomnio'
   ],
+  /* frases propias (2026-11-08); antes eran citas literales: Núria Roure (2025), «Dormir no es lo mismo que descansar. Necesitamos llegar a ese sueño profundo»; Cervantes (vía Pérez Álvarez, 2005), «Del poco dormir y del mucho leer, se le secó el celebro de manera que vino a perder el juicio»; y Pérez Álvarez y Fernández Hermida (1984): «El circuito de preocupación por no dormir —no dormir— más preocupación por no dormir […] que caracteriza al insomne» */
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
-    'Dormir bien no es un lujo. El sueño es descanso, y del descanso dependen la atención, la memoria, el humor y, en general, cómo nos desenvolvemos en la vida. Por eso el insomnio importa tanto: muchas veces está en el centro de otros problemas psicológicos, como la ansiedad o la depresión, y los agrava.',
+    'Dormir bien no es un lujo. El sueño es descanso, y del descanso dependen la atención, la memoria, el humor y, en general, cómo nos desenvolvemos en la vida. Por eso el insomnio importa tanto: muchas veces está en el centro de otros problemas psicológicos, como <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la depresión</a>, y los agrava.',
     'Una de sus características es el <strong>círculo de preocupación por no dormir</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño, y no dormir aumenta la preocupación.',
-    'Como casi todo lo que nos pasa, el insomnio es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Como casi todo lo que nos pasa, el insomnio es <strong>multicausal</strong>. Por lo tanto, nuestro enfoque es <strong>pluralista</strong>: nos quedamos con lo mejor de cada disciplina, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan. Además, no basta con dormir: para descansar hay que llegar al sueño profundo, y durante la fase REM se producen muchos procesos que nos ayudan a reestructurar y organizar la información cognitiva y emocional. '+V,
-    'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso no basta con estar agotado. '+V,
-    'El sueño no se puede forzar: cuanto más se intenta, más se aleja. La cama acaba asociada a dar vueltas, y la preocupación por no dormir se convierte en el problema. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección. Parte de ella es la <strong>higiene del sueño</strong>: horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde, la cama solo para dormir y levantarse si el sueño no llega. Son estrategias sencillas que ayudan a recuperar el descanso, aunque por sí solas a veces se quedan cortas. '+V,
-    'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios, con cenas y pantallas hasta tarde, recortan el sueño de mucha gente. '+V
+    '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan, y otras cosas, como la menopausia o las pesadillas, interrumpen el sueño. Además, no basta con dormir horas: el sueño profundo es el más reparador para el cuerpo, y durante la fase REM se consolidan los recuerdos y se procesan las emociones.',
+    'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso el cansancio, por sí solo, no garantiza dormir.',
+    'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección. Sus piezas principales son el <strong>control de estímulos</strong> —usar la cama solo para dormir y levantarse si el sueño no llega— y ajustar el tiempo que pasamos en la cama. La <strong>higiene del sueño</strong> —horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde— la acompaña, aunque por sí sola suele quedarse corta.',
+    'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios recortan el sueño de mucha gente.'
   ],
-  together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que sabemos del cuerpo y de la psicología para romper el círculo y encontrar lo que te funcione a ti: qué hábitos ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
-  refs:'Pérez Álvarez y Fernández Hermida (1984), «Cómo llegar a ser un mejor terapeuta»; Pérez Álvarez (2005), «Psicología del Quijote»; Núria Roure, entrevista en Moncloa.com (2025). '+v('referencias completas'),
+  together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que sabemos del cuerpo, de lo que haces y de cómo está organizada tu vida para romper el círculo y encontrar lo que te funcione a ti: qué hábitos ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario (ya no hay citas); eran: Pérez Álvarez y Fernández Hermida (1984), «Cómo llegar a ser un mejor terapeuta»; Pérez Álvarez (2005), «Psicología del Quijote»; Núria Roure, entrevista en Moncloa.com (2025) */
   cta:'Trabajamos contigo para que la noche deje de ser una pelea.',
-  intro:'El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.',
-  how:'Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.',
-  science:'La terapia cognitivo-conductual para el insomnio es el tratamiento psicológico de primera elección en las guías clínicas. Incluye la higiene del sueño, pero no se reduce a ella. '+V,
+  intro:'Para trabajar el insomnio hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  /* entrada anterior (2026-11-08): «El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.»
+     y el «how»: «Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.» */
+  science:'La terapia cognitivo-conductual para el insomnio es el tratamiento psicológico de primera elección en las guías clínicas. Incluye la higiene del sueño, pero no se reduce a ella.',
   beyond:'Dormir no se puede forzar: cuanto más se intenta, más se aleja. El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche.',
   approaches:[
     ['Cognitivo-conductual para el insomnio','Ajustar horarios, cama y pensamientos que mantienen el problema.','amplia'],
     ['Contextuales y ACT','Dejar de luchar por dormir y reducir la vigilancia sobre el sueño.','preliminar'],
     ['Higiene del sueño','Hábitos de base útiles, aunque por sí solos suelen quedarse cortos.','limitada como tratamiento único']
   ],
-  subs:['Higiene del sueño','Pesadillas'],
+  /* etiquetas: ahora arriba, junto al h1 */
   alt:'Mujer descansando al sol de la mañana con una taza de café'
 },
 {
