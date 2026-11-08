@@ -509,7 +509,7 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases propias de la consulta (no son citas de autor); las citas de Marino descartadas están en citas-para-la-web.md */
   quotes:[
-    'El sufrimiento de los niños y de los adolescentes es real y merece ayuda',
+    'Crecer también tiene sus partes dolorosas, y no por ello es un trastorno. Muchas veces es parte del camino',   /* 2026-11-08; antes: «El sufrimiento de los niños y de los adolescentes es real y merece ayuda» */
     'Muchas veces los protegemos tanto que cualquier contratiempo los hunde',
     'Acompañar no es resolverlo todo por ellos, sino estar cerca mientras aprenden a hacerlo'   /* 2026-11-08; antes: «Mucha exigencia y poca tolerancia a la frustración» */
   ],
@@ -521,10 +521,10 @@ window.MOTIVOS=[
   bases:[
     '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta. Conviene tenerlo en cuenta sin convertirlo en la explicación de todo.',
     '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de la experiencia: de lo que se practica y se aprende. Por eso un menor no es un adulto pequeño ni un diagnóstico.',
-    '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas: tarde o temprano se encuentran con el mundo real, y conviene que lleguen preparados. Hoy les pedimos que sean brillantes en todo y, a la vez, los protegemos tanto que cualquier contratiempo los hunde: mucha exigencia y poca tolerancia a la frustración. Les ayudamos a encontrar un equilibrio entre esforzarse y aguantar los tropiezos.',
-    '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. La vida sigue ahí fuera cuando nuestros hijos salen de casa: los acompañamos a llegar a ella y a relacionarse con ella con recursos propios.'
+    '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas: tarde o temprano se encuentran con el mundo real, y conviene que lleguen preparados. Hoy les pedimos que sean brillantes en todo y, a la vez, les ahorramos cualquier dificultad: mucha exigencia y poca tolerancia a la frustración. Trabajamos con ellos un equilibrio entre esforzarse y aguantar los tropiezos.',
+    '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. La vida sigue ahí fuera cuando los hijos salen de casa: los acompañamos a llegar a ella y a relacionarse con ella con recursos propios.'
   ],
-  together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar con calma, sin precipitarse, y ayudar según lo que necesite. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores), y también con vosotros: proponemos a las familias y a los profesores estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso trabajamos en equipo con la familia y con los centros educativos.',
+  together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse, y responder según lo que necesite. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores), y también con vosotros: proponemos estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso trabajamos en equipo con la familia y con los centros educativos.',
   cta:'Podemos ayudaros, a vuestro hijo o hija y a vosotros, a entender qué está pasando.',
   intro:'Para trabajar lo que les pasa a niños y adolescentes hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.» */
