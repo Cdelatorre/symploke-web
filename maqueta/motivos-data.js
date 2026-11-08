@@ -282,11 +282,15 @@ window.MOTIVOS=[
 {
   slug:'tdah', name:'TDAH y atención', sym:'No me puedo concentrar en nada',
   h1:'Terapia para el TDAH y los problemas de atención',   /* encabezado a todo el ancho, en una línea */
+  revisada:true,   /* sin la marca «borrador» */
+  seoDesc:'¿Te cuesta concentrarte, se te olvida todo o te preocupa tu hijo? Te ayudamos con el TDAH mirando a la persona, no solo la etiqueta. En Madrid u online.',
+  pagina:'tdah.html',   /* página fija; motivo.html?m=tdah lleva a ella */
+  enfoqueDe:'del TDAH',
   subs:['TDAH en adultos',['TDAH en niños y adolescentes','infancia'],'Falta de concentración','Procrastinación','Impulsividad','Inquietud','Hiperactividad','Desorganización','Olvidos y despistes','Dificultades en los estudios',['Uso excesivo del móvil y las pantallas','adicciones']],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
     ['¿Cómo saber si tengo TDAH?','Despistarse o aplazar tareas de vez en cuando es normal. Se habla de TDAH cuando las dificultades de atención, inquietud o impulsividad vienen de la infancia, se mantienen y afectan a los estudios, al trabajo o a las relaciones. Un cuestionario en internet no basta: hace falta una valoración profesional.'],
-    ['¿Existe el TDAH en adultos?','Sí. Muchas personas llegan a consulta de adultas, a veces después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
+    ['¿Existe el TDAH en adultos?','Sí. A veces se descubre después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
     ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento de la familia. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
     ['¿Hace falta medicación para el TDAH?','En terapia psicológica no se recetan fármacos. En algunos casos la medicación ayuda, y esa valoración corresponde a psiquiatría o neurología. Si la tomas o se está valorando, nos coordinamos con quien la lleve.'],
     ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.']
@@ -296,28 +300,32 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* citas literales de Marino Pérez Álvarez: (2014) entrevista en Infocop «Los intereses que hay detrás del diagnóstico del TDAH»;
      (2017) «The Four Causes of ADHD: Aristotle in the Classroom», pág. 11 del PDF (en inglés: la traducción es nuestra) */
+  /* frases propias (2026-11-08); las de arriba eran las citas literales anteriores:
+     «Sin negar el problema, su solución no debiera ser a costa de “enfermar” a los niños»;
+     «Cualquier problema relacionado con la «atención», la «actividad» y la «impulsividad» no queda fuera del aprendizaje, como aspectos del desarrollo del autocontrol. Algunos niños pueden necesitar un «entrenamiento» adicional (no un tratamiento)»;
+     «Resituar el problema en su contexto que no es otro que el del aprendizaje y educación de la atención y la actividad de los niños, seguramente una tarea más difícil de lo que se pensaba, sobre todo, en el mundo de hoy» */
   quotes:[
-    'Sin negar el problema, su solución no debiera ser a costa de “enfermar” a los niños',
-    {texto:'Cualquier problema relacionado con la «atención», la «actividad» y la «impulsividad» no queda fuera del aprendizaje, como aspectos del desarrollo del autocontrol. Algunos niños pueden necesitar un «entrenamiento» adicional (no un tratamiento)', grande:true},
-    'Resituar el problema en su contexto que no es otro que el del aprendizaje y educación de la atención y la actividad de los niños, seguramente una tarea más difícil de lo que se pensaba, sobre todo, en el mundo de hoy'
+    'Un diagnóstico describe lo que pasa, pero no explica quién eres. Detrás de cada etiqueta hay una persona con su historia y su manera de vivir',
+    'Un niño inquieto no es un niño enfermo, ni un adulto disperso es un adulto disfuncional. Esa inquietud también puede ser energía, curiosidad y ganas de descubrir',
+    'La paciencia, la constancia y la tolerancia a la frustración también se entrenan. No se trata de convertir a nadie en enfermo, sino de darle herramientas'
   ],
   basesIntro:[
-    'El TDAH es un problema, pero no una enfermedad. Podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades. Vemos a la persona entera: sus ritmos, su curiosidad, su alta actividad y sus dificultades.',
-    'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. Los problemas de atención y de inquietud existen y hay que atenderlos. Pero a veces, con la mejor intención, los adultos convierten estas formas de ser en algo problemático, y convertir al niño en enfermo no es la única salida ni la mejor. Tratamos de ayudar sin poner etiquetas.',
-    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH es un problema, pero no una enfermedad. Podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades. Vemos a la persona entera: su manera de estar en el mundo, su curiosidad, su energía y lo que le cuesta.',
+    'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. Las dificultades y especificidades de la atención y la inquietud existen y hay que entenderlas en su amplitud, sin medicalizar antes de tiempo lo que a veces es una forma de ser. Tratamos de ayudar mirando a la persona, no solo el diagnóstico.',
+    'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> no han encontrado un marcador que permita diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Los estudios genéticos encuentran muchas variantes de efecto pequeño, que influyen pero no deciden por sí solas. '+V,
-    '<strong>Los estudios de neurología</strong> no permiten hablar de un cerebro «típico» y otro «atípico», sino de diversidad entre personas. Por eso no tiene sentido explicarlo como una avería neuroquímica ni como una disfunción ejecutiva: el cerebro participa, como en todo lo que hacemos, pero quien aprende a atender es la persona. '+V,
-    'Prestar atención es algo que se aprende, y hoy es más difícil que nunca. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. Y que la solución pase por aprender significa que se puede cambiar. Puede que los padres necesiten asesoramiento e incluso entrenamiento; trabajamos con el niño, la familia y el colegio para que lo consiga. '+V,
-    '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, impulsivo y pendiente de muchas cosas a la vez, con pantallas que reclaman la atención a cada momento y niños acostumbrados a tenerlo todo al instante. Esa forma de vida choca con lo que piden la escuela o el trabajo. '+V
+    '<strong>Los estudios de biología</strong> no han encontrado un marcador que permita diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Los estudios genéticos muestran que el TDAH tiene un peso hereditario importante, pero repartido en muchas variantes de efecto pequeño que influyen sin decidir por sí solas.',
+    '<strong>Los estudios de neurología</strong> encuentran diferencias entre grupos de personas y mucha diversidad entre ellas, pero no un patrón que sirva para diagnosticar a nadie en concreto. Así que preferimos no explicarlo solo como una avería neuroquímica: el cerebro participa, como en todo lo que hacemos, pero quien aprende a atender es la persona.',
+    'Prestar atención es algo que se aprende, y la vida actual no lo pone fácil. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. A veces la ayuda pasa también por orientar a <a href="motivo.html?m=infancia">la familia</a> y al colegio.',
+    '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, impulsivo y pendiente de muchas cosas a la vez, con <a href="motivo.html?m=adicciones">pantallas</a> que reclaman la atención a cada momento y niños acostumbrados a tenerlo todo al instante. Esa forma de vida choca con lo que piden la escuela o el trabajo.'
   ],
-  together:'Muchos adultos también tienen TDAH, y resulta muy difícil diagnosticarlo. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. No se trata de cambiar quién eres, sino de trabajar para que esos ritmos encajen mejor con tu vida. Con los niños, trabajamos con ellos, con la familia y con el colegio; con los adultos, contigo y con lo que te pide tu día a día. Lo pensamos juntos.',
-  refs:'Pérez Álvarez (2014), «Los intereses que hay detrás del diagnóstico del TDAH» (entrevista, Infocop); (2017), «The Four Causes of ADHD: Aristotle in the Classroom»; (2018), «El TDAH es un problema, pero no una enfermedad»; Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop). '+v('referencias completas'),
-  cta:'Podemos ayudarte a organizarte con lo que tienes, sin quedarte en la etiqueta.',
+  together:'En los adultos también pasa, aunque a menudo se identifica tarde: muchos se reconocen en esto después de toda una vida sin ponerle nombre. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. La idea no es cambiar quién eres, sino trabajar para que esos ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos contigo, paso a paso.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Álvarez (2014), «Los intereses que hay detrás del diagnóstico del TDAH» (entrevista, Infocop); (2017), «The Four Causes of ADHD: Aristotle in the Classroom»; (2018), «El TDAH es un problema, pero no una enfermedad»; Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop) */
+  cta:'Podemos ayudarte a organizarte con lo que vives, sin quedarte en la etiqueta.',
   intro:'Para trabajar el TDAH hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.» */
-  science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño. '+V,
+  science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño.',
   beyond:'Cuidado con la explicación circular: «no atiende porque tiene TDAH, y tiene TDAH porque no atiende». La atención no es solo algo que está dentro de la cabeza: también es lo que piden la escuela o el trabajo. Ni solo naturaleza ni solo crianza. El diagnóstico puede aliviar —por fin un nombre— y a la vez convertirse en identidad; la idea es no quitar ese alivio sin ofrecer otro.',
   approaches:[
     ['Cognitivo-conductual (adultos)','Organización, planificación y manejo de la impulsividad en la vida real.','moderada'],

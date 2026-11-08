@@ -28,7 +28,7 @@ h+='<section class="feel" aria-labelledby="suene"><div>';
 h+='<h2 id="suene">Quizá te suene</h2>';
 h+='<p class="note">'+(m.feelNote||'Frases tal como las escribe la gente en Google. <span class="verify">[VERIFICAR con Google Trends]</span>')+'</p>';
 h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
-h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? Es frecuente sentirse así.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
+h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? No tienes por qué pasarlo solo.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
 if(m.alert)h+='<p class="alert">'+m.alert+'</p>';
 h+='</div></section>';
 
