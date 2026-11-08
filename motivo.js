@@ -5,7 +5,7 @@
 var fija=document.body.getAttribute('data-m');   // página fija: ansiedad.html lleva data-m="ansiedad"
 var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(fija||(q?q[1]:'ansiedad'))||MOTIVOS[0];
 if(!fija&&m.pagina){location.replace(m.pagina+location.hash);return;}   // motivo.html?m=ansiedad → ansiedad.html (una sola dirección para Google)
-var D=' <span class="draft">borrador</span>', CITA='contacto.html', ARR=' <span class="arr" aria-hidden="true">→</span>';
+var D='', CITA='contacto.html', ARR=' <span class="arr" aria-hidden="true">→</span>';
 var WA='<a class="btn ghost" href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Consultar por WhatsApp</a>';
 document.title=m.seoTitle||(m.name+' · Psicólogo en Madrid centro y online · Symploké');   // seoTitle y seoDesc: lo que sale en la pestaña y en Google
 if(m.seoDesc&&!document.querySelector('meta[name="description"]')){var md=document.createElement('meta');md.name='description';md.content=m.seoDesc;document.head.appendChild(md);}
@@ -26,7 +26,7 @@ h+='</div><div class="art">'+ILUS[m.slug]('h'+m.slug)+'</div></section>';
 
 h+='<section class="feel" aria-labelledby="suene"><div>';
 h+='<h2 id="suene">Quizá te suene</h2>';
-h+='<p class="note">'+(m.feelNote||'Frases tal como las escribe la gente en Google. <span class="verify">[VERIFICAR con Google Trends]</span>')+'</p>';
+h+='<p class="note">'+(m.feelNote||'Frases con las que mucha gente cuenta lo que le pasa.')+'</p>';
 h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
 h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? No tienes por qué pasarlo solo.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
 if(m.alert)h+='<p class="alert">'+m.alert+'</p>';

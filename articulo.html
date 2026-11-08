@@ -123,7 +123,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 (function(){
 'use strict';
 var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(q?q[1]:'ansiedad')||MOTIVOS[0], idx=MOTIVOS.indexOf(m);
-var D=' <span class="draft">borrador</span>', ARR=' <span class="arr" aria-hidden="true">→</span>';
+var D='', ARR=' <span class="arr" aria-hidden="true">→</span>';
 document.title='«'+m.feel[0]+'» · Blog de psicología · Symploké';
 var h='';
 
@@ -145,7 +145,7 @@ h+='<h2>Qué dice la ciencia</h2><p>'+m.science+'</p><p class="refs">'+m.refs+'<
 h+='<h2>Más allá de la etiqueta</h2><p class="beyond">'+m.beyond+'</p>';
 h+='<h2>Cómo se trabaja en terapia</h2>';
 h+='<p>No hay una sola psicología, y no todas tienen la misma evidencia para cada problema. Estos son algunos enfoques:</p>';
-h+='<ul class="psy">'+m.approaches.map(function(a){return '<li><b>'+a[0]+'</b><span>'+a[1]+' <span class="verify">[VERIFICAR]</span></span></li>';}).join('')+'</ul>';
+h+='<ul class="psy">'+m.approaches.map(function(a){return '<li><b>'+a[0]+'</b><span>'+a[1]+'</span></li>';}).join('')+'</ul>';
 h+='<p class="sign">Escrito por [Tu nombre], psicólogo sanitario. Última revisión: [fecha].</p>';
 h+='</article>';
 

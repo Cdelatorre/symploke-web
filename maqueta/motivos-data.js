@@ -10,8 +10,8 @@
    ['texto literal','autor'] y motivo.html pone la firma debajo; '' deja ese hueco sin frase. */
 (function(){
 'use strict';
-var V='<span class="verify">[VERIFICAR]</span>';
-function v(t){return '<span class="verify">[VERIFICAR '+t+']</span>';}
+var V='';   /* 2026-11-08: marcas [VERIFICAR] retiradas de la web a petición del usuario (antes: '<span class="verify">[VERIFICAR]</span>') */
+function v(t){return '';}   /* antes devolvía la marca [VERIFICAR …] */
 
 window.MOTIVOS=[
 {
@@ -69,7 +69,7 @@ window.MOTIVOS=[
   revisada:true,   /* sin la marca «borrador» */
   k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio depresion mayor distimia depresion posparto depresion estacional anhedonia no disfruto de nada falta de motivacion soledad no deseada crisis existencial ansiedad y depresion',
   subs:['Depresión mayor','Distimia o tristeza que dura años',['Ansiedad y depresión','ansiedad'],'Apatía y falta de motivación','No disfrutar de nada (anhedonia)','Sensación de vacío','Soledad no deseada','Crisis existencial','Depresión posparto','Depresión estacional',['Depresión tras una pérdida','duelo'],'Depresión en personas mayores'],
-  feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No tengo ganas de vivir'],
+  feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No valgo para nada','No tengo ganas de vivir'],
   /* citas literales de Marino Pérez Álvarez: (2019) «Diagnóstico más allá de los síntomas», pág. 34 del PDF;
      (2007) «La activación conductual y la desmedicalización de la depresión», págs. 5 y 7 del PDF (ver citas-para-la-web.md) */
   quotes:[
@@ -134,7 +134,7 @@ window.MOTIVOS=[
     ['¿Las pastillas para dormir solucionan el insomnio?','En terapia psicológica no se recetan fármacos. Los somníferos pueden ayudar de forma puntual, pero las guías clínicas no los recomiendan como solución a largo plazo. Si los tomas o quieres dejarlos, nos coordinamos con tu médico.'],
     ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.']
   ],
-  feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Me paso el día agotado'],
+  feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Miro cómo pasan las horas y no me duermo','Me siento cansado todo el tiempo'],
   /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
      Cervantes, citado en Pérez Álvarez (2005) «Psicología del Quijote», pág. 4 del PDF;
      Pérez Álvarez y Fernández Hermida (1984) «Cómo llegar a ser un mejor terapeuta» (ver citas-para-la-web.md) */
@@ -390,31 +390,43 @@ window.MOTIVOS=[
 },
 {
   slug:'autoestima', name:'Autoestima', sym:'No soy suficiente',
-  h1:'Terapia para mejorar la autoestima',   /* encabezado a todo el ancho, en una línea */
+  h1:'Terapia para fortalecer la autoestima',   /* encabezado a todo el ancho, en una línea */
+  revisada:true,   /* sin la marca «borrador» */
+  seoTitle:'Terapia para la autoestima en Madrid y online · Symploké',
+  seoDesc:'Inseguridad, perfeccionismo, miedo al rechazo o síndrome del impostor: terapia para tratarte de otra manera. En Madrid u online.',
+  pagina:'autoestima.html',   /* página fija; motivo.html?m=autoestima lleva a ella */
+  enfoqueDe:'de la autoestima',
   subs:['Baja autoestima','Inseguridad','Perfeccionismo','Autoexigencia','Síndrome del impostor','Miedo al rechazo','Necesidad de aprobación','Compararse con los demás','Autocrítica','Aprender a decir que no',['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
     ['¿Cómo saber si tengo baja autoestima?','Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir.'],
-    ['¿Se puede mejorar la autoestima?','Sí, aunque no a base de repetirse frases positivas. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.'],
-    ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo se vive como un fracaso personal. Trabajar la autoexigencia suele aliviar también la autoestima.'],
-    ['¿Influyen las redes sociales en la autoestima?','Influyen: compararse a diario con vidas editadas pesa, sobre todo en la adolescencia. No es la única causa, pero forma parte del contexto que tenemos en cuenta.'],
+    ['¿Se puede mejorar la autoestima?','Sí. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.'],
+    ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo se vive como un fracaso personal. Aprender a exigirse sin maltratarse ayuda también a la estima.'],
+    ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás “descubran” que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.'],
     ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.']
   ],
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
   feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo mismo'],
-  basesIntro:'La palabra «autoestima» pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: algo que se hace, con otros y entre otros. Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación, y ninguna disciplina lo explica todo por sí sola.',
-  bases:[
-    'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> la remonta a William James, a finales del siglo XIX, y su gran difusión llega en la segunda mitad del XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas es más una creencia de época que un hallazgo. '+V,
-    '<strong>Los estudios de psicología</strong> encuentran que la relación entre la estima y el bienestar es real, pero más modesta de lo que suele decirse, y que repetirse frases positivas sirve de poco. Lo que más la mueve es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. En terapia lo vemos a menudo: la estima llega después de la <strong>praxis</strong>, no antes. '+V,
-    '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, las redes sociales o una cultura que pide valerse por uno mismo y rendir sin descanso. Nadie se estima en el vacío: la estima depende también de dónde y con quién vivimos. '+V
+  /* frases propias (2026-11-08): la estima no viene solo de uno mismo / depende de cómo nos tratan / estimarse es algo que se hace */
+  quotes:[
+    'Nadie puede construirse solo, y solo desde sí mismo, el valor que siente. Esa estima depende de los demás y de múltiples contextos',
+    'Nos vemos, en buena parte, como nos han tratado. Por eso cambiar cómo nos tratan, y cómo tratamos, también cambia cómo nos valoramos',
+    'Estimarse se ejercita: la estima se fortalece cuando actuamos, cuando nos cuidamos y cuando cuidamos a los nuestros'
   ],
-  together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa estima que te llega de los demás: elegir con quién estás, decir que no, pedir lo que necesitas, cuidar los vínculos que te sostienen. Eso se practica, y lo pensamos juntos.',
-  cta:'Podemos ayudarte a tratarte de otra manera.',
-  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.',
+  bases:[
+    '<strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, el mal sueño o el estrés mantenido tiñen cómo nos vemos. La estima se siente dentro, pero gran parte de sus piezas vienen de fuera.',
+    'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> la remonta a William James, a finales del siglo XIX, y su gran difusión llega en la segunda mitad del XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.',
+    '<strong>Los estudios de psicología</strong> encuentran que la estima alta se asocia a sentirse mejor, pero no causa por sí sola mejores resultados en los estudios, el trabajo o las relaciones. Y repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más la mueve es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos aunque nos gane la inseguridad o la autocrítica. En terapia lo vemos a menudo: la estima se construye haciendo; llega después de actuar, no antes.',
+    '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal, las redes sociales o una cultura que pide valerse por uno mismo y rendir sin descanso. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
+  ],
+  together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. De ahí que la promesa de que «no te importe lo que piensen los demás» suela frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa mirada que te llega de los demás: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas, mantener y fortalecer los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos contigo.',
+  cta:'Podemos ayudarte a estimarte de otra manera, sin compararte ni exigirte a todas horas.',
+  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: se siente en el cuerpo, pero no depende solo de él, sino también de lo que hacemos, de nuestras relaciones y de los contextos en los que nos encontramos; es decir, también de cómo nos estiman desde fuera. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.» */
-  science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse. '+V,
-  refs:'Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas. '+v('referencias completas'),
-  beyond:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran (heteroestima). Por eso la promesa de que «no te importe lo que piensen los demás» suele frustrar. Lo que sí se puede trabajar es cómo te importa.',
+  science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas */
+  beyond:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran (heteroestima). De ahí que la promesa de que «no te importe lo que piensen los demás» suela frustrar. Lo que sí se puede trabajar es cómo te importa.',
   approaches:[
     ['Cognitivo-conductual','Revisar la autocrítica y las reglas de exigencia.','moderada'],
     ['Contextuales, ACT y compasión','Tratarte de otra manera sin esperar a «quererte» primero.','creciente'],
@@ -458,7 +470,7 @@ window.MOTIVOS=[
   intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.» */
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
-  refs:'Bueno (1996), «El sentido de la vida», en el Diccionario filosófico de García Sierra, entrada 502; Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión». '+v('referencias completas'),
+  refs:'Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión». ',   /* 2026-11-08: quitada la referencia a Bueno (1996), «El sentido de la vida» */
   beyond:'Mucha gente busca cómo «superar» una muerte. No se trata de superar a nadie ni de pasar por unas fases en orden: se trata de ir encontrando un sitio para la pérdida en una vida que sigue.',
   approaches:[
     ['Terapia específica para el duelo prolongado','Basada en la terapia cognitivo-conductual, para cuando el duelo se atasca.','buena'],
