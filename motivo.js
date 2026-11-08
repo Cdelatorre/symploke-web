@@ -69,7 +69,7 @@ h+='<section class="band"><div class="pic">'+ILUS.portada('band')+'</div><div cl
 h+='<h2>Podemos ayudarte</h2>';
 h+='<p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una valoración inicial: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>';
 h+='<a class="btn primary" href="'+CITA+'">Pide cita y lo vemos juntos'+ARR+'</a>';
-h+='<p class="donde">Puedes visitarnos en nuestro centro sanitario de Madrid centro o elegir trabajar de forma telemática.</p>';   // Madrid en el texto visible (búsquedas locales)
+h+='<p class="donde">Puedes visitarnos en nuestro centro sanitario de la calle Martín de Vargas, 5 (Madrid centro) o elegir la terapia online.</p>';   // Madrid en el texto visible (búsquedas locales)
 h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
 h+='</div></section>';
 
