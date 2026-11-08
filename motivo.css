@@ -111,3 +111,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
   .mhero,.feel,.band{grid-template-columns:1fr}
   .mhero .art{order:-1}
 }
+/* etiqueta que lleva a otra terapia (red interna de enlaces) */
+.subs-top .subs a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.subs-top .subs a:hover{text-decoration-thickness:2px}

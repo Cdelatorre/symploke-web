@@ -21,14 +21,14 @@ h+='<p class="lead">'+m.intro+(m.revisada?'':D)+'</p>';   // «borrador» solo e
 if(m.how)h+='<p class="lead how">'+m.how+'</p>';
 h+='<p class="help">'+m.cta+'</p>';
 h+='<div class="cta"><a class="btn primary" href="'+CITA+'">Pedir cita'+ARR+'</a>'+WA+'</div>';
-if(m.subs)h+='<div class="subs-top"><p class="layer">¿Te pasa algo de esto?</p><ul class="subs">'+m.subs.map(function(s){return '<li>'+s+'</li>';}).join('')+'</ul></div>';
+if(m.subs)h+='<div class="subs-top"><p class="layer">¿Te pasa algo de esto?</p><ul class="subs">'+m.subs.map(function(s){var t=[].concat(s), o=t[1]&&motivoBySlug(t[1]);return '<li>'+(o?'<a href="'+motivoUrl(o)+'">'+t[0]+'</a>':t[0])+'</li>';}).join('')+'</ul></div>';
 h+='</div><div class="art">'+ILUS[m.slug]('h'+m.slug)+'</div></section>';
 
 h+='<section class="feel" aria-labelledby="suene"><div>';
 h+='<h2 id="suene">Quizá te suene</h2>';
 h+='<p class="note">'+(m.feelNote||'Frases tal como las escribe la gente en Google. <span class="verify">[VERIFICAR con Google Trends]</span>')+'</p>';
 h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
-h+='<div class="reco"><p>¿Te reconoces? Es frecuente sentirse así.</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
+h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? Es frecuente sentirse así.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
 if(m.alert)h+='<p class="alert">'+m.alert+'</p>';
 h+='</div></section>';
 
@@ -75,4 +75,17 @@ h+='</div></section>';
 
 document.getElementById('main').innerHTML=h;
 drawIn(document.querySelector('.mhero .art svg'));
+
+/* encabezado largo en una línea: si no cabe a su tamaño, se reduce lo justo para que quepa */
+function ajustarH1(){
+  var e=document.querySelector('h1.wide');
+  if(!e)return;
+  e.style.fontSize='';
+  if(window.innerWidth<861)return;   // en móvil puede partirse en dos líneas
+  var fs=parseFloat(getComputedStyle(e).fontSize);
+  while(e.scrollWidth>e.clientWidth+1&&fs>24){fs-=1;e.style.fontSize=fs+'px';}
+}
+ajustarH1();
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(ajustarH1);
+window.addEventListener('resize',ajustarH1);
 })();
