@@ -20,29 +20,32 @@ window.MOTIVOS=[
   seoTitle:'Psicólogo para la ansiedad en Madrid y online · Symploké',
   seoDesc:'¿Tienes ansiedad y no sabes por qué? Ataques de ansiedad, estrés, miedos u obsesiones: te ayudamos a entender a qué responde. En Madrid u online.',
   h1:'Terapia para la ansiedad y el estrés',
+  revisada:true,   /* texto ya revisado: sin la marca «borrador» */
+  pagina:'ansiedad.html',   /* página fija con dirección limpia; motivo.html?m=ansiedad lleva a ella */
+  enfoqueDe:'de la ansiedad',
   k:'ansiedad estres nervios angustia no puedo parar de pensar estoy todo el dia pensando me obsesiono con las ideas tengo ansiedad y no se por que le doy vueltas a todo pienso demasiado ataque de ansiedad me falta el aire taquicardia panico agobio miedo fobia obsesiones psicosomatico trabajo laboral autocontrol burnout estres laboral estres postraumatico trauma',
   feel:['Tengo ansiedad y no sé por qué','No puedo parar de pensar','Estoy todo el día pensando','Me obsesiono con las ideas'],
   /* frases propias (2026-11-08); antes eran citas literales de Marino Pérez Álvarez, guardadas en citas-para-la-web.md */
   quotes:[
-    'Hablar de emociones “negativas” y “positivas” puede ser una visión demasiado simplista. Las emociones, en todo su espectro, pueden ser adaptativas y motivadoras para aprender de los errores y progresar',
+    'Dividir las emociones en “negativas” y “positivas” es una visión demasiado simplista. Las emociones, en todo su espectro, pueden ser adaptativas y útiles para orientarnos',
     'La ansiedad puede ser una señal de alerta ante una situación conflictiva sobre la cual tomar acción'
   ],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
-  basesIntro:'Sentir ansiedad es normal. La necesitamos para reaccionar ante lo que nos rodea: nos pone alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
+  basesIntro:'Sentir ansiedad es normal. La necesitamos para reaccionar ante lo que nos rodea: nos pone en alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
   bases:[
-    'Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. <strong>Los estudios en biología y neurología</strong> muestran que ese aviso llega muy deprisa, antes de que lo pensemos, y por eso a veces la ansiedad aparece «sin saber por qué». Es lo que se vive en un ataque de ansiedad o de pánico. Pero sería <strong>reduccionista</strong> instalarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas. '+V,
-    'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios psicológicos</strong> muestran que son intentos de controlar que alivian un momento y alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera. '+V,
-    'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Muchos estudios en sociología</strong> la suelen asociar a la precariedad, la prisa o la presión por rendir. Por eso incluimos aquí el <strong>estrés laboral o burnout</strong>. También puede ocurrir que, después de una experiencia muy dura, el cuerpo siga en alerta como si el peligro no hubiera pasado: es lo que llamamos <strong>estrés postraumático</strong>. '+V
+    'Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Por eso la ansiedad puede notarse como presión en el pecho, sensación de ahogo, mareo, nudo en el estómago, insomnio o irritabilidad. <strong>Los estudios de biología y neurología</strong> muestran que ese aviso llega muy deprisa, antes de que lo pensemos, y por eso a veces la ansiedad aparece «sin saber por qué». Es lo que se vive en un ataque de ansiedad o de pánico. Pero sería <strong>reduccionista</strong> instalarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
+    'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera.',
+    'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. Por eso incluimos aquí el <strong>estrés laboral o burnout</strong>. También puede ocurrir que, después de una experiencia muy dura, el cuerpo siga en alerta como si el peligro no hubiera pasado: es lo que se conoce como <strong>estrés postraumático</strong>.'
   ],
   faq:[
     ['¿Cuándo conviene ir al psicólogo por ansiedad?','Cuando dura semanas, te impide hacer cosas que antes hacías o aparece en forma de ataques que te asustan. No hace falta esperar a que sea grave.'],
     ['¿Cuántas sesiones hacen falta?','Depende de cada caso. En la primera cita valoramos juntos qué te pasa y te proponemos cómo trabajarlo.'],
-    ['¿La terapia online funciona igual?','Para la ansiedad, la terapia por videollamada logra progresos comparables a la presencial. '+V],
+    ['¿La terapia online funciona igual?','Para la ansiedad, la terapia por videollamada logra progresos comparables a la presencial.'],
     ['¿Hace falta tomar medicación?','En terapia psicológica no se recetan fármacos. Si ya tomas medicación o conviene valorarla, nos coordinamos con tu médico.']
   ],
-  together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, el dinero—, aunque al principio no se vea. Te ayudamos a entender estos motivos y a aclarar a qué situaciones responde y de qué te está alarmando, para que puedas manejarla mejor. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus situaciones, te ayuden a adaptarlas y te permitan progresar.',
+  together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, la pareja, los amigos, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué situaciones responde y de qué te está avisando, para que puedas relacionarte con ella de otra manera. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus situaciones, te ayuden a adaptarlas y te permitan progresar.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
-  intro:'Para entender la ansiedad hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso es importante entender que no hay una sola explicación: tenemos que tener en cuenta lo que aporta cada disciplina, sin que ninguna lo explique todo por sí sola, y tratar de entretejerlas.',
+  intro:'Para trabajar la ansiedad hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   science:'Se suele distinguir el miedo, ante un peligro presente, de la ansiedad, ante uno anticipado. Cuando se mantiene y limita la vida diaria, los manuales clínicos describen varios cuadros: ansiedad generalizada, pánico, ansiedad social o fobias, entre otros. Es uno de los motivos de consulta más frecuentes. '+V,
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Álvarez (2006), «La terapia de conducta de tercera generación»; (2008), «Hyperreflexivity as a condition of mental disorder»; (2012), «La psicología positiva: magia simpática»; (2019), «Diagnóstico más allá de los síntomas» */
   beyond:'Decir «tengo ansiedad» la convierte en una pieza averiada que llevamos dentro. Suele ser más útil verla como algo que hacemos —anticipar— y preguntarse hacia dónde: casi siempre tiene dirección postal (el trabajo, la familia, la pareja, el dinero). A veces la anticipación se vuelve sobre sí misma: vigilar cada latido, pensar en cómo estoy pensando. Y las ideas que parecen «irracionales» también tienen sus razones.',
@@ -50,7 +53,7 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
     ['Terapias contextualistas y ACT','Dejar de pelear con la ansiedad para volver a hacer lo que importa, aunque esté presente.','creciente'],
   ],
-  subs:['Ataques de ansiedad y pánico','Ansiedad social','Obsesiones y TOC','Miedos y fobias','Estrés laboral y burnout','Estrés postraumático','Ansiedad que se nota en el cuerpo'],
+  subs:['Ansiedad generalizada','Ataques de ansiedad y pánico','Agorafobia','Ansiedad social','Obsesiones y TOC','Miedos y fobias','Hipocondría o ansiedad por la salud','Estrés laboral y burnout','Estrés postraumático','Insomnio por ansiedad','Ansiedad que se nota en el cuerpo'],
   alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde'
 },
 {
@@ -468,6 +471,9 @@ window.creditLine=function(slug){if(window.ILUS&&ILUS[slug])return '';var f=FOTO
 
 window.motivoBySlug=function(s){for(var i=0;i<MOTIVOS.length;i++)if(MOTIVOS[i].slug===s)return MOTIVOS[i];return null;};
 
+/* dirección de la página de un motivo: la fija si la tiene (ansiedad.html) o motivo.html?m=slug */
+window.motivoUrl=function(m){return m.pagina||('motivo.html?m='+m.slug);};
+
 /* imagen de un motivo: la ilustración (ilustraciones.js) y, si no está cargada, la foto provisional */
 window.motivoArt=function(slug,uid,fill){
   if(!window.ILUS||!ILUS[slug])return '<img src="img/'+slug+'.jpg" alt="" loading="lazy">';
@@ -477,6 +483,6 @@ window.motivoArt=function(slug,uid,fill){
 
 /* recuadro de un motivo con su imagen: lo usan la portada y la página de motivos */
 window.motivoCard=function(m){
-  return '<a class="card mcard" href="motivo.html?m='+m.slug+'" data-k="'+m.k+'"><span class="mimg">'+motivoArt(m.slug,'c'+m.slug)+'</span><span class="mtxt"><h3>'+m.name+'</h3><p class="sym">«'+m.sym+'»</p><span class="ar" aria-hidden="true">→</span></span></a>';
+  return '<a class="card mcard" href="'+motivoUrl(m)+'" data-k="'+m.k+'"><span class="mimg">'+motivoArt(m.slug,'c'+m.slug)+'</span><span class="mtxt"><h3>'+m.name+'</h3><p class="sym">«'+m.sym+'»</p><span class="ar" aria-hidden="true">→</span></span></a>';
 };
 })();

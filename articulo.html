@@ -151,7 +151,7 @@ h+='</article>';
 
 h+='<section class="ask"><h2>¿Te reconoces?</h2><p>'+m.cta+' Empezamos con una valoración inicial, sin compromiso.</p>';
 h+='<div class="cta"><a class="btn primary" href="contacto.html">Pedir primera cita'+ARR+'</a></div>';
-h+='<a class="more" href="motivo.html?m='+m.slug+'">Ver la terapia de '+m.name.toLowerCase()+ARR+'</a></section>';
+h+='<a class="more" href="'+motivoUrl(m)+'">Ver la terapia de '+m.name.toLowerCase()+ARR+'</a></section>';
 
 var rel=[1,2,3].map(function(k){return MOTIVOS[(idx+k)%MOTIVOS.length];});
 h+='<section class="related"><h2>Sigue leyendo</h2><div class="grid">'+rel.map(function(r){
