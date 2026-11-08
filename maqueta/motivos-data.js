@@ -542,13 +542,17 @@ window.MOTIVOS=[
 {
   slug:'personalidad', name:'Trastornos de la personalidad', sym:'No me entiendo ni yo', delicate:true,
   h1:'Terapia para los trastornos de la personalidad',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'Terapia para el TLP y la personalidad en Madrid · Symploké',
+  seoDesc:'Emociones muy intensas, miedo al abandono, relaciones inestables o vacío: terapia para el TLP y los trastornos de la personalidad. En Madrid u online.',
+  pagina:'personalidad.html',   /* página fija; motivo.html?m=personalidad lleva a ella */
+  enfoqueDe:'de la personalidad',
   subs:['Trastorno límite de la personalidad (TLP)','Inestabilidad emocional','Miedo al abandono','Relaciones intensas e inestables','Impulsividad','Ira y explosiones emocionales',['Sensación de vacío','depresion'],'Rasgos obsesivos o perfeccionistas','Personalidad evitativa','Personalidad dependiente','Rasgos narcisistas'],
   /* preguntas frecuentes (2026-11-08) */
   faq:[
     ['¿Qué es un trastorno de la personalidad?','Es el nombre que se da a formas de sentir, pensar y relacionarse muy estables que hacen sufrir a la persona o a quienes la rodean, y que se repiten en distintos ámbitos. Desde 2022, la clasificación de la OMS (CIE-11) los describe por grados de gravedad más que por tipos cerrados.'],
-    ['¿Qué es el trastorno límite de la personalidad (TLP)?','Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan.'],
+    ['¿Qué es el trastorno límite de la personalidad (TLP)?','Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan, como la terapia dialéctico-conductual.'],
     ['¿La personalidad se puede cambiar?','Los rasgos de fondo cambian despacio, pero la manera de manejar las emociones y de relacionarse sí puede cambiar mucho con terapia. No prometemos plazos: suele ser un proceso largo.'],
-    ['¿Qué hago si hay autolesiones o ideas de suicidio?','Pide ayuda: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia. En terapia nos coordinamos con psiquiatría cuando hace falta.'],
+    ['¿Qué hago si hay autolesiones o ideas de suicidio?','Pide ayuda cuanto antes: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia.'],
     ['¿Puede participar mi familia?','Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.']
   ],
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
@@ -556,27 +560,28 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases propias de la consulta, a partir de ideas de Marino Pérez Álvarez (ver referencias y citas-para-la-web.md) */
   quotes:[
-    'Nadie nace siendo ya la persona que es',
-    'Lo aprendido se puede revisar y cambiar',
-    'Saber quién eres y qué quieres sostener en tu vida'
+    '',   /* tras biología: sin frase (la primera va arriba, en la entrada) */
+    'Nadie está totalmente predeterminado: seguimos haciéndonos toda la vida',   /* tras neurología */
+    'Vivir la vida de forma muy intensa no tiene por qué ser un problema'   /* tras psicología */
   ],
   basesIntro:[
-    'Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser, y solo se entiende desde esa persona.',
-    'La forma de ser no viene dada de nacimiento. Nadie nace siendo ya la persona que es: nos vamos haciendo con los demás y con lo que vivimos. Por eso también se puede trabajar.',
-    'Como casi todo lo que nos pasa, es <strong>multicausal</strong>: no hay una sola explicación. Por eso nuestro enfoque es <strong>pluralista</strong>: tenemos en cuenta lo que aportan distintas disciplinas y nos quedamos con lo mejor de cada una, sin que ninguna lo explique todo por sí sola.'
+    'Usamos «trastorno de la personalidad» porque es como se busca y se diagnostica, aunque preferimos hablar de formas de ser muy marcadas —inestables, evitativas, dependientes, perfeccionistas o muy centradas en uno mismo— que hacen sufrir. Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser, y solo se entiende desde esa persona.',
+    'Nos vamos haciendo con los demás y con lo que vivimos. Por eso también se puede trabajar.',
+    {voz:'Nadie nace siendo la persona que es hoy'},   /* frase verde dentro de la entrada */
+    'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, sus relaciones y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida. '+V,
-    '<strong>Los estudios de neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre. '+V,
-    '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, no defectos de fábrica. Las relaciones que se repiten y nos hacen daño suelen ser formas aprendidas de protegernos. Y lo aprendido se puede revisar y cambiar. '+V,
-    '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos una sensación de vacío. Si te sientes lleno de cosas y a la vez vacío, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida. '+V
+    '<strong>Los estudios de biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida.',
+    '<strong>Los estudios de neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre.',
+    '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, más que «defectos de fábrica». Las relaciones que se repiten y nos hacen daño suelen ser estrategias aprendidas para protegernos. Y lo aprendido se puede revisar y cambiar. En el trastorno límite (TLP), por ejemplo, aprender a regular la ira o el miedo al abandono cambia mucho el día a día.',
+    '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos una sensación de vacío. Si te reconoces en esa sensación, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
   ],
-  together:'No hay un yo de verdad escondido dentro y distinto de lo que hacemos: somos también lo que hacemos y cómo tratamos a los demás. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
+  together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, lo que hemos hecho, cómo nos relacionamos con los demás y nuestros contextos. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
   intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.» */
-  science:'Los manuales describen varios tipos, pero la clasificación por categorías está en revisión y las propuestas recientes van hacia dimensiones. '+V,
-  refs:'García Montes y Pérez Álvarez (2003), «Reivindicación de la persona en la esquizofrenia»; Pérez Álvarez (2001), «Psicoterapia de la postmodernidad»; (2003), «The Schizoid Personality of Our Time»; (2015), «Reflexividad, escritura y génesis del sujeto moderno». '+v('referencias completas'),
+  science:'Los manuales describen varios tipos, pero la clasificación por categorías está en revisión y las propuestas recientes van hacia dimensiones.',
+  refs:'',   /* retiradas el 2026-11-08 a petición del usuario (no hay citas textuales); eran: García Montes y Pérez Álvarez (2003); Pérez Álvarez (2001), (2003) y (2015) */
   beyond:'La personalidad no es una esencia fija: es un patrón aprendido en una historia concreta, y los patrones pueden cambiar. No usamos siglas como etiqueta de nadie.',
   approaches:[
     ['Dialéctico-conductual','Regular emociones intensas y reducir conductas de riesgo.','buena en desregulación emocional'],
