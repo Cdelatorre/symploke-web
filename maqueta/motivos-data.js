@@ -80,7 +80,7 @@ window.MOTIVOS=[
     ['¿La terapia online funciona igual?','Para la ansiedad, la terapia online logra progresos comparables a la presencial.'],
     ['¿Hace falta tomar medicación?','En terapia psicológica no se recetan fármacos. Si ya tomas medicación o conviene valorarla, nos coordinamos con tu médico.'],
     ['¿La ansiedad y la depresión van juntas?','A menudo sí: cuando la ansiedad dura mucho, puede acabar en desgana, aislamiento y tristeza. Cuando aparecen las dos, las trabajamos a la vez.'],   /* añadida 2026-11-09 («ansiedad y depresión» se busca mucho) */
-    ['¿Puedo pedir la baja por ansiedad?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la ansiedad tiene que ver con un conflicto laboral o con acoso, también podemos valorarlo desde la psicología forense y elaborar un informe pericial.'],   /* 6.4 B, elegida 2026-11-09: aprovechar que Daniel es psicólogo forense */
+    ['¿Puedo pedir la baja por ansiedad?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la ansiedad tiene que ver con un conflicto laboral o con acoso y hace falta un informe pericial, podemos hacerlo desde la psicología forense, con un profesional distinto de tu terapeuta, para que sea imparcial.'],   /* 6.4 B, elegida 2026-11-09: aprovechar que Daniel es psicólogo forense */
     ['¿Atendéis la ansiedad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los amigos, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué situaciones responde y de qué te está avisando, para que puedas relacionarte con ella de otra manera. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus esferas vitales y te permitan avanzar.',
@@ -175,7 +175,7 @@ window.MOTIVOS=[
     ['¿Hace falta tomar antidepresivos?','En terapia psicológica no se recetan fármacos. Las guías clínicas recomiendan la psicoterapia como primera opción en la depresión leve o moderada y, en la más grave, combinada con medicación. Si ya tomas antidepresivos o conviene valorarlos, nos coordinamos con tu médico o psiquiatra.'],
     ['¿La terapia online funciona para la depresión?','Sí. La terapia online logra resultados comparables a la presencial, y a veces facilita empezar cuando cuesta salir de casa.'],
     ['¿Puedo dejar los antidepresivos?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico o psiquiatra, porque dejarlos bruscamente puede provocar síntomas de retirada. La terapia psicológica puede acompañarte durante ese proceso, y trabajar lo que te llevó a la depresión ayuda a que el cambio se sostenga.'],
-    ['¿Puedo pedir la baja por depresión?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la depresión tiene que ver con un conflicto laboral o con acoso, también podemos valorarlo desde la psicología forense y elaborar un informe pericial.'],
+    ['¿Puedo pedir la baja por depresión?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la depresión tiene que ver con un conflicto laboral o con acoso y hace falta un informe pericial, podemos hacerlo desde la psicología forense, con un profesional distinto de tu terapeuta, para que sea imparcial.'],
     ['¿Cómo ayudar a alguien con depresión?','Escúchale sin juzgar y sin dar consejos rápidos; evita el «anímate», que suele hacer sentir peor. Proponle cosas pequeñas para hacer juntos y anímale a pedir ayuda profesional. Si habla de morir o de hacerse daño, llamad al <strong>024</strong>. Y cuídate también tú: acompañar desgasta.'],
     ['¿Atendéis la depresión cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
@@ -214,7 +214,7 @@ window.MOTIVOS=[
     ['Insomnio de conciliación','Te acuestas y no llega el sueño: pasan los minutos, empiezas a pensar y, cuanto más lo intentas, más despierto estás.','conciliacion'],
     ['Despertares nocturnos','Te duermes, pero te despiertas varias veces durante la noche y te cuesta volver a dormirte.','despertares'],
     ['Despertarse de madrugada','Te despiertas a las 4 o a las 5 y ya no vuelves a dormirte. A menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
-    ['Sueño no reparador','Duermes horas, pero te levantas igual de cansado. No basta con dormir: el sueño tiene que llegar a ser reparador.','noreparador'],
+    ['Sueño no reparador','Duermes horas, pero te levantas igual de cansado. No basta con dormir: el sueño tiene que llegar a ser reparador. Si además roncas, alguien nota pausas en tu respiración o te duermes de día, consulta a tu médico: puede ser apnea del sueño.','noreparador'],
     ['Insomnio crónico','Se habla de él cuando duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
     ['Pesadillas','Sueños que despiertan con angustia. Son frecuentes después de experiencias muy duras, como ocurre en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
     ['Insomnio en la menopausia','Los sofocos, los sudores nocturnos y los cambios hormonales interrumpen el sueño. También aquí la terapia ayuda a dormir mejor.','menopausia'],
@@ -246,7 +246,7 @@ window.MOTIVOS=[
     ['¿Se cura el insomnio?','En muchos casos mejora con terapia psicológica, que es lo que recomiendan las guías clínicas. Cada proceso es distinto; no prometemos plazos, pero sí trabajar contigo para que vuelvas a dormir sin pelearte con la noche.'],
     ['¿Cuántas sesiones hacen falta?','La terapia cognitivo-conductual para el insomnio suele necesitar pocas sesiones, a menudo entre 4 y 8. Cada caso es distinto: en la primera entrevista te damos una idea orientativa y la revisamos sobre la marcha.'],
     ['¿Las pastillas para dormir solucionan el insomnio?','En terapia psicológica no se recetan fármacos. Los somníferos pueden ayudar de forma puntual, pero las guías clínicas no los recomiendan como solución a largo plazo, entre otras cosas por el riesgo de <a href="adicciones.html">dependencia</a>. Si los tomas o quieres dejarlos, nos coordinamos con tu médico.'],
-    ['¿Puedo dejar las pastillas para dormir?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico, porque dejarlas bruscamente puede empeorar el sueño durante un tiempo. La terapia cognitivo-conductual para el insomnio ayuda a dejarlas sin perder el sueño.'],
+    ['¿Puedo dejar las pastillas para dormir?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico, porque dejarlas bruscamente puede empeorar el sueño y causar síntomas de abstinencia. La terapia cognitivo-conductual para el insomnio facilita dejarlas y reduce el riesgo de que el insomnio vuelva.'],
     ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.'],
     ['¿Tratáis el insomnio cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
@@ -267,7 +267,7 @@ window.MOTIVOS=[
     'Como casi todo lo que nos pasa, el insomnio es <strong>multicausal</strong>. Por lo tanto, nuestro enfoque es <strong>pluralista</strong>: nos quedamos con lo mejor de cada disciplina, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan, y otras cosas, como la menopausia o las pesadillas, interrumpen el sueño. Además, no basta con dormir horas: el sueño profundo es el más reparador para el cuerpo, y durante la fase REM se consolidan los recuerdos y se procesan las emociones.',
+    '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan, y otras cosas, como la menopausia o las pesadillas, interrumpen el sueño. Además, no basta con dormir horas: el sueño profundo es el más reparador para el cuerpo y ayuda a consolidar los recuerdos, y durante la fase REM se procesan las emociones.',
     'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso el cansancio, por sí solo, no garantiza dormir.',
     'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección. Sus piezas principales son el <strong>control de estímulos</strong> —usar la cama solo para dormir y levantarse si el sueño no llega— y ajustar el tiempo que pasamos en la cama. La <strong>higiene del sueño</strong> —horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde— la acompaña, aunque por sí sola suele quedarse corta.',
     'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios recortan el sueño de mucha gente.'
@@ -290,6 +290,7 @@ window.MOTIVOS=[
 },
 {
   slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
+  alert:'Si hay desmayos, dolor en el pecho o vómitos muy frecuentes, acude a urgencias o llama al <strong>112</strong>. Si piensas en hacerte daño, llama al <strong>024</strong>.',   /* revisión 2026-11-09, punto 5B */
   h1:'Terapia para los problemas de alimentación',   /* encabezado a todo el ancho, en una línea */
   revisada:true,   /* sin la marca «borrador» */
   seoTitle:'Psicólogo para TCA, anorexia y bulimia en Madrid y online',
@@ -337,7 +338,7 @@ window.MOTIVOS=[
     ['¿Qué es un atracón?','Comer en poco tiempo una cantidad grande de comida con la sensación de no poder parar, y sentir después culpa o vergüenza. Si se repite, no basta con intentar aguantar: suele cumplir una función, como aliviar el malestar, y eso se puede trabajar.'],
     ['¿Cómo dejar de comer por ansiedad?','Prohibirse comer suele empeorarlo. Ayuda más comer con regularidad, sin saltarse comidas; entender qué malestar intentas calmar y buscar otras formas de atenderlo. Si la <a href="ansiedad.html">ansiedad</a> está detrás, la trabajamos a la vez.'],
     ['¿Se puede superar un trastorno de la conducta alimentaria?','Es posible, aunque suele llevar tiempo. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para que la comida deje de ocupar el centro de tu vida y puedas relacionarte con ella sin miedo ni culpa.'],
-    ['¿Cómo ayudar a alguien con un TCA?','Habla desde la preocupación, sin juicios sobre su peso ni su cuerpo; evita vigilar cada comida y anímale a pedir ayuda profesional. Si notas pérdida de peso importante, desmayos o vómitos frecuentes, hace falta una valoración médica cuanto antes.'],
+    ['¿Cómo ayudar a alguien con un TCA?','Habla desde la preocupación, sin juicios sobre su peso ni su cuerpo; evita los comentarios sobre lo que come y anímale a pedir ayuda profesional. Si es menor, la familia tiene un papel en el tratamiento y os orientaremos sobre cómo acompañar las comidas. Si notas pérdida de peso importante, desmayos o vómitos frecuentes, hace falta una valoración médica cuanto antes.'],
     ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con ellos cuando hace falta.'],
     ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.'],
     ['¿Tratáis los TCA cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
@@ -429,7 +430,7 @@ window.MOTIVOS=[
     ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudaros a tomar la decisión con calma y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
     ['¿Cuántas sesiones hacen falta?','Depende de cada pareja. Empezamos con sesiones semanales de 60 minutos y, cuando notáis avances, las espaciamos. En la primera entrevista os damos una idea orientativa y la revisamos sobre la marcha.'],
     ['¿Cuánto cuesta la terapia de pareja?','La primera entrevista es gratuita. El precio de las sesiones te lo contamos cuando nos llames o nos escribas.'],   /* sin cifra: el usuario prefiere que llamen y pregunten */
-    ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si la sufres, puedes llamar al <strong>016</strong>, gratuito y confidencial, y en una urgencia, al <strong>112</strong>.'],
+    ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si sufres violencia de género, puedes llamar al <strong>016</strong> o escribir por WhatsApp al <strong>600 000 016</strong>: es gratuito, confidencial y no deja rastro en la factura. En cualquier caso, en una urgencia, llama al <strong>112</strong>.'],
     ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.'],
     ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>, incluso desde sitios distintos.']
   ],
@@ -514,9 +515,9 @@ window.MOTIVOS=[
     ['¿Cómo saber si tengo TDAH?','Despistarse o aplazar tareas de vez en cuando es normal. Se habla de TDAH cuando las dificultades de atención, inquietud o impulsividad vienen de la infancia, se mantienen y afectan a los estudios, al trabajo o a las relaciones. Un cuestionario en internet no basta: hace falta una valoración profesional.'],
     ['¿Cómo se diagnostica el TDAH en adultos?','Con una valoración clínica: una entrevista sobre tu historia desde la infancia, cuestionarios y, si es posible, lo que cuentan personas cercanas. No hay un análisis ni una prueba de imagen que lo detecte. Lo hacemos con calma y sin prisa por poner una etiqueta.'],
     ['¿Existe el TDAH en adultos?','Sí. A veces se descubre después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
-    ['¿Es TDAH o es ansiedad?','La <a href="ansiedad.html">ansiedad</a> también dispersa la atención: cuando hay preocupación, cuesta concentrarse. La diferencia es que en el TDAH las dificultades vienen de la infancia y aparecen en casi todos los ámbitos. A veces se dan las dos.'],
-    ['¿El TDAH se quita con la edad?','Muchas dificultades cambian con los años: la hiperactividad suele convertirse en inquietud, y con ayuda se aprende a organizarse. Más que quitarse, se aprende a vivir con ese ritmo.'],
-    ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento de la familia. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
+    ['¿Es TDAH o es ansiedad?','La <a href="ansiedad.html">ansiedad</a> también dispersa la atención: cuando hay preocupación, cuesta concentrarse. La diferencia es que en el TDAH las dificultades vienen de la infancia y aparecen en varios ámbitos (casa, estudios, trabajo). A veces se dan las dos.'],
+    ['¿El TDAH se quita con la edad?','En muchas personas las dificultades disminuyen con los años; en otras siguen, aunque cambian de forma: la hiperactividad suele convertirse en inquietud. Con ayuda se aprende a organizarse.'],
+    ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento por escrito de quienes tienen la patria potestad y, desde los 16 años, el del propio adolescente. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
     ['¿Hace falta medicación para el TDAH?','En terapia psicológica no se recetan fármacos. En algunos casos la medicación ayuda, y esa valoración corresponde a psiquiatría o neurología. Si la tomas o se está valorando, nos coordinamos con quien la lleve.'],
     ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.'],
     ['¿Atendéis el TDAH en adultos cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
@@ -609,7 +610,7 @@ window.MOTIVOS=[
     ['¿Cómo reducir el uso del móvil?','Más que fuerza de voluntad, ayuda cambiar las condiciones: quitar notificaciones, dejar el móvil fuera del dormitorio, fijar momentos sin pantalla y recuperar actividades que te llenen. Si aun así no puedes, lo trabajamos contigo.'],
     ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo. Si hay caídas —lo que mucha gente llama recaídas—, también se trabajan. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
     ['¿Qué pasa si tengo una recaída?','Una caída no es una recaída, y no borra el camino recorrido: forma parte del proceso y también se aprende de ella. Lo importante es pedir ayuda pronto y ver qué la provocó.','recaidas'],
-    ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Nos coordinamos con medicina y con los servicios especializados.'],
+    ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Lo mismo vale para las pastillas para dormir o los tranquilizantes: se dejan poco a poco y con pauta médica. Nos coordinamos con medicina y con los servicios especializados.'],
     ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.','familiares'],
     ['¿Tratáis las adicciones cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
@@ -631,9 +632,9 @@ window.MOTIVOS=[
     'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
   bases:[
-    '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol o ciertas <a href="insomnio.html">pastillas para dormir</a>, crean dependencia física: el cuerpo se acostumbra y, cuando faltan, protesta. Es lo que se conoce como <strong>síndrome de abstinencia</strong>, así que a veces hace falta acompañamiento médico. Otras, como el cannabis o la cocaína, enganchan sobre todo por lo que alivian o prometen.',
+    '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol o ciertas <a href="insomnio.html">pastillas para dormir</a>, crean dependencia física: el cuerpo se acostumbra y, cuando faltan, protesta. Es lo que se conoce como <strong>síndrome de abstinencia</strong>, así que a veces hace falta acompañamiento médico. Otras, como el cannabis o la cocaína, enganchan sobre todo por lo que alivian o prometen, aunque al dejarlas también puede haber malestar físico.',
     '<strong>Los estudios de neurología</strong> muestran que el consumo, el juego, las compras compulsivas o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, en qué momentos aparece y qué lo mantiene.',
-    'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <a href="ansiedad.html">ansiedad</a>: muchas veces caemos en ellas buscando justo eso, y funciona a corto plazo, pero a la larga lo empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y lo trabajamos contigo.',
+    'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <a href="ansiedad.html">ansiedad</a>: muchas veces caemos en ellas buscando calmarla, y funciona a corto plazo, pero a la larga la empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y lo trabajamos contigo.',
     '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, pero no son la única causa: hay que mirar también la vida que se lleva. Consultar el móvil se ha vuelto una respuesta casi automática. Podríamos decir que no lo decidimos del todo y que no somos del todo libres en la relación que tenemos con estas tecnologías. Si el móvil se ha convertido en lo primero y lo último de tu día, le pasa a mucha gente, y podemos acompañarte para que vuelva a ser una herramienta y no el centro de tu vida.'
   ],
   together:'La capacidad de elegir no nace de dentro: la construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
@@ -733,6 +734,7 @@ window.MOTIVOS=[
 },
 {
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
+  alert:'Si tienes pensamientos de muerte o de hacerte daño, llama al <strong>024</strong>. En una urgencia, al <strong>112</strong>.',   /* revisión 2026-11-09, punto 5B */
   h1:'Terapia de duelo',   /* encabezado a todo el ancho, en una línea */
   seoTitle:'Terapia de duelo y duelo perinatal en Madrid y online',
   seoDesc:'Psicólogo para el duelo: muerte de un ser querido, duelo perinatal, por una mascota o una ruptura. Te acompañamos. Centro sanitario en Madrid y online.',
@@ -769,7 +771,7 @@ window.MOTIVOS=[
   /* preguntas frecuentes (2026-11-08); 2026-11-09: 3 nuevas (6.1A fases, 6.2A no llorar, 6.3 local), en desplegables */
   faqDesplegable:true,
   faq:[
-    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, sigues sin poder retomar tu día a día, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno.'],
+    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, sigues sin poder retomar tu día a día, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno. Y no hace falta esperar si, desde el principio, el dolor te impide funcionar, te faltan apoyos o tienes pensamientos de morir; en ese caso, llama al <strong>024</strong>.'],
     ['¿Cuánto dura un duelo?','No hay un plazo fijo. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que lo ocupa todo.'],
     ['¿Cuáles son las fases del duelo?','Se habla mucho de cinco fases: negación, ira, negociación, tristeza y aceptación. Pero la investigación no ha confirmado que el duelo siga ese orden: cada persona lo vive a su manera, y es normal ir y volver.'],
     ['¿Cómo superar la muerte de un padre o una madre?','Más que superarla, se trata de aprender a vivir con su ausencia. No conseguir superar la muerte de tu madre o echar de menos a tu padre cada día es frecuente, sobre todo los primeros meses. Ayuda poder hablar de ello, mantener algún ritual que te una a esa persona y pedir acompañamiento si el dolor no te deja vivir.','padres'],
@@ -786,7 +788,7 @@ window.MOTIVOS=[
   /* frases propias de la consulta, a partir de ideas de Bueno (la muerte llega cuando la persona está implicada en planes que no la contemplan,
      Diccionario de García Sierra, entrada 502), Pérez Jara («Meditatio mortis», 2016: «ya nunca más…») y Pérez Álvarez (2007: las pérdidas como inicio de la depresión) */
   quotes:[
-    'Atender a tiempo una pérdida —hablarla, compartirla, pedir ayuda si hace falta— ayuda a que el duelo no se complique',   /* tras biología */
+    'Atender una pérdida —hablarla, compartirla, pedir ayuda cuando pesa demasiado— ayuda a no vivirla a solas',   /* tras biología */
     '',   /* tras neurología: sin frase */
     'La culpa y los “ojalá hubiera…” forman parte del duelo, y también se pueden hablar'   /* tras psicología */
   ],
@@ -859,8 +861,9 @@ window.MOTIVOS=[
     ['¿A partir de qué edad atendéis?','Atendemos a niños, niñas y adolescentes de 6 a 17 años. A partir de los 18, ya en la terapia de adultos.'],
     ['¿Cómo es la primera cita?','La primera cita es con la madre, el padre o los tutores, sin el menor. Nos contáis qué pasa y decidimos juntos cómo seguir.'],
     ['Mi hijo adolescente no quiere hacer nada. ¿Es normal?','En parte, sí: la adolescencia trae cansancio, cambios de sueño y ganas de distancia. Conviene consultarlo si dura semanas, si deja también a los amigos o lo que antes le gustaba, o si notáis tristeza o aislamiento.'],
-    ['¿Qué hago si mi hijo sufre acoso escolar?','Escúchale, créele y no le quites importancia. Comunicadlo al colegio: los centros tienen la obligación de activar su protocolo contra el acoso. Podéis llamar también a la Fundación ANAR (<strong>900 20 20 10</strong>), gratuita y abierta las 24 horas. Y si hay peligro, al <strong>112</strong>.'],
-    ['¿Hace falta el consentimiento de los dos progenitores?','En general se pide por escrito el consentimiento de quienes tienen la patria potestad. Si hay separación o desacuerdo, lo vemos en la primera cita.'],
+    ['¿Qué hago si mi hijo sufre acoso escolar?','Escúchale, créele y no le quites importancia. Comunicadlo al colegio: los centros tienen la obligación de activar su protocolo contra el acoso. Vosotros podéis llamar a la línea ANAR para familias (<strong>600 50 51 52</strong>), y vuestro hijo o hija a la suya (<strong>900 20 20 10</strong>); las dos son gratuitas. Y si hay peligro, al <strong>112</strong>.'],
+    ['¿Qué hacemos si nuestro hijo habla de hacerse daño?','Tomadlo en serio y no le dejéis solo. Hablad con calma, sin juzgar, y pedid ayuda pronto. El <strong>024</strong> atiende las 24 horas, y también podéis llamar a la línea ANAR para familias (<strong>600 50 51 52</strong>). Si hay peligro inmediato, llamad al <strong>112</strong>.'],
+    ['¿Hace falta el consentimiento de los dos progenitores?','Pedimos por escrito el consentimiento de quienes tienen la patria potestad y, desde los 16 años, el del propio adolescente. Si hay separación o desacuerdo, os explicamos en la primera cita cómo hacerlo.'],
     ['¿Trabajáis también con los padres?','Sí. Trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
     ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.'],
     ['¿Hay psicólogo infantil cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, con adolescentes hacemos también la <a href="online.html">terapia online</a>.']
@@ -931,7 +934,7 @@ window.MOTIVOS=[
     ['Revisar y avanzar.','Es un proceso que lleva su tiempo: vemos juntos cómo vas y avanzamos paso a paso.']
   ]},
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
-    ['Terapia dialéctico-conductual','Es la que más respaldo tiene en el TLP: regular emociones intensas, tolerar el malestar sin hacerse daño y mejorar las relaciones.'],
+    ['Terapia basada en la dialéctico-conductual','Es el enfoque con más respaldo en el TLP. Usamos sus herramientas para regular emociones intensas, tolerar el malestar sin hacerse daño y mejorar las relaciones.'],
     ['Terapia de aceptación y compromiso (ACT)','Hacer sitio a lo que sientes sin que decida por ti, y moverte hacia lo que te importa. La usamos como complemento.'],
     ['Tu contexto','Las técnicas solas no bastan: trabajamos también tu historia, tus relaciones y los entornos en los que te mueves.']
   ]},
@@ -1015,7 +1018,7 @@ window.MOTIVOS=[
   ]},
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
     ['Terapia sexual cognitivo-conductual','Ejercicios graduales y trabajo con la ansiedad de ejecución y las ideas que la alimentan.'],
-    ['Atención plena','Atender al cuerpo y a las sensaciones sin presión por el resultado. Tiene buenos estudios, sobre todo en la falta de deseo.'],
+    ['Atención plena','Atender al cuerpo y a las sensaciones sin presión por el resultado. Hay estudios prometedores, sobre todo en la falta de deseo en mujeres.'],
     ['Terapia de pareja','Cuando la dificultad es de los dos, la trabajamos juntos, como en la <a href="pareja.html">terapia de pareja</a>.'],
     ['Tu contexto','Las técnicas solas no bastan: trabajamos también el estrés, la crianza, la relación y los modelos de sexualidad que nos rodean.']
   ]},
@@ -1026,6 +1029,7 @@ window.MOTIVOS=[
   faq:[
     ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. No hace falta esperar a que sea grave.'],
     ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.','deseo'],
+    ['¿Y si ha habido abuso o violencia?','La terapia puede ayudarte, y no estás sola. El <strong>016</strong> atiende las 24 horas, es gratuito y no deja rastro en la factura; en una urgencia, llama al <strong>112</strong>.'],
     ['¿La disfunción eréctil es psicológica?','Puede ser física, psicológica o las dos cosas a la vez. Una pista: si hay erecciones por la mañana o en la masturbación, suele pesar más lo psicológico. En cualquier caso, conviene una revisión médica.'],
     ['¿Cómo se trata la eyaculación precoz?','Con ejercicios graduales para ganar control, trabajando la ansiedad y, si es posible, con la pareja. Si hace falta, nos coordinamos con urología.'],
     ['¿Es normal que el deseo cambie con los años?','Sí. El deseo cambia con la edad, el estrés, la crianza o la relación, y no siempre al mismo ritmo en los dos. Que cambie no es un problema; lo es cuando te hace sufrir a ti o a tu pareja.'],
