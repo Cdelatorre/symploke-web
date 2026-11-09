@@ -139,7 +139,7 @@ window.MOTIVOS=[
     ['Distimia o tristeza que dura años','Un ánimo bajo menos intenso, pero que se mantiene durante años, hasta el punto de confundirse con «mi forma de ser».','distimia'],
     ['Ansiedad y depresión','A menudo van juntas: la <a href="ansiedad.html">ansiedad</a> mantenida desgasta y acaba en desánimo. Cuando aparecen las dos, las trabajamos a la vez.','ansiedad'],
     ['Apatía y anhedonia','No disfrutar de lo que antes te gustaba, a veces sin sentirte triste: «no tengo ganas de nada, pero no estoy triste».','apatia'],
-    ['Sensación de vacío','Sentir que nada llena, como si faltara algo por dentro, aunque desde fuera todo parezca en orden.','vacio'],
+    ['Sensación de vacío','Sentir que nada llena, como si faltara algo por dentro, aunque desde fuera todo parezca en orden. Cuando acompaña a emociones muy cambiantes, puede tener que ver también con <a href="personalidad.html">la personalidad</a>.','vacio'],
     ['Soledad no deseada','Cuando faltan vínculos o los que hay no sostienen. Es uno de los factores que más pesan en el ánimo.','soledad'],
     ['Crisis existencial','Preguntas sobre el sentido de lo que hacemos, a menudo tras un cambio vital: una edad, un trabajo, una pérdida.','existencial'],
     ['Depresión posparto','Aparece en el embarazo o en los meses tras el parto, y también puede afectar a la otra persona de la pareja. No es lo mismo que la tristeza pasajera de los primeros días.','posparto'],
@@ -297,14 +297,50 @@ window.MOTIVOS=[
   pagina:'alimentacion.html',   /* página fija; motivo.html?m=alimentacion lleva a ella */
   enfoqueDe:'de los problemas de alimentación',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
-  subs:['Atracones','Bulimia','Anorexia',['Comer por ansiedad','ansiedad'],'Hambre emocional','Obsesión por el peso o la figura',['Insatisfacción con el cuerpo','autoestima'],'Dietas restrictivas','Culpa después de comer','Ejercicio compulsivo','Ortorexia: obsesión por comer sano','Vigorexia','Trastornos de la conducta alimentaria (TCA)',['Problemas con la comida en adolescentes','infancia']],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (tipos o la pregunta «¿Qué es un TCA?»); ansiedad, cuerpo y adolescentes llevan a su terapia */
+  subs:[['Atracones','#atracones'],['Bulimia','#bulimia'],['Anorexia','#anorexia'],['Comer por ansiedad','ansiedad'],['Hambre emocional','#hambre'],['Obsesión por el peso o la figura','#peso'],['Insatisfacción con el cuerpo','autoestima'],['Dietas restrictivas','#dietas'],['Culpa después de comer','#culpa'],['Ejercicio compulsivo','#ejercicio'],['Ortorexia: obsesión por comer sano','#ortorexia'],['Vigorexia','#vigorexia'],['Trastornos de la conducta alimentaria (TCA)','#tca'],['Problemas con la comida en adolescentes','infancia']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2 único, 3B —TCC como base, también con familias, ACT complemento—, 4 con el aviso de riesgo físico, 5 como en las demás) */
+  tipos:{titulo:'Tipos de TCA y problemas con la comida',
+    intro:'Los manuales clínicos distinguen varios trastornos de la conducta alimentaria, y hay otros problemas con la comida que no encajan en ninguno pero también hacen sufrir. A menudo se mezclan o pasan de uno a otro.',
+    items:[
+    ['Atracones','Comer en poco tiempo mucha cantidad, con la sensación de no poder parar, y después culpa o vergüenza. Cuando se repite sin compensar, se habla de trastorno por atracón.','atracones'],
+    ['Bulimia','Atracones seguidos de compensaciones (vomitar, ayunar, hacer ejercicio en exceso o tomar laxantes) para contrarrestar lo comido. Suele vivirse en secreto.','bulimia'],
+    ['Anorexia','Restringir mucho la comida por miedo intenso a engordar, con una imagen del cuerpo que no coincide con lo que ven los demás. Puede tener consecuencias médicas graves, por eso siempre la trabajamos junto a medicina.','anorexia'],
+    ['Hambre emocional','Comer para calmar el malestar, el aburrimiento o la tristeza, más que por hambre. Alivia un rato, pero no resuelve lo que preocupa.','hambre'],
+    ['Obsesión por el peso o la figura','Pesarse a diario, mirarse una y otra vez, comparar el cuerpo: el peso decide cómo va el día.','peso'],
+    ['Dietas restrictivas','Dieta tras dieta, prohibiciones y reglas rígidas que aumentan el hambre y suelen acabar en atracones.','dietas'],
+    ['Culpa después de comer','Sentirte mal, castigarte o prometerte compensar después de comer, aunque hayas comido con normalidad.','culpa'],
+    ['Ejercicio compulsivo','Hacer ejercicio para compensar lo comido, sentir angustia si no puedes entrenar o seguir aunque haya dolor o una lesión.','ejercicio'],
+    ['Ortorexia','Obsesión por comer «sano» o «limpio» que va dejando fuera alimentos, situaciones y personas.','ortorexia'],
+    ['Vigorexia','Preocupación constante por no ser lo bastante musculado, con entrenamiento, dietas y a veces sustancias. Cada vez más frecuente en hombres jóvenes.','vigorexia']
+  ]},
+  proceso:{titulo:'Cómo trabajamos los problemas de alimentación', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender qué función cumple la comida.','Qué alivia, qué intenta controlar y cuándo aparece, en tu vida concreta.'],
+    ['Regularizar y trabajar la culpa y el cuerpo.','Volver a comer con regularidad, sin prohibiciones, y relacionarte de otra manera con tu cuerpo. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con medicina y nutrición.','Si hay pérdida de peso, vómitos o mareos, o tomas medicación, trabajamos junto a tu médico, tu psiquiatra o tu nutricionista.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando la comida vuelve a su sitio, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual','Es la base del tratamiento y la que tiene más respaldo, sobre todo en la bulimia y los atracones: regularizar la alimentación y trabajar las ideas sobre el peso y la figura.'],
+    ['Trabajo con la familia','Con adolescentes, la familia es parte activa del tratamiento: aprende a acompañar las comidas y a sostener los cambios en casa.'],
+    ['Terapia de aceptación y compromiso (ACT)','Relacionarte de otra manera con el cuerpo y con los pensamientos sobre él. La usamos como complemento.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también la exigencia, las redes, la familia y los mensajes sobre el cuerpo que te rodean.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1A qué es un TCA, 6.2A comer por ansiedad, 6.3A cómo ayudar, 6.4 local; el usuario no dictó las letras de 6.1-6.3: se pusieron mis recomendaciones), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cuándo conviene ir al psicólogo por problemas con la comida?','Cuando la comida, el peso o la figura ocupan buena parte de tus pensamientos, hay atracones, restricciones o vómitos, o la culpa después de comer te condiciona el día. Cuanto antes se pida ayuda, mejor.'],
+    ['¿Qué es un TCA?','Son las siglas de trastorno de la conducta alimentaria: anorexia, bulimia, trastorno por atracón y otros. La sigla ayuda a ponerle nombre y a buscar ayuda, pero no explica a nadie: detrás hay una persona y una historia.','tca'],
     ['¿Qué es un atracón?','Comer en poco tiempo una cantidad grande de comida con la sensación de no poder parar, y sentir después culpa o vergüenza. Si se repite, no basta con intentar aguantar: suele cumplir una función, como aliviar el malestar, y eso se puede trabajar.'],
+    ['¿Cómo dejar de comer por ansiedad?','Prohibirse comer suele empeorarlo. Ayuda más comer con regularidad, sin saltarse comidas; entender qué malestar intentas calmar y buscar otras formas de atenderlo. Si la <a href="ansiedad.html">ansiedad</a> está detrás, la trabajamos a la vez.'],
     ['¿Se puede superar un trastorno de la conducta alimentaria?','Es posible, aunque suele llevar tiempo. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para que la comida deje de ocupar el centro de tu vida y puedas relacionarte con ella sin miedo ni culpa.'],
+    ['¿Cómo ayudar a alguien con un TCA?','Habla desde la preocupación, sin juicios sobre su peso ni su cuerpo; evita vigilar cada comida y anímale a pedir ayuda profesional. Si notas pérdida de peso importante, desmayos o vómitos frecuentes, hace falta una valoración médica cuanto antes.'],
     ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con ellos cuando hace falta.'],
-    ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.']
+    ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.'],
+    ['¿Tratáis los TCA cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'alimentacion comida comer como y despues me culpo me siento horrible conmigo como mucho y despues me castigo solo comiendo alivio la ansiedad no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen culpa',
   feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
@@ -365,7 +401,7 @@ window.MOTIVOS=[
     ['Apego','Cómo aprendimos a querer y a pedir cercanía, y cómo se repite en la pareja: miedo al abandono o necesidad de distancia.','apego'],
     ['Narcisismo en la pareja','Cuando sientes que la relación gira siempre alrededor del otro. Usamos la palabra para empezar a hablar, no para diagnosticar a nadie.','narcisismo'],
     ['Falta de deseo en la pareja','El deseo cambia con los años, el estrés o la crianza, y no siempre al mismo ritmo en los dos. Lo trabajamos también en <a href="sexual.html">terapia sexual</a>.','deseo'],
-    ['La pareja tras tener hijos','Menos tiempo, menos sueño y nuevos roles: la crianza pone a prueba hasta a las parejas más sólidas.','hijos'],
+    ['La pareja tras tener hijos','Menos tiempo, menos sueño y nuevos roles: la crianza pone a prueba hasta a las parejas más sólidas. También cambia el deseo, que trabajamos en <a href="sexual.html">terapia sexual</a>.','hijos'],
     ['Rupturas, separaciones y divorcios','Acompañamos la decisión y el después, para que haya menos daño, sobre todo si hay hijos. Y si la ruptura duele mucho tiempo, trabajamos también el <a href="duelo.html">duelo</a>.','rupturas']
   ]},
   proceso:{titulo:'Cómo trabajamos en terapia de pareja', pasos:[
@@ -441,14 +477,49 @@ window.MOTIVOS=[
   seoDesc:'¿Te cuesta concentrarte o te preocupa tu hijo? TDAH en adultos y niños, mirando a la persona y no solo la etiqueta. Centro sanitario en Madrid y online.',
   pagina:'tdah.html',   /* página fija; motivo.html?m=tdah lleva a ella */
   enfoqueDe:'del TDAH',
-  subs:['TDAH en adultos',['TDAH en niños y adolescentes','infancia'],'Falta de concentración','Procrastinación','Impulsividad','Inquietud','Hiperactividad','Desorganización','Olvidos y despistes','Dificultades en los estudios',['Uso excesivo del móvil y las pantallas','adicciones']],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página; niños y pantallas llevan a su terapia */
+  subs:[['TDAH en adultos','#adultos'],['TDAH en niños y adolescentes','infancia'],['Falta de concentración','#concentracion'],['Procrastinación','#procrastinacion'],['Impulsividad','#impulsividad'],['Inquietud','#inquietud'],['Hiperactividad','#hiperactividad'],['Desorganización','#desorganizacion'],['Olvidos y despistes','#olvidos'],['Dificultades en los estudios','#estudios'],['Uso excesivo del móvil y las pantallas','adicciones']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A «Cómo se nota» en vez de «Síntomas», 2A con valoración —sí la hace, con entrevista y cuestionarios—, 3B con ACT y atención plena —sí las usa—, 4 y 5 como en ansiedad) */
+  tipos:{titulo:'Cómo se nota el TDAH',
+    intro:'Lo que los manuales llaman síntomas del TDAH son, en la vida diaria, dificultades concretas que no aparecen igual en todas las personas ni en todos los ámbitos. Estas son las más frecuentes.',
+    items:[
+    ['TDAH en adultos','Se nota menos en el movimiento y más en la desorganización, los olvidos, la procrastinación o una inquietud por dentro. Muchos adultos se reconocen tarde, a veces cuando diagnostican a un hijo.','adultos'],
+    ['Falta de concentración','Empezar algo y perder el hilo, sobre todo en tareas largas o poco interesantes. En cambio, en lo que apasiona, la atención puede ser muy intensa.','concentracion'],
+    ['Procrastinación','Aplazar lo importante hasta el último momento. No es pereza: cuesta arrancar si no hay una urgencia que empuje.','procrastinacion'],
+    ['Impulsividad','Hablar o actuar antes de pensarlo, interrumpir, decidir deprisa. Cuando afecta sobre todo a las emociones y a las relaciones, puede tener que ver también con <a href="personalidad.html">la personalidad</a>.','impulsividad'],
+    ['Inquietud','En los adultos, más que moverse, es una inquietud por dentro: cuesta estar quieto, esperar o descansar.','inquietud'],
+    ['Hiperactividad','Se ve más en la infancia: no parar, levantarse, moverse sin descanso. Con los años suele convertirse en inquietud.','hiperactividad'],
+    ['Desorganización','Cuesta planificar, ordenar el tiempo y los espacios y calcular cuánto lleva cada cosa.','desorganizacion'],
+    ['Olvidos y despistes','Perder cosas, olvidar citas o encargos, dejar tareas a medias.','olvidos'],
+    ['Dificultades en los estudios','Estudiar cuesta más por la atención y la organización que por la capacidad. Trabajamos también con <a href="infancia.html">la familia</a> y, si hace falta, con el centro educativo.','estudios']
+  ]},
+  proceso:{titulo:'Cómo trabajamos el TDAH', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Una valoración cuidadosa.','Tu historia desde la infancia, cuestionarios y cómo se nota en los distintos ámbitos de tu vida, sin prisa por poner la etiqueta.'],
+    ['Entrenar lo que cuesta.','La organización, la planificación, las rutinas y el manejo de la impulsividad en tu día a día. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas medicación o se está valorando, nos coordinamos con tu psiquiatra o neurólogo.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando te organizas con más soltura, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual','En adultos, entrenar la organización, la planificación y el manejo de la impulsividad en la vida real.'],
+    ['Entrenamiento a familias','Pautas para madres, padres y colegio, para que la ayuda no se quede en la consulta.'],
+    ['ACT y atención plena','Aprender a notar dónde está la atención y volver a lo que importa, sin pelearse con la inquietud. Las usamos como complemento.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también el ritmo de vida, las pantallas y lo que te piden la escuela o el trabajo.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Con niños pequeños solemos preferir la consulta presencial.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1B diagnóstico en adultos, 6.2A TDAH o ansiedad, 6.3A con la edad, 6.4 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cómo saber si tengo TDAH?','Despistarse o aplazar tareas de vez en cuando es normal. Se habla de TDAH cuando las dificultades de atención, inquietud o impulsividad vienen de la infancia, se mantienen y afectan a los estudios, al trabajo o a las relaciones. Un cuestionario en internet no basta: hace falta una valoración profesional.'],
+    ['¿Cómo se diagnostica el TDAH en adultos?','Con una valoración clínica: una entrevista sobre tu historia desde la infancia, cuestionarios y, si es posible, lo que cuentan personas cercanas. No hay un análisis ni una prueba de imagen que lo detecte. Lo hacemos con calma y sin prisa por poner una etiqueta.'],
     ['¿Existe el TDAH en adultos?','Sí. A veces se descubre después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
+    ['¿Es TDAH o es ansiedad?','La <a href="ansiedad.html">ansiedad</a> también dispersa la atención: cuando hay preocupación, cuesta concentrarse. La diferencia es que en el TDAH las dificultades vienen de la infancia y aparecen en casi todos los ámbitos. A veces se dan las dos.'],
+    ['¿El TDAH se quita con la edad?','Muchas dificultades cambian con los años: la hiperactividad suele convertirse en inquietud, y con ayuda se aprende a organizarse. Más que quitarse, se aprende a vivir con ese ritmo.'],
     ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento de la familia. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
     ['¿Hace falta medicación para el TDAH?','En terapia psicológica no se recetan fármacos. En algunos casos la medicación ayuda, y esa valoración corresponde a psiquiatría o neurología. Si la tomas o se está valorando, nos coordinamos con quien la lleve.'],
-    ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.']
+    ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.'],
+    ['¿Atendéis el TDAH en adultos cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'tdah atencion no me puedo concentrar no consigo concentrarme me cuesta concentrarme se me olvidan las cosas estudiar como saber si tengo tdah adulto hiperactividad despiste impulsividad infancia colegio ayudar a mi hijo',
   feel:['No me puedo concentrar en nada','Me cuesta concentrarme y se me olvidan las cosas','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
@@ -497,14 +568,50 @@ window.MOTIVOS=[
   seoDesc:'¿Quieres dejar el alcohol, el juego o el móvil? Tratamiento psicológico de adicciones, también para familias. Centro sanitario en Madrid y online.',
   pagina:'adicciones.html',   /* página fija; motivo.html?m=adicciones lleva a ella */
   enfoqueDe:'de las adicciones',
-  subs:['Alcohol','Juego y apuestas online','Adicción al móvil','Redes sociales','Videojuegos','Cannabis','Cocaína','Pornografía','Compras compulsivas',['Dependencia de pastillas para dormir','insomnio'],['Dependencia emocional','pareja'],'Recaídas','Familiares de personas con adicción'],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (tipos o las preguntas de recaídas y familiares); pastillas y dependencia emocional llevan a su terapia */
+  subs:[['Alcohol','#alcohol'],['Juego y apuestas online','#juego'],['Adicción al móvil','#movil'],['Redes sociales','#redes'],['Videojuegos','#videojuegos'],['Cannabis','#cannabis'],['Cocaína','#cocaina'],['Pornografía','#pornografia'],['Compras compulsivas','#compras'],['Dependencia de pastillas para dormir','insomnio'],['Dependencia emocional','pareja'],['Recaídas','#recaidas'],['Familiares de personas con adicción','#familiares']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2 único con prevención de recaídas al final, 3A + trabajo con la familia, 4 y 5 como en las demás) */
+  tipos:{titulo:'Tipos de adicciones',
+    intro:'Hay adicciones con sustancia, como el alcohol o la cocaína, y sin sustancia, como el juego o el móvil. Cambia el objeto, pero el círculo se parece: lo que alivia hoy es lo que ata mañana.',
+    items:[
+    ['Alcohol','Beber para relajarte, para dormir o para estar con otros, y notar que cada vez cuesta más parar. Si bebes a diario o en cantidad, dejarlo necesita valoración médica.','alcohol'],
+    ['Juego y apuestas online','Apuestas deportivas, casinos online o tragaperras: perseguir las pérdidas, mentir sobre lo que juegas o pedir dinero para seguir. Con el móvil, el juego está siempre a mano.','juego'],
+    ['Adicción al móvil','Mirarlo nada más despertar, al acostarte y cada pocos minutos, aunque quieras dejar de hacerlo.','movil'],
+    ['Redes sociales','Horas que se van sin darte cuenta, comparaciones que te dejan peor y la sensación de no poder desconectar. Afecta también a la <a href="autoestima.html">autoestima</a>.','redes'],
+    ['Videojuegos','Cuando el juego ocupa el lugar del sueño, de los estudios, del trabajo o de las relaciones, y dejarlo genera irritabilidad.','videojuegos'],
+    ['Cannabis','Empieza para relajarse o para dormir, y acaba siendo difícil pasar un día sin él. Puede afectar a la motivación, a la memoria y al ánimo.','cannabis'],
+    ['Cocaína','Engancha por la euforia y la energía que promete, y deja detrás bajones, ansiedad y gastos. Con frecuencia va unida al alcohol.','cocaina'],
+    ['Pornografía','Cuando su consumo se vuelve compulsivo, ocupa mucho tiempo o afecta a la vida sexual y a la pareja. También la trabajamos en <a href="sexual.html">terapia sexual</a>.','pornografia'],
+    ['Compras compulsivas','Comprar para aliviar el malestar, con un alivio que dura poco y deja culpa y deudas.','compras']
+  ]},
+  proceso:{titulo:'Cómo trabajamos las adicciones', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender qué te aporta.','Para qué sirve el consumo, en qué momentos aparece y qué lo mantiene.'],
+    ['Cambiar las condiciones y construir alternativas.','Las situaciones que te empujan a consumir, otras formas de conseguir lo que buscas y proyectos que llenen ese hueco. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con medicina y servicios especializados.','Si hay sustancias, abstinencia o medicación, trabajamos junto a tu médico o a los servicios de adicciones.'],
+    ['Prevenir recaídas y cerrar.','Aprendemos de las caídas y, cuando el cambio se sostiene, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Entrevista motivacional','Trabajar las dudas entre seguir y dejarlo, sin sermones ni presiones.'],
+    ['Terapia cognitivo-conductual y prevención de recaídas','Detectar las situaciones de riesgo, ensayar alternativas y prepararse para las caídas.'],
+    ['Terapia de aceptación y compromiso (ACT)','Convivir con el deseo de consumir sin obedecerlo. La usamos como complemento.'],
+    ['Trabajo con la familia','Ayudar a la familia a cuidarse, a no alimentar el problema sin querer y a acompañar el cambio.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también la vida que llevas, las personas con las que estás y los proyectos que te dan fuerza.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1A recaídas, 6.2A juego, 6.3A móvil, 6.4 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cuándo es una adicción y no solo un hábito?','Cuando lo haces aunque te esté haciendo daño, cada vez necesitas más, te cuesta parar aunque quieras o va ocupando el lugar de otras cosas importantes. No hace falta tocar fondo para pedir ayuda.'],
+    ['¿Cómo saber si tengo un problema con el juego?','Algunas señales: jugar más dinero o más tiempo del que pensabas, intentar recuperar lo perdido, mentir sobre lo que juegas, pedir dinero o sentir irritabilidad cuando no puedes jugar. Si te reconoces en varias, merece la pena consultarlo.'],
     ['¿Tratáis la adicción al móvil, a las redes o al juego?','Sí. Además del alcohol y otras sustancias, trabajamos las adicciones sin sustancia: juego y apuestas online, móvil, redes sociales, videojuegos o <a href="sexual.html">pornografía</a>.'],
+    ['¿Cómo reducir el uso del móvil?','Más que fuerza de voluntad, ayuda cambiar las condiciones: quitar notificaciones, dejar el móvil fuera del dormitorio, fijar momentos sin pantalla y recuperar actividades que te llenen. Si aun así no puedes, lo trabajamos contigo.'],
     ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo. Si hay caídas —lo que mucha gente llama recaídas—, también se trabajan. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
+    ['¿Qué pasa si tengo una recaída?','Una caída no es una recaída, y no borra el camino recorrido: forma parte del proceso y también se aprende de ella. Lo importante es pedir ayuda pronto y ver qué la provocó.','recaidas'],
     ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Nos coordinamos con medicina y con los servicios especializados.'],
-    ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.']
+    ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.','familiares'],
+    ['¿Tratáis las adicciones cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'adicciones alcohol beber juego apuestas casino tragaperras pantallas movil enganchado videojuegos redes no puedo dejar de beber no puedo dejar de jugar no puedo dejar el movil consumo drogas',
   feel:['No puedo dejar de beber','No puedo dejar de jugar','No puedo dejar el móvil','Me prometo que es la última vez'],
@@ -552,14 +659,48 @@ window.MOTIVOS=[
   seoDesc:'¿Baja autoestima, inseguridad o perfeccionismo? Terapia para estimarte de otra manera, sin compararte tanto. Centro sanitario en Madrid y online.',
   pagina:'autoestima.html',   /* página fija; motivo.html?m=autoestima lleva a ella */
   enfoqueDe:'de la autoestima',
-  subs:['Baja autoestima','Inseguridad','Perfeccionismo','Autoexigencia','Síndrome del impostor','Miedo al rechazo','Necesidad de aprobación','Compararse con los demás','Autocrítica','Aprender a decir que no',['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (problemas o la pregunta del síndrome del impostor); dependencia e imagen corporal llevan a su terapia */
+  subs:[['Baja autoestima','#baja'],['Inseguridad','#inseguridad'],['Perfeccionismo','#perfeccionismo'],['Autoexigencia','#autoexigencia'],['Síndrome del impostor','#impostor'],['Miedo al rechazo','#rechazo'],['Necesidad de aprobación','#aprobacion'],['Compararse con los demás','#compararse'],['Autocrítica','#autocritica'],['Aprender a decir que no','#decirno'],['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
+  /* apartados nuevos (2026-11-09, recomendaciones aceptadas por el usuario: 1A, 2 único, 3A sin interpersonal, 4 y 5 como en las demás) */
+  tipos:{titulo:'Problemas de autoestima más frecuentes',
+    intro:'Estos son los motivos por los que más nos consultan cuando la forma de valorarse hace sufrir. Casi nunca llegan solos: unos tiran de otros.',
+    items:[
+    ['Baja autoestima','Sentir que vales poco, que no eres suficiente o que los demás lo hacen todo mejor.','baja'],
+    ['Inseguridad','Dudar de ti antes de decidir, de hablar o de intentarlo, y necesitar que te lo confirmen una y otra vez.','inseguridad'],
+    ['Perfeccionismo','Que nada esté nunca lo bastante bien. Cuando se vuelve rígido y lo invade todo, puede tener que ver también con <a href="personalidad.html">la personalidad</a>.','perfeccionismo'],
+    ['Autoexigencia','Pedirte siempre más, sin descanso, y vivir cualquier fallo como un fracaso personal.','autoexigencia'],
+    ['Miedo al rechazo','Evitar decir lo que piensas o pedir lo que necesitas por miedo a que te dejen de querer.','rechazo'],
+    ['Necesidad de aprobación','Sentirte bien solo cuando los demás te dan el visto bueno.','aprobacion'],
+    ['Compararse con los demás','Medirte sin parar con otros, muchas veces con lo que enseñan <a href="adicciones.html">las redes</a>, y salir siempre perdiendo.','compararse'],
+    ['Autocrítica','Una voz interna que te juzga con una dureza que nunca usarías con nadie.','autocritica'],
+    ['Aprender a decir que no','Decir que sí a todo para no decepcionar, aunque te desgaste. Poner límites también es estimarse.','decirno']
+  ]},
+  proceso:{titulo:'Cómo trabajamos la autoestima', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender cómo te valoras y de dónde viene.','Tu historia, cómo te han tratado y los contextos en los que vives.'],
+    ['Practicar.','Poner límites, decir que no, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando te tratas de otra manera, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual','Revisar la autocrítica y las reglas de exigencia que te hacen sufrir.'],
+    ['ACT y compasión','Tratarte de otra manera sin esperar a «quererte» primero, y moverte hacia lo que te importa.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también tus vínculos, las comparaciones, las redes y lo que te piden el trabajo o los estudios.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. A muchas personas les resulta más fácil empezar desde casa.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1A cómo mejorarla, 6.2A de dónde viene, 6.3 ansiedad y depresión, 6.4 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cómo saber si tengo baja autoestima?','Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir.'],
+    ['¿De dónde viene la baja autoestima?','De cómo nos han tratado y nos tratan: críticas repetidas, comparaciones, experiencias de acoso o de rechazo, y contextos que piden rendir sin descanso. Nadie se estima en el vacío.'],
     ['¿Se puede mejorar la autoestima?','Sí. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.'],
+    ['¿Cómo mejorar la autoestima?','Más que pensar mejor de ti, ayuda actuar de otra manera: cumplir con lo que te importa, poner límites, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor.'],
     ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo se vive como un fracaso personal. Aprender a exigirse sin maltratarse ayuda también a la estima.'],
-    ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás “descubran” que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.'],
-    ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.']
+    ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás “descubran” que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.','impostor'],
+    ['¿La baja autoestima tiene que ver con la ansiedad o la depresión?','A menudo van juntas: valorarse poco alimenta la <a href="ansiedad.html">ansiedad</a> y el <a href="depresion.html">ánimo bajo</a>, y estos a su vez empeoran cómo nos vemos. Cuando aparecen juntas, las trabajamos a la vez.'],
+    ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.'],
+    ['¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
   feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo mismo'],
@@ -597,16 +738,47 @@ window.MOTIVOS=[
   seoDesc:'Psicólogo para el duelo: muerte de un ser querido, duelo perinatal, por una mascota o una ruptura. Te acompañamos. Centro sanitario en Madrid y online.',
   pagina:'duelo.html',   /* página fija; motivo.html?m=duelo lleva a ella */
   enfoqueDe:'del duelo',
-  subs:['Muerte de un ser querido','Muerte de un padre o una madre','Duelo perinatal','Duelo por suicidio','Duelo complicado o prolongado','Duelo anticipado por una enfermedad grave','Duelo por una mascota',['Duelo por una ruptura','pareja'],'Pérdida del trabajo',['Duelo en niños','infancia'],['Depresión tras una pérdida','depresion']],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (tipos o la pregunta del padre o la madre); ruptura, niños y depresión llevan a su terapia */
+  subs:[['Muerte de un ser querido','#serquerido'],['Muerte de un padre o una madre','#padres'],['Duelo perinatal','#perinatal'],['Duelo por suicidio','#suicidio'],['Duelo complicado o prolongado','#prolongado'],['Duelo anticipado por una enfermedad grave','#anticipado'],['Duelo por una mascota','#mascota'],['Duelo por una ruptura','pareja'],['Pérdida del trabajo','#trabajo'],['Duelo en niños','infancia'],['Depresión tras una pérdida','depresion']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2 único, 3A con acompañamiento en vez de «tu contexto», 4 y 5 como en las demás) */
+  tipos:{titulo:'Tipos de duelo',
+    intro:'Cada pérdida es única, pero hay duelos que tienen rasgos propios y que conviene acompañar con especial cuidado.',
+    items:[
+    ['Muerte de un ser querido','La pérdida de alguien cercano (una pareja, un hermano, un amigo) desordena la vida entera: las rutinas, los planes, la forma de estar con los demás.','serquerido'],
+    ['Duelo perinatal','La pérdida de un hijo durante el embarazo o poco después del parto. Es un duelo a menudo silenciado, porque alrededor no siempre se reconoce, y merece el mismo espacio que cualquier otro.','perinatal'],
+    ['Duelo por suicidio','Suele traer preguntas sin respuesta, culpa y, a veces, el peso del silencio. Acompañarlo con cuidado ayuda a no cargarlo a solas. Si tú también tienes pensamientos de muerte, llama al <strong>024</strong>.','suicidio'],
+    ['Duelo complicado o prolongado','Cuando, pasados muchos meses, el dolor sigue ocupándolo todo y la vida no consigue retomarse. Es cuando más ayuda la terapia.','prolongado'],
+    ['Duelo anticipado','El que empieza antes de la muerte, cuando una enfermedad grave avanza y se va perdiendo a la persona poco a poco. También agota a quien cuida.','anticipado'],
+    ['Duelo por una mascota','Perder a un animal con el que has compartido la vida duele de verdad, aunque alrededor no siempre se entienda.','mascota'],
+    ['Pérdida del trabajo','Un despido o el final de una etapa profesional también es una pérdida: de rutinas, de identidad, de seguridad. A veces viene acompañada de <a href="ansiedad.html">ansiedad</a>.','trabajo']
+  ]},
+  proceso:{titulo:'Cómo trabajamos el duelo', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Hablar de la pérdida.','Quién era, qué pasó y qué ha cambiado desde entonces, sin prisa.'],
+    ['Hacer sitio a la pérdida.','Los recuerdos, los rituales y la vuelta poco a poco a la vida que sigue. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando la pérdida encuentra su sitio, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual para el duelo prolongado','Es la que tiene más respaldo cuando el duelo se atasca: ayuda a afrontar lo que se evita y a ir reconstruyendo la vida.'],
+    ['Terapia de aceptación y compromiso (ACT)','Hacer sitio al dolor sin que ocupe toda la vida.'],
+    ['Acompañamiento','Un espacio para hablar de la pérdida cuando alrededor ya no se habla de ella.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 3 nuevas (6.1A fases, 6.2A no llorar, 6.3 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, sigues sin poder retomar tu día a día, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno.'],
-    ['¿Cómo superar la muerte de un padre o una madre?','Más que superarla, se trata de aprender a vivir con su ausencia. No conseguir superar la muerte de tu madre o echar de menos a tu padre cada día es frecuente, sobre todo los primeros meses. Ayuda poder hablar de ello, mantener algún ritual que te una a esa persona y pedir acompañamiento si el dolor no te deja vivir.'],
     ['¿Cuánto dura un duelo?','No hay un plazo fijo. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que lo ocupa todo.'],
+    ['¿Cuáles son las fases del duelo?','Se habla mucho de cinco fases: negación, ira, negociación, tristeza y aceptación. Pero la investigación no ha confirmado que el duelo siga ese orden: cada persona lo vive a su manera, y es normal ir y volver.'],
+    ['¿Cómo superar la muerte de un padre o una madre?','Más que superarla, se trata de aprender a vivir con su ausencia. No conseguir superar la muerte de tu madre o echar de menos a tu padre cada día es frecuente, sobre todo los primeros meses. Ayuda poder hablar de ello, mantener algún ritual que te una a esa persona y pedir acompañamiento si el dolor no te deja vivir.','padres'],
     ['¿Es normal sentir culpa tras una muerte?','Sí. Lo que no se dijo o no se hizo suele volver una y otra vez. Hablarlo ayuda a que la culpa no ocupe el lugar del recuerdo.'],
+    ['¿Es normal no llorar en un duelo?','Sí. No todo el mundo llora, ni lo hace en el momento que se espera. El dolor puede notarse como cansancio, como irritabilidad o como un vacío, y no por eso es menor.'],
     ['¿Es normal pensar todo el tiempo en la persona que ha muerto?','Sí, sobre todo al principio. Pensar en quien se ha ido, soñar con esa persona o sentir su presencia forma parte del duelo. Preocupa más cuando la vida se detiene por completo durante mucho tiempo.'],
     ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. También duele perder a un animal, una relación, un trabajo o una etapa de la vida, y ese dolor merece un espacio.'],
-    ['¿Ayudáis a niños en duelo?','Sí, con la familia. Los niños viven el duelo a su manera, y a menudo ayuda acompañar a los adultos para que sepan cómo hablarles.']
+    ['¿Ayudáis a niños en duelo?','Sí, con la familia. Los niños viven el duelo a su manera, y a menudo ayuda acompañar a los adultos para que sepan cómo hablarles.'],
+    ['¿Hacéis terapia de duelo cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
   feel:['Nunca me dejará de doler','Me arrepiento de aquello que hice o no hice','¿Cómo voy a vivir sin él o sin ella?','Nunca conoceré a nadie como él o como ella'],   /* 2026-11-08; antes: «No consigo superar la muerte de mi madre», «Echo de menos a mi padre cada día», «No consigo superar la muerte de mi perro», «Siento que todo el mundo ha seguido menos yo» */
@@ -651,14 +823,47 @@ window.MOTIVOS=[
   seoDesc:'Psicólogo infantil y de adolescentes: rabietas, miedos, TDAH, acoso escolar o problemas en el colegio, con la familia. Centro sanitario en Madrid y online.',
   pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
   enfoqueDe:'de la infancia y la adolescencia',
-  subs:['Rabietas y problemas de conducta','Comunicación con adolescentes',['Ansiedad y miedos infantiles','ansiedad'],'Tristeza o aislamiento','Acoso escolar (bullying)','Bajo rendimiento escolar',['TDAH en niños','tdah'],['Uso excesivo de pantallas','adicciones'],['Problemas con la comida','alimentacion'],['Problemas de sueño','insomnio'],'Separación de los padres',['Duelo en niños','duelo'],'Orientación a familias'],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página; las demás llevan a su terapia */
+  subs:[['Rabietas y problemas de conducta','#rabietas'],['Comunicación con adolescentes','#comunicacion'],['Ansiedad y miedos infantiles','ansiedad'],['Tristeza o aislamiento','#tristeza'],['Acoso escolar (bullying)','#acoso'],['Bajo rendimiento escolar','#rendimiento'],['TDAH en niños','tdah'],['Uso excesivo de pantallas','adicciones'],['Problemas con la comida','alimentacion'],['Problemas de sueño','insomnio'],['Separación de los padres','#separacion'],['Duelo en niños','duelo'],['Orientación a familias','#familias']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2 único, 3B sin sistémica —no la trabaja— y con ACT como complemento, 4 y 5 como en las demás; edades de 6 a 17 años) */
+  tipos:{titulo:'Problemas más frecuentes en niños y adolescentes',
+    intro:'Estos son los motivos por los que más nos consultan las familias. No todo malestar es un trastorno: muchas veces forma parte de crecer, pero conviene mirarlo a tiempo.',
+    items:[
+    ['Rabietas y problemas de conducta','Enfados que no ceden, desobediencia o peleas que desbordan a la familia. Casi siempre hay algo que entender detrás.','rabietas'],
+    ['Comunicación con adolescentes','Monosílabos, puertas cerradas, discusiones. Es normal que tomen distancia, pero a veces se rompe el puente y cuesta reconstruirlo.','comunicacion'],
+    ['Tristeza o aislamiento','Dejar de quedar con los amigos, encerrarse o perder el interés por todo. Si dura semanas, conviene mirarlo, porque también puede ser <a href="depresion.html">depresión</a>.','tristeza'],
+    ['Acoso escolar (bullying)','Burlas, exclusión o agresiones repetidas, también por redes. Muchos niños no lo cuentan: los cambios de ánimo o no querer ir al colegio pueden ser señales.','acoso'],
+    ['Bajo rendimiento escolar','Suspensos o desmotivación que no se explican solo por la capacidad: la atención, el ánimo, la organización o lo que pasa en clase pesan mucho.','rendimiento'],
+    ['Separación de los padres','Una separación cambia la vida de los hijos. Les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
+    ['Orientación a familias','A veces lo que más ayuda es trabajar con los padres: pautas concretas para casa y para el colegio.','familias']
+  ]},
+  proceso:{titulo:'Cómo trabajamos con niños y adolescentes', pasos:[
+    ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre, director del centro. Nos contáis qué pasa y decidimos juntos cómo seguir.'],
+    ['Conocer a vuestro hijo o hija.','En sesiones adaptadas a su edad, para escuchar cómo vive lo que le pasa.'],
+    ['Trabajar con él o ella, y con vosotros.','Con pautas concretas para casa y, si hace falta, en coordinación con el colegio. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con su médico.','Si toma medicación o conviene valorarla, nos coordinamos con su pediatra o su psiquiatra infantil.'],
+    ['Revisar y cerrar.','Vemos juntos cómo va y, cuando las cosas se asientan, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Entrenamiento a familias','Pautas concretas para casa y coordinación con el colegio, para que la ayuda no se quede en la consulta.'],
+    ['Terapia cognitivo-conductual adaptada a la edad','Para la ansiedad, el ánimo o la conducta, con herramientas pensadas para cada etapa.'],
+    ['ACT con adolescentes','Aprender a convivir con lo que sienten sin que decida por ellos, y moverse hacia lo que les importa. La usamos como complemento.'],
+    ['Vuestro contexto','Las técnicas solas no bastan: trabajamos también lo que pasa en casa, en clase, con los amigos y en las pantallas.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Podéis venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También podéis hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque viváis fuera de España. La sesión dura lo mismo en las dos modalidades. Con niños pequeños solemos preferir la consulta presencial; con adolescentes, la terapia online también funciona.'},
+  quien:{titulo:'Quién os atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1 edades 6-17, 6.2A adolescente que no quiere hacer nada, 6.3A acoso con ANAR, 6.4 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cuándo llevar a mi hijo al psicólogo?','Cuando notáis cambios que duran semanas: tristeza, aislamiento, <a href="ansiedad.html">miedos</a>, rabietas que no ceden o problemas en el colegio, con la comida o <a href="insomnio.html">con el sueño</a>. Si dudáis, una primera cita con la familia ayuda a valorarlo.'],
+    ['¿A partir de qué edad atendéis?','Atendemos a niños, niñas y adolescentes de 6 a 17 años. A partir de los 18, ya en la terapia de adultos.'],
     ['¿Cómo es la primera cita?','La primera cita es con la madre, el padre o los tutores, sin el menor. Nos contáis qué pasa y decidimos juntos cómo seguir.'],
+    ['Mi hijo adolescente no quiere hacer nada. ¿Es normal?','En parte, sí: la adolescencia trae cansancio, cambios de sueño y ganas de distancia. Conviene consultarlo si dura semanas, si deja también a los amigos o lo que antes le gustaba, o si notáis tristeza o aislamiento.'],
+    ['¿Qué hago si mi hijo sufre acoso escolar?','Escúchale, créele y no le quites importancia. Comunicadlo al colegio: los centros tienen la obligación de activar su protocolo contra el acoso. Podéis llamar también a la Fundación ANAR (<strong>900 20 20 10</strong>), gratuita y abierta las 24 horas. Y si hay peligro, al <strong>112</strong>.'],
     ['¿Hace falta el consentimiento de los dos progenitores?','En general se pide por escrito el consentimiento de quienes tienen la patria potestad. Si hay separación o desacuerdo, lo vemos en la primera cita.'],
     ['¿Trabajáis también con los padres?','Sí. Trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
-    ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.']
+    ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.'],
+    ['¿Hay psicólogo infantil cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, con adolescentes hacemos también la <a href="online.html">terapia online</a>.']
   ],
   k:'infancia adolescencia mi hijo adolescente no quiere estudiar ni hacer nada no me habla no me respeta no tiene amigos no quiere ir al colegio hija menores ninos adolescentes escolar familia conducta',
   feel:['Mi hijo adolescente no quiere estudiar ni hacer nada','Mi hijo adolescente no me habla','Mi hijo no tiene amigos','Mi hijo no quiere ir al colegio'],
@@ -702,14 +907,47 @@ window.MOTIVOS=[
   seoDesc:'Emociones muy intensas, miedo al abandono o vacío: terapia para el TLP y los trastornos de la personalidad. Centro sanitario en Madrid y online.',
   pagina:'personalidad.html',   /* página fija; motivo.html?m=personalidad lleva a ella */
   enfoqueDe:'de la personalidad',
-  subs:['Trastorno límite de la personalidad (TLP)','Inestabilidad emocional','Miedo al abandono','Relaciones intensas e inestables','Impulsividad','Ira y explosiones emocionales',['Sensación de vacío','depresion'],'Rasgos obsesivos o perfeccionistas','Personalidad evitativa','Personalidad dependiente','Rasgos narcisistas'],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (tipos o la pregunta del TLP); el vacío lleva a depresión */
+  subs:[['Trastorno límite de la personalidad (TLP)','#tlp'],['Inestabilidad emocional','#inestabilidad'],['Miedo al abandono','#abandono'],['Relaciones intensas e inestables','#relaciones'],['Impulsividad','#impulsividad'],['Ira y explosiones emocionales','#ira'],['Sensación de vacío','depresion'],['Rasgos obsesivos o perfeccionistas','#obsesivos'],['Personalidad evitativa','#evitativa'],['Personalidad dependiente','#dependiente'],['Rasgos narcisistas','#narcisistas']],
+  /* apartados nuevos (2026-11-09, recomendaciones aceptadas por el usuario: 1A con entrada que matiza la CIE-11, 2 único, 3A —dialéctico-conductual, ACT, tu contexto—, 4 y 5 como en las demás) */
+  tipos:{titulo:'Tipos de trastornos de la personalidad',
+    intro:'Los manuales hablan de tipos, aunque desde 2022 la CIE-11 los describe por grados. Preferimos verlos como formas de ser muy marcadas que hacen sufrir, a uno mismo o a quienes le rodean. Estas son las que más nos consultan.',
+    items:[
+    ['Inestabilidad emocional','Emociones que suben y bajan muy deprisa y con mucha intensidad, a veces por cosas que a otros les parecerían pequeñas.','inestabilidad'],
+    ['Miedo al abandono','Sentir que te van a dejar y hacer lo que sea por evitarlo, aunque eso acabe tensando la relación.','abandono'],
+    ['Relaciones intensas e inestables','Pasar de idealizar a alguien a sentirte decepcionado o herido, en relaciones que se viven con mucha intensidad.','relaciones'],
+    ['Impulsividad','Actuar sin pensar cuando la emoción aprieta: gastar, comer, beber o decir cosas de las que luego te arrepientes. Cuando viene desde la infancia y afecta sobre todo a la atención, puede tener que ver con el <a href="tdah.html">TDAH</a>.','impulsividad'],
+    ['Ira y explosiones emocionales','Enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.','ira'],
+    ['Rasgos obsesivos o perfeccionistas','Necesidad de orden, control y reglas que, cuando se vuelve rígida, hace sufrir a uno y a quienes le rodean. No es lo mismo que el <a href="ansiedad.html#toc">TOC</a>, aunque a veces se confundan.','obsesivos'],
+    ['Personalidad evitativa','Evitar el contacto con los demás por miedo a ser rechazado o criticado, aunque desees esa cercanía.','evitativa'],
+    ['Personalidad dependiente','Necesitar que otros decidan por ti y sentir angustia al quedarte solo. A menudo se vive en la <a href="pareja.html">pareja</a> como dependencia emocional.','dependiente'],
+    ['Rasgos narcisistas','Una necesidad intensa de admiración y una imagen de uno mismo que se resiente mucho con la crítica. Detrás suele haber más fragilidad de la que se ve.','narcisistas']
+  ]},
+  proceso:{titulo:'Cómo trabajamos los problemas de personalidad', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender tus patrones.','Tu historia, tus relaciones y lo que se repite, sin poner etiquetas antes de tiempo.'],
+    ['Regular las emociones y probar otras formas de relacionarte.','Con herramientas concretas para los momentos en que la emoción desborda. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con psiquiatría.','Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.'],
+    ['Revisar y avanzar.','Es un proceso que lleva su tiempo: vemos juntos cómo vas y avanzamos paso a paso.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia dialéctico-conductual','Es la que más respaldo tiene en el TLP: regular emociones intensas, tolerar el malestar sin hacerse daño y mejorar las relaciones.'],
+    ['Terapia de aceptación y compromiso (ACT)','Hacer sitio a lo que sientes sin que decida por ti, y moverte hacia lo que te importa. La usamos como complemento.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también tu historia, tus relaciones y los entornos en los que te mueves.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 3 nuevas (6.1A cómo saber si es TLP, 6.2A cómo ayudar, 6.3 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Qué es un trastorno de la personalidad?','Es el nombre que se da a formas de sentir, pensar y relacionarse muy estables que hacen sufrir a la persona o a quienes la rodean, y que se repiten en distintos ámbitos. Desde 2022, la clasificación de la OMS (CIE-11) los describe por grados de gravedad más que por tipos cerrados.'],
-    ['¿Qué es el trastorno límite de la personalidad (TLP)?','Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan, como la terapia dialéctico-conductual.'],
+    ['¿Qué es el trastorno límite de la personalidad (TLP)?','Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan, como la terapia dialéctico-conductual.','tlp'],
+    ['¿Cómo saber si tengo TLP?','Si las emociones te desbordan a menudo, temes mucho que te abandonen, tus relaciones pasan de un extremo a otro y a veces actúas por impulso o sientes un gran vacío, merece la pena consultarlo. Un test en internet no basta: hace falta una valoración profesional, sin prisa por poner etiquetas.'],
     ['¿La personalidad se puede cambiar?','Los rasgos de fondo cambian despacio, pero la manera de manejar las emociones y de relacionarse sí puede cambiar mucho con terapia. No prometemos plazos: suele ser un proceso largo.'],
+    ['¿Cómo ayudar a alguien con TLP?','Validar lo que siente sin darle la razón en todo, mantener límites claros con calma, no entrar en la escalada cuando la emoción sube y cuidarte también tú. Si hay riesgo de autolesión, llama al <strong>024</strong> o al <strong>112</strong>.'],
+    ['¿Puede participar mi familia?','Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.'],
     ['¿Qué hago si hay autolesiones o ideas de suicidio?','Pide ayuda cuanto antes: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia.'],
-    ['¿Puede participar mi familia?','Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.']
+    ['¿Tratáis los trastornos de la personalidad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
   feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Me siento vacío emocionalmente','Me cuesta relacionarme con la gente'],
@@ -754,14 +992,47 @@ window.MOTIVOS=[
   seoDesc:'Psicólogo para problemas sexuales: falta de deseo, disfunción eréctil, eyaculación precoz o dolor. Solo o en pareja. Centro sanitario en Madrid y online.',
   pagina:'sexual.html',   /* página fija; motivo.html?m=sexual lleva a ella */
   enfoqueDe:'de la sexualidad',
-  subs:['Falta de deseo sexual','Disfunción eréctil','Eyaculación precoz','Anorgasmia','Dolor en las relaciones sexuales','Vaginismo',['Ansiedad ante el sexo','ansiedad'],['Diferencias de deseo en la pareja','pareja'],['Adicción al sexo o a la pornografía','adicciones'],'Sexualidad tras el parto','Sexualidad en la menopausia'],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (problemas o la pregunta del deseo); ansiedad, pareja y adicciones llevan a su terapia */
+  subs:[['Falta de deseo sexual','#deseo'],['Disfunción eréctil','#erectil'],['Eyaculación precoz','#precoz'],['Anorgasmia','#anorgasmia'],['Dolor en las relaciones sexuales','#dolor'],['Vaginismo','#vaginismo'],['Ansiedad ante el sexo','ansiedad'],['Diferencias de deseo en la pareja','pareja'],['Adicción al sexo o a la pornografía','adicciones'],['Sexualidad tras el parto','#parto'],['Sexualidad en la menopausia','#menopausia']],
+  /* apartados nuevos (2026-11-09, recomendaciones aceptadas por el usuario: 1A, 2 único, 3A —TCC sexual, atención plena, pareja, tu contexto—, 4 y 5 como en las demás) */
+  tipos:{titulo:'Problemas sexuales más frecuentes',
+    intro:'Estos son los motivos por los que más nos consultan. Casi siempre se mezclan el cuerpo, la relación y la historia de cada persona, y por eso no hay una sola manera de entenderlos.',
+    items:[
+    ['Disfunción eréctil','Dificultad para conseguir o mantener la erección. Conviene descartar causas físicas, pero muy a menudo pesan la ansiedad y la presión por «rendir».','erectil'],
+    ['Eyaculación precoz','Eyacular antes de lo que se desea, con poco control y malestar. Es una de las consultas más frecuentes y se trabaja con ejercicios concretos.','precoz'],
+    ['Anorgasmia','Dificultad para llegar al orgasmo, o no llegar nunca, aunque haya deseo y excitación.','anorgasmia'],
+    ['Dolor en las relaciones sexuales','Dolor durante o después de la penetración. Siempre conviene una valoración ginecológica o urológica, y trabajamos coordinados.','dolor'],
+    ['Vaginismo','Contracción involuntaria de los músculos de la vagina que dificulta o impide la penetración. Suele ir unido al miedo al dolor, y se trabaja de forma gradual.','vaginismo'],
+    ['Sexualidad tras el parto','El cansancio, los cambios del cuerpo y los nuevos roles cambian el deseo. Es frecuente, y se trabaja también en <a href="pareja.html">pareja</a>.','parto'],
+    ['Sexualidad en la menopausia','Los cambios hormonales pueden afectar al deseo, a la lubricación y al bienestar sexual. Combinamos la mirada médica con la psicológica.','menopausia']
+  ]},
+  proceso:{titulo:'Cómo trabajamos los problemas sexuales', pasos:[
+    ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender qué pasa.','El cuerpo, la relación, tu historia y las expectativas que pesan sobre el sexo.'],
+    ['Trabajarlo paso a paso.','Con ejercicios graduales, sin presión por el resultado, y mejorando la comunicación. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con medicina.','Si hace falta descartar una causa física o tomas medicación, trabajamos junto a tu médico, urólogo o ginecóloga.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando la sexualidad vuelve a ser un espacio tranquilo, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia sexual cognitivo-conductual','Ejercicios graduales y trabajo con la ansiedad de ejecución y las ideas que la alimentan.'],
+    ['Atención plena','Atender al cuerpo y a las sensaciones sin presión por el resultado. Tiene buenos estudios, sobre todo en la falta de deseo.'],
+    ['Terapia de pareja','Cuando la dificultad es de los dos, la trabajamos juntos, como en la <a href="pareja.html">terapia de pareja</a>.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también el estrés, la crianza, la relación y los modelos de sexualidad que nos rodean.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. A muchas personas les resulta más fácil hablar de sexualidad desde casa.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 4 nuevas (6.1A disfunción eréctil psicológica, 6.2A eyaculación precoz, 6.3A deseo con los años, 6.4 local), en desplegables */
+  faqDesplegable:true,
   faq:[
     ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. No hace falta esperar a que sea grave.'],
-    ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.'],
+    ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.','deseo'],
+    ['¿La disfunción eréctil es psicológica?','Puede ser física, psicológica o las dos cosas a la vez. Una pista: si hay erecciones por la mañana o en la masturbación, suele pesar más lo psicológico. En cualquier caso, conviene una revisión médica.'],
+    ['¿Cómo se trata la eyaculación precoz?','Con ejercicios graduales para ganar control, trabajando la ansiedad y, si es posible, con la pareja. Si hace falta, nos coordinamos con urología.'],
+    ['¿Es normal que el deseo cambie con los años?','Sí. El deseo cambia con la edad, el estrés, la crianza o la relación, y no siempre al mismo ritmo en los dos. Que cambie no es un problema; lo es cuando te hace sufrir a ti o a tu pareja.'],
     ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
     ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema es de los dos.'],
-    ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.']
+    ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.'],
+    ['¿Hacéis terapia sexual cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
   feel:['No tengo deseo sexual','Me agobia no estar a la altura','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
