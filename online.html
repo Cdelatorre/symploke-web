@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
+<title>Terapia online con psicólogo sanitario · Desde donde estés</title>
+<meta name="description" content="Terapia psicológica online por videollamada: el mismo enfoque y cuidado que en consulta, desde casa o desde otro país. Centro sanitario en Madrid y online.">
+<!-- BORRADOR (2026-11-09): textos para revisar; faltan canonical, og y datos estructurados como en las terapias -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<link rel="stylesheet" href="comun.css">
+<script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF; --ph:#E3F3EB;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018; --ph:#153328;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018; --ph:#153328;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--brand);color:var(--btntext)}
+.btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
+.btn.small{font-size:15px;padding:12px 22px}
+
+main{max-width:1180px;margin:0 auto;padding:16px clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+section{margin-top:clamp(56px,7vw,96px)}
+section:first-child{margin-top:8px}
+h1{font-size:clamp(40px,4.4vw,64px);line-height:.95;letter-spacing:-.5px}
+h2{font-size:clamp(30px,3vw,42px);line-height:1;margin-bottom:10px}
+.lead{font-size:clamp(16px,1.25vw,18px);line-height:1.45;color:var(--ink2);margin:14px 0 0;max-width:640px}
+.lead em{font-style:normal;color:var(--brandink);font-weight:600}
+.eyebrow{display:block;font-size:14px;font-weight:600;letter-spacing:1px;color:var(--brandink);margin-bottom:12px}
+
+/* ---------- huecos de foto: el mismo marco redondeado que los dibujos; se puede cargar una foto de prueba ---------- */
+.ph{position:relative;display:block;overflow:hidden;background:var(--ph);border-radius:20px;cursor:pointer}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.ph .hint{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:18px;text-align:center;color:var(--brandink);font-size:13px;line-height:1.35;border:2px dashed color-mix(in srgb,var(--brand) 45%,transparent);border-radius:inherit}
+.ph .hint b{font-weight:600;font-size:14px;color:var(--ink)}
+.ph .hint small{color:var(--ink2)}
+.ph.has .hint{display:none}
+.ph input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.ph:focus-within{outline:2px solid var(--brand);outline-offset:3px}
+/* tratamiento común para todas las fotos (se elige abajo a la derecha) */
+[data-trat="calido"] .ph img{filter:saturate(.82) sepia(.12) contrast(.96) brightness(1.03)}
+[data-trat="verde"] .ph img{filter:saturate(.7) contrast(.95) brightness(1.02)}
+[data-trat="verde"] .ph.has::after{content:"";position:absolute;inset:0;background:#009966;mix-blend-mode:soft-light;opacity:.38;pointer-events:none}
+[data-trat="bn"] .ph img{filter:grayscale(1) contrast(1.02) brightness(1.04)}
+
+/* ---------- el director: retrato grande y texto en primera persona ---------- */
+.me{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,4.5vw,64px);align-items:center;margin-top:32px}
+.me .ph{aspect-ratio:4/5;border-radius:28px}
+.who h2{font-size:clamp(34px,3.4vw,48px);margin:0}
+.role{margin:8px 0 0;font-weight:600;font-size:16px;color:var(--brandink)}
+.who p{margin:16px 0 0;font-size:clamp(16px,1.2vw,18px);line-height:1.5;color:var(--ink2);max-width:580px}
+.who dl{display:flex;flex-wrap:wrap;gap:12px 40px;margin:22px 0 0;font-size:15px;line-height:1.4}
+.who dt{color:var(--ink2);font-size:12px;letter-spacing:.6px;text-transform:uppercase}
+.who dd{margin:3px 0 0;color:var(--ink)}
+.first{display:flex;gap:14px;align-items:flex-start;margin-top:26px;padding:18px 22px;background:var(--soft);border:1px solid var(--line);border-radius:20px;max-width:600px}
+.first svg{flex:none;color:var(--brand);margin-top:2px}
+.first p{margin:0;font-size:15px}
+.first b{color:var(--ink);font-weight:600}
+
+/* ---------- el equipo: texto y una foto de grupo opcional ---------- */
+.crew{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,4.5vw,64px);align-items:center}
+.crew .ph{aspect-ratio:16/10}
+
+/* ---------- el centro: una foto grande y cuatro pequeñas ---------- */
+.center-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:end}
+.where{font-size:15px;line-height:1.45;color:var(--ink2);text-align:right}
+.where b{color:var(--ink);font-weight:600}
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px;aspect-ratio:16/8}
+.gal .ph{border-radius:20px}
+.gal .big{grid-row:1 / span 2}
+.badge{display:flex;align-items:center;gap:16px;margin-top:22px;padding:18px 22px;background:var(--soft);border:1px solid var(--line);border-radius:20px;font-size:15px;line-height:1.4;color:var(--ink2)}
+.badge svg{flex:none;color:var(--brand)}
+.badge b{color:var(--ink);font-weight:600}
+
+/* ---------- redes ---------- */
+.social{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.alt-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:600 15px/1 'DM Sans',sans-serif;color:var(--ink);background:var(--bg);border:2px solid var(--ink);border-radius:12px;padding:14px 18px;text-decoration:none;transition:border-color .15s ease,box-shadow .15s ease,transform .15s ease}
+.alt-btn:hover{border-color:var(--brand);box-shadow:4px 4px 0 var(--brand);transform:translate(-2px,-2px)}
+.alt-btn svg{flex:none;color:var(--brand)}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.endnote{margin-top:clamp(56px,7vw,96px);padding:clamp(28px,4vw,48px);background:var(--soft);border:1px solid var(--line);border-radius:28px}
+.endnote h2{max-width:640px}
+
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
+
+@media (max-width:980px){
+  .crew{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .me{grid-template-columns:1fr}
+  .me .ph{max-width:420px}
+}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .center-head{grid-template-columns:1fr}
+  .where{text-align:left}
+  .gal{grid-template-columns:1fr 1fr;grid-template-rows:none;aspect-ratio:auto}
+  .gal .big{grid-row:auto;grid-column:1 / span 2;aspect-ratio:4/3}
+  .gal .ph:not(.big){aspect-ratio:1}
+}
+
+/* ---------- página de terapia online ---------- */
+.intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4.5vw,64px);align-items:center;margin-top:28px}
+.ilus{display:block;aspect-ratio:16/11;background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden}
+.ilus svg{display:block;width:100%;height:100%}
+.prose p{margin:0 0 16px;font-size:clamp(16px,1.2vw,18px);line-height:1.55;color:var(--ink2);max-width:600px}
+.prose p:last-child{margin-bottom:0}
+.pasos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:26px;padding:0;list-style:none;counter-reset:paso}
+.pasos li{position:relative;padding:24px 22px 22px;background:var(--soft);border:1px solid var(--line);border-radius:22px;font-size:16px;line-height:1.45;color:var(--ink2)}
+.pasos li::before{counter-increment:paso;content:counter(paso);display:flex;align-items:center;justify-content:center;width:34px;height:34px;margin-bottom:12px;border-radius:50%;background:var(--brand);color:var(--btntext);font-weight:600}
+.pasos b{display:block;margin-bottom:4px;color:var(--ink);font-weight:600}
+/* al pasar el ratón, como las tarjetas: borde verde, se eleva un poco y el número se enciende */
+.pasos li{transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.pasos li::before{transition:transform .25s ease,background-color .25s ease}
+.pasos li:hover{border-color:var(--brand);transform:translateY(-3px);box-shadow:0 0 0 1.5px var(--brand),0 14px 34px rgba(0,60,40,.12)}
+.pasos li:hover::before{transform:scale(1.12);background:#2FD08E}
+@media (prefers-reduced-motion: reduce){.pasos li,.pasos li::before{transition:none}.pasos li:hover{transform:none}.pasos li:hover::before{transform:none}}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}
+.caja{padding:24px 26px;border:1px solid var(--line);border-radius:22px;background:var(--bg)}
+.caja h3{font-size:22px;margin-bottom:10px}
+.caja ul{margin:0;padding-left:20px;color:var(--ink2);font-size:16px;line-height:1.5}
+.caja li{margin:4px 0}
+.caja p{margin:0;color:var(--ink2);font-size:16px;line-height:1.5}
+.faq h3{font-size:clamp(20px,1.7vw,23px);line-height:1.2;margin:24px 0 6px}
+.faq p{margin:0;color:var(--ink2);font-size:16px;line-height:1.55;max-width:720px}
+@media (max-width:860px){
+  .intro,.dos{grid-template-columns:1fr}
+  .pasos{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a href="terapia.html">Terapias</a><a href="quienes-somos.html">Quiénes somos</a><a href="test1.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
+</header>
+
+<main>
+  <section>
+    <span class="eyebrow">TERAPIA ONLINE</span>
+    <h1>Terapia online, desde donde estés</h1>
+    <div class="intro">
+      <div class="prose">
+        <p>La terapia online es terapia con todas sus letras: la misma persona, el mismo enfoque y el mismo cuidado que en el despacho, pero desde donde estés. Muchas personas la eligen porque les cuesta encontrar huecos, porque viven lejos o fuera de España, o porque les resulta más fácil hablar desde un espacio propio.</p>
+        <p>Los estudios muestran que la terapia por videollamada logra resultados comparables a la presencial en la mayoría de los problemas por los que se consulta.</p>
+      </div>
+      <span class="ilus" data-ilus="online"></span>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">CÓMO FUNCIONA</span>
+    <h2>Tres pasos</h2>
+    <ol class="pasos">
+      <li><b>Pides cita</b>Por el formulario, por teléfono o por WhatsApp. Elegimos juntos el día y la hora.</li>
+      <li><b>Recibes el enlace</b>Nos adaptamos a la plataforma que te resulte más cómoda: Zoom, Google Meet, Skype u otras habituales.</li>
+      <li><b>Hacemos la sesión</b>Por videollamada, con la misma duración que en consulta.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="dos">
+      <div class="caja">
+        <h3>Qué necesitas</h3>
+        <ul>
+          <li>Un ordenador, una tableta o un móvil con cámara.</li>
+          <li>Una conexión a internet estable.</li>
+          <li>Un sitio tranquilo donde nadie te oiga; mejor con auriculares.</li>
+        </ul>
+      </div>
+      <div class="caja">
+        <h3>Si vives fuera de España</h3>
+        <p>Atendemos a españoles que viven en el extranjero y a personas expatriadas. Hacer terapia en tu idioma, con alguien que entiende tu contexto de origen, ayuda mucho cuando estás lejos. Buscamos un horario que encaje con tu zona horaria.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">PARA QUIÉN</span>
+    <h2>Cuándo va bien y cuándo no</h2>
+    <div class="dos">
+      <div class="caja">
+        <h3>Va bien</h3>
+        <ul>
+          <li>Para la mayoría de adultos y adolescentes.</li>
+          <li>Si te cuesta desplazarte o encontrar huecos.</li>
+          <li>Si vives fuera de Madrid o de España.</li>
+          <li>Para combinarla con sesiones presenciales.</li>
+        </ul>
+      </div>
+      <div class="caja">
+        <h3>Mejor de otra manera</h3>
+        <ul>
+          <li>En una crisis o una urgencia: llama al <strong>024</strong> o al <strong>112</strong>.</li>
+          <li>Con niños pequeños solemos preferir la consulta presencial.</li>
+          <li>En problemas de alimentación con riesgo físico, la combinamos con seguimiento presencial y médico.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="badge" style="margin-top:clamp(40px,5vw,64px)">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+    <span><b>La misma garantía que en consulta.</b> Centro sanitario autorizado por la Comunidad de Madrid (nº de registro CS19975), con el mismo secreto profesional y la misma confidencialidad.</span>
+  </div>
+
+  <section class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <h3>¿La terapia online funciona igual que la presencial?</h3>
+    <p>Para la mayoría de los motivos de consulta, sí: los estudios muestran resultados comparables. Lo importante es la relación terapéutica y el trabajo entre sesiones, y eso se construye igual por videollamada.</p>
+    <h3>¿Puedo hacerla desde otro país?</h3>
+    <p>Sí. Atendemos a personas que viven fuera de España y buscamos un horario que encaje con tu zona horaria.</p>
+    <h3>¿Qué pasa si se corta la conexión?</h3>
+    <p>Volvemos a conectarnos en cuanto se pueda o seguimos por teléfono. La sesión no se pierde por un problema técnico.</p>
+    <h3>¿Puedo combinar sesiones online y presenciales?</h3>
+    <p>Sí. Muchas personas alternan según su semana. Si un día te viene mejor venir al centro, en Martín de Vargas, 5, lo cambiamos sin problema.</p>
+  </section>
+
+  <section class="endnote">
+    <h2>¿Empezamos?</h2>
+    <p class="lead">La primera entrevista también puede ser online. En ella pensamos juntos qué te pasa y cómo abordarlo.</p>
+    <div class="cta">
+      <a class="btn primary" href="contacto.html">Pedir primera cita <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn ghost" href="presencial.html">Ver el centro</a>
+    </div>
+  </section>
+</main>
+
+<footer>© [Año] Symploké · [Tu nombre]. Prototipo de diseño: los textos entre corchetes son marcadores. Ilustraciones: Transhumans (Pablo Stanley, CC0).</footer>
+<script src="maqueta/th-data.js"></script>
+<script src="maqueta/ilustraciones.js"></script>
+<script>[].forEach.call(document.querySelectorAll('[data-ilus]'),function(el){var k=el.getAttribute('data-ilus');if(window.ILUS&&ILUS[k])el.innerHTML=ILUS[k]('o'+k);});</script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="comun.js"></script>
+</body>
+</html>
