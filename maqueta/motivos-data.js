@@ -63,7 +63,7 @@ window.MOTIVOS=[
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
     ['Terapia cognitivo-conductual','Exposición gradual a lo que evitas y revisión de las anticipaciones que mantienen el miedo.'],
     ['Terapia de aceptación y compromiso (ACT)','Dejar la lucha contra los síntomas para volver a lo que te importa.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también las situaciones en las que aparece la ansiedad (el trabajo, la familia, la pareja) y los conflictos entre ellas.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también las situaciones en las que aparece la ansiedad (el trabajo, la familia, la pareja) y los conflictos entre ellas.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},   /* grupos de ansiedad: habrá en el futuro; de momento, solo terapia individual */
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -158,7 +158,7 @@ window.MOTIVOS=[
     ['Activación conductual','Recuperar poco a poco actividades con sentido, para salir del círculo de hacer menos y sentirse peor.'],
     ['Terapia cognitivo-conductual','Revisar los pensamientos que hunden y la forma en que nos hablamos.'],
     ['Terapia de aceptación y compromiso (ACT)','Moverse hacia lo que importa sin esperar a tener ganas.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también lo que te ha pasado y lo que te pasa (las pérdidas, el trabajo, la soledad) y cómo se entretejen.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también lo que te ha pasado y lo que te pasa (las pérdidas, el trabajo, la soledad) y cómo se entretejen.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Si te cuesta salir de casa, la terapia online puede ayudarte a empezar.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -230,7 +230,7 @@ window.MOTIVOS=[
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
     ['Terapia cognitivo-conductual para el insomnio (TCC-I)','Es el tratamiento de primera elección en las guías clínicas: control de estímulos, ajuste del tiempo en la cama y revisión de las preocupaciones que mantienen la alerta.'],
     ['Terapia de aceptación y compromiso (ACT)','Dejar de pelear por dormir y bajar la vigilancia sobre el sueño. Está menos estudiada en el insomnio y la usamos como complemento.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también lo que pasa de día (el trabajo, los turnos, las preocupaciones, los hábitos) y cómo se cuela en la noche.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también lo que pasa de día (el trabajo, los turnos, las preocupaciones, los hábitos) y cómo se cuela en la noche.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -326,7 +326,7 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual','Es la base del tratamiento y la que tiene más respaldo, sobre todo en la bulimia y los atracones: regularizar la alimentación y trabajar las ideas sobre el peso y la figura.'],
     ['Trabajo con la familia','Con adolescentes, la familia es parte activa del tratamiento: aprende a acompañar las comidas y a sostener los cambios en casa.'],
     ['Terapia de aceptación y compromiso (ACT)','Relacionarte de otra manera con el cuerpo y con los pensamientos sobre él. La usamos como complemento.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también la exigencia, las redes, la familia y los mensajes sobre el cuerpo que te rodean.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también la exigencia, las redes, la familia y los mensajes sobre el cuerpo que te rodean.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -416,7 +416,7 @@ window.MOTIVOS=[
     ['Terapia conductual integrativa de pareja','Cambiar lo que se puede cambiar y aceptar lo que forma parte del otro, sin convertirlo en una batalla.'],
     ['Terapia centrada en las emociones','Entender los ciclos de reproche y distancia que se repiten, y lo que cada uno necesita debajo de ellos.'],
     ['Terapia de aceptación y compromiso (ACT)','Dejar de pelear con lo que sentís para moveros hacia la relación que queréis tener.'],
-    ['Vuestro contexto','Las técnicas solas no bastan: trabajamos también lo que pasa alrededor de la pareja (el trabajo, la crianza, el dinero, las familias de origen) y cómo choca entre sí.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también lo que pasa alrededor de la pareja (el trabajo, la crianza, el dinero, las familias de origen) y cómo choca entre sí.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Podéis venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También podéis hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque viváis fuera de España. Online podéis conectaros desde sitios distintos, incluso si vivís en ciudades diferentes. La sesión dura lo mismo en las dos modalidades.'},
   quien:{titulo:'Quién os atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -505,7 +505,7 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual','En adultos, entrenar la organización, la planificación y el manejo de la impulsividad en la vida real.'],
     ['Entrenamiento a familias','Pautas para madres, padres y colegio, para que la ayuda no se quede en la consulta.'],
     ['ACT y atención plena','Aprender a notar dónde está la atención y volver a lo que importa, sin pelearse con la inquietud. Las usamos como complemento.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también el ritmo de vida, las pantallas y lo que te piden la escuela o el trabajo.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también el ritmo de vida, las pantallas y lo que te piden la escuela o el trabajo.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Con niños pequeños solemos preferir la consulta presencial.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -597,7 +597,7 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual y prevención de recaídas','Detectar las situaciones de riesgo, ensayar alternativas y prepararse para las caídas.'],
     ['Terapia de aceptación y compromiso (ACT)','Convivir con el deseo de consumir sin obedecerlo. La usamos como complemento.'],
     ['Trabajo con la familia','Ayudar a la familia a cuidarse, a no alimentar el problema sin querer y a acompañar el cambio.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también la vida que llevas, las personas con las que estás y los proyectos que te dan fuerza.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también la vida que llevas, las personas con las que estás y los proyectos que te dan fuerza.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -686,7 +686,7 @@ window.MOTIVOS=[
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
     ['Terapia cognitivo-conductual','Revisar la autocrítica y las reglas de exigencia que te hacen sufrir.'],
     ['ACT y compasión','Tratarte de otra manera sin esperar a «quererte» primero, y moverte hacia lo que te importa.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también tus vínculos, las comparaciones, las redes y lo que te piden el trabajo o los estudios.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también tus vínculos, las comparaciones, las redes y lo que te piden el trabajo o los estudios.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. A muchas personas les resulta más fácil empezar desde casa.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -850,7 +850,7 @@ window.MOTIVOS=[
     ['Entrenamiento a familias','Pautas concretas para casa y coordinación con el colegio, para que la ayuda no se quede en la consulta.'],
     ['Terapia cognitivo-conductual adaptada a la edad','Para la ansiedad, el ánimo o la conducta, con herramientas pensadas para cada etapa.'],
     ['ACT con adolescentes','Aprender a convivir con lo que sienten sin que decida por ellos, y moverse hacia lo que les importa. La usamos como complemento.'],
-    ['Vuestro contexto','Las técnicas solas no bastan: trabajamos también lo que pasa en casa, en clase, con los amigos y en las pantallas.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también lo que pasa en casa, en clase, con los amigos y en las pantallas.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Podéis venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También podéis hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque viváis fuera de España. La sesión dura lo mismo en las dos modalidades. Con niños pequeños solemos preferir la consulta presencial; con adolescentes, la terapia online también funciona.'},
   quien:{titulo:'Quién os atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -936,7 +936,7 @@ window.MOTIVOS=[
   enfoques:{titulo:'Con qué enfoques trabajamos', items:[
     ['Terapia basada en la dialéctico-conductual','Es el enfoque con más respaldo en el TLP. Usamos sus herramientas para regular emociones intensas, tolerar el malestar sin hacerse daño y mejorar las relaciones.'],
     ['Terapia de aceptación y compromiso (ACT)','Hacer sitio a lo que sientes sin que decida por ti, y moverte hacia lo que te importa. La usamos como complemento.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también tu historia, tus relaciones y los entornos en los que te mueves.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también tu historia, tus relaciones y los entornos en los que te mueves.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
@@ -1020,7 +1020,7 @@ window.MOTIVOS=[
     ['Terapia sexual cognitivo-conductual','Ejercicios graduales y trabajo con la ansiedad de ejecución y las ideas que la alimentan.'],
     ['Atención plena','Atender al cuerpo y a las sensaciones sin presión por el resultado. Hay estudios prometedores, sobre todo en la falta de deseo en mujeres.'],
     ['Terapia de pareja','Cuando la dificultad es de los dos, la trabajamos juntos, como en la <a href="pareja.html">terapia de pareja</a>.'],
-    ['Tu contexto','Las técnicas solas no bastan: trabajamos también el estrés, la crianza, la relación y los modelos de sexualidad que nos rodean.']
+    ['Terapias contextuales','Las técnicas solas no bastan: trabajamos también el estrés, la crianza, la relación y los modelos de sexualidad que nos rodean.']
   ]},
   modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. A muchas personas les resulta más fácil hablar de sexualidad desde casa.'},
   quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
