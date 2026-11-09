@@ -93,7 +93,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
 <main>
   <section class="intro">
     <h1>Terapias</h1>
-    <p class="lead">Presencial en Koiné, en Madrid centro, u online. También grupos, talleres y charlas. Si no sabes por dónde empezar, pide cita y lo pensamos juntos. <span style="font-size:13px;opacity:.7">[provisional]</span></p>
+    <p class="lead">Presencial en Koiné, en Madrid centro, u online. También grupos, talleres y charlas. Si no sabes por dónde empezar, pide cita y lo pensamos juntos.</p>
   </section>
 
   <h2 class="fmt-h2">¿Cómo quieres hacerlo?</h2>
@@ -125,7 +125,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
   'use strict';
   function card(href,slug,title,text,go){return '<a class="card" href="'+href+'"><span class="img">'+ILUS[slug]('t'+slug)+'</span><span class="txt"><h3>'+title+'</h3><p>'+text+'</p>'+(go?'<span class="go">'+go+' <span class="arr" aria-hidden="true">→</span></span>':'')+'</span></a>';}
   var F=[['presencial','Terapia presencial','En Koiné, C/ Martín de Vargas 5, Madrid centro.'],['online','Terapia online','Por videollamada, desde donde estés.'],['grupos','Grupos','[Qué grupos ofreces]']];
-  document.getElementById('formatos').innerHTML=F.map(function(x){return card('contacto.html',x[0],x[1],x[2],'Pedir cita');}).join('');
+  document.getElementById('formatos').innerHTML=F.map(function(x){return x[0]==='presencial'?card('presencial.html',x[0],x[1],x[2],'Ver el centro'):card('contacto.html',x[0],x[1],x[2],'Pedir cita');}).join('');
   document.getElementById('motivos').innerHTML=MOTIVOS.map(function(m){return card(motivoUrl(m),m.slug,m.name,'«'+m.sym+'»','Ver más');}).join('');
   document.getElementById('bandpic').innerHTML=ILUS.portada('band');
 })();
