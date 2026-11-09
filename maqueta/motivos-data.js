@@ -38,13 +38,50 @@ window.MOTIVOS=[
     'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera. Muchas veces esto desemboca en el aislamiento y la <a href="depresion.html">depresión</a>.',
     'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. Por eso incluimos aquí el <strong>estrés laboral o burnout</strong>. También puede ocurrir que, después de una experiencia muy dura, el cuerpo siga en alerta como si el peligro no hubiera pasado: es lo que se conoce como <strong>estrés postraumático</strong>.'
   ],
+  /* apartados de tratamiento (2026-11-09, elegidos por el usuario tras el estudio de competencia: 1B, 2A, 3B, 4A sin grupos, 5B) */
+  /* PRUEBA (2026-11-09): tipos de ansiedad, para ver cómo queda; pendiente de que el usuario la apruebe */
+  tipos:{titulo:'Tipos de ansiedad',
+    intro:'Los manuales clínicos distinguen varios cuadros. Los nombramos porque así se buscan y se diagnostican, pero en cada persona se mezclan, y lo que más nos importa es en qué situaciones aparecen.',
+    items:[
+    ['Ansiedad generalizada','Preocupación constante por muchas cosas a la vez (el trabajo, la salud, la familia, el dinero), difícil de frenar, con tensión, cansancio y problemas de sueño. Se habla de ella cuando dura meses.','generalizada'],
+    ['Ataques de ansiedad y pánico','Una subida brusca de miedo intenso, con palpitaciones, ahogo, mareo o sensación de irrealidad, que llega a su punto máximo en pocos minutos. Después, lo que más pesa suele ser el miedo a que vuelva.','panico'],
+    ['Agorafobia','Miedo a lugares o situaciones de los que sería difícil salir o recibir ayuda: el metro, las multitudes, las colas, salir solo de casa. A menudo va unida al pánico.','agorafobia'],
+    ['Ansiedad social','Miedo a ser juzgado o a hacer el ridículo delante de otros: hablar en público, las reuniones, comer acompañado. Muchas veces se confunde con timidez.','social'],
+    ['Fobias','Miedo intenso a algo concreto (volar, la sangre, los animales, las alturas) que lleva a evitarlo, aunque sepamos que no es tan peligroso.','fobias'],
+    ['Obsesiones y TOC','Pensamientos que se imponen y causan malestar, y rituales (comprobar, lavar, ordenar) para calmarlos que acaban alimentándolos. Hoy los manuales lo clasifican aparte, pero lo incluimos aquí porque se vive como ansiedad.','toc'],
+    ['Hipocondría o ansiedad por la salud','Miedo persistente a tener una enfermedad grave, con revisiones del cuerpo, búsquedas en internet y visitas al médico que tranquilizan durante poco tiempo.','hipocondria'],
+    ['Estrés laboral y burnout','Agotamiento, distancia con el trabajo y sensación de no rendir, después de mucho tiempo bajo presión.','burnout'],
+    ['Estrés postraumático','Tras una experiencia muy dura, el cuerpo sigue en alerta: recuerdos que vuelven, pesadillas, sobresaltos y evitar todo lo que lo recuerda.','postraumatico']
+  ]},
+  proceso:{titulo:'Cómo trabajamos la ansiedad', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender tu ansiedad.','Buscamos a qué situaciones responde, qué la mantiene y de qué te está avisando.'],
+    ['Trabajarla.','Con las herramientas que encajan contigo, en sesión y en tu día a día. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.'],   /* añadido 2026-11-09, como en depresión e insomnio */
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando la ansiedad deja de mandar, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual','Exposición gradual a lo que evitas y revisión de las anticipaciones que mantienen el miedo.'],
+    ['Terapia de aceptación y compromiso (ACT)','Dejar la lucha contra los síntomas para volver a lo que te importa.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también las situaciones en las que aparece la ansiedad (el trabajo, la familia, la pareja) y los conflictos entre ellas.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},   /* grupos de ansiedad: habrá en el futuro; de momento, solo terapia individual */
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas: 6 nuevas (2026-11-09: 6.1B, 6.2A, 6.3B, 6.4A provisional, 6.5A, 6.6B), ordenadas de más a menos buscadas */
+  faqDesplegable:true,   /* PRUEBA 2026-11-09: preguntas en desplegables (opción A, todas cerradas), solo en ansiedad para verlo */
   faq:[
+    ['¿Cómo sé si lo que tengo es ansiedad?','Suele notarse en el cuerpo (palpitaciones, presión en el pecho, ahogo, mareo, nudo en el estómago), en la cabeza (preocupación constante, darle vueltas a todo, miedo a perder el control) y en lo que haces (evitar sitios o situaciones, comprobar una y otra vez). Si te pasa a menudo y te limita, merece la pena consultarlo. Conviene descartar antes otras causas con tu médico.','sintomas'],
+    ['¿Por qué tengo ansiedad sin motivo?','Que no encuentres el motivo no significa que no lo haya. La ansiedad casi siempre tiene dirección: el trabajo, la familia, la pareja, una decisión pendiente. Lo que ocurre es que el aviso llega antes que la explicación. Buscar ese foco es una de las primeras cosas que hacemos.'],
+    ['¿Qué hago si me da un ataque de ansiedad?','Durante el ataque, lo más útil suele ser no luchar contra él: dejar que suba y baje, respirar despacio y quedarte donde estás si puedes. Huir alivia en el momento, pero refuerza el miedo para la próxima vez. Si es la primera vez o el dolor en el pecho no cede, llama al 112.'],
+    ['¿Por qué la ansiedad empeora por la noche?','Por la noche se acaban las distracciones y quedan los pensamientos. El cansancio baja la tolerancia y, al intentar dormir, prestamos más atención al cuerpo. Si se repite, puede convertirse en <a href="insomnio.html">insomnio por ansiedad</a>.'],
     ['¿Cuándo conviene ir al psicólogo por ansiedad?','Cuando dura semanas, te impide hacer cosas que antes hacías o aparece en forma de ataques que te asustan. No hace falta esperar a que sea grave.'],
     ['¿Se cura la ansiedad?','La ansiedad en sí no es una enfermedad, y hay partes de ella que nos son útiles. Lo que sí es necesario es entenderla y saber de dónde viene, para que no nos genere sufrimiento.'],
-    ['¿Cuántas sesiones hacen falta?','Depende de cada caso. En la primera cita valoramos juntos qué te pasa y te proponemos cómo trabajarlo.'],
+    ['¿Cuántas sesiones hacen falta?','Depende de cada caso. Muchas personas notan cambios en las primeras semanas, cuando empiezan a entender su ansiedad. Empezamos con sesiones semanales y, cuando notas avances, las espaciamos. En la primera entrevista te damos una idea orientativa y la revisamos sobre la marcha.'],
     ['¿La terapia online funciona igual?','Para la ansiedad, la terapia online logra progresos comparables a la presencial.'],
     ['¿Hace falta tomar medicación?','En terapia psicológica no se recetan fármacos. Si ya tomas medicación o conviene valorarla, nos coordinamos con tu médico.'],
-    ['¿La ansiedad y la depresión van juntas?','A menudo sí: cuando la ansiedad dura mucho, puede acabar en desgana, aislamiento y tristeza. Cuando aparecen las dos, las trabajamos a la vez.']   /* añadida 2026-11-09 («ansiedad y depresión» se busca mucho) */
+    ['¿La ansiedad y la depresión van juntas?','A menudo sí: cuando la ansiedad dura mucho, puede acabar en desgana, aislamiento y tristeza. Cuando aparecen las dos, las trabajamos a la vez.'],   /* añadida 2026-11-09 («ansiedad y depresión» se busca mucho) */
+    ['¿Puedo pedir la baja por ansiedad?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la ansiedad tiene que ver con un conflicto laboral o con acoso, también podemos valorarlo desde la psicología forense y elaborar un informe pericial.'],   /* 6.4 B, elegida 2026-11-09: aprovechar que Daniel es psicólogo forense */
+    ['¿Atendéis la ansiedad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los amigos, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué situaciones responde y de qué te está avisando, para que puedas relacionarte con ella de otra manera. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus esferas vitales y te permitan avanzar.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
@@ -56,7 +93,8 @@ window.MOTIVOS=[
     ['Terapia cognitivo-conductual','Exposición gradual a lo que se evita y revisión de las anticipaciones que mantienen el miedo.','amplia en varios cuadros de ansiedad'],
     ['Terapias contextualistas y ACT','Dejar de pelear con la ansiedad para volver a hacer lo que importa, aunque esté presente.','creciente'],
   ],
-  subs:['Ansiedad generalizada','Ataques de ansiedad y pánico','Agorafobia','Ansiedad social','Obsesiones y TOC','Miedos y fobias','Hipocondría o ansiedad por la salud','Estrés laboral y burnout','Estrés postraumático',['Insomnio por ansiedad','insomnio'],'Ansiedad que se nota en el cuerpo'],
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página (tipos o preguntas); un slug lleva a otra terapia */
+  subs:[['Ansiedad generalizada','#generalizada'],['Ataques de ansiedad y pánico','#panico'],['Agorafobia','#agorafobia'],['Ansiedad social','#social'],['Obsesiones y TOC','#toc'],['Miedos y fobias','#fobias'],['Hipocondría o ansiedad por la salud','#hipocondria'],['Estrés laboral y burnout','#burnout'],['Estrés postraumático','#postraumatico'],['Insomnio por ansiedad','insomnio'],['Ansiedad que se nota en el cuerpo','#sintomas']],
   alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde'
 },
 {
@@ -69,7 +107,8 @@ window.MOTIVOS=[
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',   /* frase junto a «Quizá te suene»; si falta, «Es frecuente sentirse así» */
   revisada:true,   /* sin la marca «borrador» */
   k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio depresion mayor distimia depresion posparto depresion estacional anhedonia no disfruto de nada falta de motivacion soledad no deseada crisis existencial ansiedad y depresion',
-  subs:['Depresión mayor','Distimia o tristeza que dura años',['Ansiedad y depresión','ansiedad'],'Apatía y falta de motivación','No disfrutar de nada (anhedonia)','Sensación de vacío','Soledad no deseada','Crisis existencial','Depresión posparto','Depresión estacional',['Depresión tras una pérdida','duelo'],'Depresión en personas mayores'],
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su tipo en esta página; ansiedad y duelo llevan a su terapia */
+  subs:[['Depresión mayor','#mayor'],['Distimia o tristeza que dura años','#distimia'],['Ansiedad y depresión','ansiedad'],['Apatía y falta de motivación','#apatia'],['No disfrutar de nada (anhedonia)','#apatia'],['Sensación de vacío','#vacio'],['Soledad no deseada','#soledad'],['Crisis existencial','#existencial'],['Depresión posparto','#posparto'],['Depresión estacional','#estacional'],['Depresión tras una pérdida','duelo'],['Depresión en personas mayores','#mayores']],
   feel:['No tengo ganas de levantarme de la cama','No veo futuro posible','No valgo para nada','No tengo ganas de vivir'],
   /* citas literales de Marino Pérez Álvarez: (2019) «Diagnóstico más allá de los síntomas», pág. 34 del PDF;
      (2007) «La activación conductual y la desmedicalización de la depresión», págs. 5 y 7 del PDF (ver citas-para-la-web.md) */
@@ -92,13 +131,53 @@ window.MOTIVOS=[
     'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos llenen, y el ánimo baja más. <strong>Los estudios de psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. Así, la terapia busca que actúes de acuerdo con tus objetivos y con lo que te interesa, en vez de según cómo te encuentres ese día. No se trata de hacer por hacer ni de rellenar el tiempo por estar ocupado, sino de hacer cosas que tengan sentido para ti, con pequeños avances.',
     'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos. Hay etapas especialmente desgastantes —un posparto, <a href="duelo.html">un duelo</a>, los intensos ritmos de vida, el cansancio acumulado— tras las que el ánimo puede venirse abajo.'
   ],
-  /* preguntas frecuentes (2026-11-08). La de antidepresivos sigue las guías clínicas (p. ej., NICE NG222, 2022): psicoterapia como primera opción en la depresión menos grave; en la más grave, combinada con medicación */
+  /* apartados nuevos (2026-11-09, elegidos por el usuario tras el estudio de competencia: 1B, 2B, 3A, 4B, 5 como en ansiedad) */
+  tipos:{titulo:'Tipos de depresión',
+    intro:'Los manuales clínicos distinguen varios tipos, y cada persona nombra también la depresión a su manera. Recogemos las dos cosas, porque así se busca, pero en cada caso se mezclan, y lo que más nos importa es la situación en la que estás.',
+    items:[
+    ['Depresión mayor','Ánimo bajo o pérdida de interés casi todos los días durante al menos dos semanas, con cambios en el sueño, el apetito, la energía o la concentración, y a menudo culpa.','mayor'],
+    ['Distimia o tristeza que dura años','Un ánimo bajo menos intenso, pero que se mantiene durante años, hasta el punto de confundirse con «mi forma de ser».','distimia'],
+    ['Ansiedad y depresión','A menudo van juntas: la <a href="ansiedad.html">ansiedad</a> mantenida desgasta y acaba en desánimo. Cuando aparecen las dos, las trabajamos a la vez.','ansiedad'],
+    ['Apatía y anhedonia','No disfrutar de lo que antes te gustaba, a veces sin sentirte triste: «no tengo ganas de nada, pero no estoy triste».','apatia'],
+    ['Sensación de vacío','Sentir que nada llena, como si faltara algo por dentro, aunque desde fuera todo parezca en orden.','vacio'],
+    ['Soledad no deseada','Cuando faltan vínculos o los que hay no sostienen. Es uno de los factores que más pesan en el ánimo.','soledad'],
+    ['Crisis existencial','Preguntas sobre el sentido de lo que hacemos, a menudo tras un cambio vital: una edad, un trabajo, una pérdida.','existencial'],
+    ['Depresión posparto','Aparece en el embarazo o en los meses tras el parto, y también puede afectar a la otra persona de la pareja. No es lo mismo que la tristeza pasajera de los primeros días.','posparto'],
+    ['Depresión estacional','Se repite en otoño e invierno, con menos luz: más sueño, más apetito y menos energía.','estacional'],
+    ['Depresión tras una pérdida','Cuando un <a href="duelo.html">duelo</a> se alarga y el ánimo no se recupera.','perdida'],
+    ['Depresión en personas mayores','A veces no se nota como tristeza, sino como cansancio, quejas físicas, olvidos o aislamiento, y se confunde con «cosas de la edad».','mayores']
+  ]},
+  proceso:{titulo:'Cómo trabajamos la depresión', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Entender cómo has llegado hasta aquí.','Lo que has perdido, lo que te pesa y lo que se ha ido estrechando en tu vida.'],
+    ['Dar los primeros pasos.','Pequeñas actividades con sentido para ti, sin esperar a tener ganas. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando el ánimo se sostiene, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Activación conductual','Recuperar poco a poco actividades con sentido, para salir del círculo de hacer menos y sentirse peor.'],
+    ['Terapia cognitivo-conductual','Revisar los pensamientos que hunden y la forma en que nos hablamos.'],
+    ['Terapia de aceptación y compromiso (ACT)','Moverse hacia lo que importa sin esperar a tener ganas.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también lo que te ha pasado y lo que te pasa (las pérdidas, el trabajo, la soledad) y cómo se entretejen.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades. Si te cuesta salir de casa, la terapia online puede ayudarte a empezar.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08). La de antidepresivos sigue las guías clínicas (p. ej., NICE NG222, 2022): psicoterapia como primera opción en la depresión menos grave; en la más grave, combinada con medicación.
+     2026-11-09: 7 nuevas (6.1A, 6.2B, 6.3A, 6.4B, 6.5 baja con peritaje, 6.6B, 6.7 local), en desplegables como en ansiedad */
+  faqDesplegable:true,
   faq:[
+    ['¿Cómo sé si tengo depresión?','Suele notarse en el ánimo (tristeza o sensación de vacío casi a diario), en el interés (dejar de disfrutar de lo que antes te gustaba), en el cuerpo (cansancio, cambios en el sueño y en el apetito) y en la cabeza (culpa, dificultad para concentrarte, ver el futuro cerrado). Si dura más de dos semanas y te limita, merece la pena consultarlo. Conviene descartar también otras causas con tu médico.'],
+    ['No tengo ganas de nada, pero no estoy triste. ¿Es depresión?','Puede serlo. La depresión no siempre se nota como tristeza: a veces aparece como apatía, como no disfrutar de nada o como un cansancio que no se va. Esperar a tener ganas suele alargarlo; empezar por algo pequeño, aunque no apetezca, ayuda a salir del círculo.'],
+    ['¿La depresión es por falta de serotonina?','No está demostrado. Es una explicación muy extendida, pero la investigación no la sostiene tal cual: el ánimo va ligado a la vida concreta, al cuerpo y a las situaciones que atraviesas. Por eso lo miramos todo en conjunto.'],
     ['¿Cuándo conviene ir al psicólogo por depresión?','Cuando la tristeza, el desánimo o la falta de interés duran semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de ti. No hace falta esperar a tocar fondo.'],
     ['¿Qué diferencia hay entre tristeza y depresión?','La tristeza es una emoción normal ante una pérdida o un problema, y suele ir cediendo. Hablamos de depresión cuando se mantiene durante semanas, se apaga el interés por casi todo y empieza a afectar al sueño, al apetito, al trabajo o a las relaciones.'],
     ['¿Se cura la depresión?','Más que “curarse”, de la depresión se sale cambiando poco a poco la situación en la que uno está, y eso se puede trabajar. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para entender cómo has llegado ahí y para ir haciendo progresos.'],
     ['¿Hace falta tomar antidepresivos?','En terapia psicológica no se recetan fármacos. Las guías clínicas recomiendan la psicoterapia como primera opción en la depresión leve o moderada y, en la más grave, combinada con medicación. Si ya tomas antidepresivos o conviene valorarlos, nos coordinamos con tu médico o psiquiatra.'],
-    ['¿La terapia online funciona para la depresión?','Sí. La terapia online logra resultados comparables a la presencial, y a veces facilita empezar cuando cuesta salir de casa.']
+    ['¿La terapia online funciona para la depresión?','Sí. La terapia online logra resultados comparables a la presencial, y a veces facilita empezar cuando cuesta salir de casa.'],
+    ['¿Puedo dejar los antidepresivos?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico o psiquiatra, porque dejarlos bruscamente puede provocar síntomas de retirada. La terapia psicológica puede acompañarte durante ese proceso, y trabajar lo que te llevó a la depresión ayuda a que el cambio se sostenga.'],
+    ['¿Puedo pedir la baja por depresión?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la depresión tiene que ver con un conflicto laboral o con acoso, también podemos valorarlo desde la psicología forense y elaborar un informe pericial.'],
+    ['¿Cómo ayudar a alguien con depresión?','Escúchale sin juzgar y sin dar consejos rápidos; evita el «anímate», que suele hacer sentir peor. Proponle cosas pequeñas para hacer juntos y anímale a pedir ayuda profesional. Si habla de morir o de hacerse daño, llamad al <strong>024</strong>. Y cuídate también tú: acompañar desgasta.'],
+    ['¿Atendéis la depresión cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. No ver salida es lo que más paraliza: todo se ve oscuro y parece que no hay esperanza de cambio. Por eso ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y avanzar poco a poco hacia lo que te importa.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
@@ -126,14 +205,50 @@ window.MOTIVOS=[
   enfoqueDe:'del insomnio',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
   k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio insomnio de conciliacion despertares nocturnos me despierto a las 4 sueno no reparador insomnio cronico pastillas para dormir somniferos dejar los somniferos menopausia turnos pesadillas insomnio por ansiedad estres',
-  subs:['Insomnio de conciliación','Despertares nocturnos','Despertarse de madrugada','Sueño no reparador','Insomnio crónico',['Insomnio por ansiedad o estrés','ansiedad'],['Insomnio y depresión','depresion'],'Pesadillas','Higiene del sueño',['Dependencia de pastillas para dormir','adicciones'],'Insomnio en la menopausia','Trabajo a turnos',['Sueño en niños y adolescentes','infancia']],
-  /* preguntas frecuentes (2026-11-08). Pastillas: las guías (p. ej., la europea de insomnio de 2023, Riemann y cols.) proponen la TCC-I como primera opción y los hipnóticos solo a corto plazo */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página (tipos o la pregunta de higiene del sueño); las demás llevan a su terapia */
+  subs:[['Insomnio de conciliación','#conciliacion'],['Despertares nocturnos','#despertares'],['Despertarse de madrugada','#madrugada'],['Sueño no reparador','#noreparador'],['Insomnio crónico','#cronico'],['Insomnio por ansiedad o estrés','ansiedad'],['Insomnio y depresión','depresion'],['Pesadillas','#pesadillas'],['Higiene del sueño','#higiene'],['Dependencia de pastillas para dormir','adicciones'],['Insomnio en la menopausia','#menopausia'],['Trabajo a turnos','#turnos'],['Sueño en niños y adolescentes','infancia']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1B, 2B con diario de sueño y coordinación médica, 3A sin higiene del sueño como enfoque, 4 y 5 como en ansiedad) */
+  tipos:{titulo:'Tipos de insomnio y problemas de sueño',
+    intro:'El insomnio no es uno solo: no es lo mismo no poder dormirse que despertarse de madrugada. Distinguirlos ayuda a saber por dónde empezar, aunque a menudo se combinan.',
+    items:[
+    ['Insomnio de conciliación','Te acuestas y no llega el sueño: pasan los minutos, empiezas a pensar y, cuanto más lo intentas, más despierto estás.','conciliacion'],
+    ['Despertares nocturnos','Te duermes, pero te despiertas varias veces durante la noche y te cuesta volver a dormirte.','despertares'],
+    ['Despertarse de madrugada','Te despiertas a las 4 o a las 5 y ya no vuelves a dormirte. A menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
+    ['Sueño no reparador','Duermes horas, pero te levantas igual de cansado. No basta con dormir: el sueño tiene que llegar a ser reparador.','noreparador'],
+    ['Insomnio crónico','Se habla de él cuando duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
+    ['Pesadillas','Sueños que despiertan con angustia. Son frecuentes después de experiencias muy duras, como ocurre en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
+    ['Insomnio en la menopausia','Los sofocos, los sudores nocturnos y los cambios hormonales interrumpen el sueño. También aquí la terapia ayuda a dormir mejor.','menopausia'],
+    ['Trabajo a turnos','Cambiar de horario desajusta el reloj interno. Buscamos cómo proteger el sueño dentro de los turnos que tienes.','turnos']
+  ]},
+  proceso:{titulo:'Cómo trabajamos el insomnio', pasos:[
+    ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
+    ['Un diario de sueño.','Durante una o dos semanas apuntas cómo duermes, para ver qué pasa de verdad por la noche y no solo lo que recordamos.'],
+    ['Ajustar hábitos y horarios.','El uso de la cama, el tiempo que pasas en ella y lo que haces de día. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Coordinarnos con tu médico.','Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.'],
+    ['Revisar y cerrar.','Vemos juntos cómo vas y, cuando el sueño se sostiene, espaciamos las sesiones.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia cognitivo-conductual para el insomnio (TCC-I)','Es el tratamiento de primera elección en las guías clínicas: control de estímulos, ajuste del tiempo en la cama y revisión de las preocupaciones que mantienen la alerta.'],
+    ['Terapia de aceptación y compromiso (ACT)','Dejar de pelear por dormir y bajar la vigilancia sobre el sueño. Está menos estudiada en el insomnio y la usamos como complemento.'],
+    ['Tu contexto','Las técnicas solas no bastan: trabajamos también lo que pasa de día (el trabajo, los turnos, las preocupaciones, los hábitos) y cómo se cuela en la noche.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Puedes venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También puedes hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque vivas fuera de España. La sesión dura lo mismo en las dos modalidades.'},
+  quien:{titulo:'Quién te atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08). Pastillas: las guías (p. ej., la europea de insomnio de 2023, Riemann y cols.) proponen la TCC-I como primera opción y los hipnóticos solo a corto plazo.
+     2026-11-09: 6 nuevas (6.1A higiene, 6.2B despertar de madrugada, 6.3A horas, 6.4 dejar pastillas, 6.5A sesiones con cifra, 6.6 local), en desplegables */
+  faqDesplegable:true,
   faq:[
-    ['¿Cuándo conviene ir al psicólogo por insomnio?','Cuando duermes mal varias noches por semana durante semanas y lo notas de día: cansancio, irritabilidad o problemas para concentrarte. No hace falta esperar a que se vuelva crónico.'],
+    ['¿Por qué me despierto a las 3 o a las 4 de la mañana?','En la segunda mitad de la noche el sueño es más ligero, y cualquier preocupación nos despierta con más facilidad. Si se repite, puede estar ligado al estrés, a la <a href="ansiedad.html">ansiedad</a> o al ánimo bajo. Si no vuelves a dormirte en un rato, levántate y haz algo tranquilo con poca luz hasta que vuelva el sueño.'],
     ['¿Qué hago si no puedo dormir?','Si llevas un rato en la cama sin dormir y empiezas a agobiarte, suele ayudar levantarte, hacer algo tranquilo con poca luz y volver cuando tengas sueño. Mirar el reloj o el móvil alimenta la alerta. Si se repite a menudo, conviene consultarlo.'],
+    ['¿Cuántas horas hay que dormir?','La mayoría de los adultos necesita entre 7 y 9 horas, pero no hay una cifra exacta para todos: lo que más importa es cómo te encuentras de día. Obsesionarse con las horas también quita el sueño.'],
+    ['¿Qué es la higiene del sueño?','Son hábitos que ayudan a dormir: horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde, y una habitación tranquila y oscura. Es una buena base, pero por sí sola suele quedarse corta en el insomnio.','higiene'],
+    ['¿Cuándo conviene ir al psicólogo por insomnio?','Cuando duermes mal varias noches por semana durante semanas y lo notas de día: cansancio, irritabilidad o problemas para concentrarte. No hace falta esperar a que se vuelva crónico.'],
     ['¿Se cura el insomnio?','En muchos casos mejora con terapia psicológica, que es lo que recomiendan las guías clínicas. Cada proceso es distinto; no prometemos plazos, pero sí trabajar contigo para que vuelvas a dormir sin pelearte con la noche.'],
+    ['¿Cuántas sesiones hacen falta?','La terapia cognitivo-conductual para el insomnio suele necesitar pocas sesiones, a menudo entre 4 y 8. Cada caso es distinto: en la primera entrevista te damos una idea orientativa y la revisamos sobre la marcha.'],
     ['¿Las pastillas para dormir solucionan el insomnio?','En terapia psicológica no se recetan fármacos. Los somníferos pueden ayudar de forma puntual, pero las guías clínicas no los recomiendan como solución a largo plazo, entre otras cosas por el riesgo de <a href="adicciones.html">dependencia</a>. Si los tomas o quieres dejarlos, nos coordinamos con tu médico.'],
-    ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.']
+    ['¿Puedo dejar las pastillas para dormir?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico, porque dejarlas bruscamente puede empeorar el sueño durante un tiempo. La terapia cognitivo-conductual para el insomnio ayuda a dejarlas sin perder el sueño.'],
+    ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.'],
+    ['¿Tratáis el insomnio cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Miro cómo pasan las horas y no me duermo','Me siento cansado todo el tiempo'],
   /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
@@ -235,14 +350,52 @@ window.MOTIVOS=[
   pagina:'pareja.html',   /* página fija; motivo.html?m=pareja lleva a ella */
   enfoqueDe:'de la pareja',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
-  subs:['Discusiones constantes','Problemas de comunicación','Crisis de pareja','Celos','Infidelidad','Dependencia emocional','Apego','Narcisismo en la pareja',['Falta de deseo en la pareja','sexual'],'La pareja tras tener hijos','Rupturas, separaciones y divorcios'],
-  /* preguntas frecuentes (2026-11-08) */
+  /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página; la falta de deseo lleva a sexual */
+  subs:[['Discusiones constantes','#discusiones'],['Problemas de comunicación','#comunicacion'],['Crisis de pareja','#crisis'],['Celos','#celos'],['Infidelidad','#infidelidad'],['Dependencia emocional','#dependencia'],['Apego','#apego'],['Narcisismo en la pareja','#narcisismo'],['Falta de deseo en la pareja','sexual'],['La pareja tras tener hijos','#hijos'],['Rupturas, separaciones y divorcios','#rupturas']],
+  /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2B con sesión individual con cada uno, 3 mezcla sin Gottman ni sistémica, 4 y 5 como en ansiedad) */
+  tipos:{titulo:'Problemas de pareja más frecuentes',
+    intro:'Estos son los motivos por los que más nos consultan las parejas. Casi nunca llegan solos: unos tiran de otros, y en cada pareja se entretejen de una manera.',
+    items:[
+    ['Discusiones constantes','Discutís por todo, o siempre por lo mismo, y cada discusión deja más distancia que la anterior.','discusiones'],
+    ['Problemas de comunicación','Hablar se ha vuelto difícil: uno ataca, el otro se cierra, y lo importante no llega a decirse.','comunicacion'],
+    ['Crisis de pareja','Una etapa en la que la relación se tambalea: un cambio, una pérdida, el desgaste o la sensación de haberse alejado.','crisis'],
+    ['Celos','Desconfianza, comprobaciones y preguntas que alivian un momento pero alimentan el miedo, como ocurre en <a href="ansiedad.html">la ansiedad</a>.','celos'],
+    ['Infidelidad','Después de una infidelidad se rompe la confianza. Se puede reconstruir o decidir separarse, pero conviene hacerlo con ayuda.','infidelidad'],
+    ['Dependencia emocional','Sentir que no puedes estar sin la otra persona, aunque la relación te haga daño. Suele ir unida a la <a href="autoestima.html">autoestima</a>.','dependencia'],
+    ['Apego','Cómo aprendimos a querer y a pedir cercanía, y cómo se repite en la pareja: miedo al abandono o necesidad de distancia.','apego'],
+    ['Narcisismo en la pareja','Cuando sientes que la relación gira siempre alrededor del otro. Usamos la palabra para empezar a hablar, no para diagnosticar a nadie.','narcisismo'],
+    ['Falta de deseo en la pareja','El deseo cambia con los años, el estrés o la crianza, y no siempre al mismo ritmo en los dos. Lo trabajamos también en <a href="sexual.html">terapia sexual</a>.','deseo'],
+    ['La pareja tras tener hijos','Menos tiempo, menos sueño y nuevos roles: la crianza pone a prueba hasta a las parejas más sólidas.','hijos'],
+    ['Rupturas, separaciones y divorcios','Acompañamos la decisión y el después, para que haya menos daño, sobre todo si hay hijos. Y si la ruptura duele mucho tiempo, trabajamos también el <a href="duelo.html">duelo</a>.','rupturas']
+  ]},
+  proceso:{titulo:'Cómo trabajamos en terapia de pareja', pasos:[
+    ['Primera entrevista, gratuita.','Con los dos. La hace siempre Daniel de la Torre, director del centro. Nos contáis qué os pasa y lo pensamos juntos.'],
+    ['Una sesión individual con cada uno.','Para escuchar a cada persona por separado, con calma, lo que quizá cuesta decir delante del otro.'],
+    ['Entender qué os pasa.','Cómo discutís, qué se repite y qué está ocurriendo alrededor de la relación.'],
+    ['Trabajarlo juntos.','La comunicación, la forma de discutir y de reparar después. Las sesiones duran 60 minutos; al principio suelen ser semanales y, como mínimo, dos al mes.'],
+    ['Revisar y decidir.','Vemos cómo vais y os acompañamos en vuestras decisiones, también si decidís separaros.']
+  ]},
+  enfoques:{titulo:'Con qué enfoques trabajamos', items:[
+    ['Terapia conductual integrativa de pareja','Cambiar lo que se puede cambiar y aceptar lo que forma parte del otro, sin convertirlo en una batalla.'],
+    ['Terapia centrada en las emociones','Entender los ciclos de reproche y distancia que se repiten, y lo que cada uno necesita debajo de ellos.'],
+    ['Terapia de aceptación y compromiso (ACT)','Dejar de pelear con lo que sentís para moveros hacia la relación que queréis tener.'],
+    ['Vuestro contexto','Las técnicas solas no bastan: trabajamos también lo que pasa alrededor de la pareja (el trabajo, la crianza, el dinero, las familias de origen) y cómo choca entre sí.']
+  ]},
+  modalidad:{titulo:'Presencial u online', texto:'Podéis venir a nuestro centro sanitario en la calle Martín de Vargas, 5, junto al metro de Embajadores (línea 3) y cerca de Lavapiés: es la <a href="presencial.html">terapia presencial</a>. También podéis hacer la <a href="online.html">terapia online</a>, por videollamada, desde cualquier lugar, aunque viváis fuera de España. Online podéis conectaros desde sitios distintos, incluso si vivís en ciudades diferentes. La sesión dura lo mismo en las dos modalidades.'},
+  quien:{titulo:'Quién os atiende', texto:'Symploké es nuestro proyecto de psicoterapia y lleva en marcha desde 2012. Nuestro centro sanitario, Koiné Psicología, está autorizado por la Comunidad de Madrid (CS19975), y la primera entrevista, gratuita, la hace siempre su director, Daniel de la Torre Díaz, psicólogo general sanitario y forense (colegiado M-28688). <a href="quienes-somos.html">Conócenos</a>.'},
+  /* preguntas frecuentes (2026-11-08); 2026-11-09: 5 nuevas (6.1B infidelidad, 6.2B de parte de uno, 6.3 sesiones, 6.4A precio sin cifra, 6.5 local), en desplegables */
+  faqDesplegable:true,
   faq:[
+    ['¿Se puede superar una infidelidad?','Sí, muchas parejas lo consiguen, aunque lleva tiempo. Hace falta entender qué pasó, reparar la confianza poco a poco y decidir juntos si queréis seguir. También acompañamos a quien decide no seguir, para que la ruptura haga menos daño.'],
     ['¿Cuándo conviene ir a terapia de pareja?','Cuando las discusiones se repiten sin salida, atravesáis una crisis, cuesta hablar sin haceros daño o sentís que os habéis distanciado. No hace falta esperar a estar al borde de la ruptura: cuanto antes, más margen hay.'],
+    ['¿El psicólogo se pone de parte de uno?','No. Escuchamos a los dos por igual; lo que está en el centro es la relación y cómo os tratáis, no quién tiene razón. Por eso, además de las sesiones conjuntas, hacemos una sesión individual con cada uno.'],
     ['¿Puedo ir a terapia de pareja sin mi pareja?','Sí. A veces solo una de las dos personas quiere empezar, y trabajar tu parte de la relación ya puede cambiar cosas.'],
     ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudaros a tomar la decisión con calma y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
+    ['¿Cuántas sesiones hacen falta?','Depende de cada pareja. Empezamos con sesiones semanales de 60 minutos y, cuando notáis avances, las espaciamos. En la primera entrevista os damos una idea orientativa y la revisamos sobre la marcha.'],
+    ['¿Cuánto cuesta la terapia de pareja?','La primera entrevista es gratuita. El precio de las sesiones te lo contamos cuando nos llames o nos escribas.'],   /* sin cifra: el usuario prefiere que llamen y pregunten */
     ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si la sufres, puedes llamar al <strong>016</strong>, gratuito y confidencial, y en una urgencia, al <strong>112</strong>.'],
-    ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.']
+    ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.'],
+    ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>, incluso desde sitios distintos.']
   ],
   k:'pareja terapia de pareja mi pareja y yo no paramos de discutir siempre discutimos no nos entendemos nos queremos pero no funciona superar una ruptura apego narcisismo narcisista dependencia emocional relacion celos infidelidad separacion divorcio',
   feel:['Mi pareja y yo no paramos de discutir','Siempre discutimos, no nos entendemos','Nos queremos, pero no funciona','No consigo superar una ruptura'],
@@ -262,7 +415,7 @@ window.MOTIVOS=[
   ],
   bases:[
     '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta, como en <a href="ansiedad.html">la ansiedad</a>: el corazón se acelera y cuesta escuchar y pensar con claridad. Por eso, a veces, lo mejor es parar, calmarse y retomar la conversación después.',
-    '<strong>Los estudios de psicología</strong>, sobre todo los del equipo de John Gottman, muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es uno de los mejores predictores de ruptura.',
+    '<strong>Los estudios de psicología</strong> muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es uno de los mejores predictores de ruptura.',
     'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («eres un egoísta»).',
     '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen en la vida en pareja: muchos conflictos —celos, infidelidades, reparto de tareas— tienen que ver con lo que pasa alrededor.'
   ],

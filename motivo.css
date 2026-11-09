@@ -78,6 +78,24 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .read .voz.grande{font-size:clamp(23px,2.3vw,29px)}
 .read .faq h3{font-size:clamp(21px,1.8vw,24px);line-height:1.2;margin:26px 0 8px}
 .read .faq h2+h3{margin-top:18px}
+/* apartados de tratamiento: pasos numerados, enfoques con subtítulo, modalidad y quién te atiende */
+.read ol.pasos{list-style:none;margin:0;padding:0;counter-reset:paso}
+.read ol.pasos li{counter-increment:paso;position:relative;padding-left:52px}
+.read ol.pasos li::before{content:counter(paso);position:absolute;left:0;top:-2px;width:34px;height:34px;border-radius:50%;background:var(--brand);color:var(--bg);font:600 16px/34px 'DM Sans',sans-serif;text-align:center}
+.read .enfoques h3{font-size:clamp(21px,1.8vw,24px);line-height:1.2;margin:26px 0 8px}
+.read .enfoques h2+h3{margin-top:18px}
+/* tipos: desplegables, con una cruz verde que gira al abrir */
+.read .tipos details,.read .faq.desplegable details{border-bottom:1px solid var(--line)}
+.read .tipos details:first-of-type,.read .faq.desplegable details:first-of-type{border-top:1px solid var(--line);margin-top:24px}
+.read .tipos summary,.read .faq.desplegable summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+.read .tipos summary::-webkit-details-marker,.read .faq.desplegable summary::-webkit-details-marker{display:none}
+.read .tipos summary h3,.read .faq.desplegable summary h3{font-size:clamp(19px,1.6vw,21px);line-height:1.25;margin:0;transition:color .2s ease}
+.read .tipos summary:hover h3,.read .faq.desplegable summary:hover h3{color:var(--brand)}
+.read .tipos summary::after,.read .faq.desplegable summary::after{content:'+';flex:none;font:400 28px/1 'DM Sans',sans-serif;color:var(--brand);transition:transform .25s ease}
+.read .tipos details[open] summary::after,.read .faq.desplegable details[open] summary::after{transform:rotate(45deg)}
+.read .tipos summary:focus-visible,.read .faq.desplegable summary:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
+.read .tipos details p,.read .faq.desplegable details p{margin:0 0 20px}
+.read .quien p{border:1px solid var(--line);border-radius:22px;padding:22px 26px}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -91,7 +109,7 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .subs-top{margin-top:56px}
 .subs-top p.layer{margin-bottom:44px}
 .subs-top .subs{margin-top:0}
-.subs-top .subs li{background:var(--soft);color:var(--brandink);font-weight:500}
+.subs-top .subs li{background:var(--bg);color:var(--ink2);font-weight:500}   /* sin enlace: en blanco (2026-11-09); las que llevan enlace, en verde clarito (li.enl) */
 
 /* «Podemos ayudarte», igual que en la página de terapia */
 .band{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);margin-top:clamp(64px,8vw,104px);background:var(--soft);border:1px solid var(--line);border-radius:28px;overflow:hidden;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
@@ -117,7 +135,13 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 }
 /* etiqueta que lleva a otra terapia (red interna de enlaces) */
 .subs-top .subs a{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
-.subs-top .subs a:hover{text-decoration-thickness:2px}
+/* etiquetas con enlace (2026-11-09): sin subrayar, en verde muy clarito (#C4F4E0, --acc-pale; antes #5FE3A8, el del menú);
+   al pasar el ratón, verde oscuro del pie (#007A50) con letra blanca. Toda la pastilla se pulsa */
+.subs-top .subs li.enl{padding:0;background:#C4F4E0;border-color:#C4F4E0;transition:background-color .2s ease,border-color .2s ease}
+.subs-top .subs li.enl a{display:block;padding:9px 16px;border-radius:999px;color:#10241C;text-decoration:none;transition:color .2s ease}
+.subs-top .subs li.enl:hover{background:#007A50;border-color:#007A50}
+.subs-top .subs li.enl:hover a{color:#FFFFFF}
+.subs-top .subs li.enl a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
 /* enlaces dentro del texto a otras terapias */
 /* enlaces dentro del texto (a otras terapias): letra verde de la marca, subrayado grueso verde clarito; al pasar el ratón, verde más oscuro */
 .read p a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px;transition:text-decoration-color .2s ease,color .2s ease}

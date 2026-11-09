@@ -21,7 +21,12 @@ h+='<p class="lead">'+m.intro+(m.revisada?'':D)+'</p>';   // «borrador» solo e
 if(m.how)h+='<p class="lead how">'+m.how+'</p>';
 h+='<p class="help">'+m.cta+'</p>';
 h+='<div class="cta"><a class="btn primary" href="'+CITA+'">Pedir cita'+ARR+'</a>'+WA+'</div>';
-if(m.subs)h+='<div class="subs-top"><p class="layer">¿Te pasa algo de esto?</p><ul class="subs">'+m.subs.map(function(s){var t=[].concat(s), o=t[1]&&motivoBySlug(t[1]);return '<li>'+(o?'<a href="'+motivoUrl(o)+'">'+t[0]+'</a>':t[0])+'</li>';}).join('')+'</ul></div>';
+if(m.subs)h+='<div class="subs-top"><p class="layer">¿Te pasa algo de esto?</p><ul class="subs">'+m.subs.map(function(s){
+  var t=[].concat(s), href=null;
+  if(t[1]&&t[1].charAt(0)==='#')href=t[1];   // ['Ansiedad social','#social']: lleva a su desplegable en esta misma página y lo abre
+  else{var o=t[1]&&motivoBySlug(t[1]); if(o)href=motivoUrl(o);}   // ['Insomnio por ansiedad','insomnio']: lleva a otra terapia
+  return href?'<li class="enl"><a href="'+href+'">'+t[0]+'</a></li>':'<li>'+t[0]+'</li>';
+}).join('')+'</ul></div>';
 h+='</div><div class="art">'+ILUS[m.slug]('h'+m.slug)+'</div></section>';
 
 h+='<section class="feel" aria-labelledby="suene"><div>';
@@ -50,9 +55,27 @@ if(m.bases){
   h+='<section><p class="layer">Qué dice la ciencia</p><h2>Qué sabemos</h2><p>'+m.science+'</p>'+(m.refs?'<p class="refs">'+m.refs+'</p>':'')+'</section>';
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>No eres un diagnóstico</h2><p class="beyond">'+m.beyond+'</p></section>';
 }
+/* apartados de tratamiento (2026-11-09, tras el estudio de competencia): proceso por pasos, enfoques, modalidad y quién te atiende */
+if(m.tipos){   // {titulo, intro, items:[[nombre, texto]]}: tipos o cuadros, cada uno con su nombre como subtítulo
+  h+='<section class="tipos"><h2>'+m.tipos.titulo+'</h2>'+(m.tipos.intro?'<p>'+m.tipos.intro+'</p>':'');
+  m.tipos.items.forEach(function(e){h+='<details'+(e[2]?' id="'+e[2]+'"':'')+'><summary><h3>'+e[0]+'</h3></summary><p>'+e[1]+'</p></details>';});   // e[2]: ancla para las etiquetas de arriba   // desplegables (opción C, 2026-11-09): el texto sigue en la página para Google
+  h+='</section>';
+}
+if(m.proceso){   // {titulo, pasos:[[título corto, texto]]}: lista numerada (Google la lee como pasos)
+  h+='<section class="proceso"><h2>'+m.proceso.titulo+'</h2><ol class="pasos">';
+  m.proceso.pasos.forEach(function(p){h+='<li><p><strong>'+p[0]+'</strong> '+p[1]+'</p></li>';});
+  h+='</ol></section>';
+}
+if(m.enfoques){   // {titulo, items:[[nombre, texto]]}: cada enfoque con su nombre como subtítulo
+  h+='<section class="enfoques"><h2>'+m.enfoques.titulo+'</h2>';
+  m.enfoques.items.forEach(function(e){h+='<h3>'+e[0]+'</h3><p>'+e[1]+'</p>';});
+  h+='</section>';
+}
+if(m.modalidad)h+='<section class="modalidad"><h2>'+m.modalidad.titulo+'</h2><p>'+m.modalidad.texto+'</p></section>';
+if(m.quien)h+='<section class="quien"><h2>'+m.quien.titulo+'</h2><p>'+m.quien.texto+'</p></section>';
 if(m.faq){   // preguntas frecuentes: [pregunta, respuesta]
-  h+='<section class="faq"><h2>Preguntas frecuentes</h2>';
-  m.faq.forEach(function(f){h+='<h3>'+f[0]+'</h3><p>'+f[1]+'</p>';});
+  h+='<section class="faq'+(m.faqDesplegable?' desplegable':'')+'"><h2>Preguntas frecuentes</h2>';
+  m.faq.forEach(function(f){h+=m.faqDesplegable?'<details'+(f[2]?' id="'+f[2]+'"':'')+'><summary><h3>'+f[0]+'</h3></summary><p>'+f[1]+'</p></details>':'<h3>'+f[0]+'</h3><p>'+f[1]+'</p>';});   // faqDesplegable: preguntas cerradas que se abren al pulsar
   h+='</section>';
 }
 h+='</div>';
@@ -75,6 +98,20 @@ h+='</div></section>';
 
 document.getElementById('main').innerHTML=h;
 drawIn(document.querySelector('.mhero .art svg'));
+
+/* etiquetas que llevan a un desplegable de esta página (#social…): lo abren y bajan hasta él */
+function abrirAncla(id){
+  var d=id&&document.getElementById(id);
+  if(!d||d.tagName!=='DETAILS')return false;
+  d.open=true;
+  d.scrollIntoView({behavior:'smooth',block:'center'});
+  return true;
+}
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a[href^="#"]');
+  if(a&&abrirAncla(a.getAttribute('href').slice(1))){e.preventDefault();history.replaceState(null,'',a.getAttribute('href'));}
+});
+if(location.hash)setTimeout(function(){abrirAncla(location.hash.slice(1));},300);   // ansiedad.html#social desde otra página
 
 /* encabezado largo en una línea: si no cabe a su tamaño, se reduce lo justo para que quepa */
 function ajustarH1(){
