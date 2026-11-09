@@ -17,8 +17,8 @@ window.MOTIVOS=[
 {
   slug:'ansiedad', name:'Ansiedad y estrés', sym:'Tengo ansiedad y no sé por qué',
   /* posicionamiento: título y descripción para Google, y encabezado de la página */
-  seoTitle:'Psicólogo para la ansiedad en Madrid y online · Symploké',
-  seoDesc:'¿Tienes ansiedad y no sabes por qué? Ataques de ansiedad, estrés, miedos u obsesiones: te ayudamos a entender a qué responde. En Madrid u online.',
+  seoTitle:'Tratamiento de la ansiedad y el estrés en Madrid y online',
+  seoDesc:'¿Ansiedad sin saber por qué? Ataques de ansiedad, estrés o ansiedad y depresión: te ayudamos a entender qué te pasa. Centro sanitario en Madrid y online.',
   h1:'Terapia para la ansiedad y el estrés',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
   revisada:true,   /* texto ya revisado: sin la marca «borrador» */
@@ -61,8 +61,8 @@ window.MOTIVOS=[
 },
 {
   slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de levantarme de la cama',
-  seoTitle:'Psicólogo para la depresión en Madrid y online · Symploké',
-  seoDesc:'¿Sin ganas de nada, tristeza que no se va o sensación de vacío? Te ayudamos a entender tu depresión y a dar los primeros pasos. En Madrid u online.',
+  seoTitle:'Psicólogo y tratamiento de la depresión en Madrid y online',
+  seoDesc:'¿Sin ganas de nada, tristeza que no se va o sensación de vacío? Tratamiento psicológico de la depresión y la ansiedad. Centro sanitario en Madrid y online.',
   h1:'Terapia para la depresión y el estado de ánimo',   /* encabezado a todo el ancho, en una línea, como en ansiedad */
   pagina:'depresion.html',   /* página fija; motivo.html?m=depresion lleva a ella */
   enfoqueDe:'de la depresión',
@@ -119,8 +119,8 @@ window.MOTIVOS=[
 {
   slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
   revisada:true,   /* sin la marca «borrador» */
-  seoTitle:'Psicólogo para el insomnio en Madrid y online · Symploké',
-  seoDesc:'¿No puedes dormir, te despiertas de madrugada o te agobia la noche? Te ayudamos con terapia psicológica para el insomnio. En Madrid u online.',
+  seoTitle:'Psicólogo y tratamiento del insomnio en Madrid y online',
+  seoDesc:'¿No puedes dormir o te despiertas de madrugada? Tratamiento psicológico del insomnio, también crónico o por ansiedad. Centro sanitario en Madrid y online.',
   h1:'Terapia para el insomnio y los problemas de sueño',   /* encabezado a todo el ancho, en una línea, como en ansiedad y depresión */
   pagina:'insomnio.html',   /* página fija; motivo.html?m=insomnio lleva a ella */
   enfoqueDe:'del insomnio',
@@ -177,8 +177,8 @@ window.MOTIVOS=[
   slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
   h1:'Terapia para los problemas de alimentación',   /* encabezado a todo el ancho, en una línea */
   revisada:true,   /* sin la marca «borrador» */
-  seoTitle:'Psicólogo para TCA y atracones en Madrid y online · Symploké',
-  seoDesc:'¿Atracones, culpa después de comer u obsesión por el peso? Terapia para los problemas de alimentación, con calma y sin juicios. En Madrid u online.',
+  seoTitle:'Psicólogo para TCA, anorexia y bulimia en Madrid y online',
+  seoDesc:'Tratamiento psicológico de TCA: anorexia, bulimia, atracones u obsesión por el peso, junto a medicina y nutrición. Centro sanitario en Madrid y online.',
   pagina:'alimentacion.html',   /* página fija; motivo.html?m=alimentacion lleva a ella */
   enfoqueDe:'de los problemas de alimentación',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
@@ -230,8 +230,8 @@ window.MOTIVOS=[
   slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
   h1:'Terapia de pareja',   /* encabezado a todo el ancho, en una línea */
   revisada:true,   /* sin la marca «borrador» */
-  seoTitle:'Terapia de pareja en Madrid y online · Symploké',
-  seoDesc:'Discusiones, celos, infidelidad o distancia: terapia de pareja para aprender a hablar sin haceros daño. También si vienes solo. En Madrid u online.',
+  seoTitle:'Terapia de pareja en Madrid y online · Psicólogo de pareja',
+  seoDesc:'Discusiones, celos, infidelidad o crisis de pareja: terapia de pareja para aprender a hablar sin haceros daño. Centro sanitario en Madrid y online.',
   pagina:'pareja.html',   /* página fija; motivo.html?m=pareja lleva a ella */
   enfoqueDe:'de la pareja',
   reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
@@ -283,8 +283,9 @@ window.MOTIVOS=[
 {
   slug:'tdah', name:'TDAH y atención', sym:'No me puedo concentrar en nada',
   h1:'Terapia para el TDAH y los problemas de atención',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'TDAH en adultos y niños: psicólogo en Madrid y online',
   revisada:true,   /* sin la marca «borrador» */
-  seoDesc:'¿Te cuesta concentrarte, se te olvida todo o te preocupa tu hijo? Te ayudamos con el TDAH mirando a la persona, no solo la etiqueta. En Madrid u online.',
+  seoDesc:'¿Te cuesta concentrarte o te preocupa tu hijo? TDAH en adultos y niños, mirando a la persona y no solo la etiqueta. Centro sanitario en Madrid y online.',
   pagina:'tdah.html',   /* página fija; motivo.html?m=tdah lleva a ella */
   enfoqueDe:'del TDAH',
   subs:['TDAH en adultos',['TDAH en niños y adolescentes','infancia'],'Falta de concentración','Procrastinación','Impulsividad','Inquietud','Hiperactividad','Desorganización','Olvidos y despistes','Dificultades en los estudios',['Uso excesivo del móvil y las pantallas','adicciones']],
@@ -338,8 +339,9 @@ window.MOTIVOS=[
 {
   slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
   h1:'Terapia para las adicciones',   /* encabezado a todo el ancho, en una línea */
+  seoTitle:'Adicciones: tratamiento psicológico en Madrid y online',
   revisada:true,   /* sin la marca «borrador» */
-  seoDesc:'¿Bebes más de lo que quieres o no puedes dejar de apostar o de mirar el móvil? Terapia para las adicciones, sin sermones y a tu ritmo. En Madrid u online.',
+  seoDesc:'¿Quieres dejar el alcohol, el juego o el móvil? Tratamiento psicológico de adicciones, también para familias. Centro sanitario en Madrid y online.',
   pagina:'adicciones.html',   /* página fija; motivo.html?m=adicciones lleva a ella */
   enfoqueDe:'de las adicciones',
   subs:['Alcohol','Juego y apuestas online','Adicción al móvil','Redes sociales','Videojuegos','Cannabis','Cocaína','Pornografía','Compras compulsivas',['Dependencia de pastillas para dormir','insomnio'],['Dependencia emocional','pareja'],'Recaídas','Familiares de personas con adicción'],
@@ -393,8 +395,8 @@ window.MOTIVOS=[
   slug:'autoestima', name:'Autoestima', sym:'No soy suficiente',
   h1:'Terapia para fortalecer la autoestima',   /* encabezado a todo el ancho, en una línea */
   revisada:true,   /* sin la marca «borrador» */
-  seoTitle:'Terapia para la autoestima en Madrid y online · Symploké',
-  seoDesc:'Inseguridad, perfeccionismo, miedo al rechazo o síndrome del impostor: terapia para tratarte de otra manera. En Madrid u online.',
+  seoTitle:'Baja autoestima e inseguridad: terapia en Madrid y online',
+  seoDesc:'¿Baja autoestima, inseguridad o perfeccionismo? Terapia para estimarte de otra manera, sin compararte tanto. Centro sanitario en Madrid y online.',
   pagina:'autoestima.html',   /* página fija; motivo.html?m=autoestima lleva a ella */
   enfoqueDe:'de la autoestima',
   subs:['Baja autoestima','Inseguridad','Perfeccionismo','Autoexigencia','Síndrome del impostor','Miedo al rechazo','Necesidad de aprobación','Compararse con los demás','Autocrítica','Aprender a decir que no',['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
@@ -438,8 +440,8 @@ window.MOTIVOS=[
 {
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
   h1:'Terapia de duelo',   /* encabezado a todo el ancho, en una línea */
-  seoTitle:'Terapia de duelo en Madrid y online · Symploké',
-  seoDesc:'Psicólogo para el duelo: muerte de un ser querido, de una mascota, duelo perinatal o por una ruptura. Te acompañamos en el proceso. En Madrid u online.',
+  seoTitle:'Terapia de duelo y duelo perinatal en Madrid y online',
+  seoDesc:'Psicólogo para el duelo: muerte de un ser querido, duelo perinatal, por una mascota o una ruptura. Te acompañamos. Centro sanitario en Madrid y online.',
   pagina:'duelo.html',   /* página fija; motivo.html?m=duelo lleva a ella */
   enfoqueDe:'del duelo',
   subs:['Muerte de un ser querido','Muerte de un padre o una madre','Duelo perinatal','Duelo por suicidio','Duelo complicado o prolongado','Duelo anticipado por una enfermedad grave','Duelo por una mascota',['Duelo por una ruptura','pareja'],'Pérdida del trabajo',['Duelo en niños','infancia'],['Depresión tras una pérdida','depresion']],
@@ -492,8 +494,8 @@ window.MOTIVOS=[
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   h1:'Terapia para niños y adolescentes',   /* encabezado a todo el ancho, en una línea */
-  seoTitle:'Psicólogo infantil y de adolescentes en Madrid · Symploké',
-  seoDesc:'¿Tu hijo no habla, no quiere ir al colegio o tiene rabietas que no ceden? Psicólogo infantil y para adolescentes, con la familia. En Madrid u online.',
+  seoTitle:'Psicólogo infantil y de adolescentes en Madrid y online',
+  seoDesc:'Psicólogo infantil y de adolescentes: rabietas, miedos, TDAH, acoso escolar o problemas en el colegio, con la familia. Centro sanitario en Madrid y online.',
   pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
   enfoqueDe:'de la infancia y la adolescencia',
   subs:['Rabietas y problemas de conducta','Comunicación con adolescentes',['Ansiedad y miedos infantiles','ansiedad'],'Tristeza o aislamiento','Acoso escolar (bullying)','Bajo rendimiento escolar',['TDAH en niños','tdah'],['Uso excesivo de pantallas','adicciones'],['Problemas con la comida','alimentacion'],['Problemas de sueño','insomnio'],'Separación de los padres',['Duelo en niños','duelo'],'Orientación a familias'],
@@ -543,8 +545,8 @@ window.MOTIVOS=[
 {
   slug:'personalidad', name:'Trastornos de la personalidad', sym:'No me entiendo ni yo', delicate:true,
   h1:'Terapia para los trastornos de la personalidad',   /* encabezado a todo el ancho, en una línea */
-  seoTitle:'Terapia para el TLP y la personalidad en Madrid · Symploké',
-  seoDesc:'Emociones muy intensas, miedo al abandono, relaciones inestables o vacío: terapia para el TLP y los trastornos de la personalidad. En Madrid u online.',
+  seoTitle:'TLP y trastornos de personalidad: terapia en Madrid y online',
+  seoDesc:'Emociones muy intensas, miedo al abandono o vacío: terapia para el TLP y los trastornos de la personalidad. Centro sanitario en Madrid y online.',
   pagina:'personalidad.html',   /* página fija; motivo.html?m=personalidad lleva a ella */
   enfoqueDe:'de la personalidad',
   subs:['Trastorno límite de la personalidad (TLP)','Inestabilidad emocional','Miedo al abandono','Relaciones intensas e inestables','Impulsividad','Ira y explosiones emocionales',['Sensación de vacío','depresion'],'Rasgos obsesivos o perfeccionistas','Personalidad evitativa','Personalidad dependiente','Rasgos narcisistas'],
@@ -595,8 +597,8 @@ window.MOTIVOS=[
 {
   slug:'sexual', name:'Problemas sexuales', sym:'No tengo deseo sexual',
   h1:'Terapia para los problemas sexuales',   /* encabezado a todo el ancho, en una línea */
-  seoTitle:'Terapia sexual en Madrid y online · Symploké',
-  seoDesc:'Psicólogo para problemas sexuales: falta de deseo, disfunción eréctil, eyaculación precoz, anorgasmia o dolor. Solo o en pareja. En Madrid u online.',
+  seoTitle:'Terapia sexual en Madrid y online · Sexología y pareja',
+  seoDesc:'Psicólogo para problemas sexuales: falta de deseo, disfunción eréctil, eyaculación precoz o dolor. Solo o en pareja. Centro sanitario en Madrid y online.',
   pagina:'sexual.html',   /* página fija; motivo.html?m=sexual lleva a ella */
   enfoqueDe:'de la sexualidad',
   subs:['Falta de deseo sexual','Disfunción eréctil','Eyaculación precoz','Anorgasmia','Dolor en las relaciones sexuales','Vaginismo',['Ansiedad ante el sexo','ansiedad'],['Diferencias de deseo en la pareja','pareja'],['Adicción al sexo o a la pornografía','adicciones'],'Sexualidad tras el parto','Sexualidad en la menopausia'],
