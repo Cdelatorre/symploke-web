@@ -1,3 +1,5 @@
+/* interrogación del enlace a las preguntas: solo el signo «?» de Fredoka (opción 1 de maqueta/iconos-preguntas.html) */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&text=%3F&display=swap');
 /* estilos de la página de cada terapia (motivo.html y las páginas fijas como ansiedad.html) */
 :root{
   color-scheme:light dark;
@@ -96,6 +98,20 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .read .tipos summary:focus-visible,.read .faq.desplegable summary:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
 .read .tipos details p,.read .faq.desplegable details p{margin:0 0 20px}
 .read .quien p{border:1px solid var(--line);border-radius:22px;padding:22px 26px}
+/* VERSIÓN CARLOS: tipos en lista corta, texto bajo los pasos y enlace a la página de preguntas */
+.read .tipos-lista{list-style:none;margin:24px 0 0;padding:0;border-top:1px solid var(--line)}
+.read .tipos-lista li{position:relative;font-size:17px;line-height:1.5;color:var(--ink2);padding:12px 0 12px 22px;border-bottom:1px solid var(--line)}
+.read .tipos-lista li::before{content:"";position:absolute;left:2px;top:calc(12px + .75em - 4px);width:8px;height:8px;border-radius:50%;background:var(--brandink)}   /* puntito verde oscuro delante de cada problema (2026-11-10) */
+.read .tipos-lista li strong{font-weight:600;color:var(--ink)}
+.read .tipos-lista a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px}
+.read .tipos-lista a:hover{color:var(--brandink);text-decoration-color:var(--brand)}
+.read ol.pasos li p{margin-bottom:14px}
+.read .trabajo-mas{margin-top:22px}
+.read .a-preguntas{margin-top:48px}
+.read .a-preguntas a{display:inline-flex;align-items:center;gap:14px;font:500 18px/1.3 'DM Sans',sans-serif;color:var(--brandink);text-decoration:none}
+.read .a-preguntas .t{border-bottom:3px solid #5FE3A8;padding-bottom:4px}
+.read .a-preguntas .qi{font:600 46px/1 'Fredoka','DM Sans',sans-serif;color:var(--brand)}   /* verde oscuro de la marca, sin cambio al pasar el ratón (2026-11-10) */
+.read .a-preguntas a:hover{color:var(--brand)}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -146,3 +162,22 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 /* enlaces dentro del texto (a otras terapias): letra verde de la marca, subrayado grueso verde clarito; al pasar el ratón, verde más oscuro */
 .read p a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px;transition:text-decoration-color .2s ease,color .2s ease}
 .read p a:hover{color:var(--brandink);text-decoration-color:var(--brand)}
+/* VERSIÓN CARLOS: página de preguntas frecuentes (preguntas.html) */
+.read.preguntas{margin-top:clamp(24px,3vw,40px)}
+.read.preguntas .indice{font-size:16px}
+.read.preguntas section{margin-top:56px}
+.read.preguntas .volver{margin-top:24px;font-size:16px}
+.read.preguntas .urg{font-size:15px;margin-top:64px}
+/* VERSIÓN CARLOS: otras terapias al final, en tarjetas con dibujo (mismo estilo que terapia.html) */
+.relacionadas{margin-top:clamp(64px,8vw,104px)}
+.relacionadas h2{margin:0 0 26px}
+.rel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:760px){.rel-grid{grid-template-columns:1fr}}
+.relacionadas .card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.relacionadas .card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
+.relacionadas .card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.relacionadas .card .img svg{display:block;width:100%;height:100%}
+.relacionadas .card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.relacionadas .card h3{font-size:21px;line-height:1.1;margin:0}
+.relacionadas .card p{margin:0;font-size:15px;line-height:1.38;color:var(--ink2)}
+.relacionadas .card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}

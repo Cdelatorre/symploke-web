@@ -95,7 +95,38 @@ window.MOTIVOS=[
   ],
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página (tipos o preguntas); un slug lleva a otra terapia */
   subs:[['Ansiedad generalizada','#generalizada'],['Ataques de ansiedad y pánico','#panico'],['Agorafobia','#agorafobia'],['Ansiedad social','#social'],['Obsesiones y TOC','#toc'],['Miedos y fobias','#fobias'],['Hipocondría o ansiedad por la salud','#hipocondria'],['Estrés laboral y burnout','#burnout'],['Estrés postraumático','#postraumatico'],['Insomnio por ansiedad','insomnio'],['Ansiedad que se nota en el cuerpo','#sintomas']],
-  alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde'
+  alt:'Mujer caminando tranquila por un paseo arbolado con luz de tarde',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:'Sentir ansiedad es normal: nos pone en alerta y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
+    bases:[
+      '<strong>Los estudios de biología y neurología</strong> muestran que, ante una amenaza, el cuerpo se prepara para huir o defenderse, y ese aviso llega antes de que lo pensemos. Por eso la ansiedad se nota como presión en el pecho, ahogo o nudo en el estómago, y a veces aparece «sin saber por qué». Pero no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
+      'Darle vueltas a todo, comprobar, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera, y a veces eso desemboca en la <a href="depresion.html">depresión</a>.',
+      '<strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. La ansiedad no es una pieza averiada dentro de ti: eres tú quien está dentro de unas situaciones que te la generan.'
+    ],
+    together:'La ansiedad es <strong>multicausal</strong>: lo que nos interesa es cómo se entretejen sus causas en tu caso. Casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué responde y de qué te está avisando, para dejar la lucha contra los síntomas y transformar lo que te <strong>amordaza</strong> en <strong>habilitadores</strong> que te permitan avanzar.',
+    tipos:{titulo:'Tipos de ansiedad más frecuentes', intro:'En cada persona se mezclan; lo que más nos importa es en qué situaciones aparecen.', items:[
+      ['Ansiedad generalizada','preocupación constante por muchas cosas a la vez, difícil de frenar.','generalizada'],
+      ['Ataques de ansiedad y pánico','una subida brusca de miedo intenso, con palpitaciones o ahogo, y después el miedo a que vuelva.','panico'],
+      ['Agorafobia','miedo a sitios de los que sería difícil salir, como el metro o las multitudes.','agorafobia'],
+      ['Ansiedad social','miedo a ser juzgado o a hacer el ridículo delante de otros.','social'],
+      ['Fobias','miedo intenso a algo concreto (volar, la sangre, las alturas) que lleva a evitarlo.','fobias'],
+      ['Obsesiones y TOC','pensamientos que se imponen y rituales para calmarlos que acaban alimentándolos.','toc'],
+      ['Hipocondría','miedo persistente a tener una enfermedad grave, que las revisiones solo calman un rato.','hipocondria'],
+      ['Estrés laboral y burnout','agotamiento y distancia con el trabajo tras mucho tiempo bajo presión.','burnout'],
+      ['Estrés postraumático','después de una experiencia muy dura, el cuerpo sigue en alerta.','postraumatico'],
+      ['Insomnio por ansiedad','las preocupaciones no te dejan dormir; lo trabajamos también en <a href="insomnio.html">insomnio</a>.','insomnio-ansiedad']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos la ansiedad',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender tu ansiedad.','A qué situaciones responde, qué la mantiene y de qué te está avisando.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'depresion', name:'Depresión y estado de ánimo', sym:'No tengo ganas de levantarme de la cama',
@@ -193,7 +224,43 @@ window.MOTIVOS=[
     ['Interpersonal','Trabajar las relaciones y los cambios de rol ligados al ánimo.','buena']
   ],
   alert:'Si tienes pensamientos de muerte o de hacerte daño, llama al <strong>024</strong>. En una urgencia, al <strong>112</strong>.',
-  alt:'Grupo de amigas compartiendo una mesa al aire libre'
+  alt:'Grupo de amigas compartiendo una mesa al aire libre',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. No es pereza ni debilidad: el cuerpo pesa como una mochila llena de piedras y cuesta mucho levantarse, aunque uno quiera.',
+      'La depresión no es algo que uno tiene dentro: es una situación en la que uno está. Por eso podemos hacer algo con ella, y por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que la depresión afecta al <a href="insomnio.html">sueño</a>, al apetito, al cansancio y al cuerpo entero. También influyen el <a href="ansiedad.html">estrés mantenido</a>, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
+      'La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual. Lo que sí muestran es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello, y eso ayuda a entender la falta de ganas.',
+      'Cuando el ánimo baja, hacemos menos, y al hacer menos, el ánimo baja más. <strong>Los estudios de psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. No se trata de hacer por hacer, sino de hacer cosas que tengan sentido para ti, con pequeños avances.',
+      'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos.'
+    ],
+    together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. No ver salida es lo que más paraliza; por eso ayuda pensarlo con alguien, no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y avanzar poco a poco hacia lo que te importa.',
+    tipos:{titulo:'Tipos de depresión más frecuentes', intro:'En cada persona se mezclan; lo que más nos importa es la situación en la que estás.', items:[
+      ['Depresión mayor','ánimo bajo o pérdida de interés casi a diario durante al menos dos semanas, con cambios en el sueño, el apetito o la energía.','mayor'],
+      ['Distimia o tristeza que dura años','un ánimo bajo menos intenso que se confunde con «mi forma de ser».','distimia'],
+      ['Ansiedad y depresión','a menudo van juntas; cuando aparecen las dos, trabajamos también la <a href="ansiedad.html">ansiedad</a>.','ansiedad'],
+      ['Apatía y anhedonia','no disfrutar de lo que antes te gustaba, a veces sin sentirte triste.','apatia'],
+      ['Sensación de vacío','sentir que nada llena, aunque desde fuera todo parezca en orden.','vacio'],
+      ['Soledad no deseada','cuando faltan vínculos o los que hay no sostienen.','soledad'],
+      ['Crisis existencial','preguntas sobre el sentido de lo que hacemos, a menudo tras un cambio vital.','existencial'],
+      ['Depresión posparto','en el embarazo o en los meses tras el parto, también en la otra persona de la pareja.','posparto'],
+      ['Depresión estacional','se repite en otoño e invierno, con menos luz.','estacional'],
+      ['Depresión tras una pérdida','cuando un <a href="duelo.html">duelo</a> se alarga y el ánimo no se recupera.','perdida'],
+      ['Depresión en personas mayores','a veces se nota como cansancio, olvidos o aislamiento, y se confunde con «cosas de la edad».','mayores']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos la depresión',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender cómo has llegado hasta aquí.','Lo que has perdido, lo que te pesa y lo que se ha ido estrechando en tu vida.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el ánimo se sostiene. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.']
+      ],
+      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; si te cuesta salir de casa, puede ayudarte a empezar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'insomnio', name:'Insomnio y sueño', sym:'Me agobia no poder dormirme',
@@ -286,7 +353,40 @@ window.MOTIVOS=[
     ['Higiene del sueño','Hábitos de base útiles, aunque por sí solos suelen quedarse cortos.','limitada como tratamiento único']
   ],
   /* etiquetas: ahora arriba, junto al h1 */
-  alt:'Mujer descansando al sol de la mañana con una taza de café'
+  alt:'Mujer descansando al sol de la mañana con una taza de café',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Dormir bien no es un lujo: del descanso dependen la atención, la memoria y el humor. Por eso el insomnio importa tanto, y muchas veces agrava otros problemas, como <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la depresión</a>.',
+      'Una de sus características es el <strong>círculo de preocupación por no dormir</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño, y no dormir aumenta la preocupación.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan.',
+      'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en alerta: el cuerpo cansado y la mente despierta.',
+      'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección: usar la cama solo para dormir, levantarse si el sueño no llega y ajustar el tiempo en la cama. La <strong>higiene del sueño</strong> la acompaña, aunque por sí sola suele quedarse corta.',
+      'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios recortan el sueño de mucha gente.'
+    ],
+    together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— para romper el círculo y encontrar lo que te funcione a ti: qué ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
+    tipos:{titulo:'Problemas de sueño más frecuentes', intro:'No es lo mismo no poder dormirse que despertarse de madrugada, aunque a menudo se combinan.', items:[
+      ['Insomnio de conciliación','te acuestas y no llega el sueño; cuanto más lo intentas, más despierto estás.','conciliacion'],
+      ['Despertares nocturnos','te despiertas varias veces y te cuesta volver a dormirte.','despertares'],
+      ['Despertarse de madrugada','a las 4 o a las 5 y ya no vuelves a dormirte; a menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
+      ['Sueño no reparador','duermes horas, pero te levantas igual de cansado; si roncas o te duermes de día, consulta a tu médico.','noreparador'],
+      ['Insomnio crónico','duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
+      ['Pesadillas','sueños que despiertan con angustia, frecuentes tras experiencias muy duras, como en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
+      ['Insomnio en la menopausia','los sofocos y los cambios hormonales interrumpen el sueño.','menopausia'],
+      ['Trabajo a turnos','cambiar de horario desajusta el reloj interno.','turnos']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos el insomnio',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Un diario de sueño.','Durante una o dos semanas apuntas cómo duermes, para ver qué pasa de verdad por la noche.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el sueño se sostiene. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I), la de aceptación y compromiso (ACT) como complemento y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'alimentacion', name:'Problemas de alimentación', sym:'Como y después me culpo', delicate:true,
@@ -376,7 +476,42 @@ window.MOTIVOS=[
     ['Contextuales y ACT','Relacionarse de otra manera con el cuerpo y los pensamientos sobre él.','en estudio']
   ],
   coord:'Si hay pérdida de peso importante, vómitos, mareos o desmayos, es necesaria una valoración médica. Nos coordinamos con medicina y nutrición cuando hace falta.',
-  alt:'Amigos compartiendo un desayuno en una mesa, vista desde arriba'
+  alt:'Amigos compartiendo un desayuno en una mesa, vista desde arriba',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Es un problema en el que aparecen la <strong>culpa</strong> y una <strong>vigilancia constante</strong> del cuerpo, que poco a poco se vuelven el centro de nuestra vida. Y ocurre algo paradójico: lo que hacemos para controlar la comida —dietas estrictas, saltarse comidas, prohibirse alimentos, pesarse a diario— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
+      'En cada persona se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      'Pasar muchas horas sin comer o seguir reglas muy rígidas aumenta el hambre. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado.',
+      '<strong>Los estudios de neurología</strong> muestran que comer activa los sistemas de recompensa del cerebro y tranquiliza durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
+      'Es frecuente una espiral: comer para calmarse, sentir culpa, <strong>compensar</strong> y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no frena la espiral: la alimenta. Entender qué función cumple la comida en tu vida ayuda a romperla.',
+      '<strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en <a href="infancia.html">adolescentes</a> y mujeres jóvenes, y cada vez más en hombres jóvenes, con la presión por tener un cuerpo musculado.'
+    ],
+    together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. La sigla TCA ayuda a ponerle nombre, pero no explica a nadie. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
+    tipos:{titulo:'Problemas con la comida más frecuentes', intro:'A menudo se mezclan o pasan de uno a otro.', items:[
+      ['Atracones','comer mucho en poco tiempo, sin poder parar, y después culpa o vergüenza.','atracones'],
+      ['Bulimia','atracones seguidos de compensaciones, como vomitar, ayunar o hacer ejercicio en exceso.','bulimia'],
+      ['Anorexia','restringir mucho la comida por miedo intenso a engordar; siempre la trabajamos junto a medicina.','anorexia'],
+      ['Hambre emocional','comer para calmar el malestar más que por hambre.','hambre'],
+      ['Obsesión por el peso o la figura','pesarse y mirarse una y otra vez: el peso decide cómo va el día.','peso'],
+      ['Dietas restrictivas','dieta tras dieta y reglas rígidas que suelen acabar en atracones.','dietas'],
+      ['Culpa después de comer','castigarte o prometerte compensar, aunque hayas comido con normalidad.','culpa'],
+      ['Ejercicio compulsivo','entrenar para compensar lo comido o seguir aunque haya dolor.','ejercicio'],
+      ['Ortorexia','obsesión por comer «sano» que va dejando fuera alimentos, situaciones y personas.','ortorexia'],
+      ['Vigorexia','preocupación constante por no ser lo bastante musculado.','vigorexia']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos los problemas de alimentación',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender qué función cumple la comida.','Qué alivia, qué intenta controlar y cuándo aparece, en tu vida concreta.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando la comida vuelve a su sitio. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes, con la de aceptación y compromiso (ACT) como complemento y con las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
@@ -468,7 +603,52 @@ window.MOTIVOS=[
     ['Centrada en las emociones','Entender los ciclos de reproche y distancia que se repiten.','buena'],
     ['Sistémica','Mirar la pareja dentro de su familia y su contexto.','variable']
   ],
-  alt:'Pareja riendo junta sentada junto a un coche'
+  alt:'Pareja riendo junta sentada junto a un coche',
+  /* VERSIÓN CARLOS (2026-11-09): página resumida (1A sin etiquetas, 2C enfoque recortado, 3A tipos en lista, 4A un solo bloque
+     «Cómo trabajamos», 5A preguntas en preguntas.html). Si existe «corta», motivo.js usa estos textos en vez de los largos de arriba,
+     que se quedan intactos (las preguntas de arriba las usa preguntas.html). Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Los conflictos aparecen en todas las relaciones: discutir no es el problema. Lo importante es cómo se discute y si sabemos <strong>reparar</strong> después.',
+      'Una relación no es la suma de dos personas: es un entramado de hábitos, <a href="sexual.html">deseos</a> y expectativas, y en cada pareja se cruzan historias, familias y contextos distintos. Por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta, como en <a href="ansiedad.html">la ansiedad</a>, y cuesta escuchar. A veces lo mejor es parar y retomar la conversación después.',
+      '<strong>Los estudios de psicología</strong> señalan cuatro formas de discutir que más dañan una relación: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>. De todas, el desprecio es la que más pesa.',
+      'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («eres un egoísta»).',
+      '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen: muchos conflictos tienen que ver con lo que pasa alrededor de la pareja.'
+    ],
+    together:'En terapia trabajamos la <strong>comunicación</strong>: reconocer esas formas de discutir, quejarse sin atacar y reparar después, sobre una base de <strong>cariño y respeto mutuo</strong>. Palabras como «narcisista» o «apego ansioso» nos sirven como punto de partida, no como sentencia. Y os acompañamos en vuestras decisiones.',
+    tipos:{titulo:'Problemas de pareja más frecuentes', intro:'Casi nunca llegan solos: unos tiran de otros.', items:[
+      ['Discusiones constantes','por todo o siempre por lo mismo, y cada una deja más distancia.','discusiones'],
+      ['Problemas de comunicación','uno ataca, el otro se cierra, y lo importante no llega a decirse.','comunicacion'],
+      ['Crisis de pareja','un cambio, una pérdida o el desgaste hacen que la relación se tambalee.','crisis'],
+      ['Celos','comprobaciones y preguntas que alivian un momento pero alimentan el miedo.','celos'],
+      ['Infidelidad','se rompe la confianza; se puede reconstruir o decidir separarse.','infidelidad'],
+      ['Dependencia emocional','no poder estar sin la otra persona aunque te haga daño; suele ir unida a la <a href="autoestima.html">autoestima</a>.','dependencia'],
+      ['Apego','cómo aprendimos a querer se repite en la pareja: miedo al abandono o necesidad de distancia.','apego'],
+      ['Narcisismo en la pareja','la relación gira siempre alrededor del otro; usamos la palabra para hablar, no para diagnosticar.','narcisismo'],
+      ['Falta de deseo','cambia con los años, el estrés o la crianza; lo trabajamos también en terapia sexual.','deseo'],
+      ['La pareja tras tener hijos','menos tiempo, menos sueño y nuevos roles.','hijos'],
+      ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, para que haya menos daño, también en el <a href="duelo.html">duelo</a>.','rupturas']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos en terapia de pareja',
+      pasos:[
+        ['Primera entrevista, gratuita, con los dos.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Una sesión individual con cada uno.','Para escuchar con calma lo que cuesta decir delante del otro.'],
+        ['Sesiones conjuntas de 60 minutos.','Al principio, semanales; las espaciamos cuando notáis avances.']
+      ],
+      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones, la de aceptación y compromiso (ACT) y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, incluso desde ciudades distintas. <a href="quienes-somos.html">Quiénes somos</a>.'
+    },
+    /* otras terapias al final de la página, en tarjetas con dibujo (opción B, 2026-11-09): [slug, una línea] */
+    /* «Otras terapias que pueden interesarte» quitado el 2026-11-10 (menos scroll); se puede recuperar renombrando a relacionadas */
+    relacionadasQuitadas:[
+      ['autoestima','Cuando la dependencia o las dudas sobre ti pesan en la relación.'],
+      ['duelo','Si una ruptura sigue doliendo mucho tiempo después.'],
+      ['sexual','Cuando el deseo o la intimidad se han vuelto un problema.']
+    ],
+    alert:'Si hay violencia en la pareja, la terapia de pareja no es el recurso adecuado. Si sufres violencia de género, llama al <strong>016</strong> o escribe por WhatsApp al <strong>600 000 016</strong> (gratuito, confidencial y sin rastro en la factura); en una urgencia, al <strong>112</strong>.'
+  }
 },
 {
   slug:'tdah', name:'TDAH y atención', sym:'No me puedo concentrar en nada',
@@ -559,7 +739,41 @@ window.MOTIVOS=[
     ['Entrenamiento a familias','Pautas para madres, padres y escuela.','buena en infancia'],
     ['Medicación','Es un tratamiento médico: si la hay, nos coordinamos con quien la prescribe.','depende del caso']
   ],
-  alt:'Mujer estudiando con un portátil y apuntes en una habitación luminosa'
+  alt:'Mujer estudiando con un portátil y apuntes en una habitación luminosa',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH es un problema, pero no una enfermedad: podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades.',
+      'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. En cada persona se cruzan el cuerpo, su historia y el entorno: por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> no han encontrado un marcador que permita diagnosticarlo: el diagnóstico es clínico. El TDAH tiene un peso hereditario importante, pero repartido en muchas variantes de efecto pequeño que influyen sin decidir por sí solas.',
+      '<strong>Los estudios de neurología</strong> encuentran diferencias entre grupos de personas, pero no un patrón que sirva para diagnosticar a nadie en concreto. El cerebro participa, como en todo lo que hacemos, pero quien aprende a atender es la persona.',
+      'Prestar atención es algo que se aprende. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. A veces la ayuda pasa también por orientar a <a href="infancia.html">la familia</a> y al colegio.',
+      '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, con <a href="adicciones.html">pantallas</a> que reclaman la atención a cada momento. Esa forma de vida choca con lo que piden la escuela o el trabajo.'
+    ],
+    together:'En los adultos a menudo se identifica tarde, a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que eran vagos o despistados. La idea no es cambiar quién eres, sino trabajar para que tus ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos contigo, paso a paso.',
+    tipos:{titulo:'Cómo se nota el TDAH', intro:'No aparece igual en todas las personas ni en todos los ámbitos.', items:[
+      ['TDAH en adultos','se nota más en la desorganización, los olvidos o una inquietud por dentro que en el movimiento.','adultos'],
+      ['Falta de concentración','perder el hilo en tareas largas o poco interesantes, y atender mucho en lo que apasiona.','concentracion'],
+      ['Procrastinación','aplazar lo importante hasta el último momento; no es pereza.','procrastinacion'],
+      ['Impulsividad','hablar o actuar antes de pensarlo, interrumpir, decidir deprisa.','impulsividad'],
+      ['Inquietud','en los adultos, más que moverse, cuesta estar quieto, esperar o descansar.','inquietud'],
+      ['Hiperactividad','no parar, sobre todo en la infancia; con los años suele convertirse en inquietud.','hiperactividad'],
+      ['Desorganización','cuesta planificar, ordenar el tiempo y calcular cuánto lleva cada cosa.','desorganizacion'],
+      ['Olvidos y despistes','perder cosas, olvidar citas o dejar tareas a medias.','olvidos'],
+      ['Dificultades en los estudios','más por la atención y la organización que por la capacidad; trabajamos también con <a href="infancia.html">la familia</a>.','estudios']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos el TDAH',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Una valoración cuidadosa.','Tu historia desde la infancia, cuestionarios y cómo se nota en tu vida, sin prisa por poner la etiqueta.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando te organizas con más soltura. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la ACT y la atención plena, y las terapias contextuales. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; con niños pequeños solemos preferir la consulta presencial. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
@@ -650,7 +864,42 @@ window.MOTIVOS=[
     ['Contextuales y ACT','Convivir con el deseo de consumir sin obedecerlo.','creciente']
   ],
   coord:'Con alcohol u otras sustancias puede hacer falta un tratamiento médico. Nos coordinamos con medicina y con los servicios especializados.',
-  alt:'Corredor sonriente con su medalla al terminar una carrera'
+  alt:'Corredor sonriente con su medalla al terminar una carrera',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Una adicción te quita <strong>libertad</strong>: cada vez eliges menos. Por eso dejarla no es solo cuestión de fuerza de voluntad, y el objetivo de la terapia es que vuelvas a tener opciones.',
+      'Salir de una adicción abre la puerta a todo lo demás: tu familia, tu trabajo, tus amigos, tus proyectos. En cada persona se cruzan el cuerpo, su historia y el entorno: por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
+      '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol o ciertas <a href="insomnio.html">pastillas para dormir</a>, crean dependencia física: cuando faltan, aparece el <strong>síndrome de abstinencia</strong>, y a veces hace falta acompañamiento médico.',
+      '<strong>Los estudios de neurología</strong> muestran que el consumo, el juego o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, cuándo aparece y qué lo mantiene.',
+      'Ya lo escribió Ovidio: «veo lo mejor y lo apruebo, pero sigo lo peor». Muchas veces caemos en una adicción buscando calmar la <a href="ansiedad.html">ansiedad</a>, y a la larga la empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en aprender a «controlar las condiciones que nos controlan».',
+      '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, aunque no son la única causa: hay que mirar también la vida que se lleva. Si el móvil se ha convertido en lo primero y lo último de tu día, podemos acompañarte para que vuelva a ser una herramienta.'
+    ],
+    together:'Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
+    tipos:{titulo:'Adicciones más frecuentes', intro:'Con sustancia o sin ella, el círculo se parece: lo que alivia hoy es lo que ata mañana.', items:[
+      ['Alcohol','beber para relajarte, para dormir o para estar con otros, y notar que cada vez cuesta más parar.','alcohol'],
+      ['Juego y apuestas online','perseguir las pérdidas, mentir sobre lo que juegas o pedir dinero para seguir.','juego'],
+      ['Adicción al móvil','mirarlo al despertar, al acostarte y cada pocos minutos, aunque quieras dejarlo.','movil'],
+      ['Redes sociales','horas que se van sin darte cuenta y comparaciones que dañan la <a href="autoestima.html">autoestima</a>.','redes'],
+      ['Videojuegos','cuando el juego ocupa el lugar del sueño, los estudios o las relaciones.','videojuegos'],
+      ['Cannabis','empieza para relajarse o para dormir, y acaba siendo difícil pasar un día sin él.','cannabis'],
+      ['Cocaína','engancha por la euforia que promete y deja bajones, ansiedad y gastos.','cocaina'],
+      ['Pornografía','cuando su consumo se vuelve compulsivo; la trabajamos también en <a href="sexual.html">terapia sexual</a>.','pornografia'],
+      ['Compras compulsivas','comprar para aliviar el malestar, con un alivio que dura poco y deja culpa y deudas.','compras'],
+      ['Familiares de personas con adicción','si alguien cercano no quiere pedir ayuda, puedes venir tú; te ayudamos a cuidarte y a facilitar que dé el paso.','familiares']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos las adicciones',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender qué te aporta.','Para qué sirve el consumo, en qué momentos aparece, qué lo mantiene y qué otras formas hay de conseguir lo que buscas.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el cambio se sostiene. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones.']
+      ],
+      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, la terapia de aceptación y compromiso (ACT), el trabajo con la familia y las terapias contextuales. Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'autoestima', name:'Autoestima', sym:'No soy suficiente',
@@ -730,7 +979,39 @@ window.MOTIVOS=[
     ['Contextuales, ACT y compasión','Tratarte de otra manera sin esperar a «quererte» primero.','creciente'],
     ['Interpersonal','Trabajar los límites y la dependencia de la aprobación.','variable']
   ],
-  alt:'Mujer sonriendo junto a una ventana mientras habla por teléfono'
+  alt:'Mujer sonriendo junto a una ventana mientras habla por teléfono',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Por eso nuestro enfoque es <strong>pluralista</strong>.',
+    bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
+      '<strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, <a href="insomnio.html">el mal sueño</a> o <a href="ansiedad.html">el estrés mantenido</a> tiñen cómo nos vemos.',
+      'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> muestra que se difundió en la segunda mitad del siglo XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.',
+      '<strong>Los estudios de psicología</strong> encuentran que repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más mueve la estima es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. La estima llega después de actuar, no antes.',
+      '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal o <a href="adicciones.html">las redes sociales</a>. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
+    ],
+    together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Lo que sí se puede trabajar es cómo te importa esa mirada y qué haces con ella: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas y cuidar los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos contigo.',
+    tipos:{titulo:'Problemas de autoestima más frecuentes', intro:'Casi nunca llegan solos: unos tiran de otros.', items:[
+      ['Baja autoestima','sentir que vales poco, que no eres suficiente o que los demás lo hacen todo mejor.','baja'],
+      ['Inseguridad','dudar de ti antes de decidir o de intentarlo, y necesitar que te lo confirmen una y otra vez.','inseguridad'],
+      ['Perfeccionismo','que nada esté nunca lo bastante bien.','perfeccionismo'],
+      ['Autoexigencia','pedirte siempre más y vivir cualquier fallo como un fracaso personal.','autoexigencia'],
+      ['Síndrome del impostor','sentir que no mereces lo que has logrado y temer que los demás lo «descubran».','impostor'],
+      ['Miedo al rechazo','callar lo que piensas o lo que necesitas por miedo a que te dejen de querer.','rechazo'],
+      ['Necesidad de aprobación','sentirte bien solo cuando los demás te dan el visto bueno.','aprobacion'],
+      ['Compararse con los demás','medirte sin parar con otros, muchas veces con lo que enseñan <a href="adicciones.html">las redes</a>.','compararse'],
+      ['Autocrítica','una voz interna que te juzga con una dureza que nunca usarías con nadie.','autocritica'],
+      ['Aprender a decir que no','decir que sí a todo para no decepcionar; poner límites también es estimarse.','decirno']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos la autoestima',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender cómo te valoras y de dónde viene.','Tu historia, cómo te han tratado y los contextos en los que vives.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando te tratas de otra manera. Si tomas medicación, nos coordinamos con tu médico.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual, la ACT y la compasión, y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; a muchas personas les resulta más fácil empezar desde casa. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'duelo', name:'Duelo', sym:'No consigo superar su muerte',
@@ -816,7 +1097,41 @@ window.MOTIVOS=[
     ['Contextuales y ACT','Hacer sitio al dolor sin que ocupe toda la vida.','en estudio'],
     ['Acompañamiento','Un espacio para hablar de la pérdida cuando alrededor ya no se habla.','—']
   ],
-  alt:'Familia corriendo por un prado en un parque'
+  alt:'Familia corriendo por un prado en un parque',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'El duelo es la respuesta a una pérdida: la muerte de alguien querido o de un animal, una separación, un despido o un cambio de vida. La muerte llega en mitad de algo —planes, conversaciones, proyectos en común—, y por eso desordena tanto la vida de los que quedan.',
+      {voz:'Perder a alguien es enfrentarse a todos los “nunca más”'},
+      'Cada duelo se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
+      '<strong>Los estudios de biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, <a href="insomnio.html">cambios en el sueño</a> y en el apetito, <a href="depresion.html">una tristeza que pesa físicamente</a>. Es normal, y suele ir cediendo con el tiempo.',
+      '<strong>Los estudios de neurología</strong> muestran que al cerebro le cuesta asumir una ausencia: por eso, a veces, esperamos oír su voz o que entre por la puerta.',
+      '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue.',
+      '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella.'
+    ],
+    together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
+    tipos:{titulo:'Tipos de duelo', intro:'Cada pérdida es única, pero hay duelos que conviene acompañar con especial cuidado.', items:[
+      ['Muerte de un ser querido','la pérdida de alguien cercano desordena la vida entera: las rutinas, los planes, la forma de estar con los demás.','serquerido'],
+      ['Muerte de un padre o una madre','más que superarla, se trata de aprender a vivir con su ausencia.','padres'],
+      ['Duelo perinatal','la pérdida de un hijo durante el embarazo o poco después del parto, un duelo a menudo silenciado.','perinatal'],
+      ['Duelo por suicidio','preguntas sin respuesta, culpa y, a veces, silencio. Si tú también tienes pensamientos de muerte, llama al <strong>024</strong>.','suicidio'],
+      ['Duelo complicado o prolongado','cuando, pasados muchos meses, el dolor sigue ocupándolo todo y la vida no consigue retomarse.','prolongado'],
+      ['Duelo anticipado','el que empieza antes de la muerte, cuando una enfermedad grave avanza; también agota a quien cuida.','anticipado'],
+      ['Duelo por una mascota','perder a un animal con el que has compartido la vida duele de verdad.','mascota'],
+      ['Pérdida del trabajo','un despido también es una pérdida de rutinas, de identidad y de seguridad.','trabajo']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos el duelo',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Hablar de la pérdida.','Quién era, qué pasó y qué ha cambiado desde entonces, sin prisa.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando la pérdida encuentra su sitio. Si tomas medicación, nos coordinamos con tu médico.']
+      ],
+      texto:'Trabajamos con la terapia cognitivo-conductual para el duelo prolongado, la terapia de aceptación y compromiso (ACT) y el acompañamiento: un espacio para hablar de la pérdida cuando alrededor ya no se habla de ella. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
@@ -901,7 +1216,42 @@ window.MOTIVOS=[
     ['Familiar y sistémica','Trabajar con toda la familia cuando el problema es de todos.','variable']
   ],
   consent:'Cómo se hace: la primera cita es con la familia; el consentimiento se recoge por escrito. <span class="gap">[Detalle: progenitores, custodia, edad]</span> '+v('con el Colegio'),
-  alt:'Grupo de jóvenes riendo juntos en un taller'
+  alt:'Grupo de jóvenes riendo juntos en un taller',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
+      'No todo malestar es un trastorno: muchas veces hay que hablar de la familia, del colegio, de los amigos o de las preguntas propias de la edad. En cada niño y cada adolescente se cruzan el cuerpo, su historia y su entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta, sin ser la explicación de todo.',
+      '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de lo que se practica y se aprende. Un menor no es un adulto pequeño ni un diagnóstico.',
+      '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas. Mucha exigencia y poca tolerancia a la frustración: a veces se confunde con un <a href="tdah.html">TDAH</a> lo que es falta de práctica para esperar o concentrarse.',
+      '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. Los acompañamos a relacionarse con el mundo con recursos propios.'
+    ],
+    together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores) y también con vosotros, con estrategias sencillas para casa y para clase. Lo que le pasa a un menor casi nunca le pasa solo a él: por eso trabajamos en equipo con la familia y con los centros educativos.',
+    tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'No todo malestar es un trastorno: muchas veces forma parte de crecer, pero conviene mirarlo a tiempo.', items:[
+      ['Rabietas y problemas de conducta','enfados que no ceden, desobediencia o peleas que desbordan a la familia.','rabietas'],
+      ['Comunicación con adolescentes','monosílabos, puertas cerradas y discusiones, hasta que se rompe el puente.','comunicacion'],
+      ['Tristeza o aislamiento','dejar a los amigos o perder el interés por todo; si dura semanas, puede ser <a href="depresion.html">depresión</a>.','tristeza'],
+      ['Miedos y ansiedad','miedos o preocupaciones que no ceden y le frenan; los trabajamos como en <a href="ansiedad.html">la ansiedad</a>.','miedos'],
+      ['Acoso escolar (bullying)','burlas, exclusión o agresiones repetidas, también por redes; muchos niños no lo cuentan.','acoso'],
+      ['Bajo rendimiento escolar','suspensos o desmotivación en los que pesan la atención, el ánimo o lo que pasa en clase.','rendimiento'],
+      ['Atención e hiperactividad','antes de hablar de <a href="tdah.html">TDAH</a>, miramos su vida, su práctica y su entorno.','atencion'],
+      ['Uso excesivo de pantallas','cuando el móvil o los videojuegos ocupan el centro del día; lo vemos también en <a href="adicciones.html">adicciones</a>.','pantallas'],
+      ['Separación de los padres','les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
+      ['Orientación a familias','a veces lo que más ayuda es trabajar con los padres, con pautas para casa y para el colegio.','familias']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos con niños y adolescentes',
+      pasos:[
+        ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Conocer a vuestro hijo o hija.','En sesiones adaptadas a su edad, para escuchar cómo vive lo que le pasa.'],
+        ['Sesiones de 60 minutos, con él o ella y con vosotros.','Al principio, semanales; las espaciamos cuando las cosas se asientan. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.']
+      ],
+      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad, ACT con adolescentes y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'personalidad', name:'Trastornos de la personalidad', sym:'No me entiendo ni yo', delicate:true,
@@ -986,7 +1336,43 @@ window.MOTIVOS=[
     ['Terapia de esquemas','Trabajar patrones aprendidos que se repiten.','moderada']
   ],
   coord:'Si hay autolesiones o ideas de suicidio, nos coordinamos con psiquiatría. En una urgencia, llama al <strong>112</strong>; si tienes pensamientos de suicidio, al <strong>024</strong>.',
-  alt:'Hombre sonriente cargando plantas en una tienda'
+  alt:'Hombre sonriente cargando plantas en una tienda',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'Usamos «trastorno de la personalidad» porque es como se busca y se diagnostica, aunque preferimos hablar de formas de ser muy marcadas —inestables, evitativas, dependientes, <a href="autoestima.html">perfeccionistas</a>— que hacen sufrir. Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser.',
+      {voz:'Nadie nace siendo la persona que es hoy'},
+      'Nos vamos haciendo con los demás y con lo que vivimos, y por eso también se puede trabajar. En cada persona se cruzan el cuerpo, su historia, sus relaciones y el entorno: nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida.',
+      '<strong>Los estudios de neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre.',
+      '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.',
+      '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos y exigencias que pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
+    ],
+    together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
+    tipos:{titulo:'Problemas de personalidad más frecuentes', intro:'Preferimos verlos como formas de ser muy marcadas que hacen sufrir, más que como tipos cerrados.', items:[
+      ['Trastorno límite de la personalidad (TLP)','emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables e impulsividad.','tlp'],
+      ['Inestabilidad emocional','emociones que suben y bajan muy deprisa y con mucha intensidad.','inestabilidad'],
+      ['Miedo al abandono','sentir que te van a dejar y hacer lo que sea por evitarlo.','abandono'],
+      ['Relaciones intensas e inestables','pasar de idealizar a alguien a sentirte decepcionado o herido.','relaciones'],
+      ['Impulsividad','actuar sin pensar cuando la emoción aprieta; si viene desde la infancia, puede tener que ver con el <a href="tdah.html">TDAH</a>.','impulsividad'],
+      ['Ira y explosiones emocionales','enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.','ira'],
+      ['Rasgos obsesivos o perfeccionistas','necesidad rígida de orden y control; no es lo mismo que el <a href="ansiedad.html#toc">TOC</a>.','obsesivos'],
+      ['Personalidad evitativa','evitar a los demás por miedo al rechazo, aunque desees esa cercanía.','evitativa'],
+      ['Personalidad dependiente','necesitar que otros decidan por ti; a menudo se vive en la <a href="pareja.html">pareja</a>.','dependiente'],
+      ['Rasgos narcisistas','necesidad intensa de admiración y mucha fragilidad ante la crítica.','narcisistas']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos los problemas de personalidad',
+      pasos:[
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender tus patrones.','Tu historia, tus relaciones y lo que se repite, sin poner etiquetas antes de tiempo.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales; es un proceso que lleva su tiempo. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.']
+      ],
+      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 },
 {
   slug:'sexual', name:'Problemas sexuales', sym:'No tengo deseo sexual',
@@ -1072,7 +1458,40 @@ window.MOTIVOS=[
     ['Basadas en mindfulness','Atención al cuerpo sin presión por el resultado.','en estudio'],
     ['Terapia de pareja','Cuando la dificultad es de los dos.','variable']
   ],
-  alt:'Pareja riendo relajada en un sofá'
+  alt:'Pareja riendo relajada en un sofá',
+  /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
+     un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
+  corta:{
+    basesIntro:[
+      'La sexualidad no es una función mecánica que falla, aunque a veces se viva así: se entreteje con la pareja, el estrés, la historia de cada persona y las expectativas. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.',
+      'La intimidad real empieza con <strong>conversaciones reales</strong> sobre sexo. Cada persona es distinta, y por eso nuestro enfoque es <strong>pluralista</strong>.'
+    ],
+    bases:[
+      '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas —tras el parto o en la menopausia—, el cansancio, ciertas enfermedades o algunos medicamentos. A veces conviene descartar antes una causa médica.',
+      '<strong>Los estudios de neurología</strong> muestran que el estrés y <a href="ansiedad.html">la ansiedad</a> frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. Por eso la presión por «rendir» suele empeorar las cosas.',
+      '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
+      '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad de los medios y de <a href="adicciones.html">la pornografía</a>, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
+    ],
+    together:'Hablar de lo que nos pasa en la intimidad, y las nuevas formas de encontrarnos que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
+    tipos:{titulo:'Problemas sexuales más frecuentes', intro:'Casi siempre se mezclan el cuerpo, la relación y la historia de cada persona.', items:[
+      ['Falta de deseo sexual','cambia con el cansancio, el estrés, la relación, algunos medicamentos o los cambios hormonales.','deseo'],
+      ['Disfunción eréctil','dificultad para conseguir o mantener la erección; a menudo pesan la ansiedad y la presión por «rendir».','erectil'],
+      ['Eyaculación precoz','eyacular antes de lo que se desea; se trabaja con ejercicios concretos.','precoz'],
+      ['Anorgasmia','dificultad para llegar al orgasmo aunque haya deseo y excitación.','anorgasmia'],
+      ['Dolor en las relaciones sexuales','conviene una valoración ginecológica o urológica, y trabajamos coordinados.','dolor'],
+      ['Vaginismo','contracción involuntaria que dificulta la penetración; se trabaja de forma gradual.','vaginismo'],
+      ['Sexualidad tras el parto','el cansancio, el cuerpo y los nuevos roles cambian el deseo; se trabaja también en <a href="pareja.html">pareja</a>.','parto'],
+      ['Sexualidad en la menopausia','los cambios hormonales afectan al deseo y al bienestar sexual; combinamos la mirada médica y la psicológica.','menopausia']
+    ]},
+    trabajo:{titulo:'Cómo trabajamos los problemas sexuales',
+      pasos:[
+        ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Entender qué pasa.','El cuerpo, la relación, tu historia y las expectativas que pesan sobre el sexo.'],
+        ['Sesiones de 60 minutos.','Al principio, semanales, con ejercicios graduales y sin presión por el resultado. Si hace falta, nos coordinamos con tu médico, urólogo o ginecóloga.']
+      ],
+      texto:'Trabajamos con la terapia sexual cognitivo-conductual, la atención plena, la <a href="pareja.html">terapia de pareja</a> cuando la dificultad es de los dos y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>: a muchas personas les resulta más fácil hablar de sexualidad desde casa. <a href="quienes-somos.html">Quiénes somos</a>.'
+    }
+  }
 }
 ];
 

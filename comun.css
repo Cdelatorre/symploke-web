@@ -21,11 +21,11 @@ html.lenis,html.lenis body{height:auto}
    data-hover en <html>: mancha (la mancha se enciende al acento del logo), ropa (personas en verde claro),
    entorno (plantas, muebles y objetos en acento) o fondo (todo el fondo del dibujo en verde muy claro) */
 :root{--acc:#2FD08E;--acc-pale:#C4F4E0}
-:is(.card,.qwin,.band,.ct-art,.ilus) svg *{transition:fill .35s ease}
-[data-hover="mancha"] :is(.card,.qwin,.band,.ct-art,.ilus):hover .bg{fill:var(--acc)}
-[data-hover="ropa"] :is(.card,.qwin,.band,.ct-art,.ilus):hover .pp [fill="#FFFFFF"]{fill:var(--acc-pale)}
-[data-hover="entorno"] :is(.card,.qwin,.band,.ct-art,.ilus):hover :is([fill="#CDEEDD"],[fill="#A9E1C6"],[fill="#5FBF95"]):not(.pp *){fill:var(--acc)}
-[data-hover="fondo"] :is(.card,.qwin,.band,.ct-art,.ilus):hover svg > rect[width="400"]{fill:var(--acc-pale)}
+:is(.card,.qwin,.band,.ct-art,.ilus,.mhero .art) svg *{transition:fill .35s ease}
+[data-hover="mancha"] :is(.card,.qwin,.band,.ct-art,.ilus,.mhero .art):hover .bg{fill:var(--acc)}
+[data-hover="ropa"] :is(.card,.qwin,.band,.ct-art,.ilus,.mhero .art):hover .pp [fill="#FFFFFF"]{fill:var(--acc-pale)}
+[data-hover="entorno"] :is(.card,.qwin,.band,.ct-art,.ilus,.mhero .art):hover :is([fill="#CDEEDD"],[fill="#A9E1C6"],[fill="#5FBF95"]):not(.pp *){fill:var(--acc)}
+[data-hover="fondo"] :is(.card,.qwin,.band,.ct-art,.ilus,.mhero .art):hover svg > rect[width="400"]{fill:var(--acc-pale)}
 
 /* selector para probar las variantes del acento (página de terapia) */
 .hvpick{position:fixed;right:16px;bottom:16px;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:6px;max-width:calc(100vw - 32px);padding:8px 10px;border-radius:18px;background:var(--bg);border:1px solid var(--line);box-shadow:0 10px 30px rgba(0,40,25,.14);font:500 13px/1 'DM Sans',sans-serif;color:var(--ink2)}
@@ -42,10 +42,13 @@ html.lenis,html.lenis body{height:auto}
 /* ---------- pie ---------- */
 footer{background:#007A50 !important;color:#FFFFFF !important;border-top:0 !important}
 footer a{color:inherit}
+footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 40px}   /* pie: tu nombre a la izquierda, el centro sanitario a la derecha (2026-11-10) */
+footer span{word-spacing:.08em}
 
 /* ---------- flecha de botones y enlaces: se adelanta un poco al pasar el ratón ---------- */
 .arr{display:inline-block;transition:transform .3s cubic-bezier(.3,.7,.2,1.4)}
 :is(a,button,.card,.qwin):hover .arr{transform:translateX(5px)}
+:is(a,button,.card,.qwin):hover .arr.izq{transform:translateX(-5px)}   /* flecha de volver: se mueve hacia la izquierda */
 @media (prefers-reduced-motion: reduce){ .arr{transition:none} }
 
 /* ---------- cabecera: se compacta al empezar a bajar (clase .scrolled en <html>, la pone comun.js) ---------- */
