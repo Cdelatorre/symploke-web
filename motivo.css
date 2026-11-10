@@ -1,4 +1,4 @@
-/* interrogación del enlace a las preguntas: solo el signo «?» de Fredoka (opción 1 de maqueta/iconos-preguntas.html) */
+/* interrogación del enlace a las preguntas: solo el signo «?» de Fredoka (elegida entre 10 pruebas, 2026-11-10) */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&text=%3F&display=swap');
 /* estilos de la página de cada terapia (motivo.html y las páginas fijas como ansiedad.html) */
 :root{
@@ -108,10 +108,15 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .read ol.pasos li p{margin-bottom:14px}
 .read .trabajo-mas{margin-top:22px}
 .read .a-preguntas{margin-top:48px}
-.read .a-preguntas a{display:inline-flex;align-items:center;gap:14px;font:500 18px/1.3 'DM Sans',sans-serif;color:var(--brandink);text-decoration:none}
+.read .a-preguntas > summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:14px;font:500 18px/1.3 'DM Sans',sans-serif;color:var(--brandink)}
+.read .a-preguntas > summary::-webkit-details-marker{display:none}
+.read .a-preguntas > summary:hover{color:var(--brand)}
+.read .a-preguntas > summary:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:6px}
+.read .a-preguntas > summary .arr{transform:rotate(90deg)}   /* flecha hacia abajo: se abre aquí mismo */
+.read .a-preguntas > summary:hover .arr{transform:translateY(4px) rotate(90deg)}
+.read .a-preguntas[open] > summary .arr{transform:rotate(-90deg)}
 .read .a-preguntas .t{border-bottom:3px solid #5FE3A8;padding-bottom:4px}
 .read .a-preguntas .qi{font:600 46px/1 'Fredoka','DM Sans',sans-serif;color:var(--brand)}   /* verde oscuro de la marca, sin cambio al pasar el ratón (2026-11-10) */
-.read .a-preguntas a:hover{color:var(--brand)}
 .read .voz .quien{display:block;margin-top:12px;font:500 14px/1.3 'DM Sans',sans-serif;letter-spacing:.2px;color:var(--ink2)}
 
 /* aviso de cuidado (motivos delicados y menores) y enfoque en la entrada */
@@ -138,6 +143,8 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 .band .btn{align-self:flex-start}
 .band .urg{font-size:14px}
 .band .donde{margin-top:6px}
+.band .donde a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px;transition:text-decoration-color .2s ease,color .2s ease}   /* enlaces a presencial y online, con la rayita verde (2026-11-10) */
+.band .donde a:hover{color:var(--brandink);text-decoration-color:var(--brand)}
 
 footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 @media (max-width:860px){

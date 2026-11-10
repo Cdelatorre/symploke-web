@@ -126,7 +126,8 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 
 /* ---------- página de terapia online ---------- */
 .intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,4.5vw,64px);align-items:center;margin-top:28px}
-.ilus{display:block;aspect-ratio:16/11;background:#fff;border-radius:28px;overflow:hidden}
+.ilus{display:block;aspect-ratio:16/11;background:transparent;border-radius:28px;overflow:hidden}
+.ilus svg > rect[width="400"]{fill:transparent}   /* sin fondo blanco: en modo noche no se ve un recuadro (2026-11-10) */
 .ilus svg{display:block;width:100%;height:100%}
 .prose p{margin:0 0 16px;font-size:clamp(16px,1.2vw,18px);line-height:1.55;color:var(--ink2);max-width:600px}
 .prose p:last-child{margin-bottom:0}
@@ -182,8 +183,8 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
     <h2>Tres pasos</h2>
     <ol class="pasos">
       <li><b>Pides cita</b>Por el formulario, por teléfono o por WhatsApp. Elegimos juntos el día y la hora.</li>
-      <li><b>Recibes el enlace</b>Nos adaptamos a la plataforma que te resulte más cómoda: Zoom, Google Meet, Skype u otras habituales.</li>
-      <li><b>Hacemos la sesión</b>Por videollamada, con la misma duración que en consulta.</li>
+      <li><b>Recibes el enlace</b>Nos adaptamos a la plataforma que te resulte más cómoda: Zoom, Google Meet, Microsoft Teams u otras habituales.</li>
+      <li><b>Hacemos la sesión</b>Por videollamada: 60 minutos, como en consulta.</li>
     </ol>
   </section>
 
@@ -247,7 +248,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 
   <section class="endnote">
     <h2>¿Empezamos?</h2>
-    <p class="lead">La primera entrevista también puede ser online. En ella pensamos juntos qué te pasa y cómo abordarlo.</p>
+    <p class="lead">La primera entrevista, gratuita, también puede ser online. En ella pensamos juntos qué te pasa y cómo abordarlo.</p>
     <div class="cta">
       <a class="btn primary" href="contacto.html">Pedir primera cita <span class="arr" aria-hidden="true">→</span></a>
       <a class="btn ghost" href="presencial.html">Ver el centro</a>

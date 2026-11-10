@@ -46,7 +46,7 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;c
 .btn.small{font-size:15px;padding:12px 22px}
 .hero{position:relative;min-height:max(100svh,660px);overflow:visible}
 html,body{overflow-x:clip}
-.txt{position:absolute;left:clamp(20px,4.5vw,64px);top:0;bottom:0;width:min(47vw,660px);display:flex;flex-direction:column;justify-content:center;gap:22px;z-index:2;padding-top:40px}
+.txt{position:absolute;left:clamp(20px,4.5vw,64px);top:0;bottom:0;width:min(47vw,660px);display:flex;flex-direction:column;justify-content:center;gap:22px;z-index:3;padding-top:40px}   /* z-index 3 (2026-11-10): el mapa asoma sobre la sección siguiente y debe quedar por encima, si no el ratón parpadea */
 .eyebrow{font-size:14px;font-weight:600;letter-spacing:1px;color:var(--brandink)}
 h1{font-size:clamp(30px,3.2vw,46px);line-height:1;letter-spacing:-0.5px;font-weight:400}
 .lead{font-size:clamp(16px,1.25vw,18px);line-height:1.42;color:var(--ink2);margin:0;max-width:520px}
@@ -60,11 +60,11 @@ h1{font-size:clamp(30px,3.2vw,46px);line-height:1;letter-spacing:-0.5px;font-wei
 .yo.has .hint{display:none}
 .yo input{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
 /* minimapa dibujado bajo la dirección: lleva a Google Maps */
-.mapa{display:flex;align-items:center;gap:12px;width:max-content;max-width:100%;margin-top:-4px;margin-bottom:-97px;padding:10px 22px 10px 10px;border:1px solid var(--line);border-radius:22px;background:var(--bg);color:var(--ink2);font-size:17px;font-weight:500;text-decoration:none;transition:border-color .15s ease}
+.mapa{display:flex;align-items:center;gap:12px;width:max-content;max-width:100%;margin-top:-4px;margin-bottom:0;padding:8px;border:1px solid var(--line);border-radius:22px;background:var(--bg);color:var(--ink2);font-size:17px;font-weight:500;text-decoration:none;transition:border-color .15s ease}
 .mapa:hover{border-color:var(--brand);color:var(--brandink)}
 .mapa .parque{transition:fill .25s ease,opacity .25s ease}
 .mapa:hover .parque{fill:var(--acc,#2FD08E);opacity:1}   /* el cuadradito verde del mapa se oscurece al pasar el ratón */
-.mapa svg{display:block;width:312px;height:182px;border-radius:14px;flex:none}   /* el margen negativo de abajo hace que crezca hacia el hueco sin mover lo de arriba */
+.mapa svg{display:block;width:156px;height:91px;border-radius:12px;flex:none}   /* 2026-11-10: mapa más pequeño, sin el rótulo «Ver en Google Maps» y colocado por el script del final, entre «Presencial en Koiné» y «¿Cómo trabajamos?» */
 #art{position:absolute;right:0;bottom:0;width:min(58vw,840px);aspect-ratio:1/1;height:auto;z-index:1;pointer-events:none;transform-origin:100% 100%;will-change:transform,opacity;overflow:visible}
 #art path{fill:none;stroke-linejoin:round}
 .pale{stroke:var(--pale)}.mid{stroke:var(--mid)}.soft{stroke:var(--soft2)}.cord{stroke:var(--cord)}
@@ -161,7 +161,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
       <div class="where">Presencial en Koiné · Martín de Vargas 5, Madrid</div>
       <a class="mapa" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Mart%C3%ADn%20de%20Vargas%205%2C%2028005%20Madrid" target="_blank" rel="noopener" aria-label="Ver Martín de Vargas 5, Madrid, en Google Maps">
         <svg viewBox="0 0 96 56" aria-hidden="true"><rect width="96" height="56" fill="var(--soft)"/><path d="M-4 40 L100 22" stroke="#fff" stroke-width="7"/><path d="M30 -4 L40 60" stroke="#fff" stroke-width="5"/><path d="M66 -4 L60 60" stroke="#fff" stroke-width="4"/><path d="M-4 12 L100 4" stroke="#fff" stroke-width="3"/><rect class="parque" x="72" y="34" width="20" height="16" rx="3" fill="#5FE3A8" opacity=".55"/><path d="M48 13a7 7 0 0 1 7 7c0 5.2-7 12-7 12s-7-6.8-7-12a7 7 0 0 1 7-7z" fill="#009966"/><circle cx="48" cy="20" r="2.6" fill="#fff"/></svg>
-      Ver en Google Maps
       </a>
     </div>
     <svg id="art" viewBox="0 0 800 800" fill="none" aria-hidden="true"><g id="weave"></g></svg>
@@ -217,6 +216,21 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     <div class="mesh" id="meshw"><svg class="wv" viewBox="0 0 560 520" aria-hidden="true" style="transform-origin:50% 50%;will-change:transform,opacity"><g id="meshg"></g></svg></div>
   </section>
 </main>
+<script>
+/* 2026-11-10: en ordenador, el minimapa baja hasta quedar justo a medio camino entre «Presencial en Koiné…» y el título «¿Cómo trabajamos?» */
+(function(){
+  var mapa=document.querySelector('.hero .mapa'), donde=document.querySelector('.hero .where'), tit=document.getElementById('despacho'), txt=document.querySelector('.hero .txt');
+  if(!mapa||!donde||!tit||!txt)return;
+  function colocar(){
+    if(window.innerWidth<=860){mapa.style.position='';mapa.style.top='';mapa.style.left='';return;}
+    mapa.style.position='absolute';mapa.style.left='0';
+    var t=txt.getBoundingClientRect(), a=donde.getBoundingClientRect().bottom, b=tit.getBoundingClientRect().top;
+    mapa.style.top=Math.round((a+b)/2-mapa.offsetHeight/2-t.top)+'px';
+  }
+  colocar(); addEventListener('resize',colocar); addEventListener('load',colocar);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(colocar);
+})();
+</script>
 <footer><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Koiné Psicología · Centro sanitario nº CS19975 · © [Año] Symploké</span></footer>
 
 <script src="maqueta/th-data.js"></script>

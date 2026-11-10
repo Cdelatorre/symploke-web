@@ -69,7 +69,11 @@ if(c){   // VERSIÓN CARLOS: tipos en lista corta, un solo bloque «Cómo trabaj
     c.trabajo.pasos.forEach(function(p){h+='<li><p><strong>'+p[0]+'</strong> '+p[1]+'</p></li>';});
     h+='</ol>'+(c.trabajo.texto?'<p class="trabajo-mas">'+c.trabajo.texto+'</p>':'')+'</section>';
   }
-  if(m.faq)h+='<p class="a-preguntas"><a href="preguntas.html?m='+m.slug+'"><span class="qi" aria-hidden="true">?</span><span class="t">Preguntas frecuentes sobre '+(/^[A-ZÁÉÍÓÚ][a-záéíóúñ]/.test(m.name)?m.name.charAt(0).toLowerCase()+m.name.slice(1):m.name)+ARR+'</span></a></p>';   // interrogación a la izquierda (opción 1, Fredoka, 2026-11-10)
+  if(m.faq){   // preguntas en un desplegable de una sola línea (opción A, 2026-11-10): se ve igual de ligero y Google lee las preguntas como parte de la página
+    h+='<details class="a-preguntas"><summary><span class="qi" aria-hidden="true">?</span><span class="t">Preguntas frecuentes sobre '+(/^[A-ZÁÉÍÓÚ][a-záéíóúñ]/.test(m.name)?m.name.charAt(0).toLowerCase()+m.name.slice(1):m.name)+' <span class="arr" aria-hidden="true">→</span></span></summary><div class="faq desplegable">';
+    m.faq.forEach(function(f){h+='<details'+(f[2]?' id="'+f[2]+'"':'')+'><summary><h3>'+f[0]+'</h3></summary><p>'+f[1]+'</p></details>';});
+    h+='</div></details>';
+  }
 }else{
 if(m.tipos){   // {titulo, intro, items:[[nombre, texto]]}: tipos o cuadros, cada uno con su nombre como subtítulo
   h+='<section class="tipos"><h2>'+m.tipos.titulo+'</h2>'+(m.tipos.intro?'<p>'+m.tipos.intro+'</p>':'');
@@ -115,9 +119,9 @@ if(c&&c.relacionadas){   // VERSIÓN CARLOS: otras terapias en tarjetas con dibu
 
 h+='<section class="band"><div class="pic">'+ILUS.portada('band')+'</div><div class="t">';
 h+='<h2>Podemos ayudarte</h2>';
-h+='<p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una valoración inicial: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>';
+h+='<p>Trabajamos para aliviar el sufrimiento, paso a paso. Empezamos con una primera entrevista gratuita: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>';
 h+='<a class="btn primary" href="'+CITA+'">Pide cita y lo vemos juntos'+ARR+'</a>';
-h+='<p class="donde">Puedes visitarnos en nuestro centro sanitario de la calle Martín de Vargas, 5 (Madrid centro) o elegir la terapia online.</p>';   // Madrid en el texto visible (búsquedas locales)
+h+='<p class="donde">Puedes visitarnos en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p>';   // Madrid en el texto visible (búsquedas locales)
 h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
 h+='</div></section>';
 
@@ -125,10 +129,10 @@ document.getElementById('main').innerHTML=h;
 drawIn(document.querySelector('.mhero .art svg'));
 
 /* etiquetas que llevan a un desplegable de esta página (#social…): lo abren y bajan hasta él */
-function abrirAncla(id){
-  var d=id&&document.getElementById(id);
-  if(!d||d.tagName!=='DETAILS')return false;
-  d.open=true;
+function abrirAncla(id){   // abre el desplegable y los que lo contienen (p. ej., una pregunta dentro de «Preguntas frecuentes»)
+  var d=id&&document.getElementById(id), abierto=false;
+  for(var e=d;e;e=e.parentElement){if(e.tagName==='DETAILS'){e.open=true;abierto=true;}}
+  if(!abierto)return false;
   d.scrollIntoView({behavior:'smooth',block:'center'});
   return true;
 }

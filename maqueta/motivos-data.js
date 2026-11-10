@@ -111,20 +111,20 @@ window.MOTIVOS=[
       ['Ataques de ansiedad y pánico','una subida brusca de miedo intenso, con palpitaciones o ahogo, y después el miedo a que vuelva.','panico'],
       ['Agorafobia','miedo a sitios de los que sería difícil salir, como el metro o las multitudes.','agorafobia'],
       ['Ansiedad social','miedo a ser juzgado o a hacer el ridículo delante de otros.','social'],
-      ['Fobias','miedo intenso a algo concreto (volar, la sangre, las alturas) que lleva a evitarlo.','fobias'],
+      ['Miedos y fobias','miedo intenso a algo concreto (volar, la sangre, las alturas) que lleva a evitarlo.','fobias'],
       ['Obsesiones y TOC','pensamientos que se imponen y rituales para calmarlos que acaban alimentándolos.','toc'],
-      ['Hipocondría','miedo persistente a tener una enfermedad grave, que las revisiones solo calman un rato.','hipocondria'],
+      ['Hipocondría o ansiedad por la salud','miedo persistente a tener una enfermedad grave, que las revisiones solo calman un rato.','hipocondria'],
       ['Estrés laboral y burnout','agotamiento y distancia con el trabajo tras mucho tiempo bajo presión.','burnout'],
       ['Estrés postraumático','después de una experiencia muy dura, el cuerpo sigue en alerta.','postraumatico'],
       ['Insomnio por ansiedad','las preocupaciones no te dejan dormir; lo trabajamos también en <a href="insomnio.html">insomnio</a>.','insomnio-ansiedad']
     ]},
     trabajo:{titulo:'Cómo trabajamos la ansiedad',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender tu ansiedad.','A qué situaciones responde, qué la mantiene y de qué te está avisando.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -243,8 +243,7 @@ window.MOTIVOS=[
       ['Depresión mayor','ánimo bajo o pérdida de interés casi a diario durante al menos dos semanas, con cambios en el sueño, el apetito o la energía.','mayor'],
       ['Distimia o tristeza que dura años','un ánimo bajo menos intenso que se confunde con «mi forma de ser».','distimia'],
       ['Ansiedad y depresión','a menudo van juntas; cuando aparecen las dos, trabajamos también la <a href="ansiedad.html">ansiedad</a>.','ansiedad'],
-      ['Apatía y anhedonia','no disfrutar de lo que antes te gustaba, a veces sin sentirte triste.','apatia'],
-      ['Sensación de vacío','sentir que nada llena, aunque desde fuera todo parezca en orden.','vacio'],
+      ['Apatía, anhedonia y vacío','no disfrutar de lo que antes te gustaba o sentir que nada llena, aunque desde fuera todo parezca en orden.','apatia'],   /* 2026-11-10: unida a «Sensación de vacío» (máximo 10 líneas) */
       ['Soledad no deseada','cuando faltan vínculos o los que hay no sostienen.','soledad'],
       ['Crisis existencial','preguntas sobre el sentido de lo que hacemos, a menudo tras un cambio vital.','existencial'],
       ['Depresión posparto','en el embarazo o en los meses tras el parto, también en la otra persona de la pareja.','posparto'],
@@ -254,11 +253,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos la depresión',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender cómo has llegado hasta aquí.','Lo que has perdido, lo que te pesa y lo que se ha ido estrechando en tu vida.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el ánimo se sostiene. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el ánimo se sostiene. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.']
       ],
-      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; si te cuesta salir de casa, puede ayudarte a empezar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si te cuesta salir de casa, puede ayudarte a empezar. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -376,15 +375,16 @@ window.MOTIVOS=[
       ['Insomnio crónico','duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
       ['Pesadillas','sueños que despiertan con angustia, frecuentes tras experiencias muy duras, como en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
       ['Insomnio en la menopausia','los sofocos y los cambios hormonales interrumpen el sueño.','menopausia'],
-      ['Trabajo a turnos','cambiar de horario desajusta el reloj interno.','turnos']
+      ['Trabajo a turnos','cambiar de horario desajusta el reloj interno.','turnos'],
+      ['Dependencia de pastillas para dormir','ayudan de forma puntual, pero no como solución a largo plazo; se dejan poco a poco, con tu médico. Lo vemos también en <a href="adicciones.html">adicciones</a>.','pastillas']
     ]},
     trabajo:{titulo:'Cómo trabajamos el insomnio',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Un diario de sueño.','Durante una o dos semanas apuntas cómo duermes, para ver qué pasa de verdad por la noche.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el sueño se sostiene. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el sueño se sostiene. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I), la de aceptación y compromiso (ACT) como complemento y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I), la de aceptación y compromiso (ACT) como complemento y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -496,7 +496,7 @@ window.MOTIVOS=[
       ['Bulimia','atracones seguidos de compensaciones, como vomitar, ayunar o hacer ejercicio en exceso.','bulimia'],
       ['Anorexia','restringir mucho la comida por miedo intenso a engordar; siempre la trabajamos junto a medicina.','anorexia'],
       ['Hambre emocional','comer para calmar el malestar más que por hambre.','hambre'],
-      ['Obsesión por el peso o la figura','pesarse y mirarse una y otra vez: el peso decide cómo va el día.','peso'],
+      ['Obsesión por el peso y la figura','pesarte y mirarte una y otra vez, y no gustarte aunque comas con normalidad; suele ir unida a la <a href="autoestima.html">autoestima</a>.','peso'],   /* 2026-11-10: unida a «Insatisfacción con el cuerpo» (máximo 10 líneas) */
       ['Dietas restrictivas','dieta tras dieta y reglas rígidas que suelen acabar en atracones.','dietas'],
       ['Culpa después de comer','castigarte o prometerte compensar, aunque hayas comido con normalidad.','culpa'],
       ['Ejercicio compulsivo','entrenar para compensar lo comido o seguir aunque haya dolor.','ejercicio'],
@@ -505,11 +505,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas de alimentación',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué función cumple la comida.','Qué alivia, qué intenta controlar y cuándo aparece, en tu vida concreta.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando la comida vuelve a su sitio. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando la comida vuelve a su sitio. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes, con la de aceptación y compromiso (ACT) como complemento y con las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes, con la de aceptación y compromiso (ACT) como complemento y con las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -521,7 +521,7 @@ window.MOTIVOS=[
   seoDesc:'Discusiones, celos, infidelidad o crisis de pareja: terapia de pareja para aprender a hablar sin haceros daño. Centro sanitario en Madrid y online.',
   pagina:'pareja.html',   /* página fija; motivo.html?m=pareja lleva a ella */
   enfoqueDe:'de la pareja',
-  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  reco:'¿Os reconocéis? No tenéis por qué pasarlo solos.',
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página; la falta de deseo lleva a sexual */
   subs:[['Discusiones constantes','#discusiones'],['Problemas de comunicación','#comunicacion'],['Crisis de pareja','#crisis'],['Celos','#celos'],['Infidelidad','#infidelidad'],['Dependencia emocional','#dependencia'],['Apego','#apego'],['Narcisismo en la pareja','#narcisismo'],['Falta de deseo en la pareja','sexual'],['La pareja tras tener hijos','#hijos'],['Rupturas, separaciones y divorcios','#rupturas']],
   /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2B con sesión individual con cada uno, 3 mezcla sin Gottman ni sistémica, 4 y 5 como en ansiedad) */
@@ -620,8 +620,7 @@ window.MOTIVOS=[
     ],
     together:'En terapia trabajamos la <strong>comunicación</strong>: reconocer esas formas de discutir, quejarse sin atacar y reparar después, sobre una base de <strong>cariño y respeto mutuo</strong>. Palabras como «narcisista» o «apego ansioso» nos sirven como punto de partida, no como sentencia. Y os acompañamos en vuestras decisiones.',
     tipos:{titulo:'Problemas de pareja más frecuentes', intro:'Casi nunca llegan solos: unos tiran de otros.', items:[
-      ['Discusiones constantes','por todo o siempre por lo mismo, y cada una deja más distancia.','discusiones'],
-      ['Problemas de comunicación','uno ataca, el otro se cierra, y lo importante no llega a decirse.','comunicacion'],
+      ['Discusiones y problemas de comunicación','discutís por todo o siempre por lo mismo; uno ataca, el otro se cierra, y lo importante no llega a decirse.','discusiones'],   /* 2026-11-10: dos líneas en una (máximo 10) */
       ['Crisis de pareja','un cambio, una pérdida o el desgaste hacen que la relación se tambalee.','crisis'],
       ['Celos','comprobaciones y preguntas que alivian un momento pero alimentan el miedo.','celos'],
       ['Infidelidad','se rompe la confianza; se puede reconstruir o decidir separarse.','infidelidad'],
@@ -634,11 +633,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos en terapia de pareja',
       pasos:[
-        ['Primera entrevista, gratuita, con los dos.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita, con los dos.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Una sesión individual con cada uno.','Para escuchar con calma lo que cuesta decir delante del otro.'],
-        ['Sesiones conjuntas de 60 minutos.','Al principio, semanales; las espaciamos cuando notáis avances.']
+        ['Sesiones conjuntas de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notáis avances.']
       ],
-      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones, la de aceptación y compromiso (ACT) y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, incluso desde ciudades distintas. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones, la de aceptación y compromiso (ACT) y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España o en ciudades distintas. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     },
     /* otras terapias al final de la página, en tarjetas con dibujo (opción B, 2026-11-09): [slug, una línea] */
     /* «Otras terapias que pueden interesarte» quitado el 2026-11-10 (menos scroll); se puede recuperar renombrando a relacionadas */
@@ -763,15 +762,16 @@ window.MOTIVOS=[
       ['Hiperactividad','no parar, sobre todo en la infancia; con los años suele convertirse en inquietud.','hiperactividad'],
       ['Desorganización','cuesta planificar, ordenar el tiempo y calcular cuánto lleva cada cosa.','desorganizacion'],
       ['Olvidos y despistes','perder cosas, olvidar citas o dejar tareas a medias.','olvidos'],
-      ['Dificultades en los estudios','más por la atención y la organización que por la capacidad; trabajamos también con <a href="infancia.html">la familia</a>.','estudios']
+      ['Dificultades en los estudios','más por la atención y la organización que por la capacidad; trabajamos también con <a href="infancia.html">la familia</a>.','estudios'],
+      ['TDAH en niños y adolescentes','se nota en clase y en casa; trabajamos también con la familia y el colegio, como en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
     trabajo:{titulo:'Cómo trabajamos el TDAH',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Una valoración cuidadosa.','Tu historia desde la infancia, cuestionarios y cómo se nota en tu vida, sin prisa por poner la etiqueta.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando te organizas con más soltura. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te organizas con más soltura. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la ACT y la atención plena, y las terapias contextuales. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; con niños pequeños solemos preferir la consulta presencial. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la ACT y la atención plena, y las terapias contextuales. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; con niños pequeños solemos preferir la consulta presencial. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -893,11 +893,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos las adicciones',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué te aporta.','Para qué sirve el consumo, en qué momentos aparece, qué lo mantiene y qué otras formas hay de conseguir lo que buscas.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando el cambio se sostiene. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el cambio se sostiene. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones.']
       ],
-      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, la terapia de aceptación y compromiso (ACT), el trabajo con la familia y las terapias contextuales. Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, la terapia de aceptación y compromiso (ACT), el trabajo con la familia y las terapias contextuales. Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1005,11 +1005,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos la autoestima',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender cómo te valoras y de dónde viene.','Tu historia, cómo te han tratado y los contextos en los que vives.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando te tratas de otra manera. Si tomas medicación, nos coordinamos con tu médico.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te tratas de otra manera. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, la ACT y la compasión, y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar; a muchas personas les resulta más fácil empezar desde casa. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual, la ACT y la compasión, y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; a muchas personas les resulta más fácil empezar desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1121,21 +1121,24 @@ window.MOTIVOS=[
       ['Duelo complicado o prolongado','cuando, pasados muchos meses, el dolor sigue ocupándolo todo y la vida no consigue retomarse.','prolongado'],
       ['Duelo anticipado','el que empieza antes de la muerte, cuando una enfermedad grave avanza; también agota a quien cuida.','anticipado'],
       ['Duelo por una mascota','perder a un animal con el que has compartido la vida duele de verdad.','mascota'],
-      ['Pérdida del trabajo','un despido también es una pérdida de rutinas, de identidad y de seguridad.','trabajo']
+      ['Pérdida del trabajo','un despido también es una pérdida de rutinas, de identidad y de seguridad.','trabajo'],
+      ['Duelo por una ruptura','también duele perder una relación; lo acompañamos aquí y en <a href="pareja.html">terapia de pareja</a>.','ruptura'],
+      ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
     trabajo:{titulo:'Cómo trabajamos el duelo',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Hablar de la pérdida.','Quién era, qué pasó y qué ha cambiado desde entonces, sin prisa.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; las espaciamos cuando la pérdida encuentra su sitio. Si tomas medicación, nos coordinamos con tu médico.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando la pérdida encuentra su sitio. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual para el duelo prolongado, la terapia de aceptación y compromiso (ACT) y el acompañamiento: un espacio para hablar de la pérdida cuando alrededor ya no se habla de ella. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual para el duelo prolongado, la terapia de aceptación y compromiso (ACT) y el acompañamiento: un espacio para hablar de la pérdida cuando alrededor ya no se habla de ella. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
-  h1:'Terapia para niños y adolescentes',   /* encabezado a todo el ancho, en una línea */
+  h1:'Terapia para niños y adolescentes',
+  reco:'¿Os suena? No tenéis por qué pasarlo solos.',   /* habla a la familia (2026-11-10) */   /* encabezado a todo el ancho, en una línea */
   seoTitle:'Psicólogo infantil y de adolescentes en Madrid y online',
   seoDesc:'Psicólogo infantil y de adolescentes: rabietas, miedos, TDAH, acoso escolar o problemas en el colegio, con la familia. Centro sanitario en Madrid y online.',
   pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
@@ -1231,25 +1234,26 @@ window.MOTIVOS=[
       '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. Los acompañamos a relacionarse con el mundo con recursos propios.'
     ],
     together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores) y también con vosotros, con estrategias sencillas para casa y para clase. Lo que le pasa a un menor casi nunca le pasa solo a él: por eso trabajamos en equipo con la familia y con los centros educativos.',
-    tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'No todo malestar es un trastorno: muchas veces forma parte de crecer, pero conviene mirarlo a tiempo.', items:[
+    tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'No todo malestar es un trastorno: muchas veces forma parte de crecer, pero conviene mirarlo a tiempo. Casi siempre trabajamos también con la familia.', items:[
       ['Rabietas y problemas de conducta','enfados que no ceden, desobediencia o peleas que desbordan a la familia.','rabietas'],
       ['Comunicación con adolescentes','monosílabos, puertas cerradas y discusiones, hasta que se rompe el puente.','comunicacion'],
       ['Tristeza o aislamiento','dejar a los amigos o perder el interés por todo; si dura semanas, puede ser <a href="depresion.html">depresión</a>.','tristeza'],
       ['Miedos y ansiedad','miedos o preocupaciones que no ceden y le frenan; los trabajamos como en <a href="ansiedad.html">la ansiedad</a>.','miedos'],
+      ['Problemas con la comida','comer muy poco, a escondidas o con culpa, o preocuparse demasiado por el cuerpo; lo vemos también en <a href="alimentacion.html">alimentación</a>.','comida'],
+      ['Problemas de sueño','cuesta dormirse, hay despertares o miedos por la noche; lo vemos también en <a href="insomnio.html">insomnio</a>.','sueno'],
       ['Acoso escolar (bullying)','burlas, exclusión o agresiones repetidas, también por redes; muchos niños no lo cuentan.','acoso'],
-      ['Bajo rendimiento escolar','suspensos o desmotivación en los que pesan la atención, el ánimo o lo que pasa en clase.','rendimiento'],
-      ['Atención e hiperactividad','antes de hablar de <a href="tdah.html">TDAH</a>, miramos su vida, su práctica y su entorno.','atencion'],
+      ['Estudios y atención','suspensos, desmotivación o dificultad para concentrarse; antes de hablar de <a href="tdah.html">TDAH</a>, miramos su vida, su práctica y su entorno.','rendimiento'],   /* 2026-11-10: rendimiento escolar + atención (máximo 10) */
       ['Uso excesivo de pantallas','cuando el móvil o los videojuegos ocupan el centro del día; lo vemos también en <a href="adicciones.html">adicciones</a>.','pantallas'],
       ['Separación de los padres','les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
-      ['Orientación a familias','a veces lo que más ayuda es trabajar con los padres, con pautas para casa y para el colegio.','familias']
+      ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="duelo.html">duelo</a>.','duelo']   /* 2026-11-10: «Orientación a familias» pasa a la frase de entrada */
     ]},
     trabajo:{titulo:'Cómo trabajamos con niños y adolescentes',
       pasos:[
-        ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Conocer a vuestro hijo o hija.','En sesiones adaptadas a su edad, para escuchar cómo vive lo que le pasa.'],
-        ['Sesiones de 60 minutos, con él o ella y con vosotros.','Al principio, semanales; las espaciamos cuando las cosas se asientan. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.']
+        ['Sesiones de 60 minutos, con él o ella y con vosotros.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando las cosas se asientan. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.']
       ],
-      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad, ACT con adolescentes y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad, ACT con adolescentes y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1366,11 +1370,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas de personalidad',
       pasos:[
-        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender tus patrones.','Tu historia, tus relaciones y lo que se repite, sin poner etiquetas antes de tiempo.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales; es un proceso que lleva su tiempo. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; es un proceso que lleva su tiempo. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.']
       ],
-      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1485,11 +1489,11 @@ window.MOTIVOS=[
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas sexuales',
       pasos:[
-        ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre Díaz, director del centro (colegiado M-28688).'],
+        ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué pasa.','El cuerpo, la relación, tu historia y las expectativas que pesan sobre el sexo.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales, con ejercicios graduales y sin presión por el resultado. Si hace falta, nos coordinamos con tu médico, urólogo o ginecóloga.']
+        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes, con ejercicios graduales y sin presión por el resultado. Si hace falta, nos coordinamos con tu médico, urólogo o ginecóloga.']
       ],
-      texto:'Trabajamos con la terapia sexual cognitivo-conductual, la atención plena, la <a href="pareja.html">terapia de pareja</a> cuando la dificultad es de los dos y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>: a muchas personas les resulta más fácil hablar de sexualidad desde casa. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia sexual cognitivo-conductual, la atención plena, la <a href="pareja.html">terapia de pareja</a> cuando la dificultad es de los dos y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vives fuera de España; a muchas personas les resulta más fácil hablar de sexualidad desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 }
