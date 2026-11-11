@@ -117,7 +117,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
   .nav{height:76px}
   .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
   .hero{min-height:max(100svh,720px)}
-  .txt{position:relative;width:auto;top:auto;bottom:auto;padding:36px 20px 0;justify-content:flex-start}
+  .txt{position:relative;left:auto;width:auto;top:auto;bottom:auto;padding:36px 20px 0;justify-content:flex-start}   /* left:auto (2026-11-11): antes se corría 20 px a la derecha en el móvil */
   #art{width:min(104vw,560px);right:-4vw}
   .cta .btn{flex:1 1 auto;padding:16px 22px}
   .cols{grid-template-columns:1fr}
@@ -206,7 +206,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     Symploké
   </a>
   <nav class="links" aria-label="Principal"><a href="#como">Cómo trabajamos</a><a href="terapia.html" data-spy="que">Terapias</a><a href="quienes-somos.html">Quiénes somos</a><a href="#blog">Blog</a></nav>
-  <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
+  <a class="btn primary small" href="contacto.html">Pedir <span class="nav-largo">primera </span>cita</a>
 </header>
 
 <main id="top">
@@ -298,7 +298,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
 </script>
 <footer><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Koiné Psicología · Centro sanitario nº CS19975 · © [Año] Symploké</span></footer>
 
-<script src="maqueta/th-data.js"></script>
 <script src="maqueta/ilustraciones.js"></script>
 <script>
 /* «Cómo trabajo»: un dibujo en cada formato (presencial, online, grupos y talleres) */

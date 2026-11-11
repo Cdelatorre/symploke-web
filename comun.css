@@ -84,4 +84,15 @@ html.scrolled .theme-sw .knob{width:20px;height:20px}
 html.scrolled .theme-sw[aria-checked="true"] .knob{transform:translateX(24px)}
 html.scrolled .theme-sw .ico{width:14px;height:14px;margin-top:-7px}
 @media (max-width:860px){ .theme-sw{margin-left:0} }
+/* móvil estrecho (2026-11-11): el botón del menú dice «Pedir cita» y el interruptor de noche, en pequeño, para que todo quepa */
+@media (max-width:480px){
+  .nav-largo{display:none}
+  .theme-sw{width:52px;height:28px}
+  .theme-sw .knob{width:20px;height:20px}
+  .theme-sw[aria-checked="true"] .knob{transform:translateX(24px)}
+  .theme-sw .ico{width:14px;height:14px;margin-top:-7px}
+}
 @media (prefers-reduced-motion: reduce){ .theme-sw,.theme-sw .knob{transition:none} }
+
+/* al llegar a un apartado desde un enlace (#…), el menú fijo de arriba no tapa su título (2026-11-11) */
+main [id],main details[id]{scroll-margin-top:110px}
