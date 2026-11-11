@@ -120,7 +120,7 @@ if(c&&c.relacionadas){   // VERSIÓN CARLOS: otras terapias en tarjetas con dibu
 h+='<section class="band"><div class="pic">'+ILUS.portada('band')+'</div><div class="t">';
 h+='<h2>Podemos ayudarte</h2>';
 h+='<p>'+(m.bandaTexto||'Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.')+'</p>';   // pareja lo dice en vosotros
-h+='<a class="btn primary" href="'+CITA+'">Pide cita y lo vemos juntos'+ARR+'</a>';
+h+='<a class="btn primary" href="'+CITA+'">'+(m.bandaBoton||'Pide cita y lo vemos juntos')+ARR+'</a>';   // infancia: «Pedid»
 h+='<p class="donde">'+(m.bandaDonde||'Puedes visitarnos')+' en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p>';   // Madrid en el texto visible (búsquedas locales)
 h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
 h+='</div></section>';

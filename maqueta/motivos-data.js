@@ -922,7 +922,7 @@ window.MOTIVOS=[
   subs:[['Baja autoestima','#baja'],['Inseguridad','#inseguridad'],['Perfeccionismo','#perfeccionismo'],['Autoexigencia','#autoexigencia'],['Síndrome del impostor','#impostor'],['Miedo al rechazo','#rechazo'],['Necesidad de aprobación','#aprobacion'],['Compararse con los demás','#compararse'],['Autocrítica','#autocritica'],['Aprender a decir que no','#decirno'],['Dependencia emocional','pareja'],['Imagen corporal','alimentacion']],
   /* apartados nuevos (2026-11-09, recomendaciones aceptadas por el usuario: 1A, 2 único, 3A sin interpersonal, 4 y 5 como en las demás) */
   tipos:{titulo:'Problemas de autoestima más frecuentes',
-    intro:'Estos son los motivos por los que más nos consultan cuando la forma de valorarse hace sufrir. Casi nunca llegan solos: unos tiran de otros.',
+    intro:'Estos son los motivos por los que más nos consultan cuando la forma de valorarse hace sufrir. Suelen ir de la mano: uno lleva a otro.',
     items:[
     ['Baja autoestima','Sentir que vales poco, que no eres suficiente o que los demás lo hacen todo mejor.','baja'],
     ['Inseguridad','Dudar de ti antes de decidir, de hablar o de intentarlo, y necesitar que te lo confirmen una y otra vez.','inseguridad'],
@@ -952,11 +952,11 @@ window.MOTIVOS=[
   faqDesplegable:true,
   faq:[
     ['¿Cómo saber si tengo baja autoestima?','Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir.'],
-    ['¿De dónde viene la baja autoestima?','De cómo nos han tratado y nos tratan: críticas repetidas, comparaciones, experiencias de acoso o de rechazo, y contextos que piden rendir sin descanso. Nadie se estima en el vacío.'],
+    ['¿De dónde viene la baja autoestima?','De cómo nos han tratado y nos tratan: críticas repetidas, comparaciones, experiencias de acoso o de rechazo, y contextos que piden rendir sin descanso. La estima se aprende en relación con otros.'],
     ['¿Se puede mejorar la autoestima?','Sí. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.'],
-    ['¿Cómo mejorar la autoestima?','Más que pensar mejor de ti, ayuda actuar de otra manera: cumplir con lo que te importa, poner límites, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor.'],
-    ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo se vive como un fracaso personal. Aprender a exigirse sin maltratarse ayuda también a la estima.'],
-    ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás “descubran” que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.','impostor'],
+    ['¿Cómo mejorar la autoestima?','Más que pensar mejor de ti, ayuda actuar de otra manera: cumplir con lo que te importa, poner límites, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Es algo que se entrena poco a poco.'],
+    ['¿El perfeccionismo es un problema de autoestima?','A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo pesa como si dijera algo de ti. Aprender a exigirse sin maltratarse ayuda también a la estima.'],
+    ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás «descubran» que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.','impostor'],
     ['¿La baja autoestima tiene que ver con la ansiedad o la depresión?','A menudo van juntas: valorarse poco alimenta la <a href="ansiedad.html">ansiedad</a> y el <a href="depresion.html">ánimo bajo</a>, y estos a su vez empeoran cómo nos vemos. Cuando aparecen juntas, las trabajamos a la vez.'],
     ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.'],
     ['¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
@@ -976,9 +976,9 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> encuentran que la estima alta se asocia a sentirse mejor, pero no causa por sí sola mejores resultados en los estudios, el trabajo o las relaciones. Y repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más la mueve es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos aunque nos gane la inseguridad o la autocrítica. En terapia lo vemos a menudo: la estima se construye haciendo; llega después de actuar, no antes.',
     '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal, <a href="adicciones.html">las redes sociales</a> o una cultura que pide no necesitar a nadie y rendir sin descanso. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
   ],
-  together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. De ahí que la promesa de que «no te importe lo que piensen los demás» suela frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa mirada que te llega de los demás: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas, mantener y fortalecer los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos contigo.',
+  together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. De ahí que la promesa de que «no te importe lo que piensen los demás» suela frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa mirada que te llega de los demás: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas, mantener y fortalecer los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos juntos.',
   cta:'Podemos ayudarte a estimarte de otra manera, sin compararte ni exigirte a todas horas.',
-  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: se siente en el cuerpo, pero no depende solo de él, sino también de lo que hacemos, de nuestras relaciones y de los contextos en los que nos encontramos; es decir, también de cómo nos estiman desde fuera. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: se siente en el cuerpo, pero depende también de lo que hacemos, de nuestras relaciones y de cómo nos estiman los demás. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.» */
   science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas */
@@ -999,8 +999,8 @@ window.MOTIVOS=[
       '<strong>Los estudios de psicología</strong> encuentran que repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más mueve la estima es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. La estima llega después de actuar, no antes.',
       '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal o <a href="adicciones.html">las redes sociales</a>. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
     ],
-    together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Lo que sí se puede trabajar es cómo te importa esa mirada y qué haces con ella: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas y cuidar los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos contigo.',
-    tipos:{titulo:'Problemas de autoestima más frecuentes', intro:'Casi nunca llegan solos: unos tiran de otros.', items:[
+    together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Lo que sí se puede trabajar es cómo te importa esa mirada y qué haces con ella: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas y cuidar los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos juntos.',
+    tipos:{titulo:'Problemas de autoestima más frecuentes', intro:'Suelen ir de la mano: uno lleva a otro.', items:[
       ['Baja autoestima','sentir que vales poco, que no eres suficiente o que los demás lo hacen todo mejor.','baja'],
       ['Inseguridad','dudar de ti antes de decidir o de intentarlo, y necesitar que te lo confirmen una y otra vez.','inseguridad'],
       ['Perfeccionismo','que nada esté nunca lo bastante bien.','perfeccionismo'],
@@ -1062,15 +1062,15 @@ window.MOTIVOS=[
   /* preguntas frecuentes (2026-11-08); 2026-11-09: 3 nuevas (6.1A fases, 6.2A no llorar, 6.3 local), en desplegables */
   faqDesplegable:true,
   faq:[
-    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando, pasados muchos meses, sigues sin poder retomar tu día a día, sientes que te has quedado atascado o te cuesta sostenerlo con tu entorno. Y no hace falta esperar si, desde el principio, el dolor te impide funcionar, te faltan apoyos o tienes pensamientos de morir; en ese caso, llama al <strong>024</strong>.'],
+    ['¿Cuándo conviene ir al psicólogo por un duelo?','El duelo no es una enfermedad y no siempre necesita terapia. Conviene pedir ayuda cuando el tiempo pasa y sigues sin poder retomar tu día a día, sientes que no avanzas o te cuesta sostenerlo con tu entorno. Y no hace falta esperar si, desde el principio, el dolor te impide funcionar, te faltan apoyos o tienes pensamientos de morir; en ese caso, llama al <strong>024</strong>.'],
     ['¿Cuánto dura un duelo?','No hay un plazo fijo. Los manuales clínicos hablan de duelo prolongado cuando, pasados entre seis y doce meses según el manual, el dolor sigue siendo tan intenso que lo ocupa todo.'],
     ['¿Cuáles son las fases del duelo?','Se habla mucho de cinco fases: negación, ira, negociación, tristeza y aceptación. Pero la investigación no ha confirmado que el duelo siga ese orden: cada persona lo vive a su manera, y es normal ir y volver.'],
     ['¿Cómo superar la muerte de un padre o una madre?','Más que superarla, se trata de aprender a vivir con su ausencia. No conseguir superar la muerte de tu madre o echar de menos a tu padre cada día es frecuente, sobre todo los primeros meses. Ayuda poder hablar de ello, mantener algún ritual que te una a esa persona y pedir acompañamiento si el dolor no te deja vivir.','padres'],
     ['¿Es normal sentir culpa tras una muerte?','Sí. Lo que no se dijo o no se hizo suele volver una y otra vez. Hablarlo ayuda a que la culpa no ocupe el lugar del recuerdo.'],
     ['¿Es normal no llorar en un duelo?','Sí. No todo el mundo llora, ni lo hace en el momento que se espera. El dolor puede notarse como cansancio, como irritabilidad o como un vacío, y no por eso es menor.'],
     ['¿Es normal pensar todo el tiempo en la persona que ha muerto?','Sí, sobre todo al principio. Pensar en quien se ha ido, soñar con esa persona o sentir su presencia forma parte del duelo. Preocupa más cuando la vida se detiene por completo durante mucho tiempo.'],
-    ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. También duele perder a un animal, una relación, un trabajo o una etapa de la vida, y ese dolor merece un espacio.'],
-    ['¿Ayudáis a niños en duelo?','Sí, con la familia. Los niños viven el duelo a su manera, y a menudo ayuda acompañar a los adultos para que sepan cómo hablarles.'],
+    ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. Cualquier pérdida importante merece un espacio: un animal, una relación, un trabajo o una etapa de la vida.'],
+    ['¿Ayudáis a niños en duelo?','Sí, con la familia. A menudo ayuda acompañar a los adultos para que sepan cómo hablarles.'],
     ['¿Hacéis terapia de duelo cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
@@ -1079,13 +1079,13 @@ window.MOTIVOS=[
   /* frases propias de la consulta, a partir de ideas de Bueno (la muerte llega cuando la persona está implicada en planes que no la contemplan,
      Diccionario de García Sierra, entrada 502), Pérez Jara («Meditatio mortis», 2016: «ya nunca más…») y Pérez Álvarez (2007: las pérdidas como inicio de la depresión) */
   quotes:[
-    'Atender una pérdida —hablarla, compartirla, pedir ayuda cuando pesa demasiado— ayuda a no vivirla a solas',   /* tras biología */
+    'Atender una pérdida —hablarla, compartirla, pedir ayuda cuando pesa demasiado— ayuda a no cargar con ella en soledad',   /* tras biología */
     '',   /* tras neurología: sin frase */
     'La culpa y los “ojalá hubiera…” forman parte del duelo, y también se pueden hablar'   /* tras psicología */
   ],
   basesIntro:[
     'El duelo es la respuesta a una pérdida, y hay distintos tipos de duelo: por la muerte de alguien querido o de un animal, por una separación, por un despido o por un cambio de vida. Algunos duelos son especialmente difíciles: el de un hijo, incluso antes de nacer, el que deja un suicidio o el que empieza antes de la muerte, cuando la enfermedad avanza.',
-    'La muerte llega en mitad de algo: de planes, de conversaciones, de proyectos en común. De ahí que desordene tanto la vida de los que quedan.',
+    'La muerte llega en mitad de algo: de planes, de conversaciones, de proyectos en común. De ahí que desordene tanto la vida de quienes quedan.',
     {voz:'Perder a alguien es enfrentarse a todos los “nunca más”'},   /* frase verde dentro de la entrada */
     'Cada duelo es distinto y se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
@@ -1095,8 +1095,8 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso, pero que las pérdidas —una muerte, <a href="pareja.html">una ruptura</a>, un despido— pueden ser el inicio de un dolor difícil de soportar. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue. '+V,
     '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos lugar: al poco tiempo, alrededor ya no se habla de la pérdida, aunque quien la vive siga dentro de ella. '+V
   ],
-  together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
-  cta:'Ante la pérdida, podemos acompañarte en el proceso, haciéndolo más llevadero.',
+  together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Lo trabajamos juntos.',
+  cta:'Ante una pérdida, podemos acompañarte para que sea más llevadera.',
   intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.» */
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
@@ -1112,7 +1112,7 @@ window.MOTIVOS=[
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
     basesIntro:[
-      'El duelo es la respuesta a una pérdida: la muerte de alguien querido o de un animal, una separación, un despido o un cambio de vida. La muerte llega en mitad de algo —planes, conversaciones, proyectos en común—, y por eso desordena tanto la vida de los que quedan.',
+      'El duelo es la respuesta a una pérdida: la muerte de alguien querido o de un animal, una separación, un despido o un cambio de vida. La muerte llega en mitad de algo —planes, conversaciones, proyectos en común—, y por eso desordena tanto la vida de quienes quedan.',
       {voz:'Perder a alguien es enfrentarse a todos los “nunca más”'},
       'Cada duelo se entreteje con muchas cosas a la vez: el cuerpo, la historia con quien se ha ido, la familia, el trabajo. Por eso nuestro enfoque es <strong>pluralista</strong>.'
     ],
@@ -1122,11 +1122,11 @@ window.MOTIVOS=[
       '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue.',
       '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte: al poco tiempo, alrededor ya no se habla de la pérdida, aunque quien la vive siga dentro de ella.'
     ],
-    together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
+    together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Lo trabajamos juntos.',
     tipos:{titulo:'Tipos de duelo', intro:'Cada pérdida es única, pero hay duelos que conviene acompañar con especial cuidado.', items:[
       ['Muerte de un ser querido','la pérdida de alguien cercano desordena la vida entera: las rutinas, los planes, la forma de estar con los demás.','serquerido'],
-      ['Muerte de un padre o una madre','más que superarla, se trata de aprender a vivir con su ausencia.','padres'],
-      ['Duelo perinatal','la pérdida de un hijo durante el embarazo o poco después del parto, un duelo a menudo silenciado.','perinatal'],
+      ['Muerte de un padre o una madre','cambia tu lugar en la familia y, a veces, la forma de verte.','padres'],
+      ['Duelo perinatal','la pérdida de un bebé durante el embarazo o poco después del parto, un duelo a menudo silenciado.','perinatal'],
       ['Duelo por suicidio','preguntas sin respuesta, culpa y, a veces, silencio. Si tú también tienes pensamientos de muerte, llama al <strong>024</strong>.','suicidio'],
       ['Duelo complicado o prolongado','cuando, pasados muchos meses, el dolor sigue ocupándolo todo y la vida no consigue retomarse.','prolongado'],
       ['Duelo anticipado','el que empieza antes de la muerte, cuando una enfermedad grave avanza; también agota a quien cuida.','anticipado'],
@@ -1149,7 +1149,10 @@ window.MOTIVOS=[
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   h1:'Terapia para niños y adolescentes',
-  reco:'¿Os suena? No tenéis por qué pasarlo a solas.',   /* habla a la familia (2026-11-10) */   /* encabezado a todo el ancho, en una línea */
+  reco:'¿Os suena? No tenéis por qué pasarlo a solas.',   /* habla a la familia (2026-11-10) */
+  bandaTexto:'Trabajamos para aliviar el sufrimiento, paso a paso: nos contáis qué pasa, lo pensamos juntos y buscamos cómo resolverlo.',   /* «Podemos ayudarte» en vosotros (2026-11-11) */
+  bandaBoton:'Pedid cita y lo vemos juntos',
+  bandaDonde:'Podéis visitarnos',   /* encabezado a todo el ancho, en una línea */
   seoTitle:'Psicólogo infantil y de adolescentes en Madrid y online',
   seoDesc:'Psicólogo infantil y de adolescentes: rabietas, miedos, TDAH, acoso escolar o problemas en el colegio, con la familia. Centro sanitario en Madrid y online.',
   pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
@@ -1165,7 +1168,7 @@ window.MOTIVOS=[
     ['Tristeza o aislamiento','Dejar de quedar con los amigos, encerrarse o perder el interés por todo. Si dura semanas, conviene mirarlo, porque también puede ser <a href="depresion.html">depresión</a>.','tristeza'],
     ['Acoso escolar (bullying)','Burlas, exclusión o agresiones repetidas, también por redes. Muchos niños no lo cuentan: los cambios de ánimo o no querer ir al colegio pueden ser señales.','acoso'],
     ['Bajo rendimiento escolar','Suspensos o desmotivación que no se explican solo por la capacidad: la atención, el ánimo, la organización o lo que pasa en clase pesan mucho.','rendimiento'],
-    ['Separación de los padres','Una separación cambia la vida de los hijos. Les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
+    ['Separación de los padres','Una separación cambia la vida de los hijos. Les ayuda que los adultos les expliquen lo que pasa y los mantengan fuera del conflicto.','separacion'],
     ['Orientación a familias','A veces lo que más ayuda es trabajar con los padres: pautas concretas para casa y para el colegio.','familias']
   ]},
   proceso:{titulo:'Cómo trabajamos con niños y adolescentes', pasos:[
@@ -1202,12 +1205,12 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases propias de la consulta (no son citas de autor); las citas de Marino descartadas están en citas-para-la-web.md */
   quotes:[
-    'Crecer también tiene sus partes dolorosas, y no por ello es un trastorno. Muchas veces es parte del camino',   /* 2026-11-08; antes: «El sufrimiento de los niños y de los adolescentes es real y merece ayuda» */
-    'Muchas veces los protegemos tanto que cualquier contratiempo los hunde',
+    'Crecer también tiene sus partes dolorosas, y no por ello es un trastorno: es parte del camino',   /* 2026-11-08; antes: «El sufrimiento de los niños y de los adolescentes es real y merece ayuda» */
+    'A fuerza de protegerlos, cualquier contratiempo los hunde',
     'Acompañar no es resolverlo todo por ellos, sino estar cerca mientras aprenden a hacerlo'   /* 2026-11-08; antes: «Mucha exigencia y poca tolerancia a la frustración» */
   ],
   basesIntro:[
-    'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
+    'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que vuestro hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
     'No todo malestar es un trastorno. Muchas veces hay que hablar de la familia, del colegio —el rendimiento, el acoso escolar—, de los amigos, de una separación de los padres o de las preguntas propias de la edad. El sufrimiento de los niños y de los adolescentes es real y merece atención; la mejor respuesta lo entiende dentro de su vida —su casa, su clase, su grupo, las pantallas— y busca qué se puede cambiar de sus circunstancias.',
     'Cada niño y cada adolescente es distinto: en cada uno se cruzan el cuerpo, su historia, la familia, el colegio y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
@@ -1235,17 +1238,17 @@ window.MOTIVOS=[
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
     basesIntro:[
-      'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que tu hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
+      'No se trata de quitarle todas las piedras del camino, sino de ayudarle a andar por él. Confiamos en lo que vuestro hijo o hija puede hacer, y le ayudamos a comprobarlo por sí mismo.',
       'No todo malestar es un trastorno: muchas veces hay que hablar de la familia, del colegio, de los amigos o de las preguntas propias de la edad. En cada niño y cada adolescente se cruzan el cuerpo, su historia y su entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
     ],
     bases:[
       '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta, sin ser la explicación de todo.',
       '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de lo que se practica y se aprende. Un menor no es un adulto pequeño ni un diagnóstico.',
-      '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas. Mucha exigencia y poca tolerancia a la frustración: a veces se confunde con un <a href="tdah.html">TDAH</a> lo que es falta de práctica para esperar o concentrarse.',
-      '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. Los acompañamos a relacionarse con el mundo con recursos propios.'
+      '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas. Cuando hay mucha exigencia y poca tolerancia a la frustración, a veces se confunde con un <a href="tdah.html">TDAH</a> lo que es falta de práctica para esperar o concentrarse.',
+      '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. Les ayudamos a encontrar sus propios recursos para relacionarse con el mundo.'
     ],
     together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores) y también con vosotros, con estrategias sencillas para casa y para clase. Lo que le pasa a un menor casi nunca le pasa solo a él: por eso trabajamos en equipo con la familia y con los centros educativos.',
-    tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'No todo malestar es un trastorno: muchas veces forma parte de crecer, pero conviene mirarlo a tiempo. Casi siempre trabajamos también con la familia.', items:[
+    tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'Algunas cosas forman parte de crecer, pero conviene mirarlas a tiempo. Casi siempre trabajamos también con la familia.', items:[
       ['Rabietas y problemas de conducta','enfados que no ceden, desobediencia o peleas que desbordan a la familia.','rabietas'],
       ['Comunicación con adolescentes','monosílabos, puertas cerradas y discusiones, hasta que se rompe el puente.','comunicacion'],
       ['Tristeza o aislamiento','dejar a los amigos o perder el interés por todo; si dura semanas, puede ser <a href="depresion.html">depresión</a>.','tristeza'],
@@ -1255,8 +1258,8 @@ window.MOTIVOS=[
       ['Acoso escolar (bullying)','burlas, exclusión o agresiones repetidas, también por redes; muchos niños no lo cuentan.','acoso'],
       ['Estudios y atención','suspensos, desmotivación o dificultad para concentrarse; antes de hablar de <a href="tdah.html">TDAH</a>, miramos su vida, su práctica y su entorno.','rendimiento'],   /* 2026-11-10: rendimiento escolar + atención (máximo 10) */
       ['Uso excesivo de pantallas','cuando el móvil o los videojuegos ocupan el centro del día; lo vemos también en <a href="adicciones.html">adicciones</a>.','pantallas'],
-      ['Separación de los padres','les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
-      ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="duelo.html">duelo</a>.','duelo']   /* 2026-11-10: «Orientación a familias» pasa a la frase de entrada */
+      ['Separación de los padres','les ayuda que los adultos les expliquen lo que pasa y los mantengan fuera del conflicto.','separacion'],
+      ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y le ayudamos a expresar lo que siente.','duelo']   /* 2026-11-10: «Orientación a familias» pasa a la frase de entrada */
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos con niños y adolescentes',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
@@ -1284,12 +1287,12 @@ window.MOTIVOS=[
     items:[
     ['Inestabilidad emocional','Emociones que suben y bajan muy deprisa y con mucha intensidad, a veces por cosas que a otros les parecerían pequeñas.','inestabilidad'],
     ['Miedo al abandono','Sentir que te van a dejar y hacer lo que sea por evitarlo, aunque eso acabe tensando la relación.','abandono'],
-    ['Relaciones intensas e inestables','Pasar de idealizar a alguien a sentirte decepcionado o herido, en relaciones que se viven con mucha intensidad.','relaciones'],
+    ['Relaciones intensas e inestables','Pasar de idealizar a alguien a sentir que te ha fallado, en relaciones que se viven con mucha intensidad.','relaciones'],
     ['Impulsividad','Actuar sin pensar cuando la emoción aprieta: gastar, comer, beber o decir cosas de las que luego te arrepientes. Cuando viene desde la infancia y afecta sobre todo a la atención, puede tener que ver con el <a href="tdah.html">TDAH</a>.','impulsividad'],
     ['Ira y explosiones emocionales','Enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.','ira'],
     ['Rasgos obsesivos o perfeccionistas','Necesidad de orden, control y reglas que, cuando se vuelve rígida, te hace sufrir a ti y a quienes te rodean. No es lo mismo que el <a href="ansiedad.html#toc">TOC</a>, aunque a veces se confundan.','obsesivos'],
     ['Personalidad evitativa','Evitar el contacto con los demás por miedo al rechazo o a la crítica, aunque desees esa cercanía.','evitativa'],
-    ['Personalidad dependiente','Necesitar que otros decidan por ti y sentir angustia ante la soledad. A menudo se vive en la <a href="pareja.html">pareja</a> como dependencia emocional.','dependiente'],
+    ['Personalidad dependiente','Necesitar que otros decidan por ti y sentir angustia ante la soledad. A menudo se nota sobre todo en la <a href="pareja.html">pareja</a>, como dependencia emocional.','dependiente'],
     ['Rasgos narcisistas','Una necesidad intensa de admiración y una imagen de uno mismo que se resiente mucho con la crítica. Detrás suele haber más fragilidad de la que se ve.','narcisistas']
   ]},
   proceso:{titulo:'Cómo trabajamos los problemas de personalidad', pasos:[
@@ -1324,7 +1327,7 @@ window.MOTIVOS=[
   /* frases propias de la consulta, a partir de ideas de Marino Pérez Álvarez (ver referencias y citas-para-la-web.md) */
   quotes:[
     '',   /* tras biología: sin frase (la primera va arriba, en la entrada) */
-    'Nadie está totalmente predeterminado: seguimos haciéndonos toda la vida',   /* tras neurología */
+    'Lo que un día nos protegió puede ser lo que hoy nos hace daño',   /* tras neurología */
     'Vivir la vida de forma muy intensa no tiene por qué ser un problema'   /* tras psicología */
   ],
   basesIntro:[
@@ -1339,7 +1342,7 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias aprendidas para protegernos. Y lo aprendido se puede revisar y cambiar. En el trastorno límite (TLP), por ejemplo, aprender a regular la ira o el miedo al abandono cambia mucho el día a día.',
     '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Si te reconoces en esa sensación, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
   ],
-  together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, lo que hemos hecho, cómo nos relacionamos con los demás y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
+  together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, lo que hemos hecho, cómo nos relacionamos con los demás y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Si tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Lo trabajamos juntos.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
   intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.» */
@@ -1367,17 +1370,17 @@ window.MOTIVOS=[
       '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.',
       '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos y exigencias que pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
     ],
-    together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
-    tipos:{titulo:'Problemas de personalidad más frecuentes', intro:'Preferimos verlos como formas de ser muy marcadas que hacen sufrir, más que como tipos cerrados.', items:[
-      ['Trastorno límite de la personalidad (TLP)','emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables e impulsividad.','tlp'],
+    together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Si tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Lo trabajamos juntos.',
+    tipos:{titulo:'Problemas de personalidad más frecuentes', intro:'No son casillas: suelen mezclarse y cada persona las vive a su manera.', items:[
+      ['Trastorno límite de la personalidad (TLP)','cuando varias de las siguientes se juntan y lo ocupan casi todo.','tlp'],
       ['Inestabilidad emocional','emociones que suben y bajan muy deprisa y con mucha intensidad.','inestabilidad'],
       ['Miedo al abandono','sentir que te van a dejar y hacer lo que sea por evitarlo.','abandono'],
-      ['Relaciones intensas e inestables','pasar de idealizar a alguien a sentirte decepcionado o herido.','relaciones'],
+      ['Relaciones intensas e inestables','pasar de idealizar a alguien a sentir que te ha fallado.','relaciones'],
       ['Impulsividad','actuar sin pensar cuando la emoción aprieta; si viene desde la infancia, puede tener que ver con el <a href="tdah.html">TDAH</a>.','impulsividad'],
       ['Ira y explosiones emocionales','enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.','ira'],
       ['Rasgos obsesivos o perfeccionistas','necesidad rígida de orden y control; no es lo mismo que el <a href="ansiedad.html#toc">TOC</a>.','obsesivos'],
       ['Personalidad evitativa','evitar a los demás por miedo al rechazo, aunque desees esa cercanía.','evitativa'],
-      ['Personalidad dependiente','necesitar que otros decidan por ti; a menudo se vive en la <a href="pareja.html">pareja</a>.','dependiente'],
+      ['Personalidad dependiente','necesitar que otros decidan por ti; a menudo se nota sobre todo en la <a href="pareja.html">pareja</a>.','dependiente'],
       ['Rasgos narcisistas','necesidad intensa de admiración y mucha fragilidad ante la crítica.','narcisistas']
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos los problemas de personalidad',
@@ -1432,7 +1435,7 @@ window.MOTIVOS=[
   faq:[
     ['¿Cuándo conviene ir a terapia sexual?','Cuando algo de tu vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja y se mantiene en el tiempo. No hace falta esperar a que sea grave.'],
     ['¿Por qué no tengo deseo sexual?','Las causas suelen ser varias a la vez: el cansancio, el estrés, la relación de pareja, algunos medicamentos, cambios hormonales o experiencias pasadas. Por eso miramos el cuerpo, la relación y el momento vital.','deseo'],
-    ['¿Y si ha habido abuso o violencia?','La terapia puede ayudarte, y no estás sola. El <strong>016</strong> atiende las 24 horas, es gratuito y no deja rastro en la factura; en una urgencia, llama al <strong>112</strong>.'],
+    ['¿Y si ha habido abuso o violencia?','La terapia puede ayudarte, y no tienes que cargar con ello en soledad. Si se trata de violencia contra las mujeres, el <strong>016</strong> atiende las 24 horas, es gratuito y no deja rastro en la factura; en una urgencia, llama al <strong>112</strong>.'],
     ['¿La disfunción eréctil es psicológica?','Puede ser física, psicológica o las dos cosas a la vez. Una pista: si hay erecciones por la mañana o en la masturbación, suele pesar más lo psicológico. En cualquier caso, conviene una revisión médica.'],
     ['¿Cómo se trata la eyaculación precoz?','Con ejercicios graduales para ganar control, trabajando la ansiedad y, si es posible, con la pareja. Si hace falta, nos coordinamos con urología.'],
     ['¿Es normal que el deseo cambie con los años?','Sí. El deseo cambia con la edad, el estrés, la crianza o la relación, y no siempre al mismo ritmo en los dos. Que cambie no es un problema; lo es cuando te hace sufrir a ti o a tu pareja.'],
@@ -1442,7 +1445,7 @@ window.MOTIVOS=[
     ['¿Hacéis terapia sexual cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
-  feel:['No tengo deseo sexual','Me agobia no estar a la altura','No me siento deseada por mi pareja','Me da vergüenza hablar de esto'],
+  feel:['No tengo deseo sexual','Me agobia no estar a la altura','Siento que mi pareja ya no me desea','Me da vergüenza hablar de esto'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases verdes (2026-11-08): la de la entrada parte de ideas del Gottman Institute (traducción nuestra);
      el dato del 10 % se retiró por no tener estudio detrás */
@@ -1463,7 +1466,7 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
     '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad que vemos en los medios y en <a href="adicciones.html">la pornografía</a>, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
   ],
-  together:'Hablar de lo que nos pasa en la intimidad, y las nuevas formas de encontrarnos que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
+  together:'Hablar de lo que nos pasa en la intimidad abre nuevas formas de encontrarnos y ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
   cta:'Un espacio para hablar de sexualidad sin juicios.',
   intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
@@ -1489,13 +1492,13 @@ window.MOTIVOS=[
       '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
       '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad de los medios y de <a href="adicciones.html">la pornografía</a>, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
     ],
-    together:'Hablar de lo que nos pasa en la intimidad, y las nuevas formas de encontrarnos que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
+    together:'Hablar de lo que nos pasa en la intimidad abre nuevas formas de encontrarnos y ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
     tipos:{titulo:'Problemas sexuales más frecuentes', intro:'Casi siempre se mezclan el cuerpo, la relación y la historia de cada persona.', items:[
-      ['Falta de deseo sexual','cambia con el cansancio, el estrés, la relación, algunos medicamentos o los cambios hormonales.','deseo'],
-      ['Disfunción eréctil','dificultad para conseguir o mantener la erección; a menudo pesan la ansiedad y la presión por «rendir».','erectil'],
+      ['Falta de deseo sexual','cuando el deseo se apaga y eso te hace sufrir a ti o a tu pareja.','deseo'],
+      ['Disfunción eréctil','dificultad para conseguir o mantener la erección; a menudo pesan la ansiedad y el miedo a fallar.','erectil'],
       ['Eyaculación precoz','eyacular antes de lo que se desea; se trabaja con ejercicios concretos.','precoz'],
       ['Anorgasmia','dificultad para llegar al orgasmo aunque haya deseo y excitación.','anorgasmia'],
-      ['Dolor en las relaciones sexuales','conviene una valoración ginecológica o urológica, y trabajamos coordinados.','dolor'],
+      ['Dolor en las relaciones sexuales','conviene una valoración ginecológica o urológica.','dolor'],
       ['Vaginismo','contracción involuntaria que dificulta la penetración; se trabaja de forma gradual.','vaginismo'],
       ['Sexualidad tras el parto','el cansancio, el cuerpo y los nuevos roles cambian el deseo; se trabaja también en <a href="pareja.html">pareja</a>.','parto'],
       ['Sexualidad en la menopausia','los cambios hormonales afectan al deseo y al bienestar sexual; combinamos la mirada médica y la psicológica.','menopausia']
