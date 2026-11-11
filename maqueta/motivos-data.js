@@ -35,7 +35,7 @@ window.MOTIVOS=[
   basesIntro:'Sentir ansiedad es normal. La necesitamos para reaccionar ante lo que nos rodea: nos pone en alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
   bases:[
     'Ante una amenaza, el cuerpo se prepara para huir o defenderse: se acelera el corazón, cambia la respiración, se tensan los músculos. Por eso la ansiedad puede notarse como presión en el pecho, sensación de ahogo, mareo o nudo en el estómago, y si se mantiene, <a href="insomnio.html">insomnio</a> o irritabilidad. <strong>Los estudios de biología y neurología</strong> muestran que ese aviso llega muy deprisa, antes de que lo pensemos; de ahí que a veces aparezca «sin saber por qué». Es lo que se vive en un ataque de ansiedad o de pánico. Pero sería <strong>reduccionista</strong> instalarse ahí: no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
-    'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera. Muchas veces esto desemboca en el aislamiento y la <a href="depresion.html">depresión</a>.',
+    'Darle vueltas a todo, comprobar una y otra vez, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento, pero alimentan el círculo: así se mantienen muchos miedos, fobias y obsesiones. A veces aparece además la <strong>hiperreflexividad</strong>: estar pendientes de cada latido, de cada pensamiento. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera. Muchas veces esto desemboca en el aislamiento y la <a href="depresion.html">depresión</a>.',
     'No es que la ansiedad esté dentro de ti como una pieza averiada: eres tú quien está dentro de una situación, o de varias a la vez, que te generan ansiedad. <strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. Por eso incluimos aquí el <strong>estrés laboral o burnout</strong>. También puede ocurrir que, después de una experiencia muy dura, el cuerpo siga en alerta como si el peligro no hubiera pasado: es lo que se conoce como <strong>estrés postraumático</strong>.'
   ],
   /* apartados de tratamiento (2026-11-09, elegidos por el usuario tras el estudio de competencia: 1B, 2A, 3B, 4A sin grupos, 5B) */
@@ -102,7 +102,7 @@ window.MOTIVOS=[
     basesIntro:'Sentir ansiedad es normal: nos pone en alerta y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
     bases:[
       '<strong>Los estudios de biología y neurología</strong> muestran que, ante una amenaza, el cuerpo se prepara para huir o defenderse, y ese aviso llega antes de que lo pensemos. Por eso la ansiedad se nota como presión en el pecho, ahogo o nudo en el estómago, y a veces aparece «sin saber por qué». Pero no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
-      'Darle vueltas a todo, comprobar, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento pero alimentan el círculo. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera, y a veces eso desemboca en la <a href="depresion.html">depresión</a>.',
+      'Darle vueltas a todo, comprobar, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento, pero alimentan el círculo. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera, y a veces eso desemboca en la <a href="depresion.html">depresión</a>.',
       '<strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. La ansiedad no es una pieza averiada dentro de ti: eres tú quien está dentro de unas situaciones que te la generan.'
     ],
     together:'La ansiedad es <strong>multicausal</strong>: lo que nos interesa es cómo se entretejen sus causas en tu caso. Casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué responde y de qué te está avisando, para dejar la lucha contra los síntomas y transformar lo que te <strong>amordaza</strong> en <strong>habilitadores</strong> que te permitan avanzar.',
@@ -119,12 +119,13 @@ window.MOTIVOS=[
       ['Insomnio por ansiedad','las preocupaciones no te dejan dormir; lo trabajamos también en <a href="insomnio.html">insomnio</a>.','insomnio-ansiedad']
     ]},
     trabajo:{titulo:'Cómo trabajamos la ansiedad',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender tu ansiedad.','A qué situaciones responde, qué la mantiene y de qué te está avisando.'],
-        ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
+        ['Sesiones de 60 minutos.','Al principio, semanales; después, como mínimo, dos al mes. Las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas medicación, nos coordinamos con tu médico.'
     }
   }
 },
@@ -252,12 +253,13 @@ window.MOTIVOS=[
       ['Depresión en personas mayores','a veces se nota como cansancio, olvidos o aislamiento, y se confunde con «cosas de la edad».','mayores']
     ]},
     trabajo:{titulo:'Cómo trabajamos la depresión',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender cómo has llegado hasta aquí.','Lo que has perdido, lo que te pesa y lo que se ha ido estrechando en tu vida.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el ánimo se sostiene. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.']
       ],
-      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si te cuesta salir de casa, puede ayudarte a empezar. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.'
     }
   }
 },
@@ -379,12 +381,13 @@ window.MOTIVOS=[
       ['Dependencia de pastillas para dormir','ayudan de forma puntual, pero no como solución a largo plazo; se dejan poco a poco, con tu médico. Lo vemos también en <a href="adicciones.html">adicciones</a>.','pastillas']
     ]},
     trabajo:{titulo:'Cómo trabajamos el insomnio',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Un diario de sueño.','Durante una o dos semanas apuntas cómo duermes, para ver qué pasa de verdad por la noche.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el sueño se sostiene. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I) y, de complemento, las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.'
     }
   }
 },
@@ -504,12 +507,13 @@ window.MOTIVOS=[
       ['Vigorexia','preocupación constante por no ser lo bastante musculado.','vigorexia']
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas de alimentación',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué función cumple la comida.','Qué alivia, qué intenta controlar y cuándo aparece, en tu vida concreta.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando la comida vuelve a su sitio. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes y, de complemento, con las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.'
     }
   }
 },
@@ -632,12 +636,13 @@ window.MOTIVOS=[
       ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, para que haya menos daño, también en el <a href="duelo.html">duelo</a>.','rupturas']
     ]},
     trabajo:{titulo:'Cómo trabajamos en terapia de pareja',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita, con los dos.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Una sesión individual con cada uno.','Para escuchar con calma lo que cuesta decir delante del otro.'],
         ['Sesiones conjuntas de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notáis avances.']
       ],
-      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones y las terapias contextuales, como la de aceptación y compromiso (ACT). Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España o en ciudades distintas. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es conjunta, con los dos; es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones conjuntas de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>.'
     },
     /* otras terapias al final de la página, en tarjetas con dibujo (opción B, 2026-11-09): [slug, una línea] */
     /* «Otras terapias que pueden interesarte» quitado el 2026-11-10 (menos scroll); se puede recuperar renombrando a relacionadas */
@@ -766,12 +771,13 @@ window.MOTIVOS=[
       ['TDAH en niños y adolescentes','se nota en clase y en casa; trabajamos también con la familia y el colegio, como en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
     trabajo:{titulo:'Cómo trabajamos el TDAH',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Una valoración cuidadosa.','Tu historia desde la infancia, cuestionarios y cómo se nota en tu vida, sin prisa por poner la etiqueta.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te organizas con más soltura. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la atención plena y las terapias contextuales, como la ACT. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; con niños pequeños solemos preferir la consulta presencial. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.'
     }
   }
 },
@@ -892,12 +898,13 @@ window.MOTIVOS=[
       ['Familiares de personas con adicción','si alguien cercano no quiere pedir ayuda, puedes venir tú; te ayudamos a cuidarte y a facilitar que dé el paso.','familiares']
     ]},
     trabajo:{titulo:'Cómo trabajamos las adicciones',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué te aporta.','Para qué sirve el consumo, en qué momentos aparece, qué lo mantiene y qué otras formas hay de conseguir lo que buscas.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el cambio se sostiene. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones.']
       ],
-      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, el trabajo con la familia y las terapias contextuales, como la de aceptación y compromiso (ACT). Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones. Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú.'
     }
   }
 },
@@ -1004,12 +1011,13 @@ window.MOTIVOS=[
       ['Aprender a decir que no','decir que sí a todo para no decepcionar; poner límites también es estimarse.','decirno']
     ]},
     trabajo:{titulo:'Cómo trabajamos la autoestima',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender cómo te valoras y de dónde viene.','Tu historia, cómo te han tratado y los contextos en los que vives.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te tratas de otra manera. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, el trabajo con la compasión y las terapias contextuales, como la ACT. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; a muchas personas les resulta más fácil empezar desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas medicación, nos coordinamos con tu médico.'
     }
   }
 },
@@ -1126,12 +1134,13 @@ window.MOTIVOS=[
       ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
     trabajo:{titulo:'Cómo trabajamos el duelo',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Hablar de la pérdida.','Quién era, qué pasó y qué ha cambiado desde entonces, sin prisa.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando la pérdida encuentra su sitio. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual para el duelo prolongado, la terapia de aceptación y compromiso (ACT) y el acompañamiento: un espacio para hablar de la pérdida cuando alrededor ya no se habla de ella. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si tomas medicación, nos coordinamos con tu médico.'
     }
   }
 },
@@ -1248,12 +1257,13 @@ window.MOTIVOS=[
       ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="duelo.html">duelo</a>.','duelo']   /* 2026-11-10: «Orientación a familias» pasa a la frase de entrada */
     ]},
     trabajo:{titulo:'Cómo trabajamos con niños y adolescentes',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Conocer a vuestro hijo o hija.','En sesiones adaptadas a su edad, para escuchar cómo vive lo que le pasa.'],
         ['Sesiones de 60 minutos, con él o ella y con vosotros.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando las cosas se asientan. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.']
       ],
-      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad y las terapias contextuales, como la ACT con adolescentes. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Atendemos de 6 a 17 años. La primera entrevista es con la familia, sin el menor; es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o, con adolescentes, <a href="online.html">online</a>. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.'
     }
   }
 },
@@ -1369,12 +1379,13 @@ window.MOTIVOS=[
       ['Rasgos narcisistas','necesidad intensa de admiración y mucha fragilidad ante la crítica.','narcisistas']
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas de personalidad',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender tus patrones.','Tu historia, tus relaciones y lo que se repite, sin poner etiquetas antes de tiempo.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; es un proceso que lleva su tiempo. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.']
       ],
-      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.'
     }
   }
 },
@@ -1488,12 +1499,13 @@ window.MOTIVOS=[
       ['Sexualidad en la menopausia','los cambios hormonales afectan al deseo y al bienestar sexual; combinamos la mirada médica y la psicológica.','menopausia']
     ]},
     trabajo:{titulo:'Cómo trabajamos los problemas sexuales',
-      pasos:[
+      pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
+      pasosQuitados:[
         ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
         ['Entender qué pasa.','El cuerpo, la relación, tu historia y las expectativas que pesan sobre el sexo.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes, con ejercicios graduales y sin presión por el resultado. Si hace falta, nos coordinamos con tu médico, urólogo o ginecóloga.']
       ],
-      texto:'Trabajamos con la terapia sexual cognitivo-conductual, la atención plena, la <a href="pareja.html">terapia de pareja</a> cuando la dificultad es de los dos y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vives fuera de España; a muchas personas les resulta más fácil hablar de sexualidad desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'La primera entrevista, solo, sola o en pareja, es gratuita y la hace siempre Daniel de la Torre Díaz. Trabajamos integrando terapia cognitivo-conductual, Gestalt y terapias contextuales, como la ACT, en sesiones de 60 minutos, en <a href="presencial.html">nuestro centro</a> o <a href="online.html">online</a>. Si hace falta, nos coordinamos con tu médico, urólogo o ginecóloga.'
     }
   }
 }

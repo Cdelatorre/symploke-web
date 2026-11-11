@@ -65,9 +65,9 @@ if(c){   // VERSIÓN CARLOS: tipos en lista corta, un solo bloque «Cómo trabaj
     h+='</ul></section>';
   }
   if(c.trabajo){
-    h+='<section class="proceso"><h2>'+c.trabajo.titulo+'</h2><ol class="pasos">';
-    c.trabajo.pasos.forEach(function(p){h+='<li><p><strong>'+p[0]+'</strong> '+p[1]+'</p></li>';});
-    h+='</ol>'+(c.trabajo.texto?'<p class="trabajo-mas">'+c.trabajo.texto+'</p>':'')+'</section>';
+    h+='<section class="proceso"><h2>'+c.trabajo.titulo+'</h2>';
+    if(c.trabajo.pasos.length){h+='<ol class="pasos">';c.trabajo.pasos.forEach(function(p){h+='<li><p><strong>'+p[0]+'</strong> '+p[1]+'</p></li>';});h+='</ol>';}   // 2026-11-11: sin pasos, solo el párrafo
+    h+=(c.trabajo.texto?'<p class="trabajo-mas">'+c.trabajo.texto+'</p>':'')+'</section>';
   }
   if(m.faq){   // preguntas en un desplegable de una sola línea (opción A, 2026-11-10): se ve igual de ligero y Google lee las preguntas como parte de la página
     h+='<details class="a-preguntas"><summary><span class="qi" aria-hidden="true">?</span><span class="t">Preguntas frecuentes sobre '+(/^[A-ZÁÉÍÓÚ][a-záéíóúñ]/.test(m.name)?m.name.charAt(0).toLowerCase()+m.name.slice(1):m.name)+' <span class="arr" aria-hidden="true">→</span></span></summary><div class="faq desplegable">';
