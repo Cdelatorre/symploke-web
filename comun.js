@@ -54,13 +54,19 @@ if(!REDUCED&&window.Lenis){
   (function raf(time){lenis.raf(time);requestAnimationFrame(raf);})(performance.now());
   window.__lenis=lenis;
 }
+/* si el destino es una sección (p. ej. #como), se baja hasta su título, para que no asome lo de arriba (2026-11-11) */
+function destino(el){return el.tagName==='SECTION'?(el.querySelector('h2')||el):el;}
+if(location.hash){var h0=document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if(h0&&h0.tagName==='SECTION')addEventListener('load',function(){setTimeout(function(){var t=destino(h0);
+    if(lenis)lenis.scrollTo(t,{offset:-NAV-30,immediate:true});else{t.scrollIntoView();scrollBy(0,-NAV-30);}},60);});}
 document.addEventListener('click',function(e){
   var a=e.target.closest&&e.target.closest('a[href*="#"]');
   if(!a||a.origin!==location.origin||a.pathname!==location.pathname)return;
   var id=decodeURIComponent(a.hash.slice(1)), el=id?document.getElementById(id):null;
   if(!el)return;
+  el=destino(el);
   e.preventDefault();
-  if(lenis)lenis.scrollTo(el,{offset:-NAV,duration:1.6});
+  if(lenis)lenis.scrollTo(el,{offset:-NAV-30,duration:1.6});
   else el.scrollIntoView({behavior:REDUCED?'auto':'smooth'});
   history.replaceState(null,'',a.hash);
 });
