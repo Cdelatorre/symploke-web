@@ -191,3 +191,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 .relacionadas .card h3{font-size:21px;line-height:1.1;margin:0}
 .relacionadas .card p{margin:0;font-size:15px;line-height:1.38;color:var(--ink2)}
 .relacionadas .card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
+
+/* texto de la terapia ya escrito en el HTML para Google (herramientas/prerender.py): oculto hasta que motivo.js monta el mismo texto, para que no parpadee */
+main.pre{visibility:hidden}

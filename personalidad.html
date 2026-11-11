@@ -34,7 +34,13 @@
         "addressCountry": "ES"
       },
       "areaServed": ["Madrid", "España"],
-      "availableLanguage": "es"
+      "availableLanguage": "es",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "22:00"
+      }
     },
     {
       "@type": "MedicalWebPage",
@@ -58,12 +64,88 @@
   ]
 }
 </script>
+<!-- preguntas frecuentes para Google: las genera herramientas/prerender.py -->
+<script type="application/ld+json" id="faq-ld">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://cdelatorre.github.io/symploke-web/personalidad.html#preguntas",
+ "url": "https://cdelatorre.github.io/symploke-web/personalidad.html",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Qué es un trastorno de la personalidad?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es el nombre que se da a formas de sentir, pensar y relacionarse muy estables que hacen sufrir a la persona o a quienes la rodean, y que se repiten en distintos ámbitos. Desde 2022, la clasificación de la OMS (CIE-11) los describe por grados de gravedad más que por tipos cerrados."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué es el trastorno límite de la personalidad (TLP)?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan, como la terapia dialéctico-conductual."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo saber si tengo TLP?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Si las emociones te desbordan a menudo, temes mucho que te abandonen, tus relaciones pasan de un extremo a otro y a veces actúas por impulso o sientes un gran vacío, merece la pena consultarlo. Un test en internet no basta: hace falta una valoración profesional, sin prisa por poner etiquetas."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿La personalidad se puede cambiar?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Los rasgos de fondo cambian despacio, pero la manera de manejar las emociones y de relacionarse sí puede cambiar mucho con terapia. No prometemos plazos: suele ser un proceso largo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo ayudar a alguien con TLP?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Validar lo que siente sin darle la razón en todo, mantener límites claros con calma, no entrar en la escalada cuando la emoción sube y cuidarte también tú. Si hay riesgo de autolesión, llama al 024 o al 112."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puede participar mi familia?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué hago si hay autolesiones o ideas de suicidio?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Pide ayuda cuanto antes: llama al 024 si tienes pensamientos de suicidio y al 112 en una urgencia."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Tratáis los trastornos de la personalidad cerca de Lavapiés o Embajadores?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la terapia online."
+   }
+  }
+ ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
 <link rel="stylesheet" href="comun.css">
 <script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="motivo.css">
+<noscript><style>main.pre{visibility:visible}</style></noscript>
 </head>
 <body data-m="personalidad"><!-- página fija de la terapia de personalidad: el contenido sale de maqueta/motivos-data.js (motivo.js); título y descripción, aquí -->
 <header class="nav">
@@ -75,7 +157,9 @@
   <a class="btn primary small" href="contacto.html">Pedir <span class="nav-largo">primera </span>cita</a>
 </header>
 
-<main id="main"></main>
+<main id="main" class="pre"><!-- texto escrito por herramientas/prerender.py para los buscadores: NO editar aquí (se cambia en maqueta/motivos-data.js y se vuelve a ejecutar) -->
+<nav class="crumbs" aria-label="Migas de pan"><a href="test1.html">Inicio</a><span aria-hidden="true">›</span><a href="terapia.html">Terapias</a><span aria-hidden="true">›</span><span>Trastornos de la personalidad</span></nav><h1 class="wide">Terapia para los trastornos de la personalidad</h1><section class="mhero"><div><p class="lead">Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.</p><p class="help">Podemos ayudarte a entender tus patrones y a probar otros.</p><div class="cta"><a class="btn primary" href="contacto.html">Pedir cita <span class="arr" aria-hidden="true">→</span></a><a class="btn ghost" href="#">Consultar por WhatsApp</a></div></div><div class="art"></div></section><section class="feel" aria-labelledby="suene"><div><h2 id="suene">Quizá te suene</h2><p class="note">Frases con las que mucha gente cuenta lo que le pasa.</p></div><div><ul><li>«No me entiendo ni yo»</li><li>«Tengo cambios de humor repentinos»</li><li>«Siento un vacío que no se llena con nada»</li><li>«Me cuesta relacionarme con la gente»</li></ul><div class="reco"><p>¿Te reconoces? No tienes por qué pasarlo a solas.</p><a class="btn primary small" href="contacto.html">Pedir cita <span class="arr" aria-hidden="true">→</span></a></div></div></section><div class="read"><section><h2>Un enfoque multidimensional de la personalidad</h2><p>Usamos «trastorno de la personalidad» porque es como se busca y se diagnostica, aunque preferimos hablar de formas de ser muy marcadas —inestables, evitativas, dependientes, <a href="autoestima.html">perfeccionistas</a>— que hacen sufrir. Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser.</p><p class="voz">«Nadie nace siendo la persona que es hoy»</p><p>Nos vamos haciendo con los demás y con lo que vivimos, y por eso también se puede trabajar. En cada persona se cruzan el cuerpo, su historia, sus relaciones y el entorno: nuestro enfoque es <strong>pluralista</strong>.</p><p><strong>Los estudios de biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida.</p><p><strong>Los estudios de neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre.</p><p class="voz">«Lo que un día nos protegió puede ser lo que hoy nos hace daño»</p><p><strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.</p><p class="voz">«Vivir la vida de forma muy intensa no tiene por qué ser un problema»</p><p><strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos y exigencias que pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.</p></section><section><h2>Pensarlo juntos</h2><p class="beyond">No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Si tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Lo trabajamos juntos.</p></section><section class="tipos corta"><h2>Problemas de personalidad más frecuentes</h2><p>No son casillas: suelen mezclarse y cada persona las vive a su manera.</p><ul class="tipos-lista"><li id="tlp"><strong>Trastorno límite de la personalidad (TLP):</strong> cuando varias de las siguientes se juntan y lo ocupan casi todo.</li><li id="inestabilidad"><strong>Inestabilidad emocional:</strong> emociones que suben y bajan muy deprisa y con mucha intensidad.</li><li id="abandono"><strong>Miedo al abandono:</strong> sentir que te van a dejar y hacer lo que sea por evitarlo.</li><li id="relaciones"><strong>Relaciones intensas e inestables:</strong> pasar de idealizar a alguien a sentir que te ha fallado.</li><li id="impulsividad"><strong>Impulsividad:</strong> actuar sin pensar cuando la emoción aprieta; si viene desde la infancia, puede tener que ver con el <a href="tdah.html">TDAH</a>.</li><li id="ira"><strong>Ira y explosiones emocionales:</strong> enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.</li><li id="obsesivos"><strong>Rasgos obsesivos o perfeccionistas:</strong> necesidad rígida de orden y control; no es lo mismo que el <a href="ansiedad.html#toc">TOC</a>.</li><li id="evitativa"><strong>Personalidad evitativa:</strong> evitar a los demás por miedo al rechazo, aunque desees esa cercanía.</li><li id="dependiente"><strong>Personalidad dependiente:</strong> necesitar que otros decidan por ti; a menudo se nota sobre todo en la <a href="pareja.html">pareja</a>.</li><li id="narcisistas"><strong>Rasgos narcisistas:</strong> necesidad intensa de admiración y mucha fragilidad ante la crítica.</li></ul></section><details class="a-preguntas"><summary><span class="qi" aria-hidden="true">?</span><span class="t">Preguntas frecuentes sobre trastornos de la personalidad <span class="arr" aria-hidden="true">→</span></span></summary><div class="faq desplegable"><details><summary><h3>¿Qué es un trastorno de la personalidad?</h3></summary><p>Es el nombre que se da a formas de sentir, pensar y relacionarse muy estables que hacen sufrir a la persona o a quienes la rodean, y que se repiten en distintos ámbitos. Desde 2022, la clasificación de la OMS (CIE-11) los describe por grados de gravedad más que por tipos cerrados.</p></details><details id="tlp"><summary><h3>¿Qué es el trastorno límite de la personalidad (TLP)?</h3></summary><p>Se caracteriza por emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables, impulsividad y, a veces, sensación de vacío o autolesiones. Hay tratamientos psicológicos específicos que ayudan, como la terapia dialéctico-conductual.</p></details><details><summary><h3>¿Cómo saber si tengo TLP?</h3></summary><p>Si las emociones te desbordan a menudo, temes mucho que te abandonen, tus relaciones pasan de un extremo a otro y a veces actúas por impulso o sientes un gran vacío, merece la pena consultarlo. Un test en internet no basta: hace falta una valoración profesional, sin prisa por poner etiquetas.</p></details><details><summary><h3>¿La personalidad se puede cambiar?</h3></summary><p>Los rasgos de fondo cambian despacio, pero la manera de manejar las emociones y de relacionarse sí puede cambiar mucho con terapia. No prometemos plazos: suele ser un proceso largo.</p></details><details><summary><h3>¿Cómo ayudar a alguien con TLP?</h3></summary><p>Validar lo que siente sin darle la razón en todo, mantener límites claros con calma, no entrar en la escalada cuando la emoción sube y cuidarte también tú. Si hay riesgo de autolesión, llama al <strong>024</strong> o al <strong>112</strong>.</p></details><details><summary><h3>¿Puede participar mi familia?</h3></summary><p>Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.</p></details><details><summary><h3>¿Qué hago si hay autolesiones o ideas de suicidio?</h3></summary><p>Pide ayuda cuanto antes: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia.</p></details><details><summary><h3>¿Tratáis los trastornos de la personalidad cerca de Lavapiés o Embajadores?</h3></summary><p>Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.</p></details></div></details></div><section class="band"><div class="pic"></div><div class="t"><h2>Podemos ayudarte</h2><p>Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p><a class="btn primary" href="contacto.html">Pide cita y lo vemos juntos <span class="arr" aria-hidden="true">→</span></a><p class="donde">Puedes visitarnos en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p><p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p></div></section>
+</main>
 <footer><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Koiné Psicología · Centro sanitario nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></footer>
 <script>/* año final automático en el pie; la web tupsicologoenmadrid.es es de 2013 */document.querySelectorAll("[data-anio]").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
 

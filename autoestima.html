@@ -34,7 +34,13 @@
         "addressCountry": "ES"
       },
       "areaServed": ["Madrid", "España"],
-      "availableLanguage": "es"
+      "availableLanguage": "es",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "22:00"
+      }
     },
     {
       "@type": "MedicalWebPage",
@@ -58,12 +64,96 @@
   ]
 }
 </script>
+<!-- preguntas frecuentes para Google: las genera herramientas/prerender.py -->
+<script type="application/ld+json" id="faq-ld">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "@id": "https://cdelatorre.github.io/symploke-web/autoestima.html#preguntas",
+ "url": "https://cdelatorre.github.io/symploke-web/autoestima.html",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Cómo saber si tengo baja autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿De dónde viene la baja autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "De cómo nos han tratado y nos tratan: críticas repetidas, comparaciones, experiencias de acoso o de rechazo, y contextos que piden rendir sin descanso. La estima se aprende en relación con otros."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Se puede mejorar la autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo mejorar la autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Más que pensar mejor de ti, ayuda actuar de otra manera: cumplir con lo que te importa, poner límites, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Es algo que se entrena poco a poco."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿El perfeccionismo es un problema de autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo pesa como si dijera algo de ti. Aprender a exigirse sin maltratarse ayuda también a la estima."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué es el síndrome del impostor?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es la sensación de no merecer lo que has logrado y el miedo a que los demás «descubran» que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿La baja autoestima tiene que ver con la ansiedad o la depresión?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A menudo van juntas: valorarse poco alimenta la ansiedad y el ánimo bajo, y estos a su vez empeoran cómo nos vemos. Cuando aparecen juntas, las trabajamos a la vez."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿La terapia online funciona para la autoestima?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la terapia online."
+   }
+  }
+ ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
 <link rel="stylesheet" href="comun.css">
 <script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="stylesheet" href="motivo.css">
+<noscript><style>main.pre{visibility:visible}</style></noscript>
 </head>
 <body data-m="autoestima"><!-- página fija de la terapia de autoestima: el contenido sale de maqueta/motivos-data.js (motivo.js); título y descripción, aquí -->
 <header class="nav">
@@ -75,7 +165,9 @@
   <a class="btn primary small" href="contacto.html">Pedir <span class="nav-largo">primera </span>cita</a>
 </header>
 
-<main id="main"></main>
+<main id="main" class="pre"><!-- texto escrito por herramientas/prerender.py para los buscadores: NO editar aquí (se cambia en maqueta/motivos-data.js y se vuelve a ejecutar) -->
+<nav class="crumbs" aria-label="Migas de pan"><a href="test1.html">Inicio</a><span aria-hidden="true">›</span><a href="terapia.html">Terapias</a><span aria-hidden="true">›</span><span>Autoestima</span></nav><h1 class="wide">Terapia para fortalecer la autoestima</h1><section class="mhero"><div><p class="lead">Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: se siente en el cuerpo, pero depende también de lo que hacemos, de nuestras relaciones y de cómo nos estiman los demás. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.</p><p class="help">Podemos ayudarte a estimarte de otra manera, sin compararte ni exigirte a todas horas.</p><div class="cta"><a class="btn primary" href="contacto.html">Pedir cita <span class="arr" aria-hidden="true">→</span></a><a class="btn ghost" href="#">Consultar por WhatsApp</a></div></div><div class="art"></div></section><section class="feel" aria-labelledby="suene"><div><h2 id="suene">Quizá te suene</h2><p class="note">Frases con las que mucha gente cuenta lo que le pasa.</p></div><div><ul><li>«No soy suficiente»</li><li>«Me comparo mucho con los demás»</li><li>«Me cuesta decir que no»</li><li>«No me siento bien conmigo»</li></ul><div class="reco"><p>¿Te reconoces? No tienes por qué pasarlo a solas.</p><a class="btn primary small" href="contacto.html">Pedir cita <span class="arr" aria-hidden="true">→</span></a></div></div></section><div class="read"><section><h2>Un enfoque multidimensional de la autoestima</h2><p>Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en el individuo, como si la estima fuera un depósito que cada uno lleva dentro. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Por eso nuestro enfoque es <strong>pluralista</strong>.</p><p><strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, <a href="insomnio.html">el mal sueño</a> o <a href="ansiedad.html">el estrés mantenido</a> tiñen cómo nos vemos.</p><p class="voz">«El valor que sentimos no se construye a solas ni solo desde dentro. Esa estima depende de los demás y de múltiples contextos»</p><p>La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> muestra que se difundió en la segunda mitad del siglo XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.</p><p class="voz">«Nos vemos, en buena parte, como nos han tratado. Por eso cambiar cómo nos tratan, y cómo tratamos, también cambia cómo nos valoramos»</p><p><strong>Los estudios de psicología</strong> encuentran que repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más mueve la estima es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. La estima llega después de actuar, no antes.</p><p class="voz">«Estimarse se ejercita: la estima se fortalece cuando actuamos, cuando nos cuidamos y cuando cuidamos a los nuestros»</p><p><strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal o <a href="adicciones.html">las redes sociales</a>. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.</p></section><section><h2>Pensarlo juntos</h2><p class="beyond">Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Lo que sí se puede trabajar es cómo te importa esa mirada y qué haces con ella: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas y cuidar los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos juntos.</p></section><section class="tipos corta"><h2>Problemas de autoestima más frecuentes</h2><p>Suelen ir de la mano: uno lleva a otro.</p><ul class="tipos-lista"><li id="baja"><strong>Baja autoestima:</strong> sentir que vales poco, que no eres suficiente o que los demás lo hacen todo mejor.</li><li id="inseguridad"><strong>Inseguridad:</strong> dudar de ti antes de decidir o de intentarlo, y necesitar que te lo confirmen una y otra vez.</li><li id="perfeccionismo"><strong>Perfeccionismo:</strong> que nada esté nunca lo bastante bien.</li><li id="autoexigencia"><strong>Autoexigencia:</strong> pedirte siempre más y vivir cualquier fallo como un fracaso personal.</li><li id="impostor"><strong>Síndrome del impostor:</strong> sentir que no mereces lo que has logrado y temer que los demás lo «descubran».</li><li id="rechazo"><strong>Miedo al rechazo:</strong> callar lo que piensas o lo que necesitas por miedo a que te dejen de querer.</li><li id="aprobacion"><strong>Necesidad de aprobación:</strong> sentirte bien solo cuando los demás te dan el visto bueno.</li><li id="compararse"><strong>Compararse con los demás:</strong> medirte sin parar con otros, muchas veces con lo que enseñan <a href="adicciones.html">las redes</a>.</li><li id="autocritica"><strong>Autocrítica:</strong> una voz interna que te juzga con una dureza que nunca usarías con nadie.</li><li id="decirno"><strong>Aprender a decir que no:</strong> decir que sí a todo para no decepcionar; poner límites también es estimarse.</li></ul></section><details class="a-preguntas"><summary><span class="qi" aria-hidden="true">?</span><span class="t">Preguntas frecuentes sobre autoestima <span class="arr" aria-hidden="true">→</span></span></summary><div class="faq desplegable"><details><summary><h3>¿Cómo saber si tengo baja autoestima?</h3></summary><p>Si te comparas sin parar, te cuesta aceptar un halago, te exiges como si nada fuera suficiente o dependes de lo que opinen los demás para sentirte bien, es probable que la forma en que te valoras te esté haciendo sufrir.</p></details><details><summary><h3>¿De dónde viene la baja autoestima?</h3></summary><p>De cómo nos han tratado y nos tratan: críticas repetidas, comparaciones, experiencias de acoso o de rechazo, y contextos que piden rendir sin descanso. La estima se aprende en relación con otros.</p></details><details><summary><h3>¿Se puede mejorar la autoestima?</h3></summary><p>Sí. Suele cambiar cuando cambia la manera de tratarte, de relacionarte y de actuar en lo que te importa. No prometemos plazos, pero sí trabajar contigo.</p></details><details><summary><h3>¿Cómo mejorar la autoestima?</h3></summary><p>Más que pensar mejor de ti, ayuda actuar de otra manera: cumplir con lo que te importa, poner límites, atreverte con lo que evitas y cuidar los vínculos que te sostienen. Es algo que se entrena poco a poco.</p></details><details><summary><h3>¿El perfeccionismo es un problema de autoestima?</h3></summary><p>A menudo van juntos: cuando el valor propio depende de hacerlo todo bien, cualquier fallo pesa como si dijera algo de ti. Aprender a exigirse sin maltratarse ayuda también a la estima.</p></details><details id="impostor"><summary><h3>¿Qué es el síndrome del impostor?</h3></summary><p>Es la sensación de no merecer lo que has logrado y el miedo a que los demás «descubran» que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.</p></details><details><summary><h3>¿La baja autoestima tiene que ver con la ansiedad o la depresión?</h3></summary><p>A menudo van juntas: valorarse poco alimenta la <a href="ansiedad.html">ansiedad</a> y el <a href="depresion.html">ánimo bajo</a>, y estos a su vez empeoran cómo nos vemos. Cuando aparecen juntas, las trabajamos a la vez.</p></details><details><summary><h3>¿La terapia online funciona para la autoestima?</h3></summary><p>Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.</p></details><details><summary><h3>¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?</h3></summary><p>Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.</p></details></div></details></div><section class="band"><div class="pic"></div><div class="t"><h2>Podemos ayudarte</h2><p>Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p><a class="btn primary" href="contacto.html">Pide cita y lo vemos juntos <span class="arr" aria-hidden="true">→</span></a><p class="donde">Puedes visitarnos en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p><p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p></div></section>
+</main>
 <footer><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Koiné Psicología · Centro sanitario nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></footer>
 <script>/* año final automático en el pie; la web tupsicologoenmadrid.es es de 2013 */document.querySelectorAll("[data-anio]").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
 

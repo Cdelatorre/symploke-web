@@ -125,7 +125,14 @@ h+='<p class="donde">'+(m.bandaDonde||'Puedes visitarnos')+' en <a href="presenc
 h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
 h+='</div></section>';
 
-document.getElementById('main').innerHTML=h;
+var MAIN=document.getElementById('main');
+MAIN.innerHTML=h; MAIN.classList.remove('pre');   // .pre: texto ya escrito en el HTML para Google (herramientas/prerender.py), oculto hasta montar este
+if(/prerender/.test(location.search+location.hash)){   // lo usa herramientas/prerender.py: entrega el HTML limpio y las preguntas en texto plano
+  var tmp=document.createElement('div'), txt=function(x){tmp.innerHTML=x;return tmp.textContent;};
+  var out=document.createElement('textarea'); out.id='prerender-out';
+  out.textContent=JSON.stringify({html:h, faq:(m.faq||[]).map(function(f){return [txt(f[0]),txt(f[1])];})});
+  document.body.appendChild(out);
+}
 drawIn(document.querySelector('.mhero .art svg'));
 
 /* etiquetas que llevan a un desplegable de esta página (#social…): lo abren y bajan hasta él */
