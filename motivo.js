@@ -58,7 +58,7 @@ if(m.bases){
   h+='<section><p class="layer">Más allá de la etiqueta</p><h2>No eres un diagnóstico</h2><p class="beyond">'+m.beyond+'</p></section>';
 }
 /* apartados de tratamiento (2026-11-09, tras el estudio de competencia): proceso por pasos, enfoques, modalidad y quién te atiende */
-if(c){   // VERSIÓN CARLOS: tipos en lista corta, un solo bloque «Cómo trabajamos» y enlace a las preguntas (preguntas.html)
+if(c){   // VERSIÓN CARLOS: tipos en lista corta, un solo bloque «Cómo trabajamos» y las preguntas en un desplegable (preguntas.html se borró el 2026-11-11)
   if(c.tipos){
     h+='<section class="tipos corta"><h2>'+c.tipos.titulo+'</h2>'+(c.tipos.intro?'<p>'+c.tipos.intro+'</p>':'')+'<ul class="tipos-lista">';
     c.tipos.items.forEach(function(e){h+='<li'+(e[2]?' id="'+e[2]+'"':'')+'><strong>'+e[0]+':</strong> '+e[1]+'</li>';});

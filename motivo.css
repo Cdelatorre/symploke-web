@@ -172,12 +172,6 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 /* enlaces dentro del texto (a otras terapias): letra verde de la marca, subrayado grueso verde clarito; al pasar el ratón, verde más oscuro */
 .read p a{color:var(--brand);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:4px;transition:text-decoration-color .2s ease,color .2s ease}
 .read p a:hover{color:var(--brandink);text-decoration-color:var(--brand)}
-/* VERSIÓN CARLOS: página de preguntas frecuentes (preguntas.html) */
-.read.preguntas{margin-top:clamp(24px,3vw,40px)}
-.read.preguntas .indice{font-size:16px}
-.read.preguntas section{margin-top:56px}
-.read.preguntas .volver{margin-top:24px;font-size:16px}
-.read.preguntas .urg{font-size:15px;margin-top:64px}
 /* VERSIÓN CARLOS: otras terapias al final, en tarjetas con dibujo (mismo estilo que terapia.html) */
 .relacionadas{margin-top:clamp(64px,8vw,104px)}
 .relacionadas h2{margin:0 0 26px}
