@@ -118,7 +118,7 @@ window.MOTIVOS=[
       ['Estrés postraumático','después de una experiencia muy dura, el cuerpo sigue en alerta.','postraumatico'],
       ['Insomnio por ansiedad','las preocupaciones no te dejan dormir; lo trabajamos también en <a href="insomnio.html">insomnio</a>.','insomnio-ansiedad']
     ]},
-    trabajo:{titulo:'Cómo trabajamos la ansiedad',
+    trabajoQuitado:{titulo:'Cómo trabajamos la ansiedad',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -252,7 +252,7 @@ window.MOTIVOS=[
       ['Depresión tras una pérdida','cuando un <a href="duelo.html">duelo</a> se alarga y el ánimo no se recupera.','perdida'],
       ['Depresión en personas mayores','a veces se nota como cansancio, olvidos o aislamiento, y se confunde con «cosas de la edad».','mayores']
     ]},
-    trabajo:{titulo:'Cómo trabajamos la depresión',
+    trabajoQuitado:{titulo:'Cómo trabajamos la depresión',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -380,7 +380,7 @@ window.MOTIVOS=[
       ['Trabajo a turnos','cambiar de horario desajusta el reloj interno.','turnos'],
       ['Dependencia de pastillas para dormir','ayudan de forma puntual, pero no como solución a largo plazo; se dejan poco a poco, con tu médico. Lo vemos también en <a href="adicciones.html">adicciones</a>.','pastillas']
     ]},
-    trabajo:{titulo:'Cómo trabajamos el insomnio',
+    trabajoQuitado:{titulo:'Cómo trabajamos el insomnio',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -506,7 +506,7 @@ window.MOTIVOS=[
       ['Ortorexia','obsesión por comer «sano» que va dejando fuera alimentos, situaciones y personas.','ortorexia'],
       ['Vigorexia','preocupación constante por no ser lo bastante musculado.','vigorexia']
     ]},
-    trabajo:{titulo:'Cómo trabajamos los problemas de alimentación',
+    trabajoQuitado:{titulo:'Cómo trabajamos los problemas de alimentación',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -635,7 +635,7 @@ window.MOTIVOS=[
       ['La pareja tras tener hijos','menos tiempo, menos sueño y nuevos roles.','hijos'],
       ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, para que haya menos daño, también en el <a href="duelo.html">duelo</a>.','rupturas']
     ]},
-    trabajo:{titulo:'Cómo trabajamos en terapia de pareja',
+    trabajoQuitado:{titulo:'Cómo trabajamos en terapia de pareja',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita, con los dos.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -770,7 +770,7 @@ window.MOTIVOS=[
       ['Dificultades en los estudios','más por la atención y la organización que por la capacidad; trabajamos también con <a href="infancia.html">la familia</a>.','estudios'],
       ['TDAH en niños y adolescentes','se nota en clase y en casa; trabajamos también con la familia y el colegio, como en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
-    trabajo:{titulo:'Cómo trabajamos el TDAH',
+    trabajoQuitado:{titulo:'Cómo trabajamos el TDAH',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -897,7 +897,7 @@ window.MOTIVOS=[
       ['Compras compulsivas','comprar para aliviar el malestar, con un alivio que dura poco y deja culpa y deudas.','compras'],
       ['Familiares de personas con adicción','si alguien cercano no quiere pedir ayuda, puedes venir tú; te ayudamos a cuidarte y a facilitar que dé el paso.','familiares']
     ]},
-    trabajo:{titulo:'Cómo trabajamos las adicciones',
+    trabajoQuitado:{titulo:'Cómo trabajamos las adicciones',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -1010,7 +1010,7 @@ window.MOTIVOS=[
       ['Autocrítica','una voz interna que te juzga con una dureza que nunca usarías con nadie.','autocritica'],
       ['Aprender a decir que no','decir que sí a todo para no decepcionar; poner límites también es estimarse.','decirno']
     ]},
-    trabajo:{titulo:'Cómo trabajamos la autoestima',
+    trabajoQuitado:{titulo:'Cómo trabajamos la autoestima',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -1133,7 +1133,7 @@ window.MOTIVOS=[
       ['Duelo por una ruptura','también duele perder una relación; lo acompañamos aquí y en <a href="pareja.html">terapia de pareja</a>.','ruptura'],
       ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
-    trabajo:{titulo:'Cómo trabajamos el duelo',
+    trabajoQuitado:{titulo:'Cómo trabajamos el duelo',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -1256,7 +1256,7 @@ window.MOTIVOS=[
       ['Separación de los padres','les ayuda que los adultos les expliquen lo que pasa y les mantengan fuera del conflicto.','separacion'],
       ['Duelo en niños','los niños también viven el duelo, a su manera; orientamos a la familia y lo trabajamos también en <a href="duelo.html">duelo</a>.','duelo']   /* 2026-11-10: «Orientación a familias» pasa a la frase de entrada */
     ]},
-    trabajo:{titulo:'Cómo trabajamos con niños y adolescentes',
+    trabajoQuitado:{titulo:'Cómo trabajamos con niños y adolescentes',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita, con la familia.','Con la madre, el padre o los tutores, sin el menor. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -1378,7 +1378,7 @@ window.MOTIVOS=[
       ['Personalidad dependiente','necesitar que otros decidan por ti; a menudo se vive en la <a href="pareja.html">pareja</a>.','dependiente'],
       ['Rasgos narcisistas','necesidad intensa de admiración y mucha fragilidad ante la crítica.','narcisistas']
     ]},
-    trabajo:{titulo:'Cómo trabajamos los problemas de personalidad',
+    trabajoQuitado:{titulo:'Cómo trabajamos los problemas de personalidad',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
@@ -1498,7 +1498,7 @@ window.MOTIVOS=[
       ['Sexualidad tras el parto','el cansancio, el cuerpo y los nuevos roles cambian el deseo; se trabaja también en <a href="pareja.html">pareja</a>.','parto'],
       ['Sexualidad en la menopausia','los cambios hormonales afectan al deseo y al bienestar sexual; combinamos la mirada médica y la psicológica.','menopausia']
     ]},
-    trabajo:{titulo:'Cómo trabajamos los problemas sexuales',
+    trabajoQuitado:{titulo:'Cómo trabajamos los problemas sexuales',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
       pasosQuitados:[
         ['Primera entrevista, gratuita.','Solo, sola o en pareja. La hace siempre Daniel de la Torre Díaz, director del centro, psicólogo general sanitario y forense (colegiado M-28688).'],
