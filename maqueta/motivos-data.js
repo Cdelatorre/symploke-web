@@ -124,7 +124,7 @@ window.MOTIVOS=[
         ['Entender tu ansiedad.','A qué situaciones responde, qué la mantiene y de qué te está avisando.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notas avances. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -257,7 +257,7 @@ window.MOTIVOS=[
         ['Entender cómo has llegado hasta aquí.','Lo que has perdido, lo que te pesa y lo que se ha ido estrechando en tu vida.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el ánimo se sostiene. Si tomas medicación o conviene valorarla, nos coordinamos con tu médico o psiquiatra.']
       ],
-      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si te cuesta salir de casa, puede ayudarte a empezar. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la activación conductual, la terapia cognitivo-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si te cuesta salir de casa, puede ayudarte a empezar. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -384,7 +384,7 @@ window.MOTIVOS=[
         ['Un diario de sueño.','Durante una o dos semanas apuntas cómo duermes, para ver qué pasa de verdad por la noche.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el sueño se sostiene. Si tomas pastillas para dormir o quieres dejarlas, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I), la de aceptación y compromiso (ACT) como complemento y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual para el insomnio (TCC-I) y, de complemento, las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -509,7 +509,7 @@ window.MOTIVOS=[
         ['Entender qué función cumple la comida.','Qué alivia, qué intenta controlar y cuándo aparece, en tu vida concreta.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando la comida vuelve a su sitio. Si hay pérdida de peso, vómitos o mareos, o tomas medicación, nos coordinamos con tu médico, tu psiquiatra o tu nutricionista.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes, con la de aceptación y compromiso (ACT) como complemento y con las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual como base, con la familia en el caso de adolescentes y, de complemento, con las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; si hay riesgo físico, valoramos combinarla con seguimiento presencial y médico. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -637,7 +637,7 @@ window.MOTIVOS=[
         ['Una sesión individual con cada uno.','Para escuchar con calma lo que cuesta decir delante del otro.'],
         ['Sesiones conjuntas de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando notáis avances.']
       ],
-      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones, la de aceptación y compromiso (ACT) y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España o en ciudades distintas. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia conductual integrativa de pareja, la centrada en las emociones y las terapias contextuales, como la de aceptación y compromiso (ACT). Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España o en ciudades distintas. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     },
     /* otras terapias al final de la página, en tarjetas con dibujo (opción B, 2026-11-09): [slug, una línea] */
     /* «Otras terapias que pueden interesarte» quitado el 2026-11-10 (menos scroll); se puede recuperar renombrando a relacionadas */
@@ -771,7 +771,7 @@ window.MOTIVOS=[
         ['Una valoración cuidadosa.','Tu historia desde la infancia, cuestionarios y cómo se nota en tu vida, sin prisa por poner la etiqueta.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te organizas con más soltura. Si tomas medicación, nos coordinamos con tu psiquiatra o neurólogo.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la ACT y la atención plena, y las terapias contextuales. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; con niños pequeños solemos preferir la consulta presencial. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual, el entrenamiento a familias, la atención plena y las terapias contextuales, como la ACT. Con niños, trabajamos también con la familia y, si hace falta, con el colegio. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; con niños pequeños solemos preferir la consulta presencial. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -897,7 +897,7 @@ window.MOTIVOS=[
         ['Entender qué te aporta.','Para qué sirve el consumo, en qué momentos aparece, qué lo mantiene y qué otras formas hay de conseguir lo que buscas.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando el cambio se sostiene. Si hay sustancias o medicación, nos coordinamos con tu médico o con los servicios de adicciones.']
       ],
-      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, la terapia de aceptación y compromiso (ACT), el trabajo con la familia y las terapias contextuales. Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la entrevista motivacional, la terapia cognitivo-conductual y la prevención de recaídas, el trabajo con la familia y las terapias contextuales, como la de aceptación y compromiso (ACT). Si es un familiar quien tiene la adicción y no quiere pedir ayuda, puedes venir tú. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1009,7 +1009,7 @@ window.MOTIVOS=[
         ['Entender cómo te valoras y de dónde viene.','Tu historia, cómo te han tratado y los contextos en los que vives.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando te tratas de otra manera. Si tomas medicación, nos coordinamos con tu médico.']
       ],
-      texto:'Trabajamos con la terapia cognitivo-conductual, la ACT y la compasión, y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; a muchas personas les resulta más fácil empezar desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con la terapia cognitivo-conductual, el trabajo con la compasión y las terapias contextuales, como la ACT. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España; a muchas personas les resulta más fácil empezar desde casa. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1253,7 +1253,7 @@ window.MOTIVOS=[
         ['Conocer a vuestro hijo o hija.','En sesiones adaptadas a su edad, para escuchar cómo vive lo que le pasa.'],
         ['Sesiones de 60 minutos, con él o ella y con vosotros.','Al principio, semanales y, como mínimo, dos al mes; las espaciamos cuando las cosas se asientan. Si hace falta, nos coordinamos con el colegio y con su pediatra o psiquiatra infantil.']
       ],
-      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad, ACT con adolescentes y las terapias contextuales. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Atendemos de 6 a 17 años. Trabajamos con entrenamiento a familias, terapia cognitivo-conductual adaptada a la edad y las terapias contextuales, como la ACT con adolescentes. Podéis venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o, con adolescentes, hacer la <a href="online.html">terapia online</a>, también si vivís fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
@@ -1374,7 +1374,7 @@ window.MOTIVOS=[
         ['Entender tus patrones.','Tu historia, tus relaciones y lo que se repite, sin poner etiquetas antes de tiempo.'],
         ['Sesiones de 60 minutos.','Al principio, semanales y, como mínimo, dos al mes; es un proceso que lleva su tiempo. Si hay autolesiones, ideas de suicidio o medicación, trabajamos junto a tu psiquiatra.']
       ],
-      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual, la de aceptación y compromiso (ACT) y las terapias contextuales. Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
+      texto:'Trabajamos con herramientas de la terapia dialéctico-conductual y las terapias contextuales, como la de aceptación y compromiso (ACT). Puedes venir a <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (metro Embajadores, línea 3, y Acacias, línea 5, junto a Lavapiés) o hacer la <a href="online.html">terapia online</a> desde cualquier lugar, también si vives fuera de España. La sesión dura lo mismo. <a href="quienes-somos.html">Quiénes somos</a>.'
     }
   }
 },
