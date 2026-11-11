@@ -802,7 +802,7 @@ window.MOTIVOS=[
     ['Adicción al móvil','Mirarlo nada más despertar, al acostarte y cada pocos minutos, aunque quieras dejar de hacerlo.','movil'],
     ['Redes sociales','Horas que se van sin darte cuenta, comparaciones que te dejan peor y la sensación de no poder desconectar. Afecta también a la <a href="autoestima.html">autoestima</a>.','redes'],
     ['Videojuegos','Cuando el juego ocupa el lugar del sueño, de los estudios, del trabajo o de las relaciones, y dejarlo genera irritabilidad.','videojuegos'],
-    ['Cannabis','Empieza para relajarse o para dormir, y acaba siendo difícil pasar un día sin él. Puede afectar a la motivación, a la memoria y al ánimo.','cannabis'],
+    ['Cannabis','Fumar para relajarte o para dormir, y que cada vez cueste más pasar un día sin él. Puede afectar a la motivación, a la memoria y al ánimo.','cannabis'],
     ['Cocaína','Engancha por la euforia y la energía que promete, y deja detrás bajones, ansiedad y gastos. Con frecuencia va unida al alcohol.','cocaina'],
     ['Pornografía','Cuando su consumo se vuelve compulsivo, ocupa mucho tiempo o afecta a la vida sexual y a la pareja. También la trabajamos en <a href="sexual.html">terapia sexual</a>.','pornografia'],
     ['Compras compulsivas','Comprar para aliviar el malestar, con un alivio que dura poco y deja culpa y deudas.','compras']
@@ -829,9 +829,9 @@ window.MOTIVOS=[
     ['¿Cuándo es una adicción y no solo un hábito?','Cuando lo haces aunque te esté haciendo daño, cada vez necesitas más, te cuesta parar aunque quieras o va ocupando el lugar de otras cosas importantes. No hace falta tocar fondo para pedir ayuda.'],
     ['¿Cómo saber si tengo un problema con el juego?','Algunas señales: jugar más dinero o más tiempo del que pensabas, intentar recuperar lo perdido, mentir sobre lo que juegas, pedir dinero o sentir irritabilidad cuando no puedes jugar. Si te reconoces en varias, merece la pena consultarlo.'],
     ['¿Tratáis la adicción al móvil, a las redes o al juego?','Sí. Además del alcohol y otras sustancias, trabajamos las adicciones sin sustancia: juego y apuestas online, móvil, redes sociales, videojuegos o <a href="sexual.html">pornografía</a>.'],
-    ['¿Cómo reducir el uso del móvil?','Más que fuerza de voluntad, ayuda cambiar las condiciones: quitar notificaciones, dejar el móvil fuera del dormitorio, fijar momentos sin pantalla y recuperar actividades que te llenen. Si aun así no puedes, lo trabajamos contigo.'],
-    ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo. Si hay caídas —lo que mucha gente llama recaídas—, también se trabajan. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
-    ['¿Qué pasa si tengo una recaída?','Una caída no es una recaída, y no borra el camino recorrido: forma parte del proceso y también se aprende de ella. Lo importante es pedir ayuda pronto y ver qué la provocó.','recaidas'],
+    ['¿Cómo reducir el uso del móvil?','Más que aguantarse, ayuda cambiar las condiciones: quitar notificaciones, dejar el móvil fuera del dormitorio, fijar momentos sin pantalla y recuperar actividades que te llenen. Si aun así no puedes, lo trabajamos contigo.'],
+    ['¿Se puede dejar una adicción?','Sí, aunque suele llevar tiempo, y puede haber caídas por el camino. No prometemos plazos, pero sí acompañarte para entender qué papel cumple en tu vida y construir alternativas.'],
+    ['¿Qué pasa si tengo una recaída?','No se pierde lo avanzado. Lo importante es pedir ayuda pronto y ver qué la provocó.','recaidas'],
     ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Lo mismo vale para las pastillas para dormir o los tranquilizantes: se dejan poco a poco y con pauta médica. Nos coordinamos con medicina y con los servicios especializados.'],
     ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.','familiares'],
     ['¿Tratáis las adicciones cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
@@ -893,11 +893,11 @@ window.MOTIVOS=[
       ['Adicción al móvil','mirarlo al despertar, al acostarte y cada pocos minutos, aunque quieras dejarlo.','movil'],
       ['Redes sociales','horas que se van sin darte cuenta y comparaciones que dañan la <a href="autoestima.html">autoestima</a>.','redes'],
       ['Videojuegos','cuando el juego ocupa el lugar del sueño, los estudios o las relaciones.','videojuegos'],
-      ['Cannabis','empieza para relajarse o para dormir, y acaba siendo difícil pasar un día sin él.','cannabis'],
+      ['Cannabis','fumar para relajarte o para dormir, y que cada vez cueste más pasar un día sin él.','cannabis'],
       ['Cocaína','engancha por la euforia que promete y deja bajones, ansiedad y gastos.','cocaina'],
       ['Pornografía','cuando su consumo se vuelve compulsivo; la trabajamos también en <a href="sexual.html">terapia sexual</a>.','pornografia'],
       ['Compras compulsivas','comprar para aliviar el malestar, con un alivio que dura poco y deja culpa y deudas.','compras'],
-      ['Familiares de personas con adicción','si alguien cercano no quiere pedir ayuda, puedes venir tú; te ayudamos a cuidarte y a facilitar que dé el paso.','familiares']
+      ['Familiares de personas con adicción','la adicción también desgasta a quien está cerca; puedes venir tú.','familiares']
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos las adicciones',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
