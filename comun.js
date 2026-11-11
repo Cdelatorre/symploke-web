@@ -91,19 +91,6 @@ if(!REDUCED&&'IntersectionObserver' in window){
 }
 
 /* ---------- acento en los dibujos de las tarjetas ---------- */
-var HV=['mancha','ropa','entorno','fondo'], NAMES={mancha:'Mancha',ropa:'Ropa',entorno:'Entorno',fondo:'Fondo'};
-var hv='mancha';
-try{var saved=localStorage.getItem('symploke-hover2'); if(HV.indexOf(saved)>=0)hv=saved;}catch(e){}
-document.documentElement.setAttribute('data-hover',hv);
-var pick=document.querySelector('[data-hvpick]');
-if(pick){
-  pick.className='hvpick';
-  pick.innerHTML='<span>Color al pasar el ratón:</span>'+HV.map(function(k){return '<button type="button" data-v="'+k+'" aria-pressed="'+(k===hv)+'">'+NAMES[k]+'</button>';}).join('');
-  pick.addEventListener('click',function(e){
-    var b=e.target.closest('button'); if(!b)return;
-    hv=b.getAttribute('data-v'); document.documentElement.setAttribute('data-hover',hv);
-    [].forEach.call(pick.querySelectorAll('button'),function(x){x.setAttribute('aria-pressed',String(x===b));});
-    try{localStorage.setItem('symploke-hover2',hv);}catch(err){}
-  });
-}
+/* 2026-11-11: fijado en «mancha» (la mancha de fondo se enciende al verde del logo); el usuario probó los selectores y los quitó */
+document.documentElement.setAttribute('data-hover','mancha');
 })();
