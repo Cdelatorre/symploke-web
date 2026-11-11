@@ -20,7 +20,7 @@ window.MOTIVOS=[
   seoTitle:'Tratamiento de la ansiedad y el estrés en Madrid y online',
   seoDesc:'¿Ansiedad sin saber por qué? Ataques de ansiedad, estrés o ansiedad y depresión: te ayudamos a entender qué te pasa. Centro sanitario en Madrid y online.',
   h1:'Terapia para la ansiedad y el estrés',
-  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  reco:'¿Te reconoces? No tienes por qué pasarlo a solas.',
   revisada:true,   /* texto ya revisado: sin la marca «borrador» */
   pagina:'ansiedad.html',   /* página fija con dirección limpia; motivo.html?m=ansiedad lleva a ella */
   enfoqueDe:'de la ansiedad',
@@ -29,7 +29,7 @@ window.MOTIVOS=[
   /* frases propias (2026-11-08); antes eran citas literales de Marino Pérez Álvarez, guardadas en citas-para-la-web.md */
   quotes:[
     'Dividir las emociones en “negativas” y “positivas” es una visión demasiado simplista. Las emociones, en todo su espectro, pueden ser adaptativas y útiles para orientarnos',
-    'La ansiedad puede ser una señal de alerta ante una situación conflictiva ante la que actuar'
+    'La ansiedad puede ser una señal de alerta: nos avisa de una situación conflictiva ante la que actuar'
   ],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:'Sentir ansiedad es normal. La necesitamos para reaccionar ante lo que nos rodea: nos pone en alerta, nos prepara y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
@@ -45,8 +45,8 @@ window.MOTIVOS=[
     items:[
     ['Ansiedad generalizada','Preocupación constante por muchas cosas a la vez (el trabajo, la salud, la familia, el dinero), difícil de frenar, con tensión, cansancio y problemas de sueño. Se habla de ella cuando dura meses.','generalizada'],
     ['Ataques de ansiedad y pánico','Una subida brusca de miedo intenso, con palpitaciones, ahogo, mareo o sensación de irrealidad, que llega a su punto máximo en pocos minutos. Después, lo que más pesa suele ser el miedo a que vuelva.','panico'],
-    ['Agorafobia','Miedo a lugares o situaciones de los que sería difícil salir o recibir ayuda: el metro, las multitudes, las colas, salir solo de casa. A menudo va unida al pánico.','agorafobia'],
-    ['Ansiedad social','Miedo a ser juzgado o a hacer el ridículo delante de otros: hablar en público, las reuniones, comer acompañado. Muchas veces se confunde con timidez.','social'],
+    ['Agorafobia','Miedo a lugares o situaciones de los que sería difícil salir o recibir ayuda: el metro, las multitudes, las colas, salir de casa sin compañía. A menudo va unida al pánico.','agorafobia'],
+    ['Ansiedad social','Miedo a que te juzguen o a hacer el ridículo delante de otros: hablar en público, las reuniones, comer con más gente. Muchas veces se confunde con timidez.','social'],
     ['Fobias','Miedo intenso a algo concreto (volar, la sangre, los animales, las alturas) que lleva a evitarlo, aunque sepamos que no es tan peligroso.','fobias'],
     ['Obsesiones y TOC','Pensamientos que se imponen y causan malestar, y rituales (comprobar, lavar, ordenar) para calmarlos que acaban alimentándolos. Hoy los manuales lo clasifican aparte, pero lo incluimos aquí porque se vive como ansiedad.','toc'],
     ['Hipocondría o ansiedad por la salud','Miedo persistente a tener una enfermedad grave, con revisiones del cuerpo, búsquedas en internet y visitas al médico que tranquilizan durante poco tiempo.','hipocondria'],
@@ -85,7 +85,7 @@ window.MOTIVOS=[
   ],
   together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los amigos, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué situaciones responde y de qué te está avisando, para que puedas relacionarte con ella de otra manera. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus esferas vitales y te permitan avanzar.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
-  intro:'Para trabajar la ansiedad hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar la ansiedad hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   science:'Se suele distinguir el miedo, ante un peligro presente, de la ansiedad, ante uno anticipado. Cuando se mantiene y limita la vida diaria, los manuales clínicos describen varios cuadros: ansiedad generalizada, pánico, ansiedad social o fobias, entre otros. Es uno de los motivos de consulta más frecuentes. '+V,
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Álvarez (2006), «La terapia de conducta de tercera generación»; (2008), «Hyperreflexivity as a condition of mental disorder»; (2012), «La psicología positiva: magia simpática»; (2019), «Diagnóstico más allá de los síntomas» */
   beyond:'Decir «tengo ansiedad» la convierte en una pieza averiada que llevamos dentro. Suele ser más útil verla como algo que hacemos —anticipar— y preguntarse hacia dónde: casi siempre tiene dirección postal (el trabajo, la familia, la pareja, el dinero). A veces la anticipación se vuelve sobre sí misma: vigilar cada latido, pensar en cómo estoy pensando. Y las ideas que parecen «irracionales» también tienen sus razones.',
@@ -110,7 +110,7 @@ window.MOTIVOS=[
       ['Ansiedad generalizada','preocupación constante por muchas cosas a la vez, difícil de frenar.','generalizada'],
       ['Ataques de ansiedad y pánico','una subida brusca de miedo intenso, con palpitaciones o ahogo, y después el miedo a que vuelva.','panico'],
       ['Agorafobia','miedo a sitios de los que sería difícil salir, como el metro o las multitudes.','agorafobia'],
-      ['Ansiedad social','miedo a ser juzgado o a hacer el ridículo delante de otros.','social'],
+      ['Ansiedad social','miedo a que te juzguen o a hacer el ridículo delante de otros.','social'],
       ['Miedos y fobias','miedo intenso a algo concreto (volar, la sangre, las alturas) que lleva a evitarlo.','fobias'],
       ['Obsesiones y TOC','pensamientos que se imponen y rituales para calmarlos que acaban alimentándolos.','toc'],
       ['Hipocondría o ansiedad por la salud','miedo persistente a tener una enfermedad grave, que las revisiones solo calman un rato.','hipocondria'],
@@ -136,7 +136,7 @@ window.MOTIVOS=[
   h1:'Terapia para la depresión y el estado de ánimo',   /* encabezado a todo el ancho, en una línea, como en ansiedad */
   pagina:'depresion.html',   /* página fija; motivo.html?m=depresion lleva a ella */
   enfoqueDe:'de la depresión',
-  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',   /* frase junto a «Quizá te suene»; si falta, «Es frecuente sentirse así» */
+  reco:'¿Te reconoces? No tienes por qué pasarlo a solas.',   /* frase junto a «Quizá te suene»; si falta, «Es frecuente sentirse así» */
   revisada:true,   /* sin la marca «borrador» */
   k:'depresion estado de animo tristeza no tengo ganas de levantarme de la cama no veo futuro no tengo ganas de vivir no tengo ganas de nada sin ganas solo quiero dormir me siento vacio vacia solo sola triste apatia desanimo cansancio depresion mayor distimia depresion posparto depresion estacional anhedonia no disfruto de nada falta de motivacion soledad no deseada crisis existencial ansiedad y depresion',
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su tipo en esta página; ansiedad y duelo llevan a su terapia */
@@ -153,8 +153,8 @@ window.MOTIVOS=[
      y «La situación depresiva misma puede suponer un respiro, tregua, descanso, “ahorro de energía” en esfuerzos inútiles» */
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
-    'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. Y no es pereza ni debilidad: la depresión cambia cómo se vive el mundo y cómo lo concebimos. Nada nos atrae y el cuerpo pesa como una mochila llena de piedras, de forma que cuesta mucho levantarse, aunque uno quiera.',
-    'La depresión no es algo que uno tiene dentro: es una situación en la que uno está. Tiene que ver con lo que te ha pasado y con lo que te pasa, y precisamente por eso podemos hacer algo con ella.',
+    'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. Y no es pereza ni debilidad: la depresión cambia cómo se vive el mundo y cómo lo concebimos. Nada nos atrae y el cuerpo pesa como una mochila llena de piedras, de forma que cuesta mucho levantarse, aunque quieras.',
+    'La depresión no es algo que tengas dentro: es una situación en la que estás. Tiene que ver con lo que te ha pasado y con lo que te pasa, y precisamente por eso podemos hacer algo con ella.',
     'Como casi todo lo que nos pasa, la depresión es <strong>multicausal</strong>. Por lo tanto, nuestro enfoque es <strong>pluralista</strong>: nos quedamos con lo mejor de cada disciplina, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
@@ -203,17 +203,17 @@ window.MOTIVOS=[
     ['¿La depresión es por falta de serotonina?','No está demostrado. Es una explicación muy extendida, pero la investigación no la sostiene tal cual: el ánimo va ligado a la vida concreta, al cuerpo y a las situaciones que atraviesas. Por eso lo miramos todo en conjunto.'],
     ['¿Cuándo conviene ir al psicólogo por depresión?','Cuando la tristeza, el desánimo o la falta de interés duran semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de ti. No hace falta esperar a tocar fondo.'],
     ['¿Qué diferencia hay entre tristeza y depresión?','La tristeza es una emoción normal ante una pérdida o un problema, y suele ir cediendo. Hablamos de depresión cuando se mantiene durante semanas, se apaga el interés por casi todo y empieza a afectar al sueño, al apetito, al trabajo o a las relaciones.'],
-    ['¿Se cura la depresión?','Más que “curarse”, de la depresión se sale cambiando poco a poco la situación en la que uno está, y eso se puede trabajar. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para entender cómo has llegado ahí y para ir haciendo progresos.'],
+    ['¿Se cura la depresión?','Más que “curarse”, de la depresión se sale cambiando poco a poco la situación en la que estás, y eso se puede trabajar. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para entender cómo has llegado ahí y para ir haciendo progresos.'],
     ['¿Hace falta tomar antidepresivos?','En terapia psicológica no se recetan fármacos. Las guías clínicas recomiendan la psicoterapia como primera opción en la depresión leve o moderada y, en la más grave, combinada con medicación. Si ya tomas antidepresivos o conviene valorarlos, nos coordinamos con tu médico o psiquiatra.'],
     ['¿La terapia online funciona para la depresión?','Sí. La terapia online logra resultados comparables a la presencial, y a veces facilita empezar cuando cuesta salir de casa.'],
     ['¿Puedo dejar los antidepresivos?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico o psiquiatra, porque dejarlos bruscamente puede provocar síntomas de retirada. La terapia psicológica puede acompañarte durante ese proceso, y trabajar lo que te llevó a la depresión ayuda a que el cambio se sostenga.'],
     ['¿Puedo pedir la baja por depresión?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la depresión tiene que ver con un conflicto laboral o con acoso y hace falta un informe pericial, podemos hacerlo desde la psicología forense, con un profesional distinto de tu terapeuta, para que sea imparcial.'],
-    ['¿Cómo ayudar a alguien con depresión?','Escúchale sin juzgar y sin dar consejos rápidos; evita el «anímate», que suele hacer sentir peor. Proponle cosas pequeñas para hacer juntos y anímale a pedir ayuda profesional. Si habla de morir o de hacerse daño, llamad al <strong>024</strong>. Y cuídate también tú: acompañar desgasta.'],
+    ['¿Cómo ayudar a alguien con depresión?','Escucha a esa persona sin juzgar y sin dar consejos rápidos; evita el «anímate», que suele hacer sentir peor. Proponle cosas pequeñas para hacer juntos y anímala a pedir ayuda profesional. Si habla de morir o de hacerse daño, llama al <strong>024</strong>. Y cuídate también tú: acompañar desgasta.'],
     ['¿Atendéis la depresión cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. No ver salida es lo que más paraliza: todo se ve oscuro y parece que no hay esperanza de cambio. Por eso ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y avanzar poco a poco hacia lo que te importa.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
-  intro:'Para trabajar la depresión hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar la depresión hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08), por si se aprovecha más abajo: «Hablamos de depresión cuando la tristeza, el desánimo o la falta de interés se mantienen durante semanas y empiezan a afectar al trabajo, a las relaciones o al cuidado de uno mismo.»
      y el «how»: «Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: recuperar poco a poco actividades con sentido, revisar los pensamientos que hunden y moverte hacia lo que importa sin esperar a tener ganas.» */
   science:'Los manuales clínicos la describen por un conjunto de síntomas mantenidos en el tiempo: ánimo bajo, pérdida de interés, cambios en el sueño o el apetito, cansancio, culpa. Las guías recomiendan la psicoterapia, sola o junto con medicación según la intensidad.',
@@ -230,8 +230,8 @@ window.MOTIVOS=[
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
     basesIntro:[
-      'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. No es pereza ni debilidad: el cuerpo pesa como una mochila llena de piedras y cuesta mucho levantarse, aunque uno quiera.',
-      'La depresión no es algo que uno tiene dentro: es una situación en la que uno está. Por eso podemos hacer algo con ella, y por eso nuestro enfoque es <strong>pluralista</strong>.'
+      'Cuando estamos inundados por la depresión, nada tiene sentido y el futuro parece cerrado. No es pereza ni debilidad: el cuerpo pesa como una mochila llena de piedras y cuesta mucho levantarse, aunque quieras.',
+      'La depresión no es algo que tengas dentro: es una situación en la que estás. Por eso podemos hacer algo con ella, y por eso nuestro enfoque es <strong>pluralista</strong>.'
     ],
     bases:[
       '<strong>Los estudios de biología</strong> muestran que la depresión afecta al <a href="insomnio.html">sueño</a>, al apetito, al cansancio y al cuerpo entero. También influyen el <a href="ansiedad.html">estrés mantenido</a>, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
@@ -247,7 +247,7 @@ window.MOTIVOS=[
       ['Apatía, anhedonia y vacío','no disfrutar de lo que antes te gustaba o sentir que nada llena, aunque desde fuera todo parezca en orden.','apatia'],   /* 2026-11-10: unida a «Sensación de vacío» (máximo 10 líneas) */
       ['Soledad no deseada','cuando faltan vínculos o los que hay no sostienen.','soledad'],
       ['Crisis existencial','preguntas sobre el sentido de lo que hacemos, a menudo tras un cambio vital.','existencial'],
-      ['Depresión posparto','en el embarazo o en los meses tras el parto, también en la otra persona de la pareja.','posparto'],
+      ['Depresión posparto','en el embarazo o en los meses tras el parto; también puede afectar a la pareja.','posparto'],
       ['Depresión estacional','se repite en otoño e invierno, con menos luz.','estacional'],
       ['Depresión tras una pérdida','cuando un <a href="duelo.html">duelo</a> se alarga y el ánimo no se recupera.','perdida'],
       ['Depresión en personas mayores','a veces se nota como cansancio, olvidos o aislamiento, y se confunde con «cosas de la edad».','mayores']
@@ -271,7 +271,7 @@ window.MOTIVOS=[
   h1:'Terapia para el insomnio y los problemas de sueño',   /* encabezado a todo el ancho, en una línea, como en ansiedad y depresión */
   pagina:'insomnio.html',   /* página fija; motivo.html?m=insomnio lleva a ella */
   enfoqueDe:'del insomnio',
-  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  reco:'¿Te reconoces? No tienes por qué pasarlo a solas.',
   k:'insomnio sueno me agobia no poder dormirme me paso la noche dando vueltas me paso el dia agotado agotada no puedo dormir duermo mal me despierto por la noche madrugada me cuesta dormir mi cabeza no deja de pensar higiene del sueno cansancio insomnio de conciliacion despertares nocturnos me despierto a las 4 sueno no reparador insomnio cronico pastillas para dormir somniferos dejar los somniferos menopausia turnos pesadillas insomnio por ansiedad estres',
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página (tipos o la pregunta de higiene del sueño); las demás llevan a su terapia */
   subs:[['Insomnio de conciliación','#conciliacion'],['Despertares nocturnos','#despertares'],['Despertarse de madrugada','#madrugada'],['Sueño no reparador','#noreparador'],['Insomnio crónico','#cronico'],['Insomnio por ansiedad o estrés','ansiedad'],['Insomnio y depresión','depresion'],['Pesadillas','#pesadillas'],['Higiene del sueño','#higiene'],['Dependencia de pastillas para dormir','adicciones'],['Insomnio en la menopausia','#menopausia'],['Trabajo a turnos','#turnos'],['Sueño en niños y adolescentes','infancia']],
@@ -279,10 +279,10 @@ window.MOTIVOS=[
   tipos:{titulo:'Tipos de insomnio y problemas de sueño',
     intro:'El insomnio no es uno solo: no es lo mismo no poder dormirse que despertarse de madrugada. Distinguirlos ayuda a saber por dónde empezar, aunque a menudo se combinan.',
     items:[
-    ['Insomnio de conciliación','Te acuestas y no llega el sueño: pasan los minutos, empiezas a pensar y, cuanto más lo intentas, más despierto estás.','conciliacion'],
+    ['Insomnio de conciliación','Te acuestas y no llega el sueño: pasan los minutos, empiezas a pensar y, cuanto más lo intentas, más te desvelas.','conciliacion'],
     ['Despertares nocturnos','Te duermes, pero te despiertas varias veces durante la noche y te cuesta volver a dormirte.','despertares'],
-    ['Despertarse de madrugada','Te despiertas a las 4 o a las 5 y ya no vuelves a dormirte. A menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
-    ['Sueño no reparador','Duermes horas, pero te levantas igual de cansado. No basta con dormir: el sueño tiene que llegar a ser reparador. Si además roncas, alguien nota pausas en tu respiración o te duermes de día, consulta a tu médico: puede ser apnea del sueño.','noreparador'],
+    ['Despertarse de madrugada','Te despiertas a las 3 o a las 4 y ya no vuelves a dormirte. A menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
+    ['Sueño no reparador','Duermes horas, pero te levantas sin haber descansado. No basta con dormir: el sueño tiene que llegar a ser reparador. Si además roncas, alguien nota pausas en tu respiración o te duermes de día, consulta a tu médico: puede ser apnea del sueño.','noreparador'],
     ['Insomnio crónico','Se habla de él cuando duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
     ['Pesadillas','Sueños que despiertan con angustia. Son frecuentes después de experiencias muy duras, como ocurre en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
     ['Insomnio en la menopausia','Los sofocos, los sudores nocturnos y los cambios hormonales interrumpen el sueño. También aquí la terapia ayuda a dormir mejor.','menopausia'],
@@ -318,7 +318,7 @@ window.MOTIVOS=[
     ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.'],
     ['¿Tratáis el insomnio cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
-  feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Miro cómo pasan las horas y no me duermo','Me siento cansado todo el tiempo'],
+  feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Miro cómo pasan las horas y no me duermo','No consigo descansar nunca'],
   /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
      Cervantes, citado en Pérez Álvarez (2005) «Psicología del Quijote», pág. 4 del PDF;
      Pérez Álvarez y Fernández Hermida (1984) «Cómo llegar a ser un mejor terapeuta» (ver citas-para-la-web.md) */
@@ -331,19 +331,19 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
     'Dormir bien no es un lujo. El sueño es descanso, y del descanso dependen la atención, la memoria, el humor y, en general, cómo nos desenvolvemos en la vida. Por eso el insomnio importa tanto: muchas veces está en el centro de otros problemas psicológicos, como <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la depresión</a>, y los agrava.',
-    'Una de sus características es el <strong>círculo de preocupación por no dormir</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño, y no dormir aumenta la preocupación.',
+    'Una de sus características es el <strong>círculo de la preocupación</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño y, cuanto menos dormimos, más nos preocupamos.',
     'Como casi todo lo que nos pasa, el insomnio es <strong>multicausal</strong>. Por lo tanto, nuestro enfoque es <strong>pluralista</strong>: nos quedamos con lo mejor de cada disciplina, sin que ninguna lo explique todo por sí sola.'
   ],
   bases:[
     '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: uno es el ritmo circadiano, que marca la luz del día, y el otro la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan, y otras cosas, como la menopausia o las pesadillas, interrumpen el sueño. Además, no basta con dormir horas: el sueño profundo es el más reparador para el cuerpo y ayuda a consolidar los recuerdos, y durante la fase REM se procesan las emociones.',
     'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en estado de alerta: el cuerpo cansado y la mente despierta. Por eso el cansancio, por sí solo, no garantiza dormir.',
     'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección. Sus piezas principales son el <strong>control de estímulos</strong> —usar la cama solo para dormir y levantarse si el sueño no llega— y ajustar el tiempo que pasamos en la cama. La <strong>higiene del sueño</strong> —horarios regulares, luz natural por la mañana, menos pantallas y cafeína por la tarde— la acompaña, aunque por sí sola suele quedarse corta.',
-    'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios recortan el sueño de mucha gente.'
+    'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y cenar y acostarse tarde recortan el sueño de mucha gente.'
   ],
   together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— y entretejemos lo que sabemos del cuerpo, de lo que haces y de cómo está organizada tu vida para romper el círculo y encontrar lo que te funcione a ti: qué hábitos ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario (ya no hay citas); eran: Pérez Álvarez y Fernández Hermida (1984), «Cómo llegar a ser un mejor terapeuta»; Pérez Álvarez (2005), «Psicología del Quijote»; Núria Roure, entrevista en Moncloa.com (2025) */
   cta:'Trabajamos contigo para que la noche deje de ser una pelea.',
-  intro:'Para trabajar el insomnio hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar el insomnio hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El insomnio es la dificultad para conciliar el sueño, mantenerlo o que sea reparador, cuando se repite y se nota al día siguiente.»
      y el «how»: «Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual para el insomnio, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: ajustar horarios y hábitos, y dejar de pelear por dormir.» */
   science:'La terapia cognitivo-conductual para el insomnio es el tratamiento psicológico de primera elección en las guías clínicas. Incluye la higiene del sueño, pero no se reduce a ella.',
@@ -360,20 +360,20 @@ window.MOTIVOS=[
   corta:{
     basesIntro:[
       'Dormir bien no es un lujo: del descanso dependen la atención, la memoria y el humor. Por eso el insomnio importa tanto, y muchas veces agrava otros problemas, como <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la depresión</a>.',
-      'Una de sus características es el <strong>círculo de preocupación por no dormir</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño, y no dormir aumenta la preocupación.'
+      'Una de sus características es el <strong>círculo de la preocupación</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño y, cuanto menos dormimos, más nos preocupamos.'
     ],
     bases:[
       '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan.',
       'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en alerta: el cuerpo cansado y la mente despierta.',
       'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección: usar la cama solo para dormir, levantarse si el sueño no llega y ajustar el tiempo en la cama. La <strong>higiene del sueño</strong> la acompaña, aunque por sí sola suele quedarse corta.',
-      'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y nuestros horarios recortan el sueño de mucha gente.'
+      'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y cenar y acostarse tarde recortan el sueño de mucha gente.'
     ],
     together:'El insomnio suele mantenerse por la propia anticipación («¿y si esta noche tampoco?») y por cómo vamos reorganizando el día entero alrededor de la noche. Lo pensamos junto con lo que pasa de día —el trabajo, las preocupaciones, los hábitos— para romper el círculo y encontrar lo que te funcione a ti: qué ajustar, qué dejar de forzar y cómo volver a confiar en el sueño.',
     tipos:{titulo:'Problemas de sueño más frecuentes', intro:'No es lo mismo no poder dormirse que despertarse de madrugada, aunque a menudo se combinan.', items:[
-      ['Insomnio de conciliación','te acuestas y no llega el sueño; cuanto más lo intentas, más despierto estás.','conciliacion'],
+      ['Insomnio de conciliación','te acuestas y no llega el sueño; cuanto más lo intentas, más te desvelas.','conciliacion'],
       ['Despertares nocturnos','te despiertas varias veces y te cuesta volver a dormirte.','despertares'],
-      ['Despertarse de madrugada','a las 4 o a las 5 y ya no vuelves a dormirte; a menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
-      ['Sueño no reparador','duermes horas, pero te levantas igual de cansado; si roncas o te duermes de día, consulta a tu médico.','noreparador'],
+      ['Despertarse de madrugada','a las 3 o a las 4 y ya no vuelves a dormirte; a menudo va unido a preocupaciones o al <a href="depresion.html">ánimo bajo</a>.','madrugada'],
+      ['Sueño no reparador','duermes horas, pero te levantas sin haber descansado; si roncas o te duermes de día, consulta a tu médico.','noreparador'],
       ['Insomnio crónico','duermes mal al menos tres noches por semana durante tres meses y lo notas de día.','cronico'],
       ['Pesadillas','sueños que despiertan con angustia, frecuentes tras experiencias muy duras, como en el <a href="ansiedad.html#postraumatico">estrés postraumático</a>.','pesadillas'],
       ['Insomnio en la menopausia','los sofocos y los cambios hormonales interrumpen el sueño.','menopausia'],
@@ -400,7 +400,7 @@ window.MOTIVOS=[
   seoDesc:'Tratamiento psicológico de TCA: anorexia, bulimia, atracones u obsesión por el peso, junto a medicina y nutrición. Centro sanitario en Madrid y online.',
   pagina:'alimentacion.html',   /* página fija; motivo.html?m=alimentacion lleva a ella */
   enfoqueDe:'de los problemas de alimentación',
-  reco:'¿Te reconoces? No tienes por qué pasarlo solo.',
+  reco:'¿Te reconoces? No tienes por qué pasarlo a solas.',
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable (tipos o la pregunta «¿Qué es un TCA?»); ansiedad, cuerpo y adolescentes llevan a su terapia */
   subs:[['Atracones','#atracones'],['Bulimia','#bulimia'],['Anorexia','#anorexia'],['Comer por ansiedad','ansiedad'],['Hambre emocional','#hambre'],['Obsesión por el peso o la figura','#peso'],['Insatisfacción con el cuerpo','autoestima'],['Dietas restrictivas','#dietas'],['Culpa después de comer','#culpa'],['Ejercicio compulsivo','#ejercicio'],['Ortorexia: obsesión por comer sano','#ortorexia'],['Vigorexia','#vigorexia'],['Trastornos de la conducta alimentaria (TCA)','#tca'],['Problemas con la comida en adolescentes','infancia']],
   /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2 único, 3B —TCC como base, también con familias, ACT complemento—, 4 con el aviso de riesgo físico, 5 como en las demás) */
@@ -416,7 +416,7 @@ window.MOTIVOS=[
     ['Culpa después de comer','Sentirte mal, castigarte o prometerte compensar después de comer, aunque hayas comido con normalidad.','culpa'],
     ['Ejercicio compulsivo','Hacer ejercicio para compensar lo comido, sentir angustia si no puedes entrenar o seguir aunque haya dolor o una lesión.','ejercicio'],
     ['Ortorexia','Obsesión por comer «sano» o «limpio» que va dejando fuera alimentos, situaciones y personas.','ortorexia'],
-    ['Vigorexia','Preocupación constante por no ser lo bastante musculado, con entrenamiento, dietas y a veces sustancias. Cada vez más frecuente en hombres jóvenes.','vigorexia']
+    ['Vigorexia','Preocupación constante por no tener un cuerpo lo bastante musculoso, con entrenamiento, dietas y a veces sustancias. Cada vez más frecuente en hombres jóvenes.','vigorexia']
   ]},
   proceso:{titulo:'Cómo trabajamos los problemas de alimentación', pasos:[
     ['Primera entrevista, gratuita.','La hace siempre Daniel de la Torre, director del centro. Nos cuentas qué te pasa y lo pensamos juntos.'],
@@ -442,7 +442,7 @@ window.MOTIVOS=[
     ['¿Cómo dejar de comer por ansiedad?','Prohibirse comer suele empeorarlo. Ayuda más comer con regularidad, sin saltarse comidas; entender qué malestar intentas calmar y buscar otras formas de atenderlo. Si la <a href="ansiedad.html">ansiedad</a> está detrás, la trabajamos a la vez.'],
     ['¿Se puede superar un trastorno de la conducta alimentaria?','Es posible, aunque suele llevar tiempo. Cada proceso es distinto: no prometemos plazos, pero sí acompañarte para que la comida deje de ocupar el centro de tu vida y puedas relacionarte con ella sin miedo ni culpa.'],
     ['¿Cómo ayudar a alguien con un TCA?','Habla desde la preocupación, sin juicios sobre su peso ni su cuerpo; evita los comentarios sobre lo que come y anímale a pedir ayuda profesional. Si es menor, la familia tiene un papel en el tratamiento y os orientaremos sobre cómo acompañar las comidas. Si notas pérdida de peso importante, desmayos o vómitos frecuentes, hace falta una valoración médica cuanto antes.'],
-    ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con ellos cuando hace falta.'],
+    ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con esos profesionales siempre que es necesario.'],
     ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.'],
     ['¿Tratáis los TCA cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
@@ -457,18 +457,18 @@ window.MOTIVOS=[
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   basesIntro:[
     'Es un problema en el que aparecen la <strong>culpa</strong> y una <strong>vigilancia constante</strong> del cuerpo, que poco a poco se vuelven el centro de nuestra vida. A veces son <strong>atracones</strong>; otras, <strong>restricción</strong> (<strong>anorexia</strong>) o compensaciones tras comer (<strong>bulimia</strong>); otras, <strong>ejercicio compulsivo</strong> o la obsesión por comer «sano» (<strong>ortorexia</strong>) o por el músculo (<strong>vigorexia</strong>).',
-    'Y ocurre algo paradójico: lo que hacemos para intentar tener una relación sana con la alimentación —dietas estrictas, saltarse comidas, contar cada caloría, prohibirse alimentos, pesarse a diario— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
+    'Y ocurre algo paradójico: lo que hacemos para intentar tener una relación sana con la alimentación —dietas estrictas, saltarse comidas, contar cada caloría, prohibirse alimentos, pesarse a diario— acaba formando parte del problema. La comida se convierte en una <strong>prisión</strong>.',
     'Cada caso es distinto: en cada persona se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por esto nuestro enfoque es <strong>pluralista</strong>.'   /* alimentación (2026-11-08) */
   ],
   bases:[
     'Pasar muchas horas sin comer o seguir reglas muy rígidas con la comida aumenta el hambre. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado.',
     '<strong>Los estudios de neurología</strong> muestran que comer activa los sistemas de recompensa del cerebro y tranquiliza durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
-    'Es frecuente una espiral: comer para calmarse, sentir culpa y <strong>compensar</strong> —con ejercicio, dejando de comer o vomitando— y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no frena la espiral: la alimenta. A veces el vómito empieza como un recurso puntual y, con la repetición, se convierte en una <strong>compulsión</strong> que apaga la angustia por un momento; por eso no se frena solo con proponérselo. Entender qué función cumple la comida en tu vida ayuda a romperla.',
+    'Es frecuente una espiral: comer para calmarse, sentir culpa y <strong>compensar</strong> —con ejercicio, dejando de comer o vomitando— y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no la frena: la alimenta. A veces el vómito empieza como un recurso puntual y, con la repetición, se convierte en una <strong>compulsión</strong> que apaga la angustia por un momento; por eso no se frena solo con proponérselo. Entender qué función cumple la comida en tu vida ayuda a romperla.',
     'Además, vivimos rodeados de mensajes sobre cuerpos ideales, dietas y autocontrol. <strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en <a href="infancia.html">adolescentes</a> y mujeres jóvenes, y cada vez más en hombres jóvenes, con la presión por tener un cuerpo musculado.'
   ],
   together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. La sigla TCA ayuda a ponerle nombre y a buscar ayuda, pero no explica a nadie: preferimos no reducirlo a ella. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
   cta:'Podemos ayudarte a salir del círculo de comer, culparte y compensar.',
-  intro:'Para trabajar los problemas de alimentación hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar los problemas de alimentación hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas de alimentación cuando la comida, el peso o la figura ocupan tanto espacio que condicionan el día a día: restricciones, atracones, compensaciones o una preocupación constante.» */
   /* «how» anterior (2026-11-08): «Lo abordamos desde un enfoque multidimensional, sobre todo con terapia cognitivo-conductual, terapia de aceptación y compromiso (ACT) y otras terapias contextuales: regularizar la alimentación, entender qué función cumple la comida en tu vida y relacionarte de otra manera con tu cuerpo.» */
   science:'Los manuales clínicos describen varios cuadros (anorexia, bulimia, trastorno por atracón, entre otros). Pueden tener consecuencias médicas, por eso el tratamiento suele requerir coordinación con medicina y nutrición. '+V,
@@ -484,16 +484,16 @@ window.MOTIVOS=[
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
     basesIntro:[
-      'Es un problema en el que aparecen la <strong>culpa</strong> y una <strong>vigilancia constante</strong> del cuerpo, que poco a poco se vuelven el centro de nuestra vida. Y ocurre algo paradójico: lo que hacemos para controlar la comida —dietas estrictas, saltarse comidas, prohibirse alimentos, pesarse a diario— acaba siendo parte del problema. La comida termina siendo una <strong>prisión</strong>.',
+      'Es un problema en el que aparecen la <strong>culpa</strong> y una <strong>vigilancia constante</strong> del cuerpo, que poco a poco se vuelven el centro de nuestra vida. Y ocurre algo paradójico: lo que hacemos para controlar la comida —dietas estrictas, saltarse comidas, prohibirse alimentos, pesarse a diario— acaba formando parte del problema. La comida se convierte en una <strong>prisión</strong>.',
       'En cada persona se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
     ],
     bases:[
       'Pasar muchas horas sin comer o seguir reglas muy rígidas aumenta el hambre. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado.',
       '<strong>Los estudios de neurología</strong> muestran que comer activa los sistemas de recompensa del cerebro y tranquiliza durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
-      'Es frecuente una espiral: comer para calmarse, sentir culpa, <strong>compensar</strong> y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no frena la espiral: la alimenta. Entender qué función cumple la comida en tu vida ayuda a romperla.',
+      'Es frecuente una espiral: comer para calmarse, sentir culpa, <strong>compensar</strong> y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no la frena: la alimenta. Entender qué función cumple la comida en tu vida ayuda a romperla.',
       '<strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en <a href="infancia.html">adolescentes</a> y mujeres jóvenes, y cada vez más en hombres jóvenes, con la presión por tener un cuerpo musculado.'
     ],
-    together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. La sigla TCA ayuda a ponerle nombre, pero no explica a nadie. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
+    together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. Un diagnóstico ayuda a orientarse, pero no cuenta tu historia. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
     tipos:{titulo:'Problemas con la comida más frecuentes', intro:'A menudo se mezclan o pasan de uno a otro.', items:[
       ['Atracones','comer mucho en poco tiempo, sin poder parar, y después culpa o vergüenza.','atracones'],
       ['Bulimia','atracones seguidos de compensaciones, como vomitar, ayunar o hacer ejercicio en exceso.','bulimia'],
@@ -504,7 +504,7 @@ window.MOTIVOS=[
       ['Culpa después de comer','castigarte o prometerte compensar, aunque hayas comido con normalidad.','culpa'],
       ['Ejercicio compulsivo','entrenar para compensar lo comido o seguir aunque haya dolor.','ejercicio'],
       ['Ortorexia','obsesión por comer «sano» que va dejando fuera alimentos, situaciones y personas.','ortorexia'],
-      ['Vigorexia','preocupación constante por no ser lo bastante musculado.','vigorexia']
+      ['Vigorexia','preocupación constante por no tener un cuerpo lo bastante musculoso.','vigorexia']
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos los problemas de alimentación',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
@@ -525,7 +525,9 @@ window.MOTIVOS=[
   seoDesc:'Discusiones, celos, infidelidad o crisis de pareja: terapia de pareja para aprender a hablar sin haceros daño. Centro sanitario en Madrid y online.',
   pagina:'pareja.html',   /* página fija; motivo.html?m=pareja lleva a ella */
   enfoqueDe:'de la pareja',
-  reco:'¿Os reconocéis? No tenéis por qué pasarlo solos.',
+  reco:'¿Os reconocéis? No tenéis por qué pasarlo a solas.',
+  bandaTexto:'Trabajamos para aliviar el sufrimiento, paso a paso: nos contáis qué os pasa, lo pensamos juntos y buscamos cómo resolverlo.',   /* «Podemos ayudarte» en vosotros (2026-11-11) */
+  bandaDonde:'Podéis visitarnos',
   /* etiquetas enlazadas (2026-11-09): '#ancla' abre su desplegable en esta página; la falta de deseo lleva a sexual */
   subs:[['Discusiones constantes','#discusiones'],['Problemas de comunicación','#comunicacion'],['Crisis de pareja','#crisis'],['Celos','#celos'],['Infidelidad','#infidelidad'],['Dependencia emocional','#dependencia'],['Apego','#apego'],['Narcisismo en la pareja','#narcisismo'],['Falta de deseo en la pareja','sexual'],['La pareja tras tener hijos','#hijos'],['Rupturas, separaciones y divorcios','#rupturas']],
   /* apartados nuevos (2026-11-09, elegidos por el usuario: 1A, 2B con sesión individual con cada uno, 3 mezcla sin Gottman ni sistémica, 4 y 5 como en ansiedad) */
@@ -562,16 +564,16 @@ window.MOTIVOS=[
   /* preguntas frecuentes (2026-11-08); 2026-11-09: 5 nuevas (6.1B infidelidad, 6.2B de parte de uno, 6.3 sesiones, 6.4A precio sin cifra, 6.5 local), en desplegables */
   faqDesplegable:true,
   faq:[
-    ['¿Se puede superar una infidelidad?','Sí, muchas parejas lo consiguen, aunque lleva tiempo. Hace falta entender qué pasó, reparar la confianza poco a poco y decidir juntos si queréis seguir. También acompañamos a quien decide no seguir, para que la ruptura haga menos daño.'],
+    ['¿Se puede superar una infidelidad?','Sí, muchas parejas lo consiguen, aunque lleva tiempo. Hace falta entender qué pasó, reparar la confianza poco a poco y decidir juntos si queréis seguir. También acompañamos a quien decide no seguir, para que la ruptura sea lo más cuidadosa posible.'],
     ['¿Cuándo conviene ir a terapia de pareja?','Cuando las discusiones se repiten sin salida, atravesáis una crisis, cuesta hablar sin haceros daño o sentís que os habéis distanciado. No hace falta esperar a estar al borde de la ruptura: cuanto antes, más margen hay.'],
-    ['¿El psicólogo se pone de parte de uno?','No. Escuchamos a los dos por igual; lo que está en el centro es la relación y cómo os tratáis, no quién tiene razón. Por eso, además de las sesiones conjuntas, hacemos una sesión individual con cada uno.'],
+    ['¿La terapia toma partido por alguien?','No. Escuchamos a los dos por igual; lo que está en el centro es la relación y cómo os tratáis, no quién tiene razón. Por eso, además de las sesiones conjuntas, hacemos una sesión individual con cada uno.'],
     ['¿Puedo ir a terapia de pareja sin mi pareja?','Sí. A veces solo una de las dos personas quiere empezar, y trabajar tu parte de la relación ya puede cambiar cosas.'],
     ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudaros a tomar la decisión con calma y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
     ['¿Cuántas sesiones hacen falta?','Depende de cada pareja. Empezamos con sesiones semanales de 60 minutos y, cuando notáis avances, las espaciamos. En la primera entrevista os damos una idea orientativa y la revisamos sobre la marcha.'],
-    ['¿Cuánto cuesta la terapia de pareja?','La primera entrevista es gratuita. El precio de las sesiones te lo contamos cuando nos llames o nos escribas.'],   /* sin cifra: el usuario prefiere que llamen y pregunten */
+    ['¿Cuánto cuesta la terapia de pareja?','La primera entrevista es gratuita. El precio de las sesiones os lo contamos cuando nos llaméis o nos escribáis.'],   /* sin cifra: el usuario prefiere que llamen y pregunten */
     ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si sufres violencia de género, puedes llamar al <strong>016</strong> o escribir por WhatsApp al <strong>600 000 016</strong>: es gratuito, confidencial y no deja rastro en la factura. En cualquier caso, en una urgencia, llama al <strong>112</strong>.'],
     ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.'],
-    ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>, incluso desde sitios distintos.']
+    ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'pareja terapia de pareja mi pareja y yo no paramos de discutir siempre discutimos no nos entendemos nos queremos pero no funciona superar una ruptura apego narcisismo narcisista dependencia emocional relacion celos infidelidad separacion divorcio',
   feel:['Mi pareja y yo no paramos de discutir','Siempre discutimos, no nos entendemos','Nos queremos, pero no funciona','No consigo superar una ruptura'],
@@ -592,12 +594,12 @@ window.MOTIVOS=[
   bases:[
     '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta, como en <a href="ansiedad.html">la ansiedad</a>: el corazón se acelera y cuesta escuchar y pensar con claridad. Por eso, a veces, lo mejor es parar, calmarse y retomar la conversación después.',
     '<strong>Los estudios de psicología</strong> muestran que hay cuatro formas de discutir que más dañan una relación y que conviene saber detectar: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>, es decir, cerrarse y dejar de responder. De todas, el desprecio —o sentirse despreciado— es la que más pesa: es uno de los mejores predictores de ruptura.',
-    'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («eres un egoísta»).',
+    'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («solo piensas en ti»).',
     '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen en la vida en pareja: muchos conflictos —celos, infidelidades, reparto de tareas— tienen que ver con lo que pasa alrededor.'
   ],
   together:'En terapia trabajamos la <strong>comunicación</strong>: aprender a reconocer esas formas de discutir, a quejarse sin atacar y a reparar después de una discusión. Para ello necesitamos construir una base de <strong>cariño y respeto mutuo</strong>, que es el mejor antídoto contra el desprecio. Palabras como «narcisista» o «apego ansioso» pueden ayudar a nombrar algo, y las usamos como punto de partida, pero no como sentencia. Lo trabajamos con vosotros, acompañándoos en vuestras decisiones.',
   cta:'Os ayudamos a entender lo que os pasa desde la comprensión y la compasión, construyendo una base de aprecio y confianza.',
-  intro:'Para trabajar los problemas de pareja hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar los problemas de pareja hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «La terapia de pareja es un espacio para entender qué os está pasando y probar otras maneras de relacionaros, tanto si queréis seguir como si estáis pensando en separaros. También atendemos a una sola persona que quiere trabajar su relación.» */
   science:'Hay enfoques de terapia de pareja con estudios controlados, como la terapia conductual integrativa o la centrada en las emociones. '+V,
   refs:'',   /* retirada el 2026-11-08 a petición del usuario; era: The Gottman Institute, «The Four Horsemen: criticism, contempt, defensiveness and stonewalling» y «The Four Horsemen: the antidotes» (gottman.com) */
@@ -619,10 +621,10 @@ window.MOTIVOS=[
     bases:[
       '<strong>Los estudios de biología</strong> muestran que, en una discusión intensa, el cuerpo entra en alerta, como en <a href="ansiedad.html">la ansiedad</a>, y cuesta escuchar. A veces lo mejor es parar y retomar la conversación después.',
       '<strong>Los estudios de psicología</strong> señalan cuatro formas de discutir que más dañan una relación: la <strong>crítica</strong>, el <strong>desprecio</strong>, la <strong>actitud defensiva</strong> y la <strong>evasión</strong>. De todas, el desprecio es la que más pesa.',
-      'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («eres un egoísta»).',
+      'Quejarse no es lo mismo que criticar: la queja habla de algo concreto («me molesta que llegues tarde sin avisar»); la crítica ataca a la persona («solo piensas en ti»).',
       '<strong>Los estudios de sociología</strong> señalan el peso del trabajo, la crianza, el dinero o las familias de origen: muchos conflictos tienen que ver con lo que pasa alrededor de la pareja.'
     ],
-    together:'En terapia trabajamos la <strong>comunicación</strong>: reconocer esas formas de discutir, quejarse sin atacar y reparar después, sobre una base de <strong>cariño y respeto mutuo</strong>. Palabras como «narcisista» o «apego ansioso» nos sirven como punto de partida, no como sentencia. Y os acompañamos en vuestras decisiones.',
+    together:'En terapia trabajamos la <strong>comunicación</strong>: reconocer esas formas de discutir, quejarse sin atacar y reparar después, sobre una base de <strong>aprecio y confianza</strong>. Palabras como «narcisista» o «apego ansioso» nos sirven como punto de partida, no como sentencia. Y os acompañamos en vuestras decisiones.',
     tipos:{titulo:'Problemas de pareja más frecuentes', intro:'Casi nunca llegan solos: unos tiran de otros.', items:[
       ['Discusiones y problemas de comunicación','discutís por todo o siempre por lo mismo; uno ataca, el otro se cierra, y lo importante no llega a decirse.','discusiones'],   /* 2026-11-10: dos líneas en una (máximo 10) */
       ['Crisis de pareja','un cambio, una pérdida o el desgaste hacen que la relación se tambalee.','crisis'],
@@ -633,7 +635,7 @@ window.MOTIVOS=[
       ['Narcisismo en la pareja','la relación gira siempre alrededor del otro; usamos la palabra para hablar, no para diagnosticar.','narcisismo'],
       ['Falta de deseo','cambia con los años, el estrés o la crianza; lo trabajamos también en terapia sexual.','deseo'],
       ['La pareja tras tener hijos','menos tiempo, menos sueño y nuevos roles.','hijos'],
-      ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, para que haya menos daño, también en el <a href="duelo.html">duelo</a>.','rupturas']
+      ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, también el <a href="duelo.html">duelo</a>.','rupturas']
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos en terapia de pareja',
       pasos:[],   /* 2026-11-11: sin pasos, un solo párrafo corto (los pasos anteriores, en pasosQuitados) */
@@ -672,7 +674,7 @@ window.MOTIVOS=[
     ['Falta de concentración','Empezar algo y perder el hilo, sobre todo en tareas largas o poco interesantes. En cambio, en lo que apasiona, la atención puede ser muy intensa.','concentracion'],
     ['Procrastinación','Aplazar lo importante hasta el último momento. No es pereza: cuesta arrancar si no hay una urgencia que empuje.','procrastinacion'],
     ['Impulsividad','Hablar o actuar antes de pensarlo, interrumpir, decidir deprisa. Cuando afecta sobre todo a las emociones y a las relaciones, puede tener que ver también con <a href="personalidad.html">la personalidad</a>.','impulsividad'],
-    ['Inquietud','En los adultos, más que moverse, es una inquietud por dentro: cuesta estar quieto, esperar o descansar.','inquietud'],
+    ['Inquietud','En los adultos, más que moverse, es una inquietud por dentro: cuesta no moverse, esperar o descansar.','inquietud'],
     ['Hiperactividad','Se ve más en la infancia: no parar, levantarse, moverse sin descanso. Con los años suele convertirse en inquietud.','hiperactividad'],
     ['Desorganización','Cuesta planificar, ordenar el tiempo y los espacios y calcular cuánto lleva cada cosa.','desorganizacion'],
     ['Olvidos y despistes','Perder cosas, olvidar citas o encargos, dejar tareas a medias.','olvidos'],
@@ -698,7 +700,7 @@ window.MOTIVOS=[
   faq:[
     ['¿Cómo saber si tengo TDAH?','Despistarse o aplazar tareas de vez en cuando es normal. Se habla de TDAH cuando las dificultades de atención, inquietud o impulsividad vienen de la infancia, se mantienen y afectan a los estudios, al trabajo o a las relaciones. Un cuestionario en internet no basta: hace falta una valoración profesional.'],
     ['¿Cómo se diagnostica el TDAH en adultos?','Con una valoración clínica: una entrevista sobre tu historia desde la infancia, cuestionarios y, si es posible, lo que cuentan personas cercanas. No hay un análisis ni una prueba de imagen que lo detecte. Lo hacemos con calma y sin prisa por poner una etiqueta.'],
-    ['¿Existe el TDAH en adultos?','Sí. A veces se descubre después de que diagnostiquen a un hijo. En los adultos se nota más en la desorganización, los olvidos, la procrastinación o la inquietud interna que en la hiperactividad.'],
+    ['¿Existe el TDAH en adultos?','Sí. A veces se descubre después de que diagnostiquen a un hijo. Muchas personas adultas lo descubren al ver que llevan toda la vida compensando despistes y olvidos con un esfuerzo enorme.'],
     ['¿Es TDAH o es ansiedad?','La <a href="ansiedad.html">ansiedad</a> también dispersa la atención: cuando hay preocupación, cuesta concentrarse. La diferencia es que en el TDAH las dificultades vienen de la infancia y aparecen en varios ámbitos (casa, estudios, trabajo). A veces se dan las dos.'],
     ['¿El TDAH se quita con la edad?','En muchas personas las dificultades disminuyen con los años; en otras siguen, aunque cambian de forma: la hiperactividad suele convertirse en inquietud. Con ayuda se aprende a organizarse.'],
     ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento por escrito de quienes tienen la patria potestad y, desde los 16 años, el del propio adolescente. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
@@ -707,7 +709,7 @@ window.MOTIVOS=[
     ['¿Atendéis el TDAH en adultos cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'tdah atencion no me puedo concentrar no consigo concentrarme me cuesta concentrarme se me olvidan las cosas estudiar como saber si tengo tdah adulto hiperactividad despiste impulsividad infancia colegio ayudar a mi hijo',
-  feel:['No me puedo concentrar en nada','Me cuesta concentrarme y se me olvidan las cosas','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
+  feel:['Empiezo mil cosas y no acabo ninguna','Lo dejo todo para el último momento','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* citas literales de Marino Pérez Álvarez: (2014) entrevista en Infocop «Los intereses que hay detrás del diagnóstico del TDAH»;
      (2017) «The Four Causes of ADHD: Aristotle in the Classroom», pág. 11 del PDF (en inglés: la traducción es nuestra) */
@@ -717,11 +719,11 @@ window.MOTIVOS=[
      «Resituar el problema en su contexto que no es otro que el del aprendizaje y educación de la atención y la actividad de los niños, seguramente una tarea más difícil de lo que se pensaba, sobre todo, en el mundo de hoy» */
   quotes:[
     'Un diagnóstico describe lo que pasa, pero no explica quién eres. Detrás de cada etiqueta hay una persona con su historia y su manera de vivir',
-    'Un niño inquieto no es un niño enfermo, ni un adulto disperso es un adulto disfuncional. Esa inquietud también puede ser energía, curiosidad y ganas de descubrir',
+    'La inquietud en la infancia no es una enfermedad, ni la dispersión en la edad adulta un trastorno. Esa inquietud también puede ser energía, curiosidad y ganas de descubrir',
     'La paciencia, la constancia y la tolerancia a la frustración también se entrenan. No se trata de convertir a nadie en enfermo, sino de darle herramientas'
   ],
   basesIntro:[
-    'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH es un problema, pero no una enfermedad. Podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades. Vemos a la persona entera: su manera de estar en el mundo, su curiosidad, su energía y lo que le cuesta.',
+    'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH no es una enfermedad. Podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades. Vemos a la persona entera: su manera de estar en el mundo, su curiosidad, su energía y lo que le cuesta.',
     'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. Las dificultades y especificidades de la atención y la inquietud existen y hay que entenderlas en su amplitud, sin medicalizar antes de tiempo lo que a veces es una forma de ser. Tratamos de ayudar mirando a la persona, no solo el diagnóstico.',
     'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
   ],
@@ -731,10 +733,10 @@ window.MOTIVOS=[
     'Prestar atención es algo que se aprende, y la vida actual no lo pone fácil. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. A veces la ayuda pasa también por orientar a <a href="infancia.html">la familia</a> y al colegio.',
     '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, impulsivo y pendiente de muchas cosas a la vez, con <a href="adicciones.html">pantallas</a> que reclaman la atención a cada momento y niños acostumbrados a tenerlo todo al instante. Esa forma de vida choca con lo que piden la escuela o el trabajo.'
   ],
-  together:'En los adultos también pasa, aunque a menudo se identifica tarde: muchos se reconocen en esto después de toda una vida sin ponerle nombre, y a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que eran vagos o despistados. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. La idea no es cambiar quién eres, sino trabajar para que esos ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos contigo, paso a paso.',
+  together:'En los adultos también pasa, aunque a menudo se identifica tarde: muchos se reconocen en esto después de toda una vida sin ponerle nombre, y a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que no se esforzaban o que no prestaban atención. Viven a otro ritmo: piensan deprisa, el cuerpo les pide moverse y no encajan en el compás de los demás. La idea no es cambiar quién eres, sino trabajar para que esos ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos contigo, paso a paso.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Álvarez (2014), «Los intereses que hay detrás del diagnóstico del TDAH» (entrevista, Infocop); (2017), «The Four Causes of ADHD: Aristotle in the Classroom»; (2018), «El TDAH es un problema, pero no una enfermedad»; Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» (entrevista, Infocop) */
   cta:'Podemos ayudarte a organizarte con lo que vives, sin quedarte en la etiqueta.',
-  intro:'Para trabajar el TDAH hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar el TDAH hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El TDAH es el nombre que se da a dificultades persistentes de atención, inquietud o impulsividad que afectan a los estudios, al trabajo o a la vida diaria. Atendemos a adultos y, con el consentimiento de la familia, a menores.» */
   science:'No hay un marcador biológico para diagnosticarlo: el diagnóstico es clínico, a partir de la conducta en distintos contextos. Hay estudios genéticos que encuentran muchas variantes de efecto pequeño.',
   beyond:'Cuidado con la explicación circular: «no atiende porque tiene TDAH, y tiene TDAH porque no atiende». La atención no es solo algo que está dentro de la cabeza: también es lo que piden la escuela o el trabajo. Ni solo naturaleza ni solo crianza. El diagnóstico puede aliviar —por fin un nombre— y a la vez convertirse en identidad; la idea es no quitar ese alivio sin ofrecer otro.',
@@ -748,7 +750,7 @@ window.MOTIVOS=[
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
     basesIntro:[
-      'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH es un problema, pero no una enfermedad: podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades.',
+      'Usamos la palabra TDAH porque es como se busca y se diagnostica, pero no nos quedamos en ella. El TDAH no es una enfermedad: podemos verlo como una <strong>forma de ser</strong>, con sus dificultades y también con sus cualidades.',
       'Por eso preferimos hablar de <strong>problemas</strong> en vez de síntomas, y de <strong>ayudas y entrenamiento</strong> en vez de tratamiento. En cada persona se cruzan el cuerpo, su historia y el entorno: por eso nuestro enfoque es <strong>pluralista</strong>.'
     ],
     bases:[
@@ -757,17 +759,17 @@ window.MOTIVOS=[
       'Prestar atención es algo que se aprende. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. A veces la ayuda pasa también por orientar a <a href="infancia.html">la familia</a> y al colegio.',
       '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, con <a href="adicciones.html">pantallas</a> que reclaman la atención a cada momento. Esa forma de vida choca con lo que piden la escuela o el trabajo.'
     ],
-    together:'En los adultos a menudo se identifica tarde, a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que eran vagos o despistados. La idea no es cambiar quién eres, sino trabajar para que tus ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos contigo, paso a paso.',
+    together:'En los adultos a menudo se identifica tarde, a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que no se esforzaban o que no prestaban atención. La idea no es cambiar quién eres, sino buscar que tus ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos juntos.',
     tipos:{titulo:'Cómo se nota el TDAH', intro:'No aparece igual en todas las personas ni en todos los ámbitos.', items:[
       ['TDAH en adultos','se nota más en la desorganización, los olvidos o una inquietud por dentro que en el movimiento.','adultos'],
       ['Falta de concentración','perder el hilo en tareas largas o poco interesantes, y atender mucho en lo que apasiona.','concentracion'],
       ['Procrastinación','aplazar lo importante hasta el último momento; no es pereza.','procrastinacion'],
       ['Impulsividad','hablar o actuar antes de pensarlo, interrumpir, decidir deprisa.','impulsividad'],
-      ['Inquietud','en los adultos, más que moverse, cuesta estar quieto, esperar o descansar.','inquietud'],
+      ['Inquietud','en los adultos, más que moverse, cuesta no moverse, esperar o descansar.','inquietud'],
       ['Hiperactividad','no parar, sobre todo en la infancia; con los años suele convertirse en inquietud.','hiperactividad'],
       ['Desorganización','cuesta planificar, ordenar el tiempo y calcular cuánto lleva cada cosa.','desorganizacion'],
       ['Olvidos y despistes','perder cosas, olvidar citas o dejar tareas a medias.','olvidos'],
-      ['Dificultades en los estudios','más por la atención y la organización que por la capacidad; trabajamos también con <a href="infancia.html">la familia</a>.','estudios'],
+      ['Dificultades en los estudios','más por la atención y la organización que por la capacidad.','estudios'],
       ['TDAH en niños y adolescentes','se nota en clase y en casa; trabajamos también con la familia y el colegio, como en <a href="infancia.html">infancia y adolescencia</a>.','ninos']
     ]},
     trabajoQuitado:{titulo:'Cómo trabajamos el TDAH',
@@ -782,7 +784,7 @@ window.MOTIVOS=[
   }
 },
 {
-  slug:'adicciones', name:'Adicciones', sym:'Estoy enganchado y no puedo dejarlo', delicate:true,
+  slug:'adicciones', name:'Adicciones', sym:'Me he enganchado y no puedo dejarlo', delicate:true,
   h1:'Terapia para las adicciones',   /* encabezado a todo el ancho, en una línea */
   seoTitle:'Adicciones: tratamiento psicológico en Madrid y online',
   revisada:true,   /* sin la marca «borrador» */
@@ -857,9 +859,9 @@ window.MOTIVOS=[
     'Ya lo escribió Ovidio hace dos mil años: «veo lo mejor y lo apruebo, pero sigo lo peor». Saber lo que nos conviene no basta. Las adicciones están muy relacionadas con la <a href="ansiedad.html">ansiedad</a>: muchas veces caemos en ellas buscando calmarla, y funciona a corto plazo, pero a la larga la empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en cambiar las situaciones que nos empujan a consumir y que alimentan esos círculos viciosos: se trata, como planteaba Skinner, de aprender a «controlar las condiciones que nos controlan». Eso se aprende, y lo trabajamos contigo.',
     '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, pero no son la única causa: hay que mirar también la vida que se lleva. Consultar el móvil se ha vuelto una respuesta casi automática. Podríamos decir que no lo decidimos del todo y que no somos del todo libres en la relación que tenemos con estas tecnologías. Si el móvil se ha convertido en lo primero y lo último de tu día, le pasa a mucha gente, y podemos acompañarte para que vuelva a ser una herramienta y no el centro de tu vida.'
   ],
-  together:'La capacidad de elegir no nace de dentro: la construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que esforzarse. Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
+  together:'La capacidad de elegir no nace de dentro: la construimos con el lenguaje y con los demás, que nos dan una identidad y un futuro por el que esforzarse. Nadie sale de una adicción a solas. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
   cta:'Podemos ayudarte a dar el primer paso y acompañarte en cada parte del proceso.',
-  intro:'Para trabajar una adicción hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar una adicción hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de adicción cuando algo —alcohol, juego, pantallas u otras sustancias— se repite aunque te esté haciendo daño y cuesta dejarlo aunque quieras.» */
   science:'Las guías combinan intervenciones psicológicas (entrevista motivacional, terapia cognitivo-conductual, manejo de contingencias) y, en las sustancias, tratamiento médico.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Pérez Jara y Camprubí (2026), «¿Existe la libertad?» (charla); Pérez Álvarez (2015), «Reflexividad, escritura y génesis del sujeto moderno»; (2025), «La salud mental de los adolescentes: un síntoma de la sociedad» */
@@ -884,7 +886,7 @@ window.MOTIVOS=[
       'Ya lo escribió Ovidio: «veo lo mejor y lo apruebo, pero sigo lo peor». Muchas veces caemos en una adicción buscando calmar la <a href="ansiedad.html">ansiedad</a>, y a la larga la empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en aprender a «controlar las condiciones que nos controlan».',
       '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, aunque no son la única causa: hay que mirar también la vida que se lleva. Si el móvil se ha convertido en lo primero y lo último de tu día, podemos acompañarte para que vuelva a ser una herramienta.'
     ],
-    together:'Nadie sale solo de una adicción. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
+    together:'Nadie sale de una adicción a solas. Las palabras, los apoyos y los proyectos son los que dan fuerza, y te ayudamos a construirlos. Dejar el alcohol, el juego, las drogas o las pantallas es necesario, pero no suficiente: lo más importante es llenar ese hueco con una vida que merezca la pena.',
     tipos:{titulo:'Adicciones más frecuentes', intro:'Con sustancia o sin ella, el círculo se parece: lo que alivia hoy es lo que ata mañana.', items:[
       ['Alcohol','beber para relajarte, para dormir o para estar con otros, y notar que cada vez cuesta más parar.','alcohol'],
       ['Juego y apuestas online','perseguir las pérdidas, mentir sobre lo que juegas o pedir dinero para seguir.','juego'],
@@ -960,23 +962,23 @@ window.MOTIVOS=[
     ['¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
-  feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo mismo'],
+  feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo'],
   /* frases propias (2026-11-08): la estima no viene solo de uno mismo / depende de cómo nos tratan / estimarse es algo que se hace */
   quotes:[
-    'Nadie puede construirse solo, y solo desde sí mismo, el valor que siente. Esa estima depende de los demás y de múltiples contextos',
+    'El valor que sentimos no se construye a solas ni solo desde dentro. Esa estima depende de los demás y de múltiples contextos',
     'Nos vemos, en buena parte, como nos han tratado. Por eso cambiar cómo nos tratan, y cómo tratamos, también cambia cómo nos valoramos',
     'Estimarse se ejercita: la estima se fortalece cuando actuamos, cuando nos cuidamos y cuando cuidamos a los nuestros'
   ],
-  basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.',
+  basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en el individuo, como si la estima fuera un depósito que cada uno lleva dentro y que sube o baja. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, los distintos ámbitos de la vida y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.',
   bases:[
     '<strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, <a href="insomnio.html">el mal sueño</a> o <a href="ansiedad.html">el estrés mantenido</a> tiñen cómo nos vemos. La estima se siente dentro, pero gran parte de sus piezas vienen de fuera.',
     'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> la remonta a William James, a finales del siglo XIX, y su gran difusión llega en la segunda mitad del XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.',
     '<strong>Los estudios de psicología</strong> encuentran que la estima alta se asocia a sentirse mejor, pero no causa por sí sola mejores resultados en los estudios, el trabajo o las relaciones. Y repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más la mueve es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos aunque nos gane la inseguridad o la autocrítica. En terapia lo vemos a menudo: la estima se construye haciendo; llega después de actuar, no antes.',
-    '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal, <a href="adicciones.html">las redes sociales</a> o una cultura que pide valerse por uno mismo y rendir sin descanso. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
+    '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal, <a href="adicciones.html">las redes sociales</a> o una cultura que pide no necesitar a nadie y rendir sin descanso. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
   ],
   together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. De ahí que la promesa de que «no te importe lo que piensen los demás» suela frustrar. Lo que sí se puede trabajar es cómo te importa y qué haces con ello. Estimarse es, en buena parte, la capacidad de relacionarte y de influir en esa mirada que te llega de los demás: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas, mantener y fortalecer los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos contigo.',
   cta:'Podemos ayudarte a estimarte de otra manera, sin compararte ni exigirte a todas horas.',
-  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: se siente en el cuerpo, pero no depende solo de él, sino también de lo que hacemos, de nuestras relaciones y de los contextos en los que nos encontramos; es decir, también de cómo nos estiman desde fuera. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar la autoestima hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: se siente en el cuerpo, pero no depende solo de él, sino también de lo que hacemos, de nuestras relaciones y de los contextos en los que nos encontramos; es decir, también de cómo nos estiman desde fuera. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de autoestima cuando la forma de valorarte te hace sufrir: te comparas, te exiges sin descanso o dependes de la aprobación de los demás.» */
   science:'La autoestima no es un diagnóstico, sino un concepto psicológico muy estudiado. Su relación con el bienestar es real, pero más modesta de lo que suele decirse.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Baumeister y otros (2003), revisión sobre la autoestima y el bienestar; Wood, Perunovic y Lee (2009), sobre las frases positivas */
@@ -990,7 +992,7 @@ window.MOTIVOS=[
   /* VERSIÓN CARLOS (2026-11-10): página resumida, como en ansiedad y pareja (sin etiquetas, enfoque recortado, tipos en lista,
      un solo «Cómo trabajamos», preguntas en preguntas.html). Los textos largos de arriba se quedan intactos. Para volver a la página larga, borrar «corta». */
   corta:{
-    basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en uno mismo, como si la estima fuera un depósito que cada uno lleva dentro. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Por eso nuestro enfoque es <strong>pluralista</strong>.',
+    basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en el individuo, como si la estima fuera un depósito que cada uno lleva dentro. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Por eso nuestro enfoque es <strong>pluralista</strong>.',
     bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
       '<strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, <a href="insomnio.html">el mal sueño</a> o <a href="ansiedad.html">el estrés mantenido</a> tiñen cómo nos vemos.',
       'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> muestra que se difundió en la segunda mitad del siglo XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.',
@@ -1091,11 +1093,11 @@ window.MOTIVOS=[
     '<strong>Los estudios de biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, <a href="insomnio.html">cambios en el sueño</a> y en el apetito, <a href="depresion.html">una tristeza que pesa físicamente</a>. Es normal, y suele ir cediendo con el tiempo. '+V,
     '<strong>Los estudios de neurología</strong> muestran que al cerebro le cuesta asumir una ausencia: por eso, a veces, esperamos oír su voz o que entre por la puerta. Hacerse a la pérdida también es un aprendizaje.',
     '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso, pero que las pérdidas —una muerte, <a href="pareja.html">una ruptura</a>, un despido— pueden ser el inicio de un dolor difícil de soportar. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue. '+V,
-    '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos lugar: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella. '+V
+    '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte y que el duelo tiene cada vez menos lugar: al poco tiempo, alrededor ya no se habla de la pérdida, aunque quien la vive siga dentro de ella. '+V
   ],
   together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
   cta:'Ante la pérdida, podemos acompañarte en el proceso, haciéndolo más llevadero.',
-  intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar el duelo hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «El duelo es la respuesta a una pérdida: la muerte de alguien querido, también de un animal, pero también una separación o un cambio de vida. No es una enfermedad, aunque a veces se complica y conviene acompañarlo.» */
   science:'La mayoría de los duelos siguen su curso sin tratamiento. Se habla de duelo prolongado cuando el malestar intenso se mantiene mucho tiempo y bloquea la vida. '+V,
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: Bueno (1996), «El sentido de la vida»; Pérez Jara (2016), «Meditatio mortis y filosofía: sobre el legado de Gustavo Bueno»; Pérez Álvarez (2007), «La activación conductual y la desmedicalización de la depresión» */
@@ -1118,7 +1120,7 @@ window.MOTIVOS=[
       '<strong>Los estudios de biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, <a href="insomnio.html">cambios en el sueño</a> y en el apetito, <a href="depresion.html">una tristeza que pesa físicamente</a>. Es normal, y suele ir cediendo con el tiempo.',
       '<strong>Los estudios de neurología</strong> muestran que al cerebro le cuesta asumir una ausencia: por eso, a veces, esperamos oír su voz o que entre por la puerta.',
       '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue.',
-      '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte: al poco tiempo, alrededor ya no se habla de la pérdida, aunque uno siga dentro de ella.'
+      '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte: al poco tiempo, alrededor ya no se habla de la pérdida, aunque quien la vive siga dentro de ella.'
     ],
     together:'El <strong>acompañamiento</strong> puede marcar la diferencia. Lo que ya no se podrá hacer, decir ni compartir necesita su espacio. En terapia podemos ponerle nombre y aprender a convivir con ello. Te acompañamos a conseguirlo.',
     tipos:{titulo:'Tipos de duelo', intro:'Cada pérdida es única, pero hay duelos que conviene acompañar con especial cuidado.', items:[
@@ -1147,7 +1149,7 @@ window.MOTIVOS=[
 {
   slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   h1:'Terapia para niños y adolescentes',
-  reco:'¿Os suena? No tenéis por qué pasarlo solos.',   /* habla a la familia (2026-11-10) */   /* encabezado a todo el ancho, en una línea */
+  reco:'¿Os suena? No tenéis por qué pasarlo a solas.',   /* habla a la familia (2026-11-10) */   /* encabezado a todo el ancho, en una línea */
   seoTitle:'Psicólogo infantil y de adolescentes en Madrid y online',
   seoDesc:'Psicólogo infantil y de adolescentes: rabietas, miedos, TDAH, acoso escolar o problemas en el colegio, con la familia. Centro sanitario en Madrid y online.',
   pagina:'infancia.html',   /* página fija; motivo.html?m=infancia lleva a ella */
@@ -1217,7 +1219,7 @@ window.MOTIVOS=[
   ],
   together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse, y responder según lo que necesite. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores), y también con vosotros: proponemos estrategias sencillas para afrontar estas situaciones en casa y en clase. Lo que le pasa a un menor casi nunca le pasa solo a él; por eso trabajamos en equipo con la familia y con los centros educativos.',
   cta:'Podemos ayudaros, a vuestro hijo o hija y a vosotros, a entender qué está pasando.',
-  intro:'Para trabajar lo que les pasa a niños y adolescentes hace falta un enfoque <strong>multidimensional</strong>, porque no tiene una sola cara: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar lo que les pasa a niños y adolescentes hace falta un enfoque <strong>multidimensional</strong>, porque tiene muchas caras: está en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Atendemos a niños, niñas y adolescentes con el consentimiento de la familia, y trabajamos también con madres, padres o tutores: lo que le pasa a un menor casi nunca le pasa solo a él.» */
   science:'En la infancia, las intervenciones con más apoyo suelen incluir a la familia; en la adolescencia, la terapia cognitivo-conductual adaptada a la edad.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario (no hay citas textuales); eran: Pérez Álvarez (2025), «La salud mental de los adolescentes» (The Conversation y Telos); Ubieto y Pérez Álvarez (2018), «Infancias hiperpautadas y al tiempo desreguladas» */
@@ -1278,16 +1280,16 @@ window.MOTIVOS=[
   subs:[['Trastorno límite de la personalidad (TLP)','#tlp'],['Inestabilidad emocional','#inestabilidad'],['Miedo al abandono','#abandono'],['Relaciones intensas e inestables','#relaciones'],['Impulsividad','#impulsividad'],['Ira y explosiones emocionales','#ira'],['Sensación de vacío','depresion'],['Rasgos obsesivos o perfeccionistas','#obsesivos'],['Personalidad evitativa','#evitativa'],['Personalidad dependiente','#dependiente'],['Rasgos narcisistas','#narcisistas']],
   /* apartados nuevos (2026-11-09, recomendaciones aceptadas por el usuario: 1A con entrada que matiza la CIE-11, 2 único, 3A —dialéctico-conductual, ACT, tu contexto—, 4 y 5 como en las demás) */
   tipos:{titulo:'Tipos de trastornos de la personalidad',
-    intro:'Los manuales hablan de tipos, aunque desde 2022 la CIE-11 los describe por grados. Preferimos verlos como formas de ser muy marcadas que hacen sufrir, a uno mismo o a quienes le rodean. Estas son las que más nos consultan.',
+    intro:'Los manuales hablan de tipos, aunque desde 2022 la CIE-11 los describe por grados. Preferimos verlos como formas de ser muy marcadas que hacen sufrir, a quien las vive o a quienes le rodean. Estas son las que más nos consultan.',
     items:[
     ['Inestabilidad emocional','Emociones que suben y bajan muy deprisa y con mucha intensidad, a veces por cosas que a otros les parecerían pequeñas.','inestabilidad'],
     ['Miedo al abandono','Sentir que te van a dejar y hacer lo que sea por evitarlo, aunque eso acabe tensando la relación.','abandono'],
     ['Relaciones intensas e inestables','Pasar de idealizar a alguien a sentirte decepcionado o herido, en relaciones que se viven con mucha intensidad.','relaciones'],
     ['Impulsividad','Actuar sin pensar cuando la emoción aprieta: gastar, comer, beber o decir cosas de las que luego te arrepientes. Cuando viene desde la infancia y afecta sobre todo a la atención, puede tener que ver con el <a href="tdah.html">TDAH</a>.','impulsividad'],
     ['Ira y explosiones emocionales','Enfados muy intensos que cuesta frenar y que después dejan culpa o vergüenza.','ira'],
-    ['Rasgos obsesivos o perfeccionistas','Necesidad de orden, control y reglas que, cuando se vuelve rígida, hace sufrir a uno y a quienes le rodean. No es lo mismo que el <a href="ansiedad.html#toc">TOC</a>, aunque a veces se confundan.','obsesivos'],
-    ['Personalidad evitativa','Evitar el contacto con los demás por miedo a ser rechazado o criticado, aunque desees esa cercanía.','evitativa'],
-    ['Personalidad dependiente','Necesitar que otros decidan por ti y sentir angustia al quedarte solo. A menudo se vive en la <a href="pareja.html">pareja</a> como dependencia emocional.','dependiente'],
+    ['Rasgos obsesivos o perfeccionistas','Necesidad de orden, control y reglas que, cuando se vuelve rígida, te hace sufrir a ti y a quienes te rodean. No es lo mismo que el <a href="ansiedad.html#toc">TOC</a>, aunque a veces se confundan.','obsesivos'],
+    ['Personalidad evitativa','Evitar el contacto con los demás por miedo al rechazo o a la crítica, aunque desees esa cercanía.','evitativa'],
+    ['Personalidad dependiente','Necesitar que otros decidan por ti y sentir angustia ante la soledad. A menudo se vive en la <a href="pareja.html">pareja</a> como dependencia emocional.','dependiente'],
     ['Rasgos narcisistas','Una necesidad intensa de admiración y una imagen de uno mismo que se resiente mucho con la crítica. Detrás suele haber más fragilidad de la que se ve.','narcisistas']
   ]},
   proceso:{titulo:'Cómo trabajamos los problemas de personalidad', pasos:[
@@ -1317,7 +1319,7 @@ window.MOTIVOS=[
     ['¿Tratáis los trastornos de la personalidad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
-  feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Me siento vacío emocionalmente','Me cuesta relacionarme con la gente'],
+  feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Siento un vacío que no se llena con nada','Me cuesta relacionarme con la gente'],
   feelNote:'Frases con las que mucha gente cuenta lo que le pasa.',
   /* frases propias de la consulta, a partir de ideas de Marino Pérez Álvarez (ver referencias y citas-para-la-web.md) */
   quotes:[
@@ -1326,7 +1328,7 @@ window.MOTIVOS=[
     'Vivir la vida de forma muy intensa no tiene por qué ser un problema'   /* tras psicología */
   ],
   basesIntro:[
-    'Usamos «trastorno de la personalidad» porque es como se busca y se diagnostica, aunque preferimos hablar de formas de ser muy marcadas —inestables, evitativas, dependientes, <a href="autoestima.html">perfeccionistas</a> o muy centradas en uno mismo— que hacen sufrir. Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser, y solo se entiende desde esa persona.',
+    'Usamos «trastorno de la personalidad» porque es como se busca y se diagnostica, aunque preferimos hablar de formas de ser muy marcadas —inestables, evitativas, dependientes, <a href="autoestima.html">perfeccionistas</a> o muy centradas en sí mismas— que hacen sufrir. Un síntoma no flota en el aire: es de alguien, con su historia y su forma de ser, y solo se entiende desde esa persona.',
     'Nos vamos haciendo con los demás y con lo que vivimos. Por eso también se puede trabajar.',
     {voz:'Nadie nace siendo la persona que es hoy'},   /* frase verde dentro de la entrada */
     'Cada persona es distinta: en cada una se cruzan el cuerpo, su historia, sus relaciones y el entorno. Por eso nuestro enfoque es <strong>pluralista</strong>.'
@@ -1337,16 +1339,16 @@ window.MOTIVOS=[
     '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse con los demás que hemos aprendido en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias aprendidas para protegernos. Y lo aprendido se puede revisar y cambiar. En el trastorno límite (TLP), por ejemplo, aprender a regular la ira o el miedo al abandono cambia mucho el día a día.',
     '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos, cambios y exigencias que nos llenan de cosas y, a la vez, pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Si te reconoces en esa sensación, trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
   ],
-  together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, lo que hemos hecho, cómo nos relacionamos con los demás y nuestros contextos. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
+  together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, lo que hemos hecho, cómo nos relacionamos con los demás y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
   cta:'Podemos ayudarte a entender tus patrones y a probar otros.',
-  intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar los problemas de personalidad hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas de personalidad cuando hay formas de sentir, pensar y relacionarse muy estables que te hacen sufrir a ti o a quienes te rodean, y que se repiten en distintos ámbitos.» */
   science:'Los manuales describen varios tipos, pero la clasificación por categorías está en revisión y las propuestas recientes van hacia dimensiones.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario (no hay citas textuales); eran: García Montes y Pérez Álvarez (2003); Pérez Álvarez (2001), (2003) y (2015) */
   beyond:'La personalidad no es una esencia fija: es un patrón aprendido en una historia concreta, y los patrones pueden cambiar. No usamos siglas como etiqueta de nadie.',
   approaches:[
     ['Dialéctico-conductual','Regular emociones intensas y reducir conductas de riesgo.','buena en desregulación emocional'],
-    ['Basada en la mentalización','Entender lo que uno y los demás sienten y piensan.','moderada'],
+    ['Basada en la mentalización','Entender lo que sientes y piensas tú y lo que sienten y piensan los demás.','moderada'],
     ['Terapia de esquemas','Trabajar patrones aprendidos que se repiten.','moderada']
   ],
   coord:'Si hay autolesiones o ideas de suicidio, nos coordinamos con psiquiatría. En una urgencia, llama al <strong>112</strong>; si tienes pensamientos de suicidio, al <strong>024</strong>.',
@@ -1365,7 +1367,7 @@ window.MOTIVOS=[
       '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.',
       '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos y exigencias que pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
     ],
-    together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando uno no se entiende a sí mismo, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
+    together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Cuando tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Te acompañamos a hacerlo, paso a paso.',
     tipos:{titulo:'Problemas de personalidad más frecuentes', intro:'Preferimos verlos como formas de ser muy marcadas que hacen sufrir, más que como tipos cerrados.', items:[
       ['Trastorno límite de la personalidad (TLP)','emociones muy intensas y cambiantes, miedo al abandono, relaciones inestables e impulsividad.','tlp'],
       ['Inestabilidad emocional','emociones que suben y bajan muy deprisa y con mucha intensidad.','inestabilidad'],
@@ -1435,7 +1437,7 @@ window.MOTIVOS=[
     ['¿Cómo se trata la eyaculación precoz?','Con ejercicios graduales para ganar control, trabajando la ansiedad y, si es posible, con la pareja. Si hace falta, nos coordinamos con urología.'],
     ['¿Es normal que el deseo cambie con los años?','Sí. El deseo cambia con la edad, el estrés, la crianza o la relación, y no siempre al mismo ritmo en los dos. Que cambie no es un problema; lo es cuando te hace sufrir a ti o a tu pareja.'],
     ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
-    ['¿Puedo ir solo o con mi pareja?','Las dos cosas. Puedes venir solo o sola, o en pareja si el problema es de los dos.'],
+    ['¿Puedo ir sin mi pareja?','Sí. Puedes venir solo o sola, o en pareja si el problema es de los dos.'],
     ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.'],
     ['¿Hacéis terapia sexual cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
@@ -1463,7 +1465,7 @@ window.MOTIVOS=[
   ],
   together:'Hablar de lo que nos pasa en la intimidad, y las nuevas formas de encontrarnos que surgen de ello, ayuda a construir una base de amistad y de conexión emocional. Podemos trabajarlo tanto si vienes solo o sola como si <a href="pareja.html">venís en pareja</a>.',
   cta:'Un espacio para hablar de sexualidad sin juicios.',
-  intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque no tienen una sola cara: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
+  intro:'Para trabajar los problemas sexuales hace falta un enfoque <strong>multidimensional</strong>, porque tienen muchas caras: están en el cuerpo, en lo que hacemos y en las situaciones que vivimos. Por eso no hay una sola explicación: tenemos en cuenta lo que aporta cada disciplina y tratamos de entretejerlas.',
   /* entrada anterior (2026-11-08): «Hablamos de problemas sexuales cuando algo de la vida sexual —el deseo, la excitación, el dolor o el orgasmo— te preocupa o afecta a tu pareja. Cuesta hablar de ello, y por eso mismo merece un espacio tranquilo.» */
   science:'Muchas dificultades sexuales tienen a la vez componentes físicos y psicológicos; por eso a veces conviene descartar antes una causa médica.',
   refs:'',   /* retiradas el 2026-11-08 a petición del usuario; eran: The Gottman Institute, «Relationship intimacy» y «Weekend homework assignment: have great sex» (gottman.com) */

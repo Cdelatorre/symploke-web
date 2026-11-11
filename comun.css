@@ -101,3 +101,14 @@ main [id],main details[id]{scroll-margin-top:110px}
 :root{--btnbg:#007F55}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--btnbg:var(--brand)}}
 :root[data-theme="dark"]{--btnbg:var(--brand)}
+
+/* de noche, ningún dibujo con recuadro blanco: en las miniaturas de las tarjetas (2026-11-11). De día, igual que siempre */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .card .img,:root:not([data-theme="light"]) .ilus,:root:not([data-theme="light"]) .fimg,:root:not([data-theme="light"]) .qpic{background:transparent}
+  :root:not([data-theme="light"]) svg > rect[width="400"][height="250"]{fill:transparent}
+}
+:root[data-theme="dark"] .card .img,:root[data-theme="dark"] .ilus,:root[data-theme="dark"] .fimg,:root[data-theme="dark"] .qpic{background:transparent}
+:root[data-theme="dark"] svg > rect[width="400"][height="250"]{fill:transparent}
+
+/* pie verde más fino: casi la mitad de alto (2026-11-11) */
+html footer{padding-top:14px;padding-bottom:16px}

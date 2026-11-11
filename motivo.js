@@ -34,7 +34,7 @@ h+='<section class="feel" aria-labelledby="suene"><div>';
 h+='<h2 id="suene">Quizá te suene</h2>';
 h+='<p class="note">'+(m.feelNote||'Frases con las que mucha gente cuenta lo que le pasa.')+'</p>';
 h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
-h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? No tienes por qué pasarlo solo.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
+h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? No tienes por qué pasarlo a solas.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
 var aviso=(c&&c.alert)||m.alert;
 if(aviso)h+='<p class="alert">'+aviso+'</p>';
 h+='</div></section>';
@@ -119,9 +119,9 @@ if(c&&c.relacionadas){   // VERSIÓN CARLOS: otras terapias en tarjetas con dibu
 
 h+='<section class="band"><div class="pic">'+ILUS.portada('band')+'</div><div class="t">';
 h+='<h2>Podemos ayudarte</h2>';
-h+='<p>Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.</p>';
+h+='<p>'+(m.bandaTexto||'Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.')+'</p>';   // pareja lo dice en vosotros
 h+='<a class="btn primary" href="'+CITA+'">Pide cita y lo vemos juntos'+ARR+'</a>';
-h+='<p class="donde">Puedes visitarnos en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p>';   // Madrid en el texto visible (búsquedas locales)
+h+='<p class="donde">'+(m.bandaDonde||'Puedes visitarnos')+' en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p>';   // Madrid en el texto visible (búsquedas locales)
 h+='<p class="urg">Si estás en una urgencia, llama al <strong>112</strong>. Si tienes pensamientos de suicidio, llama al <strong>024</strong>.</p>';
 h+='</div></section>';
 
