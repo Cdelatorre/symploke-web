@@ -96,3 +96,8 @@ html.scrolled .theme-sw .ico{width:14px;height:14px;margin-top:-7px}
 
 /* al llegar a un apartado desde un enlace (#…), el menú fijo de arriba no tapa su título (2026-11-11) */
 main [id],main details[id]{scroll-margin-top:110px}
+
+/* verde de los botones con letra blanca, un punto más oscuro para que se lea bien (contraste 5,0; 2026-11-11). De noche, el de siempre */
+:root{--btnbg:#007F55}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--btnbg:var(--brand)}}
+:root[data-theme="dark"]{--btnbg:var(--brand)}

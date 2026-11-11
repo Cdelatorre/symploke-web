@@ -6,6 +6,8 @@
 <meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
 <title>Quiénes somos · Daniel de la Torre, psicólogo en Madrid</title>
 <meta name="description" content="Conoce a quién te va a atender y el centro sanitario de psicología de Symploké en Madrid centro, calle Martín de Vargas, 5.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
 <link rel="stylesheet" href="comun.css">
 <script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
@@ -35,7 +37,7 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;c
 .links a{color:inherit;text-decoration:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
 .btn:hover{transform:translateY(-1px)}
-.btn.primary{background:var(--brand);color:var(--btntext)}
+.btn.primary{background:var(--btnbg,var(--brand));color:var(--btntext)}
 .btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
 .btn.small{font-size:15px;padding:12px 22px}
 
@@ -274,23 +276,23 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
     </div>
 
     <div class="gal">
-      <label class="ph big has" data-ph><img src="img/centro/despacho-ventanal-lampara-planta-ilustrado-koine-madrid.webp" alt="Despacho con ventanal, lámpara y planta en el centro sanitario Koiné, Madrid centro" loading="lazy">
+      <label class="ph big has" data-ph><img width="1024" height="1536" src="img/centro/despacho-ventanal-lampara-planta-ilustrado-koine-madrid.webp" alt="Despacho con ventanal, lámpara y planta en el centro sanitario Koiné, Madrid centro" loading="lazy">
         <span class="hint"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg><b>Despacho</b><small>Sin gente: el sillón, la luz de la ventana. Toca para probar una foto.</small></span>
         <input type="file" accept="image/*">
       </label>
-      <label class="ph has" data-ph><img src="img/centro/pasillo-entrada-linterna-ilustrado-koine-madrid.webp" alt="Pasillo de entrada del centro sanitario Koiné, en Martín de Vargas 5, Madrid" loading="lazy">
+      <label class="ph has" data-ph><img width="1024" height="1536" src="img/centro/pasillo-entrada-linterna-ilustrado-koine-madrid.webp" alt="Pasillo de entrada del centro sanitario Koiné, en Martín de Vargas 5, Madrid" loading="lazy">
         <span class="hint"><b>Portal</b><small>Para reconocerlo al llegar</small></span>
         <input type="file" accept="image/*">
       </label>
-      <label class="ph has" data-ph><img src="img/centro/sala-espera-lampara-sillones-ilustrado-koine-madrid.webp" alt="Lámpara y sillones de la sala de espera del centro Koiné, Madrid" loading="lazy">
+      <label class="ph has" data-ph><img width="1536" height="1024" src="img/centro/sala-espera-lampara-sillones-ilustrado-koine-madrid.webp" alt="Lámpara y sillones de la sala de espera del centro Koiné, Madrid" loading="lazy">
         <span class="hint"><b>Sala de espera</b><small>Sin pacientes</small></span>
         <input type="file" accept="image/*">
       </label>
-      <label class="ph has" data-ph><img src="img/centro/detalle-flores-lampara-curva-ilustrado-koine-madrid.webp" alt="Flores y lámpara en el centro Koiné, Madrid" loading="lazy">
+      <label class="ph has" data-ph><img width="1024" height="1536" src="img/centro/detalle-flores-lampara-curva-ilustrado-koine-madrid.webp" alt="Flores y lámpara en el centro Koiné, Madrid" loading="lazy">
         <span class="hint"><b>Detalle</b><small>Estantería, planta, la mesa</small></span>
         <input type="file" accept="image/*">
       </label>
-      <label class="ph has" data-ph><img src="img/centro/despacho-grande-libreria-sillon-ilustrado-koine-madrid.webp" alt="Despacho grande con sillones y librería en el centro Koiné, Madrid" loading="lazy">
+      <label class="ph has" data-ph><img width="1448" height="965" src="img/centro/despacho-grande-libreria-sillon-ilustrado-koine-madrid.webp" alt="Despacho grande con sillones y librería en el centro Koiné, Madrid" loading="lazy">
         <span class="hint"><b>Otro despacho</b><small>O la placa de centro sanitario</small></span>
         <input type="file" accept="image/*">
       </label>
