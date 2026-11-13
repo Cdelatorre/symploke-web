@@ -633,7 +633,7 @@ window.MOTIVOS=[
       ['Dependencia emocional','no poder estar sin la otra persona aunque te haga daño; suele ir unida a la <a href="autoestima.html">autoestima</a>.','dependencia'],
       ['Apego','cómo aprendimos a querer se repite en la pareja: miedo al abandono o necesidad de distancia.','apego'],
       ['Narcisismo en la pareja','la relación gira siempre alrededor del otro; usamos la palabra para hablar, no para diagnosticar.','narcisismo'],
-      ['Falta de deseo','cambia con los años, el estrés o la crianza; lo trabajamos también en terapia sexual.','deseo'],
+      ['Falta de deseo','cambia con los años, el estrés o la crianza; lo trabajamos también en <a href="sexual.html">terapia sexual</a>.','deseo'],
       ['La pareja tras tener hijos','menos tiempo, menos sueño y nuevos roles.','hijos'],
       ['Rupturas, separaciones y divorcios','acompañamos la decisión y el después, también el <a href="duelo.html">duelo</a>.','rupturas']
     ]},
