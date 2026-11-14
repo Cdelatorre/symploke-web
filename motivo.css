@@ -52,8 +52,7 @@ h1.wide{font-size:clamp(32px,3.7vw,54px);line-height:1.05;letter-spacing:-.4px;m
 
 /* lo que se siente */
 .feel{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,4vw,64px);margin-top:clamp(64px,8vw,104px);padding:clamp(28px,4vw,52px);background:var(--soft);border:1px solid var(--line);border-radius:28px}
-.feel{transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}   /* al pasar el ratón, como «Podemos ayudarte» (2026-11-11) */
-.feel:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 14px 34px rgba(0,60,40,.12)}
+/* «Quizá te suene»: sin efecto al pasar el ratón (quitado 2026-11-14) */
 .feel .note{font-size:13px;color:var(--ink2);line-height:1.45;margin:10px 0 0}
 .feel ul{list-style:none;margin:0;padding:0}
 .feel li{font-family:'DM Serif Display',Georgia,serif;font-size:clamp(22px,2vw,28px);line-height:1.2;color:var(--ink);padding:12px 0;border-bottom:1px solid var(--line)}
