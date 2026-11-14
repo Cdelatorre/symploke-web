@@ -176,7 +176,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
 .relacionadas h2{margin:0 0 26px}
 .rel-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 @media (max-width:760px){.rel-grid{grid-template-columns:1fr}}
-.relacionadas .card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.relacionadas .card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--soft);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
 .relacionadas .card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
 .relacionadas .card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
 .relacionadas .card .img svg{display:block;width:100%;height:100%}

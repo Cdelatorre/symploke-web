@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logotipo Symploké · tela real</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=Spectral:wght@400;600;800&amp;display=swap">
+<style>
+/* Symploké · logotipo «invertido con contorno» en dos verdes, como bordado sobre tela real y SIN cambio al pasar el cursor
+   (decidido 2026-11-14). Es una prueba: la letra y la puntada son las de bordado-verdes.html. */
+:root{--bg:#EDEAE2;--ink2:#33433C}
+@media (prefers-color-scheme: dark){:root{--bg:#10150F;--ink2:#B6CCC2}}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;gap:28px;padding:32px 16px;background:var(--bg);font-family:'DM Sans',system-ui,sans-serif;color:var(--ink2)}
+.tela{position:relative;width:min(1000px,100%);aspect-ratio:1000/400;border-radius:18px;overflow:hidden;box-shadow:0 14px 40px rgba(30,25,10,.28),inset 0 0 60px rgba(60,45,15,.25)}
+.tela canvas{position:absolute;inset:0;width:100%;height:100%}
+.tela svg{position:absolute;left:5%;top:50%;width:90%;height:auto;transform:translateY(-50%)}
+.fila{display:flex;gap:28px;flex-wrap:wrap;justify-content:center;align-items:center}
+.cuadro{position:relative;width:200px;height:200px;border-radius:50%;overflow:hidden;box-shadow:0 8px 22px rgba(30,25,10,.3)}
+.cuadro canvas{position:absolute;inset:0;width:100%;height:100%}
+.cuadro svg{position:absolute;inset:14%;width:72%;height:72%}
+p{margin:0;font-size:13px;max-width:640px;text-align:center}
+</style>
+</head>
+<body>
+<div class="tela" id="tela"><canvas id="c1" width="2000" height="800"></canvas></div>
+<div class="fila">
+  <div class="cuadro" id="cua"><canvas id="c2" width="400" height="400"></canvas></div>
+  <p>Bordado en dos verdes sobre lino. Sin efecto al pasar el cursor. Es una simulación: la prueba de verdad se haría con una tela fotografiada.</p>
+</div>
+<svg id="defs" width="0" height="0" style="position:absolute" aria-hidden="true"></svg>
+
+<script>
+var D='#009966', L='#5FE3A8';
+var STEP={fina:3.4,media:4.8,gruesa:7};
+var FS=140, H=260, MX=22, MY=30, TX=246, TY=178;
+var S={weight:'600',stitch:'media'};
+
+function mix(a,b,t){
+  var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16),r=[16,8,0].map(function(s){return Math.round(((x>>s)&255)*(1-t)+((y>>s)&255)*t);});
+  return '#'+r.map(function(v){return ('0'+v.toString(16)).slice(-2);}).join('');
+}
+function satin(id,c,angle,p){
+  var sh=mix(c,'#00281A',.45), hi=mix(c,'#FFFFFF',.55);
+  /* raso con hebras finas: cada puntada con sombra, brillo y estrías de la torsión del hilo */
+  return '<pattern id="'+id+'" width="'+(p*9)+'" height="'+p+'" patternUnits="userSpaceOnUse" patternTransform="rotate('+angle+')">'+
+    '<rect width="'+(p*9)+'" height="'+p+'" fill="'+c+'"/>'+
+    '<rect width="'+(p*9)+'" height="'+(p*.22).toFixed(2)+'" fill="'+sh+'"/>'+
+    '<rect y="'+(p*.3).toFixed(2)+'" width="'+(p*9)+'" height="'+(p*.2).toFixed(2)+'" fill="'+hi+'" opacity=".6"/>'+
+    '<rect y="'+(p*.62).toFixed(2)+'" width="'+(p*9)+'" height="'+(p*.08).toFixed(2)+'" fill="'+sh+'" opacity=".35"/>'+
+    '<rect x="'+(p*4.2).toFixed(2)+'" width="'+(p*.35).toFixed(2)+'" height="'+p+'" fill="'+sh+'" opacity=".4"/>'+
+    '</pattern>';
+}
+function defs(){
+  var p=STEP[S.stitch], h=satin('sVL',L,0,p)+satin('sHD',D,90,p)+satin('sVD',D,0,p)+satin('sHL',L,90,p)+satin('sTD',D,-38,p)+satin('sTL',L,-38,p);
+  var hal='',pat='',pha='';
+  [41.5,83.5,125.5].forEach(function(y){hal+='<rect x="29.5" y="'+y+'" width="141" height="33" rx="8.5" fill="#000"/>';});
+  [[43.4,40.7],[43.4,124.7],[85.4,82.7],[127.4,40.7],[127.4,124.7]].forEach(function(q){
+    pat+='<rect x="'+q[0]+'" y="'+q[1]+'" width="29.2" height="34.6" fill="#fff"/>';
+    pha+='<rect x="'+(q[0]-1.9)+'" y="'+(q[1]+3.3)+'" width="33" height="28" fill="#000"/>';
+  });
+  h+='<mask id="mV" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+hal+pat+'</mask>';
+  h+='<mask id="mH" maskUnits="userSpaceOnUse" x="-20" y="-20" width="240" height="240"><rect x="-20" y="-20" width="240" height="240" fill="#fff"/>'+pha+'</mask>';
+  /* hilo real: irregularidad del borde, relieve abombado con luz desde arriba a la izquierda, y sombra sobre la tela */
+  h+='<filter id="hilo" x="-6%" y="-12%" width="112%" height="130%" color-interpolation-filters="sRGB">'+
+    '<feTurbulence type="fractalNoise" baseFrequency=".5" numOctaves="2" seed="4" result="n"/>'+
+    '<feDisplacementMap in="SourceGraphic" in2="n" scale="2.6" xChannelSelector="R" yChannelSelector="G" result="d"/>'+
+    '<feGaussianBlur in="SourceAlpha" stdDeviation="2.4" result="hb"/>'+
+    '<feSpecularLighting in="hb" surfaceScale="5" specularConstant=".85" specularExponent="20" lighting-color="#FFFFF0" result="sp"><feDistantLight azimuth="235" elevation="50"/></feSpecularLighting>'+
+    '<feComposite in="sp" in2="SourceAlpha" operator="in" result="spi"/>'+
+    '<feComposite in="d" in2="spi" operator="arithmetic" k1="0" k2="1" k3=".6" k4="0" result="lit"/>'+
+    '<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="sb"/><feOffset in="sb" dx="2.2" dy="3.6" result="so"/>'+
+    '<feFlood flood-color="#2a2008" flood-opacity=".5"/><feComposite in2="so" operator="in" result="sh"/>'+
+    '<feMerge><feMergeNode in="sh"/><feMergeNode in="lit"/></feMerge></filter>';
+  document.getElementById('defs').innerHTML=h;
+}
+function dash(){var p=STEP[S.stitch];return ' stroke-dasharray="'+(p*1.2).toFixed(1)+' '+(p*.64).toFixed(1)+'" stroke-linecap="round"';}
+function symbol(inv){
+  var v='',h='';
+  [44,86,128].forEach(function(k){
+    v+='<rect x="'+k+'" y="32" width="28" height="136" rx="6" fill="url(#'+(inv?'sVD':'sVL')+')" stroke="'+(inv?L:D)+'" stroke-width="2.4"'+dash()+'/>';
+    h+='<rect x="32" y="'+k+'" width="136" height="28" rx="6" fill="url(#'+(inv?'sHL':'sHD')+')"/>';
+  });
+  return '<g transform="translate('+MX+' '+MY+')"><g transform="rotate(45 100 100)"><g mask="url(#mV)">'+v+'</g><g mask="url(#mH)">'+h+'</g></g></g>';
+}
+function name(){
+  return '<text x="'+TX+'" y="'+TY+'" font-family="Spectral" font-weight="'+S.weight+'" font-size="'+FS+'" fill="url(#sTD)" stroke="'+D+'" stroke-width="2.6"'+dash()+'>Symploké</text>';
+}
+var cv=document.createElement('canvas'), cx=cv.getContext('2d');
+
+/* lino: tafetán con hilos irregulares (más gruesos o más finos), sombra en cada cruce y pelusa */
+function lino(canvas,hue,sat,lig,seed0){
+  var c=canvas.getContext('2d'),W=canvas.width,Hh=canvas.height,S0=Math.round(W/250),NX=Math.ceil(W/S0),NY=Math.ceil(Hh/S0),seed=seed0;
+  function R(){seed=(seed*16807)%2147483647;return (seed-1)/2147483646;}
+  var wa=[],we=[],i,j;
+  for(i=0;i<NX;i++)wa.push({l:(R()-.5)*7,s:R()<.12});
+  for(j=0;j<NY;j++)we.push({l:(R()-.5)*7,s:R()<.12});
+  c.fillStyle='hsl('+hue+','+sat+'%,'+(lig-12)+'%)';c.fillRect(0,0,W,Hh);
+  for(j=0;j<NY;j++)for(i=0;i<NX;i++){
+    var x=i*S0,y=j*S0,vert=((i+j)%2===0),t=vert?wa[i]:we[j];
+    var base='hsl('+hue+','+sat+'%,'+(lig+t.l+(t.s?-5:0))+'%)';
+    var g=vert?c.createLinearGradient(x,0,x+S0,0):c.createLinearGradient(0,y,0,y+S0);
+    g.addColorStop(0,'rgba(60,40,10,.22)');g.addColorStop(.25,base);g.addColorStop(.5,'rgba(255,255,245,.22)');g.addColorStop(.75,base);g.addColorStop(1,'rgba(60,40,10,.22)');
+    c.fillStyle=base;c.fillRect(x,y,S0,S0);c.fillStyle=g;c.fillRect(x,y,S0,S0);
+    var e=vert?c.createLinearGradient(0,y,0,y+S0):c.createLinearGradient(x,0,x+S0,0);
+    e.addColorStop(0,'rgba(50,30,5,.28)');e.addColorStop(.3,'rgba(0,0,0,0)');e.addColorStop(.7,'rgba(0,0,0,0)');e.addColorStop(1,'rgba(50,30,5,.28)');
+    c.fillStyle=e;c.fillRect(x,y,S0,S0);
+  }
+  for(i=0;i<W*Hh/160;i++){
+    var fx=R()*W,fy=R()*Hh,a=R()*6.28,l=3+R()*10;
+    c.strokeStyle='rgba('+(R()<.5?'255,255,245':'70,50,15')+','+(.05+R()*.12)+')';c.lineWidth=.8;
+    c.beginPath();c.moveTo(fx,fy);c.quadraticCurveTo(fx+Math.cos(a)*l*.5+R()*3,fy+Math.sin(a)*l*.5+R()*3,fx+Math.cos(a)*l,fy+Math.sin(a)*l);c.stroke();
+  }
+  var v=c.createRadialGradient(W*.5,Hh*.45,Hh*.2,W*.5,Hh*.5,W*.7);
+  v.addColorStop(0,'rgba(255,255,235,.12)');v.addColorStop(1,'rgba(60,40,10,.18)');c.fillStyle=v;c.fillRect(0,0,W,Hh);
+}
+function render(){
+  defs();
+  cx.font=S.weight+' '+FS+'px Spectral';
+  var W=Math.ceil(TX+cx.measureText('Symploké').width+28);
+  lino(document.getElementById('c1'),42,22,90,11);
+  lino(document.getElementById('c2'),42,22,90,23);
+  var a=document.createElementNS('http://www.w3.org/2000/svg','svg');a.setAttribute('viewBox','0 0 '+W+' '+H);a.setAttribute('role','img');a.setAttribute('aria-label','Symploké');
+  a.innerHTML='<g filter="url(#hilo)">'+symbol()+name()+'</g>';
+  document.getElementById('tela').appendChild(a);
+  var b=document.createElementNS('http://www.w3.org/2000/svg','svg');b.setAttribute('viewBox',(MX-12)+' '+(MY-12)+' 224 224');b.setAttribute('role','img');b.setAttribute('aria-label','Símbolo de Symploké');
+  b.innerHTML='<g filter="url(#hilo)">'+symbol()+'</g>';
+  document.getElementById('cua').appendChild(b);
+}
+Promise.all(['400','600','800'].map(function(w){return document.fonts.load(w+' '+FS+'px Spectral','Symploké');})).then(render,render);
+</script>
+</body>
+</html>
