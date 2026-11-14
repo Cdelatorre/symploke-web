@@ -518,7 +518,7 @@ window.MOTIVOS=[
   }
 },
 {
-  slug:'pareja', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
+  slug:'pareja', sueneTitulo:'Quizá os suene', bandaTitulo:'Podemos ayudaros', name:'Terapia de pareja', sym:'Mi pareja y yo no paramos de discutir',
   h1:'Terapia de pareja',   /* encabezado a todo el ancho, en una línea */
   revisada:true,   /* sin la marca «borrador» */
   seoTitle:'Terapia de pareja en Madrid y online · Psicólogo de pareja',
@@ -570,7 +570,6 @@ window.MOTIVOS=[
     ['¿Puedo ir a terapia de pareja sin mi pareja?','Sí. A veces solo una de las dos personas quiere empezar, y trabajar tu parte de la relación ya puede cambiar cosas.'],
     ['¿Sirve si estamos pensando en separarnos?','Sí. Puede ayudaros a tomar la decisión con calma y, si os separáis, a hacerlo con menos daño, sobre todo si hay hijos.'],
     ['¿Cuántas sesiones hacen falta?','Depende de cada pareja. Empezamos con sesiones semanales de 60 minutos y, cuando notáis avances, las espaciamos. En la primera entrevista os damos una idea orientativa y la revisamos sobre la marcha.'],
-    ['¿Cuánto cuesta la terapia de pareja?','La primera entrevista es gratuita. El precio de las sesiones os lo contamos cuando nos llaméis o nos escribáis.'],   /* sin cifra: el usuario prefiere que llamen y pregunten */
     ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si sufres violencia de género, puedes llamar al <strong>016</strong> o escribir por WhatsApp al <strong>600 000 016</strong>: es gratuito, confidencial y no deja rastro en la factura. En cualquier caso, en una urgencia, llama al <strong>112</strong>.'],
     ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.'],
     ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>.']
@@ -1147,7 +1146,7 @@ window.MOTIVOS=[
   }
 },
 {
-  slug:'infancia', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
+  slug:'infancia', sueneTitulo:'Quizá os suene', bandaTitulo:'Podemos ayudaros', name:'Infancia y adolescencia', sym:'Mi hijo adolescente no quiere hacer nada',
   h1:'Terapia para niños y adolescentes',
   reco:'¿Os suena? No tenéis por qué pasarlo a solas.',   /* habla a la familia (2026-11-10) */
   bandaTexto:'Trabajamos para aliviar el sufrimiento, paso a paso: nos contáis qué pasa, lo pensamos juntos y buscamos cómo resolverlo.',   /* «Podemos ayudarte» en vosotros (2026-11-11) */

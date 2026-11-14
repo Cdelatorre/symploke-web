@@ -6,7 +6,7 @@ var fija=document.body.getAttribute('data-m');   // página fija: ansiedad.html 
 var q=/[?&]m=([a-z]+)/.exec(location.search), m=motivoBySlug(fija||(q?q[1]:'ansiedad'))||MOTIVOS[0];
 if(!fija&&m.pagina){location.replace(m.pagina+location.hash);return;}   // motivo.html?m=ansiedad → ansiedad.html (una sola dirección para Google)
 var D='', CITA='contacto.html', ARR=' <span class="arr" aria-hidden="true">→</span>';
-var WA='<a class="btn ghost" href="#"><svg class="wa-logo" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Consultar por WhatsApp</a>';
+var WA='<a class="btn ghost" href="https://wa.me/34696519162" target="_blank" rel="noopener"><svg class="wa-logo" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>Consultar por WhatsApp</a>';
 document.title=m.seoTitle||(m.name+' · Psicólogo en Madrid centro y online · Symploké');   // seoTitle y seoDesc: lo que sale en la pestaña y en Google
 if(m.seoDesc&&!document.querySelector('meta[name="description"]')){var md=document.createElement('meta');md.name='description';md.content=m.seoDesc;document.head.appendChild(md);}
 var h='';
@@ -31,7 +31,7 @@ if(m.subs&&!c)h+='<div class="subs-top"><p class="layer">¿Te pasa algo de esto?
 h+='</div><div class="art">'+ILUS[m.slug]('h'+m.slug)+'</div></section>';
 
 h+='<section class="feel" aria-labelledby="suene"><div>';
-h+='<h2 id="suene">Quizá te suene</h2>';
+h+='<h2 id="suene">'+(m.sueneTitulo||'Quizá te suene')+'</h2>';   // pareja e infancia: «Quizá os suene»
 h+='<p class="note">'+(m.feelNote||'Frases con las que mucha gente cuenta lo que le pasa.')+'</p>';
 h+='</div><div><ul>'+m.feel.map(function(f){return '<li>«'+f+'»</li>';}).join('')+'</ul>';
 h+='<div class="reco"><p>'+(m.reco||'¿Te reconoces? No tienes por qué pasarlo a solas.')+'</p><a class="btn primary small" href="'+CITA+'">Pedir cita'+ARR+'</a></div>';
@@ -118,7 +118,7 @@ if(c&&c.relacionadas){   // VERSIÓN CARLOS: otras terapias en tarjetas con dibu
 }
 
 h+='<section class="band"><div class="pic">'+ILUS.portada('band')+'</div><div class="t">';
-h+='<h2>Podemos ayudarte</h2>';
+h+='<h2>'+(m.bandaTitulo||'Podemos ayudarte')+'</h2>';   // pareja e infancia: «Podemos ayudaros»
 h+='<p>'+(m.bandaTexto||'Trabajamos para aliviar el sufrimiento, paso a paso: nos cuentas qué te pasa, lo pensamos juntos y buscamos cómo resolverlo.')+'</p>';   // pareja lo dice en vosotros
 h+='<a class="btn primary" href="'+CITA+'">'+(m.bandaBoton||'Pide cita y lo vemos juntos')+ARR+'</a>';   // infancia: «Pedid»
 h+='<p class="donde">'+(m.bandaDonde||'Puedes visitarnos')+' en <a href="presencial.html">nuestro centro sanitario</a> de la calle Martín de Vargas, 5 (Madrid centro) o elegir la <a href="online.html">terapia online</a>.</p>';   // Madrid en el texto visible (búsquedas locales)
