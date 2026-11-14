@@ -81,7 +81,7 @@ window.MOTIVOS=[
     ['¿Hace falta tomar medicación?','En terapia psicológica no se recetan fármacos. Si ya tomas medicación o conviene valorarla, nos coordinamos con tu médico.'],
     ['¿La ansiedad y la depresión van juntas?','A menudo sí: cuando la ansiedad dura mucho, puede acabar en desgana, aislamiento y tristeza. Cuando aparecen las dos, las trabajamos a la vez.'],   /* añadida 2026-11-09 («ansiedad y depresión» se busca mucho) */
     ['¿Puedo pedir la baja por ansiedad?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la ansiedad tiene que ver con un conflicto laboral o con acoso y hace falta un informe pericial, podemos hacerlo desde la psicología forense, con un profesional distinto de tu terapeuta, para que sea imparcial.'],   /* 6.4 B, elegida 2026-11-09: aprovechar que Daniel es psicólogo forense */
-    ['¿Atendéis la ansiedad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Atendéis la ansiedad cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'La ansiedad es <strong>multicausal</strong>, es decir, se produce por diversas causas. Lo que nos interesa es saber cómo se entretejen en tu caso: qué te pasa en el cuerpo, qué te dices, qué está ocurriendo en tu vida. La ansiedad casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los amigos, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué situaciones responde y de qué te está avisando, para que puedas relacionarte con ella de otra manera. Se trata de dejar la lucha contra los síntomas y volver a orientarte e involucrarte en los distintos ámbitos de tu vida. Buscamos juntos qué partes de la ansiedad te están <strong>amordazando</strong> y cómo transformarlas en <strong>habilitadores</strong> que encajen con tus esferas vitales y te permitan avanzar.',
   cta:'Podemos ayudarte a dejar de darle vueltas a todo y a que la ansiedad no decida por ti.',
@@ -209,7 +209,7 @@ window.MOTIVOS=[
     ['¿Puedo dejar los antidepresivos?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico o psiquiatra, porque dejarlos bruscamente puede provocar síntomas de retirada. La terapia psicológica puede acompañarte durante ese proceso, y trabajar lo que te llevó a la depresión ayuda a que el cambio se sostenga.'],
     ['¿Puedo pedir la baja por depresión?','Sí. La baja laboral la da tu médico de atención primaria, no el psicólogo. Nosotros podemos acompañarte durante ese tiempo, preparar la vuelta al trabajo y, si hace falta, hacer un informe psicológico. Si la depresión tiene que ver con un conflicto laboral o con acoso y hace falta un informe pericial, podemos hacerlo desde la psicología forense, con un profesional distinto de tu terapeuta, para que sea imparcial.'],
     ['¿Cómo ayudar a alguien con depresión?','Escucha a esa persona sin juzgar y sin dar consejos rápidos; evita el «anímate», que suele hacer sentir peor. Proponle cosas pequeñas para hacer juntos y anímala a pedir ayuda profesional. Si habla de morir o de hacerse daño, llama al <strong>024</strong>. Y cuídate también tú: acompañar desgasta.'],
-    ['¿Atendéis la depresión cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Atendéis la depresión cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   together:'Ninguna de estas miradas basta sola. Pensamos la depresión entretejida con tu vida concreta: lo que has perdido, lo que te pesa, lo que se ha ido estrechando. No ver salida es lo que más paraliza: todo se ve oscuro y parece que no hay esperanza de cambio. Por eso ayuda pensarlo con alguien; no para tener la respuesta hecha, sino para buscar juntos por dónde empezar y avanzar poco a poco hacia lo que te importa.',
   cta:'Podemos ayudarte a dar los primeros pasos, también cuando no tienes ganas de nada.',
@@ -316,7 +316,7 @@ window.MOTIVOS=[
     ['¿Las pastillas para dormir solucionan el insomnio?','En terapia psicológica no se recetan fármacos. Los somníferos pueden ayudar de forma puntual, pero las guías clínicas no los recomiendan como solución a largo plazo, entre otras cosas por el riesgo de <a href="adicciones.html">dependencia</a>. Si los tomas o quieres dejarlos, nos coordinamos con tu médico.'],
     ['¿Puedo dejar las pastillas para dormir?','Nunca de golpe ni por tu cuenta: la retirada debe ser gradual y pautada por tu médico, porque dejarlas bruscamente puede empeorar el sueño y causar síntomas de abstinencia. La terapia cognitivo-conductual para el insomnio facilita dejarlas y reduce el riesgo de que el insomnio vuelva.'],
     ['¿La terapia online funciona para el insomnio?','Sí. La terapia cognitivo-conductual para el insomnio se adapta bien al formato online y logra resultados comparables a la presencial.'],
-    ['¿Tratáis el insomnio cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Tratáis el insomnio cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   feel:['Me agobia no poder dormirme','Me paso la noche dando vueltas','Miro cómo pasan las horas y no me duermo','No consigo descansar nunca'],
   /* citas: Núria Roure, psicóloga del sueño, en entrevista (titular de Moncloa.com, 11/12/2025, canal «Mentes Indomables»);
@@ -444,7 +444,7 @@ window.MOTIVOS=[
     ['¿Cómo ayudar a alguien con un TCA?','Habla desde la preocupación, sin juicios sobre su peso ni su cuerpo; evita los comentarios sobre lo que come y anímale a pedir ayuda profesional. Si es menor, la familia tiene un papel en el tratamiento y os orientaremos sobre cómo acompañar las comidas. Si notas pérdida de peso importante, desmayos o vómitos frecuentes, hace falta una valoración médica cuanto antes.'],
     ['¿Trabajáis con médicos y nutricionistas?','Sí. Si hay pérdida de peso importante, vómitos, mareos o desmayos, hace falta una valoración médica, y a menudo conviene trabajar junto a nutrición. Nos coordinamos con esos profesionales siempre que es necesario.'],
     ['¿La terapia online funciona para los problemas de alimentación?','Puede funcionar bien, sobre todo con atracones o hambre emocional. Si hay riesgo físico, valoramos contigo si conviene combinarla con seguimiento presencial y médico.'],
-    ['¿Tratáis los TCA cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Tratáis los TCA cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'alimentacion comida comer como y despues me culpo me siento horrible conmigo como mucho y despues me castigo solo comiendo alivio la ansiedad no puedo parar de comer como por ansiedad atracones dieta peso cuerpo vomitar restriccion imagen culpa',
   feel:['Como y después me culpo','Me siento horrible conmigo','Como mucho y después me castigo','Solo comiendo alivio la ansiedad'],
@@ -572,7 +572,7 @@ window.MOTIVOS=[
     ['¿Cuántas sesiones hacen falta?','Depende de cada pareja. Empezamos con sesiones semanales de 60 minutos y, cuando notáis avances, las espaciamos. En la primera entrevista os damos una idea orientativa y la revisamos sobre la marcha.'],
     ['¿Y si hay violencia en la pareja?','Cuando hay violencia, la terapia de pareja no es el recurso adecuado. Si sufres violencia de género, puedes llamar al <strong>016</strong> o escribir por WhatsApp al <strong>600 000 016</strong>: es gratuito, confidencial y no deja rastro en la factura. En cualquier caso, en una urgencia, llama al <strong>112</strong>.'],
     ['¿Se puede hacer terapia de pareja online?','Sí, por videollamada, incluso si cada uno se conecta desde un sitio distinto.'],
-    ['¿Hacéis terapia de pareja cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Hacéis terapia de pareja cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'pareja terapia de pareja mi pareja y yo no paramos de discutir siempre discutimos no nos entendemos nos queremos pero no funciona superar una ruptura apego narcisismo narcisista dependencia emocional relacion celos infidelidad separacion divorcio',
   feel:['Mi pareja y yo no paramos de discutir','Siempre discutimos, no nos entendemos','Nos queremos, pero no funciona','No consigo superar una ruptura'],
@@ -705,7 +705,7 @@ window.MOTIVOS=[
     ['¿Atendéis a niños y adolescentes?','Sí, con el consentimiento por escrito de quienes tienen la patria potestad y, desde los 16 años, el del propio adolescente. Trabajamos también con madres y padres y, cuando hace falta, nos coordinamos con el colegio.'],
     ['¿Hace falta medicación para el TDAH?','En terapia psicológica no se recetan fármacos. En algunos casos la medicación ayuda, y esa valoración corresponde a psiquiatría o neurología. Si la tomas o se está valorando, nos coordinamos con quien la lleve.'],
     ['¿La terapia online funciona para el TDAH?','En adultos funciona bien y ayuda a mantener la constancia. Con niños pequeños solemos preferir la consulta presencial y el trabajo con la familia.'],
-    ['¿Atendéis el TDAH en adultos cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Atendéis el TDAH en adultos cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'tdah atencion no me puedo concentrar no consigo concentrarme me cuesta concentrarme se me olvidan las cosas estudiar como saber si tengo tdah adulto hiperactividad despiste impulsividad infancia colegio ayudar a mi hijo',
   feel:['Empiezo mil cosas y no acabo ninguna','Lo dejo todo para el último momento','¿Y si tengo TDAH de adulto?','No sé cómo ayudar a mi hijo con TDAH'],
@@ -833,7 +833,7 @@ window.MOTIVOS=[
     ['¿Qué pasa si tengo una recaída?','No se pierde lo avanzado. Lo importante es pedir ayuda pronto y ver qué la provocó.','recaidas'],
     ['¿Puedo dejar el alcohol de golpe?','Si bebes a diario o en cantidad, no conviene dejarlo de golpe sin valoración médica, porque la abstinencia puede ser peligrosa. Lo mismo vale para las pastillas para dormir o los tranquilizantes: se dejan poco a poco y con pauta médica. Nos coordinamos con medicina y con los servicios especializados.'],
     ['¿Qué hago si mi familiar no quiere pedir ayuda?','Puedes venir tú. Trabajar con la familia ayuda a cuidarse, a no alimentar el problema sin querer y a facilitar que la persona dé el paso.','familiares'],
-    ['¿Tratáis las adicciones cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Tratáis las adicciones cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'adicciones alcohol beber juego apuestas casino tragaperras pantallas movil enganchado videojuegos redes no puedo dejar de beber no puedo dejar de jugar no puedo dejar el movil consumo drogas',
   feel:['No puedo dejar de beber','No puedo dejar de jugar','No puedo dejar el móvil','Me prometo que es la última vez'],
@@ -958,7 +958,7 @@ window.MOTIVOS=[
     ['¿Qué es el síndrome del impostor?','Es la sensación de no merecer lo que has logrado y el miedo a que los demás «descubran» que no vales tanto. Es frecuente en personas exigentes y suele aliviarse cuando el propio valor deja de medirse solo por los logros.','impostor'],
     ['¿La baja autoestima tiene que ver con la ansiedad o la depresión?','A menudo van juntas: valorarse poco alimenta la <a href="ansiedad.html">ansiedad</a> y el <a href="depresion.html">ánimo bajo</a>, y estos a su vez empeoran cómo nos vemos. Cuando aparecen juntas, las trabajamos a la vez.'],
     ['¿La terapia online funciona para la autoestima?','Sí. La terapia online logra resultados comparables a la presencial, y a muchas personas les resulta más fácil empezar desde casa.'],
-    ['¿Trabajáis la autoestima cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Trabajáis la autoestima cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'autoestima no soy suficiente me comparo con los demas me cuesta decir que no no me siento bien conmigo mismo inseguridad valer confianza exigencia aprobacion',
   feel:['No soy suficiente','Me comparo mucho con los demás','Me cuesta decir que no','No me siento bien conmigo'],
@@ -1070,7 +1070,7 @@ window.MOTIVOS=[
     ['¿Es normal pensar todo el tiempo en la persona que ha muerto?','Sí, sobre todo al principio. Pensar en quien se ha ido, soñar con esa persona o sentir su presencia forma parte del duelo. Preocupa más cuando la vida se detiene por completo durante mucho tiempo.'],
     ['¿Atendéis el duelo por una mascota o por una ruptura?','Sí. Cualquier pérdida importante merece un espacio: un animal, una relación, un trabajo o una etapa de la vida.'],
     ['¿Ayudáis a niños en duelo?','Sí, con la familia. A menudo ayuda acompañar a los adultos para que sepan cómo hablarles.'],
-    ['¿Hacéis terapia de duelo cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Hacéis terapia de duelo cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'duelo perdida muerte fallecimiento no consigo superar la muerte de mi madre padre ser querido mascota perro echo de menos como superar un duelo separacion',
   feel:['Nunca me dejará de doler','Me arrepiento de aquello que hice o no hice','¿Cómo voy a vivir sin él o sin ella?','Nunca conoceré a nadie como él o como ella'],   /* 2026-11-08; antes: «No consigo superar la muerte de mi madre», «Echo de menos a mi padre cada día», «No consigo superar la muerte de mi perro», «Siento que todo el mundo ha seguido menos yo» */
@@ -1197,7 +1197,7 @@ window.MOTIVOS=[
     ['¿Hace falta el consentimiento de los dos progenitores?','Pedimos por escrito el consentimiento de quienes tienen la patria potestad y, desde los 16 años, el del propio adolescente. Si hay separación o desacuerdo, os explicamos en la primera cita cómo hacerlo.'],
     ['¿Trabajáis también con los padres?','Sí. Trabajamos con madres, padres o tutores y, si hace falta, nos coordinamos con el colegio.'],
     ['¿Y si mi hijo adolescente no quiere venir?','Ayuda que quiera, pero al principio no siempre es así. Podemos empezar con la familia y buscar juntos cómo plantearle la primera cita.'],
-    ['¿Hay psicólogo infantil cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, con adolescentes hacemos también la <a href="online.html">terapia online</a>.']
+    ['¿Hay psicólogo infantil cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no podéis venir, con adolescentes hacemos también la <a href="online.html">terapia online</a>.']
   ],
   k:'infancia adolescencia mi hijo adolescente no quiere estudiar ni hacer nada no me habla no me respeta no tiene amigos no quiere ir al colegio hija menores ninos adolescentes escolar familia conducta',
   feel:['Mi hijo adolescente no quiere estudiar ni hacer nada','Mi hijo adolescente no me habla','Mi hijo no tiene amigos','Mi hijo no quiere ir al colegio'],
@@ -1318,7 +1318,7 @@ window.MOTIVOS=[
     ['¿Cómo ayudar a alguien con TLP?','Validar lo que siente sin darle la razón en todo, mantener límites claros con calma, no entrar en la escalada cuando la emoción sube y cuidarte también tú. Si hay riesgo de autolesión, llama al <strong>024</strong> o al <strong>112</strong>.'],
     ['¿Puede participar mi familia?','Sí. A menudo ayuda que la familia o la pareja entienda qué pasa y aprenda a acompañar sin desgastarse.'],
     ['¿Qué hago si hay autolesiones o ideas de suicidio?','Pide ayuda cuanto antes: llama al <strong>024</strong> si tienes pensamientos de suicidio y al <strong>112</strong> en una urgencia.'],
-    ['¿Tratáis los trastornos de la personalidad cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Tratáis los trastornos de la personalidad cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'trastornos de la personalidad no me entiendo ni yo cambios de humor repentinos me siento vacio emocionalmente me cuesta relacionarme con la gente relaciones inestabilidad impulsividad emociones intensas',
   feel:['No me entiendo ni yo','Tengo cambios de humor repentinos','Siento un vacío que no se llena con nada','Me cuesta relacionarme con la gente'],
@@ -1441,7 +1441,7 @@ window.MOTIVOS=[
     ['¿Hace falta ir antes al médico?','En problemas como la disfunción eréctil o el dolor en las relaciones conviene descartar una causa física. Nos coordinamos con medicina, urología o ginecología cuando hace falta.'],
     ['¿Puedo ir sin mi pareja?','Sí. Puedes venir solo o sola, o en pareja si el problema es de los dos.'],
     ['¿Se puede hacer terapia sexual online?','Sí. A muchas personas les resulta más fácil hablar de sexualidad desde casa, y la terapia online logra resultados comparables a la presencial.'],
-    ['¿Hacéis terapia sexual cerca de Lavapiés o Embajadores?','Sí. Nuestro centro sanitario está en la calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
+    ['¿Hacéis terapia sexual cerca de Lavapiés, Embajadores o La Latina?','Sí. Somos un centro sanitario autorizado (nº CS19975) en la zona de Embajadores, La Latina y Lavapiés: calle Martín de Vargas, 5, junto al metro de Embajadores. Si no puedes venir, hacemos la <a href="online.html">terapia online</a>.']
   ],
   k:'problemas sexuales sexualidad no tengo deseo sexual por mi pareja no me siento deseada mi pareja no me desea vida sexual ereccion dolor orgasmo',
   feel:['No tengo deseo sexual','Me agobia no estar a la altura','Siento que mi pareja ya no me desea','Me da vergüenza hablar de esto'],

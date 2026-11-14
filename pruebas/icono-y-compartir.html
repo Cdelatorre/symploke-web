@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prueba: icono e imagen al compartir</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../fuentes/fuentes.css">
+<style>
+  :root{--bg:#f6f4ef;--ink:#1d2a24;--mut:#5f6b65;--line:#ddd8cc;--verde:#007F55}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "DM Sans",system-ui,sans-serif;padding:32px 16px 64px}
+  main{max-width:880px;margin:0 auto}
+  h1{font-family:"DM Serif Display",serif;font-weight:400;font-size:34px;margin:0 0 6px}
+  h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:24px;margin:48px 0 6px}
+  p.nota{color:var(--mut);margin:0 0 18px;max-width:640px}
+  .fila{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+  .eti{font-size:13px;color:var(--mut);margin-top:8px;text-align:center}
+
+  /* Chat de WhatsApp */
+  .wa{width:360px;max-width:100%;background:#efeae2;border-radius:14px;padding:18px 14px;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .burbuja{margin-left:auto;width:300px;max-width:100%;background:#d9fdd3;border-radius:10px 2px 10px 10px;padding:4px;box-shadow:0 1px 1px rgba(0,0,0,.1)}
+  .prev{background:#cfeec8;border-radius:7px;overflow:hidden}
+  .prev img{display:block;width:100%;aspect-ratio:1200/630;object-fit:cover}
+  .prev .tx{padding:7px 9px 8px;font-family:system-ui,sans-serif}
+  .prev b{display:block;font-size:14px;color:#111}
+  .prev span{display:block;font-size:12.5px;color:#555;line-height:1.35;margin-top:2px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .prev i{display:block;font-style:normal;font-size:12px;color:#777;margin-top:3px}
+  .msg{font-family:system-ui,sans-serif;font-size:14px;padding:6px 6px 2px;color:#111;word-break:break-all}
+  .msg a{color:#027eb5}
+  .hora{text-align:right;font-size:11px;color:#667;padding:0 6px 2px;font-family:system-ui,sans-serif}
+
+  /* Pestañas del navegador */
+  .nav{width:420px;max-width:100%;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+  .tabs{display:flex;align-items:flex-end;gap:2px;padding:8px 8px 0;background:var(--tb)}
+  .tab{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px 8px 0 0;font:13px system-ui,sans-serif;color:var(--tt);max-width:230px;white-space:nowrap;overflow:hidden}
+  .tab.on{background:var(--ta)}
+  .tab img{width:16px;height:16px;flex:none}
+  .tab .gen{width:16px;height:16px;flex:none;border-radius:50%;border:1.5px solid var(--tt);opacity:.6}
+  .barra{height:34px;background:var(--ta)}
+  .claro{--tb:#dfe3e8;--ta:#fff;--tt:#222}
+  .oscuro{--tb:#202124;--ta:#35363a;--tt:#e8eaed}
+
+  /* Resultado de Google en el móvil */
+  .g{width:360px;max-width:100%;background:#fff;border-radius:12px;padding:16px;font-family:Arial,sans-serif;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+  .g .sitio{display:flex;align-items:center;gap:10px}
+  .g .circ{width:28px;height:28px;border-radius:50%;border:1px solid #e3e3e3;display:grid;place-items:center;background:#fff}
+  .g .circ img{width:18px;height:18px}
+  .g .nom{font-size:14px;color:#202124}
+  .g .url{font-size:12px;color:#4d5156}
+  .g .tit{font-size:18px;color:#1a0dab;margin:10px 0 4px;line-height:1.3}
+  .g .des{font-size:14px;color:#4d5156;line-height:1.45}
+
+  /* Icono en el móvil */
+  .movil{width:200px;background:linear-gradient(160deg,#3b5f7a,#1f3346);border-radius:22px;padding:22px;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .movil img{width:60px;height:60px;border-radius:14px;display:block}
+  .movil span{color:#fff;font:12px system-ui,sans-serif}
+
+  .tamanos{display:flex;align-items:flex-end;gap:22px;background:#fff;border-radius:12px;padding:20px 24px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .tamanos div{text-align:center;font-size:12px;color:var(--mut)}
+  .tamanos img{display:block;margin:0 auto 6px}
+
+  .grande img{display:block;width:100%;max-width:600px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Icono e imagen al compartir</h1>
+  <p class="nota">Página de prueba: todavía no está puesto en la web. Así se vería cuando alguien mande el enlace o abra la página.</p>
+
+  <h2>1. Al mandar el enlace por WhatsApp</h2>
+  <p class="nota">La tarjeta de vista previa con la foto del despacho (la primera de presencial), el título y la descripción de la portada.</p>
+  <div class="wa">
+    <div class="burbuja">
+      <div class="prev">
+        <img src="../img/compartir/despacho-koine-madrid.jpg" alt="">
+        <div class="tx">
+          <b>Psicólogo en Madrid centro y online · Symploké</b>
+          <span>Psicólogo general sanitario en Madrid centro (Embajadores) y online. Ansiedad, depresión, pareja… Centro sanitario autorizado.</span>
+          <i>tupsicologoenmadrid.es</i>
+        </div>
+      </div>
+      <div class="msg">Mira, este está en Embajadores <a>https://tupsicologoenmadrid.es/</a></div>
+      <div class="hora">10:42 ✓✓</div>
+    </div>
+  </div>
+
+  <h2>2. El icono en la pestaña del navegador</h2>
+  <p class="nota">A tamaño real (16 píxeles), con el navegador claro y oscuro. La segunda pestaña es cómo se ve hoy, sin icono.</p>
+  <div class="fila">
+    <div>
+      <div class="nav claro"><div class="tabs">
+        <div class="tab on"><img src="../favicon.svg" alt="">Psicólogo en Madrid centro…</div>
+        <div class="tab"><span class="gen"></span>Hoy, sin icono</div>
+      </div><div class="barra"></div></div>
+      <div class="eti">Navegador claro</div>
+    </div>
+    <div>
+      <div class="nav oscuro"><div class="tabs">
+        <div class="tab on"><img src="../favicon.svg" alt="">Psicólogo en Madrid centro…</div>
+        <div class="tab"><span class="gen"></span>Hoy, sin icono</div>
+      </div><div class="barra"></div></div>
+      <div class="eti">Navegador oscuro</div>
+    </div>
+  </div>
+
+  <h2>3. En los resultados de Google (móvil)</h2>
+  <div class="g">
+    <div class="sitio"><span class="circ"><img src="../favicon.svg" alt=""></span><div><div class="nom">Symploké</div><div class="url">tupsicologoenmadrid.es</div></div></div>
+    <div class="tit">Psicólogo en Madrid centro y online · Symploké</div>
+    <div class="des">Psicólogo general sanitario en Madrid centro (Embajadores) y online. Ansiedad, depresión, pareja… Centro sanitario autorizado.</div>
+  </div>
+
+  <h2>4. Si alguien la guarda en la pantalla del móvil</h2>
+  <div class="movil"><img src="../apple-touch-icon.png" alt=""><span>Symploké</span></div>
+
+  <h2>5. El icono a distintos tamaños</h2>
+  <div class="tamanos">
+    <div><img src="../favicon.svg" width="16" height="16" alt="">16</div>
+    <div><img src="../favicon.svg" width="32" height="32" alt="">32</div>
+    <div><img src="../favicon.svg" width="64" height="64" alt="">64</div>
+    <div><img src="../favicon.svg" width="128" height="128" alt="">128</div>
+  </div>
+
+  <h2>6. La imagen al compartir, entera</h2>
+  <p class="nota">1200 × 630 píxeles, el tamaño que piden WhatsApp, Facebook y LinkedIn. Recortada un poco por arriba y por abajo respecto a la foto de presencial.</p>
+  <div class="grande"><img src="../img/compartir/despacho-koine-madrid.jpg" alt=""></div>
+</main>
+</body>
+</html>
