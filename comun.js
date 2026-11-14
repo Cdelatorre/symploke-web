@@ -94,3 +94,56 @@ if(!REDUCED&&'IntersectionObserver' in window){
 /* 2026-11-11: fijado en «mancha» (la mancha de fondo se enciende al verde del logo); el usuario probó los selectores y los quitó */
 document.documentElement.setAttribute('data-hover','mancha');
 })();
+
+/* ---------- logo de la cabecera: «se teje en el telar». En la portada (data-tejer-al-cargar) se teje al cargar;
+   en todas las páginas vuelve a tejerse desde cero cada vez que se pasa el cursor por encima (2026-11-14) ---------- */
+(function(){
+'use strict';
+if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var svg=document.querySelector('.nav .brand svg'); if(!svg)return;
+var FINAL=svg.innerHTML;   // el logo estático, para dejarlo exacto al terminar
+var W=28, HALO=2.5, R=W/2+HALO+2, LOGO=[58,100,142];
+var SPEED=1.6, T_END=4.0;   // 4 s de la propuesta, a 1,6× → unos 2,5 s
+function cl(x){return Math.max(0,Math.min(1,x));}
+function e(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;}
+function vp(x,a,b){return 'M'+x+','+a.toFixed(1)+'V'+b.toFixed(1);}
+function hp(y,a,b){return 'M'+a.toFixed(1)+','+y+'H'+b.toFixed(1);}
+
+function weave(t){
+  var V=[],H=[],out='',i,j;
+  for(i=0;i<3;i++){
+    V.push(32+136*e(cl((t-0.1-0.28*i)/0.85)));    // urdimbre: cae de arriba abajo
+    H.push(32+136*e(cl((t-1.15-0.35*i)/0.95)));   // trama: entra de izquierda a derecha
+  }
+  for(j=0;j<3;j++)if(V[j]>32.5)out+='<path d="'+vp(LOGO[j],32,V[j])+'" class="cv" stroke-width="'+W+'"/>';
+  for(i=0;i<3;i++)if(H[i]>32.5)out+='<path d="'+hp(LOGO[i],32,H[i])+'" class="halo" stroke-width="'+(W+2*HALO)+'"/><path d="'+hp(LOGO[i],32,H[i])+'" class="ch" stroke-width="'+W+'"/>';
+  for(i=0;i<3;i++)for(j=0;j<3;j++){
+    if((i+j)%2!==0||V[j]<LOGO[i]||H[i]<LOGO[j]-W/2-HALO)continue;   // aquí la vertical pasa por encima
+    var y=LOGO[i];
+    out+='<path d="'+vp(LOGO[j],y-R,Math.min(V[j],y+R))+'" class="halo" stroke-width="'+(W+2*HALO)+'"/><path d="'+vp(LOGO[j],y-R-3,Math.min(V[j],y+R+3))+'" class="cv" stroke-width="'+W+'"/>';
+  }
+  var r=e(cl((t-2.95)/1.05)), k=1.08-0.08*r;
+  svg.innerHTML='<g transform="rotate('+(45*r).toFixed(2)+' 100 100) translate(100 100) scale('+k.toFixed(3)+') translate(-100 -100)">'+out+'</g>';
+}
+
+var t0=0, tejiendo=false;
+function tick(now){
+  if(!t0)t0=now;
+  var t=(now-t0)/1000*SPEED;
+  if(t>=T_END){svg.innerHTML=FINAL;tejiendo=false;return;}
+  weave(t);
+  requestAnimationFrame(tick);
+}
+function tejer(){   // empieza el tejido siempre desde cero, también si ya se estaba tejiendo
+  t0=0;
+  weave(0);
+  if(tejiendo)return;   // la animación en marcha sigue, pero vuelve a contar desde el principio
+  tejiendo=true;
+  requestAnimationFrame(tick);
+}
+var HT=/[#&]logo=([\d.]+)/.exec(location.hash);   // #logo=2 congela el logo en ese segundo de la animación (para revisar)
+if(HT){ var ft=parseFloat(HT[1]); if(ft<T_END)weave(ft); return; }
+var BRAND=svg.closest('.brand');
+if(BRAND.hasAttribute('data-tejer-al-cargar'))tejer();
+BRAND.addEventListener('mouseenter',tejer);   // al pasar el cursor por el logo, se vuelve a tejer (2026-11-14, petición del usuario)
+})();

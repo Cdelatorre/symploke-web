@@ -112,3 +112,7 @@ main [id],main details[id]{scroll-margin-top:110px}
 
 /* pie verde más fino: casi la mitad de alto (2026-11-11) */
 html footer{padding-top:14px;padding-bottom:16px}
+/* logo de la cabecera: trazos de la animación del tejido (comun.js) */
+.nav .brand svg{overflow:visible}
+.nav .brand path{fill:none}
+.nav .brand .cv{stroke:#009966} .nav .brand .ch{stroke:#5FE3A8} .nav .brand .halo{stroke:var(--bg)}
