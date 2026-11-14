@@ -77,7 +77,10 @@ def main():
         if d['faq']:
             url = re.search(r'<link rel="canonical" href="([^"]+)"', s).group(1)
             bloque = '<!-- preguntas frecuentes para Google: las genera herramientas/prerender.py -->\n' + faq_ld(url, d['faq'])
-            s = s.replace('<link rel="preconnect" href="https://fonts.googleapis.com">', bloque + '\n<link rel="preconnect" href="https://fonts.googleapis.com">', 1)
+            ANCLA = '<link rel="stylesheet" href="fuentes/fuentes.css">'   # 2026-11-14: antes era el preconnect de Google Fonts
+            if ANCLA not in s:
+                raise RuntimeError('No encuentro dónde poner las preguntas (FAQPage) en ' + nombre)
+            s = s.replace(ANCLA, bloque + '\n' + ANCLA, 1)
         io.open(f, 'w', encoding='utf-8', newline='').write(s)
         print('%-18s %6d caracteres de texto, %2d preguntas' % (nombre, len(re.sub(r'<[^>]+>', '', cuerpo)), len(d['faq'])))
 

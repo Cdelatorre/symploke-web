@@ -1,5 +1,5 @@
 /* interrogación del enlace a las preguntas: solo el signo «?» de Fredoka (elegida entre 10 pruebas, 2026-11-10) */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&text=%3F&display=swap');
+/* la fuente Fredoka del «?» está ahora en fuentes/fuentes.css */
 /* estilos de la página de cada terapia (motivo.html y las páginas fijas como ansiedad.html) */
 :root{
   color-scheme:light dark;

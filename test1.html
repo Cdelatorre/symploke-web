@@ -6,9 +6,7 @@
 <meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
 <title>Psicólogo en Madrid centro y online · Symploké</title>
 <meta name="description" content="Psicólogo general sanitario en Madrid centro (Embajadores) y online. Ansiedad, depresión, pareja… Centro sanitario autorizado.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&amp;family=DM+Serif+Display&amp;display=swap">
+<link rel="stylesheet" href="fuentes/fuentes.css">
 <link rel="stylesheet" href="comun.css">
 <script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <style>
@@ -699,21 +697,27 @@ function weave(t){
   svg.innerHTML='<g transform="rotate('+(45*r).toFixed(2)+' 100 100) translate(100 100) scale('+k.toFixed(3)+') translate(-100 -100)">'+out+'</g>';
 }
 
-var t0=0;
+var t0=0, tejiendo=false;
 function tick(now){
   if(!t0)t0=now;
   var t=(now-t0)/1000*SPEED;
-  if(t>=T_END){svg.innerHTML=FINAL;return;}
+  if(t>=T_END){svg.innerHTML=FINAL;tejiendo=false;return;}
   weave(t);
+  requestAnimationFrame(tick);
+}
+function tejer(){   // empieza el tejido desde cero (si ya se está tejiendo, deja que termine)
+  if(tejiendo)return;
+  tejiendo=true; t0=0;
+  weave(0);
   requestAnimationFrame(tick);
 }
 var HT=/[#&]logo=([\d.]+)/.exec(location.hash);   // #logo=2 congela el logo en ese segundo de la animación (para revisar)
 if(HT){ var ft=parseFloat(HT[1]); if(ft<T_END)weave(ft); return; }
-weave(0);
-requestAnimationFrame(tick);
+tejer();
+svg.closest('.brand').addEventListener('mouseenter',tejer);   // al pasar el cursor por el logo, se vuelve a tejer (2026-11-14, petición del usuario)
 })();
 </script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
 <script src="comun.js"></script>
 </body>
 </html>
