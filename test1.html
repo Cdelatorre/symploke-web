@@ -84,7 +84,7 @@ h3{line-height:1.1}
 .fcard{overflow:hidden}
 #como .cols{margin-top:24px}   /* 2026-11-14: menos aire entre el párrafo y las tarjetas de «Cómo trabajamos» para que el marco se vea entero al saltar desde el menú */
 a.fcard{display:block;color:inherit;text-decoration:none}   /* las tres tarjetas de «Cómo trabajamos» llevan a su página */
-.fimg{display:block;margin:-28px -28px 20px;aspect-ratio:16/10;background:#fff;border-bottom:1px solid var(--line);overflow:hidden}
+.fimg{display:block;margin:-28px -28px 20px;aspect-ratio:16/10;background:#fff;border-bottom:1px solid var(--line);overflow:hidden;border-radius:23px 23px 0 0}   /* sigue la curva de la tarjeta (24px − 1px de borde) para no tapar las esquinas superiores */
 .fimg svg{display:block;width:100%;height:100%}
 /* «¿Qué hacemos?»: ventana con dibujo que lleva a la página de terapias */
 .qwin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);margin-top:32px;background:var(--soft);border:1px solid var(--line);border-radius:28px;overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .15s ease,box-shadow .2s ease,transform .2s ease}
@@ -210,7 +210,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;color:var(--ink2);font-size:14px
     Symploké
   </a>
   <nav class="links" aria-label="Principal"><a href="#como">Cómo trabajamos</a><a href="terapia.html" data-spy="que">Terapias</a><a href="quienes-somos.html">Quiénes somos</a><a href="#blog">Blog</a></nav>
-  <a class="btn primary small" href="contacto.html">Pedir <span class="nav-largo">primera </span>cita</a>
+  <a class="btn primary small" href="contacto.html">Pedir primera cita</a>
 </header>
 
 <main id="top">
