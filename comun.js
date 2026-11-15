@@ -44,7 +44,7 @@ if(nav){
     mb.innerHTML='<svg class="rayas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
       +'<svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
     var panel=document.createElement('div');
-    panel.className='menu-panel'; panel.id='menu-movil'; mb.setAttribute('aria-controls','menu-movil');
+    panel.className='menu-panel'; panel.id='menu-movil'; panel.setAttribute('data-lenis-prevent','');   // si el panel tiene que desplazarse (móvil en horizontal), que lo haga él y no la página mb.setAttribute('aria-controls','menu-movil');
     [].forEach.call(links.querySelectorAll('a'),function(a){
       var c=a.cloneNode(true); c.removeAttribute('data-spy'); c.classList.remove('on');
       c.insertAdjacentHTML('beforeend','<span class="fl" aria-hidden="true">→</span>');
