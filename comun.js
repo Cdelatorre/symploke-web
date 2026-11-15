@@ -35,6 +35,43 @@ if(nav){
   if(DARK&&DARK.addEventListener)DARK.addEventListener('change',syncSw);   // cambia el tema del sistema y no hay elección guardada
   nav.appendChild(sw);   // en la esquina superior derecha, después de «Pedir primera cita»
   syncSw();
+
+  /* menú desplegable en móvil y tablet (≤860 px): botón de tres rayas + panel con los enlaces de la página y el interruptor de noche (fable 3) */
+  var links=nav.querySelector('.links');
+  if(links){
+    var mb=document.createElement('button');
+    mb.type='button'; mb.className='menu-btn'; mb.setAttribute('aria-label','Menú'); mb.setAttribute('aria-expanded','false');
+    mb.innerHTML='<svg class="rayas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
+      +'<svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+    var panel=document.createElement('div');
+    panel.className='menu-panel'; panel.id='menu-movil'; mb.setAttribute('aria-controls','menu-movil');
+    [].forEach.call(links.querySelectorAll('a'),function(a){
+      var c=a.cloneNode(true); c.removeAttribute('data-spy'); c.classList.remove('on');
+      c.insertAdjacentHTML('beforeend','<span class="fl" aria-hidden="true">→</span>');
+      panel.appendChild(c);
+    });
+    var modo=document.createElement('div');
+    modo.className='menu-modo'; modo.innerHTML='<span>Modo noche</span>';
+    panel.appendChild(modo);
+    nav.appendChild(mb); nav.appendChild(panel);
+    var MQ=window.matchMedia('(max-width:860px)');
+    var abre=function(o){panel.classList.toggle('open',o); mb.setAttribute('aria-expanded',String(o));};
+    var coloca=function(){   // el interruptor vive en el panel en móvil y tablet, y en la cabecera en ordenador
+      if(MQ.matches){modo.appendChild(sw);} else {nav.insertBefore(sw,mb); abre(false);}
+    };
+    mb.addEventListener('click',function(){abre(!panel.classList.contains('open'));});
+    panel.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))abre(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&panel.classList.contains('open')){abre(false);mb.focus();}});
+    document.addEventListener('click',function(e){if(panel.classList.contains('open')&&!nav.contains(e.target))abre(false);});
+    // la página en la que estás queda marcada en el panel (la página actual, o la sección visible en la portada)
+    var marca=function(){
+      var vivos=links.querySelectorAll('a'), ps=panel.querySelectorAll('a');
+      [].forEach.call(vivos,function(a,i){if(ps[i])ps[i].classList.toggle('on',a.classList.contains('on'));});
+    };
+    window.addEventListener('scroll',marca,{passive:true}); marca();
+    if(MQ.addEventListener)MQ.addEventListener('change',coloca); else if(MQ.addListener)MQ.addListener(coloca);
+    coloca();
+  }
 }
 
 /* ---------- menú: en la portada, el enlace de la sección que estás viendo queda marcado (.on);
