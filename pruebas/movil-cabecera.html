@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Cabecera en móvil · Symploké</title>
+<style>
+body{margin:0;padding:24px;font:15px/1.4 system-ui,sans-serif;background:#eef2f0;color:#10241C}
+h1{font-size:22px;margin:0 0 4px}p.s{margin:0 0 24px;color:#456}
+h2{font-size:17px;margin:28px 0 12px}
+.row{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+figure{margin:0}figcaption{font-weight:600;margin-bottom:8px}
+figcaption.mal{color:#b3261e}figcaption.bien{color:#007A50}
+iframe{display:block;border:1px solid #9ab;border-radius:14px;background:#fff;height:640px}
+.w412 iframe{width:412px}.w320 iframe{width:320px}
+</style></head><body>
+<h1>Cabecera en móvil: ahora y con el cambio</h1>
+<p class="s">Las ventanas son interactivas: pulsa el botón de menú y el interruptor de noche. La segunda y la tercera son una copia de prueba (pruebas/test1-movil.html); la web real no está tocada.</p>
+<h2>Teléfono de 412 px</h2>
+<div class="row w412">
+<figure><figcaption class="mal">Ahora</figcaption><iframe src="../test1.html"></iframe></figure>
+<figure><figcaption class="bien">Con el cambio</figcaption><iframe src="test1-movil.html"></iframe></figure>
+<figure><figcaption class="bien">Con el cambio · menú abierto</figcaption><iframe src="test1-movil.html?menu"></iframe></figure>
+</div>
+<h2>Teléfono estrecho de 320 px</h2>
+<div class="row w320">
+<figure><figcaption class="mal">Ahora</figcaption><iframe src="../test1.html"></iframe></figure>
+<figure><figcaption class="bien">Con el cambio (sin el nombre junto al logo)</figcaption><iframe src="test1-movil.html"></iframe></figure>
+<figure><figcaption class="bien">Con el cambio · menú abierto</figcaption><iframe src="test1-movil.html?menu"></iframe></figure>
+</div>
+</body></html>
