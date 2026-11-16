@@ -83,7 +83,7 @@ html.scrolled .theme-sw{width:52px;height:28px}
 html.scrolled .theme-sw .knob{width:20px;height:20px}
 html.scrolled .theme-sw[aria-checked="true"] .knob{transform:translateX(24px)}
 html.scrolled .theme-sw .ico{width:14px;height:14px;margin-top:-7px}
-@media (max-width:860px){ .theme-sw{margin-left:0} }
+@media (max-width:920px){ .theme-sw{margin-left:0} }
 /* móvil estrecho (2026-11-11): el interruptor de noche, en pequeño */
 @media (max-width:480px){
   .theme-sw{width:52px;height:28px}
@@ -120,7 +120,7 @@ html footer{padding-top:14px;padding-bottom:16px}
    comun.js crea el botón de menú y el panel con los enlaces de la propia página; en pantallas de 860 px o menos el interruptor
    de noche pasa al panel. En ordenador no se ve nada de esto */
 .menu-btn,.menu-panel{display:none}
-@media (max-width:860px){
+@media (max-width:920px){   /* 2026-11-16: antes 860; entre 861 y 919 px la cabecera se salía de su margen derecho */
   .nav .links{display:none}
   .menu-btn{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;width:42px;height:42px;margin:0;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--soft);color:var(--brandink);cursor:pointer;transition:background-color .2s ease,border-color .2s ease}
   .menu-btn:hover{border-color:var(--brand)}
