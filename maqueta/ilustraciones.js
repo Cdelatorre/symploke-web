@@ -94,6 +94,41 @@ ILUS.infancia=function(){return svg(blob(200,132,168,96)+own('infancia-juego.web
 ILUS.personalidad=function(){return svg(blob(200,132,168,96)+own('personalidad-senala.webp',142,24,116,212),'Chica que se tapa la boca mientras señala hacia otro lado');};
 ILUS.sexual=function(){return svg(blob(200,132,168,96)+own('sexual-cama.webp',35,30,330,206),'Dos mujeres sentadas en la cama, riendo juntas');};
 
+/* ---------- blog: la chica de ansiedad, sin mochila, con la mano sobre una bola de cristal (artículo de ansiedad anticipatoria) ---------- */
+/* la chica es un dibujo propio (anticipatoria-bola.webp: cabeza inclinada, sin la mano derecha); el brazo estirado, la mano, la bola
+   y la mesita se dibujan aquí, en coordenadas de la chica colocada en x = 95; luego todo se desplaza OX para centrar la escena */
+function crystalScene(uid){
+  function q(d,fill,w,col,extra){return '<path d="'+d+'" fill="'+(fill||'none')+'" stroke="'+(col||INK)+'" stroke-width="'+(w||1.6)+'" stroke-linecap="round" stroke-linejoin="round"'+(extra||'')+'/>';}
+  var cx=195, top=126, hem=158, L=cx-26, R=cx+26, n=4, sw=(R-L)/n, s='', g='cb'+uid;
+  s+='<defs><radialGradient id="'+g+'" cx="40%" cy="38%" r="65%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="'+F1+'"/><stop offset="1" stop-color="'+F3+'"/></radialGradient></defs>';
+  /* mesita: pie, patas y mantel con el bajo en ondas */
+  s+=q('M'+(cx-2.5)+' '+hem+' V226 H'+(cx+2.5)+' V'+hem,W,1.6);
+  s+=q('M'+cx+' 226 Q'+(cx-9)+' 229 '+(cx-17)+' 236 M'+cx+' 226 Q'+(cx+9)+' 229 '+(cx+17)+' 236',null,1.8);
+  var hemD='';for(var i=0;i<n;i++){hemD+=' Q'+(L+sw*(i+0.5)).toFixed(1)+' '+(hem+6)+' '+(L+sw*(i+1)).toFixed(1)+' '+hem;}
+  s+=q('M'+(L+4)+' '+top+' C'+(L+3)+' 138 '+(L+1)+' 148 '+L+' '+hem+hemD+' C'+(R-1)+' 148 '+(R-3)+' 138 '+(R-4)+' '+top+' Z',W,1.6);
+  s+=q('M'+(cx-12)+' 131 Q'+(cx-14)+' 145 '+(cx-13)+' '+(hem+3)+' M'+(cx+12)+' 131 Q'+(cx+14)+' 145 '+(cx+13)+' '+(hem+3),null,1);
+  s+='<ellipse cx="'+cx+'" cy="'+top+'" rx="26" ry="3.5" fill="'+W+'" stroke="'+INK+'" stroke-width="1.6"/>';
+  /* peana oscura de la bola */
+  s+=q('M'+(cx-8.5)+' 119.5 Q'+cx+' 123 '+(cx+8.5)+' 119.5 L'+(cx+11)+' '+(top-0.5)+' H'+(cx-11)+' Z',INK,1.4);
+  s+=q('M'+(cx-9.5)+' 123 H'+(cx+9.5),null,0.8,F3);
+  /* la bola: cristal con degradado, reflejos y un poco de niebla dentro */
+  var cy=109, r=12;
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="url(#'+g+')" stroke="'+INK+'" stroke-width="1.6"/>';
+  s+=q('M'+(cx-8)+' '+(cy+3)+' C'+(cx-5)+' '+cy+' '+(cx-1)+' '+(cy+4)+' '+(cx+3)+' '+(cy+1)+' C'+(cx+6)+' '+(cy-1)+' '+(cx+8)+' '+(cy+1)+' '+(cx+9)+' '+(cy+3),null,1,MID);
+  s+=q('M'+(cx-10.5)+' '+(cy+1)+' A10.5 10.5 0 0 1 '+(cx-7.5)+' '+(cy-7),null,2,W);
+  s+='<circle cx="'+(cx-5.5)+'" cy="'+(cy-4)+'" r="1.1" fill="'+W+'"/>';
+  s+=q('M'+(cx+5.5)+' '+(cy+8.5)+' A10 10 0 0 0 '+(cx+9.5)+' '+(cy+2.5),null,1.1,W);
+  /* el brazo que sale de detrás del pecho y la mano posada encima de la bola */
+  s+=q('M155.5 85.6 C163 86.2 172 88.8 182 90.8 L183.2 101 C173 101 164 100.2 155.5 99.4 Z',W,0,W);
+  s+=q('M155.5 85.6 C163 86.2 172 88.8 182 90.8',null,1.4)+q('M155.5 99.4 C164 100.2 173 101 183.2 101',null,1.4);
+  s+=q('M167 91.5 q2 3 0.5 6.5',null,0.9)+q('M181 90.6 L182.4 101',null,1.2);
+  s+=q('M181.5 90.6 C187 90 192.5 91.2 197.5 93.6 C201.5 95.8 204.6 99.2 206 103 C206.6 105 204.4 105.8 203.2 104.2 C202 101.6 199.8 99 196 97.4 C191 96.9 187 98.6 183.2 101 Z',W,1.3);
+  s+=q('M196.5 94.6 C199 96.8 200.8 99.6 201.6 102.6 M193.8 93.6 C196.4 95.6 198 97.8 198.8 100.2',null,0.8);
+  s+=q('M188.2 98.6 C189.2 100.8 190.6 102.6 192.6 103.3 C193.8 103.6 194.1 102.4 193.2 101.6 C192.1 100.4 191.5 99.2 191.3 97.6',W,1.1);
+  return s;
+}
+ILUS.anticipatoria=function(uid){var OX=42;return svg(blob(200,132,168,96)+own('anticipatoria-bola.webp',95+OX,24,88.4,212)+'<g transform="translate('+OX+' 0)">'+crystalScene(uid)+'</g>','Chica que, inquieta, posa la mano sobre una bola de cristal, como quien quiere ver el futuro');};
+
 /* ---------- formatos de terapia ---------- */
 ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.webp',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
 ILUS.online=function(){return svg(blob(200,132,168,96)+own('consulta-online.webp',80,24,240,212),'Terapia online: una persona en su mesa en videollamada con su psicóloga');};
