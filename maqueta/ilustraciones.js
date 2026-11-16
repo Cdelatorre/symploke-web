@@ -127,7 +127,11 @@ function crystalScene(uid){
   s+=q('M188.2 98.6 C189.2 100.8 190.6 102.6 192.6 103.3 C193.8 103.6 194.1 102.4 193.2 101.6 C192.1 100.4 191.5 99.2 191.3 97.6',W,1.1);
   return s;
 }
-ILUS.anticipatoria=function(uid){var OX=42;return svg(blob(200,132,168,96)+own('anticipatoria-bola.webp',95+OX,24,88.4,212)+'<g transform="translate('+OX+' 0)">'+crystalScene(uid)+'</g>','Chica que, inquieta, posa la mano sobre una bola de cristal, como quien quiere ver el futuro');};
+/* 2026-11-16: el artículo usa ahora un dibujo propio (anticipatoria-adivino.webp: chico sentado en el suelo con las manos sobre una
+   bola de cristal, sudadera en blanco como el resto de la línea y el agua verde de la bola). La escena anterior de la chica
+   (anticipatoria-bola.webp + crystalScene) se conserva como ILUS.anticipatoriaChica por si se quiere volver a ella. */
+ILUS.anticipatoriaChica=function(uid){var OX=42;return svg(blob(200,132,168,96)+own('anticipatoria-bola.webp',95+OX,24,88.4,212)+'<g transform="translate('+OX+' 0)">'+crystalScene(uid)+'</g>','Chica que, inquieta, posa la mano sobre una bola de cristal, como quien quiere ver el futuro');};
+ILUS.anticipatoria=function(){return svg(blob(200,132,168,96)+own('anticipatoria-adivino.webp',90,24,220,212),'Chico sentado en el suelo con las manos sobre una bola de cristal, como quien quiere ver el futuro');};
 
 /* ---------- formatos de terapia ---------- */
 ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.webp',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
@@ -140,4 +144,6 @@ ILUS.charlas=function(){return scene([{n:'entertainment',h:212,flip:-1}],'Charla
 ILUS.contacto=function(){return ILUS.portada();};
 
 window.ILUS=ILUS;
+/* artículos del blog con dibujo propio (slug del artículo -> clave de ILUS); los demás usan el dibujo de su motivo */
+window.ILUS_ART={'ansiedad-anticipatoria':'anticipatoria'};
 })();

@@ -1,0 +1,387 @@
+<!doctype html>
+<!--
+  ÍNDICE DEL BLOG · «Tirar del hilo» (propuesta 2026-11-16, para integrar en blog.html)
+  ---------------------------------------------------------------------------------------
+  Este archivo es blog.html con tres cambios. ESTA COPIA ESTÁ EN pruebas/, así que todas sus rutas empiezan por «../»
+  (../comun.css, ../maqueta/blog-data.js, ../articulo.html…). Para pasarlo a la raíz, junto a blog.html: quitar ese «../»
+  de las rutas y poner ARCHIVO='pruebas/blog-anterior.html' en el script (o el destino final del archivo).
+  Usa los mismos archivos que blog.html (comun.css, comun.js, fuentes/, maqueta/blog-data.js, motivos-data.js, ilustraciones.js, dibujar.js).
+  No toca ningún archivo común: todo lo nuevo está en dos bloques marcados «NUEVO» (uno de CSS y el script del final).
+
+  1. CABECERA CON NOMBRE (.bh)
+     · El blog se llama «Tirar del hilo». «Blog de psicología · Symploké» queda en pequeño, dentro del mismo <h1>.
+     · Telar a la derecha (el de la propuesta, inclinado), con menos hilos (4 verdes y 3 claros): se teje al
+       cargar (CSS) y sus hilos se apartan un poco cuando el cursor pasa por encima del telar (JS, solo con ratón).
+     · Bola de hilo enredada a la izquierda del nombre: al pasar el ratón se desenreda y su hilo subraya «Tirar del hilo»; al
+       quitarlo se vuelve a enredar. En móvil, al tocar el nombre (y otra vez para enredarla).
+     · Texto bajo el nombre (del usuario, 2026-11-16): «Para desenredar errores comunes e ideas confusas en las psicologías.»
+  2. LISTA CON FILTROS Y «VER MÁS» (.temas, #grid, #vermas)
+     · Botones por tema, sacados de los artículos de BLOG, con su número.
+     · Sin filtro: el artículo más reciente va destacado (.card.dest) y se ven 7 tarjetas en ordenador y 4 en móvil;
+       el botón «Ver N artículos más» enseña el resto. Con filtro se ven todas las de ese tema.
+     · Las tarjetas ocultas siguen en el HTML (display:none), así que todos los enlaces existen para Google.
+  3. EL PENSAMIENTO DE LOS JUEVES, COMO ARCHIVO DE AUTOR (.pj)
+     · Franja con retrato, dedicatoria, botón al archivo y temas para empezar.
+     · POR RELLENAR: «[Nombre]» (dos veces), la foto o retrato (.pj .foto) y el texto de la dedicatoria (marcado .draft).
+     · Los enlaces apuntan a blog-anterior.html (la prueba del archivo, en esta misma carpeta): cambiar al destino final.
+     · Los temas y sus números salen de blog-antiguo/inventario.csv (columna «tema del blog»). Hoy todos llevan al archivo
+       sin filtrar; lo suyo es que cada uno abra el archivo ya filtrado por ese tema.
+  También nuevo en el <head>: el <title> lleva el nombre del blog y hay <meta name="description"> (blog.html no tenía).
+  Con «reducir movimiento» activado en el sistema no hay animaciones.
+-->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
+<title>Blog de psicología · Tirar del hilo · Symploké</title>
+<meta name="description" content="Tirar del hilo, el blog de psicología de Symploké: ansiedad, pareja, duelo, sueño, TDAH… Textos para entender lo que te pasa, sin recetas."><!-- NUEVO: blog.html no tenía descripción -->
+<link rel="stylesheet" href="../fuentes/fuentes.css">
+<link rel="stylesheet" href="../comun.css">
+<script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF; --hero:#5FE3A8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.links a.on{color:var(--brandink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--btnbg,var(--brand));color:var(--btntext)}
+.btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
+.btn.small{font-size:15px;padding:12px 22px}
+.verify,.draft{font:600 11px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:var(--brandink);border:1px dashed var(--brand);border-radius:6px;padding:3px 6px;vertical-align:middle;white-space:nowrap}
+.verify{color:#8A5A00;border-color:#D9A640;background:#FFF6E0}
+.draft{background:var(--bg)}
+
+/* cabecera del artículo: franja verde con título centrado; la ilustración la cruza y su mitad baja ya cae en el blanco */
+:root{--artw:min(600px,92vw)}
+.ahero{display:flow-root;background:var(--hero);padding:clamp(40px,6vw,72px) clamp(20px,4.5vw,64px) 0;text-align:center}
+.ahero .tag{display:inline-block;font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:#0E4A36;border:2px solid #0E4A36;border-radius:999px;padding:8px 14px;text-decoration:none}
+.ahero h1{max-width:860px;margin:22px auto 18px;font-size:clamp(40px,5vw,68px);line-height:1;letter-spacing:-.5px;color:#10241C}
+.ahero .desc{max-width:620px;margin:0 auto;font-size:clamp(16px,1.3vw,19px);line-height:1.45;color:#16362A}
+.ahero .meta{margin:16px 0 0;font-size:14px;color:#16362A}
+.ahero .art{width:var(--artw);margin:clamp(20px,3vw,36px) auto calc(var(--artw) * -0.3125);position:relative}
+.ahero .art svg{display:block;width:100%;height:auto}
+.ahero .art svg > rect[width="400"]{fill:transparent}
+.ahero .art svg .bg{display:none}
+
+/* texto corrido */
+.post{max-width:720px;margin:0 auto;padding:calc(var(--artw) * 0.3125 + clamp(28px,4vw,48px)) clamp(20px,4.5vw,32px) 0}
+.post p{font-size:19px;line-height:1.65;color:var(--ink2);margin:0 0 20px}
+.post p.first::first-letter{float:left;font:400 64px/.8 'DM Serif Display',Georgia,serif;color:var(--brand);margin:8px 10px 0 0}
+.post h2{font-size:clamp(28px,2.8vw,38px);line-height:1.08;margin:48px 0 14px}
+.post .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
+.post .beyond{border-left:3px solid var(--brand);padding-left:20px}
+.feel{list-style:none;margin:24px 0;padding:0}
+.feel li{font:400 clamp(24px,2.4vw,30px)/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);padding:14px 0 14px 22px;border-left:4px solid var(--hero);margin-bottom:10px}
+.psy{margin:0;padding:0;list-style:none}
+.psy li{padding:16px 0;border-bottom:1px solid var(--line)}
+.psy b{display:block;font:400 22px/1.15 'DM Serif Display',Georgia,serif;color:var(--ink);margin-bottom:6px}
+.psy span{font-size:17px;line-height:1.55;color:var(--ink2)}
+.alert{border-left:3px solid var(--brand);padding:6px 0 6px 14px;font-size:16px!important}
+.sign{margin-top:36px!important;padding-top:20px;border-top:1px solid var(--line);font-size:15px!important}
+/* artículos escritos (maqueta/blog-data.js): listas, preguntas frecuentes y enlaces dentro del texto */
+.post ol,.post ul{font-size:19px;line-height:1.6;color:var(--ink2);margin:0 0 24px;padding-left:1.3em}
+.post li{margin-bottom:12px}
+.post li::marker{color:var(--brandink);font-weight:600}
+.post strong{color:var(--ink);font-weight:600}
+.post a{color:var(--brandink);text-underline-offset:3px}
+.post h3.q{font:600 19px/1.35 'DM Sans',sans-serif;color:var(--ink);margin:30px 0 8px}
+
+/* índice del blog */
+.ahero.solo{padding-bottom:clamp(40px,6vw,72px)}
+.blist{padding-top:clamp(36px,5vw,56px)}
+.card p{margin:0;font-size:15px;line-height:1.45;color:var(--ink2)}
+
+/* llamada a pedir cita */
+.ask{max-width:900px;margin:clamp(56px,7vw,88px) auto 0;padding:clamp(28px,4vw,48px);background:var(--soft);border:1px solid var(--line);border-radius:28px;text-align:center}
+.ask h2{font-size:clamp(28px,3vw,40px);margin-bottom:10px}
+.ask p{margin:0 auto;max-width:560px;color:var(--ink2);line-height:1.45}
+.ask .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px}
+.ask .more{display:inline-block;margin-top:16px;font-weight:600;color:var(--brandink);text-decoration:none}
+
+/* sigue leyendo */
+.related{max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.related h2{font-size:clamp(28px,3vw,40px);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
+.card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.card .img svg{display:block;width:100%;height:100%}
+.card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card .t2{font-size:12px;font-weight:600;letter-spacing:.3px;color:var(--brandink);text-transform:uppercase}
+.card h3{font-size:22px;line-height:1.12}
+.card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .grid{grid-template-columns:1fr}
+  .post p,.post ol,.post ul{font-size:17px}
+}
+
+/* ======================= NUEVO (2026-11-16): «Tirar del hilo» ======================= */
+/* --- 1. cabecera con nombre: sustituye a .ahero.solo en el índice --- */
+.bh{position:relative;overflow:hidden;background:var(--hero);color:#10241C}
+.bh .in{position:relative;z-index:2;max-width:1240px;margin:0 auto;padding:clamp(40px,6vw,76px) clamp(20px,4.5vw,64px) clamp(34px,4.6vw,56px)}
+.bh h1{margin:0;color:#10241C}
+.bh h1 .k{display:block;margin:0 0 16px;font:600 13px/1 'DM Sans',sans-serif;letter-spacing:1.2px;text-transform:uppercase;color:#0E4A36}
+.bh h1 .nom{position:relative;display:inline-block;white-space:nowrap;font-size:clamp(52px,7.4vw,112px);line-height:.95;letter-spacing:-1px;-webkit-tap-highlight-color:transparent}
+/* bola enredada a la izquierda del título: al pasar el ratón (o tocar, en móvil) se desenreda hacia la derecha y su hilo subraya
+   «Tirar del hilo»; al salir se vuelve a enredar. La bola tiene el mismo grosor de hilo que el subrayado (≈0,045em).
+   En ordenador cuelga en el margen izquierdo, para que el título siga alineado con el resto; en móvil el título le deja sitio. */
+.bh h1 .hilo{position:absolute;left:-.04em;bottom:-.20em;width:calc(100% + .08em);height:.34em;overflow:visible;pointer-events:none}
+.bh h1 .hilo path{fill:none;stroke:#009966;stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:.95;transition:stroke-dashoffset 1.3s cubic-bezier(.5,0,.2,1)}
+.bh h1 .ovillo{position:absolute;left:-.6em;bottom:-.34em;width:.56em;height:.56em;overflow:visible}   /* sin pointer-events:none: pasar por la bola también la desenreda */
+.bh h1 .ovillo .gira{transform-box:view-box;transform-origin:50px 50px;transition:transform 1.3s cubic-bezier(.5,0,.2,1)}
+.bh h1 .ovillo path{fill:none;stroke:#009966;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:0;transition:stroke-dashoffset 1.3s cubic-bezier(.5,0,.2,1)}
+.bh h1 .nom.suelto .hilo path{stroke-dashoffset:0}
+.bh h1 .nom.suelto .ovillo path{stroke-dashoffset:1}
+.bh h1 .nom.suelto .ovillo .gira{transform:rotate(540deg) scale(.5)}
+@media (hover:hover){ .bh h1 .nom{cursor:pointer} }
+.bh .d{max-width:540px;margin:clamp(26px,3vw,38px) 0 0;font-size:clamp(17px,1.45vw,21px);line-height:1.45;color:#16362A}
+.bh .telar{position:absolute;z-index:1;right:-70px;top:50%;width:min(52vw,700px);transform:translateY(-50%) rotate(-9deg);pointer-events:none}
+.bh .telar .mv{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.bh .telar .u{transform-box:fill-box;transform-origin:50% 0;animation:bh-cae .9s cubic-bezier(.6,0,.2,1) both}      /* urdimbre: cae de arriba abajo */
+.bh .telar .t{transform-box:fill-box;transform-origin:0 50%;animation:bh-entra 1s cubic-bezier(.6,0,.2,1) both}   /* trama: entra de izquierda a derecha */
+.bh .telar .cr{animation:bh-aparece .01s linear both}                                                              /* cruces donde la urdimbre pasa por encima */
+@keyframes bh-cae{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@keyframes bh-entra{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes bh-aparece{from{opacity:0}to{opacity:1}}
+
+/* --- 2. filtros por tema, destacado y «ver más» --- */
+.temas{max-width:1240px;margin:0 auto;padding:clamp(26px,3.4vw,40px) clamp(20px,4.5vw,64px) 0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.temas .lab{font-size:14px;color:var(--ink2);margin-right:6px}
+.temas button{display:inline-flex;align-items:center;gap:8px;font:500 15px/1 'DM Sans',sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:10px 15px;cursor:pointer;transition:border-color .15s ease,background-color .15s ease,color .15s ease}
+.temas button i{font-style:normal;font-size:12px;color:var(--ink2)}
+.temas button:not(.on):hover{background:#5FE3A8;border-color:#5FE3A8;color:#10241C}   /* el mismo verde clarito de las etiquetas de la portada */
+.temas button:not(.on):hover i{color:#10241C}
+.temas button:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.temas button.on{background:var(--btnbg,var(--brand));border-color:var(--btnbg,var(--brand));color:var(--btntext)}
+.temas button.on i{color:inherit;opacity:.8}
+.blist{padding-top:clamp(22px,3vw,34px)}
+.blist .card{position:relative}
+.blist .card.dest{grid-column:1/-1;flex-direction:row;align-items:stretch}
+.blist .card.dest .img{flex:0 0 46%;aspect-ratio:auto;min-height:300px;border-bottom:0;border-right:1px solid var(--line)}
+.blist .card.dest .txt{justify-content:center;gap:12px;padding:clamp(22px,3vw,44px)}
+.blist .card.dest h3{font-size:clamp(28px,3vw,42px);line-height:1.05}
+.blist .card.dest p{font-size:17px}
+.blist .card .nuevo{display:none;align-self:flex-start;font:600 12px/1 'DM Sans',sans-serif;letter-spacing:.5px;text-transform:uppercase;color:#10241C;background:var(--hero);border-radius:999px;padding:7px 11px}
+.blist .card.dest .nuevo{display:inline-block}
+.blist .card.fuera{display:none}
+.blist .card.entra{animation:bl-sube .45s cubic-bezier(.2,.7,.2,1) both}
+@keyframes bl-sube{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.vermas{display:flex;justify-content:center;margin-top:26px}
+.vermas button{font:600 16px/1 'DM Sans',sans-serif;color:var(--brandink);background:transparent;border:2px solid var(--brand);border-radius:999px;padding:16px 28px;cursor:pointer}
+.vermas button:hover{background:var(--soft)}
+.vermas button:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+
+/* --- 3. el pensamiento de los jueves: archivo de autor --- */
+.pj{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.pj .caja{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,.9fr);gap:clamp(22px,3.4vw,48px);align-items:center;padding:clamp(28px,4.4vw,60px);background:var(--soft);border:1px solid var(--line);border-radius:28px}
+.pj .foto{width:clamp(96px,11vw,150px);aspect-ratio:1;border-radius:50%;border:2px dashed var(--brand);display:grid;place-items:center;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.5px;color:var(--brandink);text-align:center;background:var(--bg);overflow:hidden}
+.pj .foto img{width:100%;height:100%;object-fit:cover}
+.pj .k{margin:0 0 14px;font:600 12px/1 'DM Sans',sans-serif;letter-spacing:.9px;text-transform:uppercase;color:var(--brandink)}
+.pj h2{font-size:clamp(32px,3.6vw,50px);line-height:1.02;margin:0}
+.pj .ded{max-width:560px;margin:14px 0 0;font-size:17px;line-height:1.5;color:var(--ink2)}
+.pj .btn{margin-top:22px}
+.pj .tms-t{margin:0 0 12px;font-size:14px;color:var(--ink2)}
+.pj .tms{display:flex;flex-wrap:wrap;gap:8px}
+.pj .tms a{font:500 14px/1 'DM Sans',sans-serif;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:10px 14px;text-decoration:none;transition:background-color .15s ease,border-color .15s ease,color .15s ease}
+.pj .tms a i{font-style:normal;font-size:12px;color:var(--ink2);margin-left:4px}
+.pj .tms a:hover,.pj .tms a:focus-visible{background:#5FE3A8;border-color:#5FE3A8;color:#10241C}
+.pj .tms a:hover i,.pj .tms a:focus-visible i{color:#10241C}
+
+
+@media (max-width:860px){
+  .bh .in{padding-bottom:118px}
+  .bh .telar{right:-60px;top:auto;bottom:-150px;transform:rotate(-9deg);width:400px}
+  .bh h1 .nom{font-size:min(52px,12vw);padding-left:.62em}
+  .bh h1 .hilo{left:.58em;width:calc(100% - .5em)}
+  .bh h1 .ovillo{left:0}
+  .bh .d{max-width:none}
+  .temas{flex-wrap:nowrap;overflow-x:auto;padding-bottom:6px;scrollbar-width:none}   /* los temas se deslizan con el dedo */
+  .temas::-webkit-scrollbar{display:none}
+  .temas button{flex:none}
+  .temas .lab{display:none}
+  .blist .card.dest{flex-direction:column}
+  .blist .card.dest .img{flex:none;aspect-ratio:16/10;min-height:0;border-right:0;border-bottom:1px solid var(--line)}
+  .pj .caja{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){
+  .bh .telar .u,.bh .telar .t,.bh .telar .cr,.blist .card.entra{animation:none}
+  .bh h1 .hilo path,.bh h1 .ovillo path,.bh h1 .ovillo .gira,.bh .telar .mv{transition:none}
+}
+/* ======================= fin de lo nuevo ======================= */
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="../test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="../test1.html#como">Cómo trabajamos</a><a href="../terapia.html">Terapias</a><a href="../quienes-somos.html">Quiénes somos</a><a class="on" href="blog-tirar-del-hilo.html">Blog</a></nav>
+  <a class="btn primary small" href="../contacto.html"><span>Pedir<span class="nav-largo"> primera</span> cita</span></a>
+</header>
+
+<div id="page"></div>
+<footer class="pie">
+  <div class="pie-grid">
+    <div><p class="pie-logo">Symploké</p><p>Psicología en Madrid centro y online.<br>Presencial en Koiné.</p></div>
+    <div><p class="pie-tit">Dónde</p><p>Calle de Martín de Vargas, 5<br>28005 Madrid<br>Metro Embajadores</p><p class="pie-mas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Mart%C3%ADn%20de%20Vargas%205%2C%2028005%20Madrid" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a></p></div>
+    <div><p class="pie-tit">Contacto</p><p><a href="tel:+34696519162">696 519 162</a><br><a href="https://wa.me/34696519162" target="_blank" rel="noopener">WhatsApp</a><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p><p class="pie-mas">Lunes a sábado, de 8:00 a 22:00</p></div>
+    <nav aria-label="Pie"><p class="pie-tit">La web</p><p><a href="../terapia.html">Terapias</a><br><a href="../quienes-somos.html">Quiénes somos</a><br><a href="blog-tirar-del-hilo.html">Blog</a><br><a href="../contacto.html">Pedir primera cita</a><br><a href="../privacidad.html">Política de privacidad</a></p></nav>
+  </div>
+  <div class="pie-legal"><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Centro sanitario autorizado nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></div>
+</footer>
+<script>/* año final automático en el pie; la web tupsicologoenmadrid.es es de 2013 */document.querySelectorAll("[data-anio]").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
+
+<script src="../maqueta/motivos-data.js"></script>
+<script src="../maqueta/ilustraciones.js"></script>
+<script src="../maqueta/dibujar.js"></script>
+<script src="../maqueta/blog-data.js"></script>
+<script>
+/* ======================= NUEVO (2026-11-16): índice del blog «Tirar del hilo» =======================
+   Sustituye al script del índice de blog.html. Los artículos salen de maqueta/blog-data.js (BLOG), igual que antes. */
+(function(){
+'use strict';
+var REDUCED=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var ARR=' <span class="arr" aria-hidden="true">→</span>';
+var ARCHIVO='blog-anterior.html';   // la prueba del archivo, en esta misma carpeta. CAMBIAR al destino final de «El pensamiento de los jueves»
+var corta=function(d){return d.replace(/\s*(Centro sanitario en )?Madrid y online\.?\s*$/,'');};
+
+/* telar de la cabecera (el de la propuesta original, inclinado): urdimbre vertical verde y trama horizontal clara.
+   Con menos hilos que la propuesta (4 verdes + 3 claros en vez de 6 + 4); los claros asoman a la izquierda la mitad que antes. El tejido lo anima el CSS al cargar;
+   luego los hilos se apartan un poco cuando el cursor pasa por encima del telar (data-kx/data-ky, script de más abajo, solo con ratón). */
+function telar(){
+  var X=[155,285,415,545], Y=[75,200,325], W=44, HALO=5, X0=66, o='', i, j, d;   // X0: donde empiezan los hilos claros (asoman a la izquierda con la punta redondeada)
+  for(i=0;i<X.length;i++) o+='<g class="mv" data-kx="'+((i%3)-1)*10+'" data-ky="0"><rect class="u" style="animation-delay:'+(0.1*i).toFixed(2)+'s" x="'+(X[i]-W/2)+'" y="-40" width="'+W+'" height="480" rx="10" fill="#009966"/></g>';
+  for(j=0;j<Y.length;j++){ d=(0.6+0.16*j).toFixed(2);
+    o+='<g class="mv" data-kx="0" data-ky="'+((j%2)?9:-9)+'"><rect class="t" style="animation-delay:'+d+'s" x="'+(X0-HALO)+'" y="'+(Y[j]-W/2-HALO)+'" width="'+(700-X0+HALO)+'" height="'+(W+2*HALO)+'" rx="14" fill="#5FE3A8"/><rect class="t" style="animation-delay:'+d+'s" x="'+X0+'" y="'+(Y[j]-W/2)+'" width="'+(700-X0)+'" height="'+W+'" rx="10" fill="#EAFBF3"/></g>'; }
+  for(i=0;i<X.length;i++)for(j=0;j<Y.length;j++){ if((i+j)%2)continue;   // en estos cruces la urdimbre pasa por encima
+    d=(0.85+0.16*j+0.12*i).toFixed(2);
+    o+='<g class="mv" data-kx="'+((i%3)-1)*10+'" data-ky="0"><g class="cr" style="animation-delay:'+d+'s"><rect x="'+(X[i]-W/2-HALO)+'" y="'+(Y[j]-W/2-9)+'" width="'+(W+2*HALO)+'" height="'+(W+18)+'" fill="#5FE3A8"/><rect x="'+(X[i]-W/2)+'" y="'+(Y[j]-W/2-14)+'" width="'+W+'" height="'+(W+28)+'" fill="#009966"/></g></g>'; }
+  return '<svg class="telar" viewBox="0 0 640 400" aria-hidden="true">'+o+'</svg>';
+}
+
+/* bola de hilo enredada: vueltas de hilo sobre una esfera, con el eje girando poco a poco, vistas de frente.
+   El trazo empieza en el centro de la bola y acaba en el cabo suelto (derecha), que es donde empalma el subrayado. */
+function ovillo(){
+  var p=[], T=Math.PI*2*3.6, n=240, k, t, a, e, r, x, y;
+  for(k=0;k<=n;k++){ t=T*k/n; a=t*0.42+0.4; e=0.35+0.9*Math.abs(Math.sin(t*0.17)); r=k<30?14+22*k/30:36;
+    x=50+r*(Math.cos(t)*Math.cos(a)-Math.sin(t)*Math.sin(a)*Math.cos(e));
+    y=50+r*(Math.cos(t)*Math.sin(a)+Math.sin(t)*Math.cos(a)*Math.cos(e));
+    p.push(x.toFixed(1)+' '+y.toFixed(1)); }
+  p.push('82 54','96 48');   // cabo suelto que sale de la bola hacia la derecha, donde empalma el subrayado
+  return '<svg class="ovillo" viewBox="0 0 100 100" aria-hidden="true"><g class="gira"><path pathLength="1" d="M'+p.join(' L')+'"/></g></svg>';
+}
+
+/* temas presentes en los artículos, en el orden en que aparecen, con su número */
+var temas=[], cuenta={};
+BLOG.forEach(function(r){var m=motivoBySlug(r.motivo)||MOTIVOS[0]; if(!cuenta[m.slug]){cuenta[m.slug]=0;temas.push(m);} cuenta[m.slug]++;});
+
+var h='';
+/* 1 · cabecera con nombre */
+h+='<header class="bh"><div class="in"><h1><span class="k">Blog de psicología · Symploké</span><span class="nom">Tirar del hilo<svg class="hilo" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 16 C 60 4, 110 26, 170 14 S 290 6, 396 18"/></svg>'+ovillo()+'</span></h1><p class="d">Para desenredar errores comunes e ideas confusas en las psicologías.</p></div>'+telar()+'</header>';
+/* 2 · filtros y lista */
+h+='<div class="temas" role="group" aria-label="Filtrar artículos por tema"><span class="lab">Tema:</span><button type="button" class="on" aria-pressed="true" data-t="">Todos <i>'+BLOG.length+'</i></button>'+temas.map(function(m){return '<button type="button" aria-pressed="false" data-t="'+m.slug+'">'+m.name+' <i>'+cuenta[m.slug]+'</i></button>';}).join('')+'</div>';
+h+='<section class="related blist"><div class="grid" id="grid">'+BLOG.map(function(r){
+  var rm=motivoBySlug(r.motivo)||MOTIVOS[0];
+  return '<a class="card" data-t="'+rm.slug+'" href="../articulo.html?a='+r.slug+'"><span class="img">'+ILUS[ILUS_ART[r.slug]||rm.slug]('b'+r.slug)+'</span><span class="txt"><span class="nuevo">Lo último</span><span class="t2">'+rm.name+'</span><h3>'+r.title+'</h3><p>'+corta(r.desc)+'</p><span class="go">'+r.mins+' min de lectura · Leer'+ARR+'</span></span></a>';
+}).join('')+'</div><div class="vermas"><button type="button" id="vermas"></button></div></section>';
+/* 3 · el pensamiento de los jueves: archivo de autor. POR RELLENAR: [Nombre], la foto y la dedicatoria */
+h+='<section class="pj" aria-labelledby="pj-t"><div class="caja">'
+ +'<div class="foto">FOTO O<br>RETRATO</div>'   // sustituir por <img src="../…" alt="[Nombre]">
+ +'<div><p class="k">Archivo de [Nombre] · 2014–2023</p><h2 id="pj-t">El pensamiento de los jueves</h2><p class="ded">Los textos de quien cofundó este proyecto. No siempre coinciden con cómo trabajamos hoy; los guardamos enteros, con su fecha, porque de ahí venimos. <span class="draft">texto provisional</span></p><a class="btn primary" href="'+ARCHIVO+'">Entrar en el archivo · 455 textos'+ARR+'</a></div>'
+ +'<div><p class="tms-t">Por dónde empezar:</p><div class="tms">'
+ +[['Sentimientos y emociones',81],['Identidad',67],['Psicoterapia',45],['Vida cotidiana',37],['Relaciones',34],['Sociedad y cultura',30],['Locura',19]].map(function(t){return '<a href="'+ARCHIVO+'">'+t[0]+' <i>'+t[1]+'</i></a>';}).join('')
+ +'</div></div></div></section>';
+document.getElementById('page').innerHTML=h;
+
+/* ---- lista: filtro por tema, destacado y «ver más» ---- */
+var grid=document.getElementById('grid'), cards=[].slice.call(grid.querySelectorAll('.card')), vm=document.getElementById('vermas');
+var tema='', todo=false, VIS=window.matchMedia('(max-width:860px)').matches?4:7;   // sin filtro: 7 tarjetas en ordenador y 4 en móvil
+function lista(anima){
+  var n=0, ocultas=0;
+  cards.forEach(function(c,i){
+    var ok=!tema||c.getAttribute('data-t')===tema, ver=ok;
+    if(ok&&!tema&&!todo&&n>=VIS){ver=false;ocultas++;}
+    if(ok)n++;
+    var estaba=!c.classList.contains('fuera');
+    c.classList.toggle('fuera',!ver);
+    c.classList.toggle('dest',!tema&&i===0);   // el más reciente va destacado solo cuando se ven todos los temas
+    c.classList.remove('entra');
+    if(ver&&anima&&!estaba&&!REDUCED){void c.offsetWidth;c.classList.add('entra');}
+  });
+  vm.parentNode.style.display=ocultas?'':'none';
+  vm.textContent='Ver '+ocultas+(ocultas===1?' artículo más':' artículos más');
+}
+document.querySelector('.temas').addEventListener('click',function(e){
+  var b=e.target.closest&&e.target.closest('button'); if(!b)return;
+  tema=b.getAttribute('data-t');
+  [].forEach.call(this.querySelectorAll('button'),function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',String(x===b));});
+  cards.forEach(function(c){c.classList.add('fuera');});   // para que las que quedan vuelvan a entrar
+  lista(true);
+});
+vm.addEventListener('click',function(){
+  var primera=cards.filter(function(c){return c.classList.contains('fuera');})[0];
+  todo=true; lista(true);
+  if(primera)primera.focus({preventScroll:true});   // el foco pasa a la primera tarjeta nueva
+});
+lista(false);
+
+/* ---- los hilos de la cabecera se apartan un poco cuando el cursor pasa por encima del telar (solo con ratón);
+        por el título y el texto no se mueven ---- */
+var bh=document.querySelector('.bh'), tel=bh.querySelector('.telar'), mvs=[].slice.call(bh.querySelectorAll('.telar .mv'));
+function quietos(){mvs.forEach(function(g){g.style.transform='';});}
+if(!REDUCED&&window.matchMedia('(hover:hover)').matches){
+  bh.addEventListener('pointermove',function(e){
+    var b=bh.getBoundingClientRect(), t=tel.getBoundingClientRect(),
+        l=Math.max(t.left,b.left), r=Math.min(t.right,b.right), a=Math.max(t.top,b.top), z=Math.min(t.bottom,b.bottom);   // la parte del telar que se ve
+    if(e.clientX<l||e.clientX>r||e.clientY<a||e.clientY>z){quietos();return;}
+    var mx=(e.clientX-l)/(r-l)-.5, my=(e.clientY-a)/(z-a)-.5;
+    mvs.forEach(function(g){g.style.transform='translate('+(mx*2*g.getAttribute('data-kx')).toFixed(1)+'px,'+(my*2*g.getAttribute('data-ky')).toFixed(1)+'px)';});
+  });
+  bh.addEventListener('pointerleave',quietos);
+}
+
+/* ---- la bola del título: con ratón se desenreda al pasar por encima y se vuelve a enredar al salir; en móvil, al tocar ---- */
+var nom=document.querySelector('.bh h1 .nom');
+if(window.matchMedia('(hover:hover)').matches){
+  nom.addEventListener('pointerenter',function(){nom.classList.add('suelto');});
+  nom.addEventListener('pointerleave',function(){nom.classList.remove('suelto');});
+}else{
+  nom.addEventListener('click',function(){nom.classList.toggle('suelto');});
+}
+
+})();
+</script>
+
+<script src="../vendor/lenis.min.js"></script>
+<script src="../comun.js"></script>
+</body>
+</html>

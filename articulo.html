@@ -153,7 +153,7 @@ h+='<a class="tag" href="blog.html">'+m.name+'</a>';
 h+='<h1>'+b.title+'</h1>';
 h+='<p class="desc">'+corta(b.desc)+'</p>';
 h+='<p class="meta">'+b.mins+' min de lectura</p>';
-h+='<div class="art">'+ILUS[m.slug]('a'+b.slug)+'</div>';
+h+='<div class="art">'+ILUS[ILUS_ART[b.slug]||m.slug]('a'+b.slug)+'</div>';
 h+='</header>';
 h+='<article class="post">'+b.html+'</article>';
 h+='<section class="ask"><h2>¿Te reconoces?</h2><p>'+m.cta+'</p>';
@@ -162,7 +162,7 @@ h+='<a class="more" href="'+motivoUrl(m)+'">Ver la terapia de '+m.name.toLowerCa
 var rel=[1,2,3].map(function(k){return BLOG[(idx+k)%BLOG.length];});
 h+='<section class="related"><h2>Sigue leyendo</h2><div class="grid">'+rel.map(function(r){
   var rm=motivoBySlug(r.motivo)||MOTIVOS[0];
-  return '<a class="card" href="articulo.html?a='+r.slug+'"><span class="img">'+ILUS[rm.slug]('r'+r.slug)+'</span><span class="txt"><span class="t2">'+rm.name+'</span><h3>'+r.title+'</h3><span class="go">Leer'+ARR+'</span></span></a>';
+  return '<a class="card" href="articulo.html?a='+r.slug+'"><span class="img">'+ILUS[ILUS_ART[r.slug]||rm.slug]('r'+r.slug)+'</span><span class="txt"><span class="t2">'+rm.name+'</span><h3>'+r.title+'</h3><span class="go">Leer'+ARR+'</span></span></a>';
 }).join('')+'</div></section>';
 document.getElementById('page').innerHTML=h;
 drawIn(document.querySelector('.ahero .art svg'));

@@ -148,7 +148,7 @@ var corta=function(d){return d.replace(/\s*(Centro sanitario en )?Madrid y onlin
 var h='<header class="ahero solo"><h1>Blog de psicología</h1></header>';
 h+='<section class="related blist"><div class="grid">'+BLOG.map(function(r){
   var rm=motivoBySlug(r.motivo)||MOTIVOS[0];
-  return '<a class="card" href="articulo.html?a='+r.slug+'"><span class="img">'+ILUS[rm.slug]('b'+r.slug)+'</span><span class="txt"><span class="t2">'+rm.name+'</span><h3>'+r.title+'</h3><p>'+corta(r.desc)+'</p><span class="go">'+r.mins+' min de lectura · Leer'+ARR+'</span></span></a>';
+  return '<a class="card" href="articulo.html?a='+r.slug+'"><span class="img">'+ILUS[ILUS_ART[r.slug]||rm.slug]('b'+r.slug)+'</span><span class="txt"><span class="t2">'+rm.name+'</span><h3>'+r.title+'</h3><p>'+corta(r.desc)+'</p><span class="go">'+r.mins+' min de lectura · Leer'+ARR+'</span></span></a>';
 }).join('')+'</div></section>';
 document.getElementById('page').innerHTML=h;
 })();
