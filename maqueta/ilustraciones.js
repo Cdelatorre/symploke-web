@@ -132,6 +132,9 @@ function crystalScene(uid){
    (anticipatoria-bola.webp + crystalScene) se conserva como ILUS.anticipatoriaChica por si se quiere volver a ella. */
 ILUS.anticipatoriaChica=function(uid){var OX=42;return svg(blob(200,132,168,96)+own('anticipatoria-bola.webp',95+OX,24,88.4,212)+'<g transform="translate('+OX+' 0)">'+crystalScene(uid)+'</g>','Chica que, inquieta, posa la mano sobre una bola de cristal, como quien quiere ver el futuro');};
 ILUS.anticipatoria=function(){return svg(blob(200,132,168,96)+own('anticipatoria-adivino.webp',90,24,220,212),'Chico sentado en el suelo con las manos sobre una bola de cristal, como quien quiere ver el futuro');};
+/* 2026-11-17: dibujo propio para el artículo de dependencia emocional (solo en el blog; la terapia de pareja no cambia):
+   chica sentada en el suelo mirando el móvil mientras un cachorro le pone la pata en la rodilla (dependencia-perro.webp). */
+ILUS.dependencia=function(){return svg(blob(200,132,168,96)+own('dependencia-perro.webp',74,26,252,212),'Chica sentada en el suelo, pendiente del móvil, mientras un cachorro le pone la pata en la rodilla');};
 
 /* ---------- formatos de terapia ---------- */
 ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.webp',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
@@ -145,5 +148,5 @@ ILUS.contacto=function(){return ILUS.portada();};
 
 window.ILUS=ILUS;
 /* artículos del blog con dibujo propio (slug del artículo -> clave de ILUS); los demás usan el dibujo de su motivo */
-window.ILUS_ART={'ansiedad-anticipatoria':'anticipatoria'};
+window.ILUS_ART={'ansiedad-anticipatoria':'anticipatoria','dependencia-emocional':'dependencia'};
 })();

@@ -55,8 +55,15 @@ def convertir(cuerpo):
             continue
         if lineas[0].startswith('## '):
             h = lineas[0][3:].strip()
+            if faq:
+                partes.append('</div></details>')
             faq = h.lower().startswith('preguntas frecuentes')
-            partes.append('<h2>%s</h2>' % inline(h))
+            if faq:   # desplegable como en las terapias (2026-11-17): el texto sigue en la página para Google
+                partes.append('<details class="a-preguntas"><summary><span class="qi" aria-hidden="true">?</span>'
+                              '<span class="t">%s <span class="arr" aria-hidden="true">→</span></span></summary>'
+                              '<div class="faq desplegable">' % inline(h))
+            else:
+                partes.append('<h2>%s</h2>' % inline(h))
             continue
         if all(re.match(r'\d+\.\s', l) for l in lineas):
             partes.append('<ol>%s</ol>' % ''.join('<li>%s</li>' % inline(re.sub(r'^\d+\.\s+', '', l)) for l in lineas))
@@ -65,11 +72,13 @@ def convertir(cuerpo):
             partes.append('<ul>%s</ul>' % ''.join('<li>%s</li>' % inline(l[2:]) for l in lineas))
             continue
         if faq and re.match(r'\*\*.+\*\*$', lineas[0]) and len(lineas) > 1:
-            partes.append('<h3 class="q">%s</h3><p>%s</p>' % (inline(lineas[0].strip('*')), inline(' '.join(lineas[1:]))))
+            partes.append('<details><summary><h3>%s</h3></summary><p>%s</p></details>' % (inline(lineas[0].strip('*')), inline(' '.join(lineas[1:]))))
             continue
         clase = ' class="first"' if primero else ''
         primero = False
         partes.append('<p%s>%s</p>' % (clase, inline(' '.join(lineas))))
+    if faq:
+        partes.append('</div></details>')
     return titulo, ''.join(partes), palabras
 
 

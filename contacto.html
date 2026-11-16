@@ -42,6 +42,10 @@ h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;c
 main{max-width:1240px;margin:0 auto;padding:16px clamp(20px,4.5vw,64px) clamp(64px,8vw,100px);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(28px,5vw,72px);align-items:stretch;max-width:1180px}
 .ct-art{position:relative;min-height:520px;display:flex;align-items:center;justify-content:center;padding:32px}   /* el dibujo suelto, sin recuadro ni marco, de día y de noche (2026-11-11) */
 .ct-art svg > rect[width="400"]{fill:transparent}
+/* 2026-11-17: el dibujo solo se pone verde al pasar por encima del propio dibujo, no por el hueco que lo rodea */
+.ct-art{pointer-events:none}
+.ct-art svg *{pointer-events:visiblePainted}
+.ct-art svg > rect[width="400"]{pointer-events:none}
 .ct-art svg{display:block;width:100%;max-width:580px;height:auto}
 .ct-form{display:flex;flex-direction:column;justify-content:center;gap:12px;max-width:440px}
 .ct-fields{display:flex;flex-direction:column;gap:12px}
@@ -189,7 +193,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
     <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
     Symploké
   </a>
-  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a href="terapia.html">Terapias</a><a href="quienes-somos.html">Quiénes somos</a><a href="test1.html#blog">Blog</a></nav>
+  <nav class="links" aria-label="Principal"><a href="test1.html#como">Cómo trabajamos</a><a href="terapia.html">Terapias</a><a href="quienes-somos.html">Quiénes somos</a><a href="blog.html">Blog</a></nav>
   <a class="btn primary small" href="contacto.html" aria-current="page"><span>Pedir<span class="nav-largo"> primera</span> cita</span></a>
 </header>
 
@@ -233,7 +237,7 @@ footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
     <div><p class="pie-logo">Symploké</p><p>Psicología en Madrid centro y online.<br>Presencial en Koiné.</p></div>
     <div><p class="pie-tit">Dónde</p><p>Calle de Martín de Vargas, 5<br>28005 Madrid<br>Metro Embajadores</p><p class="pie-mas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Mart%C3%ADn%20de%20Vargas%205%2C%2028005%20Madrid" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a></p></div>
     <div><p class="pie-tit">Contacto</p><p><a href="tel:+34696519162">696 519 162</a><br><a href="https://wa.me/34696519162" target="_blank" rel="noopener">WhatsApp</a><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p><p class="pie-mas">Lunes a sábado, de 8:00 a 22:00</p></div>
-    <nav aria-label="Pie"><p class="pie-tit">La web</p><p><a href="terapia.html">Terapias</a><br><a href="quienes-somos.html">Quiénes somos</a><br><a href="test1.html#blog">Blog</a><br><a href="contacto.html">Pedir primera cita</a><br><a href="privacidad.html">Política de privacidad</a></p></nav>
+    <nav aria-label="Pie"><p class="pie-tit">La web</p><p><a href="terapia.html">Terapias</a><br><a href="quienes-somos.html">Quiénes somos</a><br><a href="blog.html">Blog</a><br><a href="contacto.html">Pedir primera cita</a><br><a href="privacidad.html">Política de privacidad</a></p></nav>
   </div>
   <div class="pie-legal"><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Centro sanitario autorizado nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></div>
 </footer>
