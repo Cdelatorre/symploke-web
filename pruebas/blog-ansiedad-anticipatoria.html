@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
+<title>Ansiedad anticipatoria: el futuro que temes está hecho de pasado · Blog de psicología · Symploké</title>
+<link rel="stylesheet" href="../fuentes/fuentes.css">
+<link rel="stylesheet" href="../comun.css">
+<script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF; --hero:#5FE3A8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.links a.on{color:var(--brandink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--btnbg,var(--brand));color:var(--btntext)}
+.btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
+.btn.small{font-size:15px;padding:12px 22px}
+.verify,.draft{font:600 11px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:var(--brandink);border:1px dashed var(--brand);border-radius:6px;padding:3px 6px;vertical-align:middle;white-space:nowrap}
+.verify{color:#8A5A00;border-color:#D9A640;background:#FFF6E0}
+.draft{background:var(--bg)}
+
+/* cabecera del artículo: franja verde con título centrado; la ilustración la cruza y su mitad baja ya cae en el blanco */
+:root{--artw:min(600px,92vw)}
+.ahero{display:flow-root;background:var(--hero);padding:clamp(40px,6vw,72px) clamp(20px,4.5vw,64px) 0;text-align:center}
+.ahero .tag{display:inline-block;font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:#0E4A36;border:2px solid #0E4A36;border-radius:999px;padding:8px 14px;text-decoration:none}
+.ahero h1{max-width:860px;margin:22px auto 18px;font-size:clamp(40px,5vw,68px);line-height:1;letter-spacing:-.5px;color:#10241C}
+.ahero .desc{max-width:620px;margin:0 auto;font-size:clamp(16px,1.3vw,19px);line-height:1.45;color:#16362A}
+.ahero .meta{margin:16px 0 0;font-size:14px;color:#16362A}
+.ahero .art{width:var(--artw);margin:clamp(20px,3vw,36px) auto calc(var(--artw) * -0.3125);position:relative}
+.ahero .art svg{display:block;width:100%;height:auto}
+.ahero .art svg > rect[width="400"]{fill:transparent}
+.ahero .art svg .bg{display:none}
+
+/* texto corrido */
+.post{max-width:720px;margin:0 auto;padding:calc(var(--artw) * 0.3125 + clamp(28px,4vw,48px)) clamp(20px,4.5vw,32px) 0}
+.post p{font-size:19px;line-height:1.65;color:var(--ink2);margin:0 0 20px}
+.post p.first::first-letter{float:left;font:400 64px/.8 'DM Serif Display',Georgia,serif;color:var(--brand);margin:8px 10px 0 0}
+.post h2{font-size:clamp(28px,2.8vw,38px);line-height:1.08;margin:48px 0 14px}
+.post .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
+.post .beyond{border-left:3px solid var(--brand);padding-left:20px}
+.feel{list-style:none;margin:24px 0;padding:0}
+.feel li{font:400 clamp(24px,2.4vw,30px)/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);padding:14px 0 14px 22px;border-left:4px solid var(--hero);margin-bottom:10px}
+.psy{margin:0;padding:0;list-style:none}
+.psy li{padding:16px 0;border-bottom:1px solid var(--line)}
+.psy b{display:block;font:400 22px/1.15 'DM Serif Display',Georgia,serif;color:var(--ink);margin-bottom:6px}
+.psy span{font-size:17px;line-height:1.55;color:var(--ink2)}
+.alert{border-left:3px solid var(--brand);padding:6px 0 6px 14px;font-size:16px!important}
+.sign{margin-top:36px!important;padding-top:20px;border-top:1px solid var(--line);font-size:15px!important}
+
+/* llamada a pedir cita */
+.ask{max-width:900px;margin:clamp(56px,7vw,88px) auto 0;padding:clamp(28px,4vw,48px);background:var(--soft);border:1px solid var(--line);border-radius:28px;text-align:center}
+.ask h2{font-size:clamp(28px,3vw,40px);margin-bottom:10px}
+.ask p{margin:0 auto;max-width:560px;color:var(--ink2);line-height:1.45}
+.ask .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px}
+.ask .more{display:inline-block;margin-top:16px;font-weight:600;color:var(--brandink);text-decoration:none}
+
+/* sigue leyendo */
+.related{max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.related h2{font-size:clamp(28px,3vw,40px);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
+.card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.card .img svg{display:block;width:100%;height:100%}
+.card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card .t2{font-size:12px;font-weight:600;letter-spacing:.3px;color:var(--brandink);text-transform:uppercase}
+.card h3{font-size:22px;line-height:1.12}
+.card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .grid{grid-template-columns:1fr}
+  .post p{font-size:17px}
+}
+
+/* añadidos para la vista previa de artículos reales */
+.post .lista{margin:0 0 22px;padding-left:24px;color:var(--ink2)}
+.post .lista li{font-size:19px;line-height:1.6;margin:0 0 10px;padding-left:4px}
+.post ol.lista li::marker{color:var(--brand);font-weight:600}
+.post ul.lista li::marker{color:var(--brand)}
+.post strong{color:var(--ink);font-weight:600}
+.post a{color:var(--brandink);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:3px}
+.post h3.q{font:400 23px/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);margin:28px 0 8px}
+.post h3.q + p{margin-bottom:8px}
+@media (max-width:860px){ .post .lista li{font-size:17px} }
+.aviso{position:fixed;left:12px;bottom:12px;z-index:50;font:600 12px/1 'DM Sans',sans-serif;background:#FFF6E0;color:#8A5A00;border:1px dashed #D9A640;border-radius:8px;padding:8px 10px}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="../test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="../test1.html#como">Cómo trabajamos</a><a href="../terapia.html">Terapias</a><a href="../quienes-somos.html">Quiénes somos</a><a class="on" href="../test1.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="../contacto.html"><span>Pedir<span class="nav-largo"> primera</span> cita</span></a>
+</header>
+
+<div id="page">
+<header class="ahero">
+<a class="tag" href="blog-portada.html#blog">Ansiedad</a>
+<h1>Ansiedad anticipatoria: el futuro que temes está hecho de pasado</h1>
+<p class="desc">¿Ansiedad por lo que puede pasar? Por qué la ansiedad anticipatoria se hace con recuerdos y qué puede ayudarte.</p>
+<p class="meta">15 de noviembre de 2026 · 4 min de lectura · Por Daniel de la Torre Díaz</p>
+<div class="art" data-ilus="ansiedad"></div>
+</header>
+<article class="post">
+<p class="first">Es domingo por la noche y ya estás en la reunión del lunes. Sabes lo que van a decir, cómo te van a mirar y en qué momento se te va a quebrar la voz. Todavía no ha pasado nada, pero tu cuerpo ya está allí: el nudo en el estómago, la presión en el pecho, el sueño que no llega.</p>
+<p>A esto se le suele llamar <strong>ansiedad anticipatoria</strong>: la que sentimos antes de algo que aún no ha ocurrido. Y se explica casi siempre igual: «vives demasiado en el futuro». Aquí te proponemos darle la vuelta, porque creemos que explica poco.</p>
+<h2>Nadie ve el futuro: lo que ves es una película</h2>
+<p>El futuro no existe todavía, así que no hay nada que puedas estar viendo. Lo que tienes delante, cuando anticipas, es <strong>una escena montada con piezas que ya conoces</strong>: lo que te pasó otra vez, lo que le pasó a otra persona, lo que viste en una serie, lo que te contaron en una cena.</p>
+<p>Pasa con la oposición, con la biopsia, con una conversación pendiente o con el segundo ataque de pánico, que está hecho, literalmente, del primero. Parece una predicción, pero es un <strong>tráiler de una película que aún no se ha rodado, montado con planos de películas viejas</strong>.</p>
+<p>Esto cambia la pregunta. «¿Y si pasa?» te lleva a dar vueltas sin salir. Prueba con otra: <strong>¿de qué está hecha esta película? ¿De dónde he sacado cada plano?</strong></p>
+<h2>Por qué se atasca</h2>
+<p>Cuando la escena se repasa sin añadirle nada, no lleva a ninguna decisión: solo se repite. Quien tiene pocos modelos de cómo salir de una situación, o solo ha visto modelos de catástrofe, solo puede anticipar catástrofes. No es un fallo de cálculo ni «pensar en negativo»: es un <strong>repertorio pobre de referencias</strong>.</p>
+<p>Y el cuerpo responde como si fuera real, porque el cuerpo responde a lo que ve. Por eso no es solo «cosa de la cabeza»: hay biología (la activación de alerta es real y se nota), hay psicología (qué hacemos con ella: darle vueltas, comprobar, evitar) y hay contexto (qué plazos, qué exigencias y qué personas rodean esa escena).</p>
+<p>Evitar lo que asusta suele aliviar un rato, pero deja la película intacta: nunca llegas a comprobar cómo era de verdad.</p>
+<h2>Qué puede ayudar</h2>
+<ol class="lista">
+<li><strong>Descartar primero lo médico.</strong> El tiroides, algunas arritmias, la cafeína o ciertos medicamentos pueden producir síntomas de ansiedad. Si no lo has consultado, empieza por ahí.</li>
+<li><strong>Ponerle nombre a la escena y a las piezas.</strong> Escribe qué temes que ocurra y, junto a cada detalle, de dónde viene: algo vivido, algo visto o algo contado.</li>
+<li><strong>Añadir modelos nuevos.</strong> Se amplía el repertorio con experiencias distintas, no con argumentos. Ver a otras personas hacerlo, o haberlo hecho tú aunque sea en pequeño, cambia el material con el que se monta la película. Por eso la exposición gradual a lo temido funciona.</li>
+<li><strong>Preguntarte si es un oso o un espectro.</strong> Algunos miedos tienen un objeto real (una enfermedad grave, una deuda, un conflicto); otros se alimentan sobre todo de cómo imaginamos las cosas. Los dos asustan igual, pero no se trabajan igual.</li>
+<li><strong>Dar un paso firme, aunque tiemble.</strong> No hace falta estar tranquilo para actuar. Lo contrario de la ansiedad no es la calma, es la firmeza, y se puede ejercer con el pulso a cien. Ocuparse de otra persona suele sacar del bucle de vigilarse a uno mismo.</li>
+</ol>
+<h2>¿Cuándo pedir ayuda?</h2>
+<p>Si la anticipación te impide dormir (lo vemos en <a href="../insomnio.html">insomnio</a>), te hace evitar cosas importantes o la llevas meses encima, conviene hablarlo. A veces, además, el cansancio acaba en <a href="../depresion.html">depresión</a>. En nuestra página sobre <a href="../ansiedad.html">ansiedad</a> explicamos cómo la abordamos: sin quedarnos solo en el síntoma, mirando tu situación entera y tus contextos, que a veces chocan entre sí. Atendemos en nuestro centro sanitario de Madrid y online.</p>
+<h2>Preguntas frecuentes</h2>
+<h3 class="q">¿Qué es la ansiedad anticipatoria?</h3>
+<p>Es la que aparece antes de un acontecimiento que aún no ha ocurrido: un examen, una cita médica, una conversación difícil. Se nota en el cuerpo (opresión, nudo en el estómago, insomnio) y en la cabeza (imaginar escenas, darle vueltas).</p>
+<h3 class="q">¿Cómo se quita la ansiedad anticipatoria?</h3>
+<p>No se trata de eliminarla, sino de que deje de dirigirte. Ayuda entender de qué piezas está hecha la escena temida, ampliar tus experiencias con ese tipo de situaciones y actuar en lo concreto, aunque no estés tranquilo.</p>
+<h3 class="q">¿Es normal sentirla?</h3>
+<p>Sí. Anticipar es una capacidad humana útil. Se vuelve un problema cuando se hace insostenible, te paraliza o no puedes hacer nada con ella.</p>
+<h3 class="q">¿Y si me pasa sin motivo?</h3>
+<p>Puede que no encuentres el motivo, pero eso no significa que no exista; a veces la situación que la mantiene no es la del momento en que aparece. Si ocurre con frecuencia, consúltalo, y primero con un médico.</p>
+<p class="sign">Escrito por Daniel de la Torre Díaz, psicólogo general sanitario (colegiado M-28688). Última revisión: 15 de noviembre de 2026.</p>
+</article>
+<section class="ask"><h2>¿Te reconoces?</h2><p>No tienes por qué pasarlo solo.</p>
+<div class="cta"><a class="btn primary" href="../contacto.html">Pedir primera cita <span class="arr" aria-hidden="true">→</span></a></div>
+<a class="more" href="../ansiedad.html">Ver la terapia de ansiedad <span class="arr" aria-hidden="true">→</span></a></section>
+<section class="related"><h2>Sigue leyendo</h2><div class="grid"><a class="card" href="blog-dependencia-emocional.html"><span class="img" data-ilus="pareja"></span><span class="txt"><span class="t2">Pareja</span><h3>Dependencia emocional: el problema no es necesitar a alguien</h3><span class="go">Leer <span class="arr" aria-hidden="true">→</span></span></span></a><a class="card" href="#"><span class="img" data-ilus="insomnio"></span><span class="txt"><span class="t2">Sueño</span><h3>[Título del artículo]</h3><span class="go">Leer <span class="arr" aria-hidden="true">→</span></span></span></a></div></section>
+</div>
+<div class="aviso">Vista previa · no publicado</div>
+<footer class="pie">
+  <div class="pie-grid">
+    <div><p class="pie-logo">Symploké</p><p>Psicología en Madrid centro y online.<br>Presencial en Koiné.</p></div>
+    <div><p class="pie-tit">Dónde</p><p>Calle de Martín de Vargas, 5<br>28005 Madrid<br>Metro Embajadores</p><p class="pie-mas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Mart%C3%ADn%20de%20Vargas%205%2C%2028005%20Madrid" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a></p></div>
+    <div><p class="pie-tit">Contacto</p><p><a href="tel:+34696519162">696 519 162</a><br><a href="https://wa.me/34696519162" target="_blank" rel="noopener">WhatsApp</a><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p><p class="pie-mas">Lunes a sábado, de 8:00 a 22:00</p></div>
+    <nav aria-label="Pie"><p class="pie-tit">La web</p><p><a href="../terapia.html">Terapias</a><br><a href="../quienes-somos.html">Quiénes somos</a><br><a href="../test1.html#blog">Blog</a><br><a href="../contacto.html">Pedir primera cita</a><br><a href="../privacidad.html">Política de privacidad</a></p></nav>
+  </div>
+  <div class="pie-legal"><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Centro sanitario autorizado nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></div>
+</footer>
+<script>/* año final automático en el pie; la web tupsicologoenmadrid.es es de 2013 */document.querySelectorAll("[data-anio]").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
+
+<script src="../maqueta/ilustraciones.js"></script>
+<script src="../maqueta/dibujar.js"></script>
+<script>
+[].forEach.call(document.querySelectorAll('[data-ilus]'),function(el){var k=el.getAttribute('data-ilus');el.innerHTML=ILUS[k]((el.closest('.ahero')?'a':'r')+k);});
+drawIn(document.querySelector('.ahero .art svg'));
+</script>
+<script src="../vendor/lenis.min.js"></script>
+<script src="../comun.js"></script>
+</body>
+</html>

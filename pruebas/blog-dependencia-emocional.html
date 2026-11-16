@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><!-- versión de pruebas (GitHub Pages): QUITAR esta línea al trasladar la web a tupsicologoenmadrid.es -->
+<title>Dependencia emocional: el problema no es necesitar a alguien · Blog de psicología · Symploké</title>
+<link rel="stylesheet" href="../fuentes/fuentes.css">
+<link rel="stylesheet" href="../comun.css">
+<script>try{var t=localStorage.getItem('symploke-tema');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<style>
+:root{
+  color-scheme:light dark;
+  --bg:#FFFFFF; --ink:#10241C; --ink2:#33433C; --brand:#009966; --brandink:#007A50;
+  --line:#DCEBE4; --soft:#EEF8F3; --btntext:#FFFFFF; --hero:#5FE3A8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+    --line:#1D372C; --soft:#10251C; --btntext:#052018;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0A1712; --ink:#EAF4EF; --ink2:#B6CCC2; --brand:#34C990; --brandink:#7FE0B9;
+  --line:#1D372C; --soft:#10251C; --btntext:#052018;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;margin:0;color:var(--ink)}
+.nav{position:sticky;top:0;z-index:20;height:96px;display:flex;align-items:center;gap:14px;padding:0 clamp(20px,4.5vw,64px) 0 clamp(14px,1.8vw,26px);background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px)}
+.brand{display:flex;align-items:center;gap:14px;font-family:'DM Serif Display',Georgia,serif;font-size:38px;line-height:1;color:var(--brandink);text-decoration:none}
+.links{margin-left:auto;display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--ink2)}
+.links a{color:inherit;text-decoration:none}
+.links a.on{color:var(--brandink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 17px/1 'DM Sans',sans-serif;padding:18px 30px;border-radius:999px;border:2px solid var(--brand);text-decoration:none;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--btnbg,var(--brand));color:var(--btntext)}
+.btn.ghost{background:transparent;color:var(--brandink);padding:16px 28px}
+.btn.small{font-size:15px;padding:12px 22px}
+.verify,.draft{font:600 11px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:var(--brandink);border:1px dashed var(--brand);border-radius:6px;padding:3px 6px;vertical-align:middle;white-space:nowrap}
+.verify{color:#8A5A00;border-color:#D9A640;background:#FFF6E0}
+.draft{background:var(--bg)}
+
+/* cabecera del artículo: franja verde con título centrado; la ilustración la cruza y su mitad baja ya cae en el blanco */
+:root{--artw:min(600px,92vw)}
+.ahero{display:flow-root;background:var(--hero);padding:clamp(40px,6vw,72px) clamp(20px,4.5vw,64px) 0;text-align:center}
+.ahero .tag{display:inline-block;font:600 13px/1 'DM Sans',sans-serif;letter-spacing:.3px;color:#0E4A36;border:2px solid #0E4A36;border-radius:999px;padding:8px 14px;text-decoration:none}
+.ahero h1{max-width:860px;margin:22px auto 18px;font-size:clamp(40px,5vw,68px);line-height:1;letter-spacing:-.5px;color:#10241C}
+.ahero .desc{max-width:620px;margin:0 auto;font-size:clamp(16px,1.3vw,19px);line-height:1.45;color:#16362A}
+.ahero .meta{margin:16px 0 0;font-size:14px;color:#16362A}
+.ahero .art{width:var(--artw);margin:clamp(20px,3vw,36px) auto calc(var(--artw) * -0.3125);position:relative}
+.ahero .art svg{display:block;width:100%;height:auto}
+.ahero .art svg > rect[width="400"]{fill:transparent}
+.ahero .art svg .bg{display:none}
+
+/* texto corrido */
+.post{max-width:720px;margin:0 auto;padding:calc(var(--artw) * 0.3125 + clamp(28px,4vw,48px)) clamp(20px,4.5vw,32px) 0}
+.post p{font-size:19px;line-height:1.65;color:var(--ink2);margin:0 0 20px}
+.post p.first::first-letter{float:left;font:400 64px/.8 'DM Serif Display',Georgia,serif;color:var(--brand);margin:8px 10px 0 0}
+.post h2{font-size:clamp(28px,2.8vw,38px);line-height:1.08;margin:48px 0 14px}
+.post .refs{font-size:15px;border-left:3px solid var(--line);padding-left:16px}
+.post .beyond{border-left:3px solid var(--brand);padding-left:20px}
+.feel{list-style:none;margin:24px 0;padding:0}
+.feel li{font:400 clamp(24px,2.4vw,30px)/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);padding:14px 0 14px 22px;border-left:4px solid var(--hero);margin-bottom:10px}
+.psy{margin:0;padding:0;list-style:none}
+.psy li{padding:16px 0;border-bottom:1px solid var(--line)}
+.psy b{display:block;font:400 22px/1.15 'DM Serif Display',Georgia,serif;color:var(--ink);margin-bottom:6px}
+.psy span{font-size:17px;line-height:1.55;color:var(--ink2)}
+.alert{border-left:3px solid var(--brand);padding:6px 0 6px 14px;font-size:16px!important}
+.sign{margin-top:36px!important;padding-top:20px;border-top:1px solid var(--line);font-size:15px!important}
+
+/* llamada a pedir cita */
+.ask{max-width:900px;margin:clamp(56px,7vw,88px) auto 0;padding:clamp(28px,4vw,48px);background:var(--soft);border:1px solid var(--line);border-radius:28px;text-align:center}
+.ask h2{font-size:clamp(28px,3vw,40px);margin-bottom:10px}
+.ask p{margin:0 auto;max-width:560px;color:var(--ink2);line-height:1.45}
+.ask .cta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px}
+.ask .more{display:inline-block;margin-top:16px;font-weight:600;color:var(--brandink);text-decoration:none}
+
+/* sigue leyendo */
+.related{max-width:1240px;margin:0 auto;padding:clamp(56px,7vw,88px) clamp(20px,4.5vw,64px) clamp(64px,8vw,100px)}
+.related h2{font-size:clamp(28px,3vw,40px);margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{display:flex;flex-direction:column;overflow:hidden;text-decoration:none;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:22px;transition:border-color .15s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:var(--brand);transform:translateY(-2px);box-shadow:0 0 0 1.5px var(--brand),0 10px 28px rgba(0,60,40,.10)}
+.card .img{display:block;aspect-ratio:16/10;border-bottom:1px solid var(--line);background:#fff;overflow:hidden}
+.card .img svg{display:block;width:100%;height:100%}
+.card .txt{flex:1;display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px}
+.card .t2{font-size:12px;font-weight:600;letter-spacing:.3px;color:var(--brandink);text-transform:uppercase}
+.card h3{font-size:22px;line-height:1.12}
+.card .go{margin-top:auto;padding-top:10px;color:var(--brandink);font-weight:600;font-size:14px}
+footer{padding:28px clamp(20px,4.5vw,64px) 40px;font-size:14px}
+@media (max-width:860px){
+  .links{display:none}
+  .brand{font-size:26px;gap:8px}
+  .brand svg{width:48px;height:48px}
+  .nav{height:76px}
+  .nav .btn.small{margin-left:auto;white-space:nowrap;padding:10px 14px;font-size:14px}
+  .grid{grid-template-columns:1fr}
+  .post p{font-size:17px}
+}
+
+/* añadidos para la vista previa de artículos reales */
+.post .lista{margin:0 0 22px;padding-left:24px;color:var(--ink2)}
+.post .lista li{font-size:19px;line-height:1.6;margin:0 0 10px;padding-left:4px}
+.post ol.lista li::marker{color:var(--brand);font-weight:600}
+.post ul.lista li::marker{color:var(--brand)}
+.post strong{color:var(--ink);font-weight:600}
+.post a{color:var(--brandink);text-decoration:underline;text-decoration-color:#5FE3A8;text-decoration-thickness:3px;text-underline-offset:3px}
+.post h3.q{font:400 23px/1.2 'DM Serif Display',Georgia,serif;color:var(--ink);margin:28px 0 8px}
+.post h3.q + p{margin-bottom:8px}
+@media (max-width:860px){ .post .lista li{font-size:17px} }
+.aviso{position:fixed;left:12px;bottom:12px;z-index:50;font:600 12px/1 'DM Sans',sans-serif;background:#FFF6E0;color:#8A5A00;border:1px dashed #D9A640;border-radius:8px;padding:8px 10px}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="../test1.html" aria-label="Symploké, inicio">
+    <svg width="64" height="64" viewBox="0 0 200 200" fill="none" aria-hidden="true"><g transform="rotate(45 100 100)"><rect x="44" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="86" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="128" y="32" width="28" height="136" fill="#009966" rx="6"></rect><rect x="29.5" y="41.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="44" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="83.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="86" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="29.5" y="125.5" width="141" height="33" style="fill:var(--bg)" rx="8.5"></rect><rect x="32" y="128" width="136" height="28" fill="#5FE3A8" rx="6"></rect><rect x="41.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="41.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="43.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="83.5" y="86" width="33" height="28" style="fill:var(--bg)"></rect><rect x="85.4" y="82.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="44" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="40.7" width="29.2" height="34.6" fill="#009966"></rect><rect x="125.5" y="128" width="33" height="28" style="fill:var(--bg)"></rect><rect x="127.4" y="124.7" width="29.2" height="34.6" fill="#009966"></rect></g></svg>
+    Symploké
+  </a>
+  <nav class="links" aria-label="Principal"><a href="../test1.html#como">Cómo trabajamos</a><a href="../terapia.html">Terapias</a><a href="../quienes-somos.html">Quiénes somos</a><a class="on" href="../test1.html#blog">Blog</a></nav>
+  <a class="btn primary small" href="../contacto.html"><span>Pedir<span class="nav-largo"> primera</span> cita</span></a>
+</header>
+
+<div id="page">
+<header class="ahero">
+<a class="tag" href="blog-portada.html#blog">Pareja</a>
+<h1>Dependencia emocional: el problema no es necesitar a alguien</h1>
+<p class="desc">¿Tu vida gira en torno a una persona? Qué es la dependencia emocional, sus señales y cómo superarla sin aislarte.</p>
+<p class="meta">16 de noviembre de 2026 · 8 min de lectura · Por Daniel de la Torre Díaz</p>
+<div class="art" data-ilus="pareja"></div>
+</header>
+<article class="post">
+<p class="first">Miras el móvil por tercera vez en diez minutos. Ha leído el mensaje y no contesta. Cancelas el plan con tus amigos por si te llama. Repasas la última conversación buscando en qué fallaste. Sabes que esa relación no te hace bien, o no del todo, pero la idea de perderla te deja sin suelo.</p>
+<p>A esto se le suele llamar <strong>dependencia emocional</strong>. Y el consejo suele ser el mismo: «tienes que aprender a no necesitar a nadie», «quiérete primero», «sé independiente». Aquí te proponemos darle la vuelta, porque creemos que ese consejo, a veces, empeora las cosas.</p>
+<h2>Qué es la dependencia emocional (y qué no es)</h2>
+<p>Se llama dependencia emocional a una forma de vincularse en la que la vida entera parece girar alrededor de una persona: casi siempre la pareja, pero también una amistad, una madre, un padre o un hermano. Lo que más se describe es:</p>
+<ul class="lista">
+<li>miedo intenso a quedarte solo o sola;</li>
+<li>angustia cuando la otra persona se aleja o tarda en responder;</li>
+<li>cambiar tus planes, tus gustos o tus opiniones para no perderla;</li>
+<li>necesitar señales continuas de que te quiere;</li>
+<li>aguantar desprecios, celos o control porque romper parece peor.</li>
+</ul>
+<p>Conviene saber dos cosas. La primera: <strong>no es un diagnóstico oficial</strong>. Es una expresión útil para describir lo que pasa, pero no figura como trastorno en los manuales de diagnóstico. La segunda: que no sea un diagnóstico no quiere decir que no sea real. El sufrimiento es real; lo que cambia es cómo lo entendemos.</p>
+<h2>Nadie es independiente</h2>
+<p>Prueba a hacer un ejercicio. Quita de tu vida todo lo que te ha llegado de otras personas: el idioma en el que piensas, tu nombre, la forma de consolarte que aprendiste cuando te consolaban, tus gustos, tus bromas, tus normas. ¿Qué queda? Muy poco. Incluso para decir «yo» hace falta que alguien te haya dicho «tú».</p>
+<p>No nacemos completos para vincularnos después: <strong>nos hacemos con los demás</strong>. La persona se forma de fuera hacia dentro. Por eso la idea de alguien emocionalmente autosuficiente, que «no necesita a nadie», no describe a nadie real. Es un ideal, y bastante solitario.</p>
+<p>Hay un detalle curioso: en inglés, <em>free</em> (libre) y <em>friend</em> (amigo) vienen de la misma raíz. Robinson Crusoe, solo en su isla, no era libre: estaba solo.</p>
+<h2>La pregunta no es cuánto dependes, sino de cuántos</h2>
+<p>Aquí está la vuelta. El problema no suele ser depender <strong>demasiado</strong>, sino depender <strong>de uno solo</strong>.</p>
+<p>Piensa en una cordada de montaña. Quien escala va atado y depende de la cuerda; nadie sube un pico sin ella. Pero la cuerda está sujeta a varios anclajes, y si uno cede, los demás aguantan. La dependencia que hace daño es colgar de un único mosquetón: tu ánimo, tus planes y tu valor sujetos a una sola persona. Si esa persona falla, se va o simplemente tarda en contestar, todo se tambalea.</p>
+<p>La dependencia sana se parece más a una red: pareja, amistades, familia, trabajo, aficiones, un barrio, un grupo. Ninguno lo carga todo. Y lo interesante es que <strong>depender de muchos te deja más libre respecto de cada uno</strong>. Con tu pareja puedes discutir, decir que no o pedir algo distinto, porque tu suelo no depende solo de ella.</p>
+<p>Por eso la dependencia aparece a menudo después de perder otros apoyos: una mudanza, un cambio de trabajo, amistades que se fueron apagando, una familia lejos o en conflicto. No es que «seas dependiente»: es que te has quedado con pocos anclajes.</p>
+<h2>«No necesites a nadie»: la otra trampa</h2>
+<p>Si el problema es colgar de una sola persona, la solución no es no colgar de ninguna. El ideal de la «independencia emocional» (bastarte a ti mismo, soltar, no apegarte) promete libertad, pero muchas veces deja soledad. Quedarse fuera del alcance de todos, sin que nadie pueda moverte ni corregirte, tampoco es estar bien: es otra forma de aislarse.</p>
+<p>Ayuda distinguir entre <strong>libertad de</strong> y <strong>libertad para</strong>. Librarte de una relación que te ata puede ser necesario. Pero eso no basta para vivir: para hacer cosas, para proyectar, para levantarte cuando caes, necesitas a otras personas. La libertad que sirve se apoya en otros.</p>
+<p>Los estudios de <strong>psicología</strong> apuntan en la misma dirección: quienes sienten que pueden apoyarse en su pareja se atreven más a explorar y a emprender cosas por su cuenta. Aceptar que necesitas a alguien no te hace más débil; a menudo te da el suelo para ir más lejos.</p>
+<h2>«Quiérete primero» separa lo que va junto</h2>
+<p>Otra frase habitual: «nadie te va a querer si no te quieres tú primero». Suena bien, pero coloca la estima dentro de uno, como un depósito que hubiera que llenar a solas antes de salir al mundo. Preferimos hablar de <strong>estimarse</strong>: algo que se hace, no algo que se tiene, y que aprendemos de cómo nos han mirado y nos miran (lo contamos en <a href="../autoestima.html">autoestima</a>).</p>
+<p>La firmeza, además, no se mide por lo que sientes, sino por lo que haces: decir que no, sostener un plan propio, no aceptar un desprecio. Y se puede hacer con miedo. Ocuparte de ti y ocuparte de los demás no se oponen: van juntos.</p>
+<h2>Cuidado con las etiquetas que lo explican todo</h2>
+<p>«Dependo porque tengo apego ansioso»; «tengo apego ansioso porque dependo». A veces el nombre de un problema se usa como si fuera su causa, y entonces la explicación da vueltas sobre sí misma. La historia de cada persona, cómo la cuidaron y cómo aprendió a vincularse, <strong>cuenta</strong>, y mucho. Pero no es un destino escrito en la infancia, como un horóscopo. Lo que se aprendió con otras personas se puede seguir trabajando con otras personas.</p>
+<p>Una etiqueta también puede aliviar («por fin sé lo que me pasa»), y eso tiene valor. Lo que no conviene es que acabe ocupando toda tu identidad.</p>
+<h2>No todo es afecto: también es trato</h2>
+<p>La pregunta «¿lo necesito demasiado?» a veces tapa otra más importante: <strong>¿cómo me trata?</strong> Una relación se mide también por el respeto, la lealtad, la justicia y el cuidado. Si hay control del móvil, aislamiento de tus amistades, humillaciones, miedo o cualquier forma de violencia, el problema no es tu dependencia: es el trato. Si estás en esa situación, en España el 016 atiende las 24 horas, es gratuito y no deja rastro en la factura.</p>
+<h2>Un problema multicausal</h2>
+<p>Como casi todo lo que nos pasa, la dependencia emocional no tiene una sola causa. Se nota <strong>en el cuerpo</strong>: ansiedad cuando la otra persona se aleja, insomnio, el estómago encogido esperando un mensaje. Se mantiene por <strong>lo que hacemos</strong>: comprobar, ceder, pedir confirmación, cancelar planes, cosas que alivian un rato y estrechan la red un poco más. Y depende de <strong>los contextos</strong>: una historia de vínculos, una ruptura reciente, una ciudad nueva, unas redes sociales en las que el otro funciona sobre todo como público que da «me gusta». Contextos que a veces chocan entre sí: lo que pide la pareja no siempre es lo que pide tu familia o tu trabajo.</p>
+<h2>Cómo superar la dependencia emocional: qué puede ayudar</h2>
+<ol class="lista">
+<li><strong>Dibujar tu mapa.</strong> Escribe de quién y de qué depende tu ánimo en una semana normal: personas, actividades, lugares. Mira cuántos anclajes tienes y cuáles has ido perdiendo.</li>
+<li><strong>Recuperar o crear otros apoyos.</strong> Volver a escribir a una amiga, retomar una afición, apuntarte a algo con gente. No para sustituir a nadie, sino para que ninguna persona lo cargue todo.</li>
+<li><strong>Mirar el trato, no solo lo que sientes.</strong> Pregúntate qué le dirías a alguien querido si te contara que su pareja le trata así.</li>
+<li><strong>Practicar la firmeza en pequeño.</strong> Mantener un plan propio, decir que no a algo menor, esperar antes de escribir. No hace falta estar tranquilo para actuar; se puede hacer con la <a href="../ansiedad.html">ansiedad</a> encima.</li>
+<li><strong>No cambiar una dependencia por el aislamiento.</strong> Si sales de una relación, el objetivo no es no necesitar a nadie, sino repartir tu vida entre más gente y más cosas. Tras una ruptura, pasar un <a href="../duelo.html">duelo</a> es normal.</li>
+<li><strong>Pedir ayuda, sin que la terapia sea tu único apoyo.</strong> Una buena terapia te ayuda a ampliar tu red, no a sustituirla.</li>
+</ol>
+<h2>¿Cuándo pedir ayuda?</h2>
+<p>Si sientes que no puedes salir de una relación que te hace daño, si repites el mismo tipo de relación una y otra vez, o si la angustia de perder a alguien te ocupa los días y las noches, conviene hablarlo. En nuestra página de <a href="../pareja.html">terapia de pareja</a> explicamos cómo trabajamos los vínculos, la dependencia emocional y las rupturas: sin quedarnos en la etiqueta, mirando tu situación entera y tus contextos. Atendemos en nuestro centro sanitario de Madrid y online.</p>
+<h2>Preguntas frecuentes</h2>
+<h3 class="q">¿Qué es la dependencia emocional?</h3>
+<p>Es una forma de vincularse en la que la vida gira alrededor de una persona, casi siempre la pareja, con miedo intenso a perderla y dificultad para separarse aunque la relación haga daño. No es un diagnóstico oficial, pero describe un sufrimiento real.</p>
+<h3 class="q">¿Cuáles son los síntomas de la dependencia emocional?</h3>
+<p>Miedo a la soledad, angustia cuando la otra persona se aleja o no responde, necesidad constante de confirmación, cambiar tus planes y opiniones para no perderla y aguantar un trato que no aceptarías en otra relación. En el cuerpo puede notarse como ansiedad, insomnio o un nudo en el estómago.</p>
+<h3 class="q">¿Cómo superar la dependencia emocional?</h3>
+<p>No se trata de dejar de necesitar a los demás, sino de no depender de una sola persona. Ayuda recuperar otros apoyos (amistades, familia, actividades), fijarse en cómo te tratan, practicar la firmeza en lo pequeño y, si cuesta salir, pedir ayuda profesional.</p>
+<h3 class="q">¿Es malo depender de tu pareja?</h3>
+<p>No. Todos dependemos de otras personas, y apoyarse en la pareja forma parte de una relación sana. El problema aparece cuando la pareja se convierte en el único apoyo, o cuando depender de ella te lleva a aceptar un mal trato.</p>
+<h3 class="q">¿La dependencia emocional solo se da en pareja?</h3>
+<p>No. Puede darse con una amistad, con un padre o una madre, con un hermano o con un grupo. También después de una ruptura, con alguien que ya no está: es la dependencia emocional de tu ex.</p>
+<h3 class="q">¿Tiene que ver con el apego?</h3>
+<p>La forma en que aprendimos a vincularnos cuenta, pero no es un destino fijado en la infancia. Lo que se aprendió con otras personas se puede seguir trabajando con otras personas.</p>
+<p class="sign">Escrito por Daniel de la Torre Díaz, psicólogo general sanitario (colegiado M-28688). Última revisión: 16 de noviembre de 2026.</p>
+</article>
+<section class="ask"><h2>¿Te reconoces?</h2><p>No tienes por qué pasarlo solo.</p>
+<div class="cta"><a class="btn primary" href="../contacto.html">Pedir primera cita <span class="arr" aria-hidden="true">→</span></a></div>
+<a class="more" href="../pareja.html">Ver la terapia de terapia de pareja <span class="arr" aria-hidden="true">→</span></a></section>
+<section class="related"><h2>Sigue leyendo</h2><div class="grid"><a class="card" href="blog-ansiedad-anticipatoria.html"><span class="img" data-ilus="ansiedad"></span><span class="txt"><span class="t2">Ansiedad</span><h3>Ansiedad anticipatoria: el futuro que temes está hecho de pasado</h3><span class="go">Leer <span class="arr" aria-hidden="true">→</span></span></span></a><a class="card" href="#"><span class="img" data-ilus="insomnio"></span><span class="txt"><span class="t2">Sueño</span><h3>[Título del artículo]</h3><span class="go">Leer <span class="arr" aria-hidden="true">→</span></span></span></a></div></section>
+</div>
+<div class="aviso">Vista previa · no publicado</div>
+<footer class="pie">
+  <div class="pie-grid">
+    <div><p class="pie-logo">Symploké</p><p>Psicología en Madrid centro y online.<br>Presencial en Koiné.</p></div>
+    <div><p class="pie-tit">Dónde</p><p>Calle de Martín de Vargas, 5<br>28005 Madrid<br>Metro Embajadores</p><p class="pie-mas"><a href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20de%20Mart%C3%ADn%20de%20Vargas%205%2C%2028005%20Madrid" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">→</span></a></p></div>
+    <div><p class="pie-tit">Contacto</p><p><a href="tel:+34696519162">696 519 162</a><br><a href="https://wa.me/34696519162" target="_blank" rel="noopener">WhatsApp</a><br><a href="mailto:info@tupsicologoenmadrid.es">info@tupsicologoenmadrid.es</a></p><p class="pie-mas">Lunes a sábado, de 8:00 a 22:00</p></div>
+    <nav aria-label="Pie"><p class="pie-tit">La web</p><p><a href="../terapia.html">Terapias</a><br><a href="../quienes-somos.html">Quiénes somos</a><br><a href="../test1.html#blog">Blog</a><br><a href="../contacto.html">Pedir primera cita</a><br><a href="../privacidad.html">Política de privacidad</a></p></nav>
+  </div>
+  <div class="pie-legal"><span>Daniel de la Torre Díaz · Psicólogo general sanitario · Colegiado M-28688</span><span>Centro sanitario autorizado nº CS19975 · © 2013–<span data-anio>2026</span> Symploké</span></div>
+</footer>
+<script>/* año final automático en el pie; la web tupsicologoenmadrid.es es de 2013 */document.querySelectorAll("[data-anio]").forEach(function(e){e.textContent=new Date().getFullYear()})</script>
+
+<script src="../maqueta/ilustraciones.js"></script>
+<script src="../maqueta/dibujar.js"></script>
+<script>
+[].forEach.call(document.querySelectorAll('[data-ilus]'),function(el){var k=el.getAttribute('data-ilus');el.innerHTML=ILUS[k]((el.closest('.ahero')?'a':'r')+k);});
+drawIn(document.querySelector('.ahero .art svg'));
+</script>
+<script src="../vendor/lenis.min.js"></script>
+<script src="../comun.js"></script>
+</body>
+</html>

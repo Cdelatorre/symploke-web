@@ -44,6 +44,19 @@ footer{background:#007A50 !important;color:#FFFFFF !important;border-top:0 !impo
 footer a{color:inherit}
 footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 40px}   /* pie: tu nombre a la izquierda, el centro sanitario a la derecha (2026-11-10) */
 footer span{word-spacing:.08em}
+/* pie grande en cuatro columnas (2026-11-16): marca, dónde, contacto y enlaces; abajo la línea de colegiado y centro sanitario */
+html body footer.pie{display:block;padding:clamp(40px,5vw,60px) clamp(20px,4.5vw,64px) 22px;font:400 14px/1.6 'DM Sans',sans-serif}
+.pie p{margin:0}
+.pie-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:32px clamp(24px,4vw,56px)}
+.pie-logo{font:400 26px/1.1 'DM Serif Display',Georgia,serif;margin-bottom:10px !important}
+.pie-tit{font:600 11px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-bottom:14px !important}
+.pie-mas{margin-top:12px !important}
+.pie a{text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;overflow-wrap:anywhere}
+.pie a:hover{color:#5FE3A8}
+.pie a:focus-visible{outline:2px solid #5FE3A8;outline-offset:2px}
+.pie-legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 40px;margin-top:clamp(32px,4vw,48px);padding-top:18px;border-top:1px solid rgba(255,255,255,.22);font-size:13px}
+@media (max-width:920px){ .pie-grid{grid-template-columns:1fr 1fr} }
+@media (max-width:480px){ .pie-grid{grid-template-columns:1fr;gap:26px} }
 
 /* ---------- flecha de botones y enlaces: se adelanta un poco al pasar el ratón ---------- */
 .arr{display:inline-block;transition:transform .3s cubic-bezier(.3,.7,.2,1.4)}
