@@ -135,6 +135,15 @@ ILUS.anticipatoria=function(){return svg(blob(200,132,168,96)+own('anticipatoria
 /* 2026-11-17: dibujo propio para el artículo de dependencia emocional (solo en el blog; la terapia de pareja no cambia):
    chica sentada en el suelo mirando el móvil mientras un cachorro le pone la pata en la rodilla (dependencia-perro.webp). */
 ILUS.dependencia=function(){return svg(blob(200,132,168,96)+own('dependencia-perro.webp',74,26,252,212),'Chica sentada en el suelo, pendiente del móvil, mientras un cachorro le pone la pata en la rodilla');};
+/* 2026-11-17: dibujo propio para el artículo de ataque de pánico (solo en el blog; la terapia de ansiedad no cambia):
+   chico en un sillón con las manos en el pecho (panico-sillon.webp, 328x432). */
+ILUS.panicoSillon=function(){return svg(blob(200,132,168,96)+own('panico-sillon.webp',126,18,148,196),'Chico sentado en un sillón con las manos en el pecho, asustado');};
+/* 2026-11-17: dibujo propio para el artículo de insomnio por ansiedad (solo en el blog; la terapia de insomnio no cambia):
+   hombre despierto en la cama a las 03:15, con la luna y un búho en la ventana (insomnio-cama.webp, 707x461). */
+ILUS.insomnioCama=function(){return svg(blob(200,130,180,106)+own('insomnio-cama.webp',84,52,232,152),'Hombre despierto en la cama a las tres y cuarto de la madrugada, con la luna y un búho en la ventana');};
+/* 2026-11-17: dibujo propio para el artículo de TDAH en adultos (solo en el blog; la terapia de TDAH no cambia):
+   hombre con gafas ante el portátil, con garabatos y flechas sobre la cabeza (tdah-mesa.webp, 567x465). */
+ILUS.tdahMesa=function(){return svg(blob(200,130,176,104)+own('tdah-mesa.webp',98,44,205,166),'Hombre con gafas ante el portátil y una mesa llena de cosas, con garabatos y flechas sobre la cabeza');};
 
 /* ---------- formatos de terapia ---------- */
 ILUS.presencial=function(){return svg(blob(200,132,168,96)+own('consulta-sillones.webp',35,36,330,200),'Terapia presencial: psicólogo y paciente conversando, cada uno en su sillón');};
@@ -148,5 +157,5 @@ ILUS.contacto=function(){return ILUS.portada();};
 
 window.ILUS=ILUS;
 /* artículos del blog con dibujo propio (slug del artículo -> clave de ILUS); los demás usan el dibujo de su motivo */
-window.ILUS_ART={'ansiedad-anticipatoria':'anticipatoria','dependencia-emocional':'dependencia'};
+window.ILUS_ART={'ansiedad-anticipatoria':'anticipatoria','dependencia-emocional':'dependencia','ataque-de-panico':'panicoSillon','insomnio-por-ansiedad':'insomnioCama','tdah-en-adultos':'tdahMesa'};
 })();
