@@ -11,7 +11,7 @@
        cargar (CSS) y sus hilos se apartan un poco cuando el cursor pasa por encima del telar (JS, solo con ratón).
      · Bola de hilo enredada a la izquierda del nombre: al pasar el ratón se desenreda y su hilo subraya «Tirar del hilo»; al
        quitarlo se vuelve a enredar. En móvil, al tocar el nombre (y otra vez para enredarla).
-     · Texto bajo el nombre (del usuario, 2026-11-16): «Para desenredar errores comunes e ideas confusas en las psicologías.»
+     · Texto bajo el nombre (del usuario, 2026-11-16): «Para desenredo de errores comunes e ideas confusas en las psicologías.»
   2. LISTA CON FILTROS Y «VER MÁS» (.temas, #grid, #vermas)
      · Botones por tema, sacados de los artículos de BLOG, con su número.
      · Sin filtro: el artículo más reciente va destacado (.card.dest) y se ven 7 tarjetas en ordenador y 4 en móvil;
@@ -303,7 +303,7 @@ BLOG.forEach(function(r){var m=motivoBySlug(r.motivo)||MOTIVOS[0]; if(!cuenta[m.
 
 var h='';
 /* 1 · cabecera con nombre */
-h+='<header class="bh"><div class="in"><h1><span class="k">Blog de psicología · Symploké</span><span class="nom">Tirar del hilo<svg class="hilo" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 16 C 60 4, 110 26, 170 14 S 290 6, 396 18"/></svg>'+ovillo()+'</span></h1><p class="d">Para desenredar errores comunes e ideas confusas en las psicologías.</p></div>'+telar()+'</header>';
+h+='<header class="bh"><div class="in"><h1><span class="k">Blog de psicología · Symploké</span><span class="nom">Tirar del hilo<svg class="hilo" viewBox="0 0 400 30" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M4 16 C 60 4, 110 26, 170 14 S 290 6, 396 18"/></svg>'+ovillo()+'</span></h1><p class="d">Para desenredo de errores comunes e ideas confusas en las psicologías.</p></div>'+telar()+'</header>';
 /* 2 · filtros y lista */
 h+='<div class="temas" role="group" aria-label="Filtrar artículos por tema"><span class="lab">Tema:</span><button type="button" class="on" aria-pressed="true" data-t="">Todos <i>'+BLOG.length+'</i></button>'+temas.map(function(m){return '<button type="button" aria-pressed="false" data-t="'+m.slug+'">'+m.name+' <i>'+cuenta[m.slug]+'</i></button>';}).join('')+'</div>';
 h+='<section class="related blist"><div class="grid" id="grid">'+BLOG.map(function(r){
