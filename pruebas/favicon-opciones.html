@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Favicon: opciones</title>
+<style>
+  body{font-family:system-ui,Segoe UI,sans-serif;margin:0;padding:28px;background:#f3f3f3;color:#222}
+  h1{font-size:22px;margin:0 0 6px}
+  p.intro{margin:0 0 24px;color:#555;max-width:760px;line-height:1.45}
+  .op{background:#fff;border-radius:14px;padding:18px 20px;margin-bottom:18px;display:grid;grid-template-columns:230px 1fr;gap:20px;align-items:center}
+  .op h2{font-size:16px;margin:0 0 4px}
+  .op p{margin:0;font-size:13.5px;color:#555;line-height:1.4}
+  .num{display:inline-block;background:#009966;color:#fff;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;font-size:13px;margin-right:6px}
+  .vistas{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+  /* barra de pestañas tipo Chrome */
+  .barra{display:flex;align-items:flex-end;padding:8px 8px 0;border-radius:8px 8px 0 0;width:330px}
+  .claro{background:#dee1e6}.oscuro{background:#202124}
+  .tab{display:flex;align-items:center;gap:8px;height:34px;padding:0 12px;font-size:12px;width:140px;border-radius:8px 8px 0 0;white-space:nowrap;overflow:hidden}
+  .tab img{width:16px;height:16px;flex:none}
+  .claro .act{background:#fff;color:#202124}.claro .ina{color:#3c4043}
+  .oscuro .act{background:#35363a;color:#e8eaed}.oscuro .ina{color:#bdc1c6}
+  .zoom{display:flex;gap:6px;align-items:center}
+  .zoom canvas{width:100px;height:100px;image-rendering:pixelated;border-radius:6px}
+  .zoom .z1{background:#fff;outline:1px solid #e3e3e3}.zoom .z2{background:#dee1e6}.zoom .z3{background:#35363a}
+  .grande{width:64px;height:64px}
+  .eti{font-size:11px;color:#888;text-align:center;margin-top:3px}
+  .col{display:flex;flex-direction:column;align-items:center}
+  @media (max-width:760px){.op{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<h1>Icono de la pestaña: opciones</h1>
+<p class="intro">Las pestañas de arriba están a tamaño real en tu pantalla (20 píxeles). Los cuadros grandes son esos mismos 20 píxeles ampliados, para ver qué pasa en cada píxel. Todas están dibujadas sobre la rejilla de píxeles, para que los cortes blancos y los agujeros caigan en píxeles enteros y no se emborronen.</p>
+
+<div id="lista"></div>
+
+<script>
+const ops=[
+ ["fav-anterior.svg","Como está ahora","El rombo grande con huecos blancos. A 20 píxeles los cortes miden menos de medio píxel y el tejido se emborrona.",0],
+ ["fav-op1-colores.svg","Colores de siempre","Verde y menta del logo. Huecos y cortes más anchos y sin las puntas sueltas: el rombo queda limpio por fuera y tejido por dentro.",1],
+ ["fav-op2-contraste.svg","Dos verdes con más contraste","Igual que la 1, pero con el menta algo más intenso, porque el menta claro casi desaparece sobre blanco.",2],
+ ["fav-op3-un-verde.svg","Un solo verde","Todo en un verde con el tejido dibujado en blanco, como el cerebro de Psicomoray. Es la más nítida, aunque pierde los dos tonos.",3],
+ ["fav-op4-linea-oscura.svg","Con línea oscura","Los cortes y agujeros en verde muy oscuro, como una vidriera. Es la que más pesa y la que mejor aguanta en la pestaña oscura.",4],
+ ["fav-op5-con-puntas.svg","Con las puntas del logo","Conserva los extremos que sobresalen. Para que quepan hay que encoger el dibujo, y a 20 píxeles las puntas son motas sueltas.",5]
+];
+const L=document.getElementById('lista');
+const dpr=window.devicePixelRatio||1, px=Math.round(16*dpr);
+ops.forEach(([f,t,d,n])=>{
+  const el=document.createElement('div');el.className='op';
+  const num=n?`<span class="num">${n}</span>`:'';
+  const tab=c=>`<div class="barra ${c}"><div class="tab act"><img src="${f}" alt="">Symploké · Psicología</div><div class="tab ina"><img src="${f}" alt="">Contacto · Symploké</div></div>`;
+  el.innerHTML=`<div><h2>${num}${t}</h2><p>${d}</p></div>
+  <div class="vistas">
+    <div>${tab('claro')}${tab('oscuro')}</div>
+    <div class="zoom"><div class="col"><canvas class="z1" width="${px}" height="${px}"></canvas><div class="eti">blanco</div></div><div class="col"><canvas class="z2" width="${px}" height="${px}"></canvas><div class="eti">gris</div></div><div class="col"><canvas class="z3" width="${px}" height="${px}"></canvas><div class="eti">oscuro</div></div></div>
+    <div class="col"><img class="grande" src="${f}" alt=""><div class="eti">64 px</div></div>
+  </div>`;
+  L.appendChild(el);
+  const im=new Image();im.onload=()=>el.querySelectorAll('canvas').forEach(cv=>cv.getContext('2d').drawImage(im,0,0,px,px));im.src=f;
+});
+</script>
+</body>
+</html>
