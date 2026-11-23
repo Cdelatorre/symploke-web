@@ -101,8 +101,8 @@ window.MOTIVOS=[
   corta:{
     basesIntro:'Sentir ansiedad es normal: nos pone en alerta y nos empuja a actuar. El problema empieza cuando se vuelve insostenible, cuando no encontramos su foco o cuando no podemos hacer nada con ella.',
     bases:[
-      '<strong>Los estudios de biología y neurología</strong> muestran que, ante una amenaza, el cuerpo se prepara para huir o defenderse, y ese aviso llega antes de que lo pensemos. Por eso la ansiedad se nota como presión en el pecho, ahogo o nudo en el estómago, y a veces aparece «sin saber por qué». Pero no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
-      'Darle vueltas a todo, comprobar, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento, pero alimentan el círculo. Cuanto más nos miramos por dentro, menos espacio queda para vivir hacia fuera, y a veces eso desemboca en la <a href="depresion.html">depresión</a>.',
+      '<strong>Los estudios de biología y neurología</strong> muestran que, ante una amenaza, se ponen en marcha el sistema nervioso simpático y las hormonas del estrés, como la adrenalina y el cortisol: el corazón se acelera, la respiración se agita y los músculos se tensan, a veces antes de que sepamos qué nos inquieta. Por eso la ansiedad se nota como presión en el pecho, ahogo o nudo en el estómago, y a veces aparece «sin saber por qué». Pero no es el cerebro el que se angustia por su cuenta, sino la persona entera en unas situaciones concretas.',
+      'Darle vueltas a todo, comprobar, evitar lo que asusta… <strong>Los estudios de psicología</strong> muestran que son intentos de control que alivian un momento, pero alimentan el círculo. Cuanto más pendientes estamos de lo que sentimos, más se nota cada señal del cuerpo y menos espacio queda para vivir hacia fuera. Y darle vueltas a todo durante mucho tiempo es también uno de los caminos hacia la <a href="depresion.html">depresión</a>.',
       '<strong>Los estudios de sociología</strong> la asocian a la precariedad, la prisa o la presión por rendir. La ansiedad no es una pieza averiada dentro de ti: eres tú quien está dentro de unas situaciones que te la generan.'
     ],
     together:'La ansiedad es <strong>multicausal</strong>: lo que nos interesa es cómo se entretejen sus causas en tu caso. Casi siempre tiene dirección —el trabajo, la familia, <a href="pareja.html">la pareja</a>, los proyectos personales—, aunque al principio no se vea. Te ayudamos a aclarar a qué responde y de qué te está avisando, para dejar la lucha contra los síntomas y transformar lo que te <strong>amordaza</strong> en <strong>habilitadores</strong> que te permitan avanzar.',
@@ -159,7 +159,7 @@ window.MOTIVOS=[
   ],
   bases:[
     'El ánimo bajo no está solo en la cabeza. Hoy sabemos, <strong>por los estudios de biología</strong>, que la depresión afecta al <a href="insomnio.html">sueño</a>, al apetito, al cansancio y al cuerpo entero. También influyen el <a href="ansiedad.html">estrés mantenido</a>, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
-    'No se ha demostrado que un desequilibrio químico sea su causa: como mucho, es un componente más. La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual; el ánimo va ligado a nuestra vida y es mucho más complejo. Lo que sí muestran es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello, y eso ayuda a entender la falta de ganas.',
+    'No se ha demostrado que un desequilibrio químico sea su causa: como mucho, es un componente más. La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual; el ánimo va ligado a nuestra vida y es mucho más complejo. Lo que sí muestran es que el estrés mantenido reduce la plasticidad del cerebro, es decir, su capacidad de rehacer conexiones, sobre todo en zonas que regulan el ánimo y la memoria. Esa plasticidad se recupera: el ejercicio y los tratamientos que funcionan la favorecen.',
     'Cuando el ánimo baja, hacemos menos; al hacer menos, hay menos cosas que nos llenen, y el ánimo baja más. <strong>Los estudios de psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. Así, la terapia busca que actúes de acuerdo con tus objetivos y con lo que te interesa, en vez de según cómo te encuentres ese día. No se trata de hacer por hacer ni de rellenar el tiempo por estar ocupado, sino de hacer cosas que tengan sentido para ti, con pequeños avances.',
     'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos. Hay etapas especialmente desgastantes —un posparto, <a href="duelo.html">un duelo</a>, los intensos ritmos de vida, el cansancio acumulado— tras las que el ánimo puede venirse abajo.'
   ],
@@ -235,7 +235,7 @@ window.MOTIVOS=[
     ],
     bases:[
       '<strong>Los estudios de biología</strong> muestran que la depresión afecta al <a href="insomnio.html">sueño</a>, al apetito, al cansancio y al cuerpo entero. También influyen el <a href="ansiedad.html">estrés mantenido</a>, la falta de luz y de movimiento o algunas enfermedades, así que a veces conviene una revisión médica.',
-      'La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual. Lo que sí muestran es que se apagan los sistemas que nos hacen anticipar lo bueno y movernos hacia ello, y eso ayuda a entender la falta de ganas.',
+      'La explicación de «me falta serotonina» es una simplificación que <strong>los estudios de neurología</strong> no sostienen tal cual. Lo que sí muestran es que el estrés mantenido reduce la plasticidad del cerebro, es decir, su capacidad de rehacer conexiones, sobre todo en zonas que regulan el ánimo y la memoria. Esa plasticidad se recupera: el ejercicio y los tratamientos que funcionan la favorecen.',
       'Cuando el ánimo baja, hacemos menos, y al hacer menos, el ánimo baja más. <strong>Los estudios de psicología</strong> muestran que esperar a tener ganas para moverse suele alargar el círculo. No se trata de hacer por hacer, sino de hacer cosas que tengan sentido para ti, con pequeños avances.',
       'Las pérdidas, la soledad no deseada, el paro o la precariedad aumentan el riesgo de depresión, como han documentado <strong>los estudios de sociología</strong>. No es debilidad de nadie: el malestar también habla de cómo vivimos.'
     ],
@@ -363,8 +363,8 @@ window.MOTIVOS=[
       'Una de sus características es el <strong>círculo de la preocupación</strong>: nos obsesionamos con no poder dormir, esa preocupación nos quita el sueño y, cuanto menos dormimos, más nos preocupamos.'
     ],
     bases:[
-      '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. Las pantallas por la noche, la cafeína o los horarios cambiantes los desajustan.',
-      'Para dormirse, el cerebro tiene que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio suele quedarse en alerta: el cuerpo cansado y la mente despierta.',
+      '<strong>Los estudios de biología</strong> muestran que el sueño depende de dos relojes: el ritmo circadiano, que marca la luz del día, y la presión de sueño, que se acumula mientras estamos despiertos. La cafeína frena la presión de sueño y los horarios cambiantes desajustan el reloj interno. Las pantallas influyen menos por la carga lumínica que por el efecto de activación atencional que pueden suponer.',
+      'Para dormirse hay que bajar la guardia. <strong>Los estudios de neurología</strong> muestran que en el insomnio se mantiene activado el sistema de alerta, el mismo que se dispara con la ansiedad, y por eso uno puede estar agotado y no conseguir dormirse.',
       'La cama acaba asociada a dar vueltas. <strong>Los estudios de psicología</strong> muestran que la terapia cognitivo-conductual para el insomnio es el tratamiento de primera elección: usar la cama solo para dormir, levantarse si el sueño no llega y ajustar el tiempo en la cama. La <strong>higiene del sueño</strong> la acompaña, aunque por sí sola suele quedarse corta.',
       'Dormir mal también tiene que ver con cómo está organizado el día. <strong>Los estudios de sociología</strong> señalan que los turnos, las jornadas largas y cenar y acostarse tarde recortan el sueño de mucha gente.'
     ],
@@ -489,8 +489,8 @@ window.MOTIVOS=[
     ],
     bases:[
       'Pasar muchas horas sin comer o seguir reglas muy rígidas aumenta el hambre. <strong>Los estudios de biología</strong> muestran que muchas veces el atracón no es falta de voluntad, sino la respuesta de un cuerpo que se ha sentido privado.',
-      '<strong>Los estudios de neurología</strong> muestran que comer activa los sistemas de recompensa del cerebro y tranquiliza durante un rato. Por eso la comida puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
-      'Es frecuente una espiral: comer para calmarse, sentir culpa, <strong>compensar</strong> y volver a comer. <strong>Los estudios de psicología</strong> muestran que la culpa no la frena: la alimenta. Entender qué función cumple la comida en tu vida ayuda a romperla.',
+      '<strong>Los estudios de neurología</strong> muestran que las dietas estrictas y saltarse comidas hacen que reaccionemos con más fuerza ante la comida: llama más la atención y cuesta más dejar de pensar en ella. Y como comer calma el estrés durante un rato, puede convertirse en una forma rápida de aliviar <a href="ansiedad.html">la ansiedad</a> o <a href="depresion.html">la tristeza</a>.',
+      'Es frecuente una espiral: comer para calmarse, sentir culpa, <strong>compensar</strong> y volver a comer. <strong>Los estudios de psicología</strong> muestran que saltarse una norma estricta suele llevar a pensar «ya da igual» y a comer más, y que la culpa de después es uno de los desencadenantes del siguiente atracón. Entender qué función cumple la comida en tu vida ayuda a romperla.',
       '<strong>Los estudios de sociología</strong> señalan cuánto pesan las redes sociales y los juicios sobre el peso, sobre todo en <a href="infancia.html">adolescentes</a> y mujeres jóvenes, y cada vez más en hombres jóvenes, con la presión por tener un cuerpo musculado.'
     ],
     together:'Detrás de la comida suele haber más cosas: la exigencia, la imagen, las emociones, la familia o las redes. Un diagnóstico ayuda a orientarse, pero no cuenta tu historia. Te acompañamos con calma y sin juicios, y combinamos lo que haga falta —psicología, medicina, nutrición— para que la comida vuelva a ocupar su sitio.',
@@ -630,7 +630,7 @@ window.MOTIVOS=[
       ['Celos','comprobaciones y preguntas que alivian un momento pero alimentan el miedo.','celos'],
       ['Infidelidad','se rompe la confianza; se puede reconstruir o decidir separarse.','infidelidad'],
       ['Dependencia emocional','no poder estar sin la otra persona aunque te haga daño; suele ir unida a la <a href="autoestima.html">autoestima</a>.','dependencia'],
-      ['Apego','cómo aprendimos a querer se repite en la pareja: miedo al abandono o necesidad de distancia.','apego'],
+      ['Apego','la forma de buscar cercanía que aprendimos influye en la pareja, pero cambia con cada relación: miedo al abandono o necesidad de distancia.','apego'],
       ['Narcisismo en la pareja','la relación gira siempre alrededor del otro; usamos la palabra para hablar, no para diagnosticar.','narcisismo'],
       ['Falta de deseo','cambia con los años, el estrés o la crianza; lo trabajamos también en <a href="sexual.html">terapia sexual</a>.','deseo'],
       ['La pareja tras tener hijos','menos tiempo, menos sueño y nuevos roles.','hijos'],
@@ -755,7 +755,7 @@ window.MOTIVOS=[
     bases:[
       '<strong>Los estudios de biología</strong> no han encontrado un marcador que permita diagnosticarlo: el diagnóstico es clínico. El TDAH tiene un peso hereditario importante, pero repartido en muchas variantes de efecto pequeño que influyen sin decidir por sí solas.',
       '<strong>Los estudios de neurología</strong> encuentran diferencias entre grupos de personas, pero no un patrón que sirva para diagnosticar a nadie en concreto. El cerebro participa, como en todo lo que hacemos, pero quien aprende a atender es la persona.',
-      'Prestar atención es algo que se aprende. <strong>Los estudios de psicología</strong> muestran que poder esperar, concentrarse y aceptar el aburrimiento no vienen de serie: se aprenden si hay ocasiones para practicarlos. A veces la ayuda pasa también por orientar a <a href="infancia.html">la familia</a> y al colegio.',
+      'Prestar atención depende tanto de con qué se nace como de lo que se practica. <strong>Los estudios de psicología</strong> muestran que, aunque el TDAH tiene una base hereditaria importante, organizar el entorno y practicar estrategias concretas mejora mucho el día a día. A veces la ayuda pasa también por orientar a <a href="infancia.html">la familia</a> y al colegio.',
       '<strong>Los estudios de sociología</strong> señalan que vivimos a un ritmo acelerado, con <a href="adicciones.html">pantallas</a> que reclaman la atención a cada momento. Esa forma de vida choca con lo que piden la escuela o el trabajo.'
     ],
     together:'En los adultos a menudo se identifica tarde, a veces con la <a href="autoestima.html">autoestima</a> dañada tras años de escuchar que no se esforzaban o que no prestaban atención. La idea no es cambiar quién eres, sino buscar que tus ritmos encajen mejor con tu vida y con lo que te pide tu día a día. Lo trabajamos juntos.',
@@ -881,7 +881,7 @@ window.MOTIVOS=[
     ],
     bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
       '<strong>Los estudios de biología</strong> muestran que algunas sustancias, como el alcohol o ciertas <a href="insomnio.html">pastillas para dormir</a>, crean dependencia física: cuando faltan, aparece el <strong>síndrome de abstinencia</strong>, y a veces hace falta acompañamiento médico.',
-      '<strong>Los estudios de neurología</strong> muestran que el consumo, el juego o las pantallas activan los sistemas de recompensa del cerebro. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, cuándo aparece y qué lo mantiene.',
+      '<strong>Los estudios de neurología</strong> muestran que, con la repetición, los lugares, las horas o las emociones asociados al consumo acaban despertando las ganas por sí solos, aunque el placer sea cada vez menor. Pero explicarlo solo por «el cerebro enganchado» deja fuera casi todo: para qué sirve ese consumo, cuándo aparece y qué lo mantiene.',
       'Ya lo escribió Ovidio: «veo lo mejor y lo apruebo, pero sigo lo peor». Muchas veces caemos en una adicción buscando calmar la <a href="ansiedad.html">ansiedad</a>, y a la larga la empeora. <strong>Los estudios de psicología</strong> muestran que el autocontrol no consiste en apretar los dientes, sino en aprender a «controlar las condiciones que nos controlan».',
       '<strong>Los estudios de sociología</strong> señalan que las pantallas y el móvil empeoran el malestar de muchas personas, aunque no son la única causa: hay que mirar también la vida que se lleva. Si el móvil se ha convertido en lo primero y lo último de tu día, podemos acompañarte para que vuelva a ser una herramienta.'
     ],
@@ -994,8 +994,8 @@ window.MOTIVOS=[
     basesIntro:'Usamos la palabra «autoestima» porque es la que todos conocemos, aunque pone el foco en el individuo, como si la estima fuera un depósito que cada uno lleva dentro. Nosotros preferimos hablar de <strong>estimarse</strong>: un verbo, que se practica con otros y entre otros. Por eso nuestro enfoque es <strong>pluralista</strong>.',
     bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
       '<strong>Los estudios de biología</strong> muestran que el cuerpo también participa: el cansancio, <a href="insomnio.html">el mal sueño</a> o <a href="ansiedad.html">el estrés mantenido</a> tiñen cómo nos vemos.',
-      'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> muestra que se difundió en la segunda mitad del siglo XX, con la promesa de que bastaba con quererse más para estar bien. Una estima que cada uno fabrica a solas tiene más de creencia de época que de hallazgo científico.',
-      '<strong>Los estudios de psicología</strong> encuentran que repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más mueve la estima es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. La estima llega después de actuar, no antes.',
+      'La idea de autoestima, tal como la usamos hoy, es reciente. <strong>La historia de la psicología</strong> muestra que se difundió en la segunda mitad del siglo XX, con la promesa de que bastaba con quererse más para estar bien. Pero los estudios indican que la estima no se fabrica a solas: sube y baja según cómo nos sentimos aceptados y valorados por los demás.',
+      '<strong>Los estudios de psicología</strong> encuentran que repetirse frases positivas, a quien se valora poco, puede hacerle sentir peor. Lo que más mueve la estima es lo que hacemos: cumplir con lo que nos importa, poner límites, atrevernos con lo que evitamos. No hace falta esperar a valorarse para actuar: muchas veces la estima crece al actuar, y eso hace más fácil el siguiente paso.',
       '<strong>Los estudios de sociología</strong> señalan cómo pesan la comparación constante, la imagen corporal o <a href="adicciones.html">las redes sociales</a>. Nadie se estima en el vacío: cómo nos valoramos depende también de dónde y con quién vivimos.'
     ],
     together:'Ninguna estima es solo «auto»: la aprendemos de cómo nos han mirado y nos miran. Lo que sí se puede trabajar es cómo te importa esa mirada y qué haces con ella: elegir con quién estás, decir que no aunque dé miedo el rechazo, pedir lo que necesitas y cuidar los vínculos que te sostienen sin caer en la dependencia emocional. Eso se practica, y lo trabajamos juntos.',
@@ -1117,7 +1117,7 @@ window.MOTIVOS=[
     ],
     bases:[   /* cuatro párrafos, en el mismo orden que los largos, para que las frases verdes (quotes) sigan en su sitio */
       '<strong>Los estudios de biología</strong> muestran que el duelo también se vive en el cuerpo: cansancio, <a href="insomnio.html">cambios en el sueño</a> y en el apetito, <a href="depresion.html">una tristeza que pesa físicamente</a>. Es normal, y suele ir cediendo con el tiempo.',
-      '<strong>Los estudios de neurología</strong> muestran que al cerebro le cuesta asumir una ausencia: por eso, a veces, esperamos oír su voz o que entre por la puerta.',
+      '<strong>Los estudios de neurología</strong> muestran que aprendemos a contar con quien queremos como alguien que siempre está ahí, y que hace falta tiempo para aprender que ya no está: por eso, a veces, esperamos oír su voz o que entre por la puerta.',
       '<strong>Los estudios de psicología</strong> muestran que la mayoría de los duelos siguen su curso. No se trata de «superar» a nadie ni de pasar por unas fases en orden, sino de ir encontrando un sitio para la pérdida en una vida que sigue.',
       '<strong>Los estudios de sociología</strong> señalan que hoy se habla poco de la muerte: al poco tiempo, alrededor ya no se habla de la pérdida, aunque quien la vive siga dentro de ella.'
     ],
@@ -1243,8 +1243,8 @@ window.MOTIVOS=[
     bases:[
       '<strong>Los estudios de biología</strong> muestran que la infancia y la adolescencia son etapas de grandes cambios: el cuerpo, el sueño y el desarrollo influyen en el ánimo y en la conducta, sin ser la explicación de todo.',
       '<strong>Los estudios de neurología</strong> muestran que el cerebro sigue madurando hasta bien entrada la juventud, y que esa maduración depende en buena parte de lo que se practica y se aprende. Un menor no es un adulto pequeño ni un diagnóstico.',
-      '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas. Cuando hay mucha exigencia y poca tolerancia a la frustración, a veces se confunde con un <a href="tdah.html">TDAH</a> lo que es falta de práctica para esperar o concentrarse.',
-      '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales, que agravan el malestar aunque no lo crean. Les ayudamos a encontrar sus propios recursos para relacionarse con el mundo.'
+      '<strong>Los estudios de psicología</strong> muestran que proteger a los chicos de todo no hace desaparecer los problemas. Cuando hay mucha exigencia y poca tolerancia a la frustración, a veces se confunde con un <a href="tdah.html">TDAH</a> lo que es inmadurez propia de la edad, o el efecto del cansancio, el estrés o la falta de sueño. Por eso conviene evaluarlo adecuadamente antes de ponerle nombre.',
+      '<strong>Los estudios de sociología</strong> señalan el peso de la sobreprotección, de la cultura del diagnóstico y de las redes sociales: de media, sus efectos son pequeños y todavía se discuten, pero en algunos chicos pesan más, sobre todo cuando les quitan sueño o los exponen a comparaciones o acoso. Les ayudamos a encontrar sus propios recursos para relacionarse con el mundo.'
     ],
     together:'Ante el malestar de un niño o de un adolescente hay que escuchar y explorar sin precipitarse. Trabajamos con él o con ella (siempre con el consentimiento de sus tutores) y también con vosotros, con estrategias sencillas para casa y para clase. Lo que le pasa a un menor casi nunca le pasa solo a él: por eso trabajamos en equipo con la familia y con los centros educativos.',
     tipos:{titulo:'Problemas más frecuentes en niños y adolescentes', intro:'Algunas cosas forman parte de crecer, pero conviene mirarlas a tiempo. Casi siempre trabajamos también con la familia.', items:[
@@ -1366,8 +1366,8 @@ window.MOTIVOS=[
     bases:[
       '<strong>Los estudios de biología</strong> muestran que nacemos con un temperamento —más o menos sensibles, intensos o activos—, pero el temperamento todavía no es una forma de ser: esa se construye a lo largo de la vida.',
       '<strong>Los estudios de neurología</strong> muestran que el cerebro cambia con la experiencia y con las relaciones durante toda la vida: lo que somos no queda fijado de una vez para siempre.',
-      '<strong>Los estudios de psicología</strong> muestran que muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, más que «defectos de fábrica». <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.',
-      '<strong>Los estudios de sociología</strong> señalan que vivimos rodeados de estímulos y exigencias que pueden dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
+      '<strong>Los estudios de psicología</strong> muestran que la personalidad no es un «defecto de fábrica»: hay una parte heredada, pero muchas formas de sufrir son maneras de relacionarse aprendidas en nuestro entorno, y la personalidad sigue cambiando a lo largo de la vida. <a href="pareja.html">Las relaciones que se repiten y nos hacen daño</a> suelen ser estrategias para protegernos, y lo aprendido se puede revisar y cambiar.',
+      '<strong>Los estudios de sociología</strong> describen cómo los trabajos inestables, los cambios rápidos y la presión por reinventarse sin parar hacen más difícil saber quién es uno, y eso puede dejarnos <a href="depresion.html">una sensación de vacío</a>. Trabajamos para que ganes <strong>consistencia</strong>: saber quién eres y qué quieres sostener en tu vida.'
     ],
     together:'No hay un yo verdadero escondido dentro: somos también lo que hacemos, cómo nos relacionamos y nuestros contextos. Por eso, cuando no te entiendes, buscar dentro no basta. Si tu vida parece hecha a trozos que no encajan, ponerla en palabras ayuda a encontrarle un hilo y un sentido. Lo trabajamos juntos.',
     tipos:{titulo:'Problemas de personalidad más frecuentes', intro:'No son casillas: suelen mezclarse y cada persona las vive a su manera.', items:[
@@ -1487,7 +1487,7 @@ window.MOTIVOS=[
     ],
     bases:[
       '<strong>Los estudios de biología</strong> muestran que el deseo y la respuesta sexual dependen también del cuerpo: las hormonas —tras el parto o en la menopausia—, el cansancio, ciertas enfermedades o algunos medicamentos. A veces conviene descartar antes una causa médica.',
-      '<strong>Los estudios de neurología</strong> muestran que el estrés y <a href="ansiedad.html">la ansiedad</a> frenan la respuesta sexual: cuando el cuerpo está en alerta, el deseo se apaga. Por eso la presión por «rendir» suele empeorar las cosas.',
+      '<strong>Los estudios de neurología</strong> muestran que el estrés mantenido puede frenar el deseo y la respuesta sexual. Pero pesa aún más la atención: estar pendiente de cómo se está respondiendo, en vez de lo que se siente, corta la excitación. Por eso la presión por «rendir» suele empeorar las cosas.',
       '<strong>Los estudios de psicología</strong> muestran que poder hablar de sexo con comodidad se asocia a una vida sexual más satisfactoria y a vínculos más fuertes.',
       '<strong>Los estudios de sociología</strong> señalan el peso de los modelos de sexualidad de los medios y de <a href="adicciones.html">la pornografía</a>, que crean expectativas poco realistas, y de la vergüenza que todavía rodea al sexo.'
     ],
@@ -1498,7 +1498,7 @@ window.MOTIVOS=[
       ['Eyaculación precoz','eyacular antes de lo que se desea; se trabaja con ejercicios concretos.','precoz'],
       ['Anorgasmia','dificultad para llegar al orgasmo aunque haya deseo y excitación.','anorgasmia'],
       ['Dolor en las relaciones sexuales','conviene una valoración ginecológica o urológica.','dolor'],
-      ['Vaginismo','contracción involuntaria que dificulta la penetración; se trabaja de forma gradual.','vaginismo'],
+      ['Vaginismo','dificultad para la penetración por dolor, miedo a sentirlo y tensión de la musculatura pélvica; se trabaja de forma gradual.','vaginismo'],
       ['Sexualidad tras el parto','el cansancio, el cuerpo y los nuevos roles cambian el deseo; se trabaja también en <a href="pareja.html">pareja</a>.','parto'],
       ['Sexualidad en la menopausia','los cambios hormonales afectan al deseo y al bienestar sexual; combinamos la mirada médica y la psicológica.','menopausia']
     ]},
