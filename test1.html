@@ -400,11 +400,17 @@ function cross(a,b){
   }
   return res;
 }
+var DEF=[];   // hilos estirados del dibujo que se está pintando (los fija cada función antes de los cruces)
+function defList(arrs){var r=[];arrs.forEach(function(a){a.forEach(function(t){if(t&&t.def&&r.indexOf(t)<0)r.push(t);});});return r;}
+function nearDef(c){   // ¿pasa algún hilo estirado a menos de 130 unidades del cruce?
+  for(var k=0;k<DEF.length;k++){var P=DEF[k].pts;for(var n=0;n<P.length;n+=2){var dx=P[n][0]-c[0],dy=P[n][1]-c[1];if(dx*dx+dy*dy<16900)return true;}}
+  return false;
+}
 function windows(O,U,so,su,halo,extra){
   var tO=tanAt(O,so),tU=tanAt(U,su), sn=Math.max(Math.abs(tO[0]*tU[1]-tO[1]*tU[0]),0.35);
   var Lh=(U.w/2)/sn+halo+6+(extra||0), d=dstr(win(O,so,Lh)), dc=dstr(win(O,so,Lh+6));
   var clipAttr='', clipDef='';
-  if(!extra&&elAnyOn()){   // con un hilo estirado, el contorno blanco solo debe recortar al hilo que cruza (máscara con su misma silueta, sin picos en las curvas cerradas)
+  if(!extra&&DEF.length&&nearDef(ptAt(O,so))){   // rendimiento (2026-11-23): solo en los cruces junto a un hilo estirado. Con un hilo estirado, el contorno blanco solo debe recortar al hilo que cruza (máscara con su misma silueta, sin picos en las curvas cerradas)
     var id='ec'+(++clipN), R=(O.w/2+halo)/sn+60, du=dstr(win(U,su,R));
     clipDef='<mask id="'+id+'" maskUnits="userSpaceOnUse" x="-3000" y="-3000" width="8000" height="8000"><path d="'+du+'" style="stroke:#fff;fill:none" stroke-width="'+(U.w+3)+'" stroke-linecap="butt" stroke-linejoin="round"/></mask>';
     clipAttr=' mask="url(#'+id+')"';
@@ -481,7 +487,7 @@ function elStep(){
       }
     }else{
       var mx=0; for(n=0;n<M;n++){mx=Math.max(mx,Math.abs(px[n])+Math.abs(py[n])+8*(Math.abs(vx[n])+Math.abs(vy[n])));}
-      if(mx<0.12){px.fill(0);py.fill(0);vx.fill(0);vy.fill(0);c.on=false;}
+      if(mx<0.3){px.fill(0);py.fill(0);vx.fill(0);vy.fill(0);c.on=false;}
     }
   }
 }
@@ -490,10 +496,12 @@ function elTick(now){
   EL.raf=0;
   var steps=Math.max(1,Math.min(4,Math.round((now-(EL.last||now-16.7))/16.7))); EL.last=now;
   for(var i=0;i<steps;i++)elStep();
-  render();
-  var tr=false,tm=false; for(var kk in EL.chain){ if(kk.charAt(0)==='R')tr=true; else if(kk.charAt(0)==='M')tm=true; }
-  if(tr&&lastPr>=0)ribbonFrame(lastPr,lastQ);
-  if(tm&&lastPm>=0)meshFrame(lastPm);
+  var th=false,tr=false,tm=false; for(var kk in EL.chain){ if(!EL.chain[kk].on)continue; var c0=kk.charAt(0); if(c0==='R')tr=true; else if(c0==='M')tm=true; else th=true; }
+  var pv=EL.prev||{};   // rendimiento (2026-11-23): solo el dibujo con algún hilo en movimiento, y una vez más cuando se para
+  if(th||pv.th)render();
+  if((tr||pv.tr)&&lastPr>=0)ribbonFrame(lastPr,lastQ);
+  if((tm||pv.tm)&&lastPm>=0)meshFrame(lastPm);
+  EL.prev={th:th,tr:tr,tm:tm};
   if(elAnyOn()||EL.grab){EL.raf=requestAnimationFrame(elTick);}else{EL.last=0;}
 }
 function elKick(){ if(!EL.raf){EL.last=0;EL.raf=requestAnimationFrame(elTick);} }
@@ -505,7 +513,7 @@ function deform(st,key,sh){
     if(u>=0&&u<M-1){var i0=Math.floor(u),f=u-i0; dx=c.px[i0]+f*(c.px[i0+1]-c.px[i0]); dy=c.py[i0]+f*(c.py[i0+1]-c.py[i0]);}
     pts.push([st.pts[n][0]+dx, st.pts[n][1]+dy]);
   }
-  var t=mk(pts,st.w,st.cls,st.halo); t.off=st.off; return t;
+  var t=mk(pts,st.w,st.cls,st.halo); t.off=st.off; t.def=true; return t;
 }
 function mapS(a,b,s){
   var c=a.cum,lo=0,hi=c.length-1;
@@ -631,6 +639,7 @@ function render(){
   var out='';
   for(i=0;i<5;i++)out+=band(Ht[i].pts,BAND_W,'pale');
   for(j=0;j<5;j++)out+=band(Vt[j].pts,BAND_W,'mid');
+  DEF=dform?defList([Ht,Vt,[A,B]]):[];
   for(var q=0;q<X.length;q++){
     var c=X[q], hOver=((c.i+5+c.j)%2===0);
     var sa=c.sa-Hb[c.i].off+(c.i===IA?shiftA:(c.i===IB?shiftB:0))+shiftH[c.i], sb=c.sb-Vb[c.j].off;
@@ -664,7 +673,7 @@ function tick(now){
     state.k=anim.from+(anim.to-anim.from)*(anim.lin?t:ease(t));
     if(t>=1){state.k=anim.to;anim=null;}
   }
-  render();
+  if(state.heroOn!==false)render();   // rendimiento (2026-11-23): fuera de la pantalla no se repinta
   if(anim)schedule();
 }
 
@@ -699,7 +708,7 @@ function ribbonFrame(p,q){
   }
   for(i=0;i<2;i++)if(H[i])H[i]=deform(H[i],'RH'+i,0);
   for(j=0;j<12;j++)if(V[j])V[j]=deform(V[j],'RV'+j,0);
-  lastRib={H:H,V:V};
+  lastRib={H:H,V:V}; DEF=defList([H,V]);
   for(i=0;i<2;i++)if(H[i])out+=band(H[i].pts,40,H[i].cls);
   for(j=0;j<12;j++)if(V[j])out+=band(V[j].pts,40,'mid');
   for(i=0;i<2;i++)for(j=0;j<12;j++){
@@ -725,7 +734,7 @@ function meshFrame(p){
   }
   for(i=0;i<3;i++)if(H[i])H[i]=deform(H[i],'MH'+i,0);
   for(j=0;j<4;j++)if(V[j])V[j]=deform(V[j],'MV'+j,0);
-  lastMesh={H:H,V:V};
+  lastMesh={H:H,V:V}; DEF=defList([H,V]);
   for(i=0;i<3;i++)if(H[i])out+=band(H[i].pts,40,'pale');
   for(j=0;j<4;j++)if(V[j])out+=band(V[j].pts,40,'mid');
   for(i=0;i<3;i++)for(j=0;j<4;j++){
@@ -751,6 +760,7 @@ function onScroll(){
   /* las puntas de los hilos del tejido de la cabecera se cortan a RIB_GAP px de la cinta, más un CUT_MORE del alto del dibujo, para que no se toquen */
   var ar=art.getBoundingClientRect(), as=REDUCED?1:1+0.05*p, cutY=(ar.height*(1-CUT_MORE)-(ar.bottom-(rr.top-RIB_GAP))/as).toFixed(0);
   art.style.clipPath='polygon(-300% -300%,400% -300%,400% '+cutY+'px,-300% '+cutY+'px)';
+  state.heroOn=(ar.top+cutY*as>-40)&&(ar.top<vh+40);   // ¿se ve algo del dibujo de la cabecera?
   var rS1=ribTopDoc-vh*0.30, rS0=Math.max(0,rS1-vh*0.85), pr=REDUCED?1:clamp01((state.scroll-rS0)/Math.max(1,rS1-rS0));
   var mr=meshWrap.getBoundingClientRect(), maxS=Math.max(0,document.documentElement.scrollHeight-vh), topFinal=mr.top+state.scroll-maxS, travel=Math.max(80,vh*0.94-topFinal), pm=REDUCED?1:clamp01((vh*0.94-mr.top)/(travel*0.82));
   /* el tejido de contacto, una vez completo, se desvanece poco a poco como los otros */
@@ -772,7 +782,8 @@ window.addEventListener('resize',onScroll);
 (function(){
   if(!EL.FINE)return;
   var root=document.documentElement;
-  var hoverRaf=0, hoverEv=null;
+  var hoverRaf=0, hoverEv=null, curEl=null;
+  function setCur(el){ if(curEl===el)return; if(curEl&&curEl.classList)curEl.classList.remove('hilo-cerca'); curEl=el; if(el&&el.classList)el.classList.add('hilo-cerca'); }   // rendimiento (2026-11-23): la clase va solo en el elemento que está bajo el ratón; en <html> obligaba a recalcular toda la página
   function svgPt(e,g){var m=g.getScreenCTM(); if(!m)return null; var p=new DOMPoint(e.clientX,e.clientY).matrixTransform(m.inverse()); return [p.x,p.y];}
   function opaqueAbove(t){   // ¿hay algo con fondo (tarjeta, banda) tapando los hilos de la cabecera en ese punto?
     for(var el=t;el&&el!==document.body&&el!==document.documentElement;el=el.parentElement){
@@ -821,7 +832,7 @@ window.addEventListener('resize',onScroll);
       EL.grab.tx=dx*k; EL.grab.ty=dy*k; return;
     }
     if(e.pointerType==='touch')return;
-    hoverEv=e; if(!hoverRaf)hoverRaf=requestAnimationFrame(function(){hoverRaf=0; var ev=hoverEv, over=!interactive(ev.target)&&hit(ev); root.classList.toggle('hilo-cerca',!!over);});   // una comprobación por fotograma como máximo
+    hoverEv=e; if(!hoverRaf)hoverRaf=requestAnimationFrame(function(){hoverRaf=0; var ev=hoverEv, over=!interactive(ev.target)&&hit(ev); setCur(over?ev.target:null);});   // una comprobación por fotograma como máximo
   },{passive:true});
   addEventListener('pointerdown',function(e){
     if(e.button!==0||e.pointerType==='touch'||interactive(e.target))return;
@@ -837,7 +848,7 @@ window.addEventListener('resize',onScroll);
   addEventListener('pointerup',soltar); addEventListener('pointercancel',soltar); addEventListener('blur',soltar);
   document.addEventListener('dragstart',function(e){if(EL.grab)e.preventDefault();});
   var st=document.createElement('style');
-  st.textContent='html.hilo-cerca,html.hilo-cerca *{cursor:grab!important}html.hilo-agarrado,html.hilo-agarrado *{cursor:grabbing!important;user-select:none!important}';
+  st.textContent='.hilo-cerca{cursor:grab!important}html.hilo-agarrado,html.hilo-agarrado *{cursor:grabbing!important;user-select:none!important}';
   document.head.appendChild(st);
   window.__el=EL;
 })();
